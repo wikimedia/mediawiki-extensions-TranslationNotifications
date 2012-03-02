@@ -25,10 +25,10 @@ class SpecialTranslatorSignup extends SpecialPage {
 		}
 
 		$context = $this->getContext();
-		$htmlForm = new HtmlForm( $this->getDataModel(), $context, 'lcadft' );
-		$htmlForm->setId( 'lcadft-form' );
-		$htmlForm->setSubmitText( $context->msg( 'lcadft-submit' )->text() );
-		$htmlForm->setSubmitID( 'lcadft-submit' );
+		$htmlForm = new HtmlForm( $this->getDataModel(), $context, 'translationnotifications' );
+		$htmlForm->setId( 'translationnotifications-form' );
+		$htmlForm->setSubmitText( $context->msg( 'translationnotifications-submit' )->text() );
+		$htmlForm->setSubmitID( 'translationnotifications-submit' );
 		$htmlForm->setSubmitCallback( array( $this, 'formSubmit' ) );
 		$htmlForm->show();
 
@@ -46,28 +46,28 @@ JAVASCRIPT
 		);
 	}
 	public function getDataModel() {
-		global $wgLCADFTContactMethods, $wgLang;
+		global $wgTranslationNotificationsContactMethods, $wgLang;
 
 		$m['username'] = array(
 			'type' => 'info',
-			'label-message' => 'lcadft-username',
+			'label-message' => 'translationnotifications-username',
 			'default' => $this->getUser()->getName(),
 			'section' => 'info',
 		);
 
 		$user = $this->getUser();
 		if ( $user->isEmailConfirmed() ) {
-			$status = $this->msg( 'lcadft-email-confirmed' )->parse();
+			$status = $this->msg( 'translationnotifications-email-confirmed' )->parse();
 		} elseif ( trim( $user->getEmail() ) !== '' )  {
 			$submit = Xml::submitButton( $this->msg( 'confirmemail_send' )->text(), array( 'name' => 'x' ) );
-			$status = $this->msg( 'lcadft-email-unconfirmed' )->rawParams( $submit )->parse();
+			$status = $this->msg( 'translationnotifications-email-unconfirmed' )->rawParams( $submit )->parse();
 		} else {
-			$status = $this->msg( 'lcadft-email-notset' )->parse();
+			$status = $this->msg( 'translationnotifications-email-notset' )->parse();
 		}
 
 		$m['emailstatus'] = array(
 			'type' => 'info',
-			'label-message' => 'lcadft-emailstatus',
+			'label-message' => 'translationnotifications-emailstatus',
 			'default' => $status,
 			'section' => 'info',
 			'raw' => true,
@@ -83,32 +83,32 @@ JAVASCRIPT
 			$options[$display] = $code;
 		}
 
-		$options = array( wfMessage( 'lcadft-nolang' )->plain() => '' ) + $options;
+		$options = array( wfMessage( 'translationnotifications-nolang' )->plain() => '' ) + $options;
 
 		for ( $i = 1; $i < 4; $i++ ) {
 			$m["lang-$i"] = array(
 				'type' => 'select',
-				'label-message' => array( "lcadft-lang", $wgLang->formatNum( $i ) ),
+				'label-message' => array( "translationnotifications-lang", $wgLang->formatNum( $i ) ),
 				'section' => 'languages',
 				'options' => $options,
-				'default' => $user->getOption( "lcadft-lang-$i" ),
+				'default' => $user->getOption( "translationnotifications-lang-$i" ),
 			);
 
 			if ( $i === 1 ) {
-				$m["lang-$i"]['default'] = $user->getOption( "lcadft-lang-$i", $wgLang->getCode() );
+				$m["lang-$i"]['default'] = $user->getOption( "translationnotifications-lang-$i", $wgLang->getCode() );
 				$m["lang-$i"]['required'] = true;
 			}
 		}
 
-		foreach ( $wgLCADFTContactMethods as $method => $value ) {
+		foreach ( $wgTranslationNotificationsContactMethods as $method => $value ) {
 			if ( $value === false ) {
 				continue;
 			}
 
 			$m["cmethod-$method"] = array(
 				'type' => 'check',
-				'label-message' => "lcadft-cmethod-$method",
-				'default' => $user->getOption( "lcadft-cmethod-$method" ),
+				'label-message' => "translationnotifications-cmethod-$method",
+				'default' => $user->getOption( "translationnotifications-cmethod-$method" ),
 				'section' => 'contact',
 			);
 			if ( $method === 'email' ) {
@@ -118,7 +118,7 @@ JAVASCRIPT
 			if ( $method === 'talkpage-elsewhere' ) {
 				$m['cmethod-talkpage-elsewhere-loc'] = array(
 					'type' => 'select',
-					'default' => $user->getOption( 'lcadft-cmethod-talkpage-elsewhere-loc' ),
+					'default' => $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere-loc' ),
 					'section' => 'contact',
 					'options' => $this->getOtherWikis(),
 				);
@@ -127,14 +127,14 @@ JAVASCRIPT
 
 		$m['freq'] = array(
 			'type' => 'radio',
-			'default' => $user->getOption( 'lcadft-freq', 'always' ),
+			'default' => $user->getOption( 'translationnotifications-freq', 'always' ),
 			'section' => 'frequency',
 			'options' => array(
-				$this->msg( 'lcadft-freq-always' )->text()  => 'always',
-				$this->msg( 'lcadft-freq-week' )->text()    => 'week',
-				$this->msg( 'lcadft-freq-month' )->text()   => 'month',
-				$this->msg( 'lcadft-freq-weekly' )->text()  => 'weekly',
-				$this->msg( 'lcadft-freq-monthly' )->text() => 'monthly',
+				$this->msg( 'translationnotifications-freq-always' )->text()  => 'always',
+				$this->msg( 'translationnotifications-freq-week' )->text()    => 'week',
+				$this->msg( 'translationnotifications-freq-month' )->text()   => 'month',
+				$this->msg( 'translationnotifications-freq-weekly' )->text()  => 'weekly',
+				$this->msg( 'translationnotifications-freq-monthly' )->text() => 'monthly',
 			),
 		);
 		return $m;
@@ -150,7 +150,7 @@ JAVASCRIPT
 		}
 
 		foreach ( $formData as $key => $value ) {
-			$user->setOption( "lcadft-$key", $value );
+			$user->setOption( "translationnotifications-$key", $value );
 		}
 		$user->saveSettings();
 	}
