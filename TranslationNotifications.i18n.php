@@ -70,6 +70,23 @@ $messages['qqq'] = array(
 	'translationnotifications-submit' => 'Submit button text',
 );
 
+/** Breton (Brezhoneg)
+ * @author Fulup
+ */
+$messages['br'] = array(
+	'translationnotifications-info' => 'Titouroù diwar-benn un implijer',
+	'translationnotifications-username' => 'Anv implijer :',
+	'translationnotifications-email-confirmed' => "Kadarnaet eo bet ho chomlec'h postel",
+	'translationnotifications-email-unconfirmed' => "N'eo ket bet kadarnaet ho chomlec'h postel. $1",
+	'translationnotifications-languages' => 'Yezhoù',
+	'translationnotifications-lang' => 'Yezh #$1',
+	'translationnotifications-nolang' => 'Dibabit ur yezh',
+	'translationnotifications-cmethod-email' => 'Postel',
+	'translationnotifications-cmethod-talkpage' => 'Pajenn gaozeal',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pajenn gaozeal war wikioù all',
+	'translationnotifications-submit' => 'En em enskrivañ',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  * @author Metalhead64
