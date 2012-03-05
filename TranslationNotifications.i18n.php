@@ -70,6 +70,36 @@ $messages['qqq'] = array(
 	'translationnotifications-submit' => 'Submit button text',
 );
 
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'translatorsignup' => 'Падпіскі перакладчыка',
+	'translationnotifications-desc' => 'Дазваляе перакладчыкам падпісвацца на паведамленьні пра пераклады',
+	'translationnotifications-info' => 'Зьвесткі карыстальніка',
+	'translationnotifications-username' => 'Імя ўдзельніка:',
+	'translationnotifications-emailstatus' => 'Стан e-mail:',
+	'translationnotifications-email-confirmed' => 'Ваш адрас e-mail пацьверджаны',
+	'translationnotifications-email-unconfirmed' => 'Ваш адрас e-mail не пацьверджаны. $1',
+	'translationnotifications-email-notset' => 'Вы не паведамілі адрас e-mail. Вы можаце зрабіць гэта ў вашых [[Special:Preferences|наладах]].',
+	'translationnotifications-languages' => 'Мовы',
+	'translationnotifications-lang' => 'Мова №$1',
+	'translationnotifications-nolang' => 'Выберыце мову',
+	'translationnotifications-contact' => 'Пажаданыя спосабы паведамленьня',
+	'translationnotifications-cmethod-email' => 'Электронная пошта',
+	'translationnotifications-cmethod-talkpage' => 'Старонка гутарак',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Старонка гутарак у іншай вікі',
+	'translationnotifications-cmethod-feed' => 'Стужка',
+	'translationnotifications-cmethod-no' => 'Не паведамляць мне',
+	'translationnotifications-frequency' => 'Частасьць паведамленьняў',
+	'translationnotifications-freq-always' => 'Калі зьяўляецца, што перакладаць',
+	'translationnotifications-freq-week' => 'Ня болей разу на тыдзень',
+	'translationnotifications-freq-month' => 'Ня болей разу на месяц',
+	'translationnotifications-freq-weekly' => 'Тыднёвы дайджэст',
+	'translationnotifications-freq-monthly' => 'Месячны дайджэст',
+	'translationnotifications-submit' => 'Падпісацца',
+);
+
 /** Breton (Brezhoneg)
  * @author Fulup
  */
@@ -127,6 +157,66 @@ $messages['de-formal'] = array(
 	'translationnotifications-email-notset' => 'Sie haben keine E-Mail-Adresse angegeben. Dies können Sie in Ihren [[Special:Preferences|Einstellungen]] tun.',
 	'translationnotifications-nolang' => 'Wählen Sie eine Sprache',
 	'translationnotifications-cmethod-no' => 'Benachrichtigen Sie mich nicht',
+);
+
+/** French (Français)
+ * @author Gomoko
+ */
+$messages['fr'] = array(
+	'translatorsignup' => 'Connexion du traducteur',
+	'translationnotifications-desc' => "Permet aux traducteurs de s'inscrire pour des notifications de traduction",
+	'translationnotifications-info' => "Information sur l'utilisateur",
+	'translationnotifications-username' => "Nom de l'utilisateur:",
+	'translationnotifications-emailstatus' => 'État du courriel:',
+	'translationnotifications-email-confirmed' => 'Votre adresse de courriel est confirmée',
+	'translationnotifications-email-unconfirmed' => "Votre adresse de courriel n'est pas confirmée. $1",
+	'translationnotifications-email-notset' => "Vous n'avez pas fourni d'adresse de courriel. Vous pouvez le faire dans vos [[Special:Preferences|préférences]].",
+	'translationnotifications-languages' => 'Langues',
+	'translationnotifications-lang' => 'Langue #$1',
+	'translationnotifications-nolang' => 'Choisir une langue',
+	'translationnotifications-contact' => 'Moyens de contact préférés',
+	'translationnotifications-cmethod-email' => 'Courriel',
+	'translationnotifications-cmethod-talkpage' => 'Page de discussion',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Page de discussion sur un autre wiki',
+	'translationnotifications-cmethod-feed' => 'Alimentation',
+	'translationnotifications-cmethod-no' => 'Ne pas me contacter',
+	'translationnotifications-frequency' => 'Fréquence de contact',
+	'translationnotifications-freq-always' => 'Quand il y a quelque chose de nouveau à traduire',
+	'translationnotifications-freq-week' => 'Au moins une fois par semaine',
+	'translationnotifications-freq-month' => 'Au moins une fois par mois',
+	'translationnotifications-freq-weekly' => 'Résumé hebdomadaire',
+	'translationnotifications-freq-monthly' => 'Résumé mensuel',
+	'translationnotifications-submit' => 'Inscription',
+);
+
+/** Galician (Galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'translatorsignup' => 'Inscrición de tradutores',
+	'translationnotifications-desc' => 'Permite aos tradutores inscribirse para recibir notificacións sobre as traducións',
+	'translationnotifications-info' => 'Información de usuario',
+	'translationnotifications-username' => 'Nome de usuario:',
+	'translationnotifications-emailstatus' => 'Estado do correo electrónico:',
+	'translationnotifications-email-confirmed' => 'O seu enderezo de correo electrónico está confirmado',
+	'translationnotifications-email-unconfirmed' => 'O seu enderezo de correo electrónico non está confirmado. $1',
+	'translationnotifications-email-notset' => 'Non proporcionou enderezo de correo electrónico ningún. Pódeo facer nas súas [[Special:Preferences|preferencias]].',
+	'translationnotifications-languages' => 'Linguas',
+	'translationnotifications-lang' => 'Language nº$1',
+	'translationnotifications-nolang' => 'Escolla unha lingua',
+	'translationnotifications-contact' => 'Métodos de contacto preferidos',
+	'translationnotifications-cmethod-email' => 'Correo electrónico',
+	'translationnotifications-cmethod-talkpage' => 'Páxina de conversa',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Páxina de conversa noutro wiki',
+	'translationnotifications-cmethod-feed' => 'Fonte de novas',
+	'translationnotifications-cmethod-no' => 'Non contactedes comigo',
+	'translationnotifications-frequency' => 'Frecuencia de contacto',
+	'translationnotifications-freq-always' => 'Cando haxa algo novo que traducir',
+	'translationnotifications-freq-week' => 'Unha vez á semana, polo menos',
+	'translationnotifications-freq-month' => 'Unha vez ao mes, polo menos',
+	'translationnotifications-freq-weekly' => 'Boletín semanal',
+	'translationnotifications-freq-monthly' => 'Boletín mensual',
+	'translationnotifications-submit' => 'Inscribirse',
 );
 
 /** Hebrew (עברית)
