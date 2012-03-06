@@ -429,3 +429,33 @@ $messages['nl'] = array(
 	'translationnotifications-submit' => 'Registreren',
 );
 
+/** Polish (Polski)
+ * @author BeginaFelicysym
+ */
+$messages['pl'] = array(
+	'translatorsignup' => 'Rejestracja tłumacza',
+	'translationnotifications-desc' => 'Umożliwia zarejestrować tłumacza by otrzymywać powiadomienia tłumaczeń',
+	'translationnotifications-info' => 'Informacje o użytkowniku',
+	'translationnotifications-username' => 'Nazwa użytkownika:',
+	'translationnotifications-emailstatus' => 'Stan e-mail:',
+	'translationnotifications-email-confirmed' => 'Twój adres e-mail jest potwierdzony',
+	'translationnotifications-email-unconfirmed' => 'Twój adres e-mail nie jest potwierdzony. $1',
+	'translationnotifications-email-notset' => 'Nie podano adresu e-mail. Można to zrobić w [[Special:Preferences|preferencjach]].',
+	'translationnotifications-languages' => 'Języki',
+	'translationnotifications-lang' => 'Język #$1',
+	'translationnotifications-nolang' => 'Wybierz język',
+	'translationnotifications-contact' => 'Preferowane sposoby kontaktu',
+	'translationnotifications-cmethod-email' => 'E‐mail',
+	'translationnotifications-cmethod-talkpage' => 'Strona dyskusji',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Strona dyskusji na innej wiki',
+	'translationnotifications-cmethod-feed' => 'Kanały',
+	'translationnotifications-cmethod-no' => 'Nie kontaktować się ze mną',
+	'translationnotifications-frequency' => 'Częstotliwość kontaktów',
+	'translationnotifications-freq-always' => 'Gdy istnieje coś nowego do przetłumaczenia',
+	'translationnotifications-freq-week' => 'Co najwyżej raz w tygodniu',
+	'translationnotifications-freq-month' => 'Co najwyżej raz w miesiącu',
+	'translationnotifications-freq-weekly' => 'Tygodniowe streszczenie',
+	'translationnotifications-freq-monthly' => 'Miesięczne streszczenie',
+	'translationnotifications-submit' => 'Zarejestruj się',
+);
+
