@@ -46,9 +46,9 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author Amire80
  * @author Kghbln
  * @author Siebrand
- * @author Amire80
  */
 $messages['qqq'] = array(
 	'translatorsignup' => 'Special page header',
@@ -76,8 +76,6 @@ $messages['qqq'] = array(
 	'translationnotifications-freq-weekly' => 'Radio option label',
 	'translationnotifications-freq-monthly' => 'Radio option label',
 	'translationnotifications-submit' => 'Submit button text',
-
-	// Special:NotifyTranslators
 	'translationnotifications-notifytranslators' => 'The title of the Special:NotifyTranslators special page.',
 	'translationnotifications-send-notification-button' => 'A title for the submit button of the translator notification form.',
 	'translationnotifications-deadline-label' => 'A label for the deadline field, which will have a datepicker.',
@@ -160,6 +158,10 @@ $messages['de'] = array(
 	'translationnotifications-freq-weekly' => 'Wöchentlicher Bericht',
 	'translationnotifications-freq-monthly' => 'Monatlicher Bericht',
 	'translationnotifications-submit' => 'Registrieren',
+	'translationnotifications-notifytranslators' => 'Übersetzer benachrichtigen',
+	'translationnotifications-send-notification-button' => 'Benachrichtigung an die Übersetzer senden',
+	'translationnotifications-deadline-label' => 'In der Benachrichtigung anzugebenden Frist:',
+	'translationnotifications-languages-to-notify-label' => 'Die zu benachrichtigenden Sprachen (Code):',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
@@ -201,6 +203,10 @@ $messages['fr'] = array(
 	'translationnotifications-freq-weekly' => 'Résumé hebdomadaire',
 	'translationnotifications-freq-monthly' => 'Résumé mensuel',
 	'translationnotifications-submit' => 'Inscription',
+	'translationnotifications-notifytranslators' => 'Informer les traducteurs',
+	'translationnotifications-send-notification-button' => 'Envoyer une notification aux traducteurs',
+	'translationnotifications-deadline-label' => 'Date limite à indiquer dans cette notification:',
+	'translationnotifications-languages-to-notify-label' => 'Quelles langues pour notifier (code):',
 );
 
 /** Galician (Galego)
@@ -261,8 +267,6 @@ $messages['he'] = array(
 	'translationnotifications-freq-weekly' => 'סיכום שבועי',
 	'translationnotifications-freq-monthly' => 'סיכום חודשי',
 	'translationnotifications-submit' => 'רישום',
-
-	// Special:Notify translators
 	'translationnotifications-notifytranslators' => 'מכתבים למתרגמים',
 	'translationnotifications-send-notification-button' => 'שליחת מכתבים למתרגמים',
 	'translationnotifications-deadline-label' => 'תאריך סופי שיתווסף להודעה:',
@@ -297,6 +301,10 @@ $messages['hsb'] = array(
 	'translationnotifications-freq-weekly' => 'Tydźenska rozprawa',
 	'translationnotifications-freq-monthly' => 'Měsačna rozprawa',
 	'translationnotifications-submit' => 'Registrować',
+	'translationnotifications-notifytranslators' => 'Přełožowarjow informować',
+	'translationnotifications-send-notification-button' => 'Přełožowarjam zdźělenku pósłać',
+	'translationnotifications-deadline-label' => 'Termin, kotryž dyrbi so w tutej zdźělence podać:',
+	'translationnotifications-languages-to-notify-label' => 'Rěče, kotrež maja so informować (kod):',
 );
 
 /** Interlingua (Interlingua)
@@ -327,6 +335,10 @@ $messages['ia'] = array(
 	'translationnotifications-freq-weekly' => 'Digesto septimanal',
 	'translationnotifications-freq-monthly' => 'Digesto mensual',
 	'translationnotifications-submit' => 'Inscriber',
+	'translationnotifications-notifytranslators' => 'Notificar traductores',
+	'translationnotifications-send-notification-button' => 'Inviar un notification a traductores',
+	'translationnotifications-deadline-label' => 'Data limite a indicar in iste notification:',
+	'translationnotifications-languages-to-notify-label' => 'Le linguas pro notificar (codice):',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -387,6 +399,10 @@ $messages['mk'] = array(
 	'translationnotifications-freq-weekly' => 'Неделен преглед',
 	'translationnotifications-freq-monthly' => 'Месечен преглед',
 	'translationnotifications-submit' => 'Пријава',
+	'translationnotifications-notifytranslators' => 'Известување на преведувачите',
+	'translationnotifications-send-notification-button' => 'Испрати известување до преведувачите',
+	'translationnotifications-deadline-label' => 'Рок во известувањето:',
+	'translationnotifications-languages-to-notify-label' => 'Кои јазици да се известат (кодови):',
 );
 
 /** Malay (Bahasa Melayu)
