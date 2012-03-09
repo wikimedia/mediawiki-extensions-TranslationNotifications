@@ -10,6 +10,7 @@ $messages = array();
 
 /** English
  * @author Niklas Laxström
+ * @author Amire80
  */
 $messages['en'] = array(
 	'translatorsignup' => 'Translator signup',
@@ -36,11 +37,18 @@ $messages['en'] = array(
 	'translationnotifications-freq-weekly' => 'Weekly digest',
 	'translationnotifications-freq-monthly' => 'Monthly digest',
 	'translationnotifications-submit' => 'Sign up',
+
+	// Special:Notify translators
+	'translationnotifications-notifytranslators' => 'Notify translators',
+	'translationnotifications-send-notification-button' => 'Send a notification to translators',
+	'translationnotifications-deadline-label' => 'Deadline to indicate in this notification:',
+	'translationnotifications-languages-to-notify-label' => 'Which languages to notify (code):',
 );
 
 /** Message documentation (Message documentation)
  * @author Kghbln
  * @author Siebrand
+ * @author Amire80
  */
 $messages['qqq'] = array(
 	'translatorsignup' => 'Special page header',
@@ -68,6 +76,12 @@ $messages['qqq'] = array(
 	'translationnotifications-freq-weekly' => 'Radio option label',
 	'translationnotifications-freq-monthly' => 'Radio option label',
 	'translationnotifications-submit' => 'Submit button text',
+
+	// Special:NotifyTranslators
+	'translationnotifications-notifytranslators' => 'The title of the Special:NotifyTranslators special page.',
+	'translationnotifications-send-notification-button' => 'A title for the submit button of the translator notification form.',
+	'translationnotifications-deadline-label' => 'A label for the deadline field, which will have a datepicker.',
+	'translationnotifications-languages-to-notify-label' => 'A label for language codes field.',
 );
 
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
@@ -247,6 +261,12 @@ $messages['he'] = array(
 	'translationnotifications-freq-weekly' => 'סיכום שבועי',
 	'translationnotifications-freq-monthly' => 'סיכום חודשי',
 	'translationnotifications-submit' => 'רישום',
+
+	// Special:Notify translators
+	'translationnotifications-notifytranslators' => 'מכתבים למתרגמים',
+	'translationnotifications-send-notification-button' => 'שליחת מכתבים למתרגמים',
+	'translationnotifications-deadline-label' => 'תאריך סופי שיתווסף להודעה:',
+	'translationnotifications-languages-to-notify-label' => 'רשימת שפות שהמתרגמים אליהן יקבלו את ההודעה (בקודים):',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
