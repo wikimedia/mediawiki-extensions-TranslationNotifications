@@ -10,5 +10,12 @@ $specialPageAliases = array();
 
 /** English (English) */
 $specialPageAliases['en'] = array(
+	'NotifyTranslators' => array( 'NotifyTranslators' ),
 	'TranslatorSignup' => array( 'TranslatorSignup' ),
+);
+
+/** Hebrew (עברית) */
+$specialPageAliases['he'] = array(
+	'NotifyTranslators' => array( 'מכתבים_למתרגמים' ),
+	'TranslatorSignup' => array( 'רישום_מתרגמים' ),
 );

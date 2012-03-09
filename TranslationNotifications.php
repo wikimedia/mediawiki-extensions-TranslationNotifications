@@ -25,10 +25,25 @@ $wgExtensionCredits['specialpage'][] = array(
 
 $dir = dirname( __FILE__ );
 $wgSpecialPages['TranslatorSignup'] = 'SpecialTranslatorSignup';
+$wgSpecialPages['NotifyTranslators'] = 'SpecialNotifyTranslators';
 $wgSpecialPageGroups['TranslatorSignup'] = 'login';
+$wgSpecialPageGroups['NotifyTranslators'] = 'users';
 $wgExtensionMessagesFiles['TranslationNotifications'] = "$dir/TranslationNotifications.i18n.php";
 $wgExtensionMessagesFiles['TranslationNotificationsAlias'] = "$dir/TranslationNotifications.alias.php";
 $wgAutoloadClasses['SpecialTranslatorSignup'] = "$dir/SpecialTranslatorSignup.php";
+$wgAutoloadClasses['SpecialNotifyTranslators'] = "$dir/SpecialNotifyTranslators.php";
+
+$resourcePaths = array(
+	'localBasePath' => dirname( __FILE__ ),
+	'remoteExtPath' => 'TranslationNotifications'
+);
+
+$wgResourceModules['ext.translationnotifications.notifytranslators'] = array(
+	'scripts' => 'resources/ext.translationnotifications.notifytranslators.js',
+	'dependencies' => array(
+		'jquery.ui.datepicker'
+	),
+) + $resourcePaths;
 
 $wgTranslationNotificationsContactMethods = array(
 	'email' => true,
