@@ -175,6 +175,40 @@ $messages['de-formal'] = array(
 	'translationnotifications-cmethod-no' => 'Benachrichtigen Sie mich nicht',
 );
 
+/** Spanish (Español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'translatorsignup' => 'Inscripción de traductores',
+	'translationnotifications-desc' => 'Permite a los traductores registrarse para recibir notificaciones de traducción',
+	'translationnotifications-info' => 'Información de usuario',
+	'translationnotifications-username' => 'Nombre de usuario:',
+	'translationnotifications-emailstatus' => 'Estado de correo electrónico:',
+	'translationnotifications-email-confirmed' => 'Su dirección de correo electrónico está confirmada',
+	'translationnotifications-email-unconfirmed' => 'No se ha confirmado su dirección de correo electrónico. $1',
+	'translationnotifications-email-notset' => 'No ha proporcionado una dirección de correo electrónico. Puede hacerlo en sus [[Special:Preferences|preferencias]].',
+	'translationnotifications-languages' => 'Idiomas',
+	'translationnotifications-lang' => 'Idioma #$1',
+	'translationnotifications-nolang' => 'Elija un idioma',
+	'translationnotifications-contact' => 'Métodos de contactos preferidos',
+	'translationnotifications-cmethod-email' => 'Correo electrónico',
+	'translationnotifications-cmethod-talkpage' => 'Página de discusión',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Página de discusión en otro wiki',
+	'translationnotifications-cmethod-feed' => 'Fuente web',
+	'translationnotifications-cmethod-no' => 'No contacte conmigo',
+	'translationnotifications-frequency' => 'Frecuencia de contacto',
+	'translationnotifications-freq-always' => 'Cuando haya algo nuevo para traducir',
+	'translationnotifications-freq-week' => 'Más de una vez por semana',
+	'translationnotifications-freq-month' => 'Al menos una vez al mes',
+	'translationnotifications-freq-weekly' => 'Boletín semanal',
+	'translationnotifications-freq-monthly' => 'Boletín mensual',
+	'translationnotifications-submit' => 'Regístrese',
+	'translationnotifications-notifytranslators' => 'Notificar a los traductores',
+	'translationnotifications-send-notification-button' => 'Enviar una notificación a los traductores',
+	'translationnotifications-deadline-label' => 'Fecha límite a indicar en esta notificación:',
+	'translationnotifications-languages-to-notify-label' => 'Idiomas en los que notificar (código)',
+);
+
 /** French (Français)
  * @author Gomoko
  */
