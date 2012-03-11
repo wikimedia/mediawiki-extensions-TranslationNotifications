@@ -529,3 +529,37 @@ $messages['pl'] = array(
 	'translationnotifications-submit' => 'Zarejestruj się',
 );
 
+/** Swedish (Svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'translatorsignup' => 'Översättarregistrering',
+	'translationnotifications-desc' => 'Låter översättare registrera sig för översättningsmeddelanden',
+	'translationnotifications-info' => 'Användarinformation',
+	'translationnotifications-username' => 'Användarnamn:',
+	'translationnotifications-emailstatus' => 'E-poststatus:',
+	'translationnotifications-email-confirmed' => 'Din e-postadress är bekräftad',
+	'translationnotifications-email-unconfirmed' => 'Din e-postadress är inte bekräftad. $1',
+	'translationnotifications-email-notset' => 'Du har inte angivit en e-postadress. Du kan göra det i dina [[Special:Preferences|inställningar]].',
+	'translationnotifications-languages' => 'Språk',
+	'translationnotifications-lang' => 'Språk #$1',
+	'translationnotifications-nolang' => 'Välj ett språk',
+	'translationnotifications-contact' => 'Föredragna kontaktmetoder',
+	'translationnotifications-cmethod-email' => 'E-post',
+	'translationnotifications-cmethod-talkpage' => 'Diskussionssida',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Diskussionssida på annan wiki',
+	'translationnotifications-cmethod-feed' => 'Flöde',
+	'translationnotifications-cmethod-no' => 'Kontakta inte mig',
+	'translationnotifications-frequency' => 'Kontaktfrekvens',
+	'translationnotifications-freq-always' => 'När det finns någonting nytt att översätta',
+	'translationnotifications-freq-week' => 'Högst en gång i veckan',
+	'translationnotifications-freq-month' => 'Högst en gång i månaden',
+	'translationnotifications-freq-weekly' => 'Sammandrag varje vecka',
+	'translationnotifications-freq-monthly' => 'Sammandrag varje månad',
+	'translationnotifications-submit' => 'Registrera',
+	'translationnotifications-notifytranslators' => 'Meddela översättare',
+	'translationnotifications-send-notification-button' => 'Skicka ett meddelande till översättare',
+	'translationnotifications-deadline-label' => 'Tidsgränsen att ange i denna anmälan:',
+	'translationnotifications-languages-to-notify-label' => 'Vilka språk som ska meddelas (kod):',
+);
+
