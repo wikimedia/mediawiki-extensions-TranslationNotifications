@@ -42,7 +42,14 @@ $messages['en'] = array(
 	'translationnotifications-notifytranslators' => 'Notify translators',
 	'translationnotifications-send-notification-button' => 'Send a notification to translators',
 	'translationnotifications-deadline-label' => 'Deadline to indicate in this notification:',
-	'translationnotifications-languages-to-notify-label' => 'Which languages to notify (code):',
+	'translationnotifications-languages-to-notify-label' => 'Which languages to notify (comma-separated codes):',
+	'translationnotifications-priority' => 'Priority:',
+	'translationnotifications-priority-high' => 'high',
+	'translationnotifications-priority-medium' => 'medium',
+	'translationnotifications-priority-low' => 'low',
+	'translationnotifications-priority-unset' => '(unset)',
+	'translationnotifications-translatablepage-title' => 'Translatable page name:',
+	'translationnotifications-error-no-translatable-pages' => 'There are no translatable pages in this wiki.',
 );
 
 /** Message documentation (Message documentation)
@@ -80,6 +87,13 @@ $messages['qqq'] = array(
 	'translationnotifications-send-notification-button' => 'A title for the submit button of the translator notification form.',
 	'translationnotifications-deadline-label' => 'A label for the deadline field, which will have a datepicker.',
 	'translationnotifications-languages-to-notify-label' => 'A label for language codes field.',
+	'translationnotifications-priority' => 'A label for translation priority field.',
+	'translationnotifications-priority-high' => 'high (priority), an item in a dropdown box.',
+	'translationnotifications-priority-medium' => 'medium (priority), an item in a dropdown box.',
+	'translationnotifications-priority-low' => 'low (priority), an item in a dropdown box.',
+	'translationnotifications-priority-unset' => 'unset (priority), an item in a dropdown box.',
+	'translationnotifications-translatablepage-title' => 'A label for language codes field. Can be translated as "A page designated for translation, intended for translation", etc.',
+	'translationnotifications-error-no-translatable-pages' => 'An error message.',
 );
 
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
