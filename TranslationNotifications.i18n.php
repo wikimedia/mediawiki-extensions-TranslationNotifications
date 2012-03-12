@@ -271,6 +271,10 @@ $messages['gl'] = array(
 	'translationnotifications-freq-weekly' => 'Boletín semanal',
 	'translationnotifications-freq-monthly' => 'Boletín mensual',
 	'translationnotifications-submit' => 'Inscribirse',
+	'translationnotifications-notifytranslators' => 'Informar aos tradutores',
+	'translationnotifications-send-notification-button' => 'Enviar unha notificación aos tradutores',
+	'translationnotifications-deadline-label' => 'Data límite a indicar nesta notificación:',
+	'translationnotifications-languages-to-notify-label' => 'Linguas ás que enviar a notificación (código):',
 );
 
 /** Hebrew (עברית)
@@ -467,6 +471,10 @@ $messages['ms'] = array(
 	'translationnotifications-freq-weekly' => 'Ikhtisar mingguan',
 	'translationnotifications-freq-monthly' => 'Ikhtisar bulanan',
 	'translationnotifications-submit' => 'Daftar diri',
+	'translationnotifications-notifytranslators' => 'Beritahu penterjemah',
+	'translationnotifications-send-notification-button' => 'Hantar pemberitahuan kepada para penterjemah',
+	'translationnotifications-deadline-label' => 'Tarikh tutup untuk dinyatakan dalam pemberitahuan ini:',
+	'translationnotifications-languages-to-notify-label' => 'Bahasa-bahasa untuk diberitahukan (kod):',
 );
 
 /** Dutch (Nederlands)
@@ -561,5 +569,19 @@ $messages['sv'] = array(
 	'translationnotifications-send-notification-button' => 'Skicka ett meddelande till översättare',
 	'translationnotifications-deadline-label' => 'Tidsgränsen att ange i denna anmälan:',
 	'translationnotifications-languages-to-notify-label' => 'Vilka språk som ska meddelas (kod):',
+);
+
+/** Tamil (தமிழ்)
+ * @author Karthi.dr
+ */
+$messages['ta'] = array(
+	'translationnotifications-info' => 'பயனர் தகவல்',
+	'translationnotifications-username' => 'பயனர் பெயர்:',
+	'translationnotifications-languages' => 'மொழிகள்',
+	'translationnotifications-lang' => 'மொழி  #$1',
+	'translationnotifications-nolang' => 'மொழியைத் தேர்ந்தெடுக்கவும்',
+	'translationnotifications-cmethod-email' => 'மின்னஞ்சல்',
+	'translationnotifications-cmethod-talkpage' => 'உரையாடல் பக்கம்',
+	'translationnotifications-submit' => 'பதிவுசெய்',
 );
 
