@@ -58,7 +58,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 		// Translatable pages dropdown
 		$translatablePagesIDs = TranslatablePage::getTranslatablePages();
-		if ( count ( $translatablePagesIDs ) ) {
+		if ( !count ( $translatablePagesIDs ) ) {
 			return 'translationnotifications-error-no-translatable-pages';
 		}
 
