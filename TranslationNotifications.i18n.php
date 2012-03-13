@@ -55,6 +55,7 @@ $messages['en'] = array(
 /** Message documentation (Message documentation)
  * @author Amire80
  * @author Kghbln
+ * @author Raymond
  * @author Siebrand
  */
 $messages['qqq'] = array(
@@ -175,7 +176,14 @@ $messages['de'] = array(
 	'notifytranslators' => 'Übersetzer benachrichtigen',
 	'translationnotifications-send-notification-button' => 'Benachrichtigung an die Übersetzer senden',
 	'translationnotifications-deadline-label' => 'In der Benachrichtigung anzugebenden Frist:',
-	'translationnotifications-languages-to-notify-label' => 'Die zu benachrichtigenden Sprachen (Code):',
+	'translationnotifications-languages-to-notify-label' => 'Die zu benachrichtigenden Sprachen (Code, kommagetrennt):',
+	'translationnotifications-priority' => 'Priorität:',
+	'translationnotifications-priority-high' => 'hoch',
+	'translationnotifications-priority-medium' => 'mittel',
+	'translationnotifications-priority-low' => 'niedrig',
+	'translationnotifications-priority-unset' => '(nicht gesetzt)',
+	'translationnotifications-translatablepage-title' => 'Name der zu übersetzenden Seite:',
+	'translationnotifications-error-no-translatable-pages' => 'Es gibt in diesem Wiki keine zu übersetzenden Seiten.',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
@@ -187,6 +195,47 @@ $messages['de-formal'] = array(
 	'translationnotifications-email-notset' => 'Sie haben keine E-Mail-Adresse angegeben. Dies können Sie in Ihren [[Special:Preferences|Einstellungen]] tun.',
 	'translationnotifications-nolang' => 'Wählen Sie eine Sprache',
 	'translationnotifications-cmethod-no' => 'Benachrichtigen Sie mich nicht',
+);
+
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'translatorsignup' => 'Registrěrowanje pśełožowarja',
+	'translationnotifications-desc' => 'Zmóžnja registrěrowanje pśełožowarjow za pśełožowańske powěźeńki',
+	'translationnotifications-info' => 'Wužywarske informacije',
+	'translationnotifications-username' => 'Wužywarske mě:',
+	'translationnotifications-emailstatus' => 'E-mailowy status',
+	'translationnotifications-email-confirmed' => 'Twója e-mailowa adresa jo wobkšuśona',
+	'translationnotifications-email-unconfirmed' => 'Twója e-mailowa adresa njejo wobkšuśona. $1',
+	'translationnotifications-email-notset' => 'Njejsy e-mailowu adresu pódał. Móžoš to w swójich [[Special:Preferences|nastajenjach]] cyniś.',
+	'translationnotifications-languages' => 'Rěcy',
+	'translationnotifications-lang' => 'Rěc nr. $1',
+	'translationnotifications-nolang' => 'Rěc wubraś',
+	'translationnotifications-contact' => 'Preferěrowane kontaktowańske metody',
+	'translationnotifications-cmethod-email' => 'E-mail',
+	'translationnotifications-cmethod-talkpage' => 'Diskusijny bok',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Diskusijny bok na drugem wikiju',
+	'translationnotifications-cmethod-feed' => 'Kanal',
+	'translationnotifications-cmethod-no' => 'Mě njekontaktěrowaś',
+	'translationnotifications-frequency' => 'Kontaktowa cestosć',
+	'translationnotifications-freq-always' => 'Pśecej, gž jo něco nowe za pśełožowanje',
+	'translationnotifications-freq-week' => 'Maksimalnje raz na tyźeń',
+	'translationnotifications-freq-month' => 'Maksimalnje raz na mjasec',
+	'translationnotifications-freq-weekly' => 'Tyźeńska rozpšawa',
+	'translationnotifications-freq-monthly' => 'Mjasecna rozpšawa',
+	'translationnotifications-submit' => 'Registrěrowaś',
+	'notifytranslators' => 'Pśełožowarjow informěrowaś',
+	'translationnotifications-send-notification-button' => 'Pśełožowarjam powěźeńku pósłaś',
+	'translationnotifications-deadline-label' => 'Termin, kótaryž musy se w toś tej powěźeńce pódaś:',
+	'translationnotifications-languages-to-notify-label' => 'Rěcy, kótarež maju se informěrowaś (pśez komu źělone kody):',
+	'translationnotifications-priority' => 'Priorita:',
+	'translationnotifications-priority-high' => 'wusoka',
+	'translationnotifications-priority-medium' => 'srědna',
+	'translationnotifications-priority-low' => 'niska',
+	'translationnotifications-priority-unset' => '(njenastajona)',
+	'translationnotifications-translatablepage-title' => 'Mě pśełožujobnego boka:',
+	'translationnotifications-error-no-translatable-pages' => 'W toś tom wikiju žedne pśełožujobne boki njejsu.',
 );
 
 /** Spanish (Español)
@@ -220,7 +269,14 @@ $messages['es'] = array(
 	'notifytranslators' => 'Notificar a los traductores',
 	'translationnotifications-send-notification-button' => 'Enviar una notificación a los traductores',
 	'translationnotifications-deadline-label' => 'Fecha límite a indicar en esta notificación:',
-	'translationnotifications-languages-to-notify-label' => 'Idiomas en los que notificar (código)',
+	'translationnotifications-languages-to-notify-label' => 'Idiomas en los que notificar (códigos de idioma separados por comas)',
+	'translationnotifications-priority' => 'Prioridad:',
+	'translationnotifications-priority-high' => 'alta',
+	'translationnotifications-priority-medium' => 'media',
+	'translationnotifications-priority-low' => 'baja',
+	'translationnotifications-priority-unset' => '(no definida)',
+	'translationnotifications-translatablepage-title' => 'Nombre de la página traducible:',
+	'translationnotifications-error-no-translatable-pages' => 'No hay páginas traducibles en este wiki.',
 );
 
 /** French (Français)
@@ -270,7 +326,7 @@ $messages['gl'] = array(
 	'translationnotifications-email-unconfirmed' => 'O seu enderezo de correo electrónico non está confirmado. $1',
 	'translationnotifications-email-notset' => 'Non proporcionou enderezo de correo electrónico ningún. Pódeo facer nas súas [[Special:Preferences|preferencias]].',
 	'translationnotifications-languages' => 'Linguas',
-	'translationnotifications-lang' => 'Language nº$1',
+	'translationnotifications-lang' => 'Lingua nº$1',
 	'translationnotifications-nolang' => 'Escolla unha lingua',
 	'translationnotifications-contact' => 'Métodos de contacto preferidos',
 	'translationnotifications-cmethod-email' => 'Correo electrónico',
@@ -288,7 +344,14 @@ $messages['gl'] = array(
 	'notifytranslators' => 'Informar aos tradutores',
 	'translationnotifications-send-notification-button' => 'Enviar unha notificación aos tradutores',
 	'translationnotifications-deadline-label' => 'Data límite a indicar nesta notificación:',
-	'translationnotifications-languages-to-notify-label' => 'Linguas ás que enviar a notificación (código):',
+	'translationnotifications-languages-to-notify-label' => 'Linguas ás que enviar a notificación (códigos separados por comas):',
+	'translationnotifications-priority' => 'Prioridade:',
+	'translationnotifications-priority-high' => 'alta',
+	'translationnotifications-priority-medium' => 'media',
+	'translationnotifications-priority-low' => 'baixa',
+	'translationnotifications-priority-unset' => '(non definida)',
+	'translationnotifications-translatablepage-title' => 'Nome da páxina traducible:',
+	'translationnotifications-error-no-translatable-pages' => 'Non hai páxinas que se poidan traducir neste wiki.',
 );
 
 /** Hebrew (עברית)
@@ -336,7 +399,7 @@ $messages['hsb'] = array(
 	'translationnotifications-emailstatus' => 'E.mejlowy status:',
 	'translationnotifications-email-confirmed' => 'Twoja e-mejlowa adresa je so wobkrućiła',
 	'translationnotifications-email-unconfirmed' => 'Twoja e-mejlowa adresa njeje so wobkrućiła. $1',
-	'translationnotifications-email-notset' => 'Njejsy e-mejlowu adresu podał. Móžoš to w swojich [[Special:Preferences|nastajenjach]] činić.',
+	'translationnotifications-email-notset' => 'Njejsy e-mejlowu adresu podał. Móžeš to w swojich [[Special:Preferences|nastajenjach]] činić.',
 	'translationnotifications-languages' => 'Rěče',
 	'translationnotifications-lang' => 'Rěč čo. $1',
 	'translationnotifications-nolang' => 'Rěč wubrać',
@@ -356,7 +419,14 @@ $messages['hsb'] = array(
 	'notifytranslators' => 'Přełožowarjow informować',
 	'translationnotifications-send-notification-button' => 'Přełožowarjam zdźělenku pósłać',
 	'translationnotifications-deadline-label' => 'Termin, kotryž dyrbi so w tutej zdźělence podać:',
-	'translationnotifications-languages-to-notify-label' => 'Rěče, kotrež maja so informować (kod):',
+	'translationnotifications-languages-to-notify-label' => 'Rěče, kotrež maja so informować (přez komu dźělene kody):',
+	'translationnotifications-priority' => 'Priorita:',
+	'translationnotifications-priority-high' => 'wysoka',
+	'translationnotifications-priority-medium' => 'srjedźna',
+	'translationnotifications-priority-low' => 'niska',
+	'translationnotifications-priority-unset' => '(njenastajena)',
+	'translationnotifications-translatablepage-title' => 'Mjeno přełožujomneje strony:',
+	'translationnotifications-error-no-translatable-pages' => 'W tutym wikiju žane přełožujomne strony njejsu.',
 );
 
 /** Interlingua (Interlingua)
@@ -390,7 +460,14 @@ $messages['ia'] = array(
 	'notifytranslators' => 'Notificar traductores',
 	'translationnotifications-send-notification-button' => 'Inviar un notification a traductores',
 	'translationnotifications-deadline-label' => 'Data limite a indicar in iste notification:',
-	'translationnotifications-languages-to-notify-label' => 'Le linguas pro notificar (codice):',
+	'translationnotifications-languages-to-notify-label' => 'Le linguas a notificar (codices separate per commas):',
+	'translationnotifications-priority' => 'Prioritate:',
+	'translationnotifications-priority-high' => 'alte',
+	'translationnotifications-priority-medium' => 'medie',
+	'translationnotifications-priority-low' => 'basse',
+	'translationnotifications-priority-unset' => '(non definite)',
+	'translationnotifications-translatablepage-title' => 'Nomine de pagina traducibile:',
+	'translationnotifications-error-no-translatable-pages' => 'Il non ha paginas traducibile in iste wiki.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -519,6 +596,13 @@ $messages['nl'] = array(
 	'translationnotifications-freq-weekly' => 'Wekelijkse samenvatting',
 	'translationnotifications-freq-monthly' => 'Maandelijkse samenvatting',
 	'translationnotifications-submit' => 'Registreren',
+	'translationnotifications-priority' => 'Prioriteit:',
+	'translationnotifications-priority-high' => 'hoog',
+	'translationnotifications-priority-medium' => 'gemiddeld',
+	'translationnotifications-priority-low' => 'laag',
+	'translationnotifications-priority-unset' => '(niet ingesteld)',
+	'translationnotifications-translatablepage-title' => 'Naam vertaalbare pagina:',
+	'translationnotifications-error-no-translatable-pages' => "Er zijn geen vertaalbare pagina's in deze wiki.",
 );
 
 /** Polish (Polski)
