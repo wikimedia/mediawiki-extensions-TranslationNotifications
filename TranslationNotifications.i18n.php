@@ -114,15 +114,15 @@ $messages['qqq'] = array(
 	'translationnotifications-translatablepage-title' => 'A label for language codes field. Can be translated as "A page designated for translation, intended for translation", etc.',
 	'translationnotifications-error-no-translatable-pages' => 'An error message.',
 	'translationnotifications-email-subject' => 'A subject for the email sent to translators.',
-	'translationnotifications-email-body' => 'The body of the email message sent to translators.
+	'translationnotifications-email-body' => "The body of the email message sent to translators.
 
-* $1 - Translator\'s username or real name, if specified.
+* $1 - Translator's username or real name, if specified.
 * $2 - Language name.
 * $3 - Translatable page name.
 * $4 - URL.
 * $5 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
-* $7 - A custom message that can be added by the notification sender.',
+* $7 - A custom message that can be added by the notification sender.",
 	'translationnotifications-email-priority' => 'Used in {{msg-mw|translationnotifications-email-body}}',
 	'translationnotifications-email-deadline' => 'Used in {{msg-mw|translationnotifications-email-body}}',
 );
@@ -214,6 +214,24 @@ $messages['de'] = array(
 	'translationnotifications-priority-unset' => '(nicht gesetzt)',
 	'translationnotifications-translatablepage-title' => 'Name der zu übersetzenden Seite:',
 	'translationnotifications-error-no-translatable-pages' => 'Es gibt in diesem Wiki keine zu übersetzenden Seiten.',
+	'translationnotifications-email-subject' => 'Bitte übersetze die Seite $1',
+	'translationnotifications-email-body' => 'Hallo $1,
+
+du erhälst diese E-Mail-Nachricht, da du dich als Übersetzer(in) für $2 auf {{SITENAME}} registriert hast.
+
+An folgender Stelle ist eine neue Seite zum Übersetzen vorhanden: $3.
+Übersetz sie bitte, nachdem du auf den folgenden Link geklickt hast:
+$4
+
+$5
+$6
+
+$7
+
+Vielen Dank,
+die Mitarbeiter von {{SITENAME}}',
+	'translationnotifications-email-priority' => 'Die Übersetzungspriorität dieser Seite ist $1.',
+	'translationnotifications-email-deadline' => 'Die Frist zur Übersetzung dieser Seite läuft bis zum $1.',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
@@ -340,7 +358,14 @@ $messages['fr'] = array(
 	'notifytranslators' => 'Informer les traducteurs',
 	'translationnotifications-send-notification-button' => 'Envoyer une notification aux traducteurs',
 	'translationnotifications-deadline-label' => 'Date limite à indiquer dans cette notification:',
-	'translationnotifications-languages-to-notify-label' => 'Quelles langues pour notifier (code):',
+	'translationnotifications-languages-to-notify-label' => 'Quelles langues pour notifier (codes séparés par des virgules):',
+	'translationnotifications-priority' => 'Priorité:',
+	'translationnotifications-priority-high' => 'haute',
+	'translationnotifications-priority-medium' => 'moyenne',
+	'translationnotifications-priority-low' => 'basse',
+	'translationnotifications-priority-unset' => '(non défini)',
+	'translationnotifications-translatablepage-title' => 'Nom de la page à traduire:',
+	'translationnotifications-error-no-translatable-pages' => "Il n'y a aucune page à traduire dans ce wiki.",
 );
 
 /** Galician (Galego)
@@ -415,7 +440,14 @@ $messages['he'] = array(
 	'notifytranslators' => 'מכתבים למתרגמים',
 	'translationnotifications-send-notification-button' => 'שליחת מכתבים למתרגמים',
 	'translationnotifications-deadline-label' => 'תאריך סופי שיתווסף להודעה:',
-	'translationnotifications-languages-to-notify-label' => 'רשימת שפות שהמתרגמים אליהן יקבלו את ההודעה (בקודים):',
+	'translationnotifications-languages-to-notify-label' => 'רשימת שפות שהמתרגמים אליהן יקבלו את ההודעה (קודים מופרדים בפסיקים):',
+	'translationnotifications-priority' => 'עדיפות:',
+	'translationnotifications-priority-high' => 'גבוהה',
+	'translationnotifications-priority-medium' => 'בינונית',
+	'translationnotifications-priority-low' => 'נמוכה',
+	'translationnotifications-priority-unset' => '(בלתי־מוגדרת)',
+	'translationnotifications-translatablepage-title' => 'שם הדף לתרגום:',
+	'translationnotifications-error-no-translatable-pages' => 'אין דפים לתרגום בוויקי הזה.',
 	'translationnotifications-email-subject' => 'נא לתרגם את הדף $1',
 	'translationnotifications-email-body' => 'שלום $1,
 
@@ -578,7 +610,14 @@ $messages['mk'] = array(
 	'notifytranslators' => 'Известување на преведувачите',
 	'translationnotifications-send-notification-button' => 'Испрати известување до преведувачите',
 	'translationnotifications-deadline-label' => 'Рок во известувањето:',
-	'translationnotifications-languages-to-notify-label' => 'Кои јазици да се известат (кодови):',
+	'translationnotifications-languages-to-notify-label' => 'Кои јазици да се известат (кодови одделени со запирка):',
+	'translationnotifications-priority' => 'Приоритет:',
+	'translationnotifications-priority-high' => 'висок',
+	'translationnotifications-priority-medium' => 'среден',
+	'translationnotifications-priority-low' => 'низок',
+	'translationnotifications-priority-unset' => '(незададен)',
+	'translationnotifications-translatablepage-title' => 'Име на преводливата страница:',
+	'translationnotifications-error-no-translatable-pages' => 'На ова вики нема преводливи страници.',
 );
 
 /** Malay (Bahasa Melayu)
@@ -643,6 +682,10 @@ $messages['nl'] = array(
 	'translationnotifications-freq-weekly' => 'Wekelijkse samenvatting',
 	'translationnotifications-freq-monthly' => 'Maandelijkse samenvatting',
 	'translationnotifications-submit' => 'Registreren',
+	'notifytranslators' => 'Meldingen voor vertalers',
+	'translationnotifications-send-notification-button' => 'Stuur een bericht naar vertalers',
+	'translationnotifications-deadline-label' => 'Deadline voor deze melding:',
+	'translationnotifications-languages-to-notify-label' => 'Voor welke talen moet een melding gemaakt worden (komma gescheiden taalcodes):',
 	'translationnotifications-priority' => 'Prioriteit:',
 	'translationnotifications-priority-high' => 'hoog',
 	'translationnotifications-priority-medium' => 'gemiddeld',
