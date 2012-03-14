@@ -17,7 +17,11 @@
  */
 
 class SpecialNotifyTranslators extends SpecialPage {
-	protected static $right = 'translate-manage';
+	private static $right = 'translate-manage';
+	private static $notificationText = '';
+	private static $translatablePageTitle = '';
+	private static $deadlineDate = '';
+	private static $priority = '';
 
 	public function __construct() {
 		parent::__construct( 'NotifyTranslators' );
@@ -43,7 +47,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$htmlForm->setId( 'notifytranslators-form' );
 		$htmlForm->setSubmitText( $context->msg( 'translationnotifications-send-notification-button' )->text() );
 		$htmlForm->setSubmitID( 'translationnotifications-send-notification-button' );
-		$htmlForm->setSubmitCallback( array( $this, 'formSubmit' ) );
+		$htmlForm->setSubmitCallback( array( $this, 'submitNotifyTranslatorsForm' ) );
 		$htmlForm->show();
 
 		$wgOut->addModules( 'ext.translationnotifications.notifytranslators' );
@@ -80,6 +84,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'rows' => 20,
 			'cols' => 80,
 			'label-message' => 'translationnotifications-languages-to-notify-label',
+			'required' => true,
 		);
 
 		// Priotity dropdown
@@ -114,5 +119,91 @@ class SpecialNotifyTranslators extends SpecialPage {
 		);
 
 		return $m;
+	}
+
+	/**
+	 * Callback for the submit button.
+	 *
+	 * TODO: document
+	 */
+	public function submitNotifyTranslatorsForm( $formData, $form ) {
+		self::$translatablePageTitle = Title::newFromID( $formData['TranslatablePage'] )->getText();
+		self::$notificationText = $formData['NotificationText'];
+		self::$priority = $formData['Priority'];
+		self::$deadlineDate = $formData['DeadlineDate'];
+
+		$languagesToNotify = explode( ',', $formData['LanguagesToNotify'] );
+		$langPropertyPrefix = 'translationnotifications-lang-';
+
+		$dbr = wfGetDB( DB_SLAVE );
+		$propertyLikePattern = $dbr->buildLike( $langPropertyPrefix, $dbr->anyString() );
+		$translators = $dbr->select(
+			'user_properties',
+			'up_user',
+			array(
+				"up_property $propertyLikePattern",
+				'up_value' => $languagesToNotify,
+			),
+			__METHOD__,
+			'DISTINCT'
+		);
+
+		foreach ( $translators as $row ) {
+			$this->sendTranslationNotificationEmail( $row->up_user );
+		}
+
+		self::$translatablePageTitle = '';
+		self::$notificationText = '';
+		self::$deadlineDate = '';
+		self::$priority = '';
+	}
+
+	private function sendTranslationNotificationEmail( $userID ) {
+		$user = User::newFromID( $userID );
+
+		$dbr = wfGetDB( DB_SLAVE );
+		$userFirstLanguageRow = $dbr->select(
+			'user_properties',
+			'up_value',
+			array(
+				'up_user' => $userID,
+				'up_property' => 'translationnotifications-lang-1'
+			),
+			__METHOD__
+		)->fetchRow();
+		$languageCode = $userFirstLanguageRow['up_value'];
+		$userFirstLanguage = Language::factory( $languageCode );
+
+		$emailSubject = wfMessage(
+			'translationnotifications-email-subject',
+			self::$translatablePageTitle
+		)->inLanguage( $userFirstLanguage )->text();
+
+		$userName = $user->getRealName();
+		if ( $userName === '' ) {
+			$userName = $user->getName();
+		}
+		$languageName = $userFirstLanguage->getLanguageName();
+		$priorityClause = ( self::$priority === 'unset' )
+			? ''
+			: wfMessage( 'translationnotifications-email-priority', self::$priority );
+		$deadlineClause = ( self::$deadlineDate === '' )
+			? ''
+			: wfMessage( 'translationnotifications-email-deadline', self::$deadlineDate );
+		// XXX
+		$translationURL = 'title=Special:Translate&taction=translate&group=page-' . self::$translatablePageTitle
+			. '&language=' . $languageCode
+			. '&task=view';
+
+		$emailBody = wfMessage(
+			'translationnotifications-email-body',
+			$userName,
+			$languageName,
+			self::$translatablePageTitle,
+			$translationURL,
+			$priorityClause,
+			$deadlineClause,
+			self::$notificationText
+		)->inLanguage( $userFirstLanguage )->text();;
 	}
 }

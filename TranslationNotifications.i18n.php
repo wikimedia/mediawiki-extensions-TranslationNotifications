@@ -50,6 +50,24 @@ $messages['en'] = array(
 	'translationnotifications-priority-unset' => '(unset)',
 	'translationnotifications-translatablepage-title' => 'Translatable page name:',
 	'translationnotifications-error-no-translatable-pages' => 'There are no translatable pages in this wiki.',
+	'translationnotifications-email-subject' => 'Please translate the page $1',
+	'translationnotifications-email-body' => 'Hello $1,
+
+You are receiving this email because you signed up as a translator to $2 on {{SITENAME}}.
+
+There is a new page to translate there: $3.
+Please translate it by clicking the following link:
+$4
+
+$5
+$6
+
+$7
+
+Thank you!
+{{SITENAME}} staff',
+	'translationnotifications-email-priority' => 'The priority of this page is $1.',
+	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
 );
 
 /** Message documentation (Message documentation)
@@ -95,6 +113,18 @@ $messages['qqq'] = array(
 	'translationnotifications-priority-unset' => 'unset (priority), an item in a dropdown box.',
 	'translationnotifications-translatablepage-title' => 'A label for language codes field. Can be translated as "A page designated for translation, intended for translation", etc.',
 	'translationnotifications-error-no-translatable-pages' => 'An error message.',
+	'translationnotifications-email-subject' => 'A subject for the email sent to translators.',
+	'translationnotifications-email-body' => 'The body of the email message sent to translators.
+
+* $1 - Translator\'s username or real name, if specified.
+* $2 - Language name.
+* $3 - Translatable page name.
+* $4 - URL.
+* $5 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
+* $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
+* $7 - A custom message that can be added by the notification sender.',
+	'translationnotifications-email-priority' => 'Used in {{msg-mw|translationnotifications-email-body}}',
+	'translationnotifications-email-deadline' => 'Used in {{msg-mw|translationnotifications-email-body}}',
 );
 
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
@@ -355,7 +385,7 @@ $messages['gl'] = array(
 );
 
 /** Hebrew (עברית)
- * @author amire80
+ * @author Amire80
  */
 $messages['he'] = array(
 	'translatorsignup' => 'רישום מתרגמים',
@@ -386,6 +416,23 @@ $messages['he'] = array(
 	'translationnotifications-send-notification-button' => 'שליחת מכתבים למתרגמים',
 	'translationnotifications-deadline-label' => 'תאריך סופי שיתווסף להודעה:',
 	'translationnotifications-languages-to-notify-label' => 'רשימת שפות שהמתרגמים אליהן יקבלו את ההודעה (בקודים):',
+	'translationnotifications-email-subject' => 'נא לתרגם את הדף $1',
+	'translationnotifications-email-body' => 'שלום $1,
+
+קיבלת את המכתב הזה כי נרשמת בתור מתרגם ל$2 באתר {{SITENAME}}.
+
+יש שם דף חדש שצריך לתרגם: $3.
+אפשר לתרגם אותו על־ידי לחיצה על הקישור הבא:
+$4
+
+$5
+$6
+$7
+
+תודה!
+צוות {{SITENAME}}',
+	'translationnotifications-email-priority' => 'העדיפות של הדף הזה: $1.',
+	'translationnotifications-email-deadline' => 'התאריך הסופי לתרגום הדף הזה הוא $1.',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
