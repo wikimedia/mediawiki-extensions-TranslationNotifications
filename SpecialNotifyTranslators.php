@@ -183,7 +183,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		if ( $userName === '' ) {
 			$userName = $user->getName();
 		}
-		$languageName = $userFirstLanguage->getLanguageName();
+		$languageName = $userFirstLanguage->fetchLanguageName( $languageCode );
 		$priorityClause = ( self::$priority === 'unset' )
 			? ''
 			: wfMessage( 'translationnotifications-email-priority', self::$priority );
@@ -204,6 +204,13 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$priorityClause,
 			$deadlineClause,
 			self::$notificationText
-		)->inLanguage( $userFirstLanguage )->text();;
+		)->inLanguage( $userFirstLanguage )->text();
+
+		global $wgUser;
+		$emailFrom = new MailAddress( $wgUser );
+		$emailTo = new MailAddress( $user );
+
+		return UserMailer::send( $emailTo, $emailFrom, $emailSubject, $emailBody );
 	}
 }
+
