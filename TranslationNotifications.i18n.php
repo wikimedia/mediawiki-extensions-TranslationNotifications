@@ -127,6 +127,14 @@ $messages['qqq'] = array(
 	'translationnotifications-email-deadline' => 'Used in {{msg-mw|translationnotifications-email-body}}',
 );
 
+/** Ṫuroyo (Ṫuroyo)
+ * @author Ariyo
+ */
+$messages['tru'] = array(
+	'translationnotifications-languages' => 'Leşone',
+	'translationnotifications-lang' => 'Leşono $1',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
@@ -217,10 +225,10 @@ $messages['de'] = array(
 	'translationnotifications-email-subject' => 'Bitte übersetze die Seite $1',
 	'translationnotifications-email-body' => 'Hallo $1,
 
-du erhälst diese E-Mail-Nachricht, da du dich als Übersetzer(in) für $2 auf {{SITENAME}} registriert hast.
+du erhältst diese E-Mail-Nachricht, da du dich als Übersetzer(in) für $2 auf {{SITENAME}} registriert hast.
 
 An folgender Stelle ist eine neue Seite zum Übersetzen vorhanden: $3.
-Übersetz sie bitte, nachdem du auf den folgenden Link geklickt hast:
+Übersetze die Seite bitte, nachdem du auf den folgenden Link geklickt hast:
 $4
 
 $5
@@ -243,6 +251,22 @@ $messages['de-formal'] = array(
 	'translationnotifications-email-notset' => 'Sie haben keine E-Mail-Adresse angegeben. Dies können Sie in Ihren [[Special:Preferences|Einstellungen]] tun.',
 	'translationnotifications-nolang' => 'Wählen Sie eine Sprache',
 	'translationnotifications-cmethod-no' => 'Benachrichtigen Sie mich nicht',
+	'translationnotifications-email-subject' => 'Bitte übersetzen Sie die Seite $1',
+	'translationnotifications-email-body' => 'Hallo $1,
+
+Sie erhalten diese E-Mail-Nachricht, da Sie sich als Übersetzer(in) für $2 auf {{SITENAME}} registriert haben.
+
+An folgender Stelle ist eine neue Seite zum Übersetzen vorhanden: $3.
+Übersetzen Sie bitte diese Seite, nachdem Sie auf den folgenden Link geklickt haben:
+$4
+
+$5
+$6
+
+$7
+
+Vielen Dank,
+die Mitarbeiter von {{SITENAME}}',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -284,6 +308,24 @@ $messages['dsb'] = array(
 	'translationnotifications-priority-unset' => '(njenastajona)',
 	'translationnotifications-translatablepage-title' => 'Mě pśełožujobnego boka:',
 	'translationnotifications-error-no-translatable-pages' => 'W toś tom wikiju žedne pśełožujobne boki njejsu.',
+	'translationnotifications-email-subject' => 'Pšosym pśełož bok $1',
+	'translationnotifications-email-body' => 'Witaj $1,
+
+Dostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował.
+
+Dajo nowy bok, kótaryž musy se pśełožowaś: $3.
+Pšosym pśełož jen, z tym až kliknjoš na slědujucy wótkaz:
+$4
+
+$5
+$6
+
+$7
+
+Wjeliki źěk!
+Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
+	'translationnotifications-email-priority' => 'Priorita toś togo boka jo $1.',
+	'translationnotifications-email-deadline' => 'Termin za pśełožowanje toś togo boka jo $1.',
 );
 
 /** Spanish (Español)
@@ -325,6 +367,23 @@ $messages['es'] = array(
 	'translationnotifications-priority-unset' => '(no definida)',
 	'translationnotifications-translatablepage-title' => 'Nombre de la página traducible:',
 	'translationnotifications-error-no-translatable-pages' => 'No hay páginas traducibles en este wiki.',
+	'translationnotifications-email-subject' => 'Por favor traduzca la página $1',
+	'translationnotifications-email-body' => 'Hola  $1 ,
+
+Está recibiendo este mensaje porque se inscribió como traductor al idioma  $2  de {{SITENAME}}.
+
+Hay una nueva página para traducir:  $3.
+Por favor tradúzcala haciendo clic en el vínculo siguiente:
+$4
+
+$5
+$6
+
+$7
+¡Gracias!
+El equipo de {{SITENAME}}',
+	'translationnotifications-email-priority' => 'La prioridad de esta página es  $1.',
+	'translationnotifications-email-deadline' => 'La fecha límite para la traducción de esta página es  $1.',
 );
 
 /** French (Français)
@@ -366,6 +425,24 @@ $messages['fr'] = array(
 	'translationnotifications-priority-unset' => '(non défini)',
 	'translationnotifications-translatablepage-title' => 'Nom de la page à traduire:',
 	'translationnotifications-error-no-translatable-pages' => "Il n'y a aucune page à traduire dans ce wiki.",
+	'translationnotifications-email-subject' => 'Veuillez traduire la page $1',
+	'translationnotifications-email-body' => "Bonjour, $1
+
+Vous avez reçu ce courriel parce que vous vous êtes inscrit comme traducteur de $2 sur {{SITENAME}}.
+
+Il y a une nouvelle page à traduire ici: $3.
+Veuillez la traduire en cliquant sur le lien suivant:
+$4
+
+$5
+$6
+
+$7
+
+Merci!
+L'équipe de {{SITENAME}}",
+	'translationnotifications-email-priority' => 'La priorité de cette page est $1.',
+	'translationnotifications-email-deadline' => 'La date limite pour traduire cette page est $1.',
 );
 
 /** Galician (Galego)
@@ -506,6 +583,24 @@ $messages['hsb'] = array(
 	'translationnotifications-priority-unset' => '(njenastajena)',
 	'translationnotifications-translatablepage-title' => 'Mjeno přełožujomneje strony:',
 	'translationnotifications-error-no-translatable-pages' => 'W tutym wikiju žane přełožujomne strony njejsu.',
+	'translationnotifications-email-subject' => 'Prošu přełož stronu $1',
+	'translationnotifications-email-body' => 'Witaj $1,
+
+Dóstawaš tutu e-mejl, dokelž sy so jako přełožowar za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował.
+
+Je nowa strona, kotraž dyrbi so přełožować: $3.
+Prošu přełož ju kliknjo na slědowacy wotkaz:
+$4
+
+$5
+$6
+
+$7
+
+Wulki dźak!
+Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
+	'translationnotifications-email-priority' => 'Priorita tuteje strony je $1.',
+	'translationnotifications-email-deadline' => 'Termin za přełožowanje tuteje strony je $1.',
 );
 
 /** Interlingua (Interlingua)
@@ -547,6 +642,24 @@ $messages['ia'] = array(
 	'translationnotifications-priority-unset' => '(non definite)',
 	'translationnotifications-translatablepage-title' => 'Nomine de pagina traducibile:',
 	'translationnotifications-error-no-translatable-pages' => 'Il non ha paginas traducibile in iste wiki.',
+	'translationnotifications-email-subject' => 'Per favor traduce le pagina $1',
+	'translationnotifications-email-body' => 'Salute $1,
+
+Tu recipe iste message perque tu sta inscribite como traductor in $2 in {{SITENAME}}.
+
+Il ha un nove pagina a traducer hic: $3.
+Per favor traduce lo per cliccar sur le sequente ligamine:
+$4
+
+$5
+$6
+
+$7
+
+Gratias!
+Le personal de {{SITENAME}}',
+	'translationnotifications-email-priority' => 'Le prioritate de iste pagina es $1.',
+	'translationnotifications-email-deadline' => 'Le data limite pro traducer iste pagina es $1.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -618,6 +731,24 @@ $messages['mk'] = array(
 	'translationnotifications-priority-unset' => '(незададен)',
 	'translationnotifications-translatablepage-title' => 'Име на преводливата страница:',
 	'translationnotifications-error-no-translatable-pages' => 'На ова вики нема преводливи страници.',
+	'translationnotifications-email-subject' => 'Преведете ја пораката $1',
+	'translationnotifications-email-body' => 'Здраво $1,
+
+Писмово го примате бидејќи се пријавивте за преведувач на $2 на {{SITENAME}}.
+
+Има нова страница што треба да се преведе: $3.
+Преведете ја на следнава врска:
+$4
+
+$5
+$6
+
+$7
+
+Ви благодариме!
+Персоналот на {{SITENAME}}',
+	'translationnotifications-email-priority' => 'Приоритетот на оваа страница е $1.',
+	'translationnotifications-email-deadline' => 'Крајниот рок за преведување на оваа страница е $1.',
 );
 
 /** Malay (Bahasa Melayu)
