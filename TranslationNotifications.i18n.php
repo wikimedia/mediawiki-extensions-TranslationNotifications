@@ -786,6 +786,7 @@ $messages['ms'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author SPQRobin
  * @author Siebrand
  */
 $messages['nl'] = array(
@@ -824,6 +825,7 @@ $messages['nl'] = array(
 	'translationnotifications-priority-unset' => '(niet ingesteld)',
 	'translationnotifications-translatablepage-title' => 'Naam vertaalbare pagina:',
 	'translationnotifications-error-no-translatable-pages' => "Er zijn geen vertaalbare pagina's in deze wiki.",
+	'translationnotifications-email-priority' => 'De prioriteit van deze pagina is $1.',
 );
 
 /** Polish (Polski)
