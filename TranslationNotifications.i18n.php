@@ -484,6 +484,24 @@ $messages['gl'] = array(
 	'translationnotifications-priority-unset' => '(non definida)',
 	'translationnotifications-translatablepage-title' => 'Nome da páxina traducible:',
 	'translationnotifications-error-no-translatable-pages' => 'Non hai páxinas que se poidan traducir neste wiki.',
+	'translationnotifications-email-subject' => 'Por favor, traduza a páxina "$1"',
+	'translationnotifications-email-body' => 'Boas, $1:
+
+Recibiu este correo electrónico porque está inscrito como tradutor ao $2 en {{SITENAME}}.
+
+Hai unha nova páxina que traducir alí: $3.
+Tradúzaa premendo na seguinte ligazón:
+$4
+
+$5
+$6
+
+$7
+
+Grazas!
+O equipo de {{SITENAME}}',
+	'translationnotifications-email-priority' => 'A prioridade desta páxina é $1.',
+	'translationnotifications-email-deadline' => 'A data límite para traducir a páxina é $1.',
 );
 
 /** Hebrew (עברית)
