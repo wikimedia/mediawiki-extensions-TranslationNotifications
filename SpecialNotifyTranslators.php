@@ -17,11 +17,11 @@
  */
 
 class SpecialNotifyTranslators extends SpecialPage {
-	private static $right = 'translate-manage';
-	private static $notificationText = '';
-	private static $translatablePageTitle = '';
-	private static $deadlineDate = '';
-	private static $priority = '';
+	public static $right = 'translate-manage';
+	public static $notificationText = '';
+	public static $translatablePageTitle = '';
+	public static $deadlineDate = '';
+	public static $priority = '';
 
 	public function __construct() {
 		parent::__construct( 'NotifyTranslators' );
@@ -35,7 +35,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			throw new PermissionsError( self::$right );
 		}
 
-		$htmlFormDataModel = $this->getDataModel();
+		$htmlFormDataModel = $this->getFormFields();
 
 		if ( !is_array( $htmlFormDataModel ) ) {
 			$wgOut->addWikiMsg( $htmlFormDataModel );
@@ -43,7 +43,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		}
 
 		$context = $this->getContext();
-		$htmlForm = new HtmlForm( $this->getDataModel(), $context, 'translationnotifications' );
+		$htmlForm = new HtmlForm( $this->getFormFields(), $context, 'translationnotifications' );
 		$htmlForm->setId( 'notifytranslators-form' );
 		$htmlForm->setSubmitText( $context->msg( 'translationnotifications-send-notification-button' )->text() );
 		$htmlForm->setSubmitID( 'translationnotifications-send-notification-button' );
@@ -58,7 +58,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 *
 	 * @return array or string with an error message key in case of error
 	 */
-	private function getDataModel() {
+	private function getFormFields() {
 
 		// Translatable pages dropdown
 		$translatablePagesIDs = TranslatablePage::getTranslatablePages();
@@ -71,7 +71,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$translatablePagesOptions[Title::newFromID( $translatablePagesID )->getText()] = $translatablePagesID;
 		}
 
-		$m['TranslatablePage'] = array(
+		$formFields = array();
+
+		$formFields['TranslatablePage'] = array(
 			'type' => 'select',
 			'label-message' => array( 'translationnotifications-translatablepage-title' ),
 			'options' => $translatablePagesOptions,
@@ -79,7 +81,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		);
 
 		// Languages to notify input box
-		$m['LanguagesToNotify'] = array(
+		$formFields['LanguagesToNotify'] = array(
 			'type' => 'text',
 			'rows' => 20,
 			'cols' => 80,
@@ -96,7 +98,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$priorityOptions[$priorityMessage] = $priority;
 		}
 
-		$m['Priority'] = array(
+		$formFields['Priority'] = array(
 			'type' => 'select',
 			'label-message' => array( 'translationnotifications-priority' ),
 			'options' => $priorityOptions,
@@ -104,21 +106,21 @@ class SpecialNotifyTranslators extends SpecialPage {
 		);
 
 		// Deadline date input box with datepicker
-		$m['DeadlineDate'] = array(
+		$formFields['DeadlineDate'] = array(
 			'type' => 'text',
 			'size' => 20,
 			'label-message' => 'translationnotifications-deadline-label',
 		);
 
 		// Custom text
-		$m['NotificationText'] = array(
+		$formFields['NotificationText'] = array(
 			'type' => 'textarea',
 			'rows' => 20,
 			'cols' => 80,
 			'label-message' => 'emailmessage',
 		);
 
-		return $m;
+		return $formFields;
 	}
 
 	/**
@@ -127,6 +129,8 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * TODO: document
 	 */
 	public function submitNotifyTranslatorsForm( $formData, $form ) {
+		global $wgUser;
+
 		self::$translatablePageTitle = Title::newFromID( $formData['TranslatablePage'] )->getText();
 		self::$notificationText = $formData['NotificationText'];
 		self::$priority = $formData['Priority'];
@@ -148,9 +152,30 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'DISTINCT'
 		);
 
+		$sentSuccess = 0;
+		$sentFail = 0;
 		foreach ( $translators as $row ) {
-			$this->sendTranslationNotificationEmail( $row->up_user );
+			$status = $this->sendTranslationNotificationEmail( $row->up_user );
+			if ( $status->isGood() ) {
+				$sentSuccess++;
+			} else {
+				$sentFail++;
+			}
 		}
+
+		$logger = new LogPage( 'notifytranslators' );
+		$logParams = array(
+			$formData['LanguagesToNotify'],
+			$sentSuccess,
+			$sentFail,
+		);
+		$logger->addEntry(
+			'sent',
+			Title::newFromText( self::$translatablePageTitle ),
+			'', // No comments
+			$logParams,
+			$wgUser
+		);
 
 		self::$translatablePageTitle = '';
 		self::$notificationText = '';

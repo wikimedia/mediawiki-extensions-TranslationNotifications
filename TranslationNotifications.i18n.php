@@ -68,6 +68,7 @@ Thank you!
 {{SITENAME}} staff',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
 	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3 to languages $4 with deadline $5, with $6 priority, to {{PLURAL:$7|one recipient|$7 recipients}} successfully, to {{PLURAL:$8|one recipient|$8 recipients}} unsuccessfully',
 );
 
 /** Message documentation (Message documentation)
@@ -125,6 +126,15 @@ $messages['qqq'] = array(
 * $7 - A custom message that can be added by the notification sender.",
 	'translationnotifications-email-priority' => 'Used in {{msg-mw|translationnotifications-email-body}}',
 	'translationnotifications-email-deadline' => 'Used in {{msg-mw|translationnotifications-email-body}}',
+	'logentry-translationnotifications-sent' => '{{logentry}}
+* $1 - username
+* $2 - username for gender
+* $3 - translatable page title
+* $4 - languages list
+* $5 - deadline
+* $6 - priority
+* $7 - number of recipients to whom the notification was sent successfully
+* $8 - number of recipients to whom sending the notification failed',
 );
 
 /** Ṫuroyo (Ṫuroyo)

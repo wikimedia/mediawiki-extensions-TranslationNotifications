@@ -32,11 +32,22 @@ $wgExtensionMessagesFiles['TranslationNotifications'] = "$dir/TranslationNotific
 $wgExtensionMessagesFiles['TranslationNotificationsAlias'] = "$dir/TranslationNotifications.alias.php";
 $wgAutoloadClasses['SpecialTranslatorSignup'] = "$dir/SpecialTranslatorSignup.php";
 $wgAutoloadClasses['SpecialNotifyTranslators'] = "$dir/SpecialNotifyTranslators.php";
+$wgAutoloadClasses['TranslationNotificationsHooks'] = "$dir/TranslationNotificationsHooks.php";
 
 $resourcePaths = array(
 	'localBasePath' => dirname( __FILE__ ),
 	'remoteExtPath' => 'TranslationNotifications'
 );
+
+// For language list autocompletion
+$wgResourceModules['ext.translate.special.pagetranslation'] = array(
+	'scripts' => '../Translate/resources/ext.translate.special.pagetranslation.js',
+	'styles' => '../Translate/resources/ext.translate.special.pagetranslation.css',
+	'dependencies' => array(
+		'jquery.ui.autocomplete',
+	),
+	'position' => 'top',
+) + $resourcePaths;
 
 $wgResourceModules['ext.translationnotifications.notifytranslators'] = array(
 	'scripts' => 'resources/ext.translationnotifications.notifytranslators.js',
@@ -52,3 +63,6 @@ $wgTranslationNotificationsContactMethods = array(
 	'feed' => false,
 	'no' => true,
 );
+
+$wgLogTypes[] = 'notifytranslators';
+$wgLogActionsHandlers['notifytranslators/sent'] = 'TranslationNotificationsHooks::formatTranslationNotificationLogEntry';
