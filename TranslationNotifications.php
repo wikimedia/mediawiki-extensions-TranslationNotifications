@@ -39,20 +39,11 @@ $resourcePaths = array(
 	'remoteExtPath' => 'TranslationNotifications'
 );
 
-// For language list autocompletion
-$wgResourceModules['ext.translate.special.pagetranslation'] = array(
-	'scripts' => '../Translate/resources/ext.translate.special.pagetranslation.js',
-	'styles' => '../Translate/resources/ext.translate.special.pagetranslation.css',
-	'dependencies' => array(
-		'jquery.ui.autocomplete',
-	),
-	'position' => 'top',
-) + $resourcePaths;
-
 $wgResourceModules['ext.translationnotifications.notifytranslators'] = array(
 	'scripts' => 'resources/ext.translationnotifications.notifytranslators.js',
 	'dependencies' => array(
-		'jquery.ui.datepicker'
+		'jquery.ui.datepicker',
+		'ext.translate.multiselectautocomplete',
 	),
 ) + $resourcePaths;
 

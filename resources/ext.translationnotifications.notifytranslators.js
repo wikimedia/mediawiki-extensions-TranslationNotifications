@@ -29,4 +29,6 @@
 			}
 		} );
 	} );
+
+	$( "#wpUserLanguage" ).multiselectautocomplete( { inputbox : '#mw-input-wpLanguagesToNotify' } );
 } )( jQuery );

@@ -28,7 +28,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	}
 
 	public function execute( $parameters ) {
-		global $wgUser, $wgOut;
+		global $wgUser, $wgOut, $wgContLang, $wgLang;
 		$this->setHeaders();
 
 		if ( !$wgUser->isallowed( self::$right ) ) {
@@ -49,6 +49,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$htmlForm->setSubmitID( 'translationnotifications-send-notification-button' );
 		$htmlForm->setSubmitCallback( array( $this, 'submitNotifyTranslatorsForm' ) );
 		$htmlForm->show();
+
+		// Dummy dropdown, will be invisible. Used as data source for language name autocompletion.
+		$languageSelector = Xml::languageSelector( $wgContLang->getCode(), false, $wgLang->getCode() );
+		$wgOut->addHtml( $languageSelector[1] );
 
 		$wgOut->addModules( 'ext.translationnotifications.notifytranslators' );
 	}
