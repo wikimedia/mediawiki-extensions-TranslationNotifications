@@ -69,6 +69,9 @@ Thank you!
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
 	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3 to languages $4 with deadline $5, with $6 priority, to {{PLURAL:$7|one recipient|$7 recipients}} successfully, to {{PLURAL:$8|one recipient|$8 recipients}} unsuccessfully',
+	'log-name-notifytranslators' => 'Translation notifications',
+	'translationnotifications-sent-title' => 'Translation notification sent',
+	'translationnotifications-sent-body' => 'Translation notification was sent.',
 );
 
 /** Message documentation (Message documentation)
@@ -135,6 +138,9 @@ $messages['qqq'] = array(
 * $6 - priority
 * $7 - number of recipients to whom the notification was sent successfully
 * $8 - number of recipients to whom sending the notification failed',
+	'translationnotifications-sent-title' => 'The title of the page shown after the notification is sent.
+Similar to {{msg-mw|emailsent}}.',
+	'log-name-notifytranslators' => 'Log page title.',
 );
 
 /** Ṫuroyo (Ṫuroyo)
