@@ -138,9 +138,9 @@ $messages['qqq'] = array(
 * $6 - priority
 * $7 - number of recipients to whom the notification was sent successfully
 * $8 - number of recipients to whom sending the notification failed',
+	'log-name-notifytranslators' => 'Log page title.',
 	'translationnotifications-sent-title' => 'The title of the page shown after the notification is sent.
 Similar to {{msg-mw|emailsent}}.',
-	'log-name-notifytranslators' => 'Log page title.',
 );
 
 /** Ṫuroyo (Ṫuroyo)
@@ -256,6 +256,7 @@ Vielen Dank,
 die Mitarbeiter von {{SITENAME}}',
 	'translationnotifications-email-priority' => 'Die Übersetzungspriorität dieser Seite ist $1.',
 	'translationnotifications-email-deadline' => 'Die Frist zur Übersetzung dieser Seite läuft bis zum $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sandte}} eine Benachrichtigung bezüglich der Übersetzung von Seite $3 in die Sprachen $4, mit der Frist $5 und der Priorität $6, erfolgreich an {{PLURAL:$7|einen Empfänger|$7 Empfänger}} und erfolglos an {{PLURAL:$8|einen Empfänger|$8 Empfänger}}',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
@@ -342,6 +343,7 @@ Wjeliki źěk!
 Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-email-priority' => 'Priorita toś togo boka jo $1.',
 	'translationnotifications-email-deadline' => 'Termin za pśełožowanje toś togo boka jo $1.',
+	'logentry-translationnotifications-sent' => '$1 jo powěźeńku wó pśełožowańskem boku $3 do rěcy $4 z terminom $5, z prioritu $6, na {{PLURAL:$7|jadnogo dostawarja|$7 dostawarjowu|$7 dostawarjow|$7 dostawarjow}} wuspěšnje {{GENDER:$2|pósłał|pósłała}}, a na {{PLURAL:$8|jadnogo dostawarja|$8 dostawarjowu|$8 dostawarjow|$8 dostawarjow}} njewuspěšnje.',
 );
 
 /** Spanish (Español)
@@ -459,6 +461,7 @@ Merci!
 L'équipe de {{SITENAME}}",
 	'translationnotifications-email-priority' => 'La priorité de cette page est $1.',
 	'translationnotifications-email-deadline' => 'La date limite pour traduire cette page est $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|a envoyé}} une notification sur la traduction de la page $3 dans les langues $4 avec un délai limite à $5, avec une priorité de $6, à {{PLURAL:$7|un destinataire|$7 destinataires}} avec succès, à {{PLURAL:$8|un destinataire|$8 destinataires}} sans succès',
 );
 
 /** Galician (Galego)
@@ -635,6 +638,7 @@ Wulki dźak!
 Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-email-priority' => 'Priorita tuteje strony je $1.',
 	'translationnotifications-email-deadline' => 'Termin za přełožowanje tuteje strony je $1.',
+	'logentry-translationnotifications-sent' => '$1 je zdźělenku wo přełožowanskej stronje $3 do rěče $4 z terminom $5, z prioritu $6, na {{PLURAL:$7|jednoho přijimarja|$7 přijimarjow|$7 přijimarjow|$7 prijimarjow}} wuspěšnje {{GENDER:$2|pósłał|pósłała}}, a na {{PLURAL:$8|jednoho přijimarja|$8 přijimarjow|$8 přijimarjow|$8 přijimarjow}} njewuspěšnje.',
 );
 
 /** Interlingua (Interlingua)
@@ -694,6 +698,7 @@ Gratias!
 Le personal de {{SITENAME}}',
 	'translationnotifications-email-priority' => 'Le prioritate de iste pagina es $1.',
 	'translationnotifications-email-deadline' => 'Le data limite pro traducer iste pagina es $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|inviava}} un notification sur le traduction del pagina $3 in le linguas $4 con data limite $5, con prioritate $6, a {{PLURAL:$7|un destinatario|$7 destinatarios}} con successo, a {{PLURAL:$8|un destinatario|$8 destinatarios}} sin successo',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -783,6 +788,7 @@ $7
 Персоналот на {{SITENAME}}',
 	'translationnotifications-email-priority' => 'Приоритетот на оваа страница е $1.',
 	'translationnotifications-email-deadline' => 'Крајниот рок за преведување на оваа страница е $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|испрати}} известување за преведување на пораката $3 на јазиците $4 со краен рок од $5 и приоритет на $6. Известувањето успешно стигна до {{PLURAL:$7|доби еден примач|добија $7 примачи}}, а не успеа кај {{PLURAL:$8|еден примач|$8 примачи}}',
 );
 
 /** Malay (Bahasa Melayu)
@@ -820,6 +826,7 @@ $messages['ms'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author AvatarTeam
  * @author SPQRobin
  * @author Siebrand
  */
@@ -859,7 +866,9 @@ $messages['nl'] = array(
 	'translationnotifications-priority-unset' => '(niet ingesteld)',
 	'translationnotifications-translatablepage-title' => 'Naam vertaalbare pagina:',
 	'translationnotifications-error-no-translatable-pages' => "Er zijn geen vertaalbare pagina's in deze wiki.",
+	'translationnotifications-email-subject' => 'Gelieve de pagina te vertalen $1',
 	'translationnotifications-email-priority' => 'De prioriteit voor deze pagina is $1.',
+	'translationnotifications-email-deadline' => 'De deadline voor het vertalen van deze pagina is  $1.',
 );
 
 /** Polish (Polski)
