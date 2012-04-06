@@ -18,10 +18,10 @@
 
 class SpecialNotifyTranslators extends SpecialPage {
 	public static $right = 'translate-manage';
-	public static $notificationText = '';
-	public static $translatablePageTitle = '';
-	public static $deadlineDate = '';
-	public static $priority = '';
+	private $notificationText = '';
+	private $translatablePageTitle = '';
+	private $deadlineDate = '';
+	private $priority = '';
 
 	public function __construct() {
 		parent::__construct( 'NotifyTranslators' );
@@ -90,7 +90,6 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'rows' => 20,
 			'cols' => 80,
 			'label-message' => 'translationnotifications-languages-to-notify-label',
-			'required' => true,
 		);
 
 		// Priotity dropdown
@@ -133,25 +132,33 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * TODO: document
 	 */
 	public function submitNotifyTranslatorsForm( $formData, $form ) {
-		global $wgUser;
+		global $wgUser, $wgLang;
 
-		self::$translatablePageTitle = Title::newFromID( $formData['TranslatablePage'] )->getText();
-		self::$notificationText = $formData['NotificationText'];
-		self::$priority = $formData['Priority'];
-		self::$deadlineDate = $formData['DeadlineDate'];
-
+		$this->translatablePageTitle = Title::newFromID( $formData['TranslatablePage'] );
+		$this->notificationText = $formData['NotificationText'];
+		$this->priority = $formData['Priority'];
+		$this->deadlineDate = $formData['DeadlineDate'];
 		$languagesToNotify = explode( ',', $formData['LanguagesToNotify'] );
+		$languagesToNotify = array_filter( array_map( 'trim', $languagesToNotify ) );
 		$langPropertyPrefix = 'translationnotifications-lang-';
 
 		$dbr = wfGetDB( DB_SLAVE );
 		$propertyLikePattern = $dbr->buildLike( $langPropertyPrefix, $dbr->anyString() );
+		$translatorsConds = array(
+			"up_property $propertyLikePattern",
+			);
+		$languagesForLog = '';
+		if ( count( $languagesToNotify ) ) {
+			$translatorsConds += array( 'up_value' => $languagesToNotify );
+			$languagesForLog = $wgLang->commaList( $languagesToNotify );
+		} else {
+			$languagesForLog = wfMessage( 'translationnotifications-log-alllanguages' )->text();
+		}
+
 		$translators = $dbr->select(
 			'user_properties',
 			'up_user',
-			array(
-				"up_property $propertyLikePattern",
-				'up_value' => $languagesToNotify,
-			),
+			$translatorsConds,
 			__METHOD__,
 			'DISTINCT'
 		);
@@ -159,8 +166,15 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$sentSuccess = 0;
 		$sentFail = 0;
 		foreach ( $translators as $row ) {
-			$status = $this->sendTranslationNotificationEmail( $row->up_user );
-			if ( $status->isGood() ) {
+			$user = User::newFromID( $row->up_user );
+			$status = true;
+			if ( $user->getOption( 'translationnotifications-cmethod-email' ) ) {
+				$status &= self::sendTranslationNotificationEmail( $user );
+			}
+			if ( $user->getOption( 'translationnotifications-cmethod-talkpage' ) ) {
+				$status &= self::leaveUserMessage( $user );
+			}
+			if ( $status ) {
 				$sentSuccess++;
 			} else {
 				$sentFail++;
@@ -169,77 +183,133 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 		$logger = new LogPage( 'notifytranslators' );
 		$logParams = array(
-			$formData['LanguagesToNotify'],
+			$languagesForLog,
+			$this->deadlineDate,
+			$this->priority,
 			$sentSuccess,
 			$sentFail,
 		);
 		$logger->addEntry(
 			'sent',
-			Title::newFromText( self::$translatablePageTitle ),
+			$this->translatablePageTitle,
 			'', // No comments
 			$logParams,
 			$wgUser
 		);
 
-		self::$translatablePageTitle = '';
-		self::$notificationText = '';
-		self::$deadlineDate = '';
-		self::$priority = '';
 	}
 
-	private function sendTranslationNotificationEmail( $userID ) {
-		$user = User::newFromID( $userID );
+	protected function getNotificationSubject( $userFirstLanguage ) {
+		return wfMessage(
+			'translationnotifications-email-subject',
+			$this->translatablePageTitle->getText()
+		)->inLanguage( $userFirstLanguage )->text();
+	}
 
+	protected function getUserFirstLanguage( $user ) {
 		$dbr = wfGetDB( DB_SLAVE );
 		$userFirstLanguageRow = $dbr->select(
 			'user_properties',
 			'up_value',
 			array(
-				'up_user' => $userID,
+				'up_user' => $user->getId(),
 				'up_property' => 'translationnotifications-lang-1'
 			),
 			__METHOD__
 		)->fetchRow();
 		$languageCode = $userFirstLanguageRow['up_value'];
-		$userFirstLanguage = Language::factory( $languageCode );
+		return $languageCode;
+	}
 
-		$emailSubject = wfMessage(
-			'translationnotifications-email-subject',
-			self::$translatablePageTitle
-		)->inLanguage( $userFirstLanguage )->text();
-
-		$userName = $user->getRealName();
-		if ( $userName === '' ) {
-			$userName = $user->getName();
+	protected function getUserName( $user ) {
+		$name = $user->getRealName();
+		if ( $name  === '' ) {
+			$name = $user->getName();
 		}
-		$languageName = $userFirstLanguage->fetchLanguageName( $languageCode );
-		$priorityClause = ( self::$priority === 'unset' )
-			? ''
-			: wfMessage( 'translationnotifications-email-priority', self::$priority );
-		$deadlineClause = ( self::$deadlineDate === '' )
-			? ''
-			: wfMessage( 'translationnotifications-email-deadline', self::$deadlineDate );
-		// XXX
-		$translationURL = 'title=Special:Translate&taction=translate&group=page-' . self::$translatablePageTitle
-			. '&language=' . $languageCode
-			. '&task=view';
+		return $name;
+	}
 
+	protected function getPriorityClause() {
+		if ( $this->priority === 'unset' ) {
+			return '';
+		}
+		return wfMessage( 'translationnotifications-email-priority', $this->priority );
+	}
+
+	protected function getTranslationURL( $languageCode ) {
+		$page = TranslatablePage::newFromTitle( $this->translatablePageTitle );
+		$translationURL = SpecialPage::getTitleFor( 'Translate' )->getCanonicalUrl(
+			array( 'group' => $page->getMessageGroupId(),
+				'language' => $languageCode ) );
+		return $translationURL;
+	}
+
+	protected function getDeadlineClause() {
+		if ( $this->deadlineDate === '' ) {
+			return '';
+		}
+		return wfMessage( 'translationnotifications-email-deadline',  $this->deadlineDate );
+	}
+
+	/**
+	 * Notify a user by email.
+	 * @param User to whom the mail to be sent
+	 * @return boolean true if it was successful
+	 */
+	protected function sendTranslationNotificationEmail( User $user ) {
+		global $wgUser;
+		$languageCode = self::getUserFirstLanguage( $user );
+		$userFirstLanguage = Language::factory( $languageCode );
+		$languageName = $userFirstLanguage->fetchLanguageName( $languageCode );
+		$emailSubject = self::getNotificationSubject( $userFirstLanguage );
 		$emailBody = wfMessage(
 			'translationnotifications-email-body',
-			$userName,
+			$this->getUserName( $user ),
 			$languageName,
-			self::$translatablePageTitle,
-			$translationURL,
-			$priorityClause,
-			$deadlineClause,
-			self::$notificationText
+			$this->translatablePageTitle,
+			$this->getTranslationURL( $languageCode ),
+			$this->getPriorityClause(),
+			$this->getDeadlineClause(),
+			$this->notificationText
 		)->inLanguage( $userFirstLanguage )->text();
 
-		global $wgUser;
 		$emailFrom = new MailAddress( $wgUser );
 		$emailTo = new MailAddress( $user );
 
-		return UserMailer::send( $emailTo, $emailFrom, $emailSubject, $emailBody );
+		$status = UserMailer::send( $emailTo, $emailFrom, $emailSubject, $emailBody );
+		return $status->isGood();
+	}
+
+	/**
+	 * Leave a user a message
+	 * @return boolean true if it was successful
+	 */
+	public function leaveUserMessage( User $user ) {
+		$talk = $user->getTalkPage();
+		$talkPage = new Article( $talk, 0 );
+		$languageCode = self::getUserFirstLanguage( $user );
+		$userFirstLanguage = Language::factory( $languageCode );
+		$languageName = $userFirstLanguage->fetchLanguageName( $languageCode );
+		$text = wfMessage(
+			'translationnotifications-talkpage-body',
+			$this->getNotificationSubject( $userFirstLanguage ),
+			$this->getUserName( $user ),
+			$languageName,
+			$this->translatablePageTitle,
+			$this->getTranslationURL( $languageCode ),
+			$this->getPriorityClause(),
+			$this->getDeadlineClause(),
+			$this->notificationText
+		)->inLanguage( $userFirstLanguage )->text();
+
+		$editSummary = wfMsgForContent( 'translationnotifications-edit-summary' );
+		$params = array(
+			'text' => $text,
+			'editSummary' => $editSummary,
+			);
+
+		$job = new TranslationNotificationJob( $talkPage->getTitle(), $params );
+		return $job->insert();
 	}
 }
 

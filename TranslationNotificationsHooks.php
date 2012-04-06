@@ -18,8 +18,13 @@ class TranslationNotificationsHooks {
 		$language = $forUI === null ? $wgContLang : $wgLang;
 
 		$notifiedLanguages = $params[0];
-		$sentSuccess = $params[1];
-		$sentFail = $params[2];
+		$deadlineDate = $params[1];
+		if ( strlen($deadlineDate) === 0 ) {
+			$deadlineDate = wfMessage( 'translationnotifications-nodeadline' )->text();
+		}
+		$priority = $params[2];
+		$sentSuccess = $params[3];
+		$sentFail = $params[4];
 
 		$link = $forUI ?
 			Linker::link( $title, null, array(), array( 'oldid' => $params[0] ) ) :
@@ -29,8 +34,8 @@ class TranslationNotificationsHooks {
 			'#', // User name for gender in the new system
 			Message::rawParam( $link ),
 			$notifiedLanguages,
-			SpecialNotifyTranslators::$deadlineDate,
-			SpecialNotifyTranslators::$priority,
+			$deadlineDate,
+			$priority,
 			$sentSuccess,
 			$sentFail
 		)->inLanguage( $language )->text();

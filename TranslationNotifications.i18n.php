@@ -66,12 +66,33 @@ $7
 
 Thank you!
 {{SITENAME}} staff',
+	'translationnotifications-talkpage-body' => '== $1 ==
+
+Hello $2,
+
+You are receiving this notification because you signed up as a translator to $3 on {{SITENAME}}.
+A new page, [[$4]] is available for translation. Please translate it by clicking the following link:
+
+$5
+
+$6
+$7
+
+$8
+
+Thank you!
+
+{{SITENAME}} staff',
+	'translationnotifications-edit-summary' => 'Translation notification',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
 	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3 to languages $4 with deadline $5, with $6 priority, to {{PLURAL:$7|one recipient|$7 recipients}} successfully, to {{PLURAL:$8|one recipient|$8 recipients}} unsuccessfully',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; to {{PLURAL:$7|one recipient|$7 recipients}} successfully, to {{PLURAL:$8|one recipient|$8 recipients}} unsuccessfully',
 	'log-name-notifytranslators' => 'Translation notifications',
+	'log-description-notifytranslators' => 'A log of notifications sent to translators about translatable pages',
 	'translationnotifications-sent-title' => 'Translation notification sent',
 	'translationnotifications-sent-body' => 'Translation notification was sent.',
+	'translationnotifications-log-alllanguages' => 'all languages',
+	'translationnotifications-nodeadline' => 'none',
 );
 
 /** Message documentation (Message documentation)
@@ -127,6 +148,16 @@ $messages['qqq'] = array(
 * $5 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
 * $7 - A custom message that can be added by the notification sender.",
+	'translationnotifications-talkpage-body' => "The body of the  notification on user talk page.
+
+* $1 - Title of the notification section..
+* $2 - Translator's username or real name, if specified.
+* $3 - Language name.
+* $4 - Translatable page name.
+* $5 - URL.
+* $6 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
+* $7 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
+* $8 - A custom message that can be added by the notification sender.",
 	'translationnotifications-email-priority' => 'Used in {{msg-mw|translationnotifications-email-body}}',
 	'translationnotifications-email-deadline' => 'Used in {{msg-mw|translationnotifications-email-body}}',
 	'logentry-translationnotifications-sent' => '{{logentry}}
@@ -139,8 +170,12 @@ $messages['qqq'] = array(
 * $7 - number of recipients to whom the notification was sent successfully
 * $8 - number of recipients to whom sending the notification failed',
 	'log-name-notifytranslators' => 'Log page title.',
+	'log-description-notifytranslators' => 'Log page description',
 	'translationnotifications-sent-title' => 'The title of the page shown after the notification is sent.
 Similar to {{msg-mw|emailsent}}.',
+	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
+	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified.',
+	'translationnotifications-edit-summary' => 'The edit summary for the notification text added to the user talk page.',
 );
 
 /** Ṫuroyo (Ṫuroyo)

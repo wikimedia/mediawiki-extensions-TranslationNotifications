@@ -33,6 +33,9 @@ $wgExtensionMessagesFiles['TranslationNotificationsAlias'] = "$dir/TranslationNo
 $wgAutoloadClasses['SpecialTranslatorSignup'] = "$dir/SpecialTranslatorSignup.php";
 $wgAutoloadClasses['SpecialNotifyTranslators'] = "$dir/SpecialNotifyTranslators.php";
 $wgAutoloadClasses['TranslationNotificationsHooks'] = "$dir/TranslationNotificationsHooks.php";
+$wgAutoloadClasses['TranslationNotificationJob'] = "$dir/TranslationNotificationJob.php";
+
+$wgJobClasses['translationNotificationJob'] = 'TranslationNotificationJob';
 
 $resourcePaths = array(
 	'localBasePath' => dirname( __FILE__ ),
