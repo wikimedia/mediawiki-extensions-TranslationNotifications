@@ -5,7 +5,8 @@
  *
  * @file
  * @author Amir E. Aharoni
- * @copyright Copyright © 2012, Amir E. Aharoni
+ * @author Santhosh Thottingal
+ * @copyright Copyright © 2012, Amir E. Aharoni, Santhosh Thottingal
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
@@ -169,7 +170,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$user = User::newFromID( $row->up_user );
 			$status = true;
 			if ( $user->getOption( 'translationnotifications-cmethod-email' ) ) {
-				$status &= self::sendTranslationNotificationEmail( $user );
+				if ( $user->getOption( 'translationnotifications-freq' ) === 'always' ) {
+					$status = self::sendTranslationNotificationEmail( $user );
+				}
 			}
 			if ( $user->getOption( 'translationnotifications-cmethod-talkpage' ) ) {
 				$status &= self::leaveUserMessage( $user );
@@ -207,17 +210,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	}
 
 	protected function getUserFirstLanguage( $user ) {
-		$dbr = wfGetDB( DB_SLAVE );
-		$userFirstLanguageRow = $dbr->select(
-			'user_properties',
-			'up_value',
-			array(
-				'up_user' => $user->getId(),
-				'up_property' => 'translationnotifications-lang-1'
-			),
-			__METHOD__
-		)->fetchRow();
-		$languageCode = $userFirstLanguageRow['up_value'];
+		$languageCode = $user->getOption( 'translationnotifications-lang-1' );
 		return $languageCode;
 	}
 
@@ -275,9 +268,15 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 		$emailFrom = new MailAddress( $wgUser );
 		$emailTo = new MailAddress( $user );
-
-		$status = UserMailer::send( $emailTo, $emailFrom, $emailSubject, $emailBody );
-		return $status->isGood();
+		$params = array(
+			'to' => $emailTo,
+			'from' => $emailFrom,
+			'body' =>  $emailBody,
+			'subj' => $emailSubject,
+			'replyto' => $emailFrom,
+		);
+		$job = new EmaillingJob( $this->translatablePageTitle, $params );
+		return $job->insert();
 	}
 
 	/**
