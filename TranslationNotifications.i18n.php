@@ -81,6 +81,20 @@ $8
 Thank you!
 
 {{SITENAME}} staff',
+	'translationnotifications-digestemail-subject' => 'Digest e-mail for translation requests from {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Hello $1,
+
+You are receiving this email because you signed up as a translator to $2 on {{SITENAME}}.
+
+There {{PLURAL:$3|is 1 page|are $3 pages}} available for translation. The details are given below.
+
+$4
+
+To change your notification preferences for translation requests, please visit $5
+
+Thank you!
+{{SITENAME}} staff',
+	'translationnotifications-digestemail-notification-line' => 'On $1, $2 marked "$3" for translation. You can translate it at $4',
 	'translationnotifications-edit-summary' => 'Translation notification',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
 	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
@@ -174,6 +188,18 @@ Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
 	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified.',
 	'translationnotifications-edit-summary' => 'The edit summary for the notification text added to the user talk page.',
+	'translationnotifications-digestemail-subject' => 'The subject of the digest email.',
+	'translationnotifications-digestemail-body' => '
+* $1 - username
+* $2 - first language preference of user
+* $3 - number of pages available for translation.
+* $4 - The list of notifications, this is the main part of the email.
+* $5 - Link to [[Special:NotifyTranslators]]',
+	'translationnotifications-digestemail-notification-line' => 'The message line for notification in the digest.
+* $1 - date
+* $2 - user name
+* $3 - translatable page title
+* $4 - link to [[Special:Translate]] page for the users first language.',
 );
 
 /** Ṫuroyo (Ṫuroyo)
