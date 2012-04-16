@@ -55,7 +55,6 @@ $wgTranslationNotificationsContactMethods = array(
 	'talkpage' => true,
 	'talkpage-elsewhere' => false,
 	'feed' => false,
-	'no' => true,
 );
 
 $wgLogTypes[] = 'notifytranslators';
