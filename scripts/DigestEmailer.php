@@ -65,7 +65,9 @@ class DigestEmailer extends Maintenance {
 			$startTimeStamp = strtotime( $offset );
 			$lastSuccessfulrun = $user->getOption( 'translationnotifications-last-digest' );
 			if ( $lastSuccessfulrun > $startTimeStamp ) {
-				$startTimeStamp = $lastSuccessfulrun;
+				$this->output( "\tNot sending notifications, Last notification time: " . date( 'D M j G:i:s T Y', $lastSuccessfulrun ) . " \n" );
+
+				continue;
 			}
 			$this->output( "\tSending notification since " . date( 'D M j G:i:s T Y', $startTimeStamp ) . " \n" );
 			foreach ( $notifications as $notification ) {
