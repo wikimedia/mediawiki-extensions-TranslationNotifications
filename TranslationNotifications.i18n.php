@@ -71,7 +71,9 @@ Thank you!
 Hello $2,
 
 You are receiving this notification because you signed up as a translator to $3 on {{SITENAME}}.
-A new page, [[$4]] is available for translation. Please [$5 translate it].
+A new page, [[$4]] is available for translation. Please translate it by clicking the following link:
+
+$5
 
 $6
 $7
@@ -81,24 +83,10 @@ $8
 Thank you!
 
 {{SITENAME}} staff',
-	'translationnotifications-digestemail-subject' => 'Digest e-mail for translation requests from {{SITENAME}}',
-	'translationnotifications-digestemail-body' => 'Hello $1,
-
-You are receiving this email because you signed up as a translator to $2 on {{SITENAME}}.
-
-There {{PLURAL:$3|is 1 page|are $3 pages}} available for translation. The details are given below.
-
-$4
-
-To change your notification preferences for translation requests, please visit $5
-
-Thank you!
-{{SITENAME}} staff',
-	'translationnotifications-digestemail-notification-line' => 'On $1, $2 marked "$3" for translation. You can translate it at $4',
 	'translationnotifications-edit-summary' => 'Translation notification',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
 	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; to {{PLURAL:$7|one recipient|$7 recipients}} successfully, to {{PLURAL:$8|one recipient|$8 recipients}} unsuccessfully; too early: $9',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; to {{PLURAL:$7|one recipient|$7 recipients}} successfully, to {{PLURAL:$8|one recipient|$8 recipients}} unsuccessfully',
 	'log-name-notifytranslators' => 'Translation notifications',
 	'log-description-notifytranslators' => 'A log of notifications sent to translators about translatable pages',
 	'translationnotifications-sent-title' => 'Translation notification sent',
@@ -170,6 +158,7 @@ $messages['qqq'] = array(
 * $6 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $7 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
 * $8 - A custom message that can be added by the notification sender.",
+	'translationnotifications-edit-summary' => 'The edit summary for the notification text added to the user talk page.',
 	'translationnotifications-email-priority' => 'Used in {{msg-mw|translationnotifications-email-body}}',
 	'translationnotifications-email-deadline' => 'Used in {{msg-mw|translationnotifications-email-body}}',
 	'logentry-translationnotifications-sent' => '{{logentry}}
@@ -180,27 +169,13 @@ $messages['qqq'] = array(
 * $5 - deadline
 * $6 - priority
 * $7 - number of recipients to whom the notification was sent successfully
-* $8 - number of recipients to whom sending the notification failed
-* $9 - number of recipients to whom the notification was not sent because it was too early to send it according to their preferences.',
+* $8 - number of recipients to whom sending the notification failed',
 	'log-name-notifytranslators' => 'Log page title.',
 	'log-description-notifytranslators' => 'Log page description',
 	'translationnotifications-sent-title' => 'The title of the page shown after the notification is sent.
 Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
 	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified.',
-	'translationnotifications-edit-summary' => 'The edit summary for the notification text added to the user talk page.',
-	'translationnotifications-digestemail-subject' => 'The subject of the digest email.',
-	'translationnotifications-digestemail-body' => '
-* $1 - username
-* $2 - first language preference of user
-* $3 - number of pages available for translation.
-* $4 - The list of notifications, this is the main part of the email.
-* $5 - Link to [[Special:NotifyTranslators]]',
-	'translationnotifications-digestemail-notification-line' => 'The message line for notification in the digest.
-* $1 - date
-* $2 - user name
-* $3 - translatable page title
-* $4 - link to [[Special:Translate]] page for the users first language.',
 );
 
 /** Ṫuroyo (Ṫuroyo)
@@ -259,6 +234,7 @@ $messages['br'] = array(
 );
 
 /** German (Deutsch)
+ * @author Geitost
  * @author Kghbln
  * @author Metalhead64
  */
@@ -298,13 +274,13 @@ $messages['de'] = array(
 	'translationnotifications-priority-unset' => '(nicht gesetzt)',
 	'translationnotifications-translatablepage-title' => 'Name der zu übersetzenden Seite:',
 	'translationnotifications-error-no-translatable-pages' => 'Es gibt in diesem Wiki keine zu übersetzenden Seiten.',
-	'translationnotifications-email-subject' => 'Bitte übersetze die Seite $1',
+	'translationnotifications-email-subject' => 'Bitte übersetze die Seite $1.',
 	'translationnotifications-email-body' => 'Hallo $1,
 
-du erhältst diese E-Mail-Nachricht, da du dich als Übersetzer(in) für $2 auf {{SITENAME}} registriert hast.
+du erhältst diese E-Mail, da du dich als Übersetzer(in) für $2 auf {{SITENAME}} registriert hast.
 
 An folgender Stelle ist eine neue Seite zum Übersetzen vorhanden: $3.
-Übersetze die Seite bitte, nachdem du auf den folgenden Link geklickt hast:
+Übersetze sie bitte nach dem Klicken auf den folgenden Link:
 $4
 
 $5
@@ -314,12 +290,36 @@ $7
 
 Vielen Dank,
 die Mitarbeiter von {{SITENAME}}',
+	'translationnotifications-talkpage-body' => '== $1 ==
+
+Hallo $2,
+
+du erhältst diese E-Mail, da du dich als Übersetzer(in) für $3 auf {{SITENAME}} registriert hast.
+Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. Übersetze sie bitte nach dem Klicken auf den folgenden Link:
+
+$5
+
+$6
+$7
+
+$8
+
+Vielen Dank,
+die Mitarbeiter von {{SITENAME}}',
+	'translationnotifications-edit-summary' => 'Übersetzungsbenachrichtigung',
 	'translationnotifications-email-priority' => 'Die Übersetzungspriorität dieser Seite ist $1.',
 	'translationnotifications-email-deadline' => 'Die Frist zur Übersetzung dieser Seite läuft bis zum $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sandte}} eine Benachrichtigung bezüglich der Übersetzung von Seite $3 in die Sprachen $4, mit der Frist $5 und der Priorität $6, erfolgreich an {{PLURAL:$7|einen Empfänger|$7 Empfänger}} und erfolglos an {{PLURAL:$8|einen Empfänger|$8 Empfänger}}',
+	'log-name-notifytranslators' => 'Übersetzungsbenachrichtigungs-Logbuch',
+	'log-description-notifytranslators' => 'Das Logbuch der Benachrichtigungen, die bezüglich übersetzbarer Seiten an die Übersetzer gesandt wurden.',
+	'translationnotifications-sent-title' => 'Übersetzungsbenachrichtigung verschickt',
+	'translationnotifications-sent-body' => 'Die Übersetzungsbenachrichtigung wurde verschickt.',
+	'translationnotifications-log-alllanguages' => 'alle Sprachen',
+	'translationnotifications-nodeadline' => 'keine',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
+ * @author Geitost
  * @author Kghbln
  */
 $messages['de-formal'] = array(
@@ -328,19 +328,35 @@ $messages['de-formal'] = array(
 	'translationnotifications-email-notset' => 'Sie haben keine E-Mail-Adresse angegeben. Dies können Sie in Ihren [[Special:Preferences|Einstellungen]] tun.',
 	'translationnotifications-nolang' => 'Wählen Sie eine Sprache',
 	'translationnotifications-cmethod-no' => 'Benachrichtigen Sie mich nicht',
-	'translationnotifications-email-subject' => 'Bitte übersetzen Sie die Seite $1',
+	'translationnotifications-email-subject' => 'Bitte übersetzen Sie die Seite $1.',
 	'translationnotifications-email-body' => 'Hallo $1,
 
-Sie erhalten diese E-Mail-Nachricht, da Sie sich als Übersetzer(in) für $2 auf {{SITENAME}} registriert haben.
+Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $2 auf {{SITENAME}} registriert haben.
 
 An folgender Stelle ist eine neue Seite zum Übersetzen vorhanden: $3.
-Übersetzen Sie bitte diese Seite, nachdem Sie auf den folgenden Link geklickt haben:
+Übersetzen Sie sie bitte nach dem Klicken auf den folgenden Link:
 $4
 
 $5
 $6
 
 $7
+
+Vielen Dank,
+die Mitarbeiter von {{SITENAME}}',
+	'translationnotifications-talkpage-body' => '== $1 ==
+
+Hallo $2,
+
+Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $3 auf {{SITENAME}} registriert haben.
+Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. Übersetzen Sie sie bitte nach dem Klicken auf den folgenden Link:
+
+$5
+
+$6
+$7
+
+$8
 
 Vielen Dank,
 die Mitarbeiter von {{SITENAME}}',
@@ -404,6 +420,9 @@ Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-email-priority' => 'Priorita toś togo boka jo $1.',
 	'translationnotifications-email-deadline' => 'Termin za pśełožowanje toś togo boka jo $1.',
 	'logentry-translationnotifications-sent' => '$1 jo powěźeńku wó pśełožowańskem boku $3 do rěcy $4 z terminom $5, z prioritu $6, na {{PLURAL:$7|jadnogo dostawarja|$7 dostawarjowu|$7 dostawarjow|$7 dostawarjow}} wuspěšnje {{GENDER:$2|pósłał|pósłała}}, a na {{PLURAL:$8|jadnogo dostawarja|$8 dostawarjowu|$8 dostawarjow|$8 dostawarjow}} njewuspěšnje.',
+	'log-name-notifytranslators' => 'Pśełožowańske powěźeńki',
+	'translationnotifications-sent-title' => 'Pśełožowańska powěźeńka jo se pósłała',
+	'translationnotifications-sent-body' => 'Pśełožowańska powěźeńka jo se pósłała.',
 );
 
 /** Spanish (Español)
@@ -460,8 +479,34 @@ $6
 $7
 ¡Gracias!
 El equipo de {{SITENAME}}',
+	'translationnotifications-talkpage-body' => '== $1 ==
+
+Hola  $2,
+
+Usted está recibiendo esta notificación porque se inscribió como traductor  de {{SITENAME}} al  $3.
+
+Una nueva página, [[$4]] está disponible para su traducción. Por favor tradúzcala haciendo clic en el enlace siguiente:
+
+$5
+
+$6
+$7
+
+$8
+
+¡Gracias!
+
+El equipo de {{SITENAME}}',
+	'translationnotifications-edit-summary' => 'Notificación de traducción',
 	'translationnotifications-email-priority' => 'La prioridad de esta página es  $1.',
 	'translationnotifications-email-deadline' => 'La fecha límite para la traducción de esta página es  $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha enviado}} una notificación sobre la traducción de la página $3; idiomas: $4; fecha límite: $5; prioridad: $6, a {{PLURAL:$7|un destinatario|$7  destinatarios}} correctamente, y a {{PLURAL:$8|un destinatario|$8 destinatarios}} sin éxito',
+	'log-name-notifytranslators' => 'Notificaciones de traducción',
+	'log-description-notifytranslators' => 'Un registro de las notificaciones enviadas a los traductores sobre las páginas traducibles',
+	'translationnotifications-sent-title' => 'Notificación de traducción enviada',
+	'translationnotifications-sent-body' => 'Se ha enviado la notificación de traducción.',
+	'translationnotifications-log-alllanguages' => 'todos los idiomas',
+	'translationnotifications-nodeadline' => 'ninguno',
 );
 
 /** French (Français)
@@ -519,9 +564,33 @@ $7
 
 Merci!
 L'équipe de {{SITENAME}}",
+	'translationnotifications-talkpage-body' => "== $1 ==
+
+Bonjour $2,
+
+Vous recevez cette notification parce que vous êtes inscrit comme traducteur de $3 sur {{SITENAME}}.
+Une nouvelle page, [[$4]], est disponible pour la traduction. Veuillez la traduite en cliquant sur le lien suivant:
+
+$5
+
+$6
+$7
+
+$8
+
+Merci!
+
+L'équipe de {{SITENAME}}",
+	'translationnotifications-edit-summary' => 'Notification de traduction',
 	'translationnotifications-email-priority' => 'La priorité de cette page est $1.',
 	'translationnotifications-email-deadline' => 'La date limite pour traduire cette page est $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|a envoyé}} une notification sur la traduction de la page $3 dans les langues $4 avec un délai limite à $5, avec une priorité de $6, à {{PLURAL:$7|un destinataire|$7 destinataires}} avec succès, à {{PLURAL:$8|un destinataire|$8 destinataires}} sans succès',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|a envoyé}} une notification sur la traduction de la page $3; langues: $4; délai limite: $5; priorité: $6; à {{PLURAL:$7|un destinataire|$7 destinataires}} avec succès, à {{PLURAL:$8|un destinataire|$8 destinataires}} sans succès',
+	'log-name-notifytranslators' => 'Notifications de traduction',
+	'log-description-notifytranslators' => 'Un journal des notifications envoyées aux traducteurs sur les pages à traduire',
+	'translationnotifications-sent-title' => 'Notification de traduction envoyée',
+	'translationnotifications-sent-body' => 'La notification de la traduction a été envoyée.',
+	'translationnotifications-log-alllanguages' => 'toutes les langues',
+	'translationnotifications-nodeadline' => 'aucun',
 );
 
 /** Galician (Galego)
@@ -579,8 +648,33 @@ $7
 
 Grazas!
 O equipo de {{SITENAME}}',
+	'translationnotifications-talkpage-body' => '== $1 ==
+
+Boas, $2:
+
+Recibiu esta notificación porque está inscrito como tradutor ao $3 en {{SITENAME}}.
+Hai unha nova páxina, "[[$4]]", dispoñible para a súa tradución. Tradúzaa premendo na seguinte ligazón:
+
+$5
+
+$6
+$7
+
+$8
+
+Grazas!
+
+O equipo de {{SITENAME}}',
+	'translationnotifications-edit-summary' => 'Notificación de tradución',
 	'translationnotifications-email-priority' => 'A prioridade desta páxina é $1.',
 	'translationnotifications-email-deadline' => 'A data límite para traducir a páxina é $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|enviou}} correctamente unha notificación sobre a tradución da páxina "$3"; linguas: $4; data límite: $5; prioridade: $6; {{PLURAL:$7|recibiuna un destinatario|recibírona $7 destinatarios}}; {{PLURAL:$8|outro destinatario non a recibiu|outros $8 destinatarios non a recibiron}}',
+	'log-name-notifytranslators' => 'Notificacións de tradución',
+	'log-description-notifytranslators' => 'Un rexistro das notificacións enviadas aos tradutores sobre a tradución de páxinas',
+	'translationnotifications-sent-title' => 'Notificación de tradución enviada',
+	'translationnotifications-sent-body' => 'Enviouse a notificación de tradución.',
+	'translationnotifications-log-alllanguages' => 'todas as linguas',
+	'translationnotifications-nodeadline' => 'ningunha',
 );
 
 /** Hebrew (עברית)
@@ -696,9 +790,33 @@ $7
 
 Wulki dźak!
 Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
+	'translationnotifications-talkpage-body' => '== $1 ==
+
+Witaj $2,
+
+dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
+Nowa strona, [[$4]], steji za přełožowanje k dispoziciji. Prošu přełož ju, kliknjo na slědowacy wotkaz:
+
+$5
+
+$6
+$7
+
+$8
+
+Wulki dźak!
+
+Team {{SITENAME}}',
+	'translationnotifications-edit-summary' => 'Přełožowanska zdźělenka',
 	'translationnotifications-email-priority' => 'Priorita tuteje strony je $1.',
 	'translationnotifications-email-deadline' => 'Termin za přełožowanje tuteje strony je $1.',
-	'logentry-translationnotifications-sent' => '$1 je zdźělenku wo přełožowanskej stronje $3 do rěče $4 z terminom $5, z prioritu $6, na {{PLURAL:$7|jednoho přijimarja|$7 přijimarjow|$7 přijimarjow|$7 prijimarjow}} wuspěšnje {{GENDER:$2|pósłał|pósłała}}, a na {{PLURAL:$8|jednoho přijimarja|$8 přijimarjow|$8 přijimarjow|$8 přijimarjow}} njewuspěšnje.',
+	'logentry-translationnotifications-sent' => '$1 je zdźělenku wo přełožowanskej stronje $3; rěče: $4; termin $5; priorita $6; na {{PLURAL:$7|jednoho přijimarja|$7 přijimarjow|$7 přijimarjow|$7 prijimarjow}} wuspěšnje {{GENDER:$2|pósłał|pósłała}}, a na {{PLURAL:$8|jednoho přijimarja|$8 přijimarjow|$8 přijimarjow|$8 přijimarjow}} njewuspěšnje.',
+	'log-name-notifytranslators' => 'Přełožowanske zdźělenki',
+	'log-description-notifytranslators' => 'Protokol wo zdźělenkach, kotrež su so přełožowarjam wo přełožujomnych stronach pósłali',
+	'translationnotifications-sent-title' => 'Přełožowanska zdźělenka je so pósłała',
+	'translationnotifications-sent-body' => 'Přełožowanska zdźělenka je so pósłała.',
+	'translationnotifications-log-alllanguages' => 'wšě rěče',
+	'translationnotifications-nodeadline' => 'žadyn',
 );
 
 /** Interlingua (Interlingua)
@@ -756,9 +874,33 @@ $7
 
 Gratias!
 Le personal de {{SITENAME}}',
+	'translationnotifications-talkpage-body' => '== $1 ==
+
+Salute $2,
+
+Tu recipe iste notification perque tu te inscribeva como traductor de $3 in {{SITENAME}}.
+Un nove pagina, [[$4]] es disponibile pro traduction. Per favor traduce lo per cliccar sur le sequente ligamine:
+
+$5
+
+$6
+$7
+
+$8
+
+Gratias!
+
+Le equipa de {{SITENAME}}',
+	'translationnotifications-edit-summary' => 'Notification de traduction',
 	'translationnotifications-email-priority' => 'Le prioritate de iste pagina es $1.',
 	'translationnotifications-email-deadline' => 'Le data limite pro traducer iste pagina es $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|inviava}} un notification sur le traduction del pagina $3 in le linguas $4 con data limite $5, con prioritate $6, a {{PLURAL:$7|un destinatario|$7 destinatarios}} con successo, a {{PLURAL:$8|un destinatario|$8 destinatarios}} sin successo',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|inviava}} un notification sur le traduction del pagina $3; linguas: $4; data limite: $5; prioritate: $6; a {{PLURAL:$7|un destinatario|$7 destinatarios}} con successo, a {{PLURAL:$8|un destinatario|$8 destinatarios}} sin successo',
+	'log-name-notifytranslators' => 'Notificationes de traduction',
+	'log-description-notifytranslators' => 'Un registro de notificationes inviate a traductores sur paginas traducibile',
+	'translationnotifications-sent-title' => 'Notification de traduction inviate',
+	'translationnotifications-sent-body' => 'Le notification de traduction ha essite inviate.',
+	'translationnotifications-log-alllanguages' => 'tote le linguas',
+	'translationnotifications-nodeadline' => 'nulle',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -846,9 +988,32 @@ $7
 
 Ви благодариме!
 Персоналот на {{SITENAME}}',
+	'translationnotifications-talkpage-body' => '== $1 ==
+Здраво $2,
+
+Го добивате ова известување бидејќи се пријавивте за преведувач на {{SITENAME}} на $3.
+Новата страница [[$4]] чека на преведување. Преведете ја на следнава врска:
+
+$5
+
+$6
+$7
+
+$8
+
+Ви благодариме!
+
+Персоналот на {{SITENAME}}',
+	'translationnotifications-edit-summary' => 'Известување за превод',
 	'translationnotifications-email-priority' => 'Приоритетот на оваа страница е $1.',
 	'translationnotifications-email-deadline' => 'Крајниот рок за преведување на оваа страница е $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|испрати}} известување за преведување на пораката $3 на јазиците $4 со краен рок од $5 и приоритет на $6. Известувањето успешно стигна до {{PLURAL:$7|доби еден примач|добија $7 примачи}}, а не успеа кај {{PLURAL:$8|еден примач|$8 примачи}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|испрати}} известување за преведување на страницата $3; јазици: $4; краен рок: $5; приоритет: $6. Известувањето го {{PLURAL:$7|доби еден примач|добија $7 примачи}}, а не успеа кај {{PLURAL:$8|еден примач|$8 примачи}}',
+	'log-name-notifytranslators' => 'Известувања за преведување',
+	'log-description-notifytranslators' => 'Дневник на известувањата што им се испраќаат на преведувачите со што им се соопштува кои страници се достапни за преведување',
+	'translationnotifications-sent-title' => 'Известувањето за преведување е испратено',
+	'translationnotifications-sent-body' => 'Известувањето за преведување е испратено.',
+	'translationnotifications-log-alllanguages' => 'сите јазици',
+	'translationnotifications-nodeadline' => 'без рок',
 );
 
 /** Malay (Bahasa Melayu)
@@ -882,7 +1047,36 @@ $messages['ms'] = array(
 	'notifytranslators' => 'Beritahu penterjemah',
 	'translationnotifications-send-notification-button' => 'Hantar pemberitahuan kepada para penterjemah',
 	'translationnotifications-deadline-label' => 'Tarikh tutup untuk dinyatakan dalam pemberitahuan ini:',
-	'translationnotifications-languages-to-notify-label' => 'Bahasa-bahasa untuk diberitahukan (kod):',
+	'translationnotifications-languages-to-notify-label' => 'Bahasa-bahasa untuk diberitahukan (asingkan kod-kod dengan koma):',
+	'translationnotifications-priority' => 'Prioriti:',
+	'translationnotifications-priority-high' => 'tinggi',
+	'translationnotifications-priority-medium' => 'sederhana',
+	'translationnotifications-priority-low' => 'rendah',
+	'translationnotifications-priority-unset' => '(belum ditetapkan)',
+	'translationnotifications-translatablepage-title' => 'Nama laman boleh terjemah:',
+	'translationnotifications-error-no-translatable-pages' => 'Tiada laman yang boleh diterjemahkan dalam wiki ini.',
+	'translationnotifications-email-subject' => 'Sila terjemahkan laman $1',
+	'translationnotifications-email-body' => 'Apa khabar $1,
+
+Anda menerima e-mel ini kerana anda telah mendaftarkan diri sebagai penterjemah $2 di {{SITENAME}}.
+
+Ada satu laman baru untuk diterjemahkan di situ: $3.
+Sila terjemahkannya dengan mengklik pautan yang berikut:
+$4
+
+$5
+$6
+
+$7
+
+Terima kasih!
+Kakitangan {{SITENAME}}',
+	'translationnotifications-email-priority' => 'Laman ini diberi prioriti $1.',
+	'translationnotifications-email-deadline' => 'Tarikh tutup penterjemahan laman ini ialah $1.',
+	'logentry-translationnotifications-sent' => '$1 berjaya {{GENDER:$2|menghantar}} satu pemberitahuan tentang penterjemahan laman $3 kepada bahasa-bahasa berikut: $4, sebelum tarikh tutup $5, dengan prioriti $6, kepada {{PLURAL:$7|seorang penerima|$7 orang penerima}}, tetapi gagal berbuat demikian kepada {{PLURAL:$8|seorang lagi|$8 orang lagi}}',
+	'log-name-notifytranslators' => 'Pemberitahuan penterjemahan',
+	'translationnotifications-sent-title' => 'Pemberitahuan penterjemahan dihantar',
+	'translationnotifications-sent-body' => 'Pemberitahuan penterjemahan telah dihantar.',
 );
 
 /** Dutch (Nederlands)
@@ -926,9 +1120,11 @@ $messages['nl'] = array(
 	'translationnotifications-priority-unset' => '(niet ingesteld)',
 	'translationnotifications-translatablepage-title' => 'Naam vertaalbare pagina:',
 	'translationnotifications-error-no-translatable-pages' => "Er zijn geen vertaalbare pagina's in deze wiki.",
-	'translationnotifications-email-subject' => 'Gelieve de pagina te vertalen $1',
+	'translationnotifications-email-subject' => 'Vertaal alstublieft de pagina $1',
 	'translationnotifications-email-priority' => 'De prioriteit voor deze pagina is $1.',
 	'translationnotifications-email-deadline' => 'De deadline voor het vertalen van deze pagina is  $1.',
+	'translationnotifications-log-alllanguages' => 'alle talen',
+	'translationnotifications-nodeadline' => 'geen',
 );
 
 /** Polish (Polski)
@@ -959,6 +1155,39 @@ $messages['pl'] = array(
 	'translationnotifications-freq-weekly' => 'Tygodniowe streszczenie',
 	'translationnotifications-freq-monthly' => 'Miesięczne streszczenie',
 	'translationnotifications-submit' => 'Zarejestruj się',
+	'notifytranslators' => 'Powiadom tłumaczy',
+	'translationnotifications-send-notification-button' => 'Wyślij powiadomienia do tłumaczy',
+	'translationnotifications-deadline-label' => 'Termin do wskazania w tym powiadomieniu:',
+	'translationnotifications-languages-to-notify-label' => 'Jakie języki powiadomić (kody rozdzielone przecinkami):',
+	'translationnotifications-priority' => 'Priorytet:',
+	'translationnotifications-priority-high' => 'wysoki',
+	'translationnotifications-priority-medium' => 'średni',
+	'translationnotifications-priority-low' => 'niski',
+	'translationnotifications-priority-unset' => '(nieustawiony)',
+	'translationnotifications-translatablepage-title' => 'Nazwa strony do przetłumaczenia:',
+	'translationnotifications-error-no-translatable-pages' => 'Nie ma stron do przetłumaczenia na tej wiki.',
+	'translationnotifications-email-subject' => 'Przetłumacz stronę $1',
+	'translationnotifications-email-body' => 'Witaj  $1,
+
+Otrzymujesz tę wiadomość e-mail, ponieważ użytkownik zarejestrował się jako tłumacz na  $2  portalu {{SITENAME}}.
+
+Jest nowa strona do tłumaczenia:  $3 .
+Przetłumacz ją klikając poniższe łącze:
+$4
+
+$5
+$6
+
+$7
+
+Dziękujemy!
+Zespół {{SITENAME}}',
+	'translationnotifications-email-priority' => 'Priorytet tej strony to  $1 .',
+	'translationnotifications-email-deadline' => 'Nieprzekraczalny termin tłumaczenia tej strony to $1 .',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|wysyłał|wysłała}} powiadomienie w sprawie tłumaczenia strony $3; języki: $4; termin $5; priorytet $6; do {{PLURAL:$7|jednego adresata|$7 adresatów}} pomyślnie, do {{PLURAL:$8|jednego adresata|$8 adresatów}} bezskutecznie',
+	'log-name-notifytranslators' => 'Powiadomienia o tłumaczeniach',
+	'translationnotifications-sent-title' => 'Wysłano powiadomienie tłumaczenia',
+	'translationnotifications-sent-body' => 'Powiadomienie o tłumaczeniu zostało wysłane.',
 );
 
 /** Swedish (Svenska)
