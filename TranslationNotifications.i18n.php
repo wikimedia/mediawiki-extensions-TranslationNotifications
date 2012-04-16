@@ -71,9 +71,7 @@ Thank you!
 Hello $2,
 
 You are receiving this notification because you signed up as a translator to $3 on {{SITENAME}}.
-A new page, [[$4]] is available for translation. Please translate it by clicking the following link:
-
-$5
+A new page, [[$4]] is available for translation. Please [$5 translate it].
 
 $6
 $7
