@@ -17,7 +17,7 @@ class TranslationNotificationJob extends Job {
 	public function run() {
 		$talkPage = new Article( $this->title, 0 );
 		$text =  $this->params['text'];
-		$flags = $talkPage->checkFlags( EDIT_UPDATE );
+		$flags = $talkPage->checkFlags();
 		if ( $flags & EDIT_UPDATE ) {
 			$text = $talkPage->getRawText() . "\n" . $text;
 		}
