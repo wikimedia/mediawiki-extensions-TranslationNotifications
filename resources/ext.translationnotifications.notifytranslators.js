@@ -17,7 +17,8 @@
 			changeMonth: true,
 			changeYear: true,
 			showAnim: false,
-			showButtonPanel: true
+			showButtonPanel: true,
+			minDate: new Date()
 		} )
 		.data( 'open', 0 )
 		.click( function() {
