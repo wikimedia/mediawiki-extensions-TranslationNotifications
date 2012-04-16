@@ -160,8 +160,7 @@ class DigestEmailer extends Maintenance {
 	protected function getTranslators() {
 		$dbr = wfGetDB( DB_SLAVE );
 		$translatorsConds = array( 'up_property' => 'translationnotifications-freq' );
-		$translatorsConds += array( 'up_value' => 'weekly' );
-		$translatorsConds += array( 'up_value' => 'monthly' );
+		$translatorsConds += array( 'up_value' => array( 'weekly', 'monthly' ) );
 		$translators = $dbr->select(
 					'user_properties',
 					'up_user',
