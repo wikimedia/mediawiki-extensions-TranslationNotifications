@@ -193,7 +193,7 @@ class DigestEmailer extends Maintenance {
 		foreach ( $logs as $row ) {
 			$logEntry = DatabaseLogEntry::newFromRow( $row );
 			$logParams = $logEntry->getParameters();
-			if ( strtotime( $logParams[1] ) < time() ) {
+			if ( $logParams[1] && strtotime( $logParams[1] ) < time() ) {
 				// Deadline already expired
 				continue;
 			}
