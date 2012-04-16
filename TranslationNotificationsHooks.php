@@ -19,12 +19,13 @@ class TranslationNotificationsHooks {
 
 		$notifiedLanguages = $params[0];
 		$deadlineDate = $params[1];
-		if ( strlen($deadlineDate) === 0 ) {
+		if ( strlen( $deadlineDate ) === 0 ) {
 			$deadlineDate = wfMessage( 'translationnotifications-nodeadline' )->text();
 		}
 		$priority = $params[2];
 		$sentSuccess = $params[3];
 		$sentFail = $params[4];
+		$tooEarly = $params[5];
 
 		$link = $forUI ?
 			Linker::link( $title, null, array(), array( 'oldid' => $params[0] ) ) :
@@ -37,7 +38,8 @@ class TranslationNotificationsHooks {
 			$deadlineDate,
 			$priority,
 			$sentSuccess,
-			$sentFail
+			$sentFail,
+			$tooEarly
 		)->inLanguage( $language )->text();
 	}
 }

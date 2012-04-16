@@ -141,13 +141,14 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$this->deadlineDate = $formData['DeadlineDate'];
 		$languagesToNotify = explode( ',', $formData['LanguagesToNotify'] );
 		$languagesToNotify = array_filter( array_map( 'trim', $languagesToNotify ) );
+
 		$langPropertyPrefix = 'translationnotifications-lang-';
 
 		$dbr = wfGetDB( DB_SLAVE );
 		$propertyLikePattern = $dbr->buildLike( $langPropertyPrefix, $dbr->anyString() );
 		$translatorsConds = array(
 			"up_property $propertyLikePattern",
-			);
+		);
 		$languagesForLog = '';
 		if ( count( $languagesToNotify ) ) {
 			$translatorsConds += array( 'up_value' => $languagesToNotify );
@@ -164,23 +165,50 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'DISTINCT'
 		);
 
+		$frequencies = array(
+			'always' => 0,
+			'week' => 604800, // seconds in week
+			'month' => 2678400, // seconds in month
+			'weekly' => 604800, // TODO, digest not implemented yet
+			'monthly' => 2678400, // TODO, digest not implemented yet
+		);
+		$currentUnixTime = wfTimestamp();
+		$currentDBTime = $dbr->timestamp( $currentUnixTime );
+
 		$sentSuccess = 0;
 		$sentFail = 0;
+		$tooEarly = 0;
+		$timestampOptionName = 'translationnotifications-timestamp';
 		foreach ( $translators as $row ) {
 			$user = User::newFromID( $row->up_user );
-			$status = true;
-			if ( $user->getOption( 'translationnotifications-cmethod-email' ) ) {
-				if ( $user->getOption( 'translationnotifications-freq' ) === 'always' ) {
-					$status = self::sendTranslationNotificationEmail( $user );
+			$userTimestamp = $user->getOption( $timestampOptionName, null );
+			$userUnixTimestamp = ( $userTimestamp == null )
+				? wfTimestamp( TS_UNIX, '20120101000000' ) // An old timestamp
+				: wfTimestamp( TS_UNIX, $userTimestamp );
+
+			$timeSinceNotification = $currentUnixTime - $userUnixTimestamp;
+			$userTranslationFrequency = $frequencies[$user->getOption( 'translationnotifications-freq' )];
+
+			if ( $timeSinceNotification > $userTranslationFrequency ) {
+				$status = true;
+				if ( $user->getOption( 'translationnotifications-cmethod-email' ) ) {
+					if ( $user->getOption( 'translationnotifications-freq' ) === 'always' ) {
+						$status &= $this->sendTranslationNotificationEmail( $user );
+					}
 				}
-			}
-			if ( $user->getOption( 'translationnotifications-cmethod-talkpage' ) ) {
-				$status &= self::leaveUserMessage( $user );
-			}
-			if ( $status ) {
-				$sentSuccess++;
+				if ( $user->getOption( 'translationnotifications-cmethod-talkpage' ) ) {
+					$status &= $this->leaveUserMessage( $user );
+				}
+
+				if ( $status ) {
+					$sentSuccess++;
+					$user->setOption( $timestampOptionName, $currentDBTime );
+					$user->saveSettings();
+				} else {
+					$sentFail++;
+				}
 			} else {
-				$sentFail++;
+				$tooEarly++;
 			}
 		}
 
@@ -191,6 +219,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$this->priority,
 			$sentSuccess,
 			$sentFail,
+			$tooEarly,
 		);
 		$logger->addEntry(
 			'sent',

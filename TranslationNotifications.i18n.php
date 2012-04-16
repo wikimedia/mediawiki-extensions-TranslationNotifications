@@ -98,7 +98,7 @@ Thank you!
 	'translationnotifications-edit-summary' => 'Translation notification',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
 	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; to {{PLURAL:$7|one recipient|$7 recipients}} successfully, to {{PLURAL:$8|one recipient|$8 recipients}} unsuccessfully',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; to {{PLURAL:$7|one recipient|$7 recipients}} successfully, to {{PLURAL:$8|one recipient|$8 recipients}} unsuccessfully; too early: $9',
 	'log-name-notifytranslators' => 'Translation notifications',
 	'log-description-notifytranslators' => 'A log of notifications sent to translators about translatable pages',
 	'translationnotifications-sent-title' => 'Translation notification sent',
@@ -180,7 +180,8 @@ $messages['qqq'] = array(
 * $5 - deadline
 * $6 - priority
 * $7 - number of recipients to whom the notification was sent successfully
-* $8 - number of recipients to whom sending the notification failed',
+* $8 - number of recipients to whom sending the notification failed
+* $9 - number of recipients to whom the notification was not sent because it was too early to send it according to their preferences.',
 	'log-name-notifytranslators' => 'Log page title.',
 	'log-description-notifytranslators' => 'Log page description',
 	'translationnotifications-sent-title' => 'The title of the page shown after the notification is sent.
