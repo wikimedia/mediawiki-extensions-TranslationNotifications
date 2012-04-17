@@ -14,6 +14,7 @@ $messages = array();
  */
 $messages['en'] = array(
 	'translatorsignup' => 'Translator signup',
+	'translatorsignup-summary' => 'Use this page to indicate what languages you can translate in, and how you want to be contacted about new translation requests.',
 	'translationnotifications-desc' => 'Allows translators sign up for translation notifications',
 	'translationnotifications-info' => 'User information',
 	'translationnotifications-username' => 'Username:',
@@ -52,7 +53,7 @@ $messages['en'] = array(
 	'translationnotifications-email-subject' => 'Please translate the page $1',
 	'translationnotifications-email-body' => 'Hello $1,
 
-You are receiving this email because you signed up as a translator to $2 on {{SITENAME}}.
+You are receiving this e-mail because you signed up as a translator to $2 on {{SITENAME}}.
 
 There is a new page to translate there: $3.
 Please translate it by clicking the following link:
@@ -85,7 +86,7 @@ Thank you!
 	'translationnotifications-edit-summary' => 'Translation notification',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
 	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; to {{PLURAL:$7|one recipient|$7 recipients}} successfully, to {{PLURAL:$8|one recipient|$8 recipients}} unsuccessfully',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; sent to {{PLURAL:$7|one recipient|$7 recipients}}, failed for {{PLURAL:$8|one recipient|$8 recipients}}, skipped for {{PLURAL:$9|one recipient|$9 recipients}}',
 	'log-name-notifytranslators' => 'Translation notifications',
 	'log-description-notifytranslators' => 'A log of notifications sent to translators about translatable pages',
 	'translationnotifications-sent-title' => 'Translation notification sent',
@@ -102,6 +103,7 @@ Thank you!
  */
 $messages['qqq'] = array(
 	'translatorsignup' => 'Special page header',
+	'translatorsignup-summary' => 'Text on top of Special:TranslatorSignup.',
 	'translationnotifications-desc' => '{{desc}}',
 	'translationnotifications-info' => 'Fieldset header',
 	'translationnotifications-username' => 'Label followed by username',
@@ -138,6 +140,7 @@ $messages['qqq'] = array(
 	'translationnotifications-translatablepage-title' => 'A label for language codes field. Can be translated as "A page designated for translation, intended for translation", etc.',
 	'translationnotifications-error-no-translatable-pages' => 'An error message.',
 	'translationnotifications-email-subject' => 'A subject for the email sent to translators.',
+	'translationnotifications-digestemail-subject' => 'The subject of the digest e-mail.',
 	'translationnotifications-email-body' => "The body of the email message sent to translators.
 
 * $1 - Translator's username or real name, if specified.

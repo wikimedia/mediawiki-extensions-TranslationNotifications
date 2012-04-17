@@ -24,6 +24,9 @@ class SpecialTranslatorSignup extends SpecialPage {
 			throw new PermissionsError( 'read' );
 		}
 
+		$this->setHeaders();
+		$this->outputHeader();
+
 		$context = $this->getContext();
 		$htmlForm = new HtmlForm( $this->getDataModel(), $context, 'translationnotifications' );
 		$htmlForm->setId( 'translationnotifications-form' );
@@ -32,7 +35,6 @@ class SpecialTranslatorSignup extends SpecialPage {
 		$htmlForm->setSubmitCallback( array( $this, 'formSubmit' ) );
 		$htmlForm->show();
 
-		$this->setHeaders();
 		$this->getOutput()->addInlineScript(
 <<<JAVASCRIPT
 jQuery( function ( $ ) {
