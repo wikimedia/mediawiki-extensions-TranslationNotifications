@@ -279,7 +279,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * @return boolean true if it was successful
 	 */
 	protected function sendTranslationNotificationEmail( User $user ) {
-		global $wgUser;
+		global $wgUser, $wgNoReplyAddress;
 		$languageCode = self::getUserFirstLanguage( $user );
 		$userFirstLanguage = Language::factory( $languageCode );
 		$languageName = $userFirstLanguage->fetchLanguageName( $languageCode );
@@ -295,7 +295,8 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$this->notificationText
 		)->inLanguage( $userFirstLanguage )->text();
 
-		$emailFrom = new MailAddress( $wgUser );
+		// Do not publish the sender's email, but include his/her name
+		$emailFrom = new MailAddress( $wgNoReplyAddress, $wgUser->getName(), $wgUser->getRealName() );
 		$emailTo = new MailAddress( $user );
 		$params = array(
 			'to' => $emailTo,
@@ -313,6 +314,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * @return boolean true if it was successful
 	 */
 	public function leaveUserMessage( User $user ) {
+		global $wgUser;
 		$talk = $user->getTalkPage();
 		$talkPage = new Article( $talk, 0 );
 		$languageCode = self::getUserFirstLanguage( $user );
@@ -334,6 +336,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$params = array(
 			'text' => $text,
 			'editSummary' => $editSummary,
+			'editor' => $wgUser->getId(),
 			);
 
 		$job = new TranslationNotificationJob( $talkPage->getTitle(), $params );

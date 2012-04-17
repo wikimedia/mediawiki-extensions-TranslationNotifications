@@ -21,7 +21,8 @@ class TranslationNotificationJob extends Job {
 		if ( $flags & EDIT_UPDATE ) {
 			$text = $talkPage->getRawText() . "\n" . $text;
 		}
-		$status = $talkPage->doEdit( $text, $this->params['editSummary'], $flags  );
+		$editor = User::newFromID( $this->params['editor'] );
+		$status = $talkPage->doEdit( $text, $this->params['editSummary'], $flags, false, $editor );
 		return $status->isGood();
 	}
 
