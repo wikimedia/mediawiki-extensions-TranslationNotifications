@@ -29,7 +29,6 @@ $messages['en'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Talk page',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Talk page on other wiki',
 	'translationnotifications-cmethod-feed' => 'Feed',
-	'translationnotifications-cmethod-no' => 'Do not contact me',
 	'translationnotifications-frequency' => 'Contact frequency',
 	'translationnotifications-freq-always' => 'When there is something new to translate',
 	'translationnotifications-freq-week' => 'At most once a week',
