@@ -24,7 +24,7 @@ class DigestEmailer extends Maintenance {
 	}
 
 	public function execute() {
-		global  $wgNoReplyAddress;
+		global $wgNoReplyAddress;
 		$this->lock();
 
 		// Get the Translators with Weekly or Monthly notificaiton preferences.
@@ -43,7 +43,7 @@ class DigestEmailer extends Maintenance {
 		$this->unlock();
 	}
 
-	public function sendEmails( $translators, $notifications ){
+	public function sendEmails( $translators, $notifications ) {
 		global $wgNoReplyAddress;
 		$mailstatus = array();
 		foreach ( $translators as $translator ) {
@@ -54,10 +54,16 @@ class DigestEmailer extends Maintenance {
 			$notificationFreq = $user->getOption( 'translationnotifications-freq' );
 
 			$this->output( "Sending digest to: $user\n\tFrequency preference: $notificationFreq\n" );
-
+			$signedUpLangCodes = array();
+			foreach ( range( 1, 3 ) as $langNum ) {
+				$langCode = $user->getOption( "translationnotifications-lang-$langNum" );
+				if ( $langCode ) {
+					$signedUpLangCodes[] = $user->getOption( "translationnotifications-lang-$langNum" );
+				}
+			}
 			$firstLangCode = $user->getOption( 'translationnotifications-lang-1' );
-			$firstLang = Language::factory( $firstLangCode )->fetchLanguageName( $firstLangCode );
-			$this->output( "\tFirst language: " . $firstLangCode . " \n" );
+			$firstLang = Language::factory( $firstLangCode )->fetchLanguageName( $signedUpLangCodes[0] );
+			$this->output( "\tSigned up for: " . implode( ', ', $signedUpLangCodes ) . "\n" );
 
 			// Draft the mail for this user
 			$digestMailSubject = wfMessage( 'translationnotifications-digestemail-subject' )->text();
@@ -77,6 +83,7 @@ class DigestEmailer extends Maintenance {
 				continue;
 			}
 			$this->output( "\tSending notification since " . date( 'D M j G:i:s T Y', $startTimeStamp ) . " \n" );
+
 			foreach ( $notifications as $notification ) {
 				$announcedate = strtotime( $notification['announcedate'] );
 
@@ -89,6 +96,18 @@ class DigestEmailer extends Maintenance {
 					// Deadline expired
 					continue;
 				}
+				// Send the notification only if the languages to notify match with translators language preference.
+				if ( $notification['languages'] !== '' ) {
+					$languagesToNotify = explode( ',', $notification['languages'] );
+					$languagesToNotify = array_flip( array_filter( array_map( 'trim', $languagesToNotify ) ) );
+					if ( !( isset( $languagesToNotify[$signedUpLangCodes[0]] )
+						|| ( isset( $signedUpLangCodes[1] ) && isset( $languagesToNotify[$signedUpLangCodes[1]] ) )
+						|| ( isset( $signedUpLangCodes[2] ) && isset( $languagesToNotify[$signedUpLangCodes[2]] ) ) )
+						) {
+						continue;
+					}
+				}
+
 				$page = TranslatablePage::newFromTitle( $notification['translatablepage'] );
 				$translationURL = SpecialPage::getTitleFor( 'Translate' )->getCanonicalUrl(
 					array( 'group' => $page->getMessageGroupId(),
@@ -112,6 +131,7 @@ class DigestEmailer extends Maintenance {
 			$this->output( "\t$count notifications to send.\n" );
 			$mailstatus[$translator] = $count;
 			if ( $count === 0 ) {
+				// No notifications to send.
 				continue;
 			}
 
@@ -143,11 +163,19 @@ class DigestEmailer extends Maintenance {
 	}
 
 	protected function sort( $notifications ) {
+		$prioritySet = array(
+			'unset' => 0,
+			'low' => 1,
+			'medium' => 2,
+			'high' => 3
+		);
 		foreach ( $notifications as $key => $row ) {
-			$priority[$key] = $row['priority'];
+			$priority[$key] = $prioritySet[$row['priority']];
 			$announcedate[$key] = $row['announcedate'];
 		}
-		array_multisort( $priority, SORT_DESC, $announcedate, SORT_DESC, $notifications );
+		if ( count( $notifications ) > 0 ) {
+			array_multisort( $priority, SORT_DESC, $announcedate, SORT_DESC, $notifications );
+		}
 		return $notifications;
 	}
 
@@ -187,6 +215,12 @@ class DigestEmailer extends Maintenance {
 		return $translators;
 	}
 
+	/*
+	 * Get the notifications from last one month(monthly is the largest digest frequency)
+	 * Sort the notification in the descending order of announcement date, and remove the older announcements
+	 * about the pages. Also remove notifications with expired deadline.
+	 * @return Array of notifications
+	 */
 	protected function getNotifications() {
 		$dbr = wfGetDB( DB_SLAVE );
 		$logEntrySelectQuery = DatabaseLogEntry::getSelectQueryData();
@@ -201,7 +235,7 @@ class DigestEmailer extends Maintenance {
 			$logEntrySelectQuery['fields'],
 			$logEntrySelectQuery['conds'],
 			__METHOD__,
-			'DISTINCT',
+			array( 'ORDER BY' => 'log_timestamp DESC' ),
 			$logEntrySelectQuery['join_conds']
 			);
 
@@ -213,7 +247,12 @@ class DigestEmailer extends Maintenance {
 				// Deadline already expired
 				continue;
 			}
-			$notifications[] = array(
+			$translatablePage = $logEntry->getTarget()->getPrefixedText();
+			if ( isset( $notifications[$translatablePage] ) ) {
+				// An older notification about the same page.
+				continue;
+			}
+			$notifications[$translatablePage] = array(
 				'languages' => $logParams[0],
 				'deadline' => $logParams[1],
 				'priority' => $logParams[2],
