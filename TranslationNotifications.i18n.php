@@ -71,7 +71,9 @@ Thank you!
 Hello $2,
 
 You are receiving this notification because you signed up as a translator to $3 on {{SITENAME}}.
-A new page, [[$4]] is available for translation. Please [$5 translate it].
+A new page, [[$4]] is available for translation. Please translate it by clicking the following link:
+
+$5
 
 $6
 $7
@@ -81,20 +83,6 @@ $8
 Thank you!
 
 {{SITENAME}} staff',
-	'translationnotifications-digestemail-subject' => 'Digest e-mail for translation requests from {{SITENAME}}',
-	'translationnotifications-digestemail-body' => 'Hello $1,
-
-You are receiving this e-mail because you signed up as a translator to $2 on {{SITENAME}}.
-
-There {{PLURAL:$3|is 1 page|are $3 pages}} available for translation. The details are given below.
-
-$4
-
-To change your notification preferences for translation requests, please visit $5
-
-Thank you!
-{{SITENAME}} staff',
-	'translationnotifications-digestemail-notification-line' => 'On $1, $2 marked "$3" for translation. You can translate it at $4',
 	'translationnotifications-edit-summary' => 'Translation notification',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
 	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
@@ -132,7 +120,6 @@ $messages['qqq'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Check option label',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Check option label',
 	'translationnotifications-cmethod-feed' => 'Check option label',
-	'translationnotifications-cmethod-no' => 'Check option label',
 	'translationnotifications-frequency' => 'Fieldset header',
 	'translationnotifications-freq-always' => 'Radio option label',
 	'translationnotifications-freq-week' => 'Radio option label',
@@ -152,7 +139,6 @@ $messages['qqq'] = array(
 	'translationnotifications-translatablepage-title' => 'A label for language codes field. Can be translated as "A page designated for translation, intended for translation", etc.',
 	'translationnotifications-error-no-translatable-pages' => 'An error message.',
 	'translationnotifications-email-subject' => 'A subject for the email sent to translators.',
-	'translationnotifications-digestemail-subject' => 'The subject of the digest e-mail.',
 	'translationnotifications-email-body' => "The body of the email message sent to translators.
 
 * $1 - Translator's username or real name, if specified.
@@ -183,28 +169,14 @@ $messages['qqq'] = array(
 * $5 - deadline
 * $6 - priority
 * $7 - number of recipients to whom the notification was sent successfully
-* $8 - number of recipients to whom sending the notification failed
-* $9 - number of recipients to whom the notification was not sent because it was too early to send it according to their preferences.',
+* $8 - number of recipients to whom sending the notification failed',
 	'log-name-notifytranslators' => 'Log page title.',
 	'log-description-notifytranslators' => 'Log page description',
 	'translationnotifications-sent-title' => 'The title of the page shown after the notification is sent.
 Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
 	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified.',
-	'translationnotifications-edit-summary' => 'The edit summary for the notification text added to the user talk page.',
-	'translationnotifications-digestemail-body' => '
-* $1 - username
-* $2 - first language preference of user
-* $3 - number of pages available for translation.
-* $4 - The list of notifications, this is the main part of the email.
-* $5 - Link to [[Special:NotifyTranslators]]',
-	'translationnotifications-digestemail-notification-line' => 'The message line for notification in the digest.
-* $1 - date
-* $2 - user name
-* $3 - translatable page title
-* $4 - link to [[Special:Translate]] page for the users first language.',
 );
-
 
 /** Ṫuroyo (Ṫuroyo)
  * @author Ariyo
@@ -268,6 +240,7 @@ $messages['br'] = array(
  */
 $messages['de'] = array(
 	'translatorsignup' => 'Übersetzerregistrierung',
+	'translatorsignup-summary' => 'Nutze diese Seite um anzugeben in welche Sprachen du übersetzen kannst und wie du bei Übersetzungsanfragen benachrichtigt werden möchtest.',
 	'translationnotifications-desc' => 'Ermöglicht es Übersetzern Übersetzungsbenachrichtigungen zu abonnieren',
 	'translationnotifications-info' => 'Benutzerinformation',
 	'translationnotifications-username' => 'Benutzername:',
@@ -283,7 +256,6 @@ $messages['de'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Diskussionsseite',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Diskussionsseite auf einem anderen Wiki',
 	'translationnotifications-cmethod-feed' => 'Feed',
-	'translationnotifications-cmethod-no' => 'Benachrichtige mich nicht',
 	'translationnotifications-frequency' => 'Benachrichtigungshäufigkeit',
 	'translationnotifications-freq-always' => 'Immer, wenn neue Übersetzungen vorhanden sind',
 	'translationnotifications-freq-week' => 'Höchstens einmal pro Woche',
@@ -337,7 +309,7 @@ die Mitarbeiter von {{SITENAME}}',
 	'translationnotifications-edit-summary' => 'Übersetzungsbenachrichtigung',
 	'translationnotifications-email-priority' => 'Die Übersetzungspriorität dieser Seite ist $1.',
 	'translationnotifications-email-deadline' => 'Die Frist zur Übersetzung dieser Seite läuft bis zum $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sandte}} eine Benachrichtigung bezüglich der Übersetzung von Seite $3 in die Sprachen $4, mit der Frist $5 und der Priorität $6, erfolgreich an {{PLURAL:$7|einen Empfänger|$7 Empfänger}} und erfolglos an {{PLURAL:$8|einen Empfänger|$8 Empfänger}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sandte}} eine Benachrichtigung bezüglich der Übersetzung von Seite $3 in die Sprachen $4, mit der Frist $5 und der Priorität $6, erfolgreich an {{PLURAL:$7|einen Empfänger|$7 Empfänger}} und erfolglos an {{PLURAL:$8|einen Empfänger|$8 Empfänger}}, wobei {{PLURAL:$9|eine Empfänger nicht angeschrieben wurde|$9 Empfänger nicht angeschrieben wurden}}.',
 	'log-name-notifytranslators' => 'Übersetzungsbenachrichtigungs-Logbuch',
 	'log-description-notifytranslators' => 'Das Logbuch der Benachrichtigungen, die bezüglich übersetzbarer Seiten an die Übersetzer gesandt wurden.',
 	'translationnotifications-sent-title' => 'Übersetzungsbenachrichtigung verschickt',
@@ -351,11 +323,11 @@ die Mitarbeiter von {{SITENAME}}',
  * @author Kghbln
  */
 $messages['de-formal'] = array(
+	'translatorsignup-summary' => 'Nutzen Sie diese Seite um anzugeben in welche Sprachen Sie übersetzen können und wie Sie bei Übersetzungsanfragen benachrichtigt werden möchten.',
 	'translationnotifications-email-confirmed' => 'Ihre E-Mail-Adresse ist bestätigt',
 	'translationnotifications-email-unconfirmed' => 'Ihre E-Mail-Adresse ist nicht bestätigt. $1',
 	'translationnotifications-email-notset' => 'Sie haben keine E-Mail-Adresse angegeben. Dies können Sie in Ihren [[Special:Preferences|Einstellungen]] tun.',
 	'translationnotifications-nolang' => 'Wählen Sie eine Sprache',
-	'translationnotifications-cmethod-no' => 'Benachrichtigen Sie mich nicht',
 	'translationnotifications-email-subject' => 'Bitte übersetzen Sie die Seite $1.',
 	'translationnotifications-email-body' => 'Hallo $1,
 
@@ -410,7 +382,6 @@ $messages['dsb'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Diskusijny bok',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Diskusijny bok na drugem wikiju',
 	'translationnotifications-cmethod-feed' => 'Kanal',
-	'translationnotifications-cmethod-no' => 'Mě njekontaktěrowaś',
 	'translationnotifications-frequency' => 'Kontaktowa cestosć',
 	'translationnotifications-freq-always' => 'Pśecej, gž jo něco nowe za pśełožowanje',
 	'translationnotifications-freq-week' => 'Maksimalnje raz na tyźeń',
@@ -473,7 +444,6 @@ $messages['es'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Página de discusión',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Página de discusión en otro wiki',
 	'translationnotifications-cmethod-feed' => 'Fuente web',
-	'translationnotifications-cmethod-no' => 'No contacte conmigo',
 	'translationnotifications-frequency' => 'Frecuencia de contacto',
 	'translationnotifications-freq-always' => 'Cuando haya algo nuevo para traducir',
 	'translationnotifications-freq-week' => 'Más de una vez por semana',
@@ -528,7 +498,7 @@ El equipo de {{SITENAME}}',
 	'translationnotifications-edit-summary' => 'Notificación de traducción',
 	'translationnotifications-email-priority' => 'La prioridad de esta página es  $1.',
 	'translationnotifications-email-deadline' => 'La fecha límite para la traducción de esta página es  $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha enviado}} una notificación sobre la traducción de la página $3; idiomas: $4; fecha límite: $5; prioridad: $6, a {{PLURAL:$7|un destinatario|$7  destinatarios}} correctamente, y a {{PLURAL:$8|un destinatario|$8 destinatarios}} sin éxito',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha enviado}} una notificación sobre la traducción de la página $3; idiomas: $4; fecha límite: $5; prioridad: $6; ha llegado a {{PLURAL:$7|un destinatario|$7  destinatarios}}, ha fallado en {{PLURAL:$8|un destinatario|$8 destinatarios}}, ha omitido a {{PLURAL:$9|un destinatario|$9 destinatarios}}',
 	'log-name-notifytranslators' => 'Notificaciones de traducción',
 	'log-description-notifytranslators' => 'Un registro de las notificaciones enviadas a los traductores sobre las páginas traducibles',
 	'translationnotifications-sent-title' => 'Notificación de traducción enviada',
@@ -557,7 +527,6 @@ $messages['fr'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Page de discussion',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Page de discussion sur un autre wiki',
 	'translationnotifications-cmethod-feed' => 'Alimentation',
-	'translationnotifications-cmethod-no' => 'Ne pas me contacter',
 	'translationnotifications-frequency' => 'Fréquence de contact',
 	'translationnotifications-freq-always' => 'Quand il y a quelque chose de nouveau à traduire',
 	'translationnotifications-freq-week' => 'Au moins une fois par semaine',
@@ -641,7 +610,6 @@ $messages['gl'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Páxina de conversa',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Páxina de conversa noutro wiki',
 	'translationnotifications-cmethod-feed' => 'Fonte de novas',
-	'translationnotifications-cmethod-no' => 'Non contactedes comigo',
 	'translationnotifications-frequency' => 'Frecuencia de contacto',
 	'translationnotifications-freq-always' => 'Cando haxa algo novo que traducir',
 	'translationnotifications-freq-week' => 'Unha vez á semana, polo menos',
@@ -725,7 +693,6 @@ $messages['he'] = array(
 	'translationnotifications-cmethod-talkpage' => 'דף שיחה',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'דף שיחה בוויקי אחר',
 	'translationnotifications-cmethod-feed' => 'הזנה',
-	'translationnotifications-cmethod-no' => 'לא ליצור אתי קשר',
 	'translationnotifications-frequency' => 'תדירות ההתקשרות',
 	'translationnotifications-freq-always' => 'כשיש מה לתרגם',
 	'translationnotifications-freq-week' => 'לכל היותר פעם בשבוע',
@@ -783,7 +750,6 @@ $messages['hsb'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Diskusijna strona',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Diskusijna strona na druhim wikiju',
 	'translationnotifications-cmethod-feed' => 'Kanal',
-	'translationnotifications-cmethod-no' => 'Mje njekontaktować',
 	'translationnotifications-frequency' => 'Kontaktowa častosć',
 	'translationnotifications-freq-always' => 'Přeco, hdyž je něšto nowe za přełožowanje',
 	'translationnotifications-freq-week' => 'Maksimalnje jónu na tydźeń',
@@ -867,7 +833,6 @@ $messages['ia'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Pagina de discussion',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pagina de discussion in un altere wiki',
 	'translationnotifications-cmethod-feed' => 'Syndication',
-	'translationnotifications-cmethod-no' => 'Non contactar me',
 	'translationnotifications-frequency' => 'Frequentia de contacto',
 	'translationnotifications-freq-always' => 'Quando il ha qualcosa de nove a traducer',
 	'translationnotifications-freq-week' => 'Al plus un vice per septimana',
@@ -966,6 +931,7 @@ $messages['lb'] = array(
  */
 $messages['mk'] = array(
 	'translatorsignup' => 'Пријава на преведувач',
+	'translatorsignup-summary' => 'На оваа страница наведете ги јазиците на кои ќе преведувате и укажете како да ве контактираме кога има нови барања за превод.',
 	'translationnotifications-desc' => 'Им овозможува на преведувачите да се пријават за известувања што се однесуваат на преведувањето',
 	'translationnotifications-info' => 'Кориснички податоци',
 	'translationnotifications-username' => 'Корисничко име:',
@@ -981,7 +947,6 @@ $messages['mk'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Страница за разговор',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Страница за разговор на друго вики',
 	'translationnotifications-cmethod-feed' => 'Канал',
-	'translationnotifications-cmethod-no' => 'Не ме контактирај',
 	'translationnotifications-frequency' => 'Честота на контактот',
 	'translationnotifications-freq-always' => 'Кога ќе се појави нешто ново за преведување',
 	'translationnotifications-freq-week' => 'Највеќе еднаш неделно',
@@ -1035,7 +1000,7 @@ $8
 	'translationnotifications-edit-summary' => 'Известување за превод',
 	'translationnotifications-email-priority' => 'Приоритетот на оваа страница е $1.',
 	'translationnotifications-email-deadline' => 'Крајниот рок за преведување на оваа страница е $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|испрати}} известување за преведување на страницата $3; јазици: $4; краен рок: $5; приоритет: $6. Известувањето го {{PLURAL:$7|доби еден примач|добија $7 примачи}}, а не успеа кај {{PLURAL:$8|еден примач|$8 примачи}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|испрати}} известување за преведување на страницата $3; јазици: $4; краен рок: $5; приоритет: $6. Известувањето е испратено на {{PLURAL:$7|еден примач|$7 примачи}}, не успеа кај {{PLURAL:$8|еден примач|$8 примачи}} и изостави {{PLURAL:$9|еден примач|$9 примачи}}',
 	'log-name-notifytranslators' => 'Известувања за преведување',
 	'log-description-notifytranslators' => 'Дневник на известувањата што им се испраќаат на преведувачите со што им се соопштува кои страници се достапни за преведување',
 	'translationnotifications-sent-title' => 'Известувањето за преведување е испратено',
@@ -1064,7 +1029,6 @@ $messages['ms'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Laman perbincangan',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Laman perbincangan di wiki lain',
 	'translationnotifications-cmethod-feed' => 'Suapan',
-	'translationnotifications-cmethod-no' => 'Jangan hubungi saya',
 	'translationnotifications-frequency' => 'Kekerapan perhubungan',
 	'translationnotifications-freq-always' => 'Apabila ada bahan baru untuk diterjemah',
 	'translationnotifications-freq-week' => 'Paling kerap seminggu sekali',
@@ -1129,7 +1093,6 @@ $messages['nl'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Overlegpagina',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Overlegpagina op andere wiki',
 	'translationnotifications-cmethod-feed' => 'Feed',
-	'translationnotifications-cmethod-no' => 'Neem geen contact met mij op',
 	'translationnotifications-frequency' => 'Contactfrequentie',
 	'translationnotifications-freq-always' => 'Wanneer er iets nieuws te vertalen is',
 	'translationnotifications-freq-week' => 'Hoogstens één keer per week',
@@ -1149,8 +1112,41 @@ $messages['nl'] = array(
 	'translationnotifications-translatablepage-title' => 'Naam vertaalbare pagina:',
 	'translationnotifications-error-no-translatable-pages' => "Er zijn geen vertaalbare pagina's in deze wiki.",
 	'translationnotifications-email-subject' => 'Vertaal alstublieft de pagina $1',
+	'translationnotifications-email-body' => 'Hallo $1,
+
+U ontvangt deze e-mail omdat u zich heeft opgegeven als vertaler voor het $2 op {{SITENAME}}.
+
+Er is een nieuwe pagina te vertalen: $3.
+Vertaal deze alstublieft door op de volgende verwijzing te klikken:
+$4
+
+$5
+$6
+
+$7
+
+Bedankt!
+{{SITENAME}}-beheerders',
+	'translationnotifications-talkpage-body' => '== $1 ==
+
+Hallo $2,
+
+U ontvangt deze melding omdat u zich heeft opgegeven als vertaler voor het $3 op {{SITENAME}}.
+De pagina [[$4]] is beschikbaar voor vertaling. Vertaal deze alstublieft door op de volgende verwijzing te klikken:
+
+$5
+
+$6
+$7
+
+$8
+
+Bedankt!
+
+{{SITENAME}}-beheerders',
 	'translationnotifications-email-priority' => 'De prioriteit voor deze pagina is $1.',
 	'translationnotifications-email-deadline' => 'De deadline voor het vertalen van deze pagina is  $1.',
+	'log-description-notifytranslators' => "Een logboek van meldingen verzonden naar vertalers over vertaalbare pagina's",
 	'translationnotifications-log-alllanguages' => 'alle talen',
 	'translationnotifications-nodeadline' => 'geen',
 );
@@ -1175,7 +1171,6 @@ $messages['pl'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Strona dyskusji',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Strona dyskusji na innej wiki',
 	'translationnotifications-cmethod-feed' => 'Kanały',
-	'translationnotifications-cmethod-no' => 'Nie kontaktować się ze mną',
 	'translationnotifications-frequency' => 'Częstotliwość kontaktów',
 	'translationnotifications-freq-always' => 'Gdy istnieje coś nowego do przetłumaczenia',
 	'translationnotifications-freq-week' => 'Co najwyżej raz w tygodniu',
