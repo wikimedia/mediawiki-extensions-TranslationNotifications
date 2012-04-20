@@ -170,6 +170,17 @@ $messages['qqq'] = array(
 * $6 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $7 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
 * $8 - A custom message that can be added by the notification sender.",
+	'translationnotifications-digestemail-body' => '
+* $1 - username
+* $2 - first language preference of user
+* $3 - number of pages available for translation.
+* $4 - The list of notifications, this is the main part of the email.
+* $5 - Link to [[Special:NotifyTranslators]]',
+	'translationnotifications-digestemail-notification-line' => 'The message line for notification in the digest.
+* $1 - date
+* $2 - user name
+* $3 - translatable page title
+* $4 - link to [[Special:Translate]] page for the users first language.',
 	'translationnotifications-edit-summary' => 'The edit summary for the notification text added to the user talk page.',
 	'translationnotifications-email-priority' => 'Used in {{msg-mw|translationnotifications-email-body}}',
 	'translationnotifications-email-deadline' => 'Used in {{msg-mw|translationnotifications-email-body}}',
@@ -189,18 +200,6 @@ $messages['qqq'] = array(
 Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
 	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified.',
-	'translationnotifications-edit-summary' => 'The edit summary for the notification text added to the user talk page.',
-	'translationnotifications-digestemail-body' => '
-* $1 - username
-* $2 - first language preference of user
-* $3 - number of pages available for translation.
-* $4 - The list of notifications, this is the main part of the email.
-* $5 - Link to [[Special:NotifyTranslators]]',
-	'translationnotifications-digestemail-notification-line' => 'The message line for notification in the digest.
-* $1 - date
-* $2 - user name
-* $3 - translatable page title
-* $4 - link to [[Special:Translate]] page for the users first language.',
 );
 
 
@@ -321,9 +320,7 @@ die Mitarbeiter von {{SITENAME}}',
 Hallo $2,
 
 du erhältst diese E-Mail, da du dich als Übersetzer(in) für $3 auf {{SITENAME}} registriert hast.
-Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. Übersetze sie bitte nach dem Klicken auf den folgenden Link:
-
-$5
+Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. [$5 Übersetze sie bitte].
 
 $6
 $7
@@ -332,6 +329,19 @@ $8
 
 Vielen Dank,
 die Mitarbeiter von {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => 'E-Mail-Übersicht zu Übersetzungsanforderungen von {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Hallo $1,
+
+du erhältst diese E-Mail, da du dich als Übersetzer(in) für $2 auf {{SITENAME}} registriert hast.
+Es {{PLURAL:$3|ist eine Seite|sind $3 Seiten}} zum Übersetzen vorhanden. Einzelheiten sind unten angegeben:
+
+$4
+
+Um deine Einstellungen zu Übersetzungsbenachrichtigungen zu ändern, kannst du $5 besuchen.
+
+Vielen Dank,
+die Mitarbeiter von {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => 'Am $1 gab $2 die Seite „$3“ zur Übersetzung frei. Du kannst sie unter $4 übersetzen.',
 	'translationnotifications-edit-summary' => 'Übersetzungsbenachrichtigung',
 	'translationnotifications-email-priority' => 'Die Übersetzungspriorität dieser Seite ist $1.',
 	'translationnotifications-email-deadline' => 'Die Frist zur Übersetzung dieser Seite läuft bis zum $1.',
@@ -375,14 +385,23 @@ die Mitarbeiter von {{SITENAME}}',
 Hallo $2,
 
 Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $3 auf {{SITENAME}} registriert haben.
-Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. Übersetzen Sie sie bitte nach dem Klicken auf den folgenden Link:
-
-$5
+Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. [$5 Übersetzen Sie sie bitte].
 
 $6
 $7
 
 $8
+
+Vielen Dank,
+die Mitarbeiter von {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Hallo $1,
+
+Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $2 auf {{SITENAME}} registriert haben.
+Es {{PLURAL:$3|ist eine Seite|sind $3 Seiten}} zum Übersetzen vorhanden. Einzelheiten sind unten angegeben:
+
+$4
+
+Um Ihre Einstellungen zu Übersetzungsbenachrichtigungen zu ändern, können Sie $5 besuchen.
 
 Vielen Dank,
 die Mitarbeiter von {{SITENAME}}',
@@ -455,6 +474,7 @@ Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
  */
 $messages['es'] = array(
 	'translatorsignup' => 'Inscripción de traductores',
+	'translatorsignup-summary' => 'Utiliza esta página para indicar a qué idiomas puedes traducir, y cómo deseas ser contactado sobre las nuevas solicitudes de traducción.',
 	'translationnotifications-desc' => 'Permite a los traductores registrarse para recibir notificaciones de traducción',
 	'translationnotifications-info' => 'Información de usuario',
 	'translationnotifications-username' => 'Nombre de usuario:',
@@ -509,9 +529,7 @@ Hola  $2,
 
 Usted está recibiendo esta notificación porque se inscribió como traductor  de {{SITENAME}} al  $3.
 
-Una nueva página, [[$4]] está disponible para su traducción. Por favor tradúzcala haciendo clic en el enlace siguiente:
-
-$5
+Una nueva página, [[$4]] está disponible para su traducción. Por favor  [$5 tradúzcala].
 
 $6
 $7
@@ -521,6 +539,20 @@ $8
 ¡Gracias!
 
 El equipo de {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => 'Correo electrónico de resumen para solicitudes de traducción de {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Hola  $1,
+
+Está recibiendo este mensaje porque se inscribió como traductor  de {{SITENAME}} al  $2.
+
+Hay  {{PLURAL:$3|1 página|$3  páginas}} disponibles para su traducción. A continuación figuran los detalles.
+
+$4
+
+Para cambiar sus preferencias de notificación para las solicitudes de traducción, por favor visite $5 
+
+¡Gracias!
+El equipo de {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => 'En $1,  $2  ha marcado "$3" para su traducción. Puede traducirlo en $4',
 	'translationnotifications-edit-summary' => 'Notificación de traducción',
 	'translationnotifications-email-priority' => 'La prioridad de esta página es  $1.',
 	'translationnotifications-email-deadline' => 'La fecha límite para la traducción de esta página es  $1.',
@@ -1012,9 +1044,7 @@ $7
 Здраво $2,
 
 Го добивате ова известување бидејќи се пријавивте за преведувач на {{SITENAME}} на $3.
-Новата страница [[$4]] чека на преведување. Преведете ја на следнава врска:
-
-$5
+Новата страница [[$4]] чека на преведување. Ве молиме [$5 преведете ја].
 
 $6
 $7
@@ -1024,6 +1054,20 @@ $8
 Ви благодариме!
 
 Персоналот на {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => 'Преглед на барања за превод од {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Здраво $1,
+
+Го добивате ова известување бидејќи се пријавивте за преведувач на $2 на {{SITENAME}}.
+
+Имате {{PLURAL:$3|1 страница|$3 страници}} за преведување. Повеќе подробности подолу.
+
+$4
+
+За да ги измените поставките за овие известувања, посетете ја страницата $5
+
+Ви благодариме!
+Персоналот на {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => 'На $1, $2 ја означи страницата „$3“ за преведување. Преведете ја на $4',
 	'translationnotifications-edit-summary' => 'Известување за превод',
 	'translationnotifications-email-priority' => 'Приоритетот на оваа страница е $1.',
 	'translationnotifications-email-deadline' => 'Крајниот рок за преведување на оваа страница е $1.',
