@@ -71,9 +71,7 @@ Thank you!
 Hello $2,
 
 You are receiving this notification because you signed up as a translator to $3 on {{SITENAME}}.
-A new page, [[$4]] is available for translation. Please translate it by clicking the following link:
-
-$5
+A new page, [[$4]] is available for translation. Please [$5 translate it].
 
 $6
 $7
@@ -83,6 +81,20 @@ $8
 Thank you!
 
 {{SITENAME}} staff',
+	'translationnotifications-digestemail-subject' => 'Digest e-mail for translation requests from {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Hello $1,
+
+You are receiving this e-mail because you signed up as a translator to $2 on {{SITENAME}}.
+
+There {{PLURAL:$3|is 1 page|are $3 pages}} available for translation. The details are given below.
+
+$4
+
+To change your notification preferences for translation requests, please visit $5
+
+Thank you!
+{{SITENAME}} staff',
+	'translationnotifications-digestemail-notification-line' => 'On $1, $2 marked "$3" for translation. You can translate it at $4',
 	'translationnotifications-edit-summary' => 'Translation notification',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
 	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
@@ -169,14 +181,28 @@ $messages['qqq'] = array(
 * $5 - deadline
 * $6 - priority
 * $7 - number of recipients to whom the notification was sent successfully
-* $8 - number of recipients to whom sending the notification failed',
+* $8 - number of recipients to whom sending the notification failed
+* $9 - number of recipients to whom the notification was not sent because it was too early to send it according to their preferences.',
 	'log-name-notifytranslators' => 'Log page title.',
 	'log-description-notifytranslators' => 'Log page description',
 	'translationnotifications-sent-title' => 'The title of the page shown after the notification is sent.
 Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
 	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified.',
+	'translationnotifications-edit-summary' => 'The edit summary for the notification text added to the user talk page.',
+	'translationnotifications-digestemail-body' => '
+* $1 - username
+* $2 - first language preference of user
+* $3 - number of pages available for translation.
+* $4 - The list of notifications, this is the main part of the email.
+* $5 - Link to [[Special:NotifyTranslators]]',
+	'translationnotifications-digestemail-notification-line' => 'The message line for notification in the digest.
+* $1 - date
+* $2 - user name
+* $3 - translatable page title
+* $4 - link to [[Special:Translate]] page for the users first language.',
 );
+
 
 /** Ṫuroyo (Ṫuroyo)
  * @author Ariyo
