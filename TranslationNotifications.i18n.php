@@ -848,7 +848,7 @@ Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
 Witaj $2,
 
 dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
-Nowa strona, [[$4]], steji za přełožowanje k dispoziciji. Prošu přełož ju, kliknjo na slědowacy wotkaz:
+Nowa strona, [[$4]], steji za přełožowanje k dispoziciji. Prošu [$5 přełož ju].
 
 $5
 
@@ -863,7 +863,7 @@ Team {{SITENAME}}',
 	'translationnotifications-edit-summary' => 'Přełožowanska zdźělenka',
 	'translationnotifications-email-priority' => 'Priorita tuteje strony je $1.',
 	'translationnotifications-email-deadline' => 'Termin za přełožowanje tuteje strony je $1.',
-	'logentry-translationnotifications-sent' => '$1 je zdźělenku wo přełožowanskej stronje $3; rěče: $4; termin $5; priorita $6; na {{PLURAL:$7|jednoho přijimarja|$7 přijimarjow|$7 přijimarjow|$7 prijimarjow}} wuspěšnje {{GENDER:$2|pósłał|pósłała}}, a na {{PLURAL:$8|jednoho přijimarja|$8 přijimarjow|$8 přijimarjow|$8 přijimarjow}} njewuspěšnje.',
+	'logentry-translationnotifications-sent' => '$1 je zdźělenku wo přełožowanskej stronje $3 {{GENDER:$2|pósłał|posłała}}; rěče: $4; termin $5; priorita $6; na {{PLURAL:$7|jednoho přijimarja|$7 přijimarjow|$7 přijimarjow|$7 prijimarjow}}  {{GENDER:$2|pósłał|pósłała}}, je so njeporadźiła za {{PLURAL:$8|jednoho přijimarja|$8 přijimarjow|$8 přijimarjow|$8 přijimarjow}}, je so přeskočiła za  {{PLURAL:$9|jednoho přijimarja|$9 přijimarjow|$9 přijimarjow|$9 přijimarjow}}.',
 	'log-name-notifytranslators' => 'Přełožowanske zdźělenki',
 	'log-description-notifytranslators' => 'Protokol wo zdźělenkach, kotrež su so přełožowarjam wo přełožujomnych stronach pósłali',
 	'translationnotifications-sent-title' => 'Přełožowanska zdźělenka je so pósłała',
@@ -877,6 +877,7 @@ Team {{SITENAME}}',
  */
 $messages['ia'] = array(
 	'translatorsignup' => 'Inscription de traductor',
+	'translatorsignup-summary' => 'Iste pagina es pro indicar le linguas in le quales tu sape traducer, e le methodo preferite de contacto sur nove requestas de traduction.',
 	'translationnotifications-desc' => 'Permitte que traductores se inscribe pro notificationes concernente le traduction',
 	'translationnotifications-info' => 'Information de usator',
 	'translationnotifications-username' => 'Nomine de usator:',
@@ -931,9 +932,7 @@ Le personal de {{SITENAME}}',
 Salute $2,
 
 Tu recipe iste notification perque tu te inscribeva como traductor de $3 in {{SITENAME}}.
-Un nove pagina, [[$4]] es disponibile pro traduction. Per favor traduce lo per cliccar sur le sequente ligamine:
-
-$5
+Un nove pagina, [[$4]] es disponibile pro traduction. Per favor [$5 traduce lo].
 
 $6
 $7
@@ -943,6 +942,20 @@ $8
 Gratias!
 
 Le equipa de {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => 'Digesto in e-mail con requestas de traduction ab {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Salute $1,
+
+Tu recipe iste e-mail perque tu te inscribeva qua traductor de $2 in {{SITENAME}}.
+
+Il ha {{PLURAL:$3|1 pagina|$3 paginas}} disponibile pro traduction. Ecce le detalios:
+
+$4
+
+Pro cambiar le tue preferentias de notification pro le requesta de traduction, visita $5
+
+Gratias!
+Le equipa de {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => 'Le $1, $2 marcava "$3" pro traduction. Tu pote traducer lo a $4',
 	'translationnotifications-edit-summary' => 'Notification de traduction',
 	'translationnotifications-email-priority' => 'Le prioritate de iste pagina es $1.',
 	'translationnotifications-email-deadline' => 'Le data limite pro traducer iste pagina es $1.',
