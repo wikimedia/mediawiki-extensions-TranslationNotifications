@@ -461,12 +461,18 @@ $7
 
 Wjeliki źěk!
 Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
+	'translationnotifications-digestemail-subject' => 'E-mailowy pśeglěd za póžedane pśełožki wót {{GRAMMAR:genitiw|{{SITENAME}}}}',
+	'translationnotifications-digestemail-notification-line' => 'Dnja $1 jo $2 bok "$3" za pśełožowanje markěrował. Móžoš ju na $4 pśełožowaś.',
+	'translationnotifications-edit-summary' => 'Pśełožowańska powěźeńka',
 	'translationnotifications-email-priority' => 'Priorita toś togo boka jo $1.',
 	'translationnotifications-email-deadline' => 'Termin za pśełožowanje toś togo boka jo $1.',
-	'logentry-translationnotifications-sent' => '$1 jo powěźeńku wó pśełožowańskem boku $3 do rěcy $4 z terminom $5, z prioritu $6, na {{PLURAL:$7|jadnogo dostawarja|$7 dostawarjowu|$7 dostawarjow|$7 dostawarjow}} wuspěšnje {{GENDER:$2|pósłał|pósłała}}, a na {{PLURAL:$8|jadnogo dostawarja|$8 dostawarjowu|$8 dostawarjow|$8 dostawarjow}} njewuspěšnje.',
+	'logentry-translationnotifications-sent' => '$1 jo powěźeńku wó pśełožowańskem boku $3 {{GENDER:$2|pósłał|posłała}}; rěcy: $4; termin $5; priorita $6; jo ju na {{PLURAL:$7|jadnogo dostawarja|$7 dostawarjowu|$7 dostawarjow|$7 dostawarjow}} {{GENDER:$2|pósłał|pósłała}}, jo se njeraźiła za {{PLURAL:$8|jadnogo dostawarja|$8 dostawarjowu$8 dostawarjow|$8 dostawarjow}}, jo se pśeskócyła za  {{PLURAL:$9|jadnogo dostawarja|$9 dostawarjowu|$9 dostawarjow|$9 dostawarjow}}.',
 	'log-name-notifytranslators' => 'Pśełožowańske powěźeńki',
+	'log-description-notifytranslators' => 'Protokol wó powěžeńkach, kótarež su se pśełožowarjam wó pśełožujobnych bokach pósłali',
 	'translationnotifications-sent-title' => 'Pśełožowańska powěźeńka jo se pósłała',
 	'translationnotifications-sent-body' => 'Pśełožowańska powěźeńka jo se pósłała.',
+	'translationnotifications-log-alllanguages' => 'wšykne rěcy',
+	'translationnotifications-nodeadline' => 'žeden',
 );
 
 /** Spanish (Español)
@@ -625,9 +631,7 @@ L'équipe de {{SITENAME}}",
 Bonjour $2,
 
 Vous recevez cette notification parce que vous êtes inscrit comme traducteur de $3 sur {{SITENAME}}.
-Une nouvelle page, [[$4]], est disponible pour la traduction. Veuillez la traduite en cliquant sur le lien suivant:
-
-$5
+Une nouvelle page, [[$4]], est disponible pour la traduction. Veuillez [$5 la traduire].
 
 $6
 $7
@@ -637,6 +641,21 @@ $8
 Merci!
 
 L'équipe de {{SITENAME}}",
+	'translationnotifications-digestemail-subject' => 'Courriel de synthèse pour les demandes de traduction de {{SITENAME}}',
+	'translationnotifications-digestemail-body' => "Bonjour $1,
+
+Vous recevez ce courriel parce que vous inscrit comme traducteur de $2 sur {{SITENAME}}.
+
+Il y a {{PLURAL:$3|1 page disponible|$3 pages disponibles}} pour la traduction. Les détails sont donnés ci-dessous. 
+
+$4
+
+Pour modifier vos préférences de notification pour les demandes de traduction, veuillez visiter  $5 
+
+Merci!
+
+L'équipe de {{SITENAME}}",
+	'translationnotifications-digestemail-notification-line' => 'Sur $1, $2 a marqué "$3" pour être traduit. Vous pouvez le traduire sur $4',
 	'translationnotifications-edit-summary' => 'Notification de traduction',
 	'translationnotifications-email-priority' => 'La priorité de cette page est $1.',
 	'translationnotifications-email-deadline' => 'La date limite pour traduire cette page est $1.',
@@ -654,6 +673,7 @@ L'équipe de {{SITENAME}}",
  */
 $messages['gl'] = array(
 	'translatorsignup' => 'Inscrición de tradutores',
+	'translatorsignup-summary' => 'Use esta páxina para indicar as linguas que poida traducir e como quere que nos poñamos en contacto con vostede para enviarlle solicitudes de tradución.',
 	'translationnotifications-desc' => 'Permite aos tradutores inscribirse para recibir notificacións sobre as traducións',
 	'translationnotifications-info' => 'Información de usuario',
 	'translationnotifications-username' => 'Nome de usuario:',
@@ -708,9 +728,7 @@ O equipo de {{SITENAME}}',
 Boas, $2:
 
 Recibiu esta notificación porque está inscrito como tradutor ao $3 en {{SITENAME}}.
-Hai unha nova páxina, "[[$4]]", dispoñible para a súa tradución. Tradúzaa premendo na seguinte ligazón:
-
-$5
+Hai unha nova páxina, "[[$4]]", dispoñible para a súa tradución. Por favor, [$5 tradúzaa].
 
 $6
 $7
@@ -720,10 +738,24 @@ $8
 Grazas!
 
 O equipo de {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => 'Correo electrónico de resumo sobre as solicitudes de tradución de {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Boas, $1:
+
+Recibiu este correo electrónico porque está inscrito como tradutor ao $2 en {{SITENAME}}.
+
+Hai {{PLURAL:$3|1 nova páxina|$3 novas páxinas}} que traducir alí. A continuación están os detalles.
+
+$4
+
+Para cambiar as preferencias das notificacións sobre as solicitudes de tradución, visite $5
+
+Grazas!
+O equipo de {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => 'O $1, $2 marcou "$3" para a súa tradución. Pode traducila en $4',
 	'translationnotifications-edit-summary' => 'Notificación de tradución',
 	'translationnotifications-email-priority' => 'A prioridade desta páxina é $1.',
 	'translationnotifications-email-deadline' => 'A data límite para traducir a páxina é $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|enviou}} correctamente unha notificación sobre a tradución da páxina "$3"; linguas: $4; data límite: $5; prioridade: $6; {{PLURAL:$7|recibiuna un destinatario|recibírona $7 destinatarios}}; {{PLURAL:$8|outro destinatario non a recibiu|outros $8 destinatarios non a recibiron}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|enviou}} correctamente unha notificación sobre a tradución da páxina "$3"; linguas: $4; data límite: $5; prioridade: $6; {{PLURAL:$7|recibiuna 1 destinatario|recibírona $7 destinatarios}}; {{PLURAL:$8|1 destinatario non a recibiu|$8 destinatarios non a recibiron}}; {{PLURAL:$9|omitiuse 1 destinatario|omitíronse $9 destinatarios}}',
 	'log-name-notifytranslators' => 'Notificacións de tradución',
 	'log-description-notifytranslators' => 'Un rexistro das notificacións enviadas aos tradutores sobre a tradución de páxinas',
 	'translationnotifications-sent-title' => 'Notificación de tradución enviada',
@@ -794,6 +826,7 @@ $7
  */
 $messages['hsb'] = array(
 	'translatorsignup' => 'Registrowanje přełožowarja',
+	'translatorsignup-summary' => 'Wužij tutu stronu, zo by podał, do kotrychž rěčow móžeš přełožić a kak chceš so wo nowych požadanych přełožkach informować.',
 	'translationnotifications-desc' => 'Zmóžnja registrowanje přełožowarjow za přełožowanske zdźělenja',
 	'translationnotifications-info' => 'Wužiwarske informacije',
 	'translationnotifications-username' => 'Wužiwarske mjeno:',
@@ -860,10 +893,23 @@ $8
 Wulki dźak!
 
 Team {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => 'E-mejlowy přehlad za požadane přełožki wot {{GRAMMAR:genitiw|{{SITENAME}}}}',
+	'translationnotifications-digestemail-body' => 'Witaj $1,
+
+dostawaš tutu e-mejl, dokelž sy so jako přełožowar za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował.
+{{PLURAL:$3|Je 1 strona|Stej $3 stronje|Su $3 strony|Je $3 stronow}} za přełožowanje k dispoziciji.  Podrobnosće namakaš deleka.
+
+$4
+
+Zo by swoje zdźělenske nastajenja za požadane přełožki změnił, wopytaj prošu $5.
+
+Wulki dźak!
+Team {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => 'Dnja $1 je $2 stronu "$3" za přełožowanje woznamjenił. Móžeš ju na $4 přełožować.',
 	'translationnotifications-edit-summary' => 'Přełožowanska zdźělenka',
 	'translationnotifications-email-priority' => 'Priorita tuteje strony je $1.',
 	'translationnotifications-email-deadline' => 'Termin za přełožowanje tuteje strony je $1.',
-	'logentry-translationnotifications-sent' => '$1 je zdźělenku wo přełožowanskej stronje $3 {{GENDER:$2|pósłał|posłała}}; rěče: $4; termin $5; priorita $6; na {{PLURAL:$7|jednoho přijimarja|$7 přijimarjow|$7 přijimarjow|$7 prijimarjow}}  {{GENDER:$2|pósłał|pósłała}}, je so njeporadźiła za {{PLURAL:$8|jednoho přijimarja|$8 přijimarjow|$8 přijimarjow|$8 přijimarjow}}, je so přeskočiła za  {{PLURAL:$9|jednoho přijimarja|$9 přijimarjow|$9 přijimarjow|$9 přijimarjow}}.',
+	'logentry-translationnotifications-sent' => '$1 je zdźělenku wo přełožowanskej stronje $3 {{GENDER:$2|pósłał|posłała}}; rěče: $4; termin $5; priorita $6; je ju na {{PLURAL:$7|jednoho přijimarja|$7 přijimarjow|$7 přijimarjow|$7 prijimarjow}}  {{GENDER:$2|pósłał|pósłała}}, je so njeporadźiła za {{PLURAL:$8|jednoho přijimarja|$8 přijimarjow|$8 přijimarjow|$8 přijimarjow}}, je so přeskočiła za  {{PLURAL:$9|jednoho přijimarja|$9 přijimarjow|$9 přijimarjow|$9 přijimarjow}}.',
 	'log-name-notifytranslators' => 'Přełožowanske zdźělenki',
 	'log-description-notifytranslators' => 'Protokol wo zdźělenkach, kotrež su so přełožowarjam wo přełožujomnych stronach pósłali',
 	'translationnotifications-sent-title' => 'Přełožowanska zdźělenka je so pósłała',
