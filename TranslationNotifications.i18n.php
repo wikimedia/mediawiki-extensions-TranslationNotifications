@@ -626,7 +626,7 @@ $7
 
 Merci!
 L'équipe de {{SITENAME}}",
-	'translationnotifications-talkpage-body' => "== $1 ==
+	'translationnotifications-talkpage-body' => "!== $1 ==
 
 Bonjour $2,
 
@@ -1274,9 +1274,16 @@ $8
 Bedankt!
 
 {{SITENAME}}-beheerders',
+	'translationnotifications-digestemail-subject' => 'E-mail met samenvatting voor vertaalverzoeken van {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => '$2 heeft "$3" op $1 voor vertaling gemarkeerd. U kunt de pagina vertalen via $4',
+	'translationnotifications-edit-summary' => 'Melding over vertaling',
 	'translationnotifications-email-priority' => 'De prioriteit voor deze pagina is $1.',
 	'translationnotifications-email-deadline' => 'De deadline voor het vertalen van deze pagina is  $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|heeft}} een melding verzonden voor de vertaalbare pagina $3; talen: $4; deadline: $5; prioriteit: $6; verzonden aan {{PLURAL:$7|één ontvangen|$7 ontvangers}}, mislukt voor {{PLURAL:$8|één ontvanger|$8 ontvangers}}, overgeslagen voor {{PLURAL:$9|één ontvanger|$9 ontvangers}}',
+	'log-name-notifytranslators' => 'Meldingen over vertalingen',
 	'log-description-notifytranslators' => "Een logboek van meldingen verzonden naar vertalers over vertaalbare pagina's",
+	'translationnotifications-sent-title' => 'De melding aan vertalers is verzonden',
+	'translationnotifications-sent-body' => 'De melding aan vertalers is verzonden.',
 	'translationnotifications-log-alllanguages' => 'alle talen',
 	'translationnotifications-nodeadline' => 'geen',
 );
