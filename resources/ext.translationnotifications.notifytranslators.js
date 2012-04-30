@@ -1,6 +1,6 @@
 /**
  * JavaScript functions for embedding jQuery controls
- * into TranslationNotificatnions forms.
+ * into translation notification form.
  *
  * @author Amir E. Aharoni
  * @copyright Copyright © 2012 Amir E. Aharoni
