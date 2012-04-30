@@ -40,6 +40,7 @@ $messages['en'] = array(
 
 	// Special:Notify translators
 	'notifytranslators' => 'Notify translators',
+	'translationnotifications-submit-ok' => 'Notifications have been added to a queue and are delivered by a background job.'
 	'translationnotifications-send-notification-button' => 'Send a notification to translators',
 	'translationnotifications-deadline-label' => 'Deadline to indicate in this notification:',
 	'translationnotifications-languages-to-notify-label' => 'Which languages to notify (comma-separated codes):',

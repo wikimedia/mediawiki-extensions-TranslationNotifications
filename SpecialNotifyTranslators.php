@@ -49,7 +49,13 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$htmlForm->setSubmitText( $context->msg( 'translationnotifications-send-notification-button' )->text() );
 		$htmlForm->setSubmitID( 'translationnotifications-send-notification-button' );
 		$htmlForm->setSubmitCallback( array( $this, 'submitNotifyTranslatorsForm' ) );
-		$htmlForm->show();
+		$htmlForm->prepareForm();
+		$result = $htmlForm->tryAuthorizedSubmit();
+		if ( $result === true || ( $result instanceof Status && $result->isGood() ) ) {
+			$wgOut->addWikMsg( 'translationnotifications-submit-ok' );
+		} else {
+			$htmlForm->displayForm( $result );
+		}
 
 		// Dummy dropdown, will be invisible. Used as data source for language name autocompletion.
 		$languageSelector = Xml::languageSelector( $wgContLang->getCode(), false, $wgLang->getCode() );
@@ -230,6 +236,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$wgUser
 		);
 
+		return true;
 	}
 
 	protected function getNotificationSubject( $userFirstLanguage ) {
