@@ -114,7 +114,7 @@ JAVASCRIPT
 				'section' => 'contact',
 			);
 			if ( $method === 'email' ) {
-				$m["cmethod-$method"]['disabled'] = !$user-> isEmailConfirmed();
+				$m["cmethod-$method"]['disabled'] = !$user->isEmailConfirmed();
 			}
 
 			if ( $method === 'talkpage-elsewhere' ) {

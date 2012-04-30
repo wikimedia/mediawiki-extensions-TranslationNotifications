@@ -66,14 +66,15 @@ class SpecialNotifyTranslators extends SpecialPage {
 	private function getFormFields() {
 
 		// Translatable pages dropdown
-		$translatablePagesIDs = TranslatablePage::getTranslatablePages();
-		if ( !count ( $translatablePagesIDs ) ) {
+		$translatablePages = MessageGroups::getGroupsByType( 'WikiPageMessageGroup' );
+		if ( !count( $translatablePages ) ) {
 			return 'translationnotifications-error-no-translatable-pages';
 		}
 
 		$translatablePagesOptions = array();
-		foreach ( $translatablePagesIDs as $translatablePagesID ) {
-			$translatablePagesOptions[Title::newFromID( $translatablePagesID )->getText()] = $translatablePagesID;
+		foreach ( $translatablePages as $page ) {
+			$title = $page->getTitle();
+			$translatablePagesOptions[$title->getPrefixedText()] = $title->getArticleID();
 		}
 
 		$formFields = array();
