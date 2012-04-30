@@ -40,7 +40,7 @@ $messages['en'] = array(
 
 	// Special:Notify translators
 	'notifytranslators' => 'Notify translators',
-	'translationnotifications-submit-ok' => 'Notifications have been added to a queue and are delivered by a background job.'
+	'translationnotifications-submit-ok' => 'Notifications have been added to a queue and are delivered by a background job.',
 	'translationnotifications-send-notification-button' => 'Send a notification to translators',
 	'translationnotifications-deadline-label' => 'Deadline to indicate in this notification:',
 	'translationnotifications-languages-to-notify-label' => 'Which languages to notify (comma-separated codes):',
@@ -555,7 +555,7 @@ Hay  {{PLURAL:$3|1 página|$3  páginas}} disponibles para su traducción. A con
 
 $4
 
-Para cambiar sus preferencias de notificación para las solicitudes de traducción, por favor visite $5 
+Para cambiar sus preferencias de notificación para las solicitudes de traducción, por favor visite $5
 
 ¡Gracias!
 El equipo de {{SITENAME}}',
