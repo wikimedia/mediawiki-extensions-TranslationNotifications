@@ -169,9 +169,9 @@ JAVASCRIPT
 		$wikis = array();
 		$stuff = $globalUser->queryAttached();
 		foreach ( $stuff as $dbname => $value ) {
-			$wikis[] = $dbname;
+			$wikis[WikiMap::getWikiName( $dbname )] = $dbname;
 		}
 
-		return array_combine( $wikis, $wikis );
+		return $wikis;
 	}
 }
