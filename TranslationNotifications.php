@@ -20,7 +20,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'version'        => '2012-03-02',
 	'author'         => array( 'Niklas Laxström' ),
 	'descriptionmsg' => 'translationnotifications-desc',
-	#'url'            => 'https://www.mediawiki.org/wiki/Extension:TranslationNotifications',
+	'url'            => 'https://www.mediawiki.org/wiki/Extension:TranslationNotifications',
 );
 
 $dir = dirname( __FILE__ );
