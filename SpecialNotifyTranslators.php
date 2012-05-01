@@ -29,7 +29,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	}
 
 	public function execute( $parameters ) {
-		global $wgUser, $wgOut, $wgContLang, $wgLang;
+		global $wgUser, $wgContLang, $wgLang;
 		$this->setHeaders();
 
 		if ( !$wgUser->isallowed( self::$right ) ) {
@@ -37,9 +37,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 		}
 
 		$htmlFormDataModel = $this->getFormFields();
+		$output = $this->getOutput();
 
 		if ( !is_array( $htmlFormDataModel ) ) {
-			$wgOut->addWikiMsg( $htmlFormDataModel );
+			$output->addWikiMsg( $htmlFormDataModel );
 			return;
 		}
 
@@ -52,16 +53,16 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$htmlForm->prepareForm();
 		$result = $htmlForm->tryAuthorizedSubmit();
 		if ( $result === true || ( $result instanceof Status && $result->isGood() ) ) {
-			$wgOut->addWikMsg( 'translationnotifications-submit-ok' );
+			$output->addWikiMsg( 'translationnotifications-submit-ok' );
 		} else {
 			$htmlForm->displayForm( $result );
 		}
 
 		// Dummy dropdown, will be invisible. Used as data source for language name autocompletion.
 		$languageSelector = Xml::languageSelector( $wgContLang->getCode(), false, $wgLang->getCode() );
-		$wgOut->addHtml( $languageSelector[1] );
+		$output->addHtml( $languageSelector[1] );
 
-		$wgOut->addModules( 'ext.translationnotifications.notifytranslators' );
+		$output->addModules( 'ext.translationnotifications.notifytranslators' );
 	}
 
 	/**

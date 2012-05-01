@@ -12,6 +12,15 @@
  * Some hooks for TranslationNotifications extension.
  */
 class TranslationNotificationsHooks {
+
+	/**
+	 * @param $type
+	 * @param $action
+	 * @param $title Title
+	 * @param $forUI bool
+	 * @param $params array
+	 * @return String
+	 */
 	public static function formatTranslationNotificationLogEntry( $type, $action, $title, $forUI, $params ) {
 		global $wgLang, $wgContLang;
 
