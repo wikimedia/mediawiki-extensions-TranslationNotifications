@@ -47,6 +47,7 @@ jQuery( function ( $ ) {
 JAVASCRIPT
 		);
 	}
+
 	public function getDataModel() {
 		global $wgTranslationNotificationsContactMethods, $wgLang;
 
@@ -74,7 +75,6 @@ JAVASCRIPT
 			'section' => 'info',
 			'raw' => true,
 		);
-
 
 		$languages = Language::getLanguageNames();
 		ksort( $languages );
@@ -113,6 +113,7 @@ JAVASCRIPT
 				'default' => $user->getOption( "translationnotifications-cmethod-$method" ),
 				'section' => 'contact',
 			);
+
 			if ( $method === 'email' ) {
 				$m["cmethod-$method"]['disabled'] = !$user->isEmailConfirmed();
 			}
@@ -139,11 +140,13 @@ JAVASCRIPT
 				$this->msg( 'translationnotifications-freq-monthly' )->text() => 'monthly',
 			),
 		);
+
 		return $m;
 	}
 
 	public function formSubmit( $formData, $form ) {
 		global $wgRequest;
+
 		$user = $this->getUser();
 
 		if ( $wgRequest->getVal( 'x' ) === $this->msg( 'confirmemail_send' )->text() ) {
