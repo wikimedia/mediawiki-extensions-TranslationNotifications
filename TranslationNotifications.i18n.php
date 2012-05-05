@@ -604,6 +604,104 @@ El equipo de {{SITENAME}}',
 	'translationnotifications-nodeadline' => 'ninguno',
 );
 
+/** French (Français)
+ * @author Gomoko
+ */
+$messages['fr'] = array(
+	'translatorsignup' => 'Connexion du traducteur',
+	'translatorsignup-summary' => 'Utilisez cette page pour indiquer dans quelles langues vous pouvez traduire, et comment vous souhaitez être contacté sur les nouvelles demandes de traduction.',
+	'translationnotifications-desc' => "Permet aux traducteurs de s'inscrire pour des notifications de traduction",
+	'translationnotifications-info' => "Information sur l'utilisateur",
+	'translationnotifications-username' => "Nom de l'utilisateur:",
+	'translationnotifications-emailstatus' => 'État du courriel:',
+	'translationnotifications-email-confirmed' => 'Votre adresse de courriel est confirmée',
+	'translationnotifications-email-unconfirmed' => "Votre adresse de courriel n'est pas confirmée. $1",
+	'translationnotifications-email-notset' => "Vous n'avez pas fourni d'adresse de courriel. Vous pouvez le faire dans vos [[Special:Preferences|préférences]].",
+	'translationnotifications-languages' => 'Langues',
+	'translationnotifications-lang' => 'Langue #$1',
+	'translationnotifications-nolang' => 'Choisir une langue',
+	'translationnotifications-contact' => 'Moyens de contact préférés',
+	'translationnotifications-cmethod-email' => 'Courriel',
+	'translationnotifications-cmethod-talkpage' => 'Page de discussion',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Page de discussion sur un autre wiki',
+	'translationnotifications-cmethod-feed' => 'Alimentation',
+	'translationnotifications-frequency' => 'Fréquence de contact',
+	'translationnotifications-freq-always' => 'Quand il y a quelque chose de nouveau à traduire',
+	'translationnotifications-freq-week' => 'Au moins une fois par semaine',
+	'translationnotifications-freq-month' => 'Au moins une fois par mois',
+	'translationnotifications-freq-weekly' => 'Résumé hebdomadaire',
+	'translationnotifications-freq-monthly' => 'Résumé mensuel',
+	'translationnotifications-submit' => 'Inscription',
+	'notifytranslators' => 'Informer les traducteurs',
+	'translationnotifications-submit-ok' => "Des notifications ont été ajoutées à une file d'attente et sont livrées par une tâche d'arrière-plan.",
+	'translationnotifications-send-notification-button' => 'Envoyer une notification aux traducteurs',
+	'translationnotifications-deadline-label' => 'Date limite à indiquer dans cette notification:',
+	'translationnotifications-languages-to-notify-label' => 'Quelles langues pour notifier (codes séparés par des virgules):',
+	'translationnotifications-priority' => 'Priorité:',
+	'translationnotifications-priority-high' => 'haute',
+	'translationnotifications-priority-medium' => 'moyenne',
+	'translationnotifications-priority-low' => 'basse',
+	'translationnotifications-priority-unset' => '(non défini)',
+	'translationnotifications-translatablepage-title' => 'Nom de la page à traduire:',
+	'translationnotifications-error-no-translatable-pages' => "Il n'y a aucune page à traduire dans ce wiki.",
+	'translationnotifications-email-subject' => 'Veuillez traduire la page $1',
+	'translationnotifications-email-body' => "Bonjour, $1
+
+Vous avez reçu ce courriel parce que vous vous êtes inscrit comme traducteur de $2 sur {{SITENAME}}.
+
+Il y a une nouvelle page à traduire ici: $3.
+Veuillez la traduire en cliquant sur le lien suivant:
+$4
+
+$5
+$6
+
+$7
+
+Merci!
+L'équipe de {{SITENAME}}",
+	'translationnotifications-talkpage-body' => "!== $1 ==
+
+Bonjour $2,
+
+Vous recevez cette notification parce que vous êtes inscrit comme traducteur de $3 sur {{SITENAME}}.
+Une nouvelle page, [[$4]], est disponible pour la traduction. Veuillez [$5 la traduire].
+
+$6
+$7
+
+$8
+
+Merci!
+
+L'équipe de {{SITENAME}}",
+	'translationnotifications-digestemail-subject' => 'Courriel de synthèse pour les demandes de traduction de {{SITENAME}}',
+	'translationnotifications-digestemail-body' => "Bonjour $1,
+
+Vous recevez ce courriel parce que vous inscrit comme traducteur de $2 sur {{SITENAME}}.
+
+Il y a {{PLURAL:$3|1 page disponible|$3 pages disponibles}} pour la traduction. Les détails sont donnés ci-dessous. 
+
+$4
+
+Pour modifier vos préférences de notification pour les demandes de traduction, veuillez visiter  $5 
+
+Merci!
+
+L'équipe de {{SITENAME}}",
+	'translationnotifications-digestemail-notification-line' => 'Sur $1, $2 a marqué "$3" pour être traduit. Vous pouvez le traduire sur $4',
+	'translationnotifications-edit-summary' => 'Notification de traduction',
+	'translationnotifications-email-priority' => 'La priorité de cette page est $1.',
+	'translationnotifications-email-deadline' => 'La date limite pour traduire cette page est $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|a envoyé}} une notification sur la traduction de la page $3; langues: $4; délai limite: $5; priorité: $6; envoyé à {{PLURAL:$7|un destinataire|$7 destinataires}}, en échec pour {{PLURAL:$8|un destinataire|$8 destinataires}}, sauté pour {{PLURAL:$9|un destinataire|$9 destinataires}}',
+	'log-name-notifytranslators' => 'Notifications de traduction',
+	'log-description-notifytranslators' => 'Un journal des notifications envoyées aux traducteurs sur les pages à traduire',
+	'translationnotifications-sent-title' => 'Notification de traduction envoyée',
+	'translationnotifications-sent-body' => 'La notification de la traduction a été envoyée.',
+	'translationnotifications-log-alllanguages' => 'toutes les langues',
+	'translationnotifications-nodeadline' => 'aucun',
+);
+
 /** Hebrew (עברית)
  * @author Amire80
  */
@@ -768,6 +866,103 @@ Team {{SITENAME}}',
 	'translationnotifications-sent-body' => 'Přełožowanska zdźělenka je so pósłała.',
 	'translationnotifications-log-alllanguages' => 'wšě rěče',
 	'translationnotifications-nodeadline' => 'žadyn',
+);
+
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'translatorsignup' => 'Inscription de traductor',
+	'translatorsignup-summary' => 'Iste pagina es pro indicar le linguas in le quales tu sape traducer, e le methodo preferite de contacto sur nove requestas de traduction.',
+	'translationnotifications-desc' => 'Permitte que traductores se inscribe pro notificationes concernente le traduction',
+	'translationnotifications-info' => 'Information de usator',
+	'translationnotifications-username' => 'Nomine de usator:',
+	'translationnotifications-emailstatus' => 'Stato de e-mail:',
+	'translationnotifications-email-confirmed' => 'Tu adresse de e-mail es confirmate',
+	'translationnotifications-email-unconfirmed' => 'Tu adresse de e-mail non es confirmate. $1',
+	'translationnotifications-email-notset' => 'Tu non ha fornite un adresse de e-mail. Tu pote facer isto in le [[Special:Preferences|preferentias]].',
+	'translationnotifications-languages' => 'Linguas',
+	'translationnotifications-lang' => 'Lingua №$1',
+	'translationnotifications-nolang' => 'Selige un lingua',
+	'translationnotifications-contact' => 'Methodos preferite de contacto',
+	'translationnotifications-cmethod-email' => 'E-mail',
+	'translationnotifications-cmethod-talkpage' => 'Pagina de discussion',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pagina de discussion in un altere wiki',
+	'translationnotifications-cmethod-feed' => 'Syndication',
+	'translationnotifications-frequency' => 'Frequentia de contacto',
+	'translationnotifications-freq-always' => 'Quando il ha qualcosa de nove a traducer',
+	'translationnotifications-freq-week' => 'Al plus un vice per septimana',
+	'translationnotifications-freq-month' => 'Al plus un vice per mense',
+	'translationnotifications-freq-weekly' => 'Digesto septimanal',
+	'translationnotifications-freq-monthly' => 'Digesto mensual',
+	'translationnotifications-submit' => 'Inscriber',
+	'notifytranslators' => 'Notificar traductores',
+	'translationnotifications-submit-ok' => 'Notificationes ha essite addite a un cauda e es livrate per un processo in secunde plano.',
+	'translationnotifications-send-notification-button' => 'Inviar un notification a traductores',
+	'translationnotifications-deadline-label' => 'Data limite a indicar in iste notification:',
+	'translationnotifications-languages-to-notify-label' => 'Le linguas a notificar (codices separate per commas):',
+	'translationnotifications-priority' => 'Prioritate:',
+	'translationnotifications-priority-high' => 'alte',
+	'translationnotifications-priority-medium' => 'medie',
+	'translationnotifications-priority-low' => 'basse',
+	'translationnotifications-priority-unset' => '(non definite)',
+	'translationnotifications-translatablepage-title' => 'Nomine de pagina traducibile:',
+	'translationnotifications-error-no-translatable-pages' => 'Il non ha paginas traducibile in iste wiki.',
+	'translationnotifications-email-subject' => 'Per favor traduce le pagina $1',
+	'translationnotifications-email-body' => 'Salute $1,
+
+Tu recipe iste message perque tu sta inscribite como traductor in $2 in {{SITENAME}}.
+
+Il ha un nove pagina a traducer hic: $3.
+Per favor traduce lo per cliccar sur le sequente ligamine:
+$4
+
+$5
+$6
+
+$7
+
+Gratias!
+Le personal de {{SITENAME}}',
+	'translationnotifications-talkpage-body' => '== $1 ==
+
+Salute $2,
+
+Tu recipe iste notification perque tu te inscribeva como traductor de $3 in {{SITENAME}}.
+Un nove pagina, [[$4]] es disponibile pro traduction. Per favor [$5 traduce lo].
+
+$6
+$7
+
+$8
+
+Gratias!
+
+Le equipa de {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => 'Digesto in e-mail con requestas de traduction ab {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Salute $1,
+
+Tu recipe iste e-mail perque tu te inscribeva qua traductor de $2 in {{SITENAME}}.
+
+Il ha {{PLURAL:$3|1 pagina|$3 paginas}} disponibile pro traduction. Ecce le detalios:
+
+$4
+
+Pro cambiar le tue preferentias de notification pro le requesta de traduction, visita $5
+
+Gratias!
+Le equipa de {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => 'Le $1, $2 marcava "$3" pro traduction. Tu pote traducer lo a $4',
+	'translationnotifications-edit-summary' => 'Notification de traduction',
+	'translationnotifications-email-priority' => 'Le prioritate de iste pagina es $1.',
+	'translationnotifications-email-deadline' => 'Le data limite pro traducer iste pagina es $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|inviava}} un notification sur le traduction del pagina $3; linguas: $4; data limite: $5; prioritate: $6; a {{PLURAL:$7|un destinatario|$7 destinatarios}} con successo, a {{PLURAL:$8|un destinatario|$8 destinatarios}} sin successo',
+	'log-name-notifytranslators' => 'Notificationes de traduction',
+	'log-description-notifytranslators' => 'Un registro de notificationes inviate a traductores sur paginas traducibile',
+	'translationnotifications-sent-title' => 'Notification de traduction inviate',
+	'translationnotifications-sent-body' => 'Le notification de traduction ha essite inviate.',
+	'translationnotifications-log-alllanguages' => 'tote le linguas',
+	'translationnotifications-nodeadline' => 'nulle',
 );
 
 /** Macedonian (Македонски)
@@ -969,20 +1164,91 @@ Medewerkers van {{SITENAME}}",
  */
 $messages['pfl'] = array(
 	'translatorsignup' => 'Iwasedza Oameldung',
+	'translatorsignup-summary' => 'Konschd uffde Said die Schbrooche oagewe, wu babble dudsch un wie fa Iwasedzunge oagfrochd werre wilschd.',
+	'translationnotifications-desc' => 'Eameschlischdm Iwasedza Nochrischde fas Iwasedze zu bschdelle',
+	'translationnotifications-info' => 'Benudza-Auskinfd',
 	'translationnotifications-username' => 'Benudzanoame:',
 	'translationnotifications-emailstatus' => 'E-Mail-Status:',
+	'translationnotifications-email-confirmed' => 'Doi E-Mail-Adress isch bschdedischd',
+	'translationnotifications-email-unconfirmed' => 'Doi E-Mail-Adress isch ned bschdedischd. $1',
+	'translationnotifications-email-notset' => 'Du hoschd kä E-Mail-Adress oagewe. Konschds in doine [[Special:Preferences|Oischdellunge]] mache.',
 	'translationnotifications-languages' => 'Schbrooche',
 	'translationnotifications-lang' => 'Schbrooch Nr. $1',
 	'translationnotifications-nolang' => 'Ä Schbrooch wehle',
+	'translationnotifications-contact' => 'Gwinschde Aade fa Nochrischde zu grische',
 	'translationnotifications-cmethod-email' => 'E-Mail',
+	'translationnotifications-cmethod-talkpage' => 'Dischbediersaid',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Dischbediersaid uffm oanare Wiki',
+	'translationnotifications-cmethod-feed' => 'Oigaab',
+	'translationnotifications-frequency' => 'Haifischkaid vunde Nochrichde',
+	'translationnotifications-freq-always' => 'Wons was naies fas Iwasedze hod',
+	'translationnotifications-freq-week' => 'Hegschdens ämol inde Woch',
+	'translationnotifications-freq-month' => 'Hegschdens ämol im Monad',
+	'translationnotifications-freq-weekly' => 'Weschndlischi Iwasischd',
+	'translationnotifications-freq-monthly' => 'Monadlischi Iwasischd',
 	'translationnotifications-submit' => 'Oamelde',
+	'notifytranslators' => 'Iwasedza bnochrischdische',
+	'translationnotifications-submit-ok' => 'Die Bnochrischdischung fas Iwasedze isch inäner Wardeschlong un wead vunäm Hinagrunduffdraach vaschiggd.',
+	'translationnotifications-send-notification-button' => 'Ä Bnochrischdischung zude Iwasedza schigge',
+	'translationnotifications-deadline-label' => 'Frischd fadie Bnochrischdischung hiewaise:',
+	'translationnotifications-languages-to-notify-label' => 'Die Schbrooch zum bnochrischdische (Code, kommagdrennd):',
 	'translationnotifications-priority' => 'Wischdischkaid:',
 	'translationnotifications-priority-high' => 'hoch',
 	'translationnotifications-priority-medium' => 'middl',
 	'translationnotifications-priority-low' => 'niedrisch',
 	'translationnotifications-priority-unset' => '(ned gsedzd)',
+	'translationnotifications-translatablepage-title' => 'Noame vunde Said, wu iwasedzd werre soll:',
+	'translationnotifications-error-no-translatable-pages' => "S'hod kä Saide zu iwasedze uff dem Wiki.",
+	'translationnotifications-email-subject' => 'Iwasedz bidde die Said $1.',
+	'translationnotifications-email-body' => 'Hey $1,
+
+du grigschd die E-Mail wail disch als Iwasedza fa $2 uff {{SITENAME}} oigdraache hoschd.
+
+Oan der Schdell isch ä naiji Said fas Iwasedze do: $3.
+Iwasedzse bidde nochm Drigge uff:
+$4
+
+$5
+$6
+
+$7
+
+Dongschä,
+die Midawaida vun {{SITENAME}}',
+	'translationnotifications-talkpage-body' => '== $1 ==
+
+Hey $2,
+
+du grigschd die E-Mail wail disch als Iwasedza fa $3 uff {{SITENAME}} oigdraache hoschd.
+Ä naiji Said [[$4]] fas Iwasedze do. Bidde [$5 iwasedze].
+
+$6
+$7
+
+$8
+
+Dongschä,
+die Midawaida vun {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => 'Lischd vun E-Mail fa Uffdräch fas Iwasedze vun {{SITENAME}}',
+	'translationnotifications-digestemail-body' => "Hey $1,
+
+du grigschd die E-Mail wail disch als Iwasedza fa $2 uff {{SITENAME}} oigdraache hoschd.
+
+{{PLURAL:$3|S'isch ä Said|Sin $3 Saide}} fas Iwasedze do. Näjares finschd unne:
+
+$4
+
+Um doi Oischdellunge fa Bnochrischdischunge fas Iwasedze zu änare, konschd $5 uffsuche.
+
+Dongschä,
+die Midawaida vun {{SITENAME}}",
+	'translationnotifications-digestemail-notification-line' => 'Oam $1 hod $2 die Said „$3“ fas Iwasedze frai gewe. Du konnschdse una $4 Iwasedze.',
 	'translationnotifications-edit-summary' => 'Iwasedzungsnochrichd',
+	'translationnotifications-email-priority' => 'Die Wischdischkaid vunde Said fas Iwasedze isch $1.',
+	'translationnotifications-email-deadline' => 'Die Frischd fas Iwasedze vunde Said laafd bis zum $1.',
+	'logentry-translationnotifications-sent' => "$1 hod ä Nochrischd fa die Iwasedzung vunde Said $3 inde Schbrooche $4 midde Frischd $5 unde Dringlischkaid $6, mid Eafolsch {{PLURAL:$7|oanen|oan $7}} Embfenga un ohne Eafolsch {{PLURAL:$8|oanen|oan $8}} Embfenga {{GENDER:$2|gschiggd}}, {{PLURAL:$9|un'es ischn|un'esin $9}} Embfenga ned oagschriwwe worre.",
 	'log-name-notifytranslators' => 'Iwasedzungsnochrichde-Logbuch',
+	'log-description-notifytranslators' => "S'Logbuch vun Bnochrischdischunge, wu oan Iwasedza fas Iwasedze vun Saide gonge sin.",
 	'translationnotifications-sent-title' => 'Iwasedzungsnochrichd gschigd',
 	'translationnotifications-sent-body' => 'Iwasedzungsnochrichd isch gschigd worre',
 	'translationnotifications-log-alllanguages' => 'alli Schbrooche',
