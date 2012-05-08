@@ -1093,6 +1093,7 @@ $messages['nl'] = array(
 	'translationnotifications-freq-monthly' => 'Maandelijkse samenvatting',
 	'translationnotifications-submit' => 'Registreren',
 	'notifytranslators' => 'Meldingen voor vertalers',
+	'translationnotifications-submit-ok' => 'De meldingen zijn toegevoegd aan een wachtrij en worden via een achtergrondtaak afgeleverd.',
 	'translationnotifications-send-notification-button' => 'Stuur een bericht naar vertalers',
 	'translationnotifications-deadline-label' => 'Deadline voor deze melding:',
 	'translationnotifications-languages-to-notify-label' => 'Voor welke talen moet een melding gemaakt worden (komma gescheiden taalcodes):',
