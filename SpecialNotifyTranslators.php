@@ -158,12 +158,13 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$translatorsConds = array(
 			"up_property $propertyLikePattern",
 		);
+
+		// An empty string will be sent for all languages and the appropriate message
+		// will be shown in the log.
 		$languagesForLog = '';
 		if ( count( $languagesToNotify ) ) {
 			$translatorsConds['up_value'] = $languagesToNotify;
 			$languagesForLog = $wgLang->commaList( $languagesToNotify );
-		} else {
-			$languagesForLog = wfMessage( 'translationnotifications-log-alllanguages' )->text();
 		}
 
 		$translators = $dbr->select(
