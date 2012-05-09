@@ -159,7 +159,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		);
 		$languagesForLog = '';
 		if ( count( $languagesToNotify ) ) {
-			$translatorsConds += array( 'up_value' => $languagesToNotify );
+			$translatorsConds['up_value'] = $languagesToNotify;
 			$languagesForLog = $wgLang->commaList( $languagesToNotify );
 		} else {
 			$languagesForLog = wfMessage( 'translationnotifications-log-alllanguages' )->text();
