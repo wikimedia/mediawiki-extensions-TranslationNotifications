@@ -113,6 +113,7 @@ Thank you!
  * @author Amire80
  * @author Kghbln
  * @author Raymond
+ * @author SPQRobin
  * @author Siebrand
  */
 $messages['qqq'] = array(
@@ -190,7 +191,7 @@ $messages['qqq'] = array(
 * $1 - username
 * $2 - username for gender
 * $3 - translatable page title
-* $4 - languages list
+* $4 - list of language codes, or {{msg-mw|translationnotifications-log-alllanguages}}
 * $5 - deadline
 * $6 - priority
 * $7 - number of recipients to whom the notification was sent successfully
@@ -263,11 +264,12 @@ $messages['br'] = array(
 /** German (Deutsch)
  * @author Geitost
  * @author Kghbln
+ * @author MF-Warburg
  * @author Metalhead64
  */
 $messages['de'] = array(
 	'translatorsignup' => 'Übersetzerregistrierung',
-	'translatorsignup-summary' => 'Nutze diese Seite um anzugeben in welche Sprachen du übersetzen kannst und wie du bei Übersetzungsanfragen benachrichtigt werden möchtest.',
+	'translatorsignup-summary' => 'Nutze diese Seite, um anzugeben, in welche Sprachen du übersetzen kannst und wie du bei Übersetzungsanfragen benachrichtigt werden möchtest.',
 	'translationnotifications-desc' => 'Ermöglicht es Übersetzern Übersetzungsbenachrichtigungen zu abonnieren',
 	'translationnotifications-info' => 'Benutzerinformation',
 	'translationnotifications-username' => 'Benutzername:',
@@ -294,7 +296,8 @@ $messages['de'] = array(
 	'translationnotifications-submit-ok' => 'Die Übersetzungsbenachrichtigungen wurden zu einer Auftragswarteschlange hinzugefügt und werden von einem Hintergrundauftrag versandt.',
 	'translationnotifications-send-notification-button' => 'Benachrichtigung an die Übersetzer senden',
 	'translationnotifications-deadline-label' => 'In der Benachrichtigung anzugebenden Frist:',
-	'translationnotifications-languages-to-notify-label' => 'Die zu benachrichtigenden Sprachen (Code, kommagetrennt):',
+	'translationnotifications-languages-to-notify-label' => 'Die zu benachrichtigenden Sprachen:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Kommagetrennte Sprachcodes; zum Benachrichtigen für alle Sprachen frei lassen.',
 	'translationnotifications-priority' => 'Priorität:',
 	'translationnotifications-priority-high' => 'hoch',
 	'translationnotifications-priority-medium' => 'mittel',
@@ -348,7 +351,7 @@ die Mitarbeiter von {{SITENAME}}',
 	'translationnotifications-edit-summary' => 'Übersetzungsbenachrichtigung',
 	'translationnotifications-email-priority' => 'Die Übersetzungspriorität dieser Seite ist $1.',
 	'translationnotifications-email-deadline' => 'Die Frist zur Übersetzung dieser Seite läuft bis zum $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sandte}} eine Benachrichtigung bezüglich der Übersetzung von Seite $3 in die Sprachen $4, mit der Frist $5 und der Priorität $6, erfolgreich an {{PLURAL:$7|einen Empfänger|$7 Empfänger}} und erfolglos an {{PLURAL:$8|einen Empfänger|$8 Empfänger}}, wobei {{PLURAL:$9|eine Empfänger nicht angeschrieben wurde|$9 Empfänger nicht angeschrieben wurden}}.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sandte}} eine Benachrichtigung bezüglich der Übersetzung der Seite $3 in die Sprachen $4, mit der Frist $5 und der Priorität $6, erfolgreich an {{PLURAL:$7|einen Empfänger|$7 Empfänger}} und erfolglos an {{PLURAL:$8|einen Empfänger|$8 Empfänger}}, wobei {{PLURAL:$9|eine Empfänger nicht angeschrieben wurde|$9 Empfänger nicht angeschrieben wurden}}.',
 	'log-name-notifytranslators' => 'Übersetzungsbenachrichtigungs-Logbuch',
 	'log-description-notifytranslators' => 'Das Logbuch der Benachrichtigungen, die bezüglich übersetzbarer Seiten an die Übersetzer gesandt wurden.',
 	'translationnotifications-sent-title' => 'Übersetzungsbenachrichtigung verschickt',
@@ -442,7 +445,8 @@ $messages['dsb'] = array(
 	'translationnotifications-submit-ok' => 'Powěźeńki su se čakańskemu rědoju pśidali a dodawaju se pśez proces w slězynje.',
 	'translationnotifications-send-notification-button' => 'Pśełožowarjam powěźeńku pósłaś',
 	'translationnotifications-deadline-label' => 'Termin, kótaryž musy se w toś tej powěźeńce pódaś:',
-	'translationnotifications-languages-to-notify-label' => 'Rěcy, kótarež maju se informěrowaś (pśez komu źělone kody):',
+	'translationnotifications-languages-to-notify-label' => 'Rěcy, kótarež maju se informěrowaś:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Rěcne kody źělone pśez komu; prozne wóstajiś, aby wšykne rěcy informěrowało.',
 	'translationnotifications-priority' => 'Priorita:',
 	'translationnotifications-priority-high' => 'wusoka',
 	'translationnotifications-priority-medium' => 'srědna',
@@ -540,7 +544,8 @@ $messages['es'] = array(
 	'translationnotifications-submit-ok' => 'Las notificaciones se han añadido a una cola y son enviadas mediante una tarea en segundo plano.',
 	'translationnotifications-send-notification-button' => 'Enviar una notificación a los traductores',
 	'translationnotifications-deadline-label' => 'Fecha límite a indicar en esta notificación:',
-	'translationnotifications-languages-to-notify-label' => 'Idiomas en los que notificar (códigos de idioma separados por comas)',
+	'translationnotifications-languages-to-notify-label' => 'Idiomas en los que notificar:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Códigos de idioma separados por comas; dejar en blanco para notificar en todos los idiomas.',
 	'translationnotifications-priority' => 'Prioridad:',
 	'translationnotifications-priority-high' => 'alta',
 	'translationnotifications-priority-medium' => 'media',
@@ -703,6 +708,102 @@ L'équipe de {{SITENAME}}",
 	'translationnotifications-nodeadline' => 'aucun',
 );
 
+/** Galician (Galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'translatorsignup' => 'Inscrición de tradutores',
+	'translatorsignup-summary' => 'Use esta páxina para indicar as linguas que poida traducir e como quere que nos poñamos en contacto con vostede para enviarlle solicitudes de tradución.',
+	'translationnotifications-desc' => 'Permite aos tradutores inscribirse para recibir notificacións sobre as traducións',
+	'translationnotifications-info' => 'Información de usuario',
+	'translationnotifications-username' => 'Nome de usuario:',
+	'translationnotifications-emailstatus' => 'Estado do correo electrónico:',
+	'translationnotifications-email-confirmed' => 'O seu enderezo de correo electrónico está confirmado',
+	'translationnotifications-email-unconfirmed' => 'O seu enderezo de correo electrónico non está confirmado. $1',
+	'translationnotifications-email-notset' => 'Non proporcionou enderezo de correo electrónico ningún. Pódeo facer nas súas [[Special:Preferences|preferencias]].',
+	'translationnotifications-languages' => 'Linguas',
+	'translationnotifications-lang' => 'Lingua nº$1',
+	'translationnotifications-nolang' => 'Escolla unha lingua',
+	'translationnotifications-contact' => 'Métodos de contacto preferidos',
+	'translationnotifications-cmethod-email' => 'Correo electrónico',
+	'translationnotifications-cmethod-talkpage' => 'Páxina de conversa',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Páxina de conversa noutro wiki',
+	'translationnotifications-cmethod-feed' => 'Fonte de novas',
+	'translationnotifications-frequency' => 'Frecuencia de contacto',
+	'translationnotifications-freq-always' => 'Cando haxa algo novo que traducir',
+	'translationnotifications-freq-week' => 'Unha vez á semana, polo menos',
+	'translationnotifications-freq-month' => 'Unha vez ao mes, polo menos',
+	'translationnotifications-freq-weekly' => 'Boletín semanal',
+	'translationnotifications-freq-monthly' => 'Boletín mensual',
+	'translationnotifications-submit' => 'Inscribirse',
+	'notifytranslators' => 'Informar aos tradutores',
+	'translationnotifications-send-notification-button' => 'Enviar unha notificación aos tradutores',
+	'translationnotifications-deadline-label' => 'Data límite a indicar nesta notificación:',
+	'translationnotifications-languages-to-notify-label' => 'Linguas ás que enviar a notificación (códigos separados por comas):',
+	'translationnotifications-priority' => 'Prioridade:',
+	'translationnotifications-priority-high' => 'alta',
+	'translationnotifications-priority-medium' => 'media',
+	'translationnotifications-priority-low' => 'baixa',
+	'translationnotifications-priority-unset' => '(non definida)',
+	'translationnotifications-translatablepage-title' => 'Nome da páxina traducible:',
+	'translationnotifications-error-no-translatable-pages' => 'Non hai páxinas que se poidan traducir neste wiki.',
+	'translationnotifications-email-subject' => 'Por favor, traduza a páxina "$1"',
+	'translationnotifications-email-body' => 'Boas, $1:
+
+Recibiu este correo electrónico porque está inscrito como tradutor ao $2 en {{SITENAME}}.
+
+Hai unha nova páxina que traducir alí: $3.
+Tradúzaa premendo na seguinte ligazón:
+$4
+
+$5
+$6
+
+$7
+
+Grazas!
+O equipo de {{SITENAME}}',
+	'translationnotifications-talkpage-body' => '== $1 ==
+
+Boas, $2:
+
+Recibiu esta notificación porque está inscrito como tradutor ao $3 en {{SITENAME}}.
+Hai unha nova páxina, "[[$4]]", dispoñible para a súa tradución. Por favor, [$5 tradúzaa].
+
+$6
+$7
+
+$8
+
+Grazas!
+
+O equipo de {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => 'Correo electrónico de resumo sobre as solicitudes de tradución de {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Boas, $1:
+
+Recibiu este correo electrónico porque está inscrito como tradutor ao $2 en {{SITENAME}}.
+
+Hai {{PLURAL:$3|1 nova páxina|$3 novas páxinas}} que traducir alí. A continuación están os detalles.
+
+$4
+
+Para cambiar as preferencias das notificacións sobre as solicitudes de tradución, visite $5
+
+Grazas!
+O equipo de {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => 'O $1, $2 marcou "$3" para a súa tradución. Pode traducila en $4',
+	'translationnotifications-edit-summary' => 'Notificación de tradución',
+	'translationnotifications-email-priority' => 'A prioridade desta páxina é $1.',
+	'translationnotifications-email-deadline' => 'A data límite para traducir a páxina é $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|enviou}} correctamente unha notificación sobre a tradución da páxina "$3"; linguas: $4; data límite: $5; prioridade: $6; {{PLURAL:$7|recibiuna 1 destinatario|recibírona $7 destinatarios}}; {{PLURAL:$8|1 destinatario non a recibiu|$8 destinatarios non a recibiron}}; {{PLURAL:$9|omitiuse 1 destinatario|omitíronse $9 destinatarios}}',
+	'log-name-notifytranslators' => 'Notificacións de tradución',
+	'log-description-notifytranslators' => 'Un rexistro das notificacións enviadas aos tradutores sobre a tradución de páxinas',
+	'translationnotifications-sent-title' => 'Notificación de tradución enviada',
+	'translationnotifications-sent-body' => 'Enviouse a notificación de tradución.',
+	'translationnotifications-log-alllanguages' => 'todas as linguas',
+	'translationnotifications-nodeadline' => 'ningunha',
+);
+
 /** Hebrew (עברית)
  * @author Amire80
  */
@@ -735,7 +836,7 @@ $messages['he'] = array(
 	'translationnotifications-submit-ok' => 'ההודעות נוספו לתור המשימות ויישלחו על־ידי משימת רקע.',
 	'translationnotifications-send-notification-button' => 'שליחת מכתבים למתרגמים',
 	'translationnotifications-deadline-label' => 'תאריך סופי שיתווסף להודעה:',
-	'translationnotifications-languages-to-notify-label' => 'רשימת שפות שהמתרגמים אליהן יקבלו את ההודעה (קודים מופרדים בפסיקים):',
+	'translationnotifications-languages-to-notify-label' => 'רשימת שפות שהמתרגמים אליהן יקבלו את ההודעה:',
 	'translationnotifications-priority' => 'עדיפות:',
 	'translationnotifications-priority-high' => 'גבוהה',
 	'translationnotifications-priority-medium' => 'בינונית',
@@ -804,7 +905,8 @@ $messages['hsb'] = array(
 	'translationnotifications-submit-ok' => 'Źdźělenki su so čakanskemu rynčkej přidali a dodawaja so přez proces w pozadku.',
 	'translationnotifications-send-notification-button' => 'Přełožowarjam zdźělenku pósłać',
 	'translationnotifications-deadline-label' => 'Termin, kotryž dyrbi so w tutej zdźělence podać:',
-	'translationnotifications-languages-to-notify-label' => 'Rěče, kotrež maja so informować (přez komu dźělene kody):',
+	'translationnotifications-languages-to-notify-label' => 'Rěče, kotrež maja so informować:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Rěčne kody dźělene přez komu; prózdne wostajić, zo by wšě rěče informowało.',
 	'translationnotifications-priority' => 'Priorita:',
 	'translationnotifications-priority-high' => 'wysoka',
 	'translationnotifications-priority-medium' => 'srjedźna',
@@ -1063,6 +1165,68 @@ $4
 	'translationnotifications-nodeadline' => 'без рок',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'translatorsignup' => 'Pendaftaran penterjemah',
+	'translationnotifications-desc' => 'Membolehkan penterjemah untuk mendaftar diri untuk pemberitahuan penterjemahan',
+	'translationnotifications-info' => 'Maklumat pengguna',
+	'translationnotifications-username' => 'Nama pengguna:',
+	'translationnotifications-emailstatus' => 'Status e-mel:',
+	'translationnotifications-email-confirmed' => 'Alamat e-mel anda telah disahkan',
+	'translationnotifications-email-unconfirmed' => 'Alamat e-mel anda belum disahkan. $1',
+	'translationnotifications-email-notset' => 'Anda belum menyatakan alamat e-mel. Anda boleh berbuat demikian dalam [[Special:Preferences|keutamaan]] anda.',
+	'translationnotifications-languages' => 'Bahasa',
+	'translationnotifications-lang' => 'Bahasa #$1',
+	'translationnotifications-nolang' => 'Pilih bahasa',
+	'translationnotifications-contact' => 'Kaedah perhubungan yang digemari',
+	'translationnotifications-cmethod-email' => 'E-mel',
+	'translationnotifications-cmethod-talkpage' => 'Laman perbincangan',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Laman perbincangan di wiki lain',
+	'translationnotifications-cmethod-feed' => 'Suapan',
+	'translationnotifications-frequency' => 'Kekerapan perhubungan',
+	'translationnotifications-freq-always' => 'Apabila ada bahan baru untuk diterjemah',
+	'translationnotifications-freq-week' => 'Paling kerap seminggu sekali',
+	'translationnotifications-freq-month' => 'Paling kerap sebulan sekali',
+	'translationnotifications-freq-weekly' => 'Ikhtisar mingguan',
+	'translationnotifications-freq-monthly' => 'Ikhtisar bulanan',
+	'translationnotifications-submit' => 'Daftar diri',
+	'notifytranslators' => 'Beritahu penterjemah',
+	'translationnotifications-send-notification-button' => 'Hantar pemberitahuan kepada para penterjemah',
+	'translationnotifications-deadline-label' => 'Tarikh tutup untuk dinyatakan dalam pemberitahuan ini:',
+	'translationnotifications-languages-to-notify-label' => 'Bahasa-bahasa untuk diberitahukan (asingkan kod-kod dengan koma):',
+	'translationnotifications-priority' => 'Prioriti:',
+	'translationnotifications-priority-high' => 'tinggi',
+	'translationnotifications-priority-medium' => 'sederhana',
+	'translationnotifications-priority-low' => 'rendah',
+	'translationnotifications-priority-unset' => '(belum ditetapkan)',
+	'translationnotifications-translatablepage-title' => 'Nama laman boleh terjemah:',
+	'translationnotifications-error-no-translatable-pages' => 'Tiada laman yang boleh diterjemahkan dalam wiki ini.',
+	'translationnotifications-email-subject' => 'Sila terjemahkan laman $1',
+	'translationnotifications-email-body' => 'Apa khabar $1,
+
+Anda menerima e-mel ini kerana anda telah mendaftarkan diri sebagai penterjemah $2 di {{SITENAME}}.
+
+Ada satu laman baru untuk diterjemahkan di situ: $3.
+Sila terjemahkannya dengan mengklik pautan yang berikut:
+$4
+
+$5
+$6
+
+$7
+
+Terima kasih!
+Kakitangan {{SITENAME}}',
+	'translationnotifications-email-priority' => 'Laman ini diberi prioriti $1.',
+	'translationnotifications-email-deadline' => 'Tarikh tutup penterjemahan laman ini ialah $1.',
+	'logentry-translationnotifications-sent' => '$1 berjaya {{GENDER:$2|menghantar}} satu pemberitahuan tentang penterjemahan laman $3 kepada bahasa-bahasa berikut: $4, sebelum tarikh tutup $5, dengan prioriti $6, kepada {{PLURAL:$7|seorang penerima|$7 orang penerima}}, tetapi gagal berbuat demikian kepada {{PLURAL:$8|seorang lagi|$8 orang lagi}}',
+	'log-name-notifytranslators' => 'Pemberitahuan penterjemahan',
+	'translationnotifications-sent-title' => 'Pemberitahuan penterjemahan dihantar',
+	'translationnotifications-sent-body' => 'Pemberitahuan penterjemahan telah dihantar.',
+);
+
 /** Dutch (Nederlands)
  * @author AvatarTeam
  * @author SPQRobin
@@ -1258,6 +1422,68 @@ die Midawaida vun {{SITENAME}}",
 	'translationnotifications-nodeadline' => 'nix',
 );
 
+/** Polish (Polski)
+ * @author BeginaFelicysym
+ */
+$messages['pl'] = array(
+	'translatorsignup' => 'Rejestracja tłumacza',
+	'translationnotifications-desc' => 'Umożliwia zarejestrować tłumacza by otrzymywać powiadomienia tłumaczeń',
+	'translationnotifications-info' => 'Informacje o użytkowniku',
+	'translationnotifications-username' => 'Nazwa użytkownika:',
+	'translationnotifications-emailstatus' => 'Stan e-mail:',
+	'translationnotifications-email-confirmed' => 'Twój adres e-mail jest potwierdzony',
+	'translationnotifications-email-unconfirmed' => 'Twój adres e-mail nie jest potwierdzony. $1',
+	'translationnotifications-email-notset' => 'Nie podano adresu e-mail. Można to zrobić w [[Special:Preferences|preferencjach]].',
+	'translationnotifications-languages' => 'Języki',
+	'translationnotifications-lang' => 'Język #$1',
+	'translationnotifications-nolang' => 'Wybierz język',
+	'translationnotifications-contact' => 'Preferowane sposoby kontaktu',
+	'translationnotifications-cmethod-email' => 'E‐mail',
+	'translationnotifications-cmethod-talkpage' => 'Strona dyskusji',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Strona dyskusji na innej wiki',
+	'translationnotifications-cmethod-feed' => 'Kanały',
+	'translationnotifications-frequency' => 'Częstotliwość kontaktów',
+	'translationnotifications-freq-always' => 'Gdy istnieje coś nowego do przetłumaczenia',
+	'translationnotifications-freq-week' => 'Co najwyżej raz w tygodniu',
+	'translationnotifications-freq-month' => 'Co najwyżej raz w miesiącu',
+	'translationnotifications-freq-weekly' => 'Tygodniowe streszczenie',
+	'translationnotifications-freq-monthly' => 'Miesięczne streszczenie',
+	'translationnotifications-submit' => 'Zarejestruj się',
+	'notifytranslators' => 'Powiadom tłumaczy',
+	'translationnotifications-send-notification-button' => 'Wyślij powiadomienia do tłumaczy',
+	'translationnotifications-deadline-label' => 'Termin do wskazania w tym powiadomieniu:',
+	'translationnotifications-languages-to-notify-label' => 'Jakie języki powiadomić:',
+	'translationnotifications-priority' => 'Priorytet:',
+	'translationnotifications-priority-high' => 'wysoki',
+	'translationnotifications-priority-medium' => 'średni',
+	'translationnotifications-priority-low' => 'niski',
+	'translationnotifications-priority-unset' => '(nieustawiony)',
+	'translationnotifications-translatablepage-title' => 'Nazwa strony do przetłumaczenia:',
+	'translationnotifications-error-no-translatable-pages' => 'Nie ma stron do przetłumaczenia na tej wiki.',
+	'translationnotifications-email-subject' => 'Przetłumacz stronę $1',
+	'translationnotifications-email-body' => 'Witaj  $1,
+
+Otrzymujesz tę wiadomość e-mail, ponieważ użytkownik zarejestrował się jako tłumacz na  $2  portalu {{SITENAME}}.
+
+Jest nowa strona do tłumaczenia:  $3 .
+Przetłumacz ją klikając poniższe łącze:
+$4
+
+$5
+$6
+
+$7
+
+Dziękujemy!
+Zespół {{SITENAME}}',
+	'translationnotifications-email-priority' => 'Priorytet tej strony to  $1 .',
+	'translationnotifications-email-deadline' => 'Nieprzekraczalny termin tłumaczenia tej strony to $1 .',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|wysyłał|wysłała}} powiadomienie w sprawie tłumaczenia strony $3; języki: $4; termin $5; priorytet $6; do {{PLURAL:$7|jednego adresata|$7 adresatów}} pomyślnie, do {{PLURAL:$8|jednego adresata|$8 adresatów}} bezskutecznie, pominięto {{PLURAL:$9|jednego adresata|$9 adresatów}}',
+	'log-name-notifytranslators' => 'Powiadomienia o tłumaczeniach',
+	'translationnotifications-sent-title' => 'Wysłano powiadomienie tłumaczenia',
+	'translationnotifications-sent-body' => 'Powiadomienie o tłumaczeniu zostało wysłane.',
+);
+
 /** Slovak (Slovenčina)
  * @author Kusavica
  */
@@ -1281,5 +1507,38 @@ $messages['sk'] = array(
 	'translationnotifications-email-subject' => 'Prosím, preložte stránku $1',
 	'translationnotifications-log-alllanguages' => 'všetky jazyky',
 	'translationnotifications-nodeadline' => 'nič',
+);
+
+/** Swedish (Svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'translatorsignup' => 'Översättarregistrering',
+	'translationnotifications-desc' => 'Låter översättare registrera sig för översättningsmeddelanden',
+	'translationnotifications-info' => 'Användarinformation',
+	'translationnotifications-username' => 'Användarnamn:',
+	'translationnotifications-emailstatus' => 'E-poststatus:',
+	'translationnotifications-email-confirmed' => 'Din e-postadress är bekräftad',
+	'translationnotifications-email-unconfirmed' => 'Din e-postadress är inte bekräftad. $1',
+	'translationnotifications-email-notset' => 'Du har inte angivit en e-postadress. Du kan göra det i dina [[Special:Preferences|inställningar]].',
+	'translationnotifications-languages' => 'Språk',
+	'translationnotifications-lang' => 'Språk #$1',
+	'translationnotifications-nolang' => 'Välj ett språk',
+	'translationnotifications-contact' => 'Föredragna kontaktmetoder',
+	'translationnotifications-cmethod-email' => 'E-post',
+	'translationnotifications-cmethod-talkpage' => 'Diskussionssida',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Diskussionssida på annan wiki',
+	'translationnotifications-cmethod-feed' => 'Flöde',
+	'translationnotifications-frequency' => 'Kontaktfrekvens',
+	'translationnotifications-freq-always' => 'När det finns någonting nytt att översätta',
+	'translationnotifications-freq-week' => 'Högst en gång i veckan',
+	'translationnotifications-freq-month' => 'Högst en gång i månaden',
+	'translationnotifications-freq-weekly' => 'Sammandrag varje vecka',
+	'translationnotifications-freq-monthly' => 'Sammandrag varje månad',
+	'translationnotifications-submit' => 'Registrera',
+	'notifytranslators' => 'Meddela översättare',
+	'translationnotifications-send-notification-button' => 'Skicka ett meddelande till översättare',
+	'translationnotifications-deadline-label' => 'Tidsgränsen att ange i denna anmälan:',
+	'translationnotifications-languages-to-notify-label' => 'Vilka språk som ska meddelas (kod):',
 );
 
