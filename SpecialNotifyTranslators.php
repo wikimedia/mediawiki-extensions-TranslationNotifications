@@ -99,6 +99,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'rows' => 20,
 			'cols' => 80,
 			'label-message' => 'translationnotifications-languages-to-notify-label',
+			'help-message' => 'translationnotifications-languages-to-notify-label-help-message',
 		);
 
 		// Priotity dropdown
