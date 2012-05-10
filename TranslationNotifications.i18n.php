@@ -296,8 +296,8 @@ $messages['de'] = array(
 	'translationnotifications-submit-ok' => 'Die Übersetzungsbenachrichtigungen wurden zu einer Auftragswarteschlange hinzugefügt und werden von einem Hintergrundauftrag versandt.',
 	'translationnotifications-send-notification-button' => 'Benachrichtigung an die Übersetzer senden',
 	'translationnotifications-deadline-label' => 'In der Benachrichtigung anzugebenden Frist:',
-	'translationnotifications-languages-to-notify-label' => 'Die zu benachrichtigenden Sprachen:',
-	'translationnotifications-languages-to-notify-label-help-message' => 'Kommagetrennte Sprachcodes; zum Benachrichtigen für alle Sprachen frei lassen.',
+	'translationnotifications-languages-to-notify-label' => 'Benachrichtigungen zu folgenden Sprachen:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Kommagetrennte Sprachcodes; für Benachrichtigungen zu allen Sprachen frei lassen.',
 	'translationnotifications-priority' => 'Priorität:',
 	'translationnotifications-priority-high' => 'hoch',
 	'translationnotifications-priority-medium' => 'mittel',
@@ -612,6 +612,7 @@ El equipo de {{SITENAME}}',
 
 /** French (Français)
  * @author Gomoko
+ * @author Wyz
  */
 $messages['fr'] = array(
 	'translatorsignup' => 'Connexion du traducteur',
@@ -642,7 +643,8 @@ $messages['fr'] = array(
 	'translationnotifications-submit-ok' => "Des notifications ont été ajoutées à une file d'attente et sont livrées par une tâche d'arrière-plan.",
 	'translationnotifications-send-notification-button' => 'Envoyer une notification aux traducteurs',
 	'translationnotifications-deadline-label' => 'Date limite à indiquer dans cette notification:',
-	'translationnotifications-languages-to-notify-label' => 'Quelles langues pour notifier (codes séparés par des virgules):',
+	'translationnotifications-languages-to-notify-label' => 'Langues à notifier :',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Codes de langue séparés par des virgules; laissez vide pour notifier toutes les langues.',
 	'translationnotifications-priority' => 'Priorité:',
 	'translationnotifications-priority-high' => 'haute',
 	'translationnotifications-priority-medium' => 'moyenne',
@@ -739,7 +741,7 @@ $messages['gl'] = array(
 	'notifytranslators' => 'Informar aos tradutores',
 	'translationnotifications-send-notification-button' => 'Enviar unha notificación aos tradutores',
 	'translationnotifications-deadline-label' => 'Data límite a indicar nesta notificación:',
-	'translationnotifications-languages-to-notify-label' => 'Linguas ás que enviar a notificación (códigos separados por comas):',
+	'translationnotifications-languages-to-notify-label' => 'Linguas ás que enviar a notificación:',
 	'translationnotifications-priority' => 'Prioridade:',
 	'translationnotifications-priority-high' => 'alta',
 	'translationnotifications-priority-medium' => 'media',
@@ -1101,7 +1103,8 @@ $messages['mk'] = array(
 	'translationnotifications-submit-ok' => 'Известувањата се додадени во редицата на чекање и се испорачуваат со позадинска задача.',
 	'translationnotifications-send-notification-button' => 'Испрати известување до преведувачите',
 	'translationnotifications-deadline-label' => 'Рок во известувањето:',
-	'translationnotifications-languages-to-notify-label' => 'Кои јазици да се известат (кодови одделени со запирка):',
+	'translationnotifications-languages-to-notify-label' => 'Кои јазици да се известат:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Јазични кодови одделени со запирка; оставете го ова празно ако сакате да ги известите сите јазици.',
 	'translationnotifications-priority' => 'Приоритет:',
 	'translationnotifications-priority-high' => 'висок',
 	'translationnotifications-priority-medium' => 'среден',
@@ -1358,7 +1361,8 @@ $messages['pfl'] = array(
 	'translationnotifications-submit-ok' => 'Die Bnochrischdischung fas Iwasedze isch inäner Wardeschlong un wead vunäm Hinagrunduffdraach vaschiggd.',
 	'translationnotifications-send-notification-button' => 'Ä Bnochrischdischung zude Iwasedza schigge',
 	'translationnotifications-deadline-label' => 'Frischd fadie Bnochrischdischung hiewaise:',
-	'translationnotifications-languages-to-notify-label' => 'Die Schbrooch zum bnochrischdische (Code, kommagdrennd):',
+	'translationnotifications-languages-to-notify-label' => 'Die Schbrooch zum bnochrischdische:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Midm Komma gdrennde Schbroochcode; fas Bnochrischdische inde Schbrooche frai losse.',
 	'translationnotifications-priority' => 'Wischdischkaid:',
 	'translationnotifications-priority-high' => 'hoch',
 	'translationnotifications-priority-medium' => 'middl',
