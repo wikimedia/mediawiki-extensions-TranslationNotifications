@@ -68,9 +68,7 @@ $7
 
 Thank you!
 {{SITENAME}} staff',
-	'translationnotifications-talkpage-body' => '== $1 ==
-
-Hello $2,
+	'translationnotifications-talkpage-body' => 'Hello $2,
 
 You are receiving this notification because you signed up as a translator to $3 on {{SITENAME}}.
 A new page, [[$4]] is available for translation. Please [$5 translate it].
@@ -163,9 +161,8 @@ $messages['qqq'] = array(
 * $5 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
 * $7 - A custom message that can be added by the notification sender.",
-	'translationnotifications-talkpage-body' => "The body of the  notification on user talk page.
+	'translationnotifications-talkpage-body' => "The body of the notification on user talk page.
 
-* $1 - Title of the notification section..
 * $2 - Translator's username or real name, if specified.
 * $3 - Language name.
 * $4 - Translatable page name.
@@ -321,9 +318,7 @@ $7
 
 Vielen Dank,
 die Mitarbeiter von {{SITENAME}}',
-	'translationnotifications-talkpage-body' => '== $1 ==
-
-Hallo $2,
+	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 du erhältst diese E-Mail, da du dich als Übersetzer(in) für $3 auf {{SITENAME}} registriert hast.
 Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. [$5 Übersetze sie bitte].
@@ -386,9 +381,7 @@ $7
 
 Vielen Dank,
 die Mitarbeiter von {{SITENAME}}',
-	'translationnotifications-talkpage-body' => '== $1 ==
-
-Hallo $2,
+	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $3 auf {{SITENAME}} registriert haben.
 Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. [$5 Übersetzen Sie sie bitte].
@@ -568,9 +561,7 @@ $6
 $7
 ¡Gracias!
 El equipo de {{SITENAME}}',
-	'translationnotifications-talkpage-body' => '== $1 ==
-
-Hola  $2,
+	'translationnotifications-talkpage-body' => 'Hola $2,
 
 Usted está recibiendo esta notificación porque se inscribió como traductor  de {{SITENAME}} al  $3.
 
@@ -668,9 +659,7 @@ $7
 
 Merci!
 L'équipe de {{SITENAME}}",
-	'translationnotifications-talkpage-body' => "!== $1 ==
-
-Bonjour $2,
+	'translationnotifications-talkpage-body' => "Bonjour $2,
 
 Vous recevez cette notification parce que vous êtes inscrit comme traducteur de $3 sur {{SITENAME}}.
 Une nouvelle page, [[$4]], est disponible pour la traduction. Veuillez [$5 la traduire].
@@ -765,9 +754,7 @@ $7
 
 Grazas!
 O equipo de {{SITENAME}}',
-	'translationnotifications-talkpage-body' => '== $1 ==
-
-Boas, $2:
+	'translationnotifications-talkpage-body' => 'Boas, $2:
 
 Recibiu esta notificación porque está inscrito como tradutor ao $3 en {{SITENAME}}.
 Hai unha nova páxina, "[[$4]]", dispoñible para a súa tradución. Por favor, [$5 tradúzaa].
@@ -932,9 +919,7 @@ $7
 
 Wulki dźak!
 Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
-	'translationnotifications-talkpage-body' => '== $1 ==
-
-Witaj $2,
+	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
 Nowa strona, [[$4]], steji za přełožowanje k dispoziciji. Prošu [$5 přełož ju].
@@ -1030,9 +1015,7 @@ $7
 
 Gratias!
 Le personal de {{SITENAME}}',
-	'translationnotifications-talkpage-body' => '== $1 ==
-
-Salute $2,
+	'translationnotifications-talkpage-body' => 'Salute $2,
 
 Tu recipe iste notification perque tu te inscribeva como traductor de $3 in {{SITENAME}}.
 Un nove pagina, [[$4]] es disponibile pro traduction. Per favor [$5 traduce lo].
@@ -1069,6 +1052,36 @@ Le equipa de {{SITENAME}}',
 	'translationnotifications-sent-body' => 'Le notification de traduction ha essite inviate.',
 	'translationnotifications-log-alllanguages' => 'tote le linguas',
 	'translationnotifications-nodeadline' => 'nulle',
+);
+
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'translatorsignup' => 'Aschreiwen als Iwwersetzer',
+	'translationnotifications-desc' => "Erlaabt et Iwwersetzer fir sech op Iwwersetzungs-Noriichten z'abonnéieren",
+	'translationnotifications-info' => 'Benotzerinformatioun',
+	'translationnotifications-username' => 'Benotzernumm:',
+	'translationnotifications-emailstatus' => 'E-Mail-Status:',
+	'translationnotifications-email-confirmed' => 'Är E-Mailadress gouf confirméiert',
+	'translationnotifications-email-unconfirmed' => 'Är E-Mailadress gouf net confirméiert. $1',
+	'translationnotifications-email-notset' => 'Dir hutt keng E-Mailadress uginn. Dir kënnt dat an Ären [[Special:Preferences|Astellunge]] maachen.',
+	'translationnotifications-languages' => 'Sproochen',
+	'translationnotifications-lang' => 'Sprooch #$1',
+	'translationnotifications-nolang' => 'Sicht eng Sprooch eraus',
+	'translationnotifications-contact' => 'Wéi solle mir Iech kontaktéieren?',
+	'translationnotifications-cmethod-email' => 'Mail',
+	'translationnotifications-cmethod-talkpage' => 'Diskussiounssäit',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Diskussiounsäit op enger anerer Wiki',
+	'translationnotifications-cmethod-feed' => 'Feed',
+	'translationnotifications-cmethod-no' => 'Kontaktéiert mech net',
+	'translationnotifications-frequency' => 'Heefegkeet vun de Benoriichtigungen',
+	'translationnotifications-freq-always' => "Wann et eppes Neies z'iwwersetze gëtt",
+	'translationnotifications-freq-week' => "Héchstens eemol d'Woch",
+	'translationnotifications-freq-month' => 'Héchstens eemol de Mount',
+	'translationnotifications-freq-weekly' => 'Wëchentleche Resumé',
+	'translationnotifications-freq-monthly' => 'Monatleche Resumé',
+	'translationnotifications-submit' => 'Schreift Iech an',
 );
 
 /** Macedonian (Македонски)
@@ -1128,8 +1141,7 @@ $7
 
 Ви благодариме!
 Персоналот на {{SITENAME}}',
-	'translationnotifications-talkpage-body' => '== $1 ==
-Здраво $2,
+	'translationnotifications-talkpage-body' => 'Здраво $2,
 
 Го добивате ова известување бидејќи се пријавивте за преведувач на {{SITENAME}} на $3.
 Новата страница [[$4]] чека на преведување. Ве молиме [$5 преведете ја].
@@ -1288,9 +1300,7 @@ $7
 
 Bedankt!
 {{SITENAME}}-beheerders',
-	'translationnotifications-talkpage-body' => '== $1 ==
-
-Hallo $2,
+	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 U ontvangt deze melding omdat u zich heeft opgegeven als vertaler voor het $3 op {{SITENAME}}.
 De pagina [[$4]] is beschikbaar voor vertaling. [$5 Vertaal deze alstublieft].

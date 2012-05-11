@@ -208,6 +208,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 				if ( $user->getOption( 'translationnotifications-cmethod-talkpage' ) ) {
 					$status &= $this->leaveUserMessage( $user );
 				}
+				if ( $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere' ) ) {
+					$status &= $this->leaveUserMessageElsewhere( $user );
+				}
 
 				if ( $status ) {
 					$sentSuccess++;
@@ -320,20 +323,32 @@ class SpecialNotifyTranslators extends SpecialPage {
 	}
 
 	/**
-	 * Leave a user a message
+	 * A readable shortcut for $this->leaveUserMessage( $user, true ).
+	 * @param User To whom the message to be sent
 	 * @return boolean true if it was successful
 	 */
-	public function leaveUserMessage( User $user ) {
+	public function leaveUserMessageElsewhere( User $user ) {
+		return $this->leaveUserMessage( $user, true );
+	}
+
+	/**
+	 * Leave a message on the user's talk page.
+	 * @param User To whom the message to be sent
+	 * @param boolean Whether to send it to a talk page on this wiki or on another one.
+	 * @return boolean true if it was successful
+	 */
+	public function leaveUserMessage( User $user, $elsewhere = false ) {
 		global $wgUser;
-		$talk = $user->getTalkPage();
-		$talkPage = new Article( $talk, 0 );
+		$targetUsername = $this->getUserName( $user );
+
 		$languageCode = self::getUserFirstLanguage( $user );
 		$userFirstLanguage = Language::factory( $languageCode );
 		$languageName = $userFirstLanguage->fetchLanguageName( $languageCode );
+
 		$text = wfMessage(
 			'translationnotifications-talkpage-body',
-			$this->getNotificationSubject( $userFirstLanguage ),
-			$this->getUserName( $user ),
+			null, // $1 was used in the past and then removed.
+			$targetUsername,
 			$languageName,
 			$this->translatablePageTitle,
 			$this->getTranslationURL( $languageCode ),
@@ -347,10 +362,14 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'text' => $text,
 			'editSummary' => $editSummary,
 			'editor' => $wgUser->getId(),
-			);
+			'elsewhere' => $elsewhere,
+		);
 
-		$job = new TranslationNotificationJob( $talkPage->getTitle(), $params );
+		if ( $elsewhere ) {
+			$params['otherwiki'] = $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere-loc' );
+		}
+
+		$job = new TranslationNotificationJob( $user->getTalkPage(), $params );
 		return $job->insert();
 	}
 }
-

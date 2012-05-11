@@ -59,3 +59,7 @@ $wgTranslationNotificationsContactMethods = array(
 
 $wgLogTypes[] = 'notifytranslators';
 $wgLogActionsHandlers['notifytranslators/sent'] = 'TranslationNotificationsHooks::formatTranslationNotificationLogEntry';
+
+$wgNotificationUsername = false;
+$wgNotificationUserPassword = false;
+
