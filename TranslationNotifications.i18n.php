@@ -202,7 +202,6 @@ Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified.',
 );
 
-
 /** Ṫuroyo (Ṫuroyo)
  * @author Ariyo
  */
@@ -231,7 +230,6 @@ $messages['be-tarask'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Старонка гутарак',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Старонка гутарак у іншай вікі',
 	'translationnotifications-cmethod-feed' => 'Стужка',
-	'translationnotifications-cmethod-no' => 'Не паведамляць мне',
 	'translationnotifications-frequency' => 'Частасьць паведамленьняў',
 	'translationnotifications-freq-always' => 'Калі зьяўляецца, што перакладаць',
 	'translationnotifications-freq-week' => 'Ня болей разу на тыдзень',
@@ -826,6 +824,7 @@ $messages['he'] = array(
 	'translationnotifications-send-notification-button' => 'שליחת מכתבים למתרגמים',
 	'translationnotifications-deadline-label' => 'תאריך סופי שיתווסף להודעה:',
 	'translationnotifications-languages-to-notify-label' => 'רשימת שפות שהמתרגמים אליהן יקבלו את ההודעה:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'רשימה מופרדת בפסיקים של קודי שפה; אם השדה יהיה ריק, ההודעה תישלח לדוברי כל השפות.',
 	'translationnotifications-priority' => 'עדיפות:',
 	'translationnotifications-priority-high' => 'גבוהה',
 	'translationnotifications-priority-medium' => 'בינונית',
@@ -848,7 +847,32 @@ $7
 
 תודה!
 צוות {{SITENAME}}',
+	'translationnotifications-talkpage-body' => 'שלום $2,
+
+קיבלת את ההודעה הזאת מכיוון שנרשמת בתור מתרגם ל{{GRAMMAR:תחילית|$3}} באתר {{SITENAME}}.
+דף חדש בשם [[$4]] זמין לתרגום. אנו מבקשים ממך [$5 לתרגם אותו].
+
+$6
+$7
+
+$8
+
+תודה!
+
+סגל {{SITENAME}}',
 	'translationnotifications-digestemail-subject' => 'מכתב עם סיכום בקשות תרגום מאתר {{SITENAME}}',
+	'translationnotifications-digestemail-body' => "שלום $1,
+
+קיבלת את ההודעה הזאת מכיוון שנרשמת בתור מתרגם ל{{GRAMMAR:תחילית|$2}} באתר {{SITENAME}}.
+{{PLURAL:$3|דף אחד חדש זמין|יש $3 דפים חדשים שזמינים}} לתרגום. ר' את הפרטים להלן.
+
+$4
+
+כדי לשנות את העדפות ההודעות, נא לבקר בדף $5
+
+תודה!
+
+סגל {{SITENAME}}",
 	'translationnotifications-digestemail-notification-line' => 'ב־$1, המשתמש $2 סימן את הדף "$3" לתרגום. אפשר לתרגם אותו בקישור $4',
 	'translationnotifications-edit-summary' => 'הודעה על תרגום',
 	'translationnotifications-email-priority' => 'העדיפות של הדף הזה: $1.',
@@ -1168,7 +1192,6 @@ $messages['lb'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Diskussiounssäit',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Diskussiounsäit op enger anerer Wiki',
 	'translationnotifications-cmethod-feed' => 'Feed',
-	'translationnotifications-cmethod-no' => 'Kontaktéiert mech net',
 	'translationnotifications-frequency' => 'Heefegkeet vun de Benoriichtigungen',
 	'translationnotifications-freq-always' => "Wann et eppes Neies z'iwwersetze gëtt",
 	'translationnotifications-freq-week' => "Héchstens eemol d'Woch",
@@ -1176,6 +1199,19 @@ $messages['lb'] = array(
 	'translationnotifications-freq-weekly' => 'Wëchentleche Resumé',
 	'translationnotifications-freq-monthly' => 'Monatleche Resumé',
 	'translationnotifications-submit' => 'Schreift Iech an',
+	'notifytranslators' => 'Iwwersetzer informéieren',
+	'translationnotifications-deadline-label' => 'Delai deen an dëser Matdeelung gesat gëtt:',
+	'translationnotifications-priority' => 'Prioritéit:',
+	'translationnotifications-priority-high' => 'héich',
+	'translationnotifications-priority-medium' => 'mëttel',
+	'translationnotifications-priority-low' => 'niddreg',
+	'translationnotifications-priority-unset' => '(net agestallt)',
+	'translationnotifications-translatablepage-title' => 'Numm vun der Säit déi iwwersat soll ginn:',
+	'translationnotifications-error-no-translatable-pages' => "Et gëtt keng Säite fir z'iwwersetzen op dëser Wiki.",
+	'translationnotifications-email-subject' => "Iwwersetzt w.e.g. d'Säit $1",
+	'translationnotifications-email-priority' => "D'Prioritéit vun dëser Säit ass $1.",
+	'translationnotifications-email-deadline' => "Den Delai fir dës säit z'iwwersetzen ass den $1.",
+	'log-name-notifytranslators' => 'Iwwersetzungs-Matdeelungen',
 );
 
 /** Macedonian (Македонски)
@@ -1279,6 +1315,7 @@ $4
  */
 $messages['ms'] = array(
 	'translatorsignup' => 'Pendaftaran penterjemah',
+	'translatorsignup-summary' => 'Gunakan laman ini untuk menyatakan anda boleh menterjemah kepada bahasa-bahasa yang mana, dan bagaimana anda mahu dihubungi tentang permohonan baru untuk penterjemahan.',
 	'translationnotifications-desc' => 'Membolehkan penterjemah untuk mendaftar diri untuk pemberitahuan penterjemahan',
 	'translationnotifications-info' => 'Maklumat pengguna',
 	'translationnotifications-username' => 'Nama pengguna:',
@@ -1302,9 +1339,11 @@ $messages['ms'] = array(
 	'translationnotifications-freq-monthly' => 'Ikhtisar bulanan',
 	'translationnotifications-submit' => 'Daftar diri',
 	'notifytranslators' => 'Beritahu penterjemah',
+	'translationnotifications-submit-ok' => 'Pemberitahuan telah ditambahkan dalam baris gilir dan dikirim oleh kerja latar belakang.',
 	'translationnotifications-send-notification-button' => 'Hantar pemberitahuan kepada para penterjemah',
 	'translationnotifications-deadline-label' => 'Tarikh tutup untuk dinyatakan dalam pemberitahuan ini:',
-	'translationnotifications-languages-to-notify-label' => 'Bahasa-bahasa untuk diberitahukan (asingkan kod-kod dengan koma):',
+	'translationnotifications-languages-to-notify-label' => 'Bahasa-bahasa untuk diberitahukan:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Kod bahasa diasing-asingkan oleh koma; biarkan kosong untuk memberitahu untuk semua bahasa.',
 	'translationnotifications-priority' => 'Prioriti:',
 	'translationnotifications-priority-high' => 'tinggi',
 	'translationnotifications-priority-medium' => 'sederhana',
@@ -1328,12 +1367,43 @@ $7
 
 Terima kasih!
 Kakitangan {{SITENAME}}',
+	'translationnotifications-talkpage-body' => 'Ke hadapan $2,
+
+Anda sedang menerima pemberitahuan ini kerana anda mendaftar diri sebagai penterjemah kepada $3 di {{SITENAME}}.
+Satu laman baru, [[$4]] sedia untuk diterjemahkan. Sila [$5 terjemahkannya].
+
+$6
+$7
+
+$8
+
+Terima kasih!
+
+Kakitangan {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => 'E-mel ikhtisar untuk permohonan penterjemahan dari {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Ke hadapan $1,
+
+Anda sedang menerima e-mel ini kerana anda mendaftar diri sebagai penterjemah kepada $2 di {{SITENAME}}.
+
+Terdapat $3 laman yang sedia untuk diterjemah. Butiran-butirannya adalah seperti berikut.
+
+$4
+
+Untuk menukar keutamaan pemberitahuan untuk permohonan penterjemahan, sila lawati $5
+
+Terima kasih!
+Kakitangan {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => 'Pada $1, $2 memohon supaya "$3" diterjemahkannya. Anda boleh menterjemahkannya di $4',
+	'translationnotifications-edit-summary' => 'Pemberitahuan penterjemahan',
 	'translationnotifications-email-priority' => 'Laman ini diberi prioriti $1.',
 	'translationnotifications-email-deadline' => 'Tarikh tutup penterjemahan laman ini ialah $1.',
-	'logentry-translationnotifications-sent' => '$1 berjaya {{GENDER:$2|menghantar}} satu pemberitahuan tentang penterjemahan laman $3 kepada bahasa-bahasa berikut: $4, sebelum tarikh tutup $5, dengan prioriti $6, kepada {{PLURAL:$7|seorang penerima|$7 orang penerima}}, tetapi gagal berbuat demikian kepada {{PLURAL:$8|seorang lagi|$8 orang lagi}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|menghantar}} pemberitahuan tentang penterjemahan laman $3; bahasa: $4; tarikh tutup: $5; keutamaan: $6; dihantar ke $7 penerima, gagal disampaikan kepada $8 penerima, dilangkaunya $9 penerima',
 	'log-name-notifytranslators' => 'Pemberitahuan penterjemahan',
+	'log-description-notifytranslators' => 'Log pemberitahuan yang dihantar kepada penterjemah tentang laman-laman yang boleh diterjemah',
 	'translationnotifications-sent-title' => 'Pemberitahuan penterjemahan dihantar',
 	'translationnotifications-sent-body' => 'Pemberitahuan penterjemahan telah dihantar.',
+	'translationnotifications-log-alllanguages' => 'semua bahasa',
+	'translationnotifications-nodeadline' => 'tiada',
 );
 
 /** Dutch (Nederlands)
@@ -1370,7 +1440,8 @@ $messages['nl'] = array(
 	'translationnotifications-submit-ok' => 'De meldingen zijn toegevoegd aan een wachtrij en worden via een achtergrondtaak afgeleverd.',
 	'translationnotifications-send-notification-button' => 'Stuur een bericht naar vertalers',
 	'translationnotifications-deadline-label' => 'Deadline voor deze melding:',
-	'translationnotifications-languages-to-notify-label' => 'Voor welke talen moet een melding gemaakt worden (komma gescheiden taalcodes):',
+	'translationnotifications-languages-to-notify-label' => 'Voor welke talen een melding gemaakt moet worden:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Komma gescheiden taalcodes; laat leeg om een melding voor alle vertalers te maken.',
 	'translationnotifications-priority' => 'Prioriteit:',
 	'translationnotifications-priority-high' => 'hoog',
 	'translationnotifications-priority-medium' => 'gemiddeld',
@@ -1648,5 +1719,19 @@ $messages['sv'] = array(
 	'translationnotifications-send-notification-button' => 'Skicka ett meddelande till översättare',
 	'translationnotifications-deadline-label' => 'Tidsgränsen att ange i denna anmälan:',
 	'translationnotifications-languages-to-notify-label' => 'Vilka språk som ska meddelas (kod):',
+);
+
+/** Tamil (தமிழ்)
+ * @author Karthi.dr
+ */
+$messages['ta'] = array(
+	'translationnotifications-info' => 'பயனர் தகவல்',
+	'translationnotifications-username' => 'பயனர் பெயர்:',
+	'translationnotifications-languages' => 'மொழிகள்',
+	'translationnotifications-lang' => 'மொழி  #$1',
+	'translationnotifications-nolang' => 'மொழியைத் தேர்ந்தெடுக்கவும்',
+	'translationnotifications-cmethod-email' => 'மின்னஞ்சல்',
+	'translationnotifications-cmethod-talkpage' => 'உரையாடல் பக்கம்',
+	'translationnotifications-submit' => 'பதிவுசெய்',
 );
 
