@@ -461,9 +461,7 @@ $7
 
 Wjeliki źěk!
 Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
-	'translationnotifications-talkpage-body' => '== $1 ==
-
-Witaj $2,
+	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
 Nowa strona, [[$4]], steji za přełožowanje k dispoziciji. Prošu [$5 přełož ju].
@@ -561,7 +559,7 @@ $7
 El equipo de {{SITENAME}}',
 	'translationnotifications-talkpage-body' => 'Hola $2,
 
-Usted está recibiendo esta notificación porque se inscribió como traductor  de {{SITENAME}} al  $3.
+Usted está recibiendo esta notificación porque se inscribió como traductor  de {{SITENAME}} en $3.
 
 Una nueva página, [[$4]] está disponible para su traducción. Por favor  [$5 tradúzcala].
 
@@ -1015,7 +1013,8 @@ $messages['ia'] = array(
 	'translationnotifications-submit-ok' => 'Notificationes ha essite addite a un cauda e es livrate per un processo in secunde plano.',
 	'translationnotifications-send-notification-button' => 'Inviar un notification a traductores',
 	'translationnotifications-deadline-label' => 'Data limite a indicar in iste notification:',
-	'translationnotifications-languages-to-notify-label' => 'Le linguas a notificar (codices separate per commas):',
+	'translationnotifications-languages-to-notify-label' => 'Le linguas a notificar:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Codices de lingua separate per commas; lassa vacue pro facer notification pro tote le linguas.',
 	'translationnotifications-priority' => 'Prioritate:',
 	'translationnotifications-priority-high' => 'alte',
 	'translationnotifications-priority-medium' => 'medie',
@@ -1133,9 +1132,7 @@ $7
 
 Grazie!
 Lo staff di {{SITENAME}}",
-	'translationnotifications-talkpage-body' => '== $1 ==
-
-Ciao $2,
+	'translationnotifications-talkpage-body' => 'Ciao $2,
 
 Ricevi questa email perché ti sei registrato come traduttore di $3 su {{SITENAME}}.
 La nuova pagina [[$4]] è disponibile per la traduzione. Puoi [$5 translate it|tradurla].
@@ -1561,9 +1558,7 @@ $7
 
 Dongschä,
 die Midawaida vun {{SITENAME}}',
-	'translationnotifications-talkpage-body' => '== $1 ==
-
-Hey $2,
+	'translationnotifications-talkpage-body' => 'Hey $2,
 
 du grigschd die E-Mail wail disch als Iwasedza fa $3 uff {{SITENAME}} oigdraache hoschd.
 Ä naiji Said [[$4]] fas Iwasedze do. Bidde [$5 iwasedze].
