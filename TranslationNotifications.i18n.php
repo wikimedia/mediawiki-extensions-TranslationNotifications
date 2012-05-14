@@ -724,9 +724,11 @@ $messages['gl'] = array(
 	'translationnotifications-freq-monthly' => 'Boletín mensual',
 	'translationnotifications-submit' => 'Inscribirse',
 	'notifytranslators' => 'Informar aos tradutores',
+	'translationnotifications-submit-ok' => 'As notificacións engadíronse a unha cola de espera; un proceso ha envialas en segundo plano.',
 	'translationnotifications-send-notification-button' => 'Enviar unha notificación aos tradutores',
 	'translationnotifications-deadline-label' => 'Data límite a indicar nesta notificación:',
 	'translationnotifications-languages-to-notify-label' => 'Linguas ás que enviar a notificación:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Códigos de lingua separados por comas; déixeo en branco para notificar a todas as linguas.',
 	'translationnotifications-priority' => 'Prioridade:',
 	'translationnotifications-priority-high' => 'alta',
 	'translationnotifications-priority-medium' => 'media',
@@ -1078,6 +1080,7 @@ Le equipa de {{SITENAME}}',
 );
 
 /** Italian (Italiano)
+ * @author Beta16
  * @author Ximo17
  */
 $messages['it'] = array(
@@ -1134,8 +1137,8 @@ Grazie!
 Lo staff di {{SITENAME}}",
 	'translationnotifications-talkpage-body' => 'Ciao $2,
 
-Ricevi questa email perché ti sei registrato come traduttore di $3 su {{SITENAME}}.
-La nuova pagina [[$4]] è disponibile per la traduzione. Puoi [$5 translate it|tradurla].
+Ricevi questa email perché ti sei registrato come traduttore $3 su {{SITENAME}}.
+La nuova pagina [[$4]] è disponibile per la traduzione. Puoi [$5 tradurla].
 
 $6
 $7
