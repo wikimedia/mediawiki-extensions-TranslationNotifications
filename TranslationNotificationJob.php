@@ -15,11 +15,11 @@ class TranslationNotificationJob extends Job {
 	 * @return bool
 	 */
 	public function run() {
-		if ( $this->params['elsewhere'] ) {
-			$publishElsewhereResult = $this->publishElsewhere();
+		if ( isset( $this->params['otherwiki'] ) ) {
+			$publishInOtherWikiResult = $this->publishInOtherWiki();
 			wfDebug( 'Sending translation notification to a talk page in '
 				. $this->params['otherwiki']
-				. ": $publishElsewhereResult\n" );
+				. ": $publishInOtherWikiResult\n" );
 		} else {
 			$this->publishHere();
 		}
@@ -39,16 +39,15 @@ class TranslationNotificationJob extends Job {
 		return $status->isGood();
 	}
 
-	private function publishElsewhere() {
+	private function publishInOtherWiki() {
 		global $wgNotificationUsername, $wgNotificationUserPassword;
 
-		$otherWiki = $this->params['otherwiki'];
-		$wiki = WikiMap::getWiki( $otherWiki );
+		$wiki = WikiMap::getWiki( $this->params['otherwiki'] );
 		$otherWikiBaseUrl = 'http://' . $wiki->getHostname() . wfScript( 'api' );
 
 		// API: Get login token
 
-		wfDebug( "publishElsewhere API: Get login token\n" );
+		wfDebug( "publishInOtherWiki API: Get login token\n" );
 
 		$loginUrl = wfAppendQuery( $otherWikiBaseUrl, array(
 				'action' => 'login',
@@ -82,7 +81,7 @@ class TranslationNotificationJob extends Job {
 
 		// API: Do the login
 
-		wfDebug( "publishElsewhere API: Do the login\n" );
+		wfDebug( "publishInOtherWiki API: Do the login\n" );
 
 		$loginRequest = MWHttpRequest::factory(
 			$loginUrl,
@@ -108,7 +107,7 @@ class TranslationNotificationJob extends Job {
 
 		// API: Get an edit token
 
-		wfDebug( "publishElsewhere API: Get an edit token\n" );
+		wfDebug( "publishInOtherWiki API: Get an edit token\n" );
 
 		$userTalkPage = $this->title->getFullText();
 		$editTokenUrl = wfAppendQuery( $otherWikiBaseUrl, array(
@@ -142,7 +141,7 @@ class TranslationNotificationJob extends Job {
 
 		// API: Edit the talk page
 
-		wfDebug( "publishElsewhere API: Edit the talk page\n" );
+		wfDebug( "publishInOtherWiki API: Edit the talk page\n" );
 
 		$editUrl = wfAppendQuery( $otherWikiBaseUrl, array(
 			'action' => 'edit',
