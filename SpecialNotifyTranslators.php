@@ -355,7 +355,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$this->getPriorityClause(),
 			$this->getDeadlineClause(),
 			$this->notificationText
-		)->inLanguage( $userFirstLanguage )->text();
+		)->inLanguage( $userFirstLanguage )->text() . ', ~~~~~';
 
 		$editSummary = wfMsgForContent( 'translationnotifications-edit-summary' );
 		$params = array(
