@@ -68,11 +68,12 @@ $6
 $7
 
 Thank you!
-{{SITENAME}} staff',
+{{SITENAME}} translation administrators',
 	'translationnotifications-talkpage-body' => 'Hello $2,
 
 You are receiving this notification because you signed up as a translator to $3 on {{SITENAME}}.
-A new page, [[$4]] is available for translation. Please [$5 translate it].
+A new page, [[$4]] is available for translation. Please translate it here:
+$5
 
 $6
 $7
@@ -81,7 +82,8 @@ $8
 
 Thank you!
 
-{{SITENAME}} staff',
+{{SITENAME}} translation administrators',
+	'translationnotifications-notification-url-listitem' => 'translate to $1',
 	'translationnotifications-digestemail-subject' => 'Digest e-mail for translation requests from {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hello $1,
 
@@ -157,21 +159,22 @@ $messages['qqq'] = array(
 	'translationnotifications-email-body' => "The body of the email message sent to translators.
 
 * $1 - Translator's username or real name, if specified.
-* $2 - Language name.
+* $2 - A comma list of language names.
 * $3 - Translatable page name.
-* $4 - URL.
+* $4 - A bullet list of URLs.
 * $5 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
 * $7 - A custom message that can be added by the notification sender.",
 	'translationnotifications-talkpage-body' => "The body of the notification on user talk page.
 
 * $2 - Translator's username or real name, if specified.
-* $3 - Language name.
+* $3 - A comma list of language names.
 * $4 - Translatable page name.
-* $5 - URL.
+* $5 - A bulleted list of URLs to translation pages.
 * $6 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $7 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
 * $8 - A custom message that can be added by the notification sender.",
+	'translationnotifications-notification-url-listitem' => 'This is an item in a bullted list of hyperlinks to translation pages. $1 is a language name.',
 	'translationnotifications-digestemail-body' => '
 * $1 - username
 * $2 - first language preference of user
@@ -860,7 +863,8 @@ $7
 	'translationnotifications-talkpage-body' => 'שלום $2,
 
 קיבלת את ההודעה הזאת מכיוון שנרשמת בתור מתרגם ל{{GRAMMAR:תחילית|$3}} באתר {{SITENAME}}.
-דף חדש בשם [[$4]] זמין לתרגום. אנו מבקשים ממך [$5 לתרגם אותו].
+דף חדש בשם [[$4]] זמין לתרגום. אנו מבקשים ממך לתרגם אותו כאן:
+$5
 
 $6
 $7
@@ -870,6 +874,7 @@ $8
 תודה!
 
 סגל {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'תרגום ל{{GRAMMAR:תחילית|$1}}',
 	'translationnotifications-digestemail-subject' => 'מכתב עם סיכום בקשות תרגום מאתר {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "שלום $1,
 
