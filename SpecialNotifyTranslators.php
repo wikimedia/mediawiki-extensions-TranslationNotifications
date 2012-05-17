@@ -209,7 +209,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 					$status &= $this->leaveUserMessage( $user );
 				}
 				if ( $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere' ) ) {
-					$status &= $this->leaveUserMessageElsewhere( $user );
+					$status &= $this->leaveUserMessageInOtherWiki( $user );
 				}
 
 				if ( $status ) {
@@ -327,7 +327,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * @param User To whom the message to be sent
 	 * @return boolean true if it was successful
 	 */
-	public function leaveUserMessageElsewhere( User $user ) {
+	public function leaveUserMessageInOtherWiki( User $user ) {
 		return $this->leaveUserMessage( $user, true );
 	}
 
@@ -337,7 +337,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * @param boolean Whether to send it to a talk page on this wiki or on another one.
 	 * @return boolean true if it was successful
 	 */
-	public function leaveUserMessage( User $user, $elsewhere = false ) {
+	public function leaveUserMessage( User $user, $inOtherWiki = false ) {
 		global $wgUser;
 		$targetUsername = $this->getUserName( $user );
 
@@ -362,10 +362,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'text' => $text,
 			'editSummary' => $editSummary,
 			'editor' => $wgUser->getId(),
-			'elsewhere' => $elsewhere,
 		);
 
-		if ( $elsewhere ) {
+		if ( $inOtherWiki ) {
 			$params['otherwiki'] = $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere-loc' );
 		}
 
