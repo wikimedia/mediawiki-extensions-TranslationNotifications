@@ -20,6 +20,7 @@ $messages['en'] = array(
 	'translationnotifications-username' => 'Username:',
 	'translationnotifications-emailstatus' => 'E-mail status:',
 	'translationnotifications-email-confirmed' => 'Your e-mail address is confirmed',
+	'translationnotifications-email-disablemail' => 'Your e-mail address is confirmed, but in [[Special:Preferences|your preferences]] you asked not to receive email.',
 	'translationnotifications-email-unconfirmed' => 'Your e-mail address is not confirmed. $1',
 	'translationnotifications-email-notset' => 'You have not provided an e-mail address. You can do that in your [[Special:Preferences|preferences]].',
 	'translationnotifications-languages' => 'Languages',
@@ -122,6 +123,7 @@ $messages['qqq'] = array(
 	'translationnotifications-username' => 'Label followed by username',
 	'translationnotifications-emailstatus' => 'Label',
 	'translationnotifications-email-confirmed' => 'Status of e-mail confirmation after {{msg-mw|translationnotifications-emailstatus}}.',
+	'translationnotifications-email-disablemail' => 'A message that appears on top of Special:TranslatorSignup if the email address is confirmed, the user disabled email in the preferences.',
 	'translationnotifications-email-unconfirmed' => 'Status of e-mail confirmation after {{msg-mw|translationnotifications-emailstatus}}. Parameters:
 * $1 is a button which can be used to send confirmation email. Button text is {{msg-mw|mediawiki:confirmemail_send}}.',
 	'translationnotifications-email-notset' => 'Status of e-mail confirmation after {{msg-mw|translationnotifications-emailstatus}}.',

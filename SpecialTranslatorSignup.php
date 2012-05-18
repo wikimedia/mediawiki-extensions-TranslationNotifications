@@ -60,7 +60,11 @@ JAVASCRIPT
 
 		$user = $this->getUser();
 		if ( $user->isEmailConfirmed() ) {
-			$status = $this->msg( 'translationnotifications-email-confirmed' )->parse();
+			if ( $user->getOption( 'disablemail' ) ) {
+				$status = $this->msg( 'translationnotifications-email-disablemail' )->parse();
+			} else {
+				$status = $this->msg( 'translationnotifications-email-confirmed' )->parse();
+			}
 		} elseif ( trim( $user->getEmail() ) !== '' )  {
 			$submit = Xml::submitButton( $this->msg( 'confirmemail_send' )->text(), array( 'name' => 'x' ) );
 			$status = $this->msg( 'translationnotifications-email-unconfirmed' )->rawParams( $submit )->parse();
@@ -115,7 +119,7 @@ JAVASCRIPT
 			);
 
 			if ( $method === 'email' ) {
-				$m["cmethod-$method"]['disabled'] = !$user->isEmailConfirmed();
+				$m["cmethod-$method"]['disabled'] = !$user->canReceiveEmail();
 			}
 
 			if ( $method === 'talkpage-elsewhere' ) {

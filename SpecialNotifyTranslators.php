@@ -202,7 +202,14 @@ class SpecialNotifyTranslators extends SpecialPage {
 			if ( $timeSinceNotification > $userTranslationFrequency ) {
 				$status = true;
 				if ( $user->getOption( 'translationnotifications-cmethod-email' ) ) {
-					if ( $user->getOption( 'translationnotifications-freq' ) === 'always' ) {
+					if ( $user->getOption( 'disablemail' ) ) {
+						// For some reason the user signed up to receive
+						// Translation Notifications emails, but receiving
+						// email is disabled in the user's preferences.
+						// To be on the safe side, disable the email
+						// contact method.
+						$user->setOption( 'translationnotifications-cmethod-email', false );
+					} elseif ( $user->getOption( 'translationnotifications-freq' ) === 'always' ) {
 						$status &= $this->sendTranslationNotificationEmail( $user );
 					}
 				}
@@ -216,10 +223,11 @@ class SpecialNotifyTranslators extends SpecialPage {
 				if ( $status ) {
 					$sentSuccess++;
 					$user->setOption( $timestampOptionName, $currentDBTime );
-					$user->saveSettings();
 				} else {
 					$sentFail++;
 				}
+
+				$user->saveSettings();
 			} else {
 				$tooEarly++;
 			}
