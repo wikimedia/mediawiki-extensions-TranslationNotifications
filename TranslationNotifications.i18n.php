@@ -1164,12 +1164,52 @@ Lo staff di {{SITENAME}}',
 	'translationnotifications-edit-summary' => 'Notifica di traduzione',
 	'translationnotifications-email-priority' => 'La priorità di questa pagina è  $1 .',
 	'translationnotifications-email-deadline' => 'Il termine ultimo per la traduzione di questa pagina è  $1 .',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha inviato}} una notifica sulla traduzione della pagina $3; langue: $4; termine: $5; priorità: $6; inviata a {{PLURAL:$7|un destinatario|$7 destinatari}}, non inviata a {{PLURAL:$8|un destinario|$8 destinatari}}, omessa a {{PLURAL:$9|un destinatario|$9 destinatari}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha inviato}} una notifica sulla traduzione della pagina $3; lingue: $4; termine: $5; priorità: $6; inviata a {{PLURAL:$7|un destinatario|$7 destinatari}}, non inviata a {{PLURAL:$8|un destinatario|$8 destinatari}}, omessa a {{PLURAL:$9|un destinatario|$9 destinatari}}',
 	'log-name-notifytranslators' => 'Notifiche di traduzione',
 	'log-description-notifytranslators' => 'Una serie di notifiche riguardanti le pagine traducibili sono state inviate ai traduttori.',
 	'translationnotifications-sent-title' => 'Notifica di traduzione inviata',
 	'translationnotifications-sent-body' => 'La notifica di traduzione è stata inviata.',
 	'translationnotifications-log-alllanguages' => 'tutte le lingue',
+);
+
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'translationnotifications-info' => '利用者情報',
+	'translationnotifications-username' => '利用者名：',
+	'translationnotifications-emailstatus' => 'メールの状態：',
+	'translationnotifications-email-notset' => 'あなたはメールアドレスを設定していません。[[Special:Preferences|個人設定]]で設定できます。',
+	'translationnotifications-languages' => '言語',
+	'translationnotifications-lang' => '言語 #$1',
+	'translationnotifications-nolang' => '言語を選択',
+	'translationnotifications-cmethod-email' => 'メール',
+	'translationnotifications-cmethod-talkpage' => 'トークページ',
+	'translationnotifications-cmethod-talkpage-elsewhere' => '他のウィキのトークページ',
+	'translationnotifications-cmethod-feed' => 'フィード',
+	'translationnotifications-frequency' => '連絡の頻度',
+	'notifytranslators' => '翻訳者に通知',
+	'translationnotifications-submit-ok' => '通知をキューに追加しました。通知はバックグラウンドジョブによって送信されます。',
+	'translationnotifications-send-notification-button' => '翻訳者に通知を送信',
+	'translationnotifications-deadline-label' => 'この通知で指定する締め切り：',
+	'translationnotifications-languages-to-notify-label' => '通知する言語：',
+	'translationnotifications-languages-to-notify-label-help-message' => 'カンマ区切りの言語コードです。すべての言語を通知する場合は空欄にします。',
+	'translationnotifications-priority' => '優先度：',
+	'translationnotifications-priority-high' => '高',
+	'translationnotifications-priority-medium' => '中',
+	'translationnotifications-priority-low' => '低',
+	'translationnotifications-priority-unset' => '（未設定）',
+	'translationnotifications-translatablepage-title' => '翻訳できるページの名前：',
+	'translationnotifications-error-no-translatable-pages' => 'このウィキには翻訳できるページはありません。',
+	'translationnotifications-email-subject' => 'ページ $1 を翻訳してください',
+	'translationnotifications-edit-summary' => '翻訳の通知',
+	'translationnotifications-email-priority' => 'このページの優先度は$1です。',
+	'translationnotifications-email-deadline' => 'このページの翻訳の締め切りは $1 です。',
+	'log-name-notifytranslators' => '翻訳の通知',
+	'translationnotifications-sent-title' => '翻訳の通知を送信しました',
+	'translationnotifications-sent-body' => '翻訳の通知を送信しました。',
+	'translationnotifications-log-alllanguages' => 'すべての言語',
+	'translationnotifications-nodeadline' => 'なし',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -1659,6 +1699,102 @@ Zespół {{SITENAME}}',
 	'log-name-notifytranslators' => 'Powiadomienia o tłumaczeniach',
 	'translationnotifications-sent-title' => 'Wysłano powiadomienie tłumaczenia',
 	'translationnotifications-sent-body' => 'Powiadomienie o tłumaczeniu zostało wysłane.',
+);
+
+/** Russian (Русский)
+ * @author Kaganer
+ */
+$messages['ru'] = array(
+	'translatorsignup' => 'Регистрация в качестве переводчика',
+	'translatorsignup-summary' => 'Эта страница позволяет указать языки, на которые вы можете переводить, а также способы связи с вами, по которым вы хотите получать уведомления о новых запросах на перевод.',
+	'translationnotifications-desc' => 'Позволяет переводчикам зарегистрироваться для получения уведомлений, связанных с переводами',
+	'translationnotifications-info' => 'Информация об участнике',
+	'translationnotifications-username' => 'Имя учётной записи :',
+	'translationnotifications-emailstatus' => 'Статус адреса эл. почты:',
+	'translationnotifications-email-confirmed' => 'Ваш адрес электронной почты подтверждён',
+	'translationnotifications-email-unconfirmed' => 'Ваш адрес электронной почты не подтверждён. $1',
+	'translationnotifications-email-notset' => 'Вы не указали адрес электронной почты. Вы можете сделать это в своих [[Special:Preferences|персональных настройках]].',
+	'translationnotifications-languages' => 'Языки',
+	'translationnotifications-lang' => 'Язык № $1',
+	'translationnotifications-nolang' => 'Выберите язык',
+	'translationnotifications-contact' => 'Предпочтительные способы связи',
+	'translationnotifications-cmethod-email' => 'Электронная почта',
+	'translationnotifications-cmethod-talkpage' => 'Страница обсуждения',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Страница обсуждения в другом вики-проекте',
+	'translationnotifications-cmethod-feed' => 'Лента (feed)',
+	'translationnotifications-frequency' => 'Периодичность связи',
+	'translationnotifications-freq-always' => 'Как только появляется что-то новое для перевода',
+	'translationnotifications-freq-week' => 'Не чаще одного раза в неделю',
+	'translationnotifications-freq-month' => 'Не чаще одного раза в месяц',
+	'translationnotifications-freq-weekly' => 'Еженедельный дайджест',
+	'translationnotifications-freq-monthly' => 'Ежемесячный дайджест',
+	'translationnotifications-submit' => 'Подписаться',
+	'notifytranslators' => 'Уведомить переводчиков',
+	'translationnotifications-submit-ok' => 'Уведомления были добавлены в очередь и отправляются в фоновом режиме.',
+	'translationnotifications-send-notification-button' => 'Отправить переводчикам уведомление',
+	'translationnotifications-deadline-label' => 'Крайний срок, указываемый в этом уведомлении:',
+	'translationnotifications-languages-to-notify-label' => 'К каким языкам относится уведомление:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Коды языков, разделяемые запятой; оставьте поле пустым, если уведомление касается всех языков.',
+	'translationnotifications-priority' => 'Приоритет:',
+	'translationnotifications-priority-high' => 'высокий',
+	'translationnotifications-priority-medium' => 'средний',
+	'translationnotifications-priority-low' => 'низкий',
+	'translationnotifications-priority-unset' => '(не задан)',
+	'translationnotifications-translatablepage-title' => 'Имя переводимой страницы:',
+	'translationnotifications-error-no-translatable-pages' => 'В этом вики-проекте нет доступных для перевода страниц.',
+	'translationnotifications-email-subject' => 'Переведите, пожалуйста, страницу $1',
+	'translationnotifications-email-body' => 'Привет, $1,
+
+Вы получили это письмо, так как зарегистрировались на {{SITENAME}} в качестве переводчика на $2 язык.
+
+Вот новая страница, требующая перевода:  $3.
+Пожалуйста переведите её, нажав на следующую ссылку:
+$4
+
+$5
+$6
+
+$7
+
+Спасибо!
+Сотрудники {{SITENAME}}',
+	'translationnotifications-talkpage-body' => 'Привет, $2,
+
+Вы получили это письмо, так как зарегистрировались на {{SITENAME}} в качестве переводчика на $3 язык.
+[[$4]] — новая страница, доступная для перевода. Пожалуйста, [$5 переведите её].
+
+$6
+$7
+
+$8
+
+Спасибо!
+
+Сотрудники {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => 'Дайджест запросов на перевод от {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Привет, $1,
+
+Вы получили это письмо, так как зарегистрировались на {{SITENAME}} в качестве переводчика на $2 язык.
+
+Имеется {{PLURAL:$3|1 страница, доступная|$3 страницы, доступные|$3 страниц, доступных}} для перевода. Подробности — ниже.
+
+$4
+
+Изменить свои настройки уведомлений о запросах на перевод можно на странице $5 
+
+Спасибо!
+Сотрудники {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => '$1 участник $2 пометил страницу «$3» доступную для перевода. Вы можете перевести её, перейдя по ссылке $4',
+	'translationnotifications-edit-summary' => 'Уведомление о переводе',
+	'translationnotifications-email-priority' => 'Приоритет этой страницы — $1.',
+	'translationnotifications-email-deadline' => 'Крайний срок для перевода этой страницы — $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|отправил|отправила}} уведомление о переводе страницы $3; языки: $4; крайний срок: $5; приоритет: $6; послано {{PLURAL:$7|одному адресату|$7 адресатам|$7 адресатам}}, неудачно для {{PLURAL:$8|одного адресата|$8 адресатов}}, пропущено для {{PLURAL:$9|одного адресата|$9 адресатов}}',
+	'log-name-notifytranslators' => 'Уведомления о переводе',
+	'log-description-notifytranslators' => 'Журнал отправленных переводчикам уведомлений, касающихся переводимых страниц',
+	'translationnotifications-sent-title' => 'Уведомление о переводе отправлено',
+	'translationnotifications-sent-body' => 'Отправка уведомления о переводе выполнена',
+	'translationnotifications-log-alllanguages' => 'все языки',
+	'translationnotifications-nodeadline' => 'нет',
 );
 
 /** Slovak (Slovenčina)
