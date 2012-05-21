@@ -45,7 +45,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		}
 
 		$context = $this->getContext();
-		$htmlForm = new HtmlForm( $this->getFormFields(), $context, 'translationnotifications' );
+		$htmlForm = new HtmlForm( $htmlFormDataModel, $context, 'translationnotifications' );
 		$htmlForm->setId( 'notifytranslators-form' );
 		$htmlForm->setSubmitText( $context->msg( 'translationnotifications-send-notification-button' )->text() );
 		$htmlForm->setSubmitID( 'translationnotifications-send-notification-button' );
