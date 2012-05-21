@@ -514,6 +514,7 @@ $messages['es'] = array(
 	'translationnotifications-username' => 'Nombre de usuario:',
 	'translationnotifications-emailstatus' => 'Estado de correo electrónico:',
 	'translationnotifications-email-confirmed' => 'Su dirección de correo electrónico está confirmada',
+	'translationnotifications-email-disablemail' => 'Tu dirección de correo electrónico se ha confirmado, pero en [[Special:Preferences|tus preferencias]] solicitaste no recibir correo electrónico.',
 	'translationnotifications-email-unconfirmed' => 'No se ha confirmado su dirección de correo electrónico. $1',
 	'translationnotifications-email-notset' => 'No ha proporcionado una dirección de correo electrónico. Puede hacerlo en sus [[Special:Preferences|preferencias]].',
 	'translationnotifications-languages' => 'Idiomas',
