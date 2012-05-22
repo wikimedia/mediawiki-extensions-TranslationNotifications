@@ -74,14 +74,18 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 		// Translatable pages dropdown
 		$translatablePages = MessageGroups::getGroupsByType( 'WikiPageMessageGroup' );
-		if ( !count( $translatablePages ) ) {
-			return 'translationnotifications-error-no-translatable-pages';
-		}
 
 		$translatablePagesOptions = array();
 		foreach ( $translatablePages as $page ) {
+			if ( MessageGroups::getPriority( $page ) === 'discouraged' ) {
+				continue;
+			}
 			$title = $page->getTitle();
 			$translatablePagesOptions[$title->getPrefixedText()] = $title->getArticleID();
+		}
+
+		if ( !count( $translatablePagesOptions ) ) {
+			return 'translationnotifications-error-no-translatable-pages';
 		}
 
 		$formFields = array();
