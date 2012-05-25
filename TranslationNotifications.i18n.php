@@ -1093,15 +1093,16 @@ Le equipa de {{SITENAME}}',
  * @author Ximo17
  */
 $messages['it'] = array(
-	'translatorsignup' => 'Iscrizione Traduttore',
+	'translatorsignup' => 'Iscrizione traduttore',
 	'translatorsignup-summary' => 'Utilizza questa pagina per indicare in quali lingue puoi tradurre, e come preferisci essere contrattato per le richieste di traduzione.',
 	'translationnotifications-desc' => 'Permette ai traduttori di ricevere le notifiche sulle traduzioni',
 	'translationnotifications-info' => "Informazioni sull'utente",
-	'translationnotifications-username' => 'Username:',
-	'translationnotifications-emailstatus' => 'e-mail:',
+	'translationnotifications-username' => 'Nome utente:',
+	'translationnotifications-emailstatus' => 'Stato email:',
 	'translationnotifications-email-confirmed' => 'Il tuo indirizzo di posta elettronica è stato confermato.',
+	'translationnotifications-email-disablemail' => 'Il tuo indirizzo di posta elettronica è stato confermato, ma nelle [[Special:Preferences|tue preferenze]] hai chiesto di non ricevere email.',
 	'translationnotifications-email-unconfirmed' => 'Il tuo indirizzo di posta elettronica non è stato confermato. $1',
-	'translationnotifications-email-notset' => 'Non hai fornito un indirizzo di posta elettronica. Puoi impostarlo su [[Special:Preferences|preferenze]].',
+	'translationnotifications-email-notset' => 'Non hai fornito un indirizzo di posta elettronica. Puoi impostarlo nelle [[Special:Preferences|tue preferenze]].',
 	'translationnotifications-languages' => 'Lingue',
 	'translationnotifications-lang' => 'Lingua #$1',
 	'translationnotifications-nolang' => 'Scegli una lingua',
@@ -1112,15 +1113,16 @@ $messages['it'] = array(
 	'translationnotifications-cmethod-feed' => 'Feed',
 	'translationnotifications-frequency' => 'Frequenza di contatto',
 	'translationnotifications-freq-always' => "Quando c'è qualcosa di nuovo da tradurre",
-	'translationnotifications-freq-week' => 'Più di una volta a settimana',
-	'translationnotifications-freq-month' => 'Più di una volta al mese',
-	'translationnotifications-freq-weekly' => 'Selezione settimanale',
-	'translationnotifications-freq-monthly' => 'Selezione mensile',
+	'translationnotifications-freq-week' => 'Al massimo una volta a settimana',
+	'translationnotifications-freq-month' => 'Al massimo una volta al mese',
+	'translationnotifications-freq-weekly' => 'Riepilogo settimanale',
+	'translationnotifications-freq-monthly' => 'Riepilogo mensile',
 	'translationnotifications-submit' => 'Iscriviti',
 	'notifytranslators' => 'Informa i traduttori',
 	'translationnotifications-submit-ok' => 'Le notifiche sono state aggiunte a una coda e vengono consegnate da un processo in background.',
 	'translationnotifications-send-notification-button' => 'Invia una notifica ai traduttori',
 	'translationnotifications-deadline-label' => 'Termine da indicare in questa notifica:',
+	'translationnotifications-languages-to-notify-label' => 'Quali lingue notificare:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Codici di lingua separati da virgole; lasciare vuoto per notificare in tutte le lingue.',
 	'translationnotifications-priority' => 'Priorità:',
 	'translationnotifications-priority-high' => 'alta',
@@ -1129,7 +1131,7 @@ $messages['it'] = array(
 	'translationnotifications-priority-unset' => 'non impostata',
 	'translationnotifications-translatablepage-title' => 'Nome della pagina traducibile:',
 	'translationnotifications-error-no-translatable-pages' => 'Non ci sono pagine traducibili in questo wiki.',
-	'translationnotifications-email-subject' => 'Si prega di tradurre la pagina$1',
+	'translationnotifications-email-subject' => 'Si prega di tradurre la pagina $1',
 	'translationnotifications-email-body' => "Ciao $1,
 
 Ricevi questa email perché ti sei registrato come traduttore di $2 su {{SITENAME}}.
@@ -1158,21 +1160,21 @@ $8
 Grazie!
 Lo staff di {{SITENAME}}',
 	'translationnotifications-digestemail-subject' => 'Email selezionate per le richieste di traduzione da parte del sito {{SITENAME}}',
-	'translationnotifications-digestemail-body' => 'Ciao $1,
+	'translationnotifications-digestemail-body' => "Ciao $1,
 
-Ricevi questa email perché ti sei registrato come traduttore di $2 su {{SITENAME}}.
+Ricevi questa email perché ti sei registrato come traduttore $2 su {{SITENAME}}.
 
-Ci {{PLURAL:$3|è 1 pagina|sono $3 pagine}} disponibile per la traduzione. I dettagli sono riportati di seguito.
+{{PLURAL:$3|C'è 1 pagina disponibile|Ci sono $3 pagine disponibili}} per la traduzione. I dettagli sono riportati di seguito.
 
 $4
 
-Per modificare le preferenze riguardo le notificche per le richieste di traduzione, si prega di visitare il sito $5
+Per modificare le preferenze riguardo le notifiche per le richieste di traduzione, si prega di visitare $5
 
 Grazie!
-Lo staff di {{SITENAME}}',
+Lo staff di {{SITENAME}}",
 	'translationnotifications-digestemail-notification-line' => 'Il $1, $2 ha segnalato la pagina "$3" affinché venga tradotta. Puoi tradurla su $4',
 	'translationnotifications-edit-summary' => 'Notifica di traduzione',
-	'translationnotifications-email-priority' => 'La priorità di questa pagina è  $1 .',
+	'translationnotifications-email-priority' => 'La priorità di questa pagina è $1.',
 	'translationnotifications-email-deadline' => 'Il termine ultimo per la traduzione di questa pagina è $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha inviato}} una notifica sulla traduzione della pagina $3; lingue: $4; termine: $5; priorità: $6; inviata a {{PLURAL:$7|un destinatario|$7 destinatari}}, non inviata a {{PLURAL:$8|un destinatario|$8 destinatari}}, omessa a {{PLURAL:$9|un destinatario|$9 destinatari}}',
 	'log-name-notifytranslators' => 'Notifiche di traduzione',
