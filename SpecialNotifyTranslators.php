@@ -163,12 +163,29 @@ class SpecialNotifyTranslators extends SpecialPage {
 			"up_property $propertyLikePattern",
 		);
 
-		// An empty string will be sent for all languages and the appropriate message
-		// will be shown in the log.
+		$translatablePage = TranslatablePage::newFromTitle( $this->translatablePageTitle );
+		$pageSourceLangCode = $translatablePage->getMessageGroup()->getSourceLanguage();
+
+		// The default is not to specify any languages and to send
+		// the notification to speakers of all the languages except
+		// the source language. When no languages are specified,
+		// an empty string will be sent here and an appropriate
+		// message will be shown in the log.
 		$languagesForLog = '';
 		if ( count( $languagesToNotify ) ) {
-			$translatorsConds['up_value'] = $languagesToNotify;
-			$languagesForLog = $wgLang->commaList( $languagesToNotify );
+			// Filter out the source language
+			$translatorsConds['up_value'] = array();
+
+			foreach ( $languagesToNotify as $langCode ) {
+				if ( $langCode !== $pageSourceLangCode ) {
+					$translatorsConds['up_value'][] = $langCode;
+				}
+			}
+
+			$languagesForLog = $wgLang->commaList( $translatorsConds['up_value'] );
+		} else {
+			// All languages except the source language
+			$translatorsConds[] = "up_value <> '$pageSourceLangCode'";
 		}
 
 		$translators = $dbr->select(
