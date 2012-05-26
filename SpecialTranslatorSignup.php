@@ -173,9 +173,18 @@ JAVASCRIPT
 			return array();
 		}
 
+		$matrix = new SiteMatrix();
 		$wikis = array();
-		$stuff = $globalUser->queryAttached();
-		foreach ( $stuff as $dbname => $value ) {
+		foreach ( $globalUser->queryAttached() as $dbname => $value ) {
+			// Skip inactive and special wikis
+			list( $site, $lang ) = $wgConf->siteFromDB( $wgDBname );
+			if ( $matrix->isClosed( $lang, $site )
+			  || $matrix->isPrivate( $lang, $site )
+			  || $matrix->isFishbowl( $lang, $site ) )
+			{
+				continue;
+			}
+
 			$wikis[WikiMap::getWikiName( $dbname )] = $dbname;
 		}
 
