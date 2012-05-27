@@ -604,6 +604,7 @@ El equipo de {{SITENAME}}',
 );
 
 /** French (Français)
+ * @author DavidL
  * @author Gomoko
  * @author Wyz
  */
@@ -615,6 +616,7 @@ $messages['fr'] = array(
 	'translationnotifications-username' => "Nom de l'utilisateur:",
 	'translationnotifications-emailstatus' => 'État du courriel:',
 	'translationnotifications-email-confirmed' => 'Votre adresse de courriel est confirmée',
+	'translationnotifications-email-disablemail' => "Votre adresse de courriel est confirmée, mais dans [[Special:Preferences|vos préférences]] vous avez demandé à ne plus recevoir d'e-mail.",
 	'translationnotifications-email-unconfirmed' => "Votre adresse de courriel n'est pas confirmée. $1",
 	'translationnotifications-email-notset' => "Vous n'avez pas fourni d'adresse de courriel. Vous pouvez le faire dans vos [[Special:Preferences|préférences]].",
 	'translationnotifications-languages' => 'Langues',
@@ -809,6 +811,7 @@ $messages['he'] = array(
 	'translationnotifications-username' => 'שם משתמש:',
 	'translationnotifications-emailstatus' => 'מצב דוא"ל:',
 	'translationnotifications-email-confirmed' => 'הדוא"ל שלך מאומת',
+	'translationnotifications-email-disablemail' => 'כתובת הדואר האלקטרוני שלך מאושרת, אבל ב[[Special:Preferences|העדפות שלך]] ביקשת לא לקבל דואר אלקטרוני.',
 	'translationnotifications-email-unconfirmed' => 'הדוא"ל שלך אינו מאומת. $1',
 	'translationnotifications-email-notset' => 'לא נתת כתובת דוא"ל. אפשר לעשות את זה ב[[Special:Preferences|העדפות]] שלך.',
 	'translationnotifications-languages' => 'שפות',
