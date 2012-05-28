@@ -321,11 +321,12 @@ $6
 $7
 
 Vielen Dank,
-die Mitarbeiter von {{SITENAME}}',
+die Übersetzungsadministratoren von {{SITENAME}}',
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 du erhältst diese E-Mail, da du dich als Übersetzer(in) für $3 auf {{SITENAME}} registriert hast.
-Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. [$5 Übersetze sie bitte].
+Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. Übersetze sie bitte hier:
+$5
 
 $6
 $7
@@ -333,7 +334,8 @@ $7
 $8
 
 Vielen Dank,
-die Mitarbeiter von {{SITENAME}}',
+die Übersetzungsadministratoren von {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'übersetzen in $1',
 	'translationnotifications-digestemail-subject' => 'E-Mail-Übersicht zu Übersetzungsanforderungen von {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hallo $1,
 
@@ -863,7 +865,7 @@ $7
 	'translationnotifications-talkpage-body' => 'שלום $2,
 
 קיבלת את ההודעה הזאת מכיוון שנרשמת בתור מתרגם ל{{GRAMMAR:תחילית|$3}} באתר {{SITENAME}}.
-דף חדש בשם [[$4]] זמין לתרגום. אנו מבקשים ממך לתרגם אותו כאן:
+דף חדש בשם [[$4]] זמין לתרגום. אנו מבקשים ממך לתרגם אותו בקישור הבא:
 $5
 
 $6
@@ -873,7 +875,7 @@ $8
 
 תודה!
 
-סגל {{SITENAME}}',
+מנהלי תרגום באתר {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'תרגום ל{{GRAMMAR:תחילית|$1}}',
 	'translationnotifications-digestemail-subject' => 'מכתב עם סיכום בקשות תרגום מאתר {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "שלום $1,
