@@ -387,11 +387,12 @@ $6
 $7
 
 Vielen Dank,
-die Mitarbeiter von {{SITENAME}}',
+die Übersetzungsadministratoren von {{SITENAME}}',
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $3 auf {{SITENAME}} registriert haben.
-Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. [$5 Übersetzen Sie sie bitte].
+Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. Übersetzen Sie sie bitte hier:
+$5
 
 $6
 $7
@@ -399,7 +400,7 @@ $7
 $8
 
 Vielen Dank,
-die Mitarbeiter von {{SITENAME}}',
+die Übersetzungsadministratoren von {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hallo $1,
 
 Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $2 auf {{SITENAME}} registriert haben.
@@ -474,8 +475,7 @@ Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
-Nowa strona, [[$4]], steji za přełožowanje k dispoziciji. Prošu [$5 přełož ju].
-
+Nowa strona, [[$4]], steji za přełožowanje k dispoziciji. Prošu přełož ju:
 $5
 
 $6
@@ -554,12 +554,12 @@ $messages['es'] = array(
 	'translationnotifications-translatablepage-title' => 'Nombre de la página traducible:',
 	'translationnotifications-error-no-translatable-pages' => 'No hay páginas traducibles en este wiki.',
 	'translationnotifications-email-subject' => 'Por favor traduzca la página $1',
-	'translationnotifications-email-body' => 'Hola  $1 ,
+	'translationnotifications-email-body' => 'Hola $1 ,
 
-Está recibiendo este mensaje porque se inscribió como traductor al idioma  $2  de {{SITENAME}}.
+Estás recibiendo este mensaje de correo electrónico porque te inscribiste como traductor al idioma $2 de {{SITENAME}}.
 
-Hay una nueva página para traducir:  $3.
-Por favor tradúzcala haciendo clic en el vínculo siguiente:
+Hay una nueva página para traducir: $3.
+Por favor tradúcela haciendo clic en el enlace siguiente:
 $4
 
 $5
@@ -567,12 +567,13 @@ $6
 
 $7
 ¡Gracias!
-El equipo de {{SITENAME}}',
+Los administradores de traducción de {{SITENAME}}',
 	'translationnotifications-talkpage-body' => 'Hola $2,
 
-Usted está recibiendo esta notificación porque se inscribió como traductor  de {{SITENAME}} en $3.
+Estás recibiendo esta notificación porque te inscribiste como traductor  de {{SITENAME}} en $3.
 
-Una nueva página, [[$4]] está disponible para su traducción. Por favor  [$5 tradúzcala].
+Una nueva página, [[$4]] está disponible para su traducción. Por favor  tradúcela aquí:
+$5
 
 $6
 $7
@@ -581,7 +582,7 @@ $8
 
 ¡Gracias!
 
-El equipo de {{SITENAME}}',
+Los administradores de traducción de {{SITENAME}}',
 	'translationnotifications-digestemail-subject' => 'Correo electrónico de resumen para solicitudes de traducción de {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hola  $1,
 
@@ -611,6 +612,7 @@ El equipo de {{SITENAME}}',
 /** French (Français)
  * @author DavidL
  * @author Gomoko
+ * @author Tititou36
  * @author Wyz
  */
 $messages['fr'] = array(
@@ -653,9 +655,9 @@ $messages['fr'] = array(
 	'translationnotifications-translatablepage-title' => 'Nom de la page à traduire:',
 	'translationnotifications-error-no-translatable-pages' => "Il n'y a aucune page à traduire dans ce wiki.",
 	'translationnotifications-email-subject' => 'Veuillez traduire la page $1',
-	'translationnotifications-email-body' => "Bonjour, $1
+	'translationnotifications-email-body' => 'Bonjour $1,
 
-Vous avez reçu ce courriel parce que vous vous êtes inscrit comme traducteur de $2 sur {{SITENAME}}.
+Vous recevez ce courriel parce que vous vous êtes inscrit comme traducteur de $2 sur {{SITENAME}}.
 
 Il y a une nouvelle page à traduire ici: $3.
 Veuillez la traduire en cliquant sur le lien suivant:
@@ -667,20 +669,22 @@ $6
 $7
 
 Merci!
-L'équipe de {{SITENAME}}",
+Les administrateurs de traduction de {{SITENAME}}',
 	'translationnotifications-talkpage-body' => "Bonjour $2,
 
 Vous recevez cette notification parce que vous êtes inscrit comme traducteur de $3 sur {{SITENAME}}.
-Une nouvelle page, [[$4]], est disponible pour la traduction. Veuillez [$5 la traduire].
+Une nouvelle page, [[$4]] est disponible pour la traduction. Veuillez la traduire :
+$5
 
 $6
 $7
 
 $8
 
-Merci!
+Merci !
 
 L'équipe de {{SITENAME}}",
+	'translationnotifications-notification-url-listitem' => 'traduire en $1',
 	'translationnotifications-digestemail-subject' => 'Courriel de synthèse pour les demandes de traduction de {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "Bonjour $1,
 
@@ -765,11 +769,12 @@ $6
 $7
 
 Grazas!
-O equipo de {{SITENAME}}',
+Os administradores das traducións de {{SITENAME}}',
 	'translationnotifications-talkpage-body' => 'Boas, $2:
 
 Recibiu esta notificación porque está inscrito como tradutor ao $3 en {{SITENAME}}.
-Hai unha nova páxina, "[[$4]]", dispoñible para a súa tradución. Por favor, [$5 tradúzaa].
+Hai unha nova páxina, "[[$4]]", dispoñible para a súa tradución. Por favor, tradúzaa aquí:
+$5
 
 $6
 $7
@@ -778,7 +783,8 @@ $8
 
 Grazas!
 
-O equipo de {{SITENAME}}',
+Os administradores das traducións de {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'traducir ao $1',
 	'translationnotifications-digestemail-subject' => 'Correo electrónico de resumo sobre as solicitudes de tradución de {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Boas, $1:
 
@@ -960,12 +966,11 @@ $6
 $7
 
 Wulki dźak!
-Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
+Přełožowanscy administratorojo {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
-Nowa strona, [[$4]], steji za přełožowanje k dispoziciji. Prošu [$5 přełož ju].
-
+Nowa strona, [[$4]], steji za přełožowanje k dispoziciji. Prošu přełož ju tu:
 $5
 
 $6
@@ -975,7 +980,8 @@ $8
 
 Wulki dźak!
 
-Team {{SITENAME}}',
+Přełožowascy administratorojo {{GRAMMAR:genitiw|{{SITENAME}}}}',
+	'translationnotifications-notification-url-listitem' => 'do $1 přełožić',
 	'translationnotifications-digestemail-subject' => 'E-mejlowy přehlad za požadane přełožki wot {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-digestemail-body' => 'Witaj $1,
 
@@ -1062,7 +1068,8 @@ Le personal de {{SITENAME}}',
 	'translationnotifications-talkpage-body' => 'Salute $2,
 
 Tu recipe iste notification perque tu te inscribeva como traductor de $3 in {{SITENAME}}.
-Un nove pagina, [[$4]] es disponibile pro traduction. Per favor [$5 traduce lo].
+Un nove pagina, [[$4]] es disponibile pro traduction. Per favor traduce lo:
+$5
 
 $6
 $7
@@ -1147,7 +1154,7 @@ $messages['it'] = array(
 Ricevi questa email perché ti sei registrato come traduttore di $2 su {{SITENAME}}.
 
 C'è una nuova pagina da tradurre: $3.
-Puoi tradurla cliccando sul seguente link:
+Visita questo collegamento per iniziare a tradurla:
 $4
 
 $5
@@ -1156,11 +1163,12 @@ $6
 $7
 
 Grazie!
-Lo staff di {{SITENAME}}",
+Gli amministratori delle traduzioni su {{SITENAME}}",
 	'translationnotifications-talkpage-body' => 'Ciao $2,
 
 Ricevi questa email perché ti sei registrato come traduttore $3 su {{SITENAME}}.
-La nuova pagina [[$4]] è disponibile per la traduzione. Puoi [$5 tradurla].
+La nuova pagina [[$4]] è disponibile per la traduzione. Visita questo collegamento per iniziare a tradurla:
+$5
 
 $6
 $7
@@ -1168,7 +1176,8 @@ $7
 $8
 
 Grazie!
-Lo staff di {{SITENAME}}',
+Gli amministratori delle traduzioni su {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'traduci in $1',
 	'translationnotifications-digestemail-subject' => 'Email selezionate per le richieste di traduzione da parte del sito {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "Ciao $1,
 
@@ -1334,11 +1343,12 @@ $6
 $7
 
 Ви благодариме!
-Персоналот на {{SITENAME}}',
+Преводните администратори на {{SITENAME}}',
 	'translationnotifications-talkpage-body' => 'Здраво $2,
 
 Го добивате ова известување бидејќи се пријавивте за преведувач на {{SITENAME}} на $3.
-Новата страница [[$4]] чека на преведување. Ве молиме [$5 преведете ја].
+Новата страница [[$4]] чека на преведување. Ве молиме, преведете ја тука:
+$5
 
 $6
 $7
@@ -1347,7 +1357,8 @@ $8
 
 Ви благодариме!
 
-Персоналот на {{SITENAME}}',
+Преводните администратори на {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'преведи на $1',
 	'translationnotifications-digestemail-subject' => 'Преглед на барања за превод од {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Здраво $1,
 
@@ -1372,6 +1383,20 @@ $4
 	'translationnotifications-sent-body' => 'Известувањето за преведување е испратено.',
 	'translationnotifications-log-alllanguages' => 'сите јазици',
 	'translationnotifications-nodeadline' => 'без рок',
+);
+
+/** Malayalam (മലയാളം)
+ * @author Praveenp
+ * @author Santhosh.thottingal
+ */
+$messages['ml'] = array(
+	'translatorsignup' => 'പരിഭാഷകർക്ക് പേരുചേർക്കാം',
+	'translationnotifications-username' => 'ഉപയോക്തൃനാമം:',
+	'translationnotifications-languages' => 'ഭാഷകൾ',
+	'translationnotifications-lang' => 'ഭാഷ #$1',
+	'translationnotifications-cmethod-email' => 'ഇമെയിൽ',
+	'translationnotifications-cmethod-talkpage' => 'സം‌വാദം താൾ',
+	'logentry-translationnotifications-sent' => ' $1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; sent to {{PLURAL:$7|one recipient|$7 recipients}}, failed for {{PLURAL:$8|one recipient|$8 recipients}}, skipped for {{PLURAL:$9|one recipient|$9 recipients}}',
 );
 
 /** Malay (Bahasa Melayu)
@@ -1435,7 +1460,8 @@ Kakitangan {{SITENAME}}',
 	'translationnotifications-talkpage-body' => 'Ke hadapan $2,
 
 Anda sedang menerima pemberitahuan ini kerana anda mendaftar diri sebagai penterjemah kepada $3 di {{SITENAME}}.
-Satu laman baru, [[$4]] sedia untuk diterjemahkan. Sila [$5 terjemahkannya].
+Satu laman baru, [[$4]] sedia untuk diterjemahkan. Sila terjemahkannya:
+$5
 
 $6
 $7
@@ -1530,11 +1556,12 @@ $6
 $7
 
 Bedankt!
-{{SITENAME}}-beheerders',
+Vertalingenbeheerders van {{SITENAME}}',
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 U ontvangt deze melding omdat u zich heeft opgegeven als vertaler voor het $3 op {{SITENAME}}.
-De pagina [[$4]] is beschikbaar voor vertaling. [$5 Vertaal deze alstublieft].
+De pagina [[$4]] is beschikbaar voor vertaling. Vertaal deze alstublieft hier:
+$5
 
 $6
 $7
@@ -1543,7 +1570,8 @@ $8
 
 Bedankt!
 
-{{SITENAME}}-beheerders',
+Vertalingenbeheerders van {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'vertalen in het $1',
 	'translationnotifications-digestemail-subject' => 'E-mail met samenvatting voor vertaalverzoeken van {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "Hallo $1,
 
@@ -1631,7 +1659,8 @@ die Midawaida vun {{SITENAME}}',
 	'translationnotifications-talkpage-body' => 'Hey $2,
 
 du grigschd die E-Mail wail disch als Iwasedza fa $3 uff {{SITENAME}} oigdraache hoschd.
-Ä naiji Said [[$4]] fas Iwasedze do. Bidde [$5 iwasedze].
+Ä naiji Said [[$4]] isch fas Iwasedze do. Bidde iwasedze:
+$5
 
 $6
 $7
@@ -1640,6 +1669,7 @@ $8
 
 Dongschä,
 die Midawaida vun {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'iwasedze uff $1',
 	'translationnotifications-digestemail-subject' => 'Lischd vun E-Mail fa Uffdräch fas Iwasedze vun {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "Hey $1,
 
@@ -1788,7 +1818,8 @@ $7
 	'translationnotifications-talkpage-body' => 'Привет, $2,
 
 Вы получили это письмо, так как зарегистрировались на {{SITENAME}} в качестве переводчика на $3 язык.
-[[$4]] — новая страница, доступная для перевода. Пожалуйста, [$5 переведите её].
+[[$4]] — новая страница, доступная для перевода. Пожалуйста, переведите её:
+$5
 
 $6
 $7
