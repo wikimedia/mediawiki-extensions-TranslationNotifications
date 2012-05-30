@@ -471,11 +471,11 @@ $6
 $7
 
 Wjeliki źěk!
-Team {{GRAMMAR:genitiw|{{SITENAME}}}}',
+Pśełožowańske administratory {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
-Nowa strona, [[$4]], steji za přełožowanje k dispoziciji. Prošu přełož ju:
+Nowa strona, [[$4]], steji za přełožowanje k dispoziciji. Prošu přełož ju how:
 $5
 
 $6
@@ -485,7 +485,8 @@ $8
 
 Wulki źěk!
 
-Team {{SITENAME}}',
+Pśełožowańske administratory {{GRAMMAR:genitiw|{{SITENAME}}}}',
+	'translationnotifications-notification-url-listitem' => 'do $1 pśełožiś',
 	'translationnotifications-digestemail-subject' => 'E-mailowy pśeglěd za póžedane pśełožki wót {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-digestemail-body' => 'Witaj $1,
 
@@ -1769,6 +1770,7 @@ $messages['ru'] = array(
 	'translationnotifications-username' => 'Имя учётной записи :',
 	'translationnotifications-emailstatus' => 'Статус адреса эл. почты:',
 	'translationnotifications-email-confirmed' => 'Ваш адрес электронной почты подтверждён',
+	'translationnotifications-email-disablemail' => 'Ваш адрес электронной почты подтверждён, но в ваших [[Special:Preferences|персональных настройках]] не включёна опция, разрешающая другим присылать вам сообщения на этот адрес.',
 	'translationnotifications-email-unconfirmed' => 'Ваш адрес электронной почты не подтверждён. $1',
 	'translationnotifications-email-notset' => 'Вы не указали адрес электронной почты. Вы можете сделать это в своих [[Special:Preferences|персональных настройках]].',
 	'translationnotifications-languages' => 'Языки',
@@ -1802,7 +1804,7 @@ $messages['ru'] = array(
 	'translationnotifications-email-subject' => 'Переведите, пожалуйста, страницу $1',
 	'translationnotifications-email-body' => 'Привет, $1,
 
-Вы получили это письмо, так как зарегистрировались на {{SITENAME}} в качестве переводчика на $2 язык.
+Вы получили это письмо, так как зарегистрировались на сайте {{SITENAME}} в качестве переводчика на следующий язык: $2.
 
 Вот новая страница, требующая перевода:  $3.
 Пожалуйста переведите её, нажав на следующую ссылку:
@@ -1814,11 +1816,11 @@ $6
 $7
 
 Спасибо!
-Сотрудники {{SITENAME}}',
+Администраторы переводов {{SITENAME}}',
 	'translationnotifications-talkpage-body' => 'Привет, $2,
 
-Вы получили это письмо, так как зарегистрировались на {{SITENAME}} в качестве переводчика на $3 язык.
-[[$4]] — новая страница, доступная для перевода. Пожалуйста, переведите её:
+Вы получили это письмо, так как зарегистрировались на сайте {{SITENAME}} в качестве переводчика на следующий язык: $3.
+Новая доступная для перевода страница — [[$4]]. Пожалуйста, переведите её:
 $5
 
 $6
@@ -1828,17 +1830,18 @@ $8
 
 Спасибо!
 
-Сотрудники {{SITENAME}}',
+Администраторы переводов {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'перевести на $1',
 	'translationnotifications-digestemail-subject' => 'Дайджест запросов на перевод от {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Привет, $1,
 
-Вы получили это письмо, так как зарегистрировались на {{SITENAME}} в качестве переводчика на $2 язык.
+Вы получили это письмо, так как зарегистрировались на сайте {{SITENAME}} в качестве переводчика на следующий язык: $2.
 
 Имеется {{PLURAL:$3|1 страница, доступная|$3 страницы, доступные|$3 страниц, доступных}} для перевода. Подробности — ниже.
 
 $4
 
-Изменить свои настройки уведомлений о запросах на перевод можно на странице $5 
+Изменить свои настройки уведомлений о запросах на перевод можно на странице $5. 
 
 Спасибо!
 Сотрудники {{SITENAME}}',
