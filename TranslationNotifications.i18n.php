@@ -1124,10 +1124,10 @@ $messages['it'] = array(
 	'translationnotifications-languages' => 'Lingue',
 	'translationnotifications-lang' => 'Lingua #$1',
 	'translationnotifications-nolang' => 'Scegli una lingua',
-	'translationnotifications-contact' => 'Modalità di contatto preferita',
+	'translationnotifications-contact' => 'Modalità di contatto preferite',
 	'translationnotifications-cmethod-email' => 'Email',
 	'translationnotifications-cmethod-talkpage' => 'Pagina di discussione',
-	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pagina di discussione su altre wiki',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pagina di discussione su altra wiki',
 	'translationnotifications-cmethod-feed' => 'Feed',
 	'translationnotifications-frequency' => 'Frequenza di contatto',
 	'translationnotifications-freq-always' => "Quando c'è qualcosa di nuovo da tradurre",
@@ -1155,7 +1155,7 @@ $messages['it'] = array(
 Ricevi questa email perché ti sei registrato come traduttore di $2 su {{SITENAME}}.
 
 C'è una nuova pagina da tradurre: $3.
-Visita questo collegamento per iniziare a tradurla:
+Clicca su questo collegamento per iniziare a tradurla:
 $4
 
 $5
@@ -1164,7 +1164,7 @@ $6
 $7
 
 Grazie!
-Gli amministratori delle traduzioni su {{SITENAME}}",
+Gli amministratori delle traduzioni di {{SITENAME}}",
 	'translationnotifications-talkpage-body' => 'Ciao $2,
 
 Ricevi questa email perché ti sei registrato come traduttore $3 su {{SITENAME}}.
