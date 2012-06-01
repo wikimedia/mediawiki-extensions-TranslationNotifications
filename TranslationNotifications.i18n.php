@@ -259,6 +259,14 @@ $messages['br'] = array(
 	'translationnotifications-cmethod-talkpage' => 'Pajenn gaozeal',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pajenn gaozeal war wikioù all',
 	'translationnotifications-submit' => 'En em enskrivañ',
+	'translationnotifications-priority' => 'Priorelezh :',
+	'translationnotifications-priority-high' => 'uhel',
+	'translationnotifications-priority-medium' => 'etre',
+	'translationnotifications-priority-low' => 'izel',
+	'translationnotifications-priority-unset' => "(n'eo ket resisaet)",
+	'translationnotifications-translatablepage-title' => 'Anv ar bajenn da vezañ troet :',
+	'translationnotifications-log-alllanguages' => 'an holl yezhoù',
+	'translationnotifications-nodeadline' => 'hini ebet',
 );
 
 /** German (Deutsch)
