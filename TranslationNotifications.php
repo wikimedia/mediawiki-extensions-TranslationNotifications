@@ -66,3 +66,9 @@ $wgNotificationUserPassword = false;
 
 // Message key of the legal text for Special:TranslatorSignup page.
 $wgTranslationNotificationsSignupLegalMessage = 'translationnotifications-signup-legal';
+
+// Give the language options default empty values, so that they
+// won't be saved as empty strings. (Bug 37165)
+foreach ( range( 1, 3 ) as $langNum ) {
+	$wgDefaultUserOptions["translationnotifications-lang-$langNum"] = '';
+}

@@ -202,9 +202,6 @@ class SpecialNotifyTranslators extends SpecialPage {
 			// All languages except the source language
 			$translatorsConds[] = "up_value <> '$pageSourceLangCode'";
 		}
-		// TODO Sometimes the languages are saved as empty strings.
-		// It's better to have the property deleted.
-		$translatorsConds[] = "up_value <> ''";
 
 		$translators = $dbr->select(
 			'user_properties',
