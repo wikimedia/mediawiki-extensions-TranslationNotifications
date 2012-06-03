@@ -244,7 +244,7 @@ $messages['be-tarask'] = array(
 	'translationnotifications-submit' => 'Падпісацца',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -258,6 +258,8 @@ $messages['br'] = array(
 	'translationnotifications-cmethod-email' => 'Postel',
 	'translationnotifications-cmethod-talkpage' => 'Pajenn gaozeal',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pajenn gaozeal war wikioù all',
+	'translationnotifications-freq-week' => "Ur wezh ar sizhun d'ar muiañ",
+	'translationnotifications-freq-month' => "Ur wezh ar miz d'ar muiañ",
 	'translationnotifications-submit' => 'En em enskrivañ',
 	'translationnotifications-priority' => 'Priorelezh :',
 	'translationnotifications-priority-high' => 'uhel',
@@ -520,7 +522,7 @@ Team {{SITENAME}}',
 	'translationnotifications-nodeadline' => 'žeden',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  */
 $messages['es'] = array(
@@ -618,7 +620,7 @@ El equipo de {{SITENAME}}',
 	'translationnotifications-nodeadline' => 'ninguno',
 );
 
-/** French (Français)
+/** French (français)
  * @author DavidL
  * @author Gomoko
  * @author Tititou36
@@ -1016,7 +1018,7 @@ Team {{SITENAME}}',
 	'translationnotifications-nodeadline' => 'žadyn',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -1114,7 +1116,7 @@ Le equipa de {{SITENAME}}',
 	'translationnotifications-nodeadline' => 'nulle',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author Ximo17
  */
@@ -1295,7 +1297,7 @@ $messages['lb'] = array(
 	'log-name-notifytranslators' => 'Iwwersetzungs-Matdeelungen',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -1705,7 +1707,7 @@ die Midawaida vun {{SITENAME}}",
 	'translationnotifications-nodeadline' => 'nix',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  */
 $messages['pl'] = array(
@@ -1767,7 +1769,7 @@ Zespół {{SITENAME}}',
 	'translationnotifications-sent-body' => 'Powiadomienie o tłumaczeniu zostało wysłane.',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Kaganer
  */
 $messages['ru'] = array(
