@@ -34,6 +34,7 @@ $wgAutoloadClasses['SpecialTranslatorSignup'] = "$dir/SpecialTranslatorSignup.ph
 $wgAutoloadClasses['SpecialNotifyTranslators'] = "$dir/SpecialNotifyTranslators.php";
 $wgAutoloadClasses['TranslationNotificationsHooks'] = "$dir/TranslationNotificationsHooks.php";
 $wgAutoloadClasses['TranslationNotificationJob'] = "$dir/TranslationNotificationJob.php";
+$wgAutoloadClasses['DigestEmailer'] = "$dir/scripts/DigestEmailer.php";
 
 $wgJobClasses['translationNotificationJob'] = 'TranslationNotificationJob';
 
