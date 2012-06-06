@@ -64,3 +64,5 @@ $wgLogActionsHandlers['notifytranslators/sent'] = 'TranslationNotificationsHooks
 $wgNotificationUsername = false;
 $wgNotificationUserPassword = false;
 
+// Message key of the legal text for Special:TranslatorSignup page.
+$wgTranslationNotificationsSignupLegalMessage = 'translationnotifications-signup-legal';
