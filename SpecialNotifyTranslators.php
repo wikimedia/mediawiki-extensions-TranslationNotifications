@@ -447,6 +447,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$userFirstLanguage = Language::factory( $this->getUserFirstLanguage( $user ) );
 
 		$emailSubject = self::getNotificationSubject( $userFirstLanguage );
+		$signupURL = SpecialPage::getTitleFor( 'TranslatorSignup' )->getCanonicalUrl();
 		$emailBody = wfMessage(
 			'translationnotifications-email-body',
 			$this->getUserName( $user ),
@@ -455,7 +456,8 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$this->getTranslationURLs( $relevantLanguages, 'email', $userFirstLanguage ),
 			$this->getPriorityClause(),
 			$this->getDeadlineClause(),
-			$this->notificationText
+			$this->notificationText,
+			$signupURL
 		)->inLanguage( $userFirstLanguage )->text();
 
 		global $wgUser, $wgNoReplyAddress;
