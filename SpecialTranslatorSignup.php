@@ -20,6 +20,7 @@ class SpecialTranslatorSignup extends SpecialPage {
 	}
 
 	public function execute( $parameters ) {
+		global $wgTranslationNotificationsSignupLegalMessage;
 		if ( !$this->getUser()->isLoggedIn() ) {
 			throw new PermissionsError( 'read' );
 		}
@@ -46,6 +47,11 @@ jQuery( function ( $ ) {
 } );
 JAVASCRIPT
 		);
+		// Show the legal text regarding the notifications.
+		if( $wgTranslationNotificationsSignupLegalMessage ) { // Do not show if value is empty or false.
+			$legalText = Html::RawElement( 'div', array( 'class' => 'mw-infobox' ), $this->msg( $wgTranslationNotificationsSignupLegalMessage )->parseAsBlock() );
+			$this->getOutput()->addHTML( $legalText );
+		}
 	}
 
 	public function getDataModel() {

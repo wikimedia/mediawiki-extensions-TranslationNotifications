@@ -108,6 +108,7 @@ Thank you!
 	'translationnotifications-sent-body' => 'Translation notification was sent.',
 	'translationnotifications-log-alllanguages' => 'all languages',
 	'translationnotifications-nodeadline' => 'none',
+	'translationnotifications-signup-legal' => 'You agree that by providing this information we may contact you regarding topics related to {{SITENAME}} we think may be of interest to you. You agree your data is subject to our  [[{{MediaWiki:Privacypage}}|privacy policy.]]'
 );
 
 /** Message documentation (Message documentation)
@@ -205,6 +206,7 @@ $messages['qqq'] = array(
 Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
 	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified.',
+	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.'
 );
 
 /** Ṫuroyo (Ṫuroyo)
@@ -603,7 +605,7 @@ Hay  {{PLURAL:$3|1 página|$3  páginas}} disponibles para su traducción. A con
 
 $4
 
-Para cambiar sus preferencias de notificación para las solicitudes de traducción, por favor visite $5 
+Para cambiar sus preferencias de notificación para las solicitudes de traducción, por favor visite $5
 
 ¡Gracias!
 El equipo de {{SITENAME}}',
@@ -701,11 +703,11 @@ L'équipe de {{SITENAME}}",
 
 Vous recevez ce courriel parce que vous inscrit comme traducteur de $2 sur {{SITENAME}}.
 
-Il y a {{PLURAL:$3|1 page disponible|$3 pages disponibles}} pour la traduction. Les détails sont donnés ci-dessous. 
+Il y a {{PLURAL:$3|1 page disponible|$3 pages disponibles}} pour la traduction. Les détails sont donnés ci-dessous.
 
 $4
 
-Pour modifier vos préférences de notification pour les demandes de traduction, veuillez visiter  $5 
+Pour modifier vos préférences de notification pour les demandes de traduction, veuillez visiter  $5
 
 Merci!
 
@@ -1408,6 +1410,7 @@ $messages['ml'] = array(
 	'translationnotifications-cmethod-email' => 'ഇമെയിൽ',
 	'translationnotifications-cmethod-talkpage' => 'സം‌വാദം താൾ',
 	'logentry-translationnotifications-sent' => ' $1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; sent to {{PLURAL:$7|one recipient|$7 recipients}}, failed for {{PLURAL:$8|one recipient|$8 recipients}}, skipped for {{PLURAL:$9|one recipient|$9 recipients}}',
+	'translationnotifications-signup-legal' => '{{SITENAME}} എന്ന വിക്കിയെക്കുറിച്ചു് നിങ്ങള്‍ക്കു് താത്പര്യമുണ്ടായേക്കാവുന്ന വിവരങ്ങള്‍ സംബന്ധിച്ചു് ഞങ്ങള്‍ക്കു് നിങ്ങളെ ബന്ധപ്പെടാമെന്നു നിങ്ങള്‍ സമ്മതിയ്ക്കുന്നു. നിങ്ങള്‍ തരുന്ന വിവരങ്ങള്‍ [[{{MediaWiki:Privacypage}}|സ്വകാര്യതാനയം]] അനുസരിച്ചു്ആയിരിക്കും  എന്നും നിങ്ങള്‍ സമ്മതിയ്ക്കുന്നു. '
 );
 
 /** Malay (Bahasa Melayu)
@@ -1851,7 +1854,7 @@ $8
 
 $4
 
-Изменить свои настройки уведомлений о запросах на перевод можно на странице $5. 
+Изменить свои настройки уведомлений о запросах на перевод можно на странице $5.
 
 Спасибо!
 Сотрудники {{SITENAME}}',
