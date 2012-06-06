@@ -37,7 +37,7 @@ $messages['en'] = array(
 	'translationnotifications-freq-month' => 'At most once a month',
 	'translationnotifications-freq-weekly' => 'Weekly digest',
 	'translationnotifications-freq-monthly' => 'Monthly digest',
-	'translationnotifications-submit' => 'Sign up',
+	'translationnotifications-submit' => 'Update settings',
 
 	// Special:Notify translators
 	'notifytranslators' => 'Notify translators',
@@ -603,7 +603,7 @@ Hay  {{PLURAL:$3|1 página|$3  páginas}} disponibles para su traducción. A con
 
 $4
 
-Para cambiar sus preferencias de notificación para las solicitudes de traducción, por favor visite $5 
+Para cambiar sus preferencias de notificación para las solicitudes de traducción, por favor visite $5
 
 ¡Gracias!
 El equipo de {{SITENAME}}',
@@ -701,11 +701,11 @@ L'équipe de {{SITENAME}}",
 
 Vous recevez ce courriel parce que vous inscrit comme traducteur de $2 sur {{SITENAME}}.
 
-Il y a {{PLURAL:$3|1 page disponible|$3 pages disponibles}} pour la traduction. Les détails sont donnés ci-dessous. 
+Il y a {{PLURAL:$3|1 page disponible|$3 pages disponibles}} pour la traduction. Les détails sont donnés ci-dessous.
 
 $4
 
-Pour modifier vos préférences de notification pour les demandes de traduction, veuillez visiter  $5 
+Pour modifier vos préférences de notification pour les demandes de traduction, veuillez visiter  $5
 
 Merci!
 
@@ -1851,7 +1851,7 @@ $8
 
 $4
 
-Изменить свои настройки уведомлений о запросах на перевод можно на странице $5. 
+Изменить свои настройки уведомлений о запросах на перевод можно на странице $5.
 
 Спасибо!
 Сотрудники {{SITENAME}}',
