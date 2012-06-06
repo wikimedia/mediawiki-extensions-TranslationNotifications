@@ -206,7 +206,7 @@ $messages['qqq'] = array(
 Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
 	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified.',
-	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.'
+	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.',
 );
 
 /** Ṫuroyo (Ṫuroyo)
@@ -605,7 +605,7 @@ Hay  {{PLURAL:$3|1 página|$3  páginas}} disponibles para su traducción. A con
 
 $4
 
-Para cambiar sus preferencias de notificación para las solicitudes de traducción, por favor visite $5
+Para cambiar sus preferencias de notificación para las solicitudes de traducción, por favor visite $5 
 
 ¡Gracias!
 El equipo de {{SITENAME}}',
@@ -703,11 +703,11 @@ L'équipe de {{SITENAME}}",
 
 Vous recevez ce courriel parce que vous inscrit comme traducteur de $2 sur {{SITENAME}}.
 
-Il y a {{PLURAL:$3|1 page disponible|$3 pages disponibles}} pour la traduction. Les détails sont donnés ci-dessous.
+Il y a {{PLURAL:$3|1 page disponible|$3 pages disponibles}} pour la traduction. Les détails sont donnés ci-dessous. 
 
 $4
 
-Pour modifier vos préférences de notification pour les demandes de traduction, veuillez visiter  $5
+Pour modifier vos préférences de notification pour les demandes de traduction, veuillez visiter  $5 
 
 Merci!
 
@@ -1541,7 +1541,7 @@ $messages['nl'] = array(
 	'translationnotifications-freq-month' => 'Hoogstens één keer per maand',
 	'translationnotifications-freq-weekly' => 'Wekelijkse samenvatting',
 	'translationnotifications-freq-monthly' => 'Maandelijkse samenvatting',
-	'translationnotifications-submit' => 'Registreren',
+	'translationnotifications-submit' => 'Instellingen bijwerken',
 	'notifytranslators' => 'Meldingen voor vertalers',
 	'translationnotifications-submit-ok' => 'De meldingen zijn toegevoegd aan een wachtrij en worden via een achtergrondtaak afgeleverd.',
 	'translationnotifications-send-notification-button' => 'Stuur een bericht naar vertalers',
@@ -1610,6 +1610,7 @@ Medewerkers van {{SITENAME}}",
 	'translationnotifications-sent-body' => 'De melding aan vertalers is verzonden.',
 	'translationnotifications-log-alllanguages' => 'alle talen',
 	'translationnotifications-nodeadline' => 'geen',
+	'translationnotifications-signup-legal' => 'Door deze gegevens te verstrekken stemt u ermee in dat we contact met u mogen opnemen over onderwerpen over {{SITENAME}} waarvan wij denken dat ze uw interesse hebben. U gaat stemt ermee in dat uw gegevens onder ons [[{{MediaWiki:Privacypage}}|privacybeleid]] vallen.',
 );
 
 /** Pälzisch (Pälzisch)
@@ -1854,7 +1855,7 @@ $8
 
 $4
 
-Изменить свои настройки уведомлений о запросах на перевод можно на странице $5.
+Изменить свои настройки уведомлений о запросах на перевод можно на странице $5. 
 
 Спасибо!
 Сотрудники {{SITENAME}}',
@@ -1896,7 +1897,7 @@ $messages['sk'] = array(
 	'translationnotifications-nodeadline' => 'nič',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
