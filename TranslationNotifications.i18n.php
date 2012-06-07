@@ -68,7 +68,11 @@ $6
 $7
 
 Thank you!
-{{SITENAME}} translation administrators',
+{{SITENAME}} translation administrators
+
+----
+
+You are receiving this e-mail because you signed up to receive e-mails related to translations on {{SITENAME}}. To unsubscribe or to change your notification preferences for translations, please visit $8',
 	'translationnotifications-talkpage-body' => 'Hello $2,
 
 You are receiving this notification because you signed up as a translator to $3 on {{SITENAME}}.
@@ -93,10 +97,12 @@ There {{PLURAL:$3|is 1 page|are $3 pages}} available for translation. The detail
 
 $4
 
-To change your notification preferences for translation requests, please visit $5
-
 Thank you!
-{{SITENAME}} staff',
+{{SITENAME}} staff
+
+----
+
+You are receiving this e-mail because you signed up to receive e-mails related to translations on {{SITENAME}}. To unsubscribe or to change your notification preferences for translations, please visit $5',
 	'translationnotifications-digestemail-notification-line' => 'On $1, $2 marked "$3" for translation. You can translate it at $4',
 	'translationnotifications-edit-summary' => 'Translation notification',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
