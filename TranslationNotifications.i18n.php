@@ -256,6 +256,7 @@ $messages['be-tarask'] = array(
  * @author Fulup
  */
 $messages['br'] = array(
+	'translatorsignup' => 'Kevreadur an troer',
 	'translationnotifications-info' => 'Titouroù diwar-benn un implijer',
 	'translationnotifications-username' => 'Anv implijer :',
 	'translationnotifications-emailstatus' => 'Stad ar postel :',
@@ -272,6 +273,7 @@ $messages['br'] = array(
 	'translationnotifications-freq-weekly' => 'Diverrañ ar sizhun',
 	'translationnotifications-freq-monthly' => 'Diverrañ ar miz',
 	'translationnotifications-submit' => "Hizivaat ar c'hefluniadur",
+	'notifytranslators' => 'Kelaouiñ an droerien',
 	'translationnotifications-send-notification-button' => "Kas ur c'hemenn d'an droourien",
 	'translationnotifications-priority' => 'Priorelezh :',
 	'translationnotifications-priority-high' => 'uhel',
@@ -512,7 +514,11 @@ $6
 $7
 
 Wjeliki źěk!
-Pśełožowańske administratory {{GRAMMAR:genitiw|{{SITENAME}}}}',
+Pśełožowańske administratory {{GRAMMAR:genitiw|{{SITENAME}}}}
+
+----
+
+Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k $8',
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
@@ -536,10 +542,12 @@ dostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ za $2 na {{GRAMMAR:l
 
 $4
 
-Aby swóje zdźěleńske nastajenja za požědane pśełožki změnił, woglědaj se pšosym k $5.
-
 Wjeliki źěk!
-Team {{SITENAME}}',
+Team {{SITENAME}}
+
+----
+
+Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k $5',
 	'translationnotifications-digestemail-notification-line' => 'Dnja $1 jo $2 bok "$3" za pśełožowanje markěrował. Móžoš ju na $4 pśełožowaś.',
 	'translationnotifications-edit-summary' => 'Pśełožowańska powěźeńka',
 	'translationnotifications-email-priority' => 'Priorita toś togo boka jo $1.',
@@ -551,6 +559,7 @@ Team {{SITENAME}}',
 	'translationnotifications-sent-body' => 'Pśełožowańska powěźeńka jo se pósłała.',
 	'translationnotifications-log-alllanguages' => 'wšykne rěcy',
 	'translationnotifications-nodeadline' => 'žeden',
+	'translationnotifications-signup-legal' => 'Pśez pódawanje toś tych informacijow zwólijoš, až móžomy se z tobu nastupajucy temy w zwisku {{GRAMMAR:instrumental|{{SITENAME}}}} do zwiska stajiś, kótarež by mógli śi zajimowaś. Zwólijoš do togo, až waše daty pódlaže našym [[{{MediaWiki:Privacypage}}|pšawidłam priwatnosći]].',
 );
 
 /** Spanish (español)
@@ -690,7 +699,7 @@ $messages['fr'] = array(
 	'translationnotifications-freq-month' => 'Au moins une fois par mois',
 	'translationnotifications-freq-weekly' => 'Résumé hebdomadaire',
 	'translationnotifications-freq-monthly' => 'Résumé mensuel',
-	'translationnotifications-submit' => 'Inscription',
+	'translationnotifications-submit' => 'Mettre à jour les paramètres',
 	'notifytranslators' => 'Informer les traducteurs',
 	'translationnotifications-submit-ok' => "Des notifications ont été ajoutées à une file d'attente et sont livrées par une tâche d'arrière-plan.",
 	'translationnotifications-send-notification-button' => 'Envoyer une notification aux traducteurs',
@@ -790,7 +799,7 @@ $messages['gl'] = array(
 	'translationnotifications-freq-month' => 'Unha vez ao mes, polo menos',
 	'translationnotifications-freq-weekly' => 'Boletín semanal',
 	'translationnotifications-freq-monthly' => 'Boletín mensual',
-	'translationnotifications-submit' => 'Inscribirse',
+	'translationnotifications-submit' => 'Actualizar a configuración',
 	'notifytranslators' => 'Informar aos tradutores',
 	'translationnotifications-submit-ok' => 'As notificacións engadíronse a unha cola de espera; un proceso ha envialas en segundo plano.',
 	'translationnotifications-send-notification-button' => 'Enviar unha notificación aos tradutores',
@@ -819,7 +828,11 @@ $6
 $7
 
 Grazas!
-Os administradores das traducións de {{SITENAME}}',
+Os administradores das traducións de {{SITENAME}}
+
+----
+
+Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite $8',
 	'translationnotifications-talkpage-body' => 'Boas, $2:
 
 Recibiu esta notificación porque está inscrito como tradutor ao $3 en {{SITENAME}}.
@@ -844,10 +857,12 @@ Hai {{PLURAL:$3|1 nova páxina|$3 novas páxinas}} que traducir alí. A continua
 
 $4
 
-Para cambiar as preferencias das notificacións sobre as solicitudes de tradución, visite $5
-
 Grazas!
-O equipo de {{SITENAME}}',
+O equipo de {{SITENAME}}
+
+----
+
+Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite $5',
 	'translationnotifications-digestemail-notification-line' => 'O $1, $2 marcou "$3" para a súa tradución. Pode traducila en $4',
 	'translationnotifications-edit-summary' => 'Notificación de tradución',
 	'translationnotifications-email-priority' => 'A prioridade desta páxina é $1.',
@@ -859,6 +874,7 @@ O equipo de {{SITENAME}}',
 	'translationnotifications-sent-body' => 'Enviouse a notificación de tradución.',
 	'translationnotifications-log-alllanguages' => 'todas as linguas',
 	'translationnotifications-nodeadline' => 'ningunha',
+	'translationnotifications-signup-legal' => 'Acepta que ao proporcionar esta información podemos poñernos en contacto con vostede por temas relacionados con {{SITENAME}} que pensemos que poidan ser do seu interese. Acepta que os seus datos están suxeitos á nosa [[{{MediaWiki:Privacypage}}|política de protección de datos]].',
 );
 
 /** Hebrew (עברית)
@@ -1016,7 +1032,11 @@ $6
 $7
 
 Wulki dźak!
-Přełožowanscy administratorojo {{GRAMMAR:genitiw|{{SITENAME}}}}',
+Přełožowanscy administratorojo {{GRAMMAR:genitiw|{{SITENAME}}}}
+
+----
+
+Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k $8',
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
@@ -1040,10 +1060,12 @@ dostawaš tutu e-mejl, dokelž sy so jako přełožowar za $2 na {{GRAMMAR:lokat
 
 $4
 
-Zo by swoje zdźělenske nastajenja za požadane přełožki změnił, wopytaj prošu $5.
-
 Wulki dźak!
-Team {{SITENAME}}',
+Team {{SITENAME}}
+
+----
+
+Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k $5',
 	'translationnotifications-digestemail-notification-line' => 'Dnja $1 je $2 stronu "$3" za přełožowanje woznamjenił. Móžeš ju na $4 přełožować.',
 	'translationnotifications-edit-summary' => 'Přełožowanska zdźělenka',
 	'translationnotifications-email-priority' => 'Priorita tuteje strony je $1.',
@@ -1055,6 +1077,7 @@ Team {{SITENAME}}',
 	'translationnotifications-sent-body' => 'Přełožowanska zdźělenka je so pósłała.',
 	'translationnotifications-log-alllanguages' => 'wšě rěče',
 	'translationnotifications-nodeadline' => 'žadyn',
+	'translationnotifications-signup-legal' => 'Přez podawanje tutych informacijow přizwoliš, zo móžemy so z tobu nastupajo temy w zwisku {{GRAMMAR:instrumental|{{SITENAME}}}} do zwiska stajić, kotrež móhli će zajimować. Zwoliš do toho, zo waše daty našim [[{{MediaWiki:Privacypage}}|prawidłam priwatnosće]] podleža.',
 );
 
 /** Interlingua (interlingua)
@@ -1085,7 +1108,7 @@ $messages['ia'] = array(
 	'translationnotifications-freq-month' => 'Al plus un vice per mense',
 	'translationnotifications-freq-weekly' => 'Digesto septimanal',
 	'translationnotifications-freq-monthly' => 'Digesto mensual',
-	'translationnotifications-submit' => 'Inscriber',
+	'translationnotifications-submit' => 'Actualisar configurationes',
 	'notifytranslators' => 'Notificar traductores',
 	'translationnotifications-submit-ok' => 'Notificationes ha essite addite a un cauda e es livrate per un processo in secunde plano.',
 	'translationnotifications-send-notification-button' => 'Inviar un notification a traductores',
@@ -1102,10 +1125,10 @@ $messages['ia'] = array(
 	'translationnotifications-email-subject' => 'Per favor traduce le pagina $1',
 	'translationnotifications-email-body' => 'Salute $1,
 
-Tu recipe iste message perque tu sta inscribite como traductor in $2 in {{SITENAME}}.
+Tu recipe iste message perque tu es inscribite como traductor in $2 in {{SITENAME}}.
 
-Il ha un nove pagina a traducer hic: $3.
-Per favor traduce lo per cliccar sur le sequente ligamine:
+Il ha un nove pagina a traducer: $3.
+Per favor traduce lo a partir del sequente ligamine:
 $4
 
 $5
@@ -1114,7 +1137,11 @@ $6
 $7
 
 Gratias!
-Le personal de {{SITENAME}}',
+Le administratores de traduction de {{SITENAME}}
+
+----
+
+Tu ha recipite iste message perque tu te ha inscribite pro reciper e-mail sur traductiones in {{SITENAME}}. Pro cancellar le subscription o pro cambiar le preferentias de notification pro traductiones, per favor visita $8',
 	'translationnotifications-talkpage-body' => 'Salute $2,
 
 Tu recipe iste notification perque tu te inscribeva como traductor de $3 in {{SITENAME}}.
@@ -1128,7 +1155,8 @@ $8
 
 Gratias!
 
-Le equipa de {{SITENAME}}',
+Le administratores de traduction de {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'traducer in $1',
 	'translationnotifications-digestemail-subject' => 'Digesto in e-mail con requestas de traduction ab {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Salute $1,
 
@@ -1138,10 +1166,12 @@ Il ha {{PLURAL:$3|1 pagina|$3 paginas}} disponibile pro traduction. Ecce le deta
 
 $4
 
-Pro cambiar le tue preferentias de notification pro le requesta de traduction, visita $5
-
 Gratias!
-Le equipa de {{SITENAME}}',
+Le equipa de {{SITENAME}}
+
+----
+
+Tu ha recipite iste message perque tu te ha inscribite pro reciper e-mail sur traductiones in {{SITENAME}}. Pro cancellar le subscription o pro cambiar le preferentias de notification pro traductiones, per favor visita $5',
 	'translationnotifications-digestemail-notification-line' => 'Le $1, $2 marcava "$3" pro traduction. Tu pote traducer lo a $4',
 	'translationnotifications-edit-summary' => 'Notification de traduction',
 	'translationnotifications-email-priority' => 'Le prioritate de iste pagina es $1.',
@@ -1213,7 +1243,10 @@ $6
 $7
 
 Grazie!
-Gli amministratori delle traduzioni di {{SITENAME}}",
+Gli amministratori delle traduzioni di {{SITENAME}}
+
+----
+Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $8",
 	'translationnotifications-talkpage-body' => 'Ciao $2,
 
 Ricevi questa email perché ti sei registrato come traduttore $3 su {{SITENAME}}.
@@ -1237,10 +1270,11 @@ Ricevi questa email perché ti sei registrato come traduttore $2 su {{SITENAME}}
 
 $4
 
-Per modificare le preferenze riguardo le notifiche per le richieste di traduzione, si prega di visitare $5
-
 Grazie!
-Lo staff di {{SITENAME}}",
+Lo staff di {{SITENAME}}
+
+----
+Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $5",
 	'translationnotifications-digestemail-notification-line' => 'Il $1, $2 ha segnalato la pagina "$3" affinché venga tradotta. Puoi tradurla su $4',
 	'translationnotifications-edit-summary' => 'Notifica di traduzione',
 	'translationnotifications-email-priority' => 'La priorità di questa pagina è $1.',
@@ -1252,6 +1286,7 @@ Lo staff di {{SITENAME}}",
 	'translationnotifications-sent-body' => 'La notifica di traduzione è stata inviata.',
 	'translationnotifications-log-alllanguages' => 'tutte le lingue',
 	'translationnotifications-nodeadline' => 'nessuno',
+	'translationnotifications-signup-legal' => 'Accetti che, fornendo queste informazioni, possiamo contattarti per quanto riguarda argomenti relativi a {{SITENAME}} che pensiamo possano interessarti. Accetti che i tuoi dati siano soggetti alla nostra [[{{MediaWiki:Privacypage}}|politica sulla privacy]].',
 );
 
 /** Japanese (日本語)
@@ -1281,8 +1316,8 @@ $messages['ja'] = array(
 	'translationnotifications-priority-medium' => '中',
 	'translationnotifications-priority-low' => '低',
 	'translationnotifications-priority-unset' => '（未設定）',
-	'translationnotifications-translatablepage-title' => '翻訳できるページの名前：',
-	'translationnotifications-error-no-translatable-pages' => 'このウィキには翻訳できるページはありません。',
+	'translationnotifications-translatablepage-title' => '翻訳対象ページの名前：',
+	'translationnotifications-error-no-translatable-pages' => 'このウィキには翻訳対象ページはありません。',
 	'translationnotifications-email-subject' => 'ページ $1 を翻訳してください',
 	'translationnotifications-edit-summary' => '翻訳の通知',
 	'translationnotifications-email-priority' => 'このページの優先度は$1です。',
@@ -1320,9 +1355,11 @@ $messages['lb'] = array(
 	'translationnotifications-freq-month' => 'Héchstens eemol de Mount',
 	'translationnotifications-freq-weekly' => 'Wëchentleche Resumé',
 	'translationnotifications-freq-monthly' => 'Monatleche Resumé',
-	'translationnotifications-submit' => 'Schreift Iech an',
+	'translationnotifications-submit' => 'Astellungen aktualiséieren',
 	'notifytranslators' => 'Iwwersetzer informéieren',
+	'translationnotifications-send-notification-button' => "Eng Matdeelung un d'Iwwersetzer schécken",
 	'translationnotifications-deadline-label' => 'Delai deen an dëser Matdeelung gesat gëtt:',
+	'translationnotifications-languages-to-notify-label' => 'Wat fir Sprooche sollen informéiert ginn:',
 	'translationnotifications-priority' => 'Prioritéit:',
 	'translationnotifications-priority-high' => 'héich',
 	'translationnotifications-priority-medium' => 'mëttel',
@@ -1331,9 +1368,12 @@ $messages['lb'] = array(
 	'translationnotifications-translatablepage-title' => 'Numm vun der Säit déi iwwersat soll ginn:',
 	'translationnotifications-error-no-translatable-pages' => "Et gëtt keng Säite fir z'iwwersetzen op dëser Wiki.",
 	'translationnotifications-email-subject' => "Iwwersetzt w.e.g. d'Säit $1",
+	'translationnotifications-notification-url-listitem' => 'op $1 iwwersetzen',
 	'translationnotifications-email-priority' => "D'Prioritéit vun dëser Säit ass $1.",
 	'translationnotifications-email-deadline' => "Den Delai fir dës säit z'iwwersetzen ass den $1.",
 	'log-name-notifytranslators' => 'Iwwersetzungs-Matdeelungen',
+	'translationnotifications-log-alllanguages' => 'all Sproochen',
+	'translationnotifications-nodeadline' => 'keng',
 );
 
 /** Macedonian (македонски)
@@ -1393,7 +1433,12 @@ $6
 $7
 
 Ви благодариме!
-Преводните администратори на {{SITENAME}}',
+Преводните администратори на {{SITENAME}}
+
+
+----
+
+Поракава ја добивате бидејќи се пријавивте да примате пошта во врска со преводи на {{SITENAME}}. Ако сакате да се откажете од известувањата или  да ги измените нагодувањата за истите, посетете ја страницата $8',
 	'translationnotifications-talkpage-body' => 'Здраво $2,
 
 Го добивате ова известување бидејќи се пријавивте за преведувач на {{SITENAME}} на $3.
@@ -1418,10 +1463,13 @@ $8
 
 $4
 
-За да ги измените поставките за овие известувања, посетете ја страницата $5
 
 Ви благодариме!
-Персоналот на {{SITENAME}}',
+Персоналот на {{SITENAME}}
+
+----
+
+Поракава ја добивате бидејќи се пријавивте да примате пошта во врска со преводи на {{SITENAME}}. Ако сакате да се откажете од известувањата или  да ги измените нагодувањата за истите, посетете ја страницата $5',
 	'translationnotifications-digestemail-notification-line' => 'На $1, $2 ја означи страницата „$3“ за преведување. Преведете ја на $4',
 	'translationnotifications-edit-summary' => 'Известување за превод',
 	'translationnotifications-email-priority' => 'Приоритетот на оваа страница е $1.',
@@ -1443,12 +1491,21 @@ $4
 $messages['ml'] = array(
 	'translatorsignup' => 'പരിഭാഷകർക്ക് പേരുചേർക്കാം',
 	'translationnotifications-username' => 'ഉപയോക്തൃനാമം:',
+	'translationnotifications-emailstatus' => 'ഇമെയിൽ സ്ഥിതി:',
+	'translationnotifications-email-confirmed' => 'താങ്കളുടെ ഇമെയിൽ വിലാസം സ്ഥിരീകരിച്ചതാണ്',
+	'translationnotifications-email-disablemail' => 'താങ്കളുടെ ഇമെയിൽ വിലാസം സ്ഥിരീകരിച്ചതാണ്, പക്ഷേ താങ്കൾ [[Special:Preferences|താങ്കളുടെ ക്രമീകരണങ്ങളിൽ]] ഇമെയിൽ സ്വീകരിക്കേണ്ടതില്ല എന്നാണ് തിരഞ്ഞെടുത്തിരിക്കുന്നത്.',
+	'translationnotifications-email-unconfirmed' => 'താങ്കളുടെ ഇമെയിൽ വിലാസം സ്ഥിരീകരിക്കപ്പെട്ടിട്ടില്ല. $1',
+	'translationnotifications-email-notset' => 'താങ്കൾ ഇമെയിൽ വിലാസം നൽകിയിട്ടില്ല. താങ്കൾക്കത് [[Special:Preferences|താങ്കളുടെ ക്രമീകരണങ്ങളിൽ]] നൽകാവുന്നതാണ്.',
 	'translationnotifications-languages' => 'ഭാഷകൾ',
 	'translationnotifications-lang' => 'ഭാഷ #$1',
+	'translationnotifications-nolang' => 'ഭാഷ തിരഞ്ഞെടുക്കുക',
 	'translationnotifications-cmethod-email' => 'ഇമെയിൽ',
 	'translationnotifications-cmethod-talkpage' => 'സം‌വാദം താൾ',
+	'translationnotifications-cmethod-feed' => 'ഫീഡ്',
 	'logentry-translationnotifications-sent' => ' $1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; sent to {{PLURAL:$7|one recipient|$7 recipients}}, failed for {{PLURAL:$8|one recipient|$8 recipients}}, skipped for {{PLURAL:$9|one recipient|$9 recipients}}',
-	'translationnotifications-signup-legal' => '{{SITENAME}} എന്ന വിക്കിയെക്കുറിച്ചു് നിങ്ങള്‍ക്കു് താത്പര്യമുണ്ടായേക്കാവുന്ന വിവരങ്ങള്‍ സംബന്ധിച്ചു് ഞങ്ങള്‍ക്കു് നിങ്ങളെ ബന്ധപ്പെടാമെന്നു നിങ്ങള്‍ സമ്മതിയ്ക്കുന്നു. നിങ്ങള്‍ തരുന്ന വിവരങ്ങള്‍ [[{{MediaWiki:Privacypage}}|സ്വകാര്യതാനയം]] അനുസരിച്ചു്ആയിരിക്കും  എന്നും നിങ്ങള്‍ സമ്മതിയ്ക്കുന്നു. '
+	'translationnotifications-log-alllanguages' => 'എല്ലാ ഭാഷകളും',
+	'translationnotifications-nodeadline' => 'ഒന്നുമില്ല',
+	'translationnotifications-signup-legal' => '{{SITENAME}} എന്ന വിക്കിയെക്കുറിച്ചു് നിങ്ങള്‍ക്കു് താത്പര്യമുണ്ടായേക്കാവുന്ന വിവരങ്ങള്‍ സംബന്ധിച്ചു് ഞങ്ങള്‍ക്കു് നിങ്ങളെ ബന്ധപ്പെടാമെന്നു നിങ്ങള്‍ സമ്മതിയ്ക്കുന്നു. നിങ്ങള്‍ തരുന്ന വിവരങ്ങള്‍ [[{{MediaWiki:Privacypage}}|സ്വകാര്യതാനയം]] അനുസരിച്ചു്ആയിരിക്കും  എന്നും നിങ്ങള്‍ സമ്മതിയ്ക്കുന്നു. ',
 );
 
 /** Malay (Bahasa Melayu)
@@ -1479,7 +1536,7 @@ $messages['ms'] = array(
 	'translationnotifications-freq-month' => 'Paling kerap sebulan sekali',
 	'translationnotifications-freq-weekly' => 'Ikhtisar mingguan',
 	'translationnotifications-freq-monthly' => 'Ikhtisar bulanan',
-	'translationnotifications-submit' => 'Daftar diri',
+	'translationnotifications-submit' => 'Kemaskinikan tetapan',
 	'notifytranslators' => 'Beritahu penterjemah',
 	'translationnotifications-submit-ok' => 'Pemberitahuan telah ditambahkan dalam baris gilir dan dikirim oleh kerja latar belakang.',
 	'translationnotifications-send-notification-button' => 'Hantar pemberitahuan kepada para penterjemah',
@@ -1508,8 +1565,12 @@ $6
 $7
 
 Terima kasih!
-Kakitangan {{SITENAME}}',
-	'translationnotifications-talkpage-body' => 'Ke hadapan $2,
+Pentadbir penterjemahan {{SITENAME}}
+
+----
+
+Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila ke $8',
+	'translationnotifications-talkpage-body' => 'Apa khabar $2,
 
 Anda sedang menerima pemberitahuan ini kerana anda mendaftar diri sebagai penterjemah kepada $3 di {{SITENAME}}.
 Satu laman baru, [[$4]] sedia untuk diterjemahkan. Sila terjemahkannya:
@@ -1522,7 +1583,8 @@ $8
 
 Terima kasih!
 
-Kakitangan {{SITENAME}}',
+Pentadbir penterjemahan {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'terjemah kepada $1',
 	'translationnotifications-digestemail-subject' => 'E-mel ikhtisar untuk permohonan penterjemahan dari {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Ke hadapan $1,
 
@@ -1532,10 +1594,12 @@ Terdapat $3 laman yang sedia untuk diterjemah. Butiran-butirannya adalah seperti
 
 $4
 
-Untuk menukar keutamaan pemberitahuan untuk permohonan penterjemahan, sila lawati $5
-
 Terima kasih!
-Kakitangan {{SITENAME}}',
+Kakitangan {{SITENAME}}
+
+----
+
+Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila ke $5',
 	'translationnotifications-digestemail-notification-line' => 'Pada $1, $2 memohon supaya "$3" diterjemahkannya. Anda boleh menterjemahkannya di $4',
 	'translationnotifications-edit-summary' => 'Pemberitahuan penterjemahan',
 	'translationnotifications-email-priority' => 'Laman ini diberi prioriti $1.',
@@ -1547,6 +1611,7 @@ Kakitangan {{SITENAME}}',
 	'translationnotifications-sent-body' => 'Pemberitahuan penterjemahan telah dihantar.',
 	'translationnotifications-log-alllanguages' => 'semua bahasa',
 	'translationnotifications-nodeadline' => 'tiada',
+	'translationnotifications-signup-legal' => 'Anda bersetuju bahawa dengan memberikan maklumat ini, kami boleh menghubungi anda berkenaan perihal-perihal yang berkaitan dengan {{SITENAME}} yang kami rasa berkaitan dengan anda. Anda bersetuju bahawa data anda tertakluk pada [[{{MediaWiki:Privacypage}}|dasar privasi]] kami.',
 );
 
 /** Dutch (Nederlands)
@@ -1781,7 +1846,7 @@ $messages['pl'] = array(
 	'translationnotifications-freq-month' => 'Co najwyżej raz w miesiącu',
 	'translationnotifications-freq-weekly' => 'Tygodniowe streszczenie',
 	'translationnotifications-freq-monthly' => 'Miesięczne streszczenie',
-	'translationnotifications-submit' => 'Zarejestruj się',
+	'translationnotifications-submit' => 'Ustawienia aktualizacji',
 	'notifytranslators' => 'Powiadom tłumaczy',
 	'translationnotifications-send-notification-button' => 'Wyślij powiadomienia do tłumaczy',
 	'translationnotifications-deadline-label' => 'Termin do wskazania w tym powiadomieniu:',
@@ -1808,7 +1873,12 @@ $6
 $7
 
 Dziękujemy!
-Zespół {{SITENAME}}',
+Zespół {{SITENAME}}
+
+----
+
+Otrzymujesz tę wiadomość e-mail, ponieważ ten użytkownik zgodził się otrzymywać e-maile związane z tłumaczeniami portalu {{SITENAME}}. 
+Aby anulować subskrypcję lub zmienić swoje preferencje powiadamiania o tłumaczeniach, odwiedź $8',
 	'translationnotifications-email-priority' => 'Priorytet tej strony to  $1 .',
 	'translationnotifications-email-deadline' => 'Nieprzekraczalny termin tłumaczenia tej strony to $1 .',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|wysyłał|wysłała}} powiadomienie w sprawie tłumaczenia strony $3; języki: $4; termin $5; priorytet $6; do {{PLURAL:$7|jednego adresata|$7 adresatów}} pomyślnie, do {{PLURAL:$8|jednego adresata|$8 adresatów}} bezskutecznie, pominięto {{PLURAL:$9|jednego adresata|$9 adresatów}}',
@@ -1986,5 +2056,111 @@ $messages['ta'] = array(
 	'translationnotifications-cmethod-email' => 'மின்னஞ்சல்',
 	'translationnotifications-cmethod-talkpage' => 'உரையாடல் பக்கம்',
 	'translationnotifications-submit' => 'பதிவுசெய்',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'translatorsignup' => 'Đăng ký biên dịch viên',
+	'translatorsignup-summary' => 'Sử dụng trang này để cho biết các ngôn ngữ mà bạn có thể biên dịch ra và làm thế nào để liên lạc với bạn về các yêu cầu bản dịch.',
+	'translationnotifications-desc' => 'Cho phép các biên dịch viên đăng ký để nhận các thông báo biên dịch',
+	'translationnotifications-info' => 'Thông tin cá nhân',
+	'translationnotifications-username' => 'Tên người dùng:',
+	'translationnotifications-emailstatus' => 'Trạng thái thư điện tử:',
+	'translationnotifications-email-confirmed' => 'Địa chỉ thư điện tử của bạn đã được xác nhận',
+	'translationnotifications-email-disablemail' => 'Địa chỉ thư điện tử của bạn đã được xác nhận, nhưng bạn đã quyết định không nhận thông báo qua thư điện tử trong [[Special:Preferences|tùy chọn]].',
+	'translationnotifications-email-unconfirmed' => 'Địa chỉ thư điện tử của bạn chưa được xác nhận. $1',
+	'translationnotifications-email-notset' => 'Bạn chưa cung cấp địa chỉ thư điện tử trong [[Special:Preferences|tùy chọn]].',
+	'translationnotifications-languages' => 'Ngôn ngữ',
+	'translationnotifications-lang' => 'Ngôn ngữ #$1',
+	'translationnotifications-nolang' => 'Chọn ngôn ngữ',
+	'translationnotifications-contact' => 'Phương tiện liên lạc ưa thích',
+	'translationnotifications-cmethod-email' => 'Thư điện tử',
+	'translationnotifications-cmethod-talkpage' => 'Trang thảo luận',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Trang thảo luận tại wiki khác',
+	'translationnotifications-cmethod-feed' => 'Nguồn tin (feed)',
+	'translationnotifications-frequency' => 'Chu kỳ liên lạc',
+	'translationnotifications-freq-always' => 'Khi nào có gì mới để biên dịch',
+	'translationnotifications-freq-week' => 'Tối đa mỗi tuần một lần',
+	'translationnotifications-freq-month' => 'Tối đa mỗi tháng một lần',
+	'translationnotifications-freq-weekly' => 'Tóm tắt hàng tuần',
+	'translationnotifications-freq-monthly' => 'Tóm tắt hàng tháng',
+	'translationnotifications-submit' => 'Cập nhật tùy chọn',
+	'notifytranslators' => 'Báo cho biên dịch viên',
+	'translationnotifications-submit-ok' => 'Các thông báo đã được thêm vào hàng đợi gửi trong bối cảnh.',
+	'translationnotifications-send-notification-button' => 'Gửi thông báo cho các biên dịch viên.',
+	'translationnotifications-deadline-label' => 'Ngày hạn để nhắc đến trong thông báo này:',
+	'translationnotifications-languages-to-notify-label' => 'Các ngôn ngữ để báo:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Các mã ngôn ngữ (phân cách bằng dấu phẩy); để trống để báo tất cả các ngôn ngữ.',
+	'translationnotifications-priority' => 'Ưu tiên:',
+	'translationnotifications-priority-high' => 'cao',
+	'translationnotifications-priority-medium' => 'thường',
+	'translationnotifications-priority-low' => 'thấp',
+	'translationnotifications-priority-unset' => '(không định)',
+	'translationnotifications-translatablepage-title' => 'Tên trang dịch được:',
+	'translationnotifications-error-no-translatable-pages' => 'Không có trang dịch được tại wiki này.',
+	'translationnotifications-email-subject' => 'Xin vui lòng dịch trang $1',
+	'translationnotifications-email-body' => 'Xin chào $1,
+
+Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $2 tại {{SITENAME}}.
+
+Hiện có trang mới để dịch tại đấy: $3.
+Xin vui lòng dịch nó dùng liên kết sau:
+$4
+
+$5
+$6
+
+$7
+
+Cám ơn!
+Ban quản lý biên dịch {{SITENAME}}
+
+----
+
+Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $8.',
+	'translationnotifications-talkpage-body' => 'Xin chào $2,
+
+Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $3 tại {{SITENAME}}.
+Hiện có trang mới để dịch, [[$4]]. Xin vui lòng dịch nó dùng liên kết sau:
+$5
+
+$6
+$7
+
+$8
+
+Cám ơn!
+
+Nhóm quản lý biên dịch {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'dịch ra $1',
+	'translationnotifications-digestemail-subject' => 'Thư điện tử tóm tắt các yêu cầu biên dịch từ {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Xin chào $1,
+
+Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $2 tại {{SITENAME}}.
+
+Hiện có {{PLURAL:$3|trang|$3 trang}} để dịch. Các chi tiết được đưa dưới đây:
+
+$4
+
+Cám ơn!
+Ban quản lý {{SITENAME}}
+
+----
+
+Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $5.',
+	'translationnotifications-digestemail-notification-line' => 'Ngày $1, $2 đã đánh dấu “$3” là cần được dịch. Bạn có thể biên dịch nó tại $4.',
+	'translationnotifications-edit-summary' => 'Thông báo biên dịch',
+	'translationnotifications-email-priority' => 'Trang này có ưu tiên $1.',
+	'translationnotifications-email-deadline' => 'Công việc dịch trang này sẽ hết hạn $1.',
+	'logentry-translationnotifications-sent' => '{{GENDER:$2}}$1 đã gửi thông báo về việc thông dịch trang $3; ngôn ngữ: $4; ngày hạn: $5; ưu tiên: $6; được gửi cho $7 người, không gửi được cho $8 người, bỏ qua $9 người',
+	'log-name-notifytranslators' => 'Thông báo biên dịch',
+	'log-description-notifytranslators' => 'Nhật trình các thông báo được gửi cho biên dịch viên về các trang dịch được',
+	'translationnotifications-sent-title' => 'Thông báo biên dịch đã được gửi',
+	'translationnotifications-sent-body' => 'Thông báo biên dịch đã được gửi.',
+	'translationnotifications-log-alllanguages' => 'tất cả các ngôn ngữ',
+	'translationnotifications-nodeadline' => 'không có',
+	'translationnotifications-signup-legal' => 'Với việc cung cấp thông tin này, bạn đồng ý cho phép chúng tôi liên lạc với bạn về các đề tài có liên quan đến {{SITENAME}} mà bạn có thể quan tâm đến. Bạn đồng ý rằng dữ liệu của bạn sẽ được sử dụng theo [[{{MediaWiki:Privacypage}}|quy định quyền riêng tư]] của chúng tôi.',
 );
 
