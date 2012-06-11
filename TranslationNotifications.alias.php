@@ -14,9 +14,21 @@ $specialPageAliases['en'] = array(
 	'TranslatorSignup' => array( 'TranslatorSignup' ),
 );
 
+/** Arabic (العربية) */
+$specialPageAliases['ar'] = array(
+	'NotifyTranslators' => array( 'إخطار_المترجمين' ),
+	'TranslatorSignup' => array( 'اشتراك_المستخدمين' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'TranslatorSignup' => array( 'Übersetzerregistrierung' ),
+);
+
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'NotifyTranslators' => array( 'AçerneraXeberke' ),
+	'TranslatorSignup' => array( 'AçarnayışDekewtış' ),
 );
 
 /** Swiss German (Alemannisch) */
@@ -30,12 +42,18 @@ $specialPageAliases['he'] = array(
 	'TranslatorSignup' => array( 'רישום_מתרגמים' ),
 );
 
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'NotifyTranslators' => array( '번역자알림' ),
+	'TranslatorSignup' => array( '번역가입' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'NotifyTranslators' => array( 'Iwwersetzer_informéieren' ),
 );
 
-/** Macedonian (Македонски) */
+/** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'NotifyTranslators' => array( 'ИзвестиПреведувачи' ),
 	'TranslatorSignup' => array( 'ПријаваНаПреведувачи' ),
