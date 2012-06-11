@@ -284,6 +284,7 @@ $messages['br'] = array(
 	'translationnotifications-error-no-translatable-pages' => "N'eus pajenn ebet da dreiñ er wiki-mañ.",
 	'translationnotifications-email-subject' => "Troit ar bajenn $1, mar plij ganeoc'h",
 	'translationnotifications-notification-url-listitem' => 'treiñ e $1',
+	'translationnotifications-email-priority' => '$1 eo live priorelezh ar bajenn-mañ.',
 	'translationnotifications-log-alllanguages' => 'an holl yezhoù',
 	'translationnotifications-nodeadline' => 'hini ebet',
 );
