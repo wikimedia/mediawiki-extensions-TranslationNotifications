@@ -38,6 +38,7 @@ $messages['en'] = array(
 	'translationnotifications-freq-weekly' => 'Weekly digest',
 	'translationnotifications-freq-monthly' => 'Monthly digest',
 	'translationnotifications-submit' => 'Update settings',
+	'translationnotifications-signup-success' => "Your translation notification preferences were saved.",
 
 	// Special:Notify translators
 	'notifytranslators' => 'Notify translators',
@@ -151,6 +152,7 @@ $messages['qqq'] = array(
 	'translationnotifications-freq-weekly' => 'Radio option label',
 	'translationnotifications-freq-monthly' => 'Radio option label',
 	'translationnotifications-submit' => 'Submit button text',
+	'translationnotifications-signup-success' => "A message that appears on the top of Special:TranslatorSignup after saving the preferences.",
 	'notifytranslators' => 'The title of the Special:NotifyTranslators special page.',
 	'translationnotifications-send-notification-button' => 'A title for the submit button of the translator notification form.',
 	'translationnotifications-deadline-label' => 'A label for the deadline field, which will have a datepicker.',
