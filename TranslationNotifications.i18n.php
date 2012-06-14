@@ -1988,7 +1988,7 @@ $4
 	'translationnotifications-nodeadline' => 'нет',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Kusavica
  */
 $messages['sk'] = array(
