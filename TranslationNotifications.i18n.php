@@ -1177,13 +1177,14 @@ Tu ha recipite iste message perque tu te ha inscribite pro reciper e-mail sur tr
 	'translationnotifications-edit-summary' => 'Notification de traduction',
 	'translationnotifications-email-priority' => 'Le prioritate de iste pagina es $1.',
 	'translationnotifications-email-deadline' => 'Le data limite pro traducer iste pagina es $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|inviava}} un notification sur le traduction del pagina $3; linguas: $4; data limite: $5; prioritate: $6; a {{PLURAL:$7|un destinatario|$7 destinatarios}} con successo, a {{PLURAL:$8|un destinatario|$8 destinatarios}} sin successo',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|inviava}} un notification sur le traduction del pagina $3; linguas: $4; data limite: $5; prioritate: $6; inviate a {{PLURAL:$7|un destinatario|$7 destinatarios}}, invio fallite pro {{PLURAL:$8|un destinatario|$8 destinatarios}}, non inviate a {{PLURAL:$9|un destinatario|$9 destinatarios}}',
 	'log-name-notifytranslators' => 'Notificationes de traduction',
 	'log-description-notifytranslators' => 'Un registro de notificationes inviate a traductores sur paginas traducibile',
 	'translationnotifications-sent-title' => 'Notification de traduction inviate',
 	'translationnotifications-sent-body' => 'Le notification de traduction ha essite inviate.',
 	'translationnotifications-log-alllanguages' => 'tote le linguas',
 	'translationnotifications-nodeadline' => 'nulle',
+	'translationnotifications-signup-legal' => 'Per fornir iste information tu accepta que nos pote contactar te concernente themas associate a {{SITENAME}} le quales nos pensa que pote esser de interesse a te. Tu accepta que tu datos es subjecte a nostre [[{{MediaWiki:Privacypage}}|politica de confidentialitate]].',
 );
 
 /** Italian (italiano)
