@@ -41,6 +41,15 @@ class TranslationNotificationsHooks {
 		$sentFail = $params[4];
 		$tooEarly = $params[5];
 
+		// possible messages here:
+		// 'translationnotifications-priority-high'
+		// 'translationnotifications-priority-medium'
+		// 'translationnotifications-priority-low'
+		// 'translationnotifications-priority-unset'
+		$priorityText = wfMessage(
+			"translationnotifications-priority-$priority"
+		)->inLanguage( $language )->text();
+
 		$link = $forUI ?
 			Linker::link( $title, null, array(), array( 'oldid' => $params[0] ) ) :
 			$title->getPrefixedText();
@@ -50,7 +59,7 @@ class TranslationNotificationsHooks {
 			Message::rawParam( $link ),
 			$notifiedLanguages,
 			$deadlineDate,
-			$priority,
+			$priorityText,
 			$sentSuccess,
 			$sentFail,
 			$tooEarly
