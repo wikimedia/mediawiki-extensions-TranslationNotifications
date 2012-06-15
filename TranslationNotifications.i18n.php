@@ -98,7 +98,7 @@ There {{PLURAL:$3|is 1 page|are $3 pages}} available for translation. The detail
 $4
 
 Thank you!
-{{SITENAME}} staff
+{{SITENAME}} translation administrators
 
 ----
 
