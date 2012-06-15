@@ -377,7 +377,7 @@ Es {{PLURAL:$3|ist eine Seite|sind $3 Seiten}} zum Übersetzen vorhanden. Einzel
 $4
 
 Vielen Dank,
-die Mitarbeiter von {{SITENAME}}
+die Übersetzungsadministratoren von {{SITENAME}}
 
 ----
 
@@ -450,7 +450,7 @@ $4
 Um Ihre Einstellungen zu Übersetzungsbenachrichtigungen zu ändern, können Sie $5 besuchen.
 
 Vielen Dank,
-die Mitarbeiter von {{SITENAME}}
+die Übersetzungsadministratoren von {{SITENAME}}
 
 ----
 
@@ -650,7 +650,7 @@ Hay {{PLURAL:$3|1 página|$3 páginas}} disponibles para su traducción. A conti
 $4
 
 ¡Gracias!
-El equipo de {{SITENAME}}
+Los administradores de traducción de {{SITENAME}}
 
 ----
 
@@ -670,6 +670,7 @@ Estás recibiendo este mensaje porque te suscribiste para recibir correos electr
 );
 
 /** French (français)
+ * @author Cquoi
  * @author DavidL
  * @author Gomoko
  * @author Tititou36
@@ -719,8 +720,8 @@ $messages['fr'] = array(
 
 Vous recevez ce courriel parce que vous vous êtes inscrit comme traducteur de $2 sur {{SITENAME}}.
 
-Il y a une nouvelle page à traduire ici: $3.
-Veuillez la traduire en cliquant sur le lien suivant:
+Il y a une nouvelle page à traduire ici : $3.
+Veuillez la traduire en cliquant sur le lien suivant :
 $4
 
 $5
@@ -728,8 +729,12 @@ $6
 
 $7
 
+
 Merci!
-Les administrateurs de traduction de {{SITENAME}}',
+Les administrateurs de traduction de {{SITENAME}}
+
+----
+Vous recevez ce courriel parce que vous signé pour recevoir des courriels concernant les traductions sur {{SITENAME}}. Pour vous désabonner ou modifier vos préférences de notification pour les traductions, veuillez visiter $8.',
 	'translationnotifications-talkpage-body' => "Bonjour $2,
 
 Vous recevez cette notification parce que vous êtes inscrit comme traducteur de $3 sur {{SITENAME}}.
@@ -906,7 +911,7 @@ $messages['he'] = array(
 	'translationnotifications-freq-month' => 'לכל היותר פעם בחודש',
 	'translationnotifications-freq-weekly' => 'סיכום שבועי',
 	'translationnotifications-freq-monthly' => 'סיכום חודשי',
-	'translationnotifications-submit' => 'רישום',
+	'translationnotifications-submit' => 'עדכון הגדרות',
 	'notifytranslators' => 'מכתבים למתרגמים',
 	'translationnotifications-submit-ok' => 'ההודעות נוספו לתור המשימות ויישלחו על־ידי משימת רקע.',
 	'translationnotifications-send-notification-button' => 'שליחת מכתבים למתרגמים',
@@ -934,7 +939,12 @@ $6
 $7
 
 תודה!
-צוות {{SITENAME}}',
+מנהלי תרגום באתר {{SITENAME}}
+
+----
+
+קיבלת את המכתב הזה כי נרשמת לקבלת מכתבים בנושא תרגומים באתר {{SITENAME}}. כדי לבטל את המינוי או לשנות את הגדרות שלך על ההודעות בנושא תרגומים, נא לבקר בדף הבא:
+$8',
 	'translationnotifications-talkpage-body' => 'שלום $2,
 
 קיבלת את ההודעה הזאת מכיוון שנרשמת בתור מתרגם ל{{GRAMMAR:תחילית|$3}} באתר {{SITENAME}}.
@@ -1062,7 +1072,7 @@ dostawaš tutu e-mejl, dokelž sy so jako přełožowar za $2 na {{GRAMMAR:lokat
 $4
 
 Wulki dźak!
-Team {{SITENAME}}
+{{SITENAME}} - přełožowanscy  administratorjo
 
 ----
 
@@ -1465,13 +1475,12 @@ $8
 
 $4
 
-
 Ви благодариме!
-Персоналот на {{SITENAME}}
+Преводните администратори на {{SITENAME}}
 
 ----
 
-Поракава ја добивате бидејќи се пријавивте да примате пошта во врска со преводи на {{SITENAME}}. Ако сакате да се откажете од известувањата или  да ги измените нагодувањата за истите, посетете ја страницата $5',
+Поракава ја добивате бидејќи се пријавивте да примате пошта во врска со преводи на {{SITENAME}}. Ако сакате да се откажете од известувањата или да ги измените нагодувањата за истите, посетете ја страницата $5',
 	'translationnotifications-digestemail-notification-line' => 'На $1, $2 ја означи страницата „$3“ за преведување. Преведете ја на $4',
 	'translationnotifications-edit-summary' => 'Известување за превод',
 	'translationnotifications-email-priority' => 'Приоритетот на оваа страница е $1.',
