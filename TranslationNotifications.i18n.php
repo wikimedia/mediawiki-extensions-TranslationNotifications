@@ -119,6 +119,7 @@ You are receiving this e-mail because you signed up to receive e-mails related t
 
 /** Message documentation (Message documentation)
  * @author Amire80
+ * @author Cquoi
  * @author Kghbln
  * @author Raymond
  * @author SPQRobin
@@ -211,7 +212,7 @@ $messages['qqq'] = array(
 	'translationnotifications-sent-title' => 'The title of the page shown after the notification is sent.
 Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
-	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified.',
+	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified. Traduction en français : "aucune" (date limite)',
 	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.',
 );
 
@@ -249,7 +250,7 @@ $messages['be-tarask'] = array(
 	'translationnotifications-freq-month' => 'Ня болей разу на месяц',
 	'translationnotifications-freq-weekly' => 'Тыднёвы дайджэст',
 	'translationnotifications-freq-monthly' => 'Месячны дайджэст',
-	'translationnotifications-submit' => 'Падпісацца',
+	'translationnotifications-submit' => 'Абнавіць налады',
 );
 
 /** Breton (brezhoneg)
@@ -544,7 +545,7 @@ dostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ za $2 na {{GRAMMAR:l
 $4
 
 Wjeliki źěk!
-Team {{SITENAME}}
+{{SITENAME}} - pśełožowańske administratory
 
 ----
 
@@ -730,7 +731,7 @@ $6
 $7
 
 
-Merci!
+Merci !
 Les administrateurs de traduction de {{SITENAME}}
 
 ----
@@ -751,7 +752,7 @@ Merci !
 L'équipe de {{SITENAME}}",
 	'translationnotifications-notification-url-listitem' => 'traduire en $1',
 	'translationnotifications-digestemail-subject' => 'Courriel de synthèse pour les demandes de traduction de {{SITENAME}}',
-	'translationnotifications-digestemail-body' => "Bonjour $1,
+	'translationnotifications-digestemail-body' => 'Bonjour $1,
 
 Vous recevez ce courriel parce que vous inscrit comme traducteur de $2 sur {{SITENAME}}.
 
@@ -759,11 +760,12 @@ Il y a {{PLURAL:$3|1 page disponible|$3 pages disponibles}} pour la traduction. 
 
 $4
 
-Pour modifier vos préférences de notification pour les demandes de traduction, veuillez visiter  $5 
-
 Merci!
+Les administrateurs de traduction de {{SITENAME}}
 
-L'équipe de {{SITENAME}}",
+----
+
+Vous recevez ce courriel parce que vous avez souscrit à la réception de courriels concernant les traductions sur {{SITENAME}}. Pour modifier vos préférences de notification pour les traductions, veuillez visiter  $5',
 	'translationnotifications-digestemail-notification-line' => 'Sur $1, $2 a marqué "$3" pour être traduit. Vous pouvez le traduire sur $4',
 	'translationnotifications-edit-summary' => 'Notification de traduction',
 	'translationnotifications-email-priority' => 'La priorité de cette page est $1.',
@@ -774,7 +776,8 @@ L'équipe de {{SITENAME}}",
 	'translationnotifications-sent-title' => 'Notification de traduction envoyée',
 	'translationnotifications-sent-body' => 'La notification de la traduction a été envoyée.',
 	'translationnotifications-log-alllanguages' => 'toutes les langues',
-	'translationnotifications-nodeadline' => 'aucun',
+	'translationnotifications-nodeadline' => 'aucune',
+	'translationnotifications-signup-legal' => "En fournissant cette information, vous acceptez que nous puissions vous contacter concernant des sujets liés à {{SITENAME}} que nous pensons qu'ils soient intéressant pour vous. Vous acceptez que vos données soient soumises à notre [[{{MediaWiki:Privacypage}}|politique de confidentialité]].",
 );
 
 /** Galician (Galego)
@@ -864,7 +867,7 @@ Hai {{PLURAL:$3|1 nova páxina|$3 novas páxinas}} que traducir alí. A continua
 $4
 
 Grazas!
-O equipo de {{SITENAME}}
+Os administradores das traducións de {{SITENAME}}
 
 ----
 
@@ -1836,11 +1839,13 @@ die Midawaida vun {{SITENAME}}",
  */
 $messages['pl'] = array(
 	'translatorsignup' => 'Rejestracja tłumacza',
+	'translatorsignup-summary' => 'Użyj tej strony, aby wskazać, jakie języki możesz tłumaczyć w i w jaki sposób mamy się z Tobą kontaktować w sprawie nowych tłumaczeń.',
 	'translationnotifications-desc' => 'Umożliwia zarejestrować tłumacza by otrzymywać powiadomienia tłumaczeń',
 	'translationnotifications-info' => 'Informacje o użytkowniku',
 	'translationnotifications-username' => 'Nazwa użytkownika:',
 	'translationnotifications-emailstatus' => 'Stan e-mail:',
 	'translationnotifications-email-confirmed' => 'Twój adres e-mail jest potwierdzony',
+	'translationnotifications-email-disablemail' => 'Twój adres e-mail został potwierdzony, ale w [[Special:Preferences|preferencjach]] zaznaczono brak pozwolenia na przesyłanie wiadomości e-mail.',
 	'translationnotifications-email-unconfirmed' => 'Twój adres e-mail nie jest potwierdzony. $1',
 	'translationnotifications-email-notset' => 'Nie podano adresu e-mail. Można to zrobić w [[Special:Preferences|preferencjach]].',
 	'translationnotifications-languages' => 'Języki',
@@ -1859,9 +1864,11 @@ $messages['pl'] = array(
 	'translationnotifications-freq-monthly' => 'Miesięczne streszczenie',
 	'translationnotifications-submit' => 'Ustawienia aktualizacji',
 	'notifytranslators' => 'Powiadom tłumaczy',
+	'translationnotifications-submit-ok' => 'Powiadomienia zostały dodane do kolejki i są dostarczane przez zadanie w tle.',
 	'translationnotifications-send-notification-button' => 'Wyślij powiadomienia do tłumaczy',
 	'translationnotifications-deadline-label' => 'Termin do wskazania w tym powiadomieniu:',
 	'translationnotifications-languages-to-notify-label' => 'Jakie języki powiadomić:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Kody języków oddzielone przecinkami; pozostaw puste by powiadamiać dla wszystkich języków.',
 	'translationnotifications-priority' => 'Priorytet:',
 	'translationnotifications-priority-high' => 'wysoki',
 	'translationnotifications-priority-medium' => 'średni',
@@ -1890,12 +1897,19 @@ Zespół {{SITENAME}}
 
 Otrzymujesz tę wiadomość e-mail, ponieważ ten użytkownik zgodził się otrzymywać e-maile związane z tłumaczeniami portalu {{SITENAME}}. 
 Aby anulować subskrypcję lub zmienić swoje preferencje powiadamiania o tłumaczeniach, odwiedź $8',
+	'translationnotifications-notification-url-listitem' => 'przetłumacz na $1',
+	'translationnotifications-digestemail-subject' => 'Wiadomość ze streszczeniem próśb o tłumaczenie z witryny {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => 'Dnia $1, $2 oznaczył "$3" jako do przetłumaczenia. Można tłumaczyć stronę na $4.',
+	'translationnotifications-edit-summary' => 'Powiadomienie o tłumaczeniu',
 	'translationnotifications-email-priority' => 'Priorytet tej strony to  $1 .',
 	'translationnotifications-email-deadline' => 'Nieprzekraczalny termin tłumaczenia tej strony to $1 .',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|wysyłał|wysłała}} powiadomienie w sprawie tłumaczenia strony $3; języki: $4; termin $5; priorytet $6; do {{PLURAL:$7|jednego adresata|$7 adresatów}} pomyślnie, do {{PLURAL:$8|jednego adresata|$8 adresatów}} bezskutecznie, pominięto {{PLURAL:$9|jednego adresata|$9 adresatów}}',
 	'log-name-notifytranslators' => 'Powiadomienia o tłumaczeniach',
+	'log-description-notifytranslators' => 'Dziennik powiadomień wysyłanych do tłumaczy o stronach do przetłumaczenia',
 	'translationnotifications-sent-title' => 'Wysłano powiadomienie tłumaczenia',
 	'translationnotifications-sent-body' => 'Powiadomienie o tłumaczeniu zostało wysłane.',
+	'translationnotifications-log-alllanguages' => 'wszystkie języki',
+	'translationnotifications-nodeadline' => 'brak',
 );
 
 /** Russian (русский)
