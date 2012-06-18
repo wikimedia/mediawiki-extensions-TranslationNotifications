@@ -153,7 +153,7 @@ $messages['qqq'] = array(
 	'translationnotifications-freq-weekly' => 'Radio option label',
 	'translationnotifications-freq-monthly' => 'Radio option label',
 	'translationnotifications-submit' => 'Submit button text',
-	'translationnotifications-signup-success' => "A message that appears on the top of Special:TranslatorSignup after saving the preferences.",
+	'translationnotifications-signup-success' => 'A message that appears on the top of Special:TranslatorSignup after saving the preferences.',
 	'notifytranslators' => 'The title of the Special:NotifyTranslators special page.',
 	'translationnotifications-send-notification-button' => 'A title for the submit button of the translator notification form.',
 	'translationnotifications-deadline-label' => 'A label for the deadline field, which will have a datepicker.',
@@ -659,7 +659,7 @@ Los administradores de traducción de {{SITENAME}}
 
 Estás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita $5',
 	'translationnotifications-digestemail-notification-line' => 'En $1,  $2  ha marcado "$3" para su traducción. Puede traducirlo en $4',
-	'translationnotifications-edit-summary' => 'Notificación de traducción',
+	'translationnotifications-edit-summary' => 'Notificación de traducción: $1',
 	'translationnotifications-email-priority' => 'La prioridad de esta página es  $1.',
 	'translationnotifications-email-deadline' => 'La fecha límite para la traducción de esta página es  $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha enviado}} una notificación sobre la traducción de la página $3; idiomas: $4; fecha límite: $5; prioridad: $6; ha llegado a {{PLURAL:$7|un destinatario|$7  destinatarios}}, ha fallado en {{PLURAL:$8|un destinatario|$8 destinatarios}}, ha omitido a {{PLURAL:$9|un destinatario|$9 destinatarios}}',
@@ -1288,7 +1288,7 @@ Ricevi questa email perché ti sei registrato come traduttore $2 su {{SITENAME}}
 $4
 
 Grazie!
-Lo staff di {{SITENAME}}
+Gli amministratori delle traduzioni di {{SITENAME}}
 
 ----
 Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $5",
@@ -1719,7 +1719,7 @@ Er {{PLURAL:$3|staat één nieuwe pagina|staan $3 nieuwe pagina's}} ter vertalin
 $4
 
 Dank u wel!
-Medewerkers van {{SITENAME}}
+{{SITENAME}} vertaal beheerders
 
 ----
 
@@ -2172,7 +2172,7 @@ Hiện có {{PLURAL:$3|trang|$3 trang}} để dịch. Các chi tiết được �
 $4
 
 Cám ơn!
-Ban quản lý {{SITENAME}}
+Ban quản lý biên dịch {{SITENAME}}
 
 ----
 
