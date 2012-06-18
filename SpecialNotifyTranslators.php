@@ -107,12 +107,12 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'help-message' => 'translationnotifications-languages-to-notify-label-help-message',
 		);
 
-		// Priotity dropdown
+		// Priority dropdown
 		$priorityOptions = array();
 		$priorities = array( 'unset', 'high', 'medium', 'low' );
 
 		foreach ( $priorities as $priority ) {
-			$priorityMessage = wfMessage( "translationnotifications-priority-$priority" )->plain();
+			$priorityMessage = $this->getPriorityMessage( $priority )->plain();
 			$priorityOptions[$priorityMessage] = $priority;
 		}
 
@@ -291,7 +291,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	}
 
 	protected function getNotificationSubject( $userFirstLanguage ) {
-		return wfMessage(
+		return $this->msg(
 			'translationnotifications-email-subject',
 			$this->translatablePageTitle->getText()
 		)->inLanguage( $userFirstLanguage )->text();
@@ -312,7 +312,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * Returns the code of the first language to which a user signed up in
 	 * Special:TranslatorSignup.
 	 * @param User
-	 * @return array of language codes.
+	 * @return language code.
 	 */
 	protected function getUserFirstLanguage( $user ) {
 		return $this->getUserLanguageOption( $user, 1 );
@@ -345,11 +345,25 @@ class SpecialNotifyTranslators extends SpecialPage {
 		return $name;
 	}
 
-	protected function getPriorityClause() {
+	protected function getPriorityMessage( $priority ) {
+		// possible messages here:
+		// 'translationnotifications-priority-high'
+		// 'translationnotifications-priority-medium'
+		// 'translationnotifications-priority-low'
+		// 'translationnotifications-priority-unset'
+		return $this->msg( "translationnotifications-priority-$priority" );
+	}
+
+	protected function getPriorityClause( $userFirstLanguage ) {
 		if ( $this->priority === 'unset' ) {
 			return '';
 		}
-		return wfMessage( 'translationnotifications-email-priority', $this->priority );
+		return $this->msg(
+			'translationnotifications-email-priority',
+			$this->getPriorityMessage(
+				$this->priority
+			)->inLanguage( $userFirstLanguage )->text()
+		)->inLanguage( $userFirstLanguage )->text();
 	}
 
 	protected function getTranslationURL( $languageCode ) {
@@ -373,7 +387,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		foreach( $languages as $code => $langName ) {
 			$translationURL = $this->getTranslationURL( $code );
 
-			$translationMsg = wfMessage(
+			$translationMsg = $this->msg(
 				'translationnotifications-notification-url-listitem',
 				$langName
 			)->inLanguage( $inLanguage )->text();
@@ -393,11 +407,14 @@ class SpecialNotifyTranslators extends SpecialPage {
 		return implode( "\n", $translationURLsItems );
 	}
 
-	protected function getDeadlineClause() {
+	protected function getDeadlineClause( $userFirstLanguage ) {
 		if ( $this->deadlineDate === '' ) {
 			return '';
 		}
-		return wfMessage( 'translationnotifications-email-deadline',  $this->deadlineDate );
+		return $this->msg(
+			'translationnotifications-email-deadline',
+			$this->deadlineDate
+		)->inLanguage( $userFirstLanguage )->text();
 	}
 
 	/**
@@ -445,14 +462,14 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 		$emailSubject = self::getNotificationSubject( $userFirstLanguage );
 		$signupURL = SpecialPage::getTitleFor( 'TranslatorSignup' )->getCanonicalUrl();
-		$emailBody = wfMessage(
+		$emailBody = $this->msg(
 			'translationnotifications-email-body',
 			$this->getUserName( $user ),
 			$userFirstLanguage->listToText( array_values( $relevantLanguages ) ),
 			$this->translatablePageTitle,
 			$this->getTranslationURLs( $relevantLanguages, 'email', $userFirstLanguage ),
-			$this->getPriorityClause(),
-			$this->getDeadlineClause(),
+			$this->getPriorityClause( $userFirstLanguage ),
+			$this->getDeadlineClause( $userFirstLanguage ),
 			$this->notificationText,
 			$signupURL
 		)->inLanguage( $userFirstLanguage )->text();
@@ -487,29 +504,48 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$destination = 'talkpageHere' )
 	{
 		$relevantLanguages = $this->getRelevantLanguages( $user, $languagesToNotify );
-		$userFirstLanguage = Language::factory( $this->getUserFirstLanguage( $user ) );
+		$userFirstLanguageCode = $this->getUserFirstLanguage( $user );
+		$userFirstLanguage = Language::factory( $userFirstLanguageCode );
 
-		$text = wfMessage(
+		// Assume that the message is in the content language
+		// of the originating wiki.
+		global $wgContLang;
+		$dir = $wgContLang->getDir();
+		// Possible classes:
+		// mw-content-ltr, mw-content-rtl
+		$notificationText = Html::element( 'div',
+			array(
+				'lang' => $wgContLang->getCode(),
+				'class' => "mw-content-$dir"
+			),
+			$this->notificationText
+		);
+
+		$text = $this->msg(
 			'translationnotifications-talkpage-body',
 			null, // $1 was used in the past and then removed.
 			$this->getUserName( $user ),
 			$userFirstLanguage->listToText( array_values( $relevantLanguages ) ),
 			$this->translatablePageTitle,
 			$this->getTranslationURLs( $relevantLanguages, 'talkpage', $userFirstLanguage ),
-			$this->getPriorityClause(),
-			$this->getDeadlineClause(),
-			$this->notificationText
+			$this->getPriorityClause( $userFirstLanguage ),
+			$this->getDeadlineClause( $userFirstLanguage ),
+			$notificationText
 			)->inLanguage( $userFirstLanguage )->text()
 			// Bidi-isolation of site name from date
 			. $userFirstLanguage->getDirMarkEntity()
 			. ', ~~~~~'; // Date and time
 
+		$editSummary = $this->msg(
+			'translationnotifications-edit-summary',
+			$this->translatablePageTitle
+		)->inLanguage( $userFirstLanguage )->text();
 		global $wgUser;
-		$editSummary = wfMsgForContent( 'translationnotifications-edit-summary' );
 		$params = array(
 			'text' => $text,
 			'editSummary' => $editSummary,
 			'editor' => $wgUser->getId(),
+			'languageCode' => $userFirstLanguageCode,
 		);
 
 		if ( $destination === 'talkpageInOtherWiki' ) {

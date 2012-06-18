@@ -25,8 +25,22 @@ class TranslationNotificationJob extends Job {
 		}
 	}
 
+	private function textDiv() {
+		$dir = Language::factory( $this->params['languageCode'] )->getDir();
+		// Possible classes:
+		// mw-content-ltr, mw-content-rtl
+		return Html::rawElement(
+			'div',
+			array(
+				'lang' => $this->params['languageCode'],
+				'class' => "mw-content-$dir"
+			),
+			$this->params['text']
+		);
+	}
+
 	private function publishHere() {
-		$text = '== ' . $this->params['editSummary'] . " ==\n\n" . $this->params['text'];
+		$text = '== ' . $this->params['editSummary'] . " ==\n\n" . $this->textDiv();
 
 		$talkPage = new Article( $this->title, 0 );
 		$flags = $talkPage->checkFlags( 0 );
@@ -154,7 +168,7 @@ class TranslationNotificationJob extends Job {
 				'postData' => array(
 					'title' => $userTalkPage,
 					'section' => 'new',
-					'text' => $this->params['text'],
+					'text' => $this->textDiv(),
 					'token' => $editToken,
 					'summary' => $this->params['editSummary'],
 					'sectiontitle' => $this->params['subject'],

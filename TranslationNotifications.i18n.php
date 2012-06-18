@@ -104,7 +104,7 @@ Thank you!
 
 You are receiving this e-mail because you signed up to receive e-mails related to translations on {{SITENAME}}. To unsubscribe or to change your notification preferences for translations, please visit $5',
 	'translationnotifications-digestemail-notification-line' => 'On $1, $2 marked "$3" for translation. You can translate it at $4',
-	'translationnotifications-edit-summary' => 'Translation notification',
+	'translationnotifications-edit-summary' => 'Translation notification: $1',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
 	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; sent to {{PLURAL:$7|one recipient|$7 recipients}}, failed for {{PLURAL:$8|one recipient|$8 recipients}}, skipped for {{PLURAL:$9|one recipient|$9 recipients}}',
@@ -194,7 +194,7 @@ $messages['qqq'] = array(
 * $2 - user name
 * $3 - translatable page title
 * $4 - link to [[Special:Translate]] page for the users first language.',
-	'translationnotifications-edit-summary' => 'The edit summary for the notification text added to the user talk page.',
+	'translationnotifications-edit-summary' => 'The edit summary for the notification text added to the user talk page. $1 is the page title.',
 	'translationnotifications-email-priority' => 'Used in {{msg-mw|translationnotifications-email-body}}',
 	'translationnotifications-email-deadline' => 'Used in {{msg-mw|translationnotifications-email-body}}',
 	'logentry-translationnotifications-sent' => '{{logentry}}
