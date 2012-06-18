@@ -34,9 +34,20 @@ class SpecialTranslatorSignup extends SpecialPage {
 		$htmlForm->setSubmitText( $context->msg( 'translationnotifications-submit' )->text() );
 		$htmlForm->setSubmitID( 'translationnotifications-submit' );
 		$htmlForm->setSubmitCallback( array( $this, 'formSubmit' ) );
+
+		$out = $this->getOutput();
+
+		$signUpResult = $this->getRequest()->getText( 'signupresult' );
+		if ( $signUpResult === 'submitted' ) {
+			$out->wrapWikiMsg(
+				"<div class=\"successbox\">\n$1\n</div>",
+				'translationnotifications-signup-success'
+			);
+		}
+
 		$htmlForm->show();
 
-		$this->getOutput()->addInlineScript(
+		$out->addInlineScript(
 <<<JAVASCRIPT
 jQuery( function ( $ ) {
 	var toggle = function () {
@@ -168,6 +179,9 @@ JAVASCRIPT
 			$user->setOption( "translationnotifications-$key", $value );
 		}
 		$user->saveSettings();
+
+		$url = $form->getTitle()->getFullURL( array( 'signupresult' => 'submitted' ) );
+		$form->getContext()->getOutput()->redirect( $url );
 	}
 
 	protected function getOtherWikis() {
