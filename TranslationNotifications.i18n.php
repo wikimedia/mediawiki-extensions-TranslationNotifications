@@ -324,6 +324,7 @@ $messages['de'] = array(
 	'translationnotifications-freq-weekly' => 'Wöchentlicher Bericht',
 	'translationnotifications-freq-monthly' => 'Monatlicher Bericht',
 	'translationnotifications-submit' => 'Einstellungen aktualisieren',
+	'translationnotifications-signup-success' => 'Die Einstellungen zu den Übersetzungsbenachrichtigungen wurden gespeichert.',
 	'notifytranslators' => 'Übersetzer benachrichtigen',
 	'translationnotifications-submit-ok' => 'Die Übersetzungsbenachrichtigungen wurden zu einer Auftragswarteschlange hinzugefügt und werden von einem Hintergrundauftrag versandt.',
 	'translationnotifications-send-notification-button' => 'Benachrichtigung an die Übersetzer senden',
@@ -386,7 +387,7 @@ die Übersetzungsadministratoren von {{SITENAME}}
 
 Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen, besuche bitte $5.',
 	'translationnotifications-digestemail-notification-line' => 'Am $1 gab $2 die Seite „$3“ zur Übersetzung frei. Du kannst sie unter $4 übersetzen.',
-	'translationnotifications-edit-summary' => 'Übersetzungsbenachrichtigung',
+	'translationnotifications-edit-summary' => 'Übersetzungsbenachrichtigung: $1',
 	'translationnotifications-email-priority' => 'Die Übersetzungspriorität dieser Seite ist $1.',
 	'translationnotifications-email-deadline' => 'Die Frist zur Übersetzung dieser Seite läuft bis zum $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sandte}} eine Benachrichtigung bezüglich der Übersetzung der Seite $3 in die Sprachen $4, mit der Frist $5 und der Priorität $6, erfolgreich an {{PLURAL:$7|einen Empfänger|$7 Empfänger}} und erfolglos an {{PLURAL:$8|einen Empfänger|$8 Empfänger}}, wobei {{PLURAL:$9|eine Empfänger nicht angeschrieben wurde|$9 Empfänger nicht angeschrieben wurden}}.',
@@ -595,6 +596,7 @@ $messages['es'] = array(
 	'translationnotifications-freq-weekly' => 'Boletín semanal',
 	'translationnotifications-freq-monthly' => 'Boletín mensual',
 	'translationnotifications-submit' => 'Actualizar la configuración',
+	'translationnotifications-signup-success' => 'Se han guardado tus preferencias de notificación de traducciones.',
 	'notifytranslators' => 'Notificar a los traductores',
 	'translationnotifications-submit-ok' => 'Las notificaciones se han añadido a una cola y son enviadas mediante una tarea en segundo plano.',
 	'translationnotifications-send-notification-button' => 'Enviar una notificación a los traductores',
@@ -782,7 +784,7 @@ Vous recevez ce courriel parce que vous avez souscrit à la réception de courri
 	'translationnotifications-signup-legal' => "En fournissant cette information, vous acceptez que nous puissions vous contacter concernant des sujets liés à {{SITENAME}} que nous pensons qu'ils soient intéressant pour vous. Vous acceptez que vos données soient soumises à notre [[{{MediaWiki:Privacypage}}|politique de confidentialité]].",
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -811,6 +813,7 @@ $messages['gl'] = array(
 	'translationnotifications-freq-weekly' => 'Boletín semanal',
 	'translationnotifications-freq-monthly' => 'Boletín mensual',
 	'translationnotifications-submit' => 'Actualizar a configuración',
+	'translationnotifications-signup-success' => 'Gardáronse as súas preferencias sobre a notificación de traducións.',
 	'notifytranslators' => 'Informar aos tradutores',
 	'translationnotifications-submit-ok' => 'As notificacións engadíronse a unha cola de espera; un proceso ha envialas en segundo plano.',
 	'translationnotifications-send-notification-button' => 'Enviar unha notificación aos tradutores',
@@ -875,7 +878,7 @@ Os administradores das traducións de {{SITENAME}}
 
 Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite $5',
 	'translationnotifications-digestemail-notification-line' => 'O $1, $2 marcou "$3" para a súa tradución. Pode traducila en $4',
-	'translationnotifications-edit-summary' => 'Notificación de tradución',
+	'translationnotifications-edit-summary' => 'Notificación de tradución: $1',
 	'translationnotifications-email-priority' => 'A prioridade desta páxina é $1.',
 	'translationnotifications-email-deadline' => 'A data límite para traducir a páxina é $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|enviou}} correctamente unha notificación sobre a tradución da páxina "$3"; linguas: $4; data límite: $5; prioridade: $6; {{PLURAL:$7|recibiuna 1 destinatario|recibírona $7 destinatarios}}; {{PLURAL:$8|1 destinatario non a recibiu|$8 destinatarios non a recibiron}}; {{PLURAL:$9|omitiuse 1 destinatario|omitíronse $9 destinatarios}}',
@@ -1020,6 +1023,7 @@ $messages['hsb'] = array(
 	'translationnotifications-freq-weekly' => 'Tydźenska rozprawa',
 	'translationnotifications-freq-monthly' => 'Měsačna rozprawa',
 	'translationnotifications-submit' => 'Nastajenja aktualizować',
+	'translationnotifications-signup-success' => 'Nastajenja twojich přełožowanskich zdźělenkow su so składowali.',
 	'notifytranslators' => 'Přełožowarjow informować',
 	'translationnotifications-submit-ok' => 'Źdźělenki su so čakanskemu rynčkej přidali a dodawaja so přez proces w pozadku.',
 	'translationnotifications-send-notification-button' => 'Přełožowarjam zdźělenku pósłać',
@@ -1083,7 +1087,7 @@ Wulki dźak!
 
 Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k $5',
 	'translationnotifications-digestemail-notification-line' => 'Dnja $1 je $2 stronu "$3" za přełožowanje woznamjenił. Móžeš ju na $4 přełožować.',
-	'translationnotifications-edit-summary' => 'Přełožowanska zdźělenka',
+	'translationnotifications-edit-summary' => 'Přełožowanska zdźělenka: $1',
 	'translationnotifications-email-priority' => 'Priorita tuteje strony je $1.',
 	'translationnotifications-email-deadline' => 'Termin za přełožowanje tuteje strony je $1.',
 	'logentry-translationnotifications-sent' => '$1 je zdźělenku wo přełožowanskej stronje $3 {{GENDER:$2|pósłał|posłała}}; rěče: $4; termin $5; priorita $6; je ju na {{PLURAL:$7|jednoho přijimarja|$7 přijimarjow|$7 přijimarjow|$7 prijimarjow}}  {{GENDER:$2|pósłał|pósłała}}, je so njeporadźiła za {{PLURAL:$8|jednoho přijimarja|$8 přijimarjow|$8 přijimarjow|$8 přijimarjow}}, je so přeskočiła za  {{PLURAL:$9|jednoho přijimarja|$9 přijimarjow|$9 přijimarjow|$9 přijimarjow}}.',
@@ -1125,6 +1129,7 @@ $messages['ia'] = array(
 	'translationnotifications-freq-weekly' => 'Digesto septimanal',
 	'translationnotifications-freq-monthly' => 'Digesto mensual',
 	'translationnotifications-submit' => 'Actualisar configurationes',
+	'translationnotifications-signup-success' => 'Tu preferentias concernente le notification de traductiones ha essite confirmate.',
 	'notifytranslators' => 'Notificar traductores',
 	'translationnotifications-submit-ok' => 'Notificationes ha essite addite a un cauda e es livrate per un processo in secunde plano.',
 	'translationnotifications-send-notification-button' => 'Inviar un notification a traductores',
@@ -1183,13 +1188,13 @@ Il ha {{PLURAL:$3|1 pagina|$3 paginas}} disponibile pro traduction. Ecce le deta
 $4
 
 Gratias!
-Le equipa de {{SITENAME}}
+Le administratores de traduction de {{SITENAME}}
 
 ----
 
 Tu ha recipite iste message perque tu te ha inscribite pro reciper e-mail sur traductiones in {{SITENAME}}. Pro cancellar le subscription o pro cambiar le preferentias de notification pro traductiones, per favor visita $5',
 	'translationnotifications-digestemail-notification-line' => 'Le $1, $2 marcava "$3" pro traduction. Tu pote traducer lo a $4',
-	'translationnotifications-edit-summary' => 'Notification de traduction',
+	'translationnotifications-edit-summary' => 'Notification de traduction: $1',
 	'translationnotifications-email-priority' => 'Le prioritate de iste pagina es $1.',
 	'translationnotifications-email-deadline' => 'Le data limite pro traducer iste pagina es $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|inviava}} un notification sur le traduction del pagina $3; linguas: $4; data limite: $5; prioritate: $6; inviate a {{PLURAL:$7|un destinatario|$7 destinatarios}}, invio fallite pro {{PLURAL:$8|un destinatario|$8 destinatarios}}, non inviate a {{PLURAL:$9|un destinatario|$9 destinatarios}}',
@@ -1232,6 +1237,7 @@ $messages['it'] = array(
 	'translationnotifications-freq-weekly' => 'Riepilogo settimanale',
 	'translationnotifications-freq-monthly' => 'Riepilogo mensile',
 	'translationnotifications-submit' => 'Aggiorna impostazioni',
+	'translationnotifications-signup-success' => 'Le preferenze per le notifiche sulle traduzioni sono state salvate.',
 	'notifytranslators' => 'Informa i traduttori',
 	'translationnotifications-submit-ok' => 'Le notifiche sono state aggiunte a una coda e vengono consegnate da un processo in background.',
 	'translationnotifications-send-notification-button' => 'Invia una notifica ai traduttori',
@@ -1293,7 +1299,7 @@ Gli amministratori delle traduzioni di {{SITENAME}}
 ----
 Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $5",
 	'translationnotifications-digestemail-notification-line' => 'Il $1, $2 ha segnalato la pagina "$3" affinché venga tradotta. Puoi tradurla su $4',
-	'translationnotifications-edit-summary' => 'Notifica di traduzione',
+	'translationnotifications-edit-summary' => 'Notifica di traduzione: $1',
 	'translationnotifications-email-priority' => 'La priorità di questa pagina è $1.',
 	'translationnotifications-email-deadline' => 'Il termine ultimo per la traduzione di questa pagina è $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha inviato}} una notifica sulla traduzione della pagina $3; lingue: $4; termine: $5; priorità: $6; inviata a {{PLURAL:$7|un destinatario|$7 destinatari}}, non inviata a {{PLURAL:$8|un destinatario|$8 destinatari}}, omessa a {{PLURAL:$9|un destinatario|$9 destinatari}}',
@@ -1422,6 +1428,7 @@ $messages['mk'] = array(
 	'translationnotifications-freq-weekly' => 'Неделен преглед',
 	'translationnotifications-freq-monthly' => 'Месечен преглед',
 	'translationnotifications-submit' => 'Измени поставки',
+	'translationnotifications-signup-success' => 'Вашите нагодувања на преводните известувања се зачувани.',
 	'notifytranslators' => 'Известување на преведувачите',
 	'translationnotifications-submit-ok' => 'Известувањата се додадени во редицата на чекање и се испорачуваат со позадинска задача.',
 	'translationnotifications-send-notification-button' => 'Испрати известување до преведувачите',
@@ -1487,7 +1494,7 @@ $4
 
 Поракава ја добивате бидејќи се пријавивте да примате пошта во врска со преводи на {{SITENAME}}. Ако сакате да се откажете од известувањата или да ги измените нагодувањата за истите, посетете ја страницата $5',
 	'translationnotifications-digestemail-notification-line' => 'На $1, $2 ја означи страницата „$3“ за преведување. Преведете ја на $4',
-	'translationnotifications-edit-summary' => 'Известување за превод',
+	'translationnotifications-edit-summary' => 'Известување за превод: $1',
 	'translationnotifications-email-priority' => 'Приоритетот на оваа страница е $1.',
 	'translationnotifications-email-deadline' => 'Крајниот рок за преведување на оваа страница е $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|испрати}} известување за преведување на страницата $3; јазици: $4; краен рок: $5; приоритет: $6. Известувањето е испратено на {{PLURAL:$7|еден примач|$7 примачи}}, не успеа кај {{PLURAL:$8|еден примач|$8 примачи}} и изостави {{PLURAL:$9|еден примач|$9 примачи}}',
@@ -1661,6 +1668,7 @@ $messages['nl'] = array(
 	'translationnotifications-freq-weekly' => 'Wekelijkse samenvatting',
 	'translationnotifications-freq-monthly' => 'Maandelijkse samenvatting',
 	'translationnotifications-submit' => 'Instellingen bijwerken',
+	'translationnotifications-signup-success' => 'Uw voorkeuren voor meldingen over vertalingen zijn opgeslagen.',
 	'notifytranslators' => 'Meldingen voor vertalers',
 	'translationnotifications-submit-ok' => 'De meldingen zijn toegevoegd aan een wachtrij en worden via een achtergrondtaak afgeleverd.',
 	'translationnotifications-send-notification-button' => 'Stuur een bericht naar vertalers',
@@ -1725,7 +1733,7 @@ Dank u wel!
 
 U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar $5 om u uit te schrijven of om uw instellingen aan te passen.",
 	'translationnotifications-digestemail-notification-line' => '$2 heeft "$3" op $1 voor vertaling gemarkeerd. U kunt de pagina vertalen via $4',
-	'translationnotifications-edit-summary' => 'Melding over vertaling',
+	'translationnotifications-edit-summary' => 'Melding over vertaling: $1',
 	'translationnotifications-email-priority' => 'De prioriteit voor deze pagina is $1.',
 	'translationnotifications-email-deadline' => 'De deadline voor het vertalen van deze pagina is  $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|heeft}} een melding verzonden voor de vertaalbare pagina $3; talen: $4; deadline: $5; prioriteit: $6; verzonden aan {{PLURAL:$7|één ontvangen|$7 ontvangers}}, mislukt voor {{PLURAL:$8|één ontvanger|$8 ontvangers}}, overgeslagen voor {{PLURAL:$9|één ontvanger|$9 ontvangers}}',
@@ -1902,7 +1910,7 @@ Aby anulować subskrypcję lub zmienić swoje preferencje powiadamiania o tłuma
 	'translationnotifications-notification-url-listitem' => 'przetłumacz na $1',
 	'translationnotifications-digestemail-subject' => 'Wiadomość ze streszczeniem próśb o tłumaczenie z witryny {{SITENAME}}',
 	'translationnotifications-digestemail-notification-line' => 'Dnia $1, $2 oznaczył "$3" jako do przetłumaczenia. Można tłumaczyć stronę na $4.',
-	'translationnotifications-edit-summary' => 'Powiadomienie o tłumaczeniu',
+	'translationnotifications-edit-summary' => 'Powiadomienie o tłumaczeniu: $1',
 	'translationnotifications-email-priority' => 'Priorytet tej strony to  $1 .',
 	'translationnotifications-email-deadline' => 'Nieprzekraczalny termin tłumaczenia tej strony to $1 .',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|wysyłał|wysłała}} powiadomienie w sprawie tłumaczenia strony $3; języki: $4; termin $5; priorytet $6; do {{PLURAL:$7|jednego adresata|$7 adresatów}} pomyślnie, do {{PLURAL:$8|jednego adresata|$8 adresatów}} bezskutecznie, pominięto {{PLURAL:$9|jednego adresata|$9 adresatów}}',
