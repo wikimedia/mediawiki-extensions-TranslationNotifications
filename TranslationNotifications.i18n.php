@@ -707,6 +707,7 @@ $messages['fr'] = array(
 	'translationnotifications-freq-weekly' => 'Résumé hebdomadaire',
 	'translationnotifications-freq-monthly' => 'Résumé mensuel',
 	'translationnotifications-submit' => 'Mettre à jour les paramètres',
+	'translationnotifications-signup-success' => 'Vos préférences de notification de traduction ont été sauvées.',
 	'notifytranslators' => 'Informer les traducteurs',
 	'translationnotifications-submit-ok' => "Des notifications ont été ajoutées à une file d'attente et sont livrées par une tâche d'arrière-plan.",
 	'translationnotifications-send-notification-button' => 'Envoyer une notification aux traducteurs',
@@ -771,7 +772,7 @@ Les administrateurs de traduction de {{SITENAME}}
 
 Vous recevez ce courriel parce que vous avez souscrit à la réception de courriels concernant les traductions sur {{SITENAME}}. Pour modifier vos préférences de notification pour les traductions, veuillez visiter  $5',
 	'translationnotifications-digestemail-notification-line' => 'Sur $1, $2 a marqué "$3" pour être traduit. Vous pouvez le traduire sur $4',
-	'translationnotifications-edit-summary' => 'Notification de traduction',
+	'translationnotifications-edit-summary' => 'Notification de traduction : $1',
 	'translationnotifications-email-priority' => 'La priorité de cette page est $1.',
 	'translationnotifications-email-deadline' => 'La date limite pour traduire cette page est $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|a envoyé}} une notification sur la traduction de la page $3; langues: $4; délai limite: $5; priorité: $6; envoyé à {{PLURAL:$7|un destinataire|$7 destinataires}}, en échec pour {{PLURAL:$8|un destinataire|$8 destinataires}}, sauté pour {{PLURAL:$9|un destinataire|$9 destinataires}}',
