@@ -491,6 +491,7 @@ $messages['dsb'] = array(
 	'translationnotifications-freq-weekly' => 'Tyźeńska rozpšawa',
 	'translationnotifications-freq-monthly' => 'Mjasecna rozpšawa',
 	'translationnotifications-submit' => 'Nastajenja aktualizěrowaś',
+	'translationnotifications-signup-success' => 'Nastajenja twójich pśełožowańskich powěźeńkow su se składowali.',
 	'notifytranslators' => 'Pśełožowarjow informěrowaś',
 	'translationnotifications-submit-ok' => 'Powěźeńki su se čakańskemu rědoju pśidali a dodawaju se pśez proces w slězynje.',
 	'translationnotifications-send-notification-button' => 'Pśełožowarjam powěźeńku pósłaś',
@@ -554,7 +555,7 @@ Wjeliki źěk!
 
 Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k $5',
 	'translationnotifications-digestemail-notification-line' => 'Dnja $1 jo $2 bok "$3" za pśełožowanje markěrował. Móžoš ju na $4 pśełožowaś.',
-	'translationnotifications-edit-summary' => 'Pśełožowańska powěźeńka',
+	'translationnotifications-edit-summary' => 'Pśełožowańska powěźeńka: $1',
 	'translationnotifications-email-priority' => 'Priorita toś togo boka jo $1.',
 	'translationnotifications-email-deadline' => 'Termin za pśełožowanje toś togo boka jo $1.',
 	'logentry-translationnotifications-sent' => '$1 jo powěźeńku wó pśełožowańskem boku $3 {{GENDER:$2|pósłał|posłała}}; rěcy: $4; termin $5; priorita $6; jo ju na {{PLURAL:$7|jadnogo dostawarja|$7 dostawarjowu|$7 dostawarjow|$7 dostawarjow}} {{GENDER:$2|pósłał|pósłała}}, jo se njeraźiła za {{PLURAL:$8|jadnogo dostawarja|$8 dostawarjowu$8 dostawarjow|$8 dostawarjow}}, jo se pśeskócyła za  {{PLURAL:$9|jadnogo dostawarja|$9 dostawarjowu|$9 dostawarjow|$9 dostawarjow}}.',
@@ -1561,6 +1562,7 @@ $messages['ms'] = array(
 	'translationnotifications-freq-weekly' => 'Ikhtisar mingguan',
 	'translationnotifications-freq-monthly' => 'Ikhtisar bulanan',
 	'translationnotifications-submit' => 'Kemaskinikan tetapan',
+	'translationnotifications-signup-success' => 'Keutamaan pemberitahuan penterjemahan anda telah disimpan.',
 	'notifytranslators' => 'Beritahu penterjemah',
 	'translationnotifications-submit-ok' => 'Pemberitahuan telah ditambahkan dalam baris gilir dan dikirim oleh kerja latar belakang.',
 	'translationnotifications-send-notification-button' => 'Hantar pemberitahuan kepada para penterjemah',
@@ -1619,13 +1621,13 @@ Terdapat $3 laman yang sedia untuk diterjemah. Butiran-butirannya adalah seperti
 $4
 
 Terima kasih!
-Kakitangan {{SITENAME}}
+Pentadbir penterjemahan {{SITENAME}}
 
 ----
 
 Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila ke $5',
 	'translationnotifications-digestemail-notification-line' => 'Pada $1, $2 memohon supaya "$3" diterjemahkannya. Anda boleh menterjemahkannya di $4',
-	'translationnotifications-edit-summary' => 'Pemberitahuan penterjemahan',
+	'translationnotifications-edit-summary' => 'Pemberitahuan penterjemahan: $1',
 	'translationnotifications-email-priority' => 'Laman ini diberi prioriti $1.',
 	'translationnotifications-email-deadline' => 'Tarikh tutup penterjemahan laman ini ialah $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|menghantar}} pemberitahuan tentang penterjemahan laman $3; bahasa: $4; tarikh tutup: $5; keutamaan: $6; dihantar ke $7 penerima, gagal disampaikan kepada $8 penerima, dilangkaunya $9 penerima',
@@ -2123,6 +2125,7 @@ $messages['vi'] = array(
 	'translationnotifications-freq-weekly' => 'Tóm tắt hàng tuần',
 	'translationnotifications-freq-monthly' => 'Tóm tắt hàng tháng',
 	'translationnotifications-submit' => 'Cập nhật tùy chọn',
+	'translationnotifications-signup-success' => 'Đã lưu các tùy chọn thông báo biên dịch.',
 	'notifytranslators' => 'Báo cho biên dịch viên',
 	'translationnotifications-submit-ok' => 'Các thông báo đã được thêm vào hàng đợi gửi trong bối cảnh.',
 	'translationnotifications-send-notification-button' => 'Gửi thông báo cho các biên dịch viên.',
@@ -2187,7 +2190,7 @@ Ban quản lý biên dịch {{SITENAME}}
 
 Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $5.',
 	'translationnotifications-digestemail-notification-line' => 'Ngày $1, $2 đã đánh dấu “$3” là cần được dịch. Bạn có thể biên dịch nó tại $4.',
-	'translationnotifications-edit-summary' => 'Thông báo biên dịch',
+	'translationnotifications-edit-summary' => 'Thông báo biên dịch: $1',
 	'translationnotifications-email-priority' => 'Trang này có ưu tiên $1.',
 	'translationnotifications-email-deadline' => 'Công việc dịch trang này sẽ hết hạn $1.',
 	'logentry-translationnotifications-sent' => '{{GENDER:$2}}$1 đã gửi thông báo về việc thông dịch trang $3; ngôn ngữ: $4; ngày hạn: $5; ưu tiên: $6; được gửi cho $7 người, không gửi được cho $8 người, bỏ qua $9 người',
