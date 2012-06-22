@@ -21,11 +21,6 @@ if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 require_once( "$IP/maintenance/Maintenance.php" );
 
 class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
-	function __construct() {
-		parent::__construct();
-		$this->setBatchSize( 100 );
-	}
-
 	function execute() {
 		$dbw = wfGetDB( DB_MASTER );
 
@@ -33,10 +28,6 @@ class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
 		$this->output( "Deleting empty {$langPropertyPrefix}* property values\n" );
 
 		$propertyLikePattern = $dbw->buildLike( $langPropertyPrefix, $dbw->anyString() );
-		$propertyDelConds = array(
-			"up_property $propertyLikePattern",
-			'up_value' => '',
-		);
 
 		$res = $dbw->delete(
 			'user_properties',
