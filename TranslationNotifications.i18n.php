@@ -462,7 +462,7 @@ Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Ü
 	'translationnotifications-signup-legal' => 'Mit Angabe dieser Informationen stimmen Sie zu, dass wir Sie bezüglich Themen im Zusammenhang mit {{SITENAME}} kontaktieren können, die unserer Meinung nach für Sie von Interesse sind. Sie stimmen zudem zu, dass Ihre Daten unseren [[{{MediaWiki:Privacypage}}|Datenschutzgrundsätzen]] unterliegen.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -996,7 +996,7 @@ $4
 	'translationnotifications-nodeadline' => 'אין',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
