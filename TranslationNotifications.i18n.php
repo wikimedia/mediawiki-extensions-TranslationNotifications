@@ -390,7 +390,7 @@ Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Üb
 	'translationnotifications-edit-summary' => 'Übersetzungsbenachrichtigung: $1',
 	'translationnotifications-email-priority' => 'Die Übersetzungspriorität dieser Seite ist $1.',
 	'translationnotifications-email-deadline' => 'Die Frist zur Übersetzung dieser Seite läuft bis zum $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sandte}} eine Benachrichtigung bezüglich der Übersetzung der Seite $3 in die Sprachen $4, mit der Frist $5 und der Priorität $6, erfolgreich an {{PLURAL:$7|einen Empfänger|$7 Empfänger}} und erfolglos an {{PLURAL:$8|einen Empfänger|$8 Empfänger}}, wobei {{PLURAL:$9|eine Empfänger nicht angeschrieben wurde|$9 Empfänger nicht angeschrieben wurden}}.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sandte}} eine Benachrichtigung bezüglich der Übersetzung der Seite $3 in die Sprachen $4, mit der Frist $5 und der Priorität $6, erfolgreich an {{PLURAL:$7|einen Empfänger|$7 Empfänger}} und erfolglos an {{PLURAL:$8|einen Empfänger|$8 Empfänger}}, wobei {{PLURAL:$9|ein Empfänger nicht angeschrieben wurde|$9 Empfänger nicht angeschrieben wurden}}.',
 	'log-name-notifytranslators' => 'Übersetzungsbenachrichtigungs-Logbuch',
 	'log-description-notifytranslators' => 'Das Logbuch der Benachrichtigungen, die bezüglich übersetzbarer Seiten an die Übersetzer gesandt wurden.',
 	'translationnotifications-sent-title' => 'Übersetzungsbenachrichtigung verschickt',
@@ -1730,7 +1730,7 @@ Er {{PLURAL:$3|staat één nieuwe pagina|staan $3 nieuwe pagina's}} ter vertalin
 $4
 
 Dank u wel!
-{{SITENAME}} vertaal beheerders
+Vertalingenbeheerders van {{SITENAME}}
 
 ----
 
