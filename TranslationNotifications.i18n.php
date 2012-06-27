@@ -1354,6 +1354,25 @@ $messages['ja'] = array(
 	'translationnotifications-nodeadline' => 'なし',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'translatorsignup' => '번역자 가입',
+	'translationnotifications-info' => '사용자 정보',
+	'translationnotifications-username' => '계정 이름:',
+	'translationnotifications-emailstatus' => '이메일 상태:',
+	'translationnotifications-languages' => '언어',
+	'translationnotifications-lang' => '언어 #$1',
+	'translationnotifications-nolang' => '언어 선택',
+	'translationnotifications-cmethod-email' => '이메일',
+	'translationnotifications-cmethod-talkpage' => '토론 문서',
+	'translationnotifications-cmethod-talkpage-elsewhere' => '다른 위키에서의 토론 문서',
+	'translationnotifications-cmethod-feed' => '피드',
+	'translationnotifications-priority-unset' => '(미설정)',
+	'translationnotifications-log-alllanguages' => '모든 언어',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
