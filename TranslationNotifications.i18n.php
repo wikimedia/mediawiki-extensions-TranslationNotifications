@@ -1359,18 +1359,107 @@ $messages['ja'] = array(
  */
 $messages['ko'] = array(
 	'translatorsignup' => '번역자 가입',
+	'translatorsignup-summary' => '당신이 번역할 언어를 나타내고 새로운 번역 요청에 대해 연락을 하고 싶어하는지에 대해 이 문서를 사용합니다.',
+	'translationnotifications-desc' => '번역자가 번역 알림에 가입 허용',
 	'translationnotifications-info' => '사용자 정보',
 	'translationnotifications-username' => '계정 이름:',
 	'translationnotifications-emailstatus' => '이메일 상태:',
+	'translationnotifications-email-confirmed' => '이메일 주소가 인증되었습니다',
+	'translationnotifications-email-disablemail' => '이메일 주소가 인증되었지만 [[Special:Preferences|사용자 환경 설정]]에서 당신은 전자 우편의 수신을 요청하지 않았습니다.',
+	'translationnotifications-email-unconfirmed' => '이메일 주소가 인증되지 않았습니다. $1',
+	'translationnotifications-email-notset' => '이메일 주소를 적지 않았습니다. [[Special:Preferences|환경 설정]]에서 이를 적을 수 있습니다.',
 	'translationnotifications-languages' => '언어',
 	'translationnotifications-lang' => '언어 #$1',
 	'translationnotifications-nolang' => '언어 선택',
+	'translationnotifications-contact' => '선호하는 연락 방법',
 	'translationnotifications-cmethod-email' => '이메일',
 	'translationnotifications-cmethod-talkpage' => '토론 문서',
 	'translationnotifications-cmethod-talkpage-elsewhere' => '다른 위키에서의 토론 문서',
 	'translationnotifications-cmethod-feed' => '피드',
+	'translationnotifications-frequency' => '연락 빈도',
+	'translationnotifications-freq-always' => '번역의 새로운 무언가가 있을 때',
+	'translationnotifications-freq-week' => '일주일에 한 번',
+	'translationnotifications-freq-month' => '한달에 한 번',
+	'translationnotifications-freq-weekly' => '주마다 알림',
+	'translationnotifications-freq-monthly' => '월마다 알림',
+	'translationnotifications-submit' => '설정 업데이트',
+	'translationnotifications-signup-success' => '사용자 번역 알림 환경 설정이 저장되었습니다.',
+	'notifytranslators' => '알림 받는 번역자',
+	'translationnotifications-submit-ok' => '알림이 대기열에 추가하고 백그라운드 작업으로 전달됩니다.',
+	'translationnotifications-send-notification-button' => '번역자한테 알림 보내기',
+	'translationnotifications-deadline-label' => '이 알림에 나타나는 마감일:',
+	'translationnotifications-languages-to-notify-label' => '어떤 언어 알리기:',
+	'translationnotifications-languages-to-notify-label-help-message' => '쉼표로 구분한 언어 코드; 모든 언어에 대해 알림을 비웁니다.',
+	'translationnotifications-priority' => '우선 순위:',
+	'translationnotifications-priority-high' => '높음',
+	'translationnotifications-priority-medium' => '중간',
+	'translationnotifications-priority-low' => '낮음',
 	'translationnotifications-priority-unset' => '(미설정)',
+	'translationnotifications-translatablepage-title' => '번역 가능한 문서 이름:',
+	'translationnotifications-error-no-translatable-pages' => '이 위키에 번역 가능한 문서가 없습니다.',
+	'translationnotifications-email-subject' => '$1 문서를 번역하세요',
+	'translationnotifications-email-body' => '$1 안녕하세요,
+
+{{SITENAME}}에 $2로 번역에 가입했기 때문에 이 이메일을 받았습니다.
+
+여기에 번역에 대한 새 문서가 있습니다: $3.
+다음 링크를 클릭하여 번역하세요:
+$4
+
+$5
+$6
+
+$7
+
+감사합니다!
+{{SITENAME}} 번역 관리자
+
+----
+
+{{SITENAME}}에 번역에 대해 이메일을 받도록 가입했기 때문에 이 이메일을 받았습니다. 구독을 취소하거나 번역에 대한 사용자 알림 환경 설정을 바꾸려면 $8로 방문하세요',
+	'translationnotifications-talkpage-body' => '$2 안녕하세요,
+
+{{SITENAME}}에 $3로 번역에 가입했기 때문에 이 알림을 받았습니다.
+
+새로운 문서인 [[$4]] 번역이 있습니다. 여기서 이를 번역하세요:
+$5
+
+$6
+$7
+
+$8
+
+감사합니다!
+
+{{SITENAME}} 번역 관리자',
+	'translationnotifications-notification-url-listitem' => '$1 번역',
+	'translationnotifications-digestemail-subject' => '{{SITENAME}}에서 번역 요청에 대해 이메일로 알립니다',
+	'translationnotifications-digestemail-body' => '$1 안녕하세요,
+
+{{SITENAME}}에 $2로 번역에 가입했기 때문에 이 이메일을 받았습니다.
+
+번역에 대한 문서 $3개가 있습니다. 자세한 내용은 아래에 있습니다.
+
+$4
+
+감사합니다!
+{{SITENAME}} 번역 관리자
+
+----
+
+{{SITENAME}}에 번역에 대해 이메일을 받도록 가입했기 때문에 이 이메일을 받았습니다. 구독을 취소하거나 번역에 대한 사용자 알림 환경 설정을 바꾸려면 $5로 방문하세요',
+	'translationnotifications-digestemail-notification-line' => '$1에 $2 사용자가 "$3" 번역을 표시했습니다. $4에서 이를 번역할 수 있습니다.',
+	'translationnotifications-edit-summary' => '번역 알림: $1',
+	'translationnotifications-email-priority' => '이 문서의 우선 순위는 $1입니다.',
+	'translationnotifications-email-deadline' => '이 문서의 번역에 대한 마감일은 $1입니다.',
+	'logentry-translationnotifications-sent' => '$1 사용자가 $3 번역 문서에 대한 알림을 {{GENDER:$2|보냄}}; 언어: $4; 마감일: $5; 우선 순위: $6; {{PLURAL:$7|받는 사람 한명|받는 사람 $7명}}한테 보냄, {{PLURAL:$8|받는 사람 한명|받는 사람 $8명}}한테 보내기 실패, {{PLURAL:$9|받는 사람 한명|받는 사람 $9명}}한테 보내기 생략',
+	'log-name-notifytranslators' => '번역 알림',
+	'log-description-notifytranslators' => '번역 가능한 문서에 대한 알림을 번역자한테 전송한 기록입니다',
+	'translationnotifications-sent-title' => '번역 알림 보내기',
+	'translationnotifications-sent-body' => '번역 알림을 보냈습니다.',
 	'translationnotifications-log-alllanguages' => '모든 언어',
+	'translationnotifications-nodeadline' => '없음',
+	'translationnotifications-signup-legal' => '우리가 당신에게 관심이 있을 것으로 생각하는 {{SITENAME}}에 우리가 관련 있는 주제와 관련하여 연락을 할 수 있도록 이 정보를 제공하는 데 동의합니다. 데이터에 동의하면 [[{{MediaWiki:Privacypage}}|개인정보 정책]]의 적용을 받습니다.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
