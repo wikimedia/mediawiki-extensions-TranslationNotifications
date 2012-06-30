@@ -20,6 +20,12 @@ $specialPageAliases['ar'] = array(
 	'TranslatorSignup' => array( 'اشتراك_المستخدمين' ),
 );
 
+/** Assamese (অসমীয়া) */
+$specialPageAliases['as'] = array(
+	'NotifyTranslators' => array( 'অনুবাদকক_জাননী_প্ৰেৰণ' ),
+	'TranslatorSignup' => array( 'অনুবাদৰ_পঞ্জীভুক্তি' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'TranslatorSignup' => array( 'Übersetzerregistrierung' ),
