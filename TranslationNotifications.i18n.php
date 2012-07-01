@@ -15,7 +15,7 @@ $messages = array();
 $messages['en'] = array(
 	'translatorsignup' => 'Translator signup',
 	'translatorsignup-summary' => 'Use this page to indicate what languages you can translate in, and how you want to be contacted about new translation requests.',
-	'translationnotifications-desc' => 'Allows translators sign up for translation notifications',
+	'translationnotifications-desc' => 'Allows translators to sign up for translation notifications',
 	'translationnotifications-info' => 'User information',
 	'translationnotifications-username' => 'Username:',
 	'translationnotifications-emailstatus' => 'E-mail status:',
@@ -762,7 +762,7 @@ L'équipe de {{SITENAME}}",
 
 Vous recevez ce courriel parce que vous inscrit comme traducteur de $2 sur {{SITENAME}}.
 
-Il y a {{PLURAL:$3|1 page disponible|$3 pages disponibles}} pour la traduction. Les détails sont donnés ci-dessous. 
+Il y a {{PLURAL:$3|1 page disponible|$3 pages disponibles}} pour la traduction. Les détails sont donnés ci-dessous.
 
 $4
 
@@ -2030,7 +2030,7 @@ Zespół {{SITENAME}}
 
 ----
 
-Otrzymujesz tę wiadomość e-mail, ponieważ ten użytkownik zgodził się otrzymywać e-maile związane z tłumaczeniami portalu {{SITENAME}}. 
+Otrzymujesz tę wiadomość e-mail, ponieważ ten użytkownik zgodził się otrzymywać e-maile związane z tłumaczeniami portalu {{SITENAME}}.
 Aby anulować subskrypcję lub zmienić swoje preferencje powiadamiania o tłumaczeniach, odwiedź $8',
 	'translationnotifications-notification-url-listitem' => 'przetłumacz na $1',
 	'translationnotifications-digestemail-subject' => 'Wiadomość ze streszczeniem próśb o tłumaczenie z witryny {{SITENAME}}',
@@ -2129,7 +2129,7 @@ $8
 
 $4
 
-Изменить свои настройки уведомлений о запросах на перевод можно на странице $5. 
+Изменить свои настройки уведомлений о запросах на перевод можно на странице $5.
 
 Спасибо!
 Сотрудники {{SITENAME}}',
