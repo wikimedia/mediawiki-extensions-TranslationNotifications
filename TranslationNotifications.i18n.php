@@ -226,7 +226,7 @@ $messages['tru'] = array(
 	'translationnotifications-lang' => 'Leşono $1',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -922,6 +922,7 @@ $messages['he'] = array(
 	'translationnotifications-freq-weekly' => 'סיכום שבועי',
 	'translationnotifications-freq-monthly' => 'סיכום חודשי',
 	'translationnotifications-submit' => 'עדכון הגדרות',
+	'translationnotifications-signup-success' => 'ההעדפות ההודעות על תרגום שלך נשמרו.',
 	'notifytranslators' => 'מכתבים למתרגמים',
 	'translationnotifications-submit-ok' => 'ההודעות נוספו לתור המשימות ויישלחו על־ידי משימת רקע.',
 	'translationnotifications-send-notification-button' => 'שליחת מכתבים למתרגמים',
@@ -978,13 +979,15 @@ $8
 
 $4
 
-כדי לשנות את העדפות ההודעות, נא לבקר בדף $5
-
 תודה!
 
-סגל {{SITENAME}}",
+מנהלי התרגום באתר {{SITENAME}}
+
+----
+
+קיבלת את המכתב הזה כי נרשמת לקבלת מכתבים בנושא תרגומים באתר {{SITENAME}}. כדי לבטל את המינוי או לשנות את הגדרות שלך על ההודעות בנושא תרגומים, נא לבקר בדף $5 .",
 	'translationnotifications-digestemail-notification-line' => 'ב־$1, המשתמש $2 סימן את הדף "$3" לתרגום. אפשר לתרגם אותו בקישור $4',
-	'translationnotifications-edit-summary' => 'הודעה על תרגום',
+	'translationnotifications-edit-summary' => 'הודעה על תרגום: $1',
 	'translationnotifications-email-priority' => 'העדיפות של הדף הזה: $1.',
 	'translationnotifications-email-deadline' => 'התאריך הסופי לתרגום הדף הזה הוא $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|שלח|שלחה}} מכתב עם בקשה לתרגם את הדף $3; שפות: $4; תאריך סופי: $5; עדיפות: $6; השליחה הצליחה ל{{PLURAL:$7|מקבל אחד|־$7 מקבלים}}, נכשלה ל{{PLURAL:$8|מקבל אחד|־$8 מקבלים}}, ודילגה על {{PLURAL:$9|מקבל אחד|$9 מקבלים}}',
@@ -994,6 +997,7 @@ $4
 	'translationnotifications-sent-body' => 'נשלח מכתב למתרגמים.',
 	'translationnotifications-log-alllanguages' => 'כל השפות',
 	'translationnotifications-nodeadline' => 'אין',
+	'translationnotifications-signup-legal' => 'מתן המידע הזה מהווה את הסכמתך לכך שניצור אתך קשר בנושאים שקשורים לאתר {{SITENAME}} ושנראה לנו שיעניינו אותך. הנתונים שלך כפופים ל[[{{MediaWiki:Privacypage}}|מדיניות הפרטיות]] שלנו.',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -1384,7 +1388,7 @@ $messages['ko'] = array(
 	'translationnotifications-freq-monthly' => '월마다 알림',
 	'translationnotifications-submit' => '설정 업데이트',
 	'translationnotifications-signup-success' => '사용자 번역 알림 환경 설정이 저장되었습니다.',
-	'notifytranslators' => '알림 받는 번역자',
+	'notifytranslators' => '알림을 받는 번역자',
 	'translationnotifications-submit-ok' => '알림이 대기열에 추가하고 백그라운드 작업으로 전달됩니다.',
 	'translationnotifications-send-notification-button' => '번역자한테 알림 보내기',
 	'translationnotifications-deadline-label' => '이 알림에 나타나는 마감일:',
@@ -1460,6 +1464,16 @@ $4
 	'translationnotifications-log-alllanguages' => '모든 언어',
 	'translationnotifications-nodeadline' => '없음',
 	'translationnotifications-signup-legal' => '우리가 당신에게 관심이 있을 것으로 생각하는 {{SITENAME}}에 우리가 관련 있는 주제와 관련하여 연락을 할 수 있도록 이 정보를 제공하는 데 동의합니다. 데이터에 동의하면 [[{{MediaWiki:Privacypage}}|개인정보 정책]]의 적용을 받습니다.',
+);
+
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'translationnotifications-username' => 'Navê bikarhêner:',
+	'translationnotifications-cmethod-email' => 'E-name',
+	'translationnotifications-translatablepage-title' => 'Navê rûpela wergerbar:',
+	'translationnotifications-log-alllanguages' => 'hemû ziman',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
