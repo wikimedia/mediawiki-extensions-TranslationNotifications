@@ -1652,7 +1652,7 @@ $messages['ml'] = array(
 	'logentry-translationnotifications-sent' => ' $1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; sent to {{PLURAL:$7|one recipient|$7 recipients}}, failed for {{PLURAL:$8|one recipient|$8 recipients}}, skipped for {{PLURAL:$9|one recipient|$9 recipients}}',
 	'translationnotifications-log-alllanguages' => 'എല്ലാ ഭാഷകളും',
 	'translationnotifications-nodeadline' => 'ഒന്നുമില്ല',
-	'translationnotifications-signup-legal' => '{{SITENAME}} എന്ന വിക്കിയെക്കുറിച്ചു് നിങ്ങള്‍ക്കു് താത്പര്യമുണ്ടായേക്കാവുന്ന വിവരങ്ങള്‍ സംബന്ധിച്ചു് ഞങ്ങള്‍ക്കു് നിങ്ങളെ ബന്ധപ്പെടാമെന്നു നിങ്ങള്‍ സമ്മതിയ്ക്കുന്നു. നിങ്ങള്‍ തരുന്ന വിവരങ്ങള്‍ [[{{MediaWiki:Privacypage}}|സ്വകാര്യതാനയം]] അനുസരിച്ചു്ആയിരിക്കും  എന്നും നിങ്ങള്‍ സമ്മതിയ്ക്കുന്നു. ',
+	'translationnotifications-signup-legal' => '{{SITENAME}} എന്ന വിക്കിയെക്കുറിച്ചു് നിങ്ങള്‍ക്കു് താത്പര്യമുണ്ടായേക്കാവുന്ന വിവരങ്ങള്‍ സംബന്ധിച്ചു് ഞങ്ങള്‍ക്കു് നിങ്ങളെ ബന്ധപ്പെടാമെന്നു നിങ്ങള്‍ സമ്മതിയ്ക്കുന്നു. നിങ്ങള്‍ തരുന്ന വിവരങ്ങള്‍ [[{{MediaWiki:Privacypage}}|സ്വകാര്യതാനയം]] അനുസരിച്ചു്ആയിരിക്കും  എന്നും നിങ്ങള്‍ സമ്മതിയ്ക്കുന്നു.',
 );
 
 /** Malay (Bahasa Melayu)
