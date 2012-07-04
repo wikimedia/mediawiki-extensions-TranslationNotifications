@@ -226,6 +226,15 @@ $messages['tru'] = array(
 	'translationnotifications-lang' => 'Leşono $1',
 );
 
+/** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
+ */
+$messages['as'] = array(
+	'translationnotifications-info' => 'সদস্যৰ তথ্য',
+	'translationnotifications-username' => 'সদস্য নাম:',
+	'translationnotifications-cmethod-feed' => 'ভুক্তি',
+);
+
 /** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
@@ -1382,8 +1391,8 @@ $messages['ko'] = array(
 	'translationnotifications-cmethod-feed' => '피드',
 	'translationnotifications-frequency' => '연락 빈도',
 	'translationnotifications-freq-always' => '번역의 새로운 무언가가 있을 때',
-	'translationnotifications-freq-week' => '일주일에 한 번',
-	'translationnotifications-freq-month' => '한달에 한 번',
+	'translationnotifications-freq-week' => '일주일에 많아야 한 번',
+	'translationnotifications-freq-month' => '한달에 많아야 한 번',
 	'translationnotifications-freq-weekly' => '주마다 알림',
 	'translationnotifications-freq-monthly' => '월마다 알림',
 	'translationnotifications-submit' => '설정 업데이트',
