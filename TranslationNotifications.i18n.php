@@ -1980,11 +1980,12 @@ die Midawaida vun {{SITENAME}}",
 
 /** Polish (polski)
  * @author BeginaFelicysym
+ * @author Woytecr
  */
 $messages['pl'] = array(
 	'translatorsignup' => 'Rejestracja tłumacza',
 	'translatorsignup-summary' => 'Użyj tej strony, aby wskazać, jakie języki możesz tłumaczyć w i w jaki sposób mamy się z Tobą kontaktować w sprawie nowych tłumaczeń.',
-	'translationnotifications-desc' => 'Umożliwia zarejestrować tłumacza by otrzymywać powiadomienia tłumaczeń',
+	'translationnotifications-desc' => 'Umożliwia zarejestrowanie się przez tłumaczy aby otrzymywać powiadomienia na temat tłumaczeń',
 	'translationnotifications-info' => 'Informacje o użytkowniku',
 	'translationnotifications-username' => 'Nazwa użytkownika:',
 	'translationnotifications-emailstatus' => 'Stan e-mail:',
@@ -2007,6 +2008,7 @@ $messages['pl'] = array(
 	'translationnotifications-freq-weekly' => 'Tygodniowe streszczenie',
 	'translationnotifications-freq-monthly' => 'Miesięczne streszczenie',
 	'translationnotifications-submit' => 'Ustawienia aktualizacji',
+	'translationnotifications-signup-success' => 'Twoje preferencje powiadomień o tłumaczeniach zostały zapisane.',
 	'notifytranslators' => 'Powiadom tłumaczy',
 	'translationnotifications-submit-ok' => 'Powiadomienia zostały dodane do kolejki i są dostarczane przez zadanie w tle.',
 	'translationnotifications-send-notification-button' => 'Wyślij powiadomienia do tłumaczy',
@@ -2043,6 +2045,20 @@ Otrzymujesz tę wiadomość e-mail, ponieważ ten użytkownik zgodził się otrz
 Aby anulować subskrypcję lub zmienić swoje preferencje powiadamiania o tłumaczeniach, odwiedź $8',
 	'translationnotifications-notification-url-listitem' => 'przetłumacz na $1',
 	'translationnotifications-digestemail-subject' => 'Wiadomość ze streszczeniem próśb o tłumaczenie z witryny {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Witaj $1,
+
+Otrzymujesz ten e-mail ponieważ zarejestrowałeś się jako tłumacz na $2 na stronie {{SITENAME}}.
+
+{{PLURAL:$3|Jest dostępna jedna strona|Są dostępne $3 strony}} do przetłumaczenia. Szczegóły podane są niżej.
+
+$4
+
+Dziękujemy!
+Administratorzy tłumaczeń {{SITENAME}}
+
+----
+
+Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile dotyczące tłumaczeń na {{SITENAME}}. Aby wypisać się ze subskrypcji lub zmienić preferencje powiadomień, odwiedź stronę $5',
 	'translationnotifications-digestemail-notification-line' => 'Dnia $1, $2 oznaczył "$3" jako do przetłumaczenia. Można tłumaczyć stronę na $4.',
 	'translationnotifications-edit-summary' => 'Powiadomienie o tłumaczeniu: $1',
 	'translationnotifications-email-priority' => 'Priorytet tej strony to  $1 .',
