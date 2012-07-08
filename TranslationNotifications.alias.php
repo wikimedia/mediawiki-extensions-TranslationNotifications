@@ -28,6 +28,7 @@ $specialPageAliases['as'] = array(
 
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
+	'NotifyTranslators' => array( 'Übersetzerbenachrichtigung' ),
 	'TranslatorSignup' => array( 'Übersetzerregistrierung' ),
 );
 
