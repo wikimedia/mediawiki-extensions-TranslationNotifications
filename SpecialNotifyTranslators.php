@@ -30,10 +30,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 	}
 
 	public function execute( $parameters ) {
-		global $wgUser, $wgContLang, $wgLang;
+		global $wgContLang;
 		$this->setHeaders();
 
-		if ( !$wgUser->isallowed( self::$right ) ) {
+		if ( !$this->getUser()->isallowed( self::$right ) ) {
 			throw new PermissionsError( self::$right );
 		}
 
@@ -60,7 +60,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		}
 
 		// Dummy dropdown, will be invisible. Used as data source for language name autocompletion.
-		$languageSelector = Xml::languageSelector( $wgContLang->getCode(), false, $wgLang->getCode() );
+		$languageSelector = Xml::languageSelector( $wgContLang->getCode(), false, $this->getLanguage()->getCode() );
 		$output->addHtml( $languageSelector[1] );
 
 		$output->addModules( 'ext.translationnotifications.notifytranslators' );
@@ -156,8 +156,6 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * TODO: document
 	 */
 	public function submitNotifyTranslatorsForm( $formData, $form ) {
-		global $wgUser, $wgLang;
-
 		$this->translatablePageTitle = Title::newFromID( $formData['TranslatablePage'] );
 		$this->notificationText = $formData['NotificationText'];
 		$this->priority = $formData['Priority'];
@@ -197,7 +195,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 				throw new MWException( "A notification must not be sent only to translators to the source language." );
 			}
 
-			$languagesForLog = $wgLang->commaList( $languagesToNotify );
+			$languagesForLog = $this->getLanguage()->commaList( $languagesToNotify );
 		} else {
 			// All languages except the source language
 			$translatorsConds[] = "up_value <> '$pageSourceLangCode'";
@@ -284,7 +282,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$this->translatablePageTitle,
 			'', // No comments
 			$logParams,
-			$wgUser
+			$this->getUser()
 		);
 
 		return true;
@@ -474,10 +472,11 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$signupURL
 		)->inLanguage( $userFirstLanguage )->text();
 
-		global $wgUser, $wgNoReplyAddress;
+		global $wgNoReplyAddress;
+		$sender = $this->getUser();
 
 		// Do not publish the sender's email, but include his/her name
-		$emailFrom = new MailAddress( $wgNoReplyAddress, $wgUser->getName(), $wgUser->getRealName() );
+		$emailFrom = new MailAddress( $wgNoReplyAddress, $sender->getName(), $sender->getRealName() );
 		$emailTo = new MailAddress( $user );
 		$params = array(
 			'to' => $emailTo,
@@ -540,11 +539,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'translationnotifications-edit-summary',
 			$this->translatablePageTitle
 		)->inLanguage( $userFirstLanguage )->text();
-		global $wgUser;
 		$params = array(
 			'text' => $text,
 			'editSummary' => $editSummary,
-			'editor' => $wgUser->getId(),
+			'editor' => $this->getUser()->getId(),
 			'languageCode' => $userFirstLanguageCode,
 		);
 
