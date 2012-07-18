@@ -33,7 +33,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		global $wgContLang;
 		$this->setHeaders();
 
-		if ( !$this->getUser()->isallowed( self::$right ) ) {
+		if ( !$this->getUser()->isAllowed( self::$right ) ) {
 			throw new PermissionsError( self::$right );
 		}
 
