@@ -66,7 +66,7 @@ JAVASCRIPT
 	}
 
 	public function getDataModel() {
-		global $wgTranslationNotificationsContactMethods, $wgLang;
+		global $wgTranslationNotificationsContactMethods;
 
 		$m['username'] = array(
 			'type' => 'info',
@@ -111,14 +111,14 @@ JAVASCRIPT
 		for ( $i = 1; $i < 4; $i++ ) {
 			$m["lang-$i"] = array(
 				'type' => 'select',
-				'label-message' => array( "translationnotifications-lang", $wgLang->formatNum( $i ) ),
+				'label-message' => array( "translationnotifications-lang", $this->getLanguage()->formatNum( $i ) ),
 				'section' => 'languages',
 				'options' => $options,
 				'default' => $user->getOption( "translationnotifications-lang-$i" ),
 			);
 
 			if ( $i === 1 ) {
-				$m["lang-$i"]['default'] = $user->getOption( "translationnotifications-lang-$i", $wgLang->getCode() );
+				$m["lang-$i"]['default'] = $user->getOption( "translationnotifications-lang-$i", $this->getLanguage()->getCode() );
 				$m["lang-$i"]['required'] = true;
 			}
 		}
@@ -166,11 +166,9 @@ JAVASCRIPT
 	}
 
 	public function formSubmit( $formData, $form ) {
-		global $wgRequest;
-
 		$user = $this->getUser();
 
-		if ( $wgRequest->getVal( 'x' ) === $this->msg( 'confirmemail_send' )->text() ) {
+		if ( $this->getRequest()->getVal( 'x' ) === $this->msg( 'confirmemail_send' )->text() ) {
 			$user->sendConfirmationMail( 'set' );
 			return;
 		}
