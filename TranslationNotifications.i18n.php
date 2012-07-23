@@ -232,7 +232,13 @@ $messages['tru'] = array(
 $messages['as'] = array(
 	'translationnotifications-info' => 'সদস্যৰ তথ্য',
 	'translationnotifications-username' => 'সদস্য নাম:',
+	'translationnotifications-emailstatus' => 'ই-মেইলৰ স্থিতি:',
+	'translationnotifications-languages' => 'ভাষাসমূহ',
+	'translationnotifications-lang' => 'ভাষা #$1',
+	'translationnotifications-cmethod-email' => 'ই-মেইল',
+	'translationnotifications-cmethod-talkpage' => 'আলোচনা পৃষ্ঠা',
 	'translationnotifications-cmethod-feed' => 'ভুক্তি',
+	'translationnotifications-log-alllanguages' => 'সকলোবোৰ ভাষা',
 );
 
 /** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
@@ -471,6 +477,28 @@ Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Ü
 	'translationnotifications-signup-legal' => 'Mit Angabe dieser Informationen stimmen Sie zu, dass wir Sie bezüglich Themen im Zusammenhang mit {{SITENAME}} kontaktieren können, die unserer Meinung nach für Sie von Interesse sind. Sie stimmen zudem zu, dass Ihre Daten unseren [[{{MediaWiki:Privacypage}}|Datenschutzgrundsätzen]] unterliegen.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'translationnotifications-info' => 'Zanışiya Karberi',
+	'translationnotifications-username' => 'Namey karberi:',
+	'translationnotifications-emailstatus' => 'Weziyetê e-posta:',
+	'translationnotifications-languages' => 'Zıwani',
+	'translationnotifications-lang' => 'Zıwan: $1',
+	'translationnotifications-nolang' => 'Zıwan weçinayış',
+	'translationnotifications-contact' => 'Metodê irtibat dê timarkerdışi',
+	'translationnotifications-cmethod-email' => 'E-posta',
+	'translationnotifications-cmethod-talkpage' => 'Pela werênayışi',
+	'translationnotifications-cmethod-feed' => 'Cı resne:',
+	'translationnotifications-priority' => 'Wahdeyey:',
+	'translationnotifications-priority-high' => 'berz',
+	'translationnotifications-priority-medium' => 'werte',
+	'translationnotifications-priority-low' => 'kılm',
+	'translationnotifications-log-alllanguages' => 'zıwani pêro',
+	'translationnotifications-nodeadline' => 'çıniyo',
+);
+
 /** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
@@ -682,6 +710,114 @@ Estás recibiendo este mensaje porque te suscribiste para recibir correos electr
 	'translationnotifications-log-alllanguages' => 'todos los idiomas',
 	'translationnotifications-nodeadline' => 'ninguno',
 	'translationnotifications-signup-legal' => 'Usted acepta que al suministrar esta información nosotros podamos ponernos en contacto con usted en relación con temas relacionados con {{SITENAME}} que pensemos puedan ser de interés para usted. Usted acepta que sus datos puedan ser almacenados en los Estados Unidos de América y estar sujetos a nuestra [[{{MediaWiki:Privacypage}}| política de privacidad de datos.]]',
+);
+
+/** Estonian (eesti)
+ * @author Pikne
+ */
+$messages['et'] = array(
+	'translatorsignup' => 'Tõlkijana ülesandmine',
+	'translatorsignup-summary' => 'Kasuta seda lehekülge, et näidata, millistesse keeltesse oskad tõlkida ja et määrata, kuidas sulle uutest tõlkepalvetest teatada.',
+	'translationnotifications-desc' => 'Võimaldab tõlkijatel tõlketeavitusi tellida.',
+	'translationnotifications-info' => 'Kasutajateave',
+	'translationnotifications-username' => 'Kasutajanimi:',
+	'translationnotifications-emailstatus' => 'E-posti olek:',
+	'translationnotifications-email-confirmed' => 'Sinu e-posti aadress on kinnitatud.',
+	'translationnotifications-email-disablemail' => 'Sinu e-posti aadress on kinnitatud, aga oled [[Special:Preferences|eelistustes]] määranud, et ei soovi e-kirju saada.',
+	'translationnotifications-email-unconfirmed' => 'Sinu e-posti aadress on kinnitamata. $1',
+	'translationnotifications-email-notset' => 'Sa pole e-posti aadressi esitanud. Saad seda teha [[Special:Preferences|eelistustes]].',
+	'translationnotifications-languages' => 'Keeled',
+	'translationnotifications-lang' => '$1. keel',
+	'translationnotifications-nolang' => 'Vali keel',
+	'translationnotifications-contact' => 'Eelistatud teavitusviisid',
+	'translationnotifications-cmethod-email' => 'E-kiri',
+	'translationnotifications-cmethod-talkpage' => 'Arutelulehekülg',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Arutelulehekülg teises vikis',
+	'translationnotifications-frequency' => 'Teavitussagedus',
+	'translationnotifications-freq-always' => 'Alati, kui on midagi uut tõlkida',
+	'translationnotifications-freq-week' => 'Mitte enam kui kord nädalas',
+	'translationnotifications-freq-month' => 'Mitte enam kui kord kuus',
+	'translationnotifications-freq-weekly' => 'Nädala ülevaade',
+	'translationnotifications-freq-monthly' => 'Kuu ülevaade',
+	'translationnotifications-submit' => 'Uuenda sätteid',
+	'translationnotifications-signup-success' => 'Sinu tõlketeavituse eelistused salvestati.',
+	'notifytranslators' => 'Tõlkijate teavitamine',
+	'translationnotifications-submit-ok' => 'Teavitused on lisatud tööjärge ja need lähetab taustprotsess.',
+	'translationnotifications-send-notification-button' => 'Saada teavitus tõlkijatele',
+	'translationnotifications-deadline-label' => 'Tähtaeg, mis selles teavituses tuuakse:',
+	'translationnotifications-languages-to-notify-label' => 'Keeled, mida teavitus puudutab:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Komaga eraldatud keelekoodid; jäta tühjaks, et teavitada kõiki keeli.',
+	'translationnotifications-priority' => 'Tähtsus:',
+	'translationnotifications-priority-high' => 'väga oluline',
+	'translationnotifications-priority-medium' => 'keskmise tähtsusega',
+	'translationnotifications-priority-low' => 'väheoluline',
+	'translationnotifications-priority-unset' => '(määramata)',
+	'translationnotifications-translatablepage-title' => 'Tõlgitava lehekülje pealkiri:',
+	'translationnotifications-error-no-translatable-pages' => 'Tõlgitavad leheküljed puuduvad selles vikis.',
+	'translationnotifications-email-subject' => 'Palun tõlgi lehekülg $1',
+	'translationnotifications-email-body' => 'Tere, $1.
+
+Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $2 keelde tõlkijana.
+
+Tõlgitavate lehekülgede hulka on lisatud $3.
+Et see tõlkida, klõpsa palun järgmisele lingile:
+$4
+
+$5
+$6
+
+$7
+
+Aitäh!
+Tõlkeadministraatorid
+{{SITENAME}}
+
+----
+
+Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge $8.',
+	'translationnotifications-talkpage-body' => 'Tere, $2.
+
+Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $3 keelde tõlkijana.
+Tõlgitavate lehekülgede hulka on lisatud [[$4]]. Palun tõlgi see siin:
+$5
+
+$6
+$7
+
+$8
+
+Aitäh!
+
+Tõlkeadministraatorid
+{{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'tõlgi $1 keelde',
+	'translationnotifications-digestemail-subject' => 'Tõlkepalvete ülevaade võrgukohast {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Tere, $1.
+
+Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $2 keelde tõlkijana.
+{{PLURAL:$3|Üks lehekülg|$3 lehekülge}} on tõlkida. Üksikasjad leiad altpoolt.
+
+$4
+
+Aitäh!
+Tõlkeadministraatorid
+{{SITENAME}}
+
+----
+
+Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge $5.',
+	'translationnotifications-digestemail-notification-line' => '$1: $2 märkis lehekülje "$3" tõlkimiseks. Saad selle tõlkida siin: $4.',
+	'translationnotifications-edit-summary' => 'Tõlketeavitus: $1',
+	'translationnotifications-email-priority' => 'Selle lehekülje tõlkimine on $1.',
+	'translationnotifications-email-deadline' => 'Selle tõlke tähtaeg on $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|saatis}} teavituse lehekülje $3 tõlkimise kohta; keeled: $4; tähtaeg: $5; tähtsus: $6; saadetud {{PLURAL:$7|ühele|$7}} tõlkijale, {{PLURAL:$8|ühele|$8}} tõlkijale saatmine ebaõnnestus, {{PLURAL:$9|üks tõlkija|$9 tõlkijat}} vahele jäetud',
+	'log-name-notifytranslators' => 'Tõlketeavitused',
+	'log-description-notifytranslators' => 'Tõlkijatele lehekülgede tõlkimise kohta saadetud teavituste logi',
+	'translationnotifications-sent-title' => 'Tõlketeavitus saadetud',
+	'translationnotifications-sent-body' => 'Tõlketeavitus saadeti.',
+	'translationnotifications-log-alllanguages' => 'kõik keeled',
+	'translationnotifications-nodeadline' => 'puudub',
+	'translationnotifications-signup-legal' => 'Nõustud, et nende andmete saatmise järel võime sinuga ühendust võtta võrgukohaga {{SITENAME}} seotud teemadel, mis meie arvates sulle huvi võivad pakkuda. Nõustud, et sinu andmeid kasutatakse vastavalt meie [[{{MediaWiki:Privacypage}}|privaatsuspõhimõtetele]].',
 );
 
 /** French (français)
@@ -2339,6 +2475,19 @@ $messages['ta'] = array(
 	'translationnotifications-cmethod-email' => 'மின்னஞ்சல்',
 	'translationnotifications-cmethod-talkpage' => 'உரையாடல் பக்கம்',
 	'translationnotifications-submit' => 'பதிவுசெய்',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'translatorsignup' => 'Pagpaparehistro ng tagapagsalinwika',
+	'translationnotifications-edit-summary' => 'Pagpapabatid ng salinwika: $1',
+	'translationnotifications-email-priority' => 'Ang dapat na unahin sa pahinang ito ay ang $1.',
+	'translationnotifications-sent-title' => 'Naipadala na ang pagpapabatid ng salinwika',
+	'translationnotifications-sent-body' => 'Naipadala na ang pagpapabatid ng salinwika.',
+	'translationnotifications-log-alllanguages' => 'lahat ng mga wika',
+	'translationnotifications-nodeadline' => 'wala',
 );
 
 /** Ukrainian (українська)
