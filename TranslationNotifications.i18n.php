@@ -1154,7 +1154,7 @@ $messages['hsb'] = array(
 	'translationnotifications-desc' => 'Zmóžnja registrowanje přełožowarjow za přełožowanske zdźělenja',
 	'translationnotifications-info' => 'Wužiwarske informacije',
 	'translationnotifications-username' => 'Wužiwarske mjeno:',
-	'translationnotifications-emailstatus' => 'E.mejlowy status:',
+	'translationnotifications-emailstatus' => 'E-mejlowy status:',
 	'translationnotifications-email-confirmed' => 'Twoja e-mejlowa adresa je so wobkrućiła',
 	'translationnotifications-email-disablemail' => 'Twoja e-mejlowa adresa je so wobkrućiła, ale přez [[Special:Preferences|twoje nastajenja]] sy postajił, zo nochceš žanu e-mejl přijimać.',
 	'translationnotifications-email-unconfirmed' => 'Twoja e-mejlowa adresa njeje so wobkrućiła. $1',
@@ -1609,6 +1609,57 @@ $4
 	'translationnotifications-log-alllanguages' => '모든 언어',
 	'translationnotifications-nodeadline' => '없음',
 	'translationnotifications-signup-legal' => '우리가 당신에게 관심이 있을 것으로 생각하는 {{SITENAME}}에 우리가 관련 있는 주제와 관련하여 연락을 할 수 있도록 이 정보를 제공하는 데 동의합니다. 데이터에 동의하면 [[{{MediaWiki:Privacypage}}|개인정보 정책]]의 적용을 받습니다.',
+);
+
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'translatorsignup' => 'Övversäzer-Rejeßter',
+	'translatorsignup-summary' => 'En heh dä Sigg deihs De faßlääje, noh wat för en Schprooche De övversäze kanns, un wi un of De Opforderonge för et Övversäze krijje wells.',
+	'translationnotifications-desc' => 'Määd_et müjjelesch, dat Övversäzer sesch enschriive künne, öm sesch Nohreeschte övver onjedonn Övversäzongsärbeit schecke ze lohße.',
+	'translationnotifications-info' => 'Metmaacher-Daate',
+	'translationnotifications-username' => 'Metmaacher_Naame:',
+	'translationnotifications-emailstatus' => 'Enschtällonge fö de <i lang="en">e-mail</i>:',
+	'translationnotifications-email-confirmed' => 'Ding Addräß fö de <i lang="en">e-mail</i> es beschtätesch.',
+	'translationnotifications-email-disablemail' => 'Ding Addräß fö de <i lang="en">e-mail</i> es beschtätesch, ävver Do häs en [[Special:Preferences|Dinge Enschtällonge]] faßjelaat, dat De kein <i lang="en">e-mail</i> kriß.',
+	'translationnotifications-email-unconfirmed' => 'Ding Addräß fö de <i lang="en">e-mail</i> es nit beschtätesch. $1',
+	'translationnotifications-email-notset' => 'Do häs kein Addräß fö Ding <i lang="en">e-mail</i> aanjejovve, ävver Do kanns dat en [[Special:Preferences|Dinge Enschtällonge]] nohholle.',
+	'translationnotifications-languages' => 'Schprooche',
+	'translationnotifications-lang' => 'Schprooch Nommer $1',
+	'translationnotifications-nolang' => 'Söök en Schprooch uß',
+	'translationnotifications-contact' => 'De jewönschte Wääje för der Kumtak',
+	'translationnotifications-cmethod-email' => 'pä <i lang="en">e-mail</i>',
+	'translationnotifications-cmethod-talkpage' => 'övver ming Klaafsigg heh',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'övver ming Klaafsigg en enem andere Wiki',
+	'translationnotifications-cmethod-feed' => 'övver ene Abonnomangs-Kannal (<i lang="en">Feed</i>)',
+	'translationnotifications-frequency' => 'Wi öff mälde?',
+	'translationnotifications-freq-always' => 'Wann et jät Neues zom Övversäze jit',
+	'translationnotifications-freq-week' => 'Eimohl de Woch udder selldener',
+	'translationnotifications-freq-month' => 'Eimohl der Mohnd udder winnijer',
+	'translationnotifications-freq-weekly' => 'Zosammefassong vun der Woch',
+	'translationnotifications-freq-monthly' => 'Moonatlesche Zosammefaßßong',
+	'translationnotifications-submit' => 'Lohß jonn',
+	'notifytranslators' => 'Övversäzer benohreeschtijje',
+	'translationnotifications-languages-to-notify-label' => 'Opforderonge för wat för en Schprooche verschecke:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'En Leß met Köözele för Schprooche met Kommas derzwesche. Don nix enjävve, öm alle Schprooche ze krijje.',
+	'translationnotifications-priority' => 'Rang:',
+	'translationnotifications-priority-high' => 'huh',
+	'translationnotifications-priority-medium' => 'meddel',
+	'translationnotifications-priority-low' => 'klein',
+	'translationnotifications-priority-unset' => '(nit jesaz)',
+	'translationnotifications-translatablepage-title' => 'der Naame vun dä Sigg för zem Övversäze:',
+	'translationnotifications-error-no-translatable-pages' => 'Mer han kein övversäzbaa Sigge em Wiki.',
+	'translationnotifications-email-subject' => 'Bes esu jood un donn de Sigg „$1“ övversäze',
+	'translationnotifications-notification-url-listitem' => 'övversäze op $1',
+	'translationnotifications-email-priority' => 'Der Rang vun dä Sigg es $1.',
+	'translationnotifications-email-deadline' => 'Di Sigg moß bes zom $1 övversaz sin.',
+	'log-name-notifytranslators' => 'Logbooch vun de Opforderonge zem Övversäze',
+	'log-description-notifytranslators' => 'Et Logbooch övver de Nohreeschte aan Övversäzere övver de övversäzbaa Sigge',
+	'translationnotifications-sent-title' => 'Opforderonge verdeilt',
+	'translationnotifications-sent-body' => 'De Opforderonge zom Övversäze sin verdeilt woode.',
+	'translationnotifications-log-alllanguages' => 'all Schprooche',
+	'translationnotifications-nodeadline' => 'kein',
 );
 
 /** Kurdish (Latin script) (‪Kurdî (latînî)‬)
@@ -2306,6 +2357,13 @@ Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile 
 	'translationnotifications-nodeadline' => 'brak',
 );
 
+/** Portuguese (português)
+ * @author Hamilton Abreu
+ */
+$messages['pt'] = array(
+	'translationnotifications-email-deadline' => 'A data limite para traduzir esta página é $1.',
+);
+
 /** Russian (русский)
  * @author Kaganer
  */
@@ -2334,7 +2392,8 @@ $messages['ru'] = array(
 	'translationnotifications-freq-month' => 'Не чаще одного раза в месяц',
 	'translationnotifications-freq-weekly' => 'Еженедельный дайджест',
 	'translationnotifications-freq-monthly' => 'Ежемесячный дайджест',
-	'translationnotifications-submit' => 'Подписаться',
+	'translationnotifications-submit' => 'Обновить настройки',
+	'translationnotifications-signup-success' => 'Ваши настройки уведомлений о переводах сохранены.',
 	'notifytranslators' => 'Уведомить переводчиков',
 	'translationnotifications-submit-ok' => 'Уведомления были добавлены в очередь и отправляются в фоновом режиме.',
 	'translationnotifications-send-notification-button' => 'Отправить переводчикам уведомление',
@@ -2349,7 +2408,7 @@ $messages['ru'] = array(
 	'translationnotifications-translatablepage-title' => 'Имя переводимой страницы:',
 	'translationnotifications-error-no-translatable-pages' => 'В этом вики-проекте нет доступных для перевода страниц.',
 	'translationnotifications-email-subject' => 'Переведите, пожалуйста, страницу $1',
-	'translationnotifications-email-body' => 'Привет, $1,
+	'translationnotifications-email-body' => 'Здравствуйте, $1!
 
 Вы получили это письмо, так как зарегистрировались на сайте {{SITENAME}} в качестве переводчика на следующий язык: $2.
 
@@ -2363,8 +2422,12 @@ $6
 $7
 
 Спасибо!
-Администраторы переводов {{SITENAME}}',
-	'translationnotifications-talkpage-body' => 'Привет, $2,
+Администраторы переводов {{SITENAME}}
+
+----
+
+Вы получили это сообщение, поскольку подписались на получение сообщений, связанных с переводами для {{SITENAME}}. Чтобы отписаться или изменить свои настройки уведомлений о переводах, перейдите по ссылке $8.',
+	'translationnotifications-talkpage-body' => 'Здравствуйте, $2!
 
 Вы получили это письмо, так как зарегистрировались на сайте {{SITENAME}} в качестве переводчика на следующий язык: $3.
 Новая доступная для перевода страница — [[$4]]. Пожалуйста, переведите её:
@@ -2380,20 +2443,22 @@ $8
 Администраторы переводов {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'перевести на $1',
 	'translationnotifications-digestemail-subject' => 'Дайджест запросов на перевод от {{SITENAME}}',
-	'translationnotifications-digestemail-body' => 'Привет, $1,
+	'translationnotifications-digestemail-body' => 'Здравствуйте, $1!
 
-Вы получили это письмо, так как зарегистрировались на сайте {{SITENAME}} в качестве переводчика на следующий язык: $2.
+Вы получили это письмо, так как зарегистрированы на сайте {{SITENAME}} в качестве переводчика на следующий язык: $2.
 
-Имеется {{PLURAL:$3|1 страница, доступная|$3 страницы, доступные|$3 страниц, доступных}} для перевода. Подробности — ниже.
+Имеется $3 {{PLURAL:$3|страница|страницы|страниц}} для перевода. Подробности — ниже.
 
 $4
 
-Изменить свои настройки уведомлений о запросах на перевод можно на странице $5.
-
 Спасибо!
-Сотрудники {{SITENAME}}',
+Сотрудники {{SITENAME}}
+
+----
+
+Вы получили это сообщение, поскольку подписались на получение сообщений, связанных с переводами для {{SITENAME}}. Чтобы отписаться или изменить свои настройки уведомлений о переводах, перейдите по ссылке $5.',
 	'translationnotifications-digestemail-notification-line' => '$1 участник $2 пометил страницу «$3» доступную для перевода. Вы можете перевести её, перейдя по ссылке $4',
-	'translationnotifications-edit-summary' => 'Уведомление о переводе',
+	'translationnotifications-edit-summary' => 'Уведомление о переводе: $1',
 	'translationnotifications-email-priority' => 'Приоритет этой страницы — $1.',
 	'translationnotifications-email-deadline' => 'Крайний срок для перевода этой страницы — $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|отправил|отправила}} уведомление о переводе страницы $3; языки: $4; крайний срок: $5; приоритет: $6; послано {{PLURAL:$7|одному адресату|$7 адресатам|$7 адресатам}}, неудачно для {{PLURAL:$8|одного адресата|$8 адресатов}}, пропущено для {{PLURAL:$9|одного адресата|$9 адресатов}}',
@@ -2403,6 +2468,7 @@ $4
 	'translationnotifications-sent-body' => 'Отправка уведомления о переводе выполнена',
 	'translationnotifications-log-alllanguages' => 'все языки',
 	'translationnotifications-nodeadline' => 'нет',
+	'translationnotifications-signup-legal' => 'Предоставляя эту информацию, вы соглашаетесь с тем, что мы можем связаться с вами относительно связанных с {{SITENAME}} тем, которые, на наш взгляд, могут быть вам интересны. Вы также соглашаетесь с тем, что ваши персональные данные будут обрабатываться согласно нашей [[{{MediaWiki:Privacypage}}|политике конфиденциальности.]]',
 );
 
 /** Slovak (slovenčina)
@@ -2465,10 +2531,13 @@ $messages['sv'] = array(
 
 /** Tamil (தமிழ்)
  * @author Karthi.dr
+ * @author Logicwiki
  */
 $messages['ta'] = array(
 	'translationnotifications-info' => 'பயனர் தகவல்',
 	'translationnotifications-username' => 'பயனர் பெயர்:',
+	'translationnotifications-emailstatus' => 'மின்னஞ்சல் நிகழ்நிலை:',
+	'translationnotifications-email-confirmed' => 'மின்னஞ்சல் முகவரி உறுதிசெய்யப்பட்டது',
 	'translationnotifications-languages' => 'மொழிகள்',
 	'translationnotifications-lang' => 'மொழி  #$1',
 	'translationnotifications-nolang' => 'மொழியைத் தேர்ந்தெடுக்கவும்',
@@ -2482,12 +2551,106 @@ $messages['ta'] = array(
  */
 $messages['tl'] = array(
 	'translatorsignup' => 'Pagpaparehistro ng tagapagsalinwika',
+	'translatorsignup-summary' => 'Gamitin ang pahinang ito upang ipahiwatig kung anong mga wika ang mapasasalinan mo, at kung paano mo gustong kaugnayin hinggil sa bagong mga kahilingan ng pagsasalinwika.',
+	'translationnotifications-desc' => 'Nagpapahintulot sa mga tagapagsalinwika upang makapagparehistro para sa mga pagpapabatid na pangsalinwika',
+	'translationnotifications-info' => 'Impormasyon ng tagagamit',
+	'translationnotifications-username' => 'Pangalan ng tagagamit:',
+	'translationnotifications-emailstatus' => 'Katayuan ng e-liham:',
+	'translationnotifications-email-confirmed' => 'Natiyak na ang iyong tirahan ng e-liham',
+	'translationnotifications-email-disablemail' => 'Natiyak na ang iyong tirahan ng e-liham, subalit sa loob ng iyong [[Special:Preferences|mga kanaisan]] ay hiniling mong huwag makatanggap ng e-liham.',
+	'translationnotifications-email-unconfirmed' => 'Hindi pa natitiyak na ang iyong tirahan ng e-liham. $1',
+	'translationnotifications-email-notset' => 'Hindi ka nagbigay ng isang tirahan ng e-liham. Magagawa mo iyan sa loob ng iyong [[Special:Preferences|mga nais]].',
+	'translationnotifications-languages' => 'Mga wika',
+	'translationnotifications-lang' => 'Wika #$1',
+	'translationnotifications-nolang' => 'Pumili ng isang wika',
+	'translationnotifications-contact' => 'Mga pamamaraan sa mas nais na pakikipag-ugnayan',
+	'translationnotifications-cmethod-email' => 'E-liham',
+	'translationnotifications-cmethod-talkpage' => 'Pahina ng usapan',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pahina ng usapan sa ibang wiki',
+	'translationnotifications-cmethod-feed' => 'Pakain',
+	'translationnotifications-frequency' => 'Dalas ng pakikipag-ugnayan',
+	'translationnotifications-freq-always' => 'Kapag mayroong isang bagong bagay na isasalinwika',
+	'translationnotifications-freq-week' => 'Pinaka marami na ang isang ulit sa loob ng isang linggo',
+	'translationnotifications-freq-month' => 'Pinaka marami na ang isang ulit sa loob ng isang buwan',
+	'translationnotifications-freq-weekly' => 'Lingguhang katipunan',
+	'translationnotifications-freq-monthly' => 'Buwanang katipunan',
+	'translationnotifications-submit' => 'Isapanahon ang mga katakdaan',
+	'translationnotifications-signup-success' => 'Nasagip na ang iyong mga kanaisan sa pagpapabatid na pangsalinwika.',
+	'notifytranslators' => 'Pabatiran ang mga tagapagsalinwika',
+	'translationnotifications-submit-ok' => 'Naidagdag na ang mga pagpapabatid sa isang pila at naihatid sa pamamagitan ng isang panlikurang trabaho.',
+	'translationnotifications-send-notification-button' => 'Magpadala ng isang pagpapabatid sa mga tagapagsalinwika',
+	'translationnotifications-deadline-label' => 'Huling araw na ipapahiwatig sa loob ng pagpapabatid na ito:',
+	'translationnotifications-languages-to-notify-label' => 'Kung aling mga wika ang pababatiran:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Mga kodigo ng wika na pinaghihiwalay ng mga kuwit; iwanang walang laman upang ipabatid sa lahat ng mga wika.',
+	'translationnotifications-priority' => 'Dapat unahin:',
+	'translationnotifications-priority-high' => 'mataas',
+	'translationnotifications-priority-medium' => 'gitnang sukat',
+	'translationnotifications-priority-low' => 'mababa',
+	'translationnotifications-priority-unset' => '(huwag itakda)',
+	'translationnotifications-translatablepage-title' => 'Maisasalinwikang pangalan ng pahina:',
+	'translationnotifications-error-no-translatable-pages' => 'Walang mga pahinang maisasalinwika sa loob ng wiking ito.',
+	'translationnotifications-email-subject' => 'Paki isalinwika ang pahinang $1',
+	'translationnotifications-email-body' => 'Kumusta $1,
+
+Natanggap mo ang elektronikong liham na ito dahil nagparehistro ka bilang isang tagapagsalinwika sa $2 doon sa {{SITENAME}}.
+
+Mayroong isang bagong pahinang isasalinwika roon: $3.
+Paki isalinwika iyon sa pamamagitan ng paglagitik sa sumusunod na kawing:
+$4
+
+$5
+$6
+
+$7
+
+Salamat sa iyo!
+Mga tagapangasiwa ng salinwika ng {{SITENAME}} 
+
+----
+
+Nakakatanggap ka ng ganitong elektronikong liham dahil nagpatala ka upang makatanggap ng mga e-liham na may kaugnayan sa mga salinwika na nasa {{SITENAME}}. Upang huwag nang magpasipi o upang baguhin ang mga kanaisan mo ng pagpapabatid para sa mga salinwika, paki dumalaw sa $8',
+	'translationnotifications-talkpage-body' => 'Kumusta $2,
+
+Natanggap mo ang pagpapabatid na ito dahil nagpatala ka bilang isang tagapagsalinwika sa $3 doon sa {{SITENAME}}.
+Makukuha ang isang bagong pahina, ang [[$4]], para sa pagsasalinwika. Paki isalinwika iyon dito:
+$5
+
+$6
+$7
+
+$8
+
+Salamat sa iyo!
+
+Mga tagapangasiwa ng pagsasalinwika sa {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'isalinwika upang maging $1',
+	'translationnotifications-digestemail-subject' => 'Elektronikong liham ng kabuuran para sa mga kahilingan ng pagsasalinwika magmula sa {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Kumusta $1,
+
+Natanggap mo ang elektronikong liham na ito dahil nagparehistro ka bilang isang tagapagsalinwika sa $2 doon sa {{SITENAME}}.
+
+Mayroong makukuhang {{PLURAL:$3|1 pahina|$3 mga pahina}} para sa pagsasalinwika. Ibinigay sa ibaba ang mga detalye
+
+$4
+
+Salamat sa iyo!
+Mga tagapangasiwa ng salinwika ng {{SITENAME}} 
+
+----
+
+Nakakatanggap ka ng ganitong elektronikong liham dahil nagpatala ka upang makatanggap ng mga e-liham na may kaugnayan sa mga salinwika na nasa {{SITENAME}}. Upang huwag nang magpasipi o upang baguhin ang mga kanaisan mo ng pagpapabatid para sa mga salinwika, paki dalawin ang $5',
+	'translationnotifications-digestemail-notification-line' => 'Noong $1, minarkahan ni $2 ang "$3" para maisalinwika. Maisasalinwika mo ito roon sa $4',
 	'translationnotifications-edit-summary' => 'Pagpapabatid ng salinwika: $1',
 	'translationnotifications-email-priority' => 'Ang dapat na unahin sa pahinang ito ay ang $1.',
+	'translationnotifications-email-deadline' => 'Ang huling araw para sa pagsasalinwika ng pahinang ito ay $1.',
+	'logentry-translationnotifications-sent' => '{{GENDER:$2|Nagpadala}} si $1 ng isang pagpapabatid hinggil sa pagsasalinwika ng pahinang $3; mga wika: $4; huling araw: $5; pagkakauna: $6; ipinadala sa {{PLURAL:$7|isang tagatanggap|$7 mga tagatanggap}}, nabigo para sa {{PLURAL:$8|isang tagatanggap|$8 mga tagatanggap}}, nilaktawan para sa {{PLURAL:$9|isang tagatanggap|$9 mga tagatanggap}}',
+	'log-name-notifytranslators' => 'Mga pagpapabatid ng pagsasalinwika',
+	'log-description-notifytranslators' => 'Isang talaan ng mga pagpapabatid ang ipinadala sa mga tagapagsalinwika hinggil sa mga pahinang maisasalinwika',
 	'translationnotifications-sent-title' => 'Naipadala na ang pagpapabatid ng salinwika',
 	'translationnotifications-sent-body' => 'Naipadala na ang pagpapabatid ng salinwika.',
 	'translationnotifications-log-alllanguages' => 'lahat ng mga wika',
 	'translationnotifications-nodeadline' => 'wala',
+	'translationnotifications-signup-legal' => 'Sumasang-ayon ka na sa pamamagitan ng pagbibigay ng kabatirang ito na maaaring makipag-ugnayan kami sa iyo hinggil sa mga paksang may kaugnayan sa {{SITENAME}} na iniisip naming makakatawag ng pagpansin mo. Sumasang-ayon ka na ang dato mo ay nakapailalim sa aming [[{{MediaWiki:Privacypage}}|patakaran ng paglilihim.]]',
 );
 
 /** Ukrainian (українська)
