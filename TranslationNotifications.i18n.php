@@ -607,10 +607,11 @@ Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach 
 
 /** Spanish (español)
  * @author Armando-Martin
+ * @author Dferg
  */
 $messages['es'] = array(
 	'translatorsignup' => 'Inscripción de traductores',
-	'translatorsignup-summary' => 'Utiliza esta página para indicar a qué idiomas puedes traducir, y cómo deseas ser contactado sobre las nuevas solicitudes de traducción.',
+	'translatorsignup-summary' => 'Utiliza esta página para indicar a qué idiomas puedes traducir y cómo deseas ser contactado sobre las nuevas solicitudes de traducción.',
 	'translationnotifications-desc' => 'Permite a los traductores registrarse para recibir notificaciones de traducción',
 	'translationnotifications-info' => 'Información de usuario',
 	'translationnotifications-username' => 'Nombre de usuario:',
@@ -698,7 +699,7 @@ Los administradores de traducción de {{SITENAME}}
 ----
 
 Estás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita $5',
-	'translationnotifications-digestemail-notification-line' => 'En $1,  $2  ha marcado "$3" para su traducción. Puede traducirlo en $4',
+	'translationnotifications-digestemail-notification-line' => 'En $1, $2  ha marcado "$3" para su traducción. Puede traducirlo en $4',
 	'translationnotifications-edit-summary' => 'Notificación de traducción: $1',
 	'translationnotifications-email-priority' => 'La prioridad de esta página es  $1.',
 	'translationnotifications-email-deadline' => 'La fecha límite para la traducción de esta página es  $1.',
@@ -709,7 +710,7 @@ Estás recibiendo este mensaje porque te suscribiste para recibir correos electr
 	'translationnotifications-sent-body' => 'Se ha enviado la notificación de traducción.',
 	'translationnotifications-log-alllanguages' => 'todos los idiomas',
 	'translationnotifications-nodeadline' => 'ninguno',
-	'translationnotifications-signup-legal' => 'Usted acepta que al suministrar esta información nosotros podamos ponernos en contacto con usted en relación con temas relacionados con {{SITENAME}} que pensemos puedan ser de interés para usted. Usted acepta que sus datos puedan ser almacenados en los Estados Unidos de América y estar sujetos a nuestra [[{{MediaWiki:Privacypage}}| política de privacidad de datos.]]',
+	'translationnotifications-signup-legal' => 'Usted acepta que al suministrar esta información nosotros podamos ponernos en contacto con usted en relación con temas relacionados con {{SITENAME}} que pensemos puedan ser de interés para usted. Usted acepta que sus datos puedan ser almacenados en los Estados Unidos de América y estar sujetos a nuestra [[{{MediaWiki:Privacypage}}|política de protección de datos.]]',
 );
 
 /** Estonian (eesti)
