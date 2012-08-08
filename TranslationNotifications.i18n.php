@@ -180,7 +180,7 @@ $messages['qqq'] = array(
 * $1 - Translator's username or real name, if specified.
 * $2 - A comma list of language names.
 * $3 - Translatable page name.
-* $4 - A bullet list of URLs.
+* <$4> - A bullet list of URLs.
 * $5 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
 * $7 - A custom message that can be added by the notification sender.",
@@ -199,7 +199,7 @@ $messages['qqq'] = array(
 * $2 - first language preference of user
 * $3 - number of pages available for translation.
 * $4 - The list of notifications, this is the main part of the email.
-* $5 - Link to [[Special:NotifyTranslators]]',
+* <$5> - Link to [[Special:NotifyTranslators]]',
 	'translationnotifications-digestemail-notification-line' => 'The message line for notification in the digest.
 * $1 - date
 * $2 - user name
@@ -369,7 +369,7 @@ du erhältst diese E-Mail, da du dich als Übersetzer(in) für $2 auf {{SITENAME
 
 An folgender Stelle ist eine neue Seite zum Übersetzen vorhanden: $3.
 Übersetze sie bitte nach dem Klicken auf den folgenden Link:
-$4
+<$4>
 
 $5
 $6
@@ -409,7 +409,7 @@ die Übersetzungsadministratoren von {{SITENAME}}
 
 ----
 
-Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen, besuche bitte $5.',
+Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen, besuche bitte <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'Am $1 gab $2 die Seite „$3“ zur Übersetzung frei. Du kannst sie unter $4 übersetzen.',
 	'translationnotifications-edit-summary' => 'Übersetzungsbenachrichtigung: $1',
 	'translationnotifications-email-priority' => 'Die Übersetzungspriorität dieser Seite ist $1.',
@@ -442,7 +442,7 @@ Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $2 auf {{SITENAM
 
 An folgender Stelle ist eine neue Seite zum Übersetzen vorhanden: $3.
 Übersetzen Sie sie bitte nach dem Klicken auf den folgenden Link:
-$4
+<$4>
 
 $5
 $6
@@ -475,14 +475,14 @@ Es {{PLURAL:$3|ist eine Seite|sind $3 Seiten}} zum Übersetzen vorhanden. Einzel
 
 $4
 
-Um Ihre Einstellungen zu Übersetzungsbenachrichtigungen zu ändern, können Sie $5 besuchen.
+Um Ihre Einstellungen zu Übersetzungsbenachrichtigungen zu ändern, können Sie <$5> besuchen.
 
 Vielen Dank,
 die Übersetzungsadministratoren von {{SITENAME}}
 
 ----
 
-Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen, besuchen Sie bitte $5.',
+Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen, besuchen Sie bitte <$5>.',
 	'translationnotifications-signup-legal' => 'Mit Angabe dieser Informationen stimmen Sie zu, dass wir Sie bezüglich Themen im Zusammenhang mit {{SITENAME}} kontaktieren können, die unserer Meinung nach für Sie von Interesse sind. Sie stimmen zudem zu, dass Ihre Daten unseren [[{{MediaWiki:Privacypage}}|Datenschutzgrundsätzen]] unterliegen.',
 );
 
@@ -558,7 +558,7 @@ Dostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ za $2 na {{GRAMMAR:l
 
 Dajo nowy bok, kótaryž musy se pśełožowaś: $3.
 Pšosym pśełož jen, z tym až kliknjoš na slědujucy wótkaz:
-$4
+<$4>
 
 $5
 $6
@@ -599,7 +599,7 @@ Wjeliki źěk!
 
 ----
 
-Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k $5',
+Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k <$5>',
 	'translationnotifications-digestemail-notification-line' => 'Dnja $1 jo $2 bok "$3" za pśełožowanje markěrował. Móžoš ju na $4 pśełožowaś.',
 	'translationnotifications-edit-summary' => 'Pśełožowańska powěźeńka: $1',
 	'translationnotifications-email-priority' => 'Priorita toś togo boka jo $1.',
@@ -665,7 +665,7 @@ Estás recibiendo este mensaje de correo electrónico porque te inscribiste como
 
 Hay una nueva página para traducir: $3.
 Por favor tradúcela haciendo clic en el enlace siguiente:
-$4
+<$4>
 
 $5
 $6
@@ -707,7 +707,7 @@ Los administradores de traducción de {{SITENAME}}
 
 ----
 
-Estás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita $5',
+Estás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita <$5>',
 	'translationnotifications-digestemail-notification-line' => 'En $1, $2  ha marcado "$3" para su traducción. Puede traducirlo en $4',
 	'translationnotifications-edit-summary' => 'Notificación de traducción: $1',
 	'translationnotifications-email-priority' => 'La prioridad de esta página es  $1.',
@@ -771,7 +771,7 @@ Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $2 keelde tõ
 
 Tõlgitavate lehekülgede hulka on lisatud $3.
 Et see tõlkida, klõpsa palun järgmisele lingile:
-$4
+<$4>
 
 $5
 $6
@@ -815,7 +815,7 @@ Tõlkeadministraatorid
 
 ----
 
-Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge $5.',
+Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge <$5>.',
 	'translationnotifications-digestemail-notification-line' => '$1: $2 märkis lehekülje "$3" tõlkimiseks. Saad selle tõlkida siin: $4.',
 	'translationnotifications-edit-summary' => 'Tõlketeavitus: $1',
 	'translationnotifications-email-priority' => 'Selle lehekülje tõlkimine on $1.',
@@ -884,7 +884,7 @@ Vous recevez ce courriel parce que vous vous êtes inscrit comme traducteur de $
 
 Il y a une nouvelle page à traduire ici : $3.
 Veuillez la traduire en cliquant sur le lien suivant :
-$4
+<$4>
 
 $5
 $6
@@ -926,7 +926,7 @@ Les administrateurs de traduction de {{SITENAME}}
 
 ----
 
-Vous recevez ce courriel parce que vous avez souscrit à la réception de courriels concernant les traductions sur {{SITENAME}}. Pour modifier vos préférences de notification pour les traductions, veuillez visiter  $5',
+Vous recevez ce courriel parce que vous avez souscrit à la réception de courriels concernant les traductions sur {{SITENAME}}. Pour modifier vos préférences de notification pour les traductions, veuillez visiter  <$5>',
 	'translationnotifications-digestemail-notification-line' => 'Sur $1, $2 a marqué "$3" pour être traduit. Vous pouvez le traduire sur $4',
 	'translationnotifications-edit-summary' => 'Notification de traduction : $1',
 	'translationnotifications-email-priority' => 'La priorité de cette page est $1.',
@@ -991,7 +991,7 @@ Recibiu este correo electrónico porque está inscrito como tradutor ao $2 en {{
 
 Hai unha nova páxina que traducir alí: $3.
 Tradúzaa premendo na seguinte ligazón:
-$4
+<$4>
 
 $5
 $6
@@ -1033,7 +1033,7 @@ Os administradores das traducións de {{SITENAME}}
 
 ----
 
-Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite $5',
+Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite <$5>',
 	'translationnotifications-digestemail-notification-line' => 'O $1, $2 marcou "$3" para a súa tradución. Pode traducila en $4',
 	'translationnotifications-edit-summary' => 'Notificación de tradución: $1',
 	'translationnotifications-email-priority' => 'A prioridade desta páxina é $1.',
@@ -1098,7 +1098,7 @@ $messages['he'] = array(
 
 יש שם דף חדש שצריך לתרגם: $3.
 אפשר לתרגם אותו על־ידי לחיצה על הקישור הבא:
-$4
+<$4>
 
 $5
 $6
@@ -1140,7 +1140,7 @@ $4
 
 ----
 
-קיבלת את המכתב הזה כי נרשמת לקבלת מכתבים בנושא תרגומים באתר {{SITENAME}}. כדי לבטל את המינוי או לשנות את הגדרות שלך על ההודעות בנושא תרגומים, נא לבקר בדף $5 .",
+קיבלת את המכתב הזה כי נרשמת לקבלת מכתבים בנושא תרגומים באתר {{SITENAME}}. כדי לבטל את המינוי או לשנות את הגדרות שלך על ההודעות בנושא תרגומים, נא לבקר בדף <$5> .",
 	'translationnotifications-digestemail-notification-line' => 'ב־$1, המשתמש $2 סימן את הדף "$3" לתרגום. אפשר לתרגם אותו בקישור $4',
 	'translationnotifications-edit-summary' => 'הודעה על תרגום: $1',
 	'translationnotifications-email-priority' => 'העדיפות של הדף הזה: $1.',
@@ -1205,7 +1205,7 @@ Dóstawaš tutu e-mejl, dokelž sy so jako přełožowar za $2 na {{GRAMMAR:loka
 
 Je nowa strona, kotraž dyrbi so přełožować: $3.
 Prošu přełož ju kliknjo na slědowacy wotkaz:
-$4
+<$4>
 
 $5
 $6
@@ -1246,7 +1246,7 @@ Wulki dźak!
 
 ----
 
-Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k $5',
+Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k <$5>',
 	'translationnotifications-digestemail-notification-line' => 'Dnja $1 je $2 stronu "$3" za přełožowanje woznamjenił. Móžeš ju na $4 přełožować.',
 	'translationnotifications-edit-summary' => 'Přełožowanska zdźělenka: $1',
 	'translationnotifications-email-priority' => 'Priorita tuteje strony je $1.',
@@ -1311,7 +1311,7 @@ Tu recipe iste message perque tu es inscribite como traductor in $2 in {{SITENAM
 
 Il ha un nove pagina a traducer: $3.
 Per favor traduce lo a partir del sequente ligamine:
-$4
+<$4>
 
 $5
 $6
@@ -1353,7 +1353,7 @@ Le administratores de traduction de {{SITENAME}}
 
 ----
 
-Tu ha recipite iste message perque tu te ha inscribite pro reciper e-mail sur traductiones in {{SITENAME}}. Pro cancellar le subscription o pro cambiar le preferentias de notification pro traductiones, per favor visita $5',
+Tu ha recipite iste message perque tu te ha inscribite pro reciper e-mail sur traductiones in {{SITENAME}}. Pro cancellar le subscription o pro cambiar le preferentias de notification pro traductiones, per favor visita <$5>',
 	'translationnotifications-digestemail-notification-line' => 'Le $1, $2 marcava "$3" pro traduction. Tu pote traducer lo a $4',
 	'translationnotifications-edit-summary' => 'Notification de traduction: $1',
 	'translationnotifications-email-priority' => 'Le prioritate de iste pagina es $1.',
@@ -1419,7 +1419,7 @@ Ricevi questa email perché ti sei registrato come traduttore di $2 su {{SITENAM
 
 C'è una nuova pagina da tradurre: $3.
 Clicca su questo collegamento per iniziare a tradurla:
-$4
+<$4>
 
 $5
 $6
@@ -1458,7 +1458,7 @@ Grazie!
 Gli amministratori delle traduzioni di {{SITENAME}}
 
 ----
-Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $5",
+Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita <$5>",
 	'translationnotifications-digestemail-notification-line' => 'Il $1, $2 ha segnalato la pagina "$3" affinché venga tradotta. Puoi tradurla su $4',
 	'translationnotifications-edit-summary' => 'Notifica di traduzione: $1',
 	'translationnotifications-email-priority' => 'La priorità di questa pagina è $1.',
@@ -1563,7 +1563,7 @@ $messages['ko'] = array(
 
 여기에 번역에 대한 새 문서가 있습니다: $3.
 다음 링크를 클릭하여 번역하세요:
-$4
+<$4>
 
 $5
 $6
@@ -1606,7 +1606,7 @@ $4
 
 ----
 
-{{SITENAME}}에 번역에 대해 이메일을 받도록 가입했기 때문에 이 이메일을 받았습니다. 구독을 취소하거나 번역에 대한 사용자 알림 환경 설정을 바꾸려면 $5로 방문하세요',
+{{SITENAME}}에 번역에 대해 이메일을 받도록 가입했기 때문에 이 이메일을 받았습니다. 구독을 취소하거나 번역에 대한 사용자 알림 환경 설정을 바꾸려면 <$5>로 방문하세요',
 	'translationnotifications-digestemail-notification-line' => '$1에 $2 사용자가 "$3" 번역을 표시했습니다. $4에서 이를 번역할 수 있습니다.',
 	'translationnotifications-edit-summary' => '번역 알림: $1',
 	'translationnotifications-email-priority' => '이 문서의 우선 순위는 $1입니다.',
@@ -1779,7 +1779,7 @@ $messages['mk'] = array(
 
 Има нова страница што треба да се преведе: $3.
 Преведете ја на следнава врска:
-$4
+<$4>
 
 $5
 $6
@@ -1822,7 +1822,7 @@ $4
 
 ----
 
-Поракава ја добивате бидејќи се пријавивте да примате пошта во врска со преводи на {{SITENAME}}. Ако сакате да се откажете од известувањата или да ги измените нагодувањата за истите, посетете ја страницата $5',
+Поракава ја добивате бидејќи се пријавивте да примате пошта во врска со преводи на {{SITENAME}}. Ако сакате да се откажете од известувањата или да ги измените нагодувањата за истите, посетете ја страницата <$5>',
 	'translationnotifications-digestemail-notification-line' => 'На $1, $2 ја означи страницата „$3“ за преведување. Преведете ја на $4',
 	'translationnotifications-edit-summary' => 'Известување за превод: $1',
 	'translationnotifications-email-priority' => 'Приоритетот на оваа страница е $1.',
@@ -1914,7 +1914,7 @@ Anda menerima e-mel ini kerana anda telah mendaftarkan diri sebagai penterjemah 
 
 Ada satu laman baru untuk diterjemahkan di situ: $3.
 Sila terjemahkannya dengan mengklik pautan yang berikut:
-$4
+<$4>
 
 $5
 $6
@@ -1956,7 +1956,7 @@ Pentadbir penterjemahan {{SITENAME}}
 
 ----
 
-Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila ke $5',
+Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila ke <$5>',
 	'translationnotifications-digestemail-notification-line' => 'Pada $1, $2 memohon supaya "$3" diterjemahkannya. Anda boleh menterjemahkannya di $4',
 	'translationnotifications-edit-summary' => 'Pemberitahuan penterjemahan: $1',
 	'translationnotifications-email-priority' => 'Laman ini diberi prioriti $1.',
@@ -2017,7 +2017,7 @@ Du mottar denne e-posten fordi du er meldt på som oversetter til $2 på {{SITEN
 
 Det er en ny side å oversette der: $3
 Vennligst oversett den ved å følge denne lenka:
-$4
+<$4>
 
 $5
 $6
@@ -2049,7 +2049,7 @@ Det er {{PLURAL:$3|én side|$3 sider}} tilgjengelig for oversettelse. Detaljene 
 
 $4
 
-For å endre varselsinnstillingene dine, gå til $5.
+For å endre varselsinnstillingene dine, gå til <$5>.
 
 Takk!
 {{SITENAME}}s oversettelsesadministratorer',
@@ -2118,7 +2118,7 @@ U ontvangt deze e-mail omdat u zich heeft opgegeven als vertaler voor het $2 op 
 
 Er is een nieuwe pagina te vertalen: $3.
 Vertaal deze alstublieft door op de volgende verwijzing te klikken:
-$4
+<$4>
 
 $5
 $6
@@ -2160,7 +2160,7 @@ Vertalingenbeheerders van {{SITENAME}}
 
 ----
 
-U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar $5 om u uit te schrijven of om uw instellingen aan te passen.",
+U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar <$5> om u uit te schrijven of om uw instellingen aan te passen.",
 	'translationnotifications-digestemail-notification-line' => '$2 heeft "$3" op $1 voor vertaling gemarkeerd. U kunt de pagina vertalen via $4',
 	'translationnotifications-edit-summary' => 'Melding over vertaling: $1',
 	'translationnotifications-email-priority' => 'De prioriteit voor deze pagina is $1.',
@@ -2224,7 +2224,7 @@ du grigschd die E-Mail wail disch als Iwasedza fa $2 uff {{SITENAME}} oigdraache
 
 Oan der Schdell isch ä naiji Said fas Iwasedze do: $3.
 Iwasedzse bidde nochm Drigge uff:
-$4
+<$4>
 
 $5
 $6
@@ -2256,7 +2256,7 @@ du grigschd die E-Mail wail disch als Iwasedza fa $2 uff {{SITENAME}} oigdraache
 
 $4
 
-Um doi Oischdellunge fa Bnochrischdischunge fas Iwasedze zu änare, konschd $5 uffsuche.
+Um doi Oischdellunge fa Bnochrischdischunge fas Iwasedze zu änare, konschd <$5> uffsuche.
 
 Dongschä,
 die Midawaida vun {{SITENAME}}",
@@ -2324,7 +2324,7 @@ Otrzymujesz tę wiadomość e-mail, ponieważ użytkownik zarejestrował się ja
 
 Jest nowa strona do tłumaczenia:  $3 .
 Przetłumacz ją klikając poniższe łącze:
-$4
+<$4>
 
 $5
 $6
@@ -2353,7 +2353,7 @@ Administratorzy tłumaczeń {{SITENAME}}
 
 ----
 
-Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile dotyczące tłumaczeń na {{SITENAME}}. Aby wypisać się ze subskrypcji lub zmienić preferencje powiadomień, odwiedź stronę $5',
+Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile dotyczące tłumaczeń na {{SITENAME}}. Aby wypisać się ze subskrypcji lub zmienić preferencje powiadomień, odwiedź stronę <$5>',
 	'translationnotifications-digestemail-notification-line' => 'Dnia $1, $2 oznaczył "$3" jako do przetłumaczenia. Można tłumaczyć stronę na $4.',
 	'translationnotifications-edit-summary' => 'Powiadomienie o tłumaczeniu: $1',
 	'translationnotifications-email-priority' => 'Priorytet tej strony to  $1 .',
@@ -2424,7 +2424,7 @@ $messages['ru'] = array(
 
 Вот новая страница, требующая перевода:  $3.
 Пожалуйста переведите её, нажав на следующую ссылку:
-$4
+<$4>
 
 $5
 $6
@@ -2466,7 +2466,7 @@ $4
 
 ----
 
-Вы получили это сообщение, поскольку подписались на получение сообщений, связанных с переводами для {{SITENAME}}. Чтобы отписаться или изменить свои настройки уведомлений о переводах, перейдите по ссылке $5.',
+Вы получили это сообщение, поскольку подписались на получение сообщений, связанных с переводами для {{SITENAME}}. Чтобы отписаться или изменить свои настройки уведомлений о переводах, перейдите по ссылке <$5>.',
 	'translationnotifications-digestemail-notification-line' => '$1 участник $2 пометил страницу «$3» доступную для перевода. Вы можете перевести её, перейдя по ссылке $4',
 	'translationnotifications-edit-summary' => 'Уведомление о переводе: $1',
 	'translationnotifications-email-priority' => 'Приоритет этой страницы — $1.',
@@ -2606,7 +2606,7 @@ Natanggap mo ang elektronikong liham na ito dahil nagparehistro ka bilang isang 
 
 Mayroong isang bagong pahinang isasalinwika roon: $3.
 Paki isalinwika iyon sa pamamagitan ng paglagitik sa sumusunod na kawing:
-$4
+<$4>
 
 $5
 $6
@@ -2648,7 +2648,7 @@ Mga tagapangasiwa ng salinwika ng {{SITENAME}}
 
 ----
 
-Nakakatanggap ka ng ganitong elektronikong liham dahil nagpatala ka upang makatanggap ng mga e-liham na may kaugnayan sa mga salinwika na nasa {{SITENAME}}. Upang huwag nang magpasipi o upang baguhin ang mga kanaisan mo ng pagpapabatid para sa mga salinwika, paki dalawin ang $5',
+Nakakatanggap ka ng ganitong elektronikong liham dahil nagpatala ka upang makatanggap ng mga e-liham na may kaugnayan sa mga salinwika na nasa {{SITENAME}}. Upang huwag nang magpasipi o upang baguhin ang mga kanaisan mo ng pagpapabatid para sa mga salinwika, paki dalawin ang <$5>',
 	'translationnotifications-digestemail-notification-line' => 'Noong $1, minarkahan ni $2 ang "$3" para maisalinwika. Maisasalinwika mo ito roon sa $4',
 	'translationnotifications-edit-summary' => 'Pagpapabatid ng salinwika: $1',
 	'translationnotifications-email-priority' => 'Ang dapat na unahin sa pahinang ito ay ang $1.',
@@ -2713,7 +2713,7 @@ $messages['uk'] = array(
 
 Є нова сторінка для перекладу: $3.
 Будь ласка, перекладіть її, клацнувши такі посилання:
-$4
+<$4>
 
 $5
 $6
@@ -2742,6 +2742,21 @@ $8
 Адмінстрація перекладу {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'Перекласти мовою $1',
 	'translationnotifications-digestemail-subject' => 'Дайджест повідомлення електронною поштою із запитами перекладу  від {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Привіт,  $1. 
+
+Ви отримали цього листа, тому що зареєструвалися на {{SITENAME}} як перекладач на такі мови: $2.
+
+Є $3 {{PLURAL:$3|сторінка|сторінки|сторінок}} для перекладу: $3. Подробиці наведено нижче.
+
+$4
+
+Дякуємо!
+
+Адміністрація перекладу {{SITENAME}}
+
+----
+
+Ви отримуєте ці повідомлення електронною поштою, бо ви підписалися на отримання повідомлень щодо перекладу на {{SITENAME}}. Щоб відписатися або змінити параметри сповіщення про переклади, будь ласка, відвідайте <$5>',
 	'translationnotifications-digestemail-notification-line' => '$1  $2 сторінку $3 позначено для перекладу. Ви можете перекласти  її: $4.',
 	'translationnotifications-edit-summary' => 'Сповіщення перекладу: $1',
 	'translationnotifications-email-priority' => 'Пріоритет цієї сторінки — $1.',
@@ -2806,7 +2821,7 @@ Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biê
 
 Hiện có trang mới để dịch tại đấy: $3.
 Xin vui lòng dịch nó dùng liên kết sau:
-$4
+<$4>
 
 $5
 $6
@@ -2848,7 +2863,7 @@ Ban quản lý biên dịch {{SITENAME}}
 
 ----
 
-Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $5.',
+Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'Ngày $1, $2 đã đánh dấu “$3” là cần được dịch. Bạn có thể biên dịch nó tại $4.',
 	'translationnotifications-edit-summary' => 'Thông báo biên dịch: $1',
 	'translationnotifications-email-priority' => 'Trang này có ưu tiên $1.',
