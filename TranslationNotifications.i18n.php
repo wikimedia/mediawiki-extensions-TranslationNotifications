@@ -59,25 +59,28 @@ $messages['en'] = array(
 
 You are receiving this e-mail because you signed up as a translator to $2 on {{SITENAME}}.
 
-There is a new page to translate there: $3.
-Please translate it by clicking the following link:
-$4
+There is a page to translate there: $3.
+You can translate it by clicking the following link:
+<$4>
 
 $5
 $6
 
 $7
 
+Your help is greatly appreciated. Translators like you help {{SITENAME}} to function
+as a truly multilingual community.
+
 Thank you!
-{{SITENAME}} translation administrators
+{{SITENAME}} translation coordinators
 
 ----
 
-You are receiving this e-mail because you signed up to receive e-mails related to translations on {{SITENAME}}. To unsubscribe or to change your notification preferences for translations, please visit $8',
+You are receiving this e-mail because you signed up to receive e-mails related to translations on {{SITENAME}}. To unsubscribe or to change your notification preferences for translations, please visit $8.',
 	'translationnotifications-talkpage-body' => 'Hello $2,
 
 You are receiving this notification because you signed up as a translator to $3 on {{SITENAME}}.
-A new page, [[$4]] is available for translation. Please translate it here:
+The page [[$4]] is available for translation. You can translate it here:
 $5
 
 $6
@@ -85,9 +88,12 @@ $7
 
 $8
 
+Your help is greatly appreciated. Translators like you help {{SITENAME}} to function
+as a truly multilingual community.
+
 Thank you!
 
-{{SITENAME}} translation administrators',
+{{SITENAME}} translation coordinators',
 	'translationnotifications-notification-url-listitem' => 'translate to $1',
 	'translationnotifications-digestemail-subject' => 'Digest e-mail for translation requests from {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hello $1,
@@ -98,12 +104,15 @@ There {{PLURAL:$3|is 1 page|are $3 pages}} available for translation. The detail
 
 $4
 
+Your help is greatly appreciated. Translators like you help {{SITENAME}} to function
+as a truly multilingual community.
+
 Thank you!
 {{SITENAME}} translation administrators
 
 ----
 
-You are receiving this e-mail because you signed up to receive e-mails related to translations on {{SITENAME}}. To unsubscribe or to change your notification preferences for translations, please visit $5',
+You are receiving this e-mail because you signed up to receive e-mails related to translations on {{SITENAME}}. To unsubscribe or to change your notification preferences for translations, please visit <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'On $1, $2 marked "$3" for translation. You can translate it at $4',
 	'translationnotifications-edit-summary' => 'Translation notification: $1',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
