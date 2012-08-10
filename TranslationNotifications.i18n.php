@@ -910,6 +910,7 @@ $messages['fa'] = array(
 );
 
 /** French (français)
+ * @author Brunoperel
  * @author Cquoi
  * @author DavidL
  * @author Gomoko
@@ -961,8 +962,8 @@ $messages['fr'] = array(
 
 Vous recevez ce courriel parce que vous vous êtes inscrit comme traducteur de $2 sur {{SITENAME}}.
 
-Il y a une nouvelle page à traduire ici : $3.
-Veuillez la traduire en cliquant sur le lien suivant :
+Il y a une page à traduire ici : $3.
+Vous pouvez la traduire en cliquant sur le lien suivant :
 <$4>
 
 $5
@@ -972,14 +973,14 @@ $7
 
 
 Merci !
-Les administrateurs de traduction de {{SITENAME}}
+Les coordonnateurs de traduction de {{SITENAME}}
 
 ----
-Vous recevez ce courriel parce que vous signé pour recevoir des courriels concernant les traductions sur {{SITENAME}}. Pour vous désabonner ou modifier vos préférences de notification pour les traductions, veuillez visiter $8.',
+Vous recevez ce courriel parce que vous avez signé pour recevoir des courriels concernant les traductions sur {{SITENAME}}. Pour vous désabonner ou modifier vos préférences de notification pour les traductions, veuillez visiter $8.',
 	'translationnotifications-talkpage-body' => "Bonjour $2,
 
 Vous recevez cette notification parce que vous êtes inscrit comme traducteur de $3 sur {{SITENAME}}.
-Une nouvelle page, [[$4]] est disponible pour la traduction. Veuillez la traduire :
+Une nouvelle page, [[$4]], est disponible pour la traduction. Vous pouvez la traduire ici :
 $5
 
 $6
@@ -996,16 +997,18 @@ L'équipe de {{SITENAME}}",
 
 Vous recevez ce courriel parce que vous inscrit comme traducteur de $2 sur {{SITENAME}}.
 
-Il y a {{PLURAL:$3|1 page disponible|$3 pages disponibles}} pour la traduction. Les détails sont donnés ci-dessous.
+{{PLURAL:$3|1 page est disponible|$3 pages sont disponibles}} pour la traduction. Les détails sont donnés ci-dessous.
 
 $4
 
+Nous apprécions votre aide. Votre traduction sera déterminante pour que {{SITENAME}} soit une communauté véritablement multi-langue.
+
 Merci!
-Les administrateurs de traduction de {{SITENAME}}
+Les administrateurs de la traduction de {{SITENAME}}
 
 ----
 
-Vous recevez ce courriel parce que vous avez souscrit à la réception de courriels concernant les traductions sur {{SITENAME}}. Pour modifier vos préférences de notification pour les traductions, veuillez visiter  <$5>',
+Vous recevez ce courriel parce que vous avez souscrit à la réception de courriels concernant les traductions sur {{SITENAME}}. Pour modifier vos préférences de notification pour les traductions, veuillez visiter  <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'Sur $1, $2 a marqué "$3" pour être traduit. Vous pouvez le traduire sur $4',
 	'translationnotifications-edit-summary' => 'Notification de traduction : $1',
 	'translationnotifications-email-priority' => 'La priorité de cette page est $1.',
@@ -1192,8 +1195,11 @@ $5
 $6
 $7
 
+אנחנו מעריכים מאוד את עזרתך. מתרגמים כמוך עוזרים לאתר {{SITENAME}} לתפקד
+כמו קהילה רב־לשונית אמתית.
+
 תודה!
-מנהלי תרגום באתר {{SITENAME}}
+רכזי תרגום באתר {{SITENAME}}
 
 ----
 
@@ -1210,9 +1216,12 @@ $7
 
 $8
 
+אנחנו מעריכים מאוד את עזרתך. מתרגמים כמוך עוזרים לאתר {{SITENAME}} לתפקד
+כמו קהילה רב־לשונית אמתית.
+
 תודה!
 
-מנהלי תרגום באתר {{SITENAME}}',
+רכזי תרגום באתר {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'תרגום ל{{GRAMMAR:תחילית|$1}}',
 	'translationnotifications-digestemail-subject' => 'מכתב עם סיכום בקשות תרגום מאתר {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "שלום $1,
@@ -1221,6 +1230,9 @@ $8
 {{PLURAL:$3|דף אחד חדש זמין|יש $3 דפים חדשים שזמינים}} לתרגום. ר' את הפרטים להלן.
 
 $4
+
+אנחנו מעריכים מאוד את עזרתך. מתרגמים כמוך עוזרים לאתר {{SITENAME}} לתפקד
+כמו קהילה רב־לשונית אמתית.
 
 תודה!
 
@@ -1354,6 +1366,17 @@ Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na 
 	'translationnotifications-log-alllanguages' => 'wšě rěče',
 	'translationnotifications-nodeadline' => 'žadyn',
 	'translationnotifications-signup-legal' => 'Přez podawanje tutych informacijow přizwoliš, zo móžemy so z tobu nastupajo temy w zwisku {{GRAMMAR:instrumental|{{SITENAME}}}} do zwiska stajić, kotrež móhli će zajimować. Zwoliš do toho, zo waše daty našim [[{{MediaWiki:Privacypage}}|prawidłam priwatnosće]] podleža.',
+);
+
+/** Hungarian (magyar)
+ * @author Dj
+ */
+$messages['hu'] = array(
+	'translationnotifications-priority' => 'Prioritás:',
+	'translationnotifications-priority-high' => 'magas',
+	'translationnotifications-priority-medium' => 'közepes',
+	'translationnotifications-priority-low' => 'alacsony',
+	'translationnotifications-priority-unset' => '(nem beállított)',
 );
 
 /** Interlingua (interlingua)
@@ -2053,12 +2076,13 @@ $messages['ms'] = array(
 	'translationnotifications-translatablepage-title' => 'Nama laman boleh terjemah:',
 	'translationnotifications-error-no-translatable-pages' => 'Tiada laman yang boleh diterjemahkan dalam wiki ini.',
 	'translationnotifications-email-subject' => 'Sila terjemahkan laman $1',
-	'translationnotifications-email-body' => 'Apa khabar $1,
+	'translationnotifications-email-body' => '$1,
 
 Anda menerima e-mel ini kerana anda telah mendaftarkan diri sebagai penterjemah $2 di {{SITENAME}}.
 
-Ada satu laman baru untuk diterjemahkan di situ: $3.
-Sila terjemahkannya dengan mengklik pautan yang berikut:
+Ada satu halaman untuk diterjemahkan di situ: $3.
+
+Anda boleh menterjemahkannya dengan mengklik pautan yang berikut:
 <$4>
 
 $5
@@ -2066,16 +2090,20 @@ $6
 
 $7
 
+Pertolongan anda amat dihargai. Para penterjemah seperti anda membantu {{SITENAME}} berfungsi sebagai komuniti berbilang bahasa yang sejati.
+
 Terima kasih!
-Pentadbir penterjemahan {{SITENAME}}
+
+Penyelaras penterjemahan {{SITENAME}}
 
 ----
 
-Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila ke $8',
-	'translationnotifications-talkpage-body' => 'Apa khabar $2,
+Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari $8.',
+	'translationnotifications-talkpage-body' => '$2,
 
 Anda sedang menerima pemberitahuan ini kerana anda mendaftar diri sebagai penterjemah kepada $3 di {{SITENAME}}.
-Satu laman baru, [[$4]] sedia untuk diterjemahkan. Sila terjemahkannya:
+
+Satu halaman baru, [[$4]] sedia untuk diterjemahkan. Sila terjemahkannya:
 $5
 
 $6
@@ -2083,25 +2111,30 @@ $7
 
 $8
 
+Pertolongan anda amat dihargai. Para penterjemah seperti anda membantu {{SITENAME}} berfungsi sebagai komuniti berbilang bahasa yang sejati.
+
 Terima kasih!
 
-Pentadbir penterjemahan {{SITENAME}}',
+Penyelaras penterjemahan {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'terjemah kepada $1',
 	'translationnotifications-digestemail-subject' => 'E-mel ikhtisar untuk permohonan penterjemahan dari {{SITENAME}}',
-	'translationnotifications-digestemail-body' => 'Ke hadapan $1,
+	'translationnotifications-digestemail-body' => '$1,
 
 Anda sedang menerima e-mel ini kerana anda mendaftar diri sebagai penterjemah kepada $2 di {{SITENAME}}.
 
-Terdapat $3 laman yang sedia untuk diterjemah. Butiran-butirannya adalah seperti berikut.
+Terdapat $3 halaman yang sedia untuk diterjemah. Butiran-butirannya adalah seperti berikut.
 
 $4
 
+Pertolongan anda amat dihargai. Para penterjemah seperti anda membantu {{SITENAME}} berfungsi sebagai komuniti berbilang bahasa yang sejati.
+
 Terima kasih!
-Pentadbir penterjemahan {{SITENAME}}
+
+Penyelaras penterjemahan {{SITENAME}}
 
 ----
 
-Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila ke <$5>',
+Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'Pada $1, $2 memohon supaya "$3" diterjemahkannya. Anda boleh menterjemahkannya di $4',
 	'translationnotifications-edit-summary' => 'Pemberitahuan penterjemahan: $1',
 	'translationnotifications-email-priority' => 'Laman ini diberi prioriti $1.',
@@ -2676,6 +2709,30 @@ $4
 	'translationnotifications-signup-legal' => 'Предоставляя эту информацию, вы соглашаетесь с тем, что мы можем связаться с вами относительно связанных с {{SITENAME}} тем, которые, на наш взгляд, могут быть вам интересны. Вы также соглашаетесь с тем, что ваши персональные данные будут обрабатываться согласно нашей [[{{MediaWiki:Privacypage}}|политике конфиденциальности.]]',
 );
 
+/** Rusyn (русиньскый)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'translationnotifications-languages' => 'Языкы',
+	'translationnotifications-lang' => 'Язык № $1',
+	'translationnotifications-nolang' => 'Звольте язык',
+	'translationnotifications-contact' => 'Преферованы способы контакту',
+	'translationnotifications-cmethod-email' => 'Імейл',
+	'translationnotifications-cmethod-talkpage' => 'Діскузна сторінка',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Діскузна сторінка на іншых вікі',
+	'translationnotifications-cmethod-feed' => 'Каналы',
+	'translationnotifications-frequency' => 'Як часто ся контактовати',
+	'translationnotifications-freq-week' => 'Найчастїше раз за рік',
+	'translationnotifications-freq-month' => 'Не частїше як раз за місяць',
+	'translationnotifications-submit' => 'Обновити наштелёваня',
+	'translationnotifications-priority-high' => 'высока',
+	'translationnotifications-priority-medium' => 'середня',
+	'translationnotifications-priority-low' => 'низка',
+	'translationnotifications-priority-unset' => '(не встановлено)',
+	'translationnotifications-log-alllanguages' => 'вшыткы языкы',
+	'translationnotifications-nodeadline' => 'жаден',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
@@ -2757,6 +2814,7 @@ $messages['sv'] = array(
 /** Tamil (தமிழ்)
  * @author Karthi.dr
  * @author Logicwiki
+ * @author Shanmugamp7
  */
 $messages['ta'] = array(
 	'translationnotifications-info' => 'பயனர் தகவல்',
@@ -2769,6 +2827,52 @@ $messages['ta'] = array(
 	'translationnotifications-cmethod-email' => 'மின்னஞ்சல்',
 	'translationnotifications-cmethod-talkpage' => 'உரையாடல் பக்கம்',
 	'translationnotifications-submit' => 'பதிவுசெய்',
+	'translationnotifications-priority' => 'முக்கியத்துவம்:',
+	'translationnotifications-priority-high' => 'அதிகம்',
+	'translationnotifications-priority-medium' => 'நடுத்தரம்',
+	'translationnotifications-priority-low' => 'குறைவு',
+	'translationnotifications-priority-unset' => '(அமைக்கப்படவில்லை)',
+	'translationnotifications-translatablepage-title' => 'மொழிபெயர்க்கக் கூடிய பக்கப் பெயர்:',
+	'translationnotifications-error-no-translatable-pages' => 'இந்த விக்கியில் மொழிபெயர்க்கத் தகுந்த பக்கங்கள் எதுவுமில்லை.',
+	'translationnotifications-email-subject' => '$1 பக்கத்தை அருள்கூர்ந்து மொழிபெயர்க்கவும்.',
+	'translationnotifications-email-body' => 'வணக்கம் $1,
+
+{{SITENAME}} இல் $2 மொழிக்கான மொழிபெயர்ப்பாளராக பதிவு செய்துள்ளதால், நீங்கள் இந்த மின்னஞ்சலை பெறுகிறீர்கள்.
+
+அங்கு மொழிபெயர்க்க இங்கு ஒரு பக்கம் உள்ளது: $3.
+கீழ்க்காணும் இணைப்பை சொடுக்குவதன் மூலம் நீங்கள் அதை மொழிபெயர்க்கலாம்:
+<$4>
+
+$5
+$6
+
+$7
+
+உங்கள் உதவி பெரிதும் பாராட்டப்படுகிறது. உங்களைப் போன்ற மொழிபெயர்ப்பாளர்களே {{SITENAME}} தளம் ஒரு உண்மையான பன்மொழி சமுதாயமாக செயல்பட உதவுகின்றனர்.
+
+நன்றி!
+{{SITENAME}} மொழிபெயர்ப்பு ஒருங்கிணைப்பாளர்கள்
+
+----
+
+{{SITENAME}} தளத்தில் மொழிபெயர்ப்பு தொடர்பான மின்னஞ்சல்களை பெற நீங்கள் பதிவு செய்துள்ளதால், இந்த மின்னஞ்சலை நீங்கள் பெறுகிறீர்கள். பதிவு நீக்க அல்லது மொழிபெயர்ப்புக்கான அறிவிக்கை விருப்பத்தேர்வுகளை மாற்ற, தயவுசெய்து பார்க்க $8.',
+	'translationnotifications-talkpage-body' => 'வணக்கம் $2,
+
+{{SITENAME}} இல் $3 மொழிக்கான மொழிபெயர்ப்பாளராக பதிவு செய்துள்ளதால், நீங்கள் இந்த அறிவிக்கையைப் பெறுகிறீர்கள்.
+
+பக்கம் [[$4]] மொழிபெயர்க்க உள்ளது. நீங்கள் அதனை இங்கு மொழிபெயர்க்கலாம்: $3.
+
+$5
+
+$6
+$7
+
+$8
+
+உங்கள் உதவி பெரிதும் பாராட்டப்படுகிறது. உங்களைப் போன்ற மொழிபெயர்ப்பாளர்களே {{SITENAME}} தளம் ஒரு உண்மையான பன்மொழி சமுதாயமாக செயல்பட உதவுகின்றனர்.
+
+நன்றி!
+{{SITENAME}} மொழிபெயர்ப்பு ஒருங்கிணைப்பாளர்கள்',
 );
 
 /** Tagalog (Tagalog)
@@ -3100,6 +3204,20 @@ Bạn nhận được thư điện tử này vì bạn đã quyết định nh�
 	'translationnotifications-log-alllanguages' => 'tất cả các ngôn ngữ',
 	'translationnotifications-nodeadline' => 'không có',
 	'translationnotifications-signup-legal' => 'Với việc cung cấp thông tin này, bạn đồng ý cho phép chúng tôi liên lạc với bạn về các đề tài có liên quan đến {{SITENAME}} mà bạn có thể quan tâm đến. Bạn đồng ý rằng dữ liệu của bạn sẽ được sử dụng theo [[{{MediaWiki:Privacypage}}|quy định quyền riêng tư]] của chúng tôi.',
+);
+
+/** Simplified Chinese (‪中文（简体）‬)
+ * @author Shirayuki
+ */
+$messages['zh-hans'] = array(
+	'translationnotifications-username' => '用户名：',
+	'translationnotifications-languages' => '语言',
+	'translationnotifications-lang' => '语言 #$1',
+	'translationnotifications-nolang' => '选择语言',
+	'translationnotifications-priority' => '优先级：',
+	'translationnotifications-priority-high' => '高',
+	'translationnotifications-priority-medium' => '中',
+	'translationnotifications-priority-low' => '低',
 );
 
 /** Traditional Chinese (‪中文（繁體）‬)
