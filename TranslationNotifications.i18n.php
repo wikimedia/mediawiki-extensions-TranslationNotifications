@@ -229,7 +229,7 @@ Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.',
 );
 
-/** Ṫuroyo (Ṫuroyo)
+/** Turoyo (Ṫuroyo)
  * @author Ariyo
  */
 $messages['tru'] = array(
@@ -512,7 +512,7 @@ Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Ü
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $3 auf {{SITENAME}} registriert haben.
-Eine neue Seite, [[$4]], ist zum Übersetzen vorhanden. Übersetzen Sie sie bitte hier:
+Eine Seite [[$4]] ist zum Übersetzen vorhanden. Sie können sie hier übersetzen:
 $5
 
 $6
@@ -521,7 +521,7 @@ $7
 $8
 
 Vielen Dank,
-die Übersetzungsadministratoren von {{SITENAME}}',
+die Übersetzungskoordinatoren von {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hallo $1,
 
 Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $2 auf {{SITENAME}} registriert haben.
@@ -830,7 +830,7 @@ $messages['et'] = array(
 
 Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $2 keelde tõlkijana.
 
-Tõlgitavate lehekülgede hulka on lisatud $3.
+Tõlkimiseks on järgmine lehekülg: $3.
 Et see tõlkida, klõpsa palun järgmisele lingile:
 <$4>
 
@@ -839,8 +839,11 @@ $6
 
 $7
 
+Sinu abi on kõrgelt hinnatud. Sinusugused tõlkijad aitavad võrgukohal {{SITENAME}} talitleda
+tõelise paljukeelse kogukonnana.
+
 Aitäh!
-Tõlkeadministraatorid
+Tõlkekoordineerijad
 {{SITENAME}}
 
 ----
@@ -849,7 +852,7 @@ Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-
 	'translationnotifications-talkpage-body' => 'Tere, $2.
 
 Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $3 keelde tõlkijana.
-Tõlgitavate lehekülgede hulka on lisatud [[$4]]. Palun tõlgi see siin:
+Lehekülg [[$4]] on saadaval tõlkimiseks. Palun tõlgi see siin:
 $5
 
 $6
@@ -857,9 +860,12 @@ $7
 
 $8
 
+Sinu abi on kõrgelt hinnatud. Sinusugused tõlkijad aitavad võrgukohal {{SITENAME}} talitleda
+tõelise paljukeelse kogukonnana.
+
 Aitäh!
 
-Tõlkeadministraatorid
+Tõlkekoordineerijad
 {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'tõlgi $1 keelde',
 	'translationnotifications-digestemail-subject' => 'Tõlkepalvete ülevaade võrgukohast {{SITENAME}}',
@@ -870,8 +876,11 @@ Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $2 keelde tõ
 
 $4
 
+Sinu abi on kõrgelt hinnatud. Sinusugused tõlkijad aitavad võrgukohal {{SITENAME}} talitleda
+tõelise paljukeelse kogukonnana.
+
 Aitäh!
-Tõlkeadministraatorid
+Tõlkekoordineerijad
 {{SITENAME}}
 
 ----
@@ -2454,6 +2463,7 @@ die Midawaida vun {{SITENAME}}",
 );
 
 /** Polish (polski)
+ * @author Ankry
  * @author BeginaFelicysym
  * @author Woytecr
  */
@@ -2500,7 +2510,7 @@ $messages['pl'] = array(
 	'translationnotifications-email-subject' => 'Przetłumacz stronę $1',
 	'translationnotifications-email-body' => 'Witaj  $1,
 
-Otrzymujesz tę wiadomość e-mail, ponieważ użytkownik zarejestrował się jako tłumacz na  $2  portalu {{SITENAME}}.
+Otrzymujesz tę wiadomość e-mail, ponieważ użytkownik zarejestrował się jako tłumacz portalu {{SITENAME}} na  $2.
 
 Jest nowa strona do tłumaczenia:  $3 .
 Przetłumacz ją klikając poniższe łącze:
@@ -2524,9 +2534,11 @@ Aby anulować subskrypcję lub zmienić swoje preferencje powiadamiania o tłuma
 
 Otrzymujesz ten e-mail ponieważ zarejestrowałeś się jako tłumacz na $2 na stronie {{SITENAME}}.
 
-{{PLURAL:$3|Jest dostępna jedna strona|Są dostępne $3 strony}} do przetłumaczenia. Szczegóły podane są niżej.
+{{PLURAL:$3|Jest dostępna jedna strona|Są dostępne $3 strony|Jest dostępnych $3 stron}} do przetłumaczenia. Szczegóły podane są niżej.
 
 $4
+
+Twoja pomoc jest wielce pożądana. Tłumacze, tacy jak ty, pomagają {{SITENAME}} działać jako naprawdę wielojęzykowej społeczności.
 
 Dziękujemy!
 Administratorzy tłumaczeń {{SITENAME}}
