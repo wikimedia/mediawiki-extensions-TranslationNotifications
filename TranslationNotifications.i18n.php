@@ -2563,11 +2563,17 @@ Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile 
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'translationnotifications-username' => 'کارن-نوم:',
+	'translationnotifications-emailstatus' => 'د برېښليک دريځ:',
 	'translationnotifications-languages' => 'ژبې',
 	'translationnotifications-lang' => 'ژبه #$1',
 	'translationnotifications-nolang' => 'يوه ژبه وټاکۍ',
 	'translationnotifications-cmethod-email' => 'برېښليک',
 	'translationnotifications-cmethod-talkpage' => 'د خبرواترو مخ',
+	'translationnotifications-priority' => 'لومړيتوب:',
+	'translationnotifications-notification-url-listitem' => '$1 ته ژباړل',
+	'translationnotifications-log-alllanguages' => 'ټولې ژبې',
+	'translationnotifications-nodeadline' => 'هېڅ',
 );
 
 /** Portuguese (português)
@@ -2757,6 +2763,7 @@ $messages['si'] = array(
 	'translationnotifications-cmethod-email' => 'විද්‍යුත් තැපෑල',
 	'translationnotifications-cmethod-talkpage' => 'සාකච්ඡා පිටුව',
 	'translationnotifications-cmethod-feed' => 'පෝෂකය',
+	'translationnotifications-submit' => 'යාවත්කාලීන සැකසුම්',
 	'translationnotifications-priority' => 'ප්‍රමුඛත්වය:',
 	'translationnotifications-priority-high' => 'ඉහළ',
 	'translationnotifications-priority-medium' => 'මධ්‍යම',
@@ -2833,11 +2840,14 @@ $messages['ta'] = array(
 	'translationnotifications-username' => 'பயனர் பெயர்:',
 	'translationnotifications-emailstatus' => 'மின்னஞ்சல் நிகழ்நிலை:',
 	'translationnotifications-email-confirmed' => 'மின்னஞ்சல் முகவரி உறுதிசெய்யப்பட்டது',
+	'translationnotifications-email-notset' => 'நீங்கள் மின்னஞ்சல் முகவரி ஏதும் வழங்கவில்லை. உங்கள் [[Special:Preferences|விருப்பத்தேர்வுகளில்]] நீங்கள் இதைச் செய்யலாம்.',
 	'translationnotifications-languages' => 'மொழிகள்',
 	'translationnotifications-lang' => 'மொழி  #$1',
 	'translationnotifications-nolang' => 'மொழியைத் தேர்ந்தெடுக்கவும்',
+	'translationnotifications-contact' => 'விருப்பமான தொடர்பு முறைகள்',
 	'translationnotifications-cmethod-email' => 'மின்னஞ்சல்',
 	'translationnotifications-cmethod-talkpage' => 'உரையாடல் பக்கம்',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'மற்றொரு விக்கியின் பேச்சுப் பக்கம்',
 	'translationnotifications-submit' => 'பதிவுசெய்',
 	'translationnotifications-priority' => 'முக்கியத்துவம்:',
 	'translationnotifications-priority-high' => 'அதிகம்',
@@ -2885,6 +2895,16 @@ $8
 
 நன்றி!
 {{SITENAME}} மொழிபெயர்ப்பு ஒருங்கிணைப்பாளர்கள்',
+);
+
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'translationnotifications-info' => 'వాడుకరి సమాచారం',
+	'translationnotifications-username' => 'వాడుకరి పేరు:',
+	'translationnotifications-emailstatus' => 'ఈమెయిలు స్థితి:',
+	'translationnotifications-languages' => 'భాషలు',
 );
 
 /** Tagalog (Tagalog)
