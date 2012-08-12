@@ -2158,6 +2158,33 @@ Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang be
 	'translationnotifications-signup-legal' => 'Anda bersetuju bahawa dengan memberikan maklumat ini, kami boleh menghubungi anda berkenaan perihal-perihal yang berkaitan dengan {{SITENAME}} yang kami rasa berkaitan dengan anda. Anda bersetuju bahawa data anda tertakluk pada [[{{MediaWiki:Privacypage}}|dasar privasi]] kami.',
 );
 
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'translationnotifications-info' => 'Informazzjoni dwar l-utent',
+	'translationnotifications-username' => 'Isem tal-utent:',
+	'translationnotifications-emailstatus' => 'Stat tal-indirizz elettroniku:',
+	'translationnotifications-email-confirmed' => 'L-indirizz elettroniku ġie kkonfermat',
+	'translationnotifications-email-disablemail' => 'L-indirizz elettroniku ġie kkonfermat, imma fil-[[Special:Preferences|preferenzi tiegħek]] inti tlabt li tirċievi posta elettronika.',
+	'translationnotifications-email-unconfirmed' => 'L-indirizz elettroniku ma ġiex ikkonfermat. $1',
+	'translationnotifications-email-notset' => "Inti ma pprovdejtx indirizz elettroniku. Tista' tagħmel dan fil-[[Special:Preferences|preferenzi tiegħek]].",
+	'translationnotifications-languages' => 'Lingwi',
+	'translationnotifications-lang' => 'Lingwa #$1',
+	'translationnotifications-nolang' => 'Agħżel lingwa',
+	'translationnotifications-contact' => "Metodi ta' kuntatti preferuti",
+	'translationnotifications-cmethod-email' => 'Indirizz elettroniku',
+	'translationnotifications-cmethod-talkpage' => "Paġna ta' diskussjoni",
+	'translationnotifications-cmethod-talkpage-elsewhere' => "Paġna ta' diskussjoni fuq wiki oħra",
+	'translationnotifications-cmethod-feed' => 'Feed',
+	'translationnotifications-frequency' => "Frekwenza ta' kuntatt",
+	'translationnotifications-freq-always' => "Meta hemm xi ħaġa ġdida x'tittraduċi",
+	'translationnotifications-priority' => 'Prijorità:',
+	'translationnotifications-priority-high' => 'għoli',
+	'translationnotifications-priority-medium' => 'medju',
+	'translationnotifications-priority-low' => 'baxx',
+);
+
 /** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $messages['nb'] = array(
 	'translatorsignup' => 'Registrer deg som oversetter',
@@ -2757,17 +2784,31 @@ $messages['rue'] = array(
 $messages['si'] = array(
 	'translationnotifications-info' => 'පරිශීලකගේ තොරතුරු',
 	'translationnotifications-username' => 'පරිශීලක නාමය:',
+	'translationnotifications-emailstatus' => 'විද්‍යුත්-තැපැල් තත්වය:',
+	'translationnotifications-email-confirmed' => 'ඔබේ විද්‍යුත්-තැපැල් ලිපිනය තහවුරු කරන ලදී',
 	'translationnotifications-languages' => 'භාෂාවන්',
 	'translationnotifications-lang' => 'භාෂාව #$1',
 	'translationnotifications-nolang' => 'භාෂාවක් තෝරාගන්න',
 	'translationnotifications-cmethod-email' => 'විද්‍යුත් තැපෑල',
 	'translationnotifications-cmethod-talkpage' => 'සාකච්ඡා පිටුව',
 	'translationnotifications-cmethod-feed' => 'පෝෂකය',
+	'translationnotifications-freq-weekly' => 'සතිපතා සංහිතාව',
+	'translationnotifications-freq-monthly' => 'මාසික සංහිතාව',
 	'translationnotifications-submit' => 'යාවත්කාලීන සැකසුම්',
+	'notifytranslators' => 'පරිවර්තකයන් දැනුවත් කරන්න',
 	'translationnotifications-priority' => 'ප්‍රමුඛත්වය:',
 	'translationnotifications-priority-high' => 'ඉහළ',
 	'translationnotifications-priority-medium' => 'මධ්‍යම',
 	'translationnotifications-priority-low' => 'අවම',
+	'translationnotifications-priority-unset' => '(සකසා නැත)',
+	'translationnotifications-translatablepage-title' => 'පරිවර්තනමය පිටු නාමය:',
+	'translationnotifications-email-subject' => 'කරුණාකර $1 පිටුව පරිවර්තනය කරන්න',
+	'translationnotifications-notification-url-listitem' => '$1 වෙත පරිවර්තනය කරන්න',
+	'translationnotifications-edit-summary' => 'පරිවර්තන දැනුම් දීම: $1',
+	'translationnotifications-email-priority' => 'මෙම පිටුවෙහි ප්‍රමුඛතාවය $1 යි.',
+	'log-name-notifytranslators' => 'පරිවර්තන නිවේදනයන්',
+	'translationnotifications-sent-title' => 'පරිවර්තන නිවේදනය යවන ලදී',
+	'translationnotifications-sent-body' => 'පරිවර්තන නිවේදනය යවන ලදී.',
 	'translationnotifications-log-alllanguages' => 'සියලුම භාෂාවන්',
 	'translationnotifications-nodeadline' => 'කිසිවක් නොමැත',
 );
@@ -2840,6 +2881,7 @@ $messages['ta'] = array(
 	'translationnotifications-username' => 'பயனர் பெயர்:',
 	'translationnotifications-emailstatus' => 'மின்னஞ்சல் நிகழ்நிலை:',
 	'translationnotifications-email-confirmed' => 'மின்னஞ்சல் முகவரி உறுதிசெய்யப்பட்டது',
+	'translationnotifications-email-unconfirmed' => 'உங்கள் மின்னஞ்சல் முகவரி உறுதி செய்யப்படவில்லை. $1',
 	'translationnotifications-email-notset' => 'நீங்கள் மின்னஞ்சல் முகவரி ஏதும் வழங்கவில்லை. உங்கள் [[Special:Preferences|விருப்பத்தேர்வுகளில்]] நீங்கள் இதைச் செய்யலாம்.',
 	'translationnotifications-languages' => 'மொழிகள்',
 	'translationnotifications-lang' => 'மொழி  #$1',
@@ -2848,7 +2890,12 @@ $messages['ta'] = array(
 	'translationnotifications-cmethod-email' => 'மின்னஞ்சல்',
 	'translationnotifications-cmethod-talkpage' => 'உரையாடல் பக்கம்',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'மற்றொரு விக்கியின் பேச்சுப் பக்கம்',
-	'translationnotifications-submit' => 'பதிவுசெய்',
+	'translationnotifications-submit' => 'அமைப்புகளை புதுப்பி',
+	'translationnotifications-signup-success' => 'உங்கள் மொழிபெயர்ப்பு அறிவிப்பு விருப்பங்கள் சேமிக்கப்பட்டுள்ளது.',
+	'notifytranslators' => 'மொழிபெயர்ப்பாளர்களுக்கு அறிவிக்கவும்',
+	'translationnotifications-send-notification-button' => 'மொழிபெயர்ப்பாளர்களுக்கு ஒரு அறிவிப்பை அனுப்பு',
+	'translationnotifications-deadline-label' => 'இந்த அறிவிப்பில் கட்டவேண்டிய கடைசிநாள்:',
+	'translationnotifications-languages-to-notify-label' => 'எந்த மொழியில் அறிவிக்க வேண்டும்:',
 	'translationnotifications-priority' => 'முக்கியத்துவம்:',
 	'translationnotifications-priority-high' => 'அதிகம்',
 	'translationnotifications-priority-medium' => 'நடுத்தரம்',
@@ -2895,6 +2942,22 @@ $8
 
 நன்றி!
 {{SITENAME}} மொழிபெயர்ப்பு ஒருங்கிணைப்பாளர்கள்',
+	'translationnotifications-notification-url-listitem' => '$1க்கு மொழிபெயர்க்கவும்',
+	'translationnotifications-digestemail-body' => 'வணக்கம் $1,
+
+{{SITENAME}} இல் $2 மொழிக்கான மொழிபெயர்ப்பாளராக பதிவு செய்துள்ளதால், நீங்கள் இந்த மின்னஞ்சலை பெறுகிறீர்கள்.
+
+அங்கு மொழிபெயர்க்க {{PLURAL:$3|1 பக்கம்|$3 பக்கங்கள்}} உள்ளன. அதன் விவரங்கள் கீழே கொடுக்கப்பட்டுள்ளன
+$4
+
+உங்கள் உதவி பெரிதும் பாராட்டப்படுகிறது. உங்களைப் போன்ற மொழிபெயர்ப்பாளர்களே {{SITENAME}} தளம் ஒரு உண்மையான பன்மொழிச் சமுதாயமாக செயல்பட உதவுகின்றனர்.
+
+நன்றி!
+{{SITENAME}} மொழிபெயர்ப்பு ஒருங்கிணைப்பாளர்கள்
+
+----
+
+{{SITENAME}} தளத்தில் மொழிபெயர்ப்பு தொடர்பான மின்னஞ்சல்களை பெற நீங்கள் பதிவு செய்துள்ளதால், இந்த மின்னஞ்சலை நீங்கள் பெறுகிறீர்கள். பதிவு நீக்க அல்லது மொழிபெயர்ப்புக்கான அறிவிக்கை விருப்பத்தேர்வுகளை மாற்ற, தயவுசெய்து செல்லவும் <$5>.',
 );
 
 /** Telugu (తెలుగు)
@@ -3239,20 +3302,67 @@ Bạn nhận được thư điện tử này vì bạn đã quyết định nh�
 );
 
 /** Simplified Chinese (‪中文（简体）‬)
+ * @author Liangent
  * @author Shirayuki
  */
 $messages['zh-hans'] = array(
+	'translatorsignup' => '翻译者登记',
+	'translatorsignup-summary' => '在这个页面列明您可以翻译的语言，以及您想让我们如何通知您新的翻译请求。',
+	'translationnotifications-desc' => '允许翻译者登记以接受翻译通知',
+	'translationnotifications-info' => '用户信息',
 	'translationnotifications-username' => '用户名：',
+	'translationnotifications-emailstatus' => '电子邮件状态：',
+	'translationnotifications-email-confirmed' => '您的电子邮件地址已得到确认',
+	'translationnotifications-email-disablemail' => '您的电子邮件地址已得到确认，但在[[Special:Preferences|您的参数设置]]中您要求不接收电子邮件。',
+	'translationnotifications-email-unconfirmed' => '您的电子邮件地址没有确认。$1',
+	'translationnotifications-email-notset' => '您没有提供电子邮件地址。您可以在您的[[Special:Preferences|参数设置]]完成。',
 	'translationnotifications-languages' => '语言',
 	'translationnotifications-lang' => '语言 #$1',
 	'translationnotifications-nolang' => '选择语言',
+	'translationnotifications-contact' => '首选联系方式',
+	'translationnotifications-cmethod-email' => '电子邮件',
+	'translationnotifications-cmethod-talkpage' => '对话页',
+	'translationnotifications-cmethod-talkpage-elsewhere' => '其他wiki上的对话页',
+	'translationnotifications-cmethod-feed' => '供稿',
+	'translationnotifications-frequency' => '联系频率',
+	'translationnotifications-freq-always' => '当有新内容需要翻译时',
+	'translationnotifications-freq-week' => '最多每周一次',
+	'translationnotifications-freq-month' => '最多每月一次',
+	'translationnotifications-freq-weekly' => '每周摘要',
+	'translationnotifications-freq-monthly' => '每月摘要',
+	'translationnotifications-submit' => '更新设置',
+	'translationnotifications-signup-success' => '您的翻译通知选项已保存。',
+	'notifytranslators' => '通知翻译者',
+	'translationnotifications-submit-ok' => '通知已添加到队列并将在后台完成。',
+	'translationnotifications-send-notification-button' => '给翻译者发送通知',
+	'translationnotifications-deadline-label' => '这个通知指明的截止日期：',
+	'translationnotifications-languages-to-notify-label' => '通知的语言：',
+	'translationnotifications-languages-to-notify-label-help-message' => '逗号分隔的语言代码，留空以通知所有语言。',
 	'translationnotifications-priority' => '优先级：',
 	'translationnotifications-priority-high' => '高',
 	'translationnotifications-priority-medium' => '中',
 	'translationnotifications-priority-low' => '低',
+	'translationnotifications-priority-unset' => '（未设置）',
+	'translationnotifications-translatablepage-title' => '可翻译页面名：',
+	'translationnotifications-error-no-translatable-pages' => '这个wiki中没有可翻译页面。',
+	'translationnotifications-email-subject' => '请翻译页面$1',
+	'translationnotifications-notification-url-listitem' => '翻译为$1',
+	'translationnotifications-digestemail-subject' => '来自{{SITENAME}}的翻译请求的摘要电子邮件',
+	'translationnotifications-digestemail-notification-line' => '于$1，$2标记了“$3”为需要翻译。您可以在$4进行翻译',
+	'translationnotifications-edit-summary' => '翻译通知：$1',
+	'translationnotifications-email-priority' => '这个页面的重要度是$1。',
+	'translationnotifications-email-deadline' => '翻译这个页面的截止日期是$1。',
+	'logentry-translationnotifications-sent' => '$1{{GENDER:$2|发送了}}翻译页面$3的通知；语言：$4；截止日期：$5；重要度：$6；已发送给$7个收件人，给$8个收件人的通知发送失败，跳过了$9个收件人',
+	'log-name-notifytranslators' => '翻译通知',
+	'log-description-notifytranslators' => '向翻译者发送可翻译页面通知的日志',
+	'translationnotifications-sent-title' => '翻译通知已发送',
+	'translationnotifications-sent-body' => '翻译通知已发送。',
+	'translationnotifications-log-alllanguages' => '所有语言',
+	'translationnotifications-nodeadline' => '无',
 );
 
 /** Traditional Chinese (‪中文（繁體）‬)
+ * @author Liangent
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
@@ -3260,8 +3370,8 @@ $messages['zh-hant'] = array(
 	'translationnotifications-languages' => '語言',
 	'translationnotifications-lang' => '語言#$1',
 	'translationnotifications-nolang' => '選擇語言',
-	'translationnotifications-freq-week' => '最多每周一次',
-	'translationnotifications-freq-month' => '最每月一次',
+	'translationnotifications-freq-week' => '最多每週一次',
+	'translationnotifications-freq-month' => '最多每月一次',
 	'translationnotifications-priority-high' => '高',
 	'translationnotifications-priority-medium' => '中',
 	'translationnotifications-priority-low' => '低',
