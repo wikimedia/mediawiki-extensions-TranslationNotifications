@@ -2896,6 +2896,7 @@ $messages['sv'] = array(
  * @author Karthi.dr
  * @author Logicwiki
  * @author Shanmugamp7
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
 	'translationnotifications-info' => 'பயனர் தகவல்',
@@ -2911,6 +2912,9 @@ $messages['ta'] = array(
 	'translationnotifications-cmethod-email' => 'மின்னஞ்சல்',
 	'translationnotifications-cmethod-talkpage' => 'உரையாடல் பக்கம்',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'மற்றொரு விக்கியின் பேச்சுப் பக்கம்',
+	'translationnotifications-cmethod-feed' => 'ஊட்டம்',
+	'translationnotifications-freq-week' => 'பெரும்பாலும் கிழமையொன்றுக்கு ஒரு முறை',
+	'translationnotifications-freq-month' => 'பெரும்பாலும் திங்களொன்றுக்கு ஒரு முறை',
 	'translationnotifications-submit' => 'அமைப்புகளை புதுப்பி',
 	'translationnotifications-signup-success' => 'உங்கள் மொழிபெயர்ப்பு அறிவிப்பு விருப்பங்கள் சேமிக்கப்பட்டுள்ளது.',
 	'notifytranslators' => 'மொழிபெயர்ப்பாளர்களுக்கு அறிவிக்கவும்',
@@ -2979,6 +2983,12 @@ $4
 ----
 
 {{SITENAME}} தளத்தில் மொழிபெயர்ப்பு தொடர்பான மின்னஞ்சல்களை பெற நீங்கள் பதிவு செய்துள்ளதால், இந்த மின்னஞ்சலை நீங்கள் பெறுகிறீர்கள். பதிவு நீக்க அல்லது மொழிபெயர்ப்புக்கான அறிவிக்கை விருப்பத்தேர்வுகளை மாற்ற, தயவுசெய்து செல்லவும் <$5>.',
+	'translationnotifications-edit-summary' => 'மொழிபெயர்ப்பு அறிவிப்பு: $1',
+	'log-name-notifytranslators' => 'மொழிபெயர்ப்பு அறிவிப்புகள்',
+	'translationnotifications-sent-title' => 'மொழிபெயர்ப்பு அறிவிப்பு அனுப்பப்பட்டது',
+	'translationnotifications-sent-body' => 'மொழிபெயர்ப்பு அறிவிப்பு அனுப்பப்பட்டது.',
+	'translationnotifications-log-alllanguages' => 'மொழிகள் அனைத்தும்',
+	'translationnotifications-nodeadline' => 'ஏதுமில்லை',
 );
 
 /** Telugu (తెలుగు)
