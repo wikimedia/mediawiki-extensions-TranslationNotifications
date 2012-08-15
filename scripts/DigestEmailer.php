@@ -24,7 +24,6 @@ class DigestEmailer extends Maintenance {
 	}
 
 	public function execute() {
-		global $wgNoReplyAddress;
 		$this->lock();
 
 		// Get the Translators with Weekly or Monthly notificaiton preferences.

@@ -29,7 +29,7 @@ class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
 
 		$propertyLikePattern = $dbw->buildLike( $langPropertyPrefix, $dbw->anyString() );
 
-		$res = $dbw->delete(
+		$dbw->delete(
 			'user_properties',
 			array(
 				"up_property $propertyLikePattern",
