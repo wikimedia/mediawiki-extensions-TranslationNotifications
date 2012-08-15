@@ -1032,6 +1032,39 @@ Vous recevez ce courriel parce que vous avez souscrit à la réception de courri
 	'translationnotifications-signup-legal' => "En fournissant cette information, vous acceptez que nous puissions vous contacter concernant des sujets liés à {{SITENAME}} que nous pensons qu'ils soient intéressant pour vous. Vous acceptez que vos données soient soumises à notre [[{{MediaWiki:Privacypage}}|politique de confidentialité]].",
 );
 
+/** Franco-Provençal (arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'translationnotifications-info' => 'Enformacions sur l’utilisator',
+	'translationnotifications-username' => 'Nom de l’utilisator :',
+	'translationnotifications-languages' => 'Lengoues',
+	'translationnotifications-lang' => 'Lengoua numerô $1',
+	'translationnotifications-nolang' => 'Chouèsésséd na lengoua',
+	'translationnotifications-cmethod-email' => 'Mèssageria èlèctronica',
+	'translationnotifications-cmethod-talkpage' => 'Pâge de discussion',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pâge de discussion sur un ôtro vouiqui',
+	'translationnotifications-cmethod-feed' => 'Flux',
+	'translationnotifications-priority' => 'Prioritât :',
+	'translationnotifications-priority-high' => 'hôta',
+	'translationnotifications-priority-medium' => 'moyena',
+	'translationnotifications-priority-low' => 'bâssa',
+	'translationnotifications-priority-unset' => '(pas dèfenia)',
+	'translationnotifications-notification-url-listitem' => 'traduire en $1',
+	'translationnotifications-edit-summary' => 'Notificacion de traduccion : $1',
+	'translationnotifications-log-alllanguages' => 'totes les lengoues',
+	'translationnotifications-nodeadline' => 'niona',
+);
+
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'translationnotifications-username' => "D'ainm úsáideora:",
+	'translationnotifications-cmethod-email' => 'Ríomhphost',
+	'translationnotifications-nodeadline' => 'Tada',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
@@ -1667,6 +1700,7 @@ $messages['ka'] = array(
 	'translationnotifications-cmethod-email' => 'ელ. ფოსტა',
 	'translationnotifications-cmethod-talkpage' => 'განხილვის გვერდი',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'განხილვის გვერდი სხვა ვიკიში',
+	'translationnotifications-cmethod-feed' => 'არხი',
 	'translationnotifications-submit' => 'პარამეტრების განახლება',
 	'translationnotifications-priority' => 'პრიორიტეტი:',
 	'translationnotifications-priority-high' => 'მაღალი',
