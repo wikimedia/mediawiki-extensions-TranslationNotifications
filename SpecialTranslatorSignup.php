@@ -183,7 +183,7 @@ JAVASCRIPT
 	}
 
 	protected function getOtherWikis() {
-		global $wgConf;
+		global $wgConf, $wgDBname;
 		if ( !class_exists( 'CentralAuthUser' ) ) {
 			return array();
 		}
