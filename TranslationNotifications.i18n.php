@@ -900,6 +900,19 @@ Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-
 	'translationnotifications-signup-legal' => 'Nõustud, et nende andmete saatmise järel võime sinuga ühendust võtta võrgukohaga {{SITENAME}} seotud teemadel, mis meie arvates sulle huvi võivad pakkuda. Nõustud, et sinu andmeid kasutatakse vastavalt meie [[{{MediaWiki:Privacypage}}|privaatsuspõhimõtetele]].',
 );
 
+/** Basque (euskara)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['eu'] = array(
+	'translationnotifications-username' => 'Lankide izena:',
+	'translationnotifications-languages' => 'Hizkuntzak',
+	'translationnotifications-cmethod-email' => 'E-posta',
+	'translationnotifications-cmethod-talkpage' => 'Eztabaida-orria',
+	'translationnotifications-priority' => 'Lehentasuna:',
+	'translationnotifications-log-alllanguages' => 'hizkuntza guztiak',
+	'translationnotifications-nodeadline' => 'bat ere ez',
+);
+
 /** Persian (فارسی)
  * @author Mjbmr
  */
@@ -916,6 +929,33 @@ $messages['fa'] = array(
 	'translationnotifications-priority-low' => 'کم',
 	'translationnotifications-log-alllanguages' => 'همۀ زبان‌ها',
 	'translationnotifications-nodeadline' => 'هیچ‌کدام',
+);
+
+/** Finnish (suomi)
+ * @author Beluga
+ */
+$messages['fi'] = array(
+	'translationnotifications-info' => 'Käyttäjätiedot',
+	'translationnotifications-username' => 'Käyttäjätunnus:',
+	'translationnotifications-emailstatus' => 'Sähköpostin tila:',
+	'translationnotifications-email-confirmed' => 'Sähköpostiosoite vahvistettiin',
+	'translationnotifications-email-unconfirmed' => 'Sähköpostiosoitettasi ei vahvistettu. $1',
+	'translationnotifications-languages' => 'Kielet',
+	'translationnotifications-lang' => 'Kieli #$1',
+	'translationnotifications-nolang' => 'Valitse kieli',
+	'translationnotifications-cmethod-email' => 'Sähköposti',
+	'translationnotifications-cmethod-talkpage' => 'Keskustelusivu',
+	'translationnotifications-cmethod-feed' => 'Syöte',
+	'translationnotifications-freq-weekly' => 'Viikottainen tiivistelmä',
+	'translationnotifications-freq-monthly' => 'Kuukausittainen tiivistelmä',
+	'translationnotifications-submit' => 'Päivitä asetukset',
+	'translationnotifications-priority' => 'Prioriteetti:',
+	'translationnotifications-priority-high' => 'korkea',
+	'translationnotifications-priority-medium' => 'keskiverto',
+	'translationnotifications-priority-low' => 'matala',
+	'translationnotifications-priority-unset' => '(ei asetettu)',
+	'translationnotifications-log-alllanguages' => 'kaikki kielet',
+	'translationnotifications-nodeadline' => 'ei mitään',
 );
 
 /** French (français)
@@ -3364,6 +3404,15 @@ Bạn nhận được thư điện tử này vì bạn đã quyết định nh�
 	'translationnotifications-log-alllanguages' => 'tất cả các ngôn ngữ',
 	'translationnotifications-nodeadline' => 'không có',
 	'translationnotifications-signup-legal' => 'Với việc cung cấp thông tin này, bạn đồng ý cho phép chúng tôi liên lạc với bạn về các đề tài có liên quan đến {{SITENAME}} mà bạn có thể quan tâm đến. Bạn đồng ý rằng dữ liệu của bạn sẽ được sử dụng theo [[{{MediaWiki:Privacypage}}|quy định quyền riêng tư]] của chúng tôi.',
+);
+
+/** Yiddish (ייִדיש)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['yi'] = array(
+	'translationnotifications-username' => 'באַניצער נאָמען:',
+	'translationnotifications-languages' => 'שפּראַכן',
+	'translationnotifications-cmethod-talkpage' => 'רעדן בלאַט',
 );
 
 /** Simplified Chinese (‪中文（简体）‬)
