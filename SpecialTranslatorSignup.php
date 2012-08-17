@@ -97,7 +97,7 @@ JAVASCRIPT
 			'raw' => true,
 		);
 
-		$languages = Language::getLanguageNames();
+		$languages = Language::fetchLanguageNames();
 		ksort( $languages );
 
 		$options = array();

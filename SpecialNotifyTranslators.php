@@ -374,8 +374,8 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 	/**
 	 * Returns a list of URLs for page translation in every language.
-	 * @param Array A hash of language codes and language names.
-	 * @param string The contact method - 'talkpage' or 'email'.
+	 * @param $languages Array A hash of language codes and language names.
+	 * @param $contactMethod string The contact method - 'talkpage' or 'email'.
 	 * @param $inLanguage Mixed: language code or Language object.
 	 * @return string
 	 */
@@ -418,8 +418,8 @@ class SpecialNotifyTranslators extends SpecialPage {
 	/**
 	 * Returns a list of language codes and names for the current
 	 * notification to the user.
-	 * @param User to whom the email is being sent
-	 * @param Array A list of languages that are notified. Empty for all languages.
+	 * @param $user User to whom the email is being sent
+	 * @param $languagesToNotify Array A list of languages that are notified. Empty for all languages.
 	 * @return boolean true if it was successful
 	 */
 	protected function getRelevantLanguages( $user, $languagesToNotify ) {
@@ -447,8 +447,8 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 	/**
 	 * Notify a user by email.
-	 * @param User to whom the email is being sent
-	 * @param Array A list of languages that are notified. Empty for all languages.
+	 * @param $user User to whom the email is being sent
+	 * @param $languagesToNotify Array A list of languages that are notified. Empty for all languages.
 	 * @return boolean true if it was successful
 	 */
 	protected function sendTranslationNotificationEmail(
@@ -491,9 +491,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 	/**
 	 * Leave a message on the user's talk page.
-	 * @param User To whom the message to be sent
-	 * @param Array A list of languages that are notified. Empty for all languages.
-	 * @param String Whether to send it to a talk page on this wiki ('talkpageHere', default)
+	 * @param $user User To whom the message to be sent
+	 * @param $languagesToNotify Array A list of languages that are notified. Empty for all languages.
+	 * @param $destination string Whether to send it to a talk page on this wiki ('talkpageHere', default)
 	 *               or another one ('talkpageInOtherWiki').
 	 * @return boolean true if it was successful
 	 */
