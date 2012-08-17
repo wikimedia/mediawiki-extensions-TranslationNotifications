@@ -1726,6 +1726,64 @@ $messages['ja'] = array(
 	'translationnotifications-nodeadline' => 'なし',
 );
 
+/** Javanese (Basa Jawa)
+ * @author NoiX180
+ */
+$messages['jv'] = array(
+	'translatorsignup' => 'Pandaptaran penerjemah',
+	'translatorsignup-summary' => 'Anggo kaca iki kanggo nemtokaké basa sing Sampéyan bisa terjemahaké, lan piyé Sampéyan bisa dihubungi ngenani panjalukan terjemahan anyar.',
+	'translationnotifications-desc' => 'Lilakaké panerjemah ndaptar kanggo wara-wara terjemahan',
+	'translationnotifications-info' => 'Informasi panganggo',
+	'translationnotifications-username' => 'Jeneng panganggo:',
+	'translationnotifications-emailstatus' => 'Status layang èlèktronik:',
+	'translationnotifications-email-confirmed' => 'Alamat layang èlèktronik Sampéyan wis dipesthèkaké',
+	'translationnotifications-email-disablemail' => 'Alamat layang èlèktronik Sampéyan wis dipesthèkaké, nanging [[Special:Preferences|prèferènsi Sampéyan]] ora njaluk nampa layang èlèktronik.',
+	'translationnotifications-email-unconfirmed' => 'Alamat layang èlèktronik Sampéyan durung dipesthèkaké. $1',
+	'translationnotifications-email-notset' => 'Sampéyan durung ngisi alamat layang èlèktronik. Sampéyan bisa ngisi kuwi nèng [[Special:Preferences|prèferènsi]] Sampéyan.',
+	'translationnotifications-languages' => 'Basa',
+	'translationnotifications-lang' => 'Basa $1',
+	'translationnotifications-nolang' => 'Pilih basa',
+	'translationnotifications-contact' => 'Metodé kontak sing disaranaké',
+	'translationnotifications-cmethod-email' => 'Layang èlèktronik',
+	'translationnotifications-cmethod-talkpage' => 'Kaca guneman',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Kaca guneman nèng wiki liya',
+	'translationnotifications-cmethod-feed' => 'Lebon saran',
+	'translationnotifications-frequency' => 'Frékuènsi kontak',
+	'translationnotifications-freq-always' => 'Nalika ana sing anyar kanggo diterjemahaké',
+	'translationnotifications-freq-week' => 'Paling kerep seminggu pisan',
+	'translationnotifications-freq-month' => 'Paling kerep sesasi pisan',
+	'translationnotifications-freq-weekly' => 'Intisari saben minggu',
+	'translationnotifications-freq-monthly' => 'Intisari saben sasi',
+	'translationnotifications-submit' => 'Anyari pangaturan',
+	'translationnotifications-signup-success' => 'Prèferènsi wara-wara terjemahan Sampéyan wis disimpen.',
+	'notifytranslators' => 'Élingaké panerjemah',
+	'translationnotifications-submit-ok' => 'Wara-wara wis ditambahaké nèng antrian lan diteraké déning tugas latar mburi.',
+	'translationnotifications-send-notification-button' => 'Kirim wara-wara nèng panerjemah',
+	'translationnotifications-deadline-label' => 'Wates wektu kanggo wara-wara iki:',
+	'translationnotifications-languages-to-notify-label' => 'Basa sing arep dièlingaké:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Kodhé basa dipisah koma, bènaké kosong kanggo ngèlingaké tumrap kabèh basa.',
+	'translationnotifications-priority' => 'Prioritas:',
+	'translationnotifications-priority-high' => 'dhuwur',
+	'translationnotifications-priority-medium' => 'sedhengan',
+	'translationnotifications-priority-low' => 'cedhek',
+	'translationnotifications-priority-unset' => '(durung disetèl)',
+	'translationnotifications-translatablepage-title' => 'Jeneng kaca sing bisa diterjemahaké:',
+	'translationnotifications-error-no-translatable-pages' => 'Ora ana kaca sing bisa diterjemahaké nèng wiki iki.',
+	'translationnotifications-email-subject' => 'Mangga terjemahaké kaca $1',
+	'translationnotifications-notification-url-listitem' => 'terjemahaké $1',
+	'translationnotifications-digestemail-subject' => 'Kirim intisasi nèng layang èlèktronik kanggo panjalukan terjemahan saka {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => 'Tanggal $1, $2 nandhai "$3" kanggo terjemahan. Sampéyan bisa nerjemahaké kuwi nèng $4',
+	'translationnotifications-edit-summary' => 'Wara-wara terjemahan: $1',
+	'translationnotifications-email-priority' => 'Prioritas kaca iki $1.',
+	'translationnotifications-email-deadline' => 'Wates  wektu kanggo nerjemahaké kaca iki $1.',
+	'log-name-notifytranslators' => 'Wara-wara terjemahan',
+	'log-description-notifytranslators' => 'Log wara-wara dikirim nèng panerjemah bab kaca-kaca sing bisa diterjemahaké',
+	'translationnotifications-sent-title' => 'Wara-wara terjemahan kakirim',
+	'translationnotifications-sent-body' => 'Wara-wara terjemahan dikirim.',
+	'translationnotifications-log-alllanguages' => 'kabèh basa',
+	'translationnotifications-nodeadline' => 'ora ana',
+);
+
 /** Georgian (ქართული)
  * @author David1010
  */
@@ -1858,9 +1916,9 @@ $4
 	'translationnotifications-edit-summary' => '번역 알림: $1',
 	'translationnotifications-email-priority' => '이 문서의 우선 순위는 $1입니다.',
 	'translationnotifications-email-deadline' => '이 문서의 번역에 대한 마감일은 $1입니다.',
-	'logentry-translationnotifications-sent' => '$1 사용자가 $3 번역 문서에 대한 알림을 {{GENDER:$2|보냄}}; 언어: $4; 마감일: $5; 우선 순위: $6; {{PLURAL:$7|받는 사람 한명|받는 사람 $7명}}한테 보냄, {{PLURAL:$8|받는 사람 한명|받는 사람 $8명}}한테 보내기 실패, {{PLURAL:$9|받는 사람 한명|받는 사람 $9명}}한테 보내기 생략',
+	'logentry-translationnotifications-sent' => '$1 사용자가 $3 번역 문서에 대한 알림을 {{GENDER:$2|보냈습니다}}. 언어: $4; 마감일: $5; 우선 순위: $6; {{PLURAL:$7|받는 사람 한명|받는 사람 $7명}}한테 보냄, {{PLURAL:$8|받는 사람 한명|받는 사람 $8명}}한테 보내기 실패, {{PLURAL:$9|받는 사람 한명|받는 사람 $9명}}한테 보내기 생략',
 	'log-name-notifytranslators' => '번역 알림',
-	'log-description-notifytranslators' => '번역 가능한 문서에 대한 알림을 번역자한테 전송한 기록입니다',
+	'log-description-notifytranslators' => '번역 가능한 문서에 대한 알림을 번역자한테 보낸 기록입니다',
 	'translationnotifications-sent-title' => '번역 알림 보내기',
 	'translationnotifications-sent-body' => '번역 알림을 보냈습니다.',
 	'translationnotifications-log-alllanguages' => '모든 언어',
@@ -3297,6 +3355,39 @@ $4
 	'translationnotifications-log-alllanguages' => 'усі мови',
 	'translationnotifications-nodeadline' => 'немає',
 	'translationnotifications-signup-legal' => 'Надаючи цю інформацію, Ви погоджуєтеся, що ми можемо контактувати з Вами за темами, що стосуються {{SITENAME}}, які, на нашу думку, можуть бути цікавими для Вас. Ви погоджуєтеся, що ваші дані є предметом [[{{MediaWiki:Privacypage}}|нашої політики конфіденційності]].',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'translatorsignup' => 'مترجم سائن اپ',
+	'translationnotifications-info' => 'صارف کی معلومات',
+	'translationnotifications-username' => 'صارف کا نام:',
+	'translationnotifications-emailstatus' => 'ای میل کا درجہ:',
+	'translationnotifications-email-confirmed' => 'آپ کا ای میل ایڈریس کی تصدیق ہوتی ہے',
+	'translationnotifications-languages' => 'زبانوں میں',
+	'translationnotifications-nolang' => 'ایک زبان کا انتخاب کریں',
+	'translationnotifications-contact' => 'پسندیدہ رابطہ طریقوں',
+	'translationnotifications-cmethod-email' => 'ای میل',
+	'translationnotifications-cmethod-talkpage' => 'صفحہ کی بات',
+	'translationnotifications-freq-month' => 'ایک ماہ میں سب سے زیادہ ایک بار پر',
+	'translationnotifications-freq-weekly' => 'ہفتہ وار ڈائجسٹ',
+	'translationnotifications-freq-monthly' => 'ماہانہ ڈائجسٹ',
+	'translationnotifications-submit' => 'اپ ڈیٹ کی ترتیبات',
+	'notifytranslators' => 'مترجمین مطلع کریں',
+	'translationnotifications-send-notification-button' => 'مترجمین کے لئے ایک اطلاعاتی پیغام بھیجیں',
+	'translationnotifications-languages-to-notify-label' => 'مطلع کریں جو زبانیں:',
+	'translationnotifications-priority' => 'ترجیح:',
+	'translationnotifications-priority-high' => 'اعلی',
+	'translationnotifications-priority-medium' => 'درمیانے',
+	'translationnotifications-priority-low' => 'کم',
+	'translationnotifications-translatablepage-title' => 'ترجمہ صفحہ کا نام:',
+	'log-name-notifytranslators' => 'ترجمہ کی اطلاعات',
+	'translationnotifications-sent-title' => 'ترجمہ اطلاع بھیجا',
+	'translationnotifications-sent-body' => 'ترجمہ اطلاعاتی پیغام بھیجا گیا تھا.',
+	'translationnotifications-log-alllanguages' => 'تمام زبانوں',
+	'translationnotifications-nodeadline' => 'کوئی بھی نہیں',
 );
 
 /** Vietnamese (Tiếng Việt)
