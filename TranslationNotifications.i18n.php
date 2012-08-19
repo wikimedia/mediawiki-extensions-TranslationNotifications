@@ -289,6 +289,7 @@ $messages['be-tarask'] = array(
 
 /** Breton (brezhoneg)
  * @author Fulup
+ * @author Y-M D
  */
 $messages['br'] = array(
 	'translatorsignup' => 'Kevreadur an troer',
@@ -303,6 +304,7 @@ $messages['br'] = array(
 	'translationnotifications-cmethod-email' => 'Postel',
 	'translationnotifications-cmethod-talkpage' => 'Pajenn gaozeal',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pajenn gaozeal war wikioù all',
+	'translationnotifications-cmethod-feed' => 'Lanvad',
 	'translationnotifications-freq-week' => "Ur wezh ar sizhun d'ar muiañ",
 	'translationnotifications-freq-month' => "Ur wezh ar miz d'ar muiañ",
 	'translationnotifications-freq-weekly' => 'Diverrañ ar sizhun',
@@ -3439,7 +3441,7 @@ $messages['vi'] = array(
 Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $2 tại {{SITENAME}}.
 
 Hiện có trang mới để dịch tại đấy: $3.
-Xin vui lòng dịch nó dùng liên kết sau:
+Bạn có thể dịch nó dùng liên kết sau:
 <$4>
 
 $5
@@ -3448,7 +3450,7 @@ $6
 $7
 
 Cám ơn!
-Ban quản lý biên dịch {{SITENAME}}
+Nhóm điều phối biên dịch {{SITENAME}}
 
 ----
 
@@ -3456,7 +3458,7 @@ Bạn nhận được thư điện tử này vì bạn đã quyết định nh�
 	'translationnotifications-talkpage-body' => 'Xin chào $2,
 
 Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $3 tại {{SITENAME}}.
-Hiện có trang mới để dịch, [[$4]]. Xin vui lòng dịch nó dùng liên kết sau:
+Trang [[$4]] mới có sẵn để dịch. Bạn có thể dịch nó dùng liên kết sau:
 $5
 
 $6
@@ -3466,7 +3468,7 @@ $8
 
 Cám ơn!
 
-Nhóm quản lý biên dịch {{SITENAME}}',
+Nhóm điều phối biên dịch {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'dịch ra $1',
 	'translationnotifications-digestemail-subject' => 'Thư điện tử tóm tắt các yêu cầu biên dịch từ {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Xin chào $1,
@@ -3477,7 +3479,8 @@ Hiện có {{PLURAL:$3|trang|$3 trang}} để dịch. Các chi tiết được �
 
 $4
 
-Cám ơn!
+Rất cám ơn sự giúp đỡ của bạn. {{SITENAME}} hoạt động nhờ các biên dịch viên như bạn.
+
 Ban quản lý biên dịch {{SITENAME}}
 
 ----
