@@ -3440,7 +3440,7 @@ $messages['vi'] = array(
 
 Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $2 tại {{SITENAME}}.
 
-Hiện có trang mới để dịch tại đấy: $3.
+Hiện có trang để dịch tại đấy: $3.
 Bạn có thể dịch nó dùng liên kết sau:
 <$4>
 
