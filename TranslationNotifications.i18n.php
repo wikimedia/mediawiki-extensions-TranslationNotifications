@@ -726,25 +726,29 @@ $messages['es'] = array(
 
 Estás recibiendo este mensaje de correo electrónico porque te inscribiste como traductor al idioma $2 de {{SITENAME}}.
 
-Hay una nueva página para traducir: $3.
-Por favor tradúcela haciendo clic en el enlace siguiente:
+Aquí hay una página para traducir: $3.
+Puedes traducirla haciendo clic en el enlace siguiente:
 <$4>
 
 $5
 $6
 
 $7
+
+Agradecemos enormemente tu ayuda. Traductores como tu hacen que {{SITENAME}} funcione
+como una verdadera comunidad multilingüe.
+
 ¡Gracias!
-Los administradores de traducción de {{SITENAME}}
+Los coordinadores de traducción de {{SITENAME}}
 
 ----
 
-Estás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita $8',
+Estás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita $8.',
 	'translationnotifications-talkpage-body' => 'Hola $2,
 
 Estás recibiendo esta notificación porque te inscribiste como traductor  de {{SITENAME}} en $3.
 
-Una nueva página, [[$4]] está disponible para su traducción. Por favor  tradúcela aquí:
+La página [[$4]] está disponible para su traducción. Puedes  traducirla aquí:
 $5
 
 $6
@@ -752,9 +756,11 @@ $7
 
 $8
 
+Agradecemos enormemente tu ayuda. Traductores como tú hacen que {{SITENAME}} funcione
+como una verdadera comunidad multilingüe.
 ¡Gracias!
 
-Los administradores de traducción de {{SITENAME}}',
+Los coordinadores de traducción de {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'traducir al $1',
 	'translationnotifications-digestemail-subject' => 'Correo electrónico de resumen para solicitudes de traducción de {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hola $1,
@@ -765,12 +771,15 @@ Hay {{PLURAL:$3|1 página|$3 páginas}} disponibles para su traducción. A conti
 
 $4
 
+Agradecemos enormemente tu ayuda. Traductores como tú hacen que {{SITENAME}} funcione
+como una verdadera comunidad multilingüe.
+
 ¡Gracias!
 Los administradores de traducción de {{SITENAME}}
 
 ----
 
-Estás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita <$5>',
+Estás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'En $1, $2  ha marcado "$3" para su traducción. Puede traducirlo en $4',
 	'translationnotifications-edit-summary' => 'Notificación de traducción: $1',
 	'translationnotifications-email-priority' => 'La prioridad de esta página es  $1.',
@@ -966,6 +975,7 @@ $messages['fi'] = array(
  * @author DavidL
  * @author Gomoko
  * @author Tititou36
+ * @author Urhixidur
  * @author Wyz
  */
 $messages['fr'] = array(
@@ -976,7 +986,7 @@ $messages['fr'] = array(
 	'translationnotifications-username' => "Nom de l'utilisateur:",
 	'translationnotifications-emailstatus' => 'État du courriel:',
 	'translationnotifications-email-confirmed' => 'Votre adresse de courriel est confirmée',
-	'translationnotifications-email-disablemail' => "Votre adresse de courriel est confirmée, mais dans [[Special:Preferences|vos préférences]] vous avez demandé à ne plus recevoir d'e-mail.",
+	'translationnotifications-email-disablemail' => 'Votre adresse de courriel est confirmée, mais dans [[Special:Preferences|vos préférences]] vous avez demandé à ne plus recevoir de correspondance électronique.',
 	'translationnotifications-email-unconfirmed' => "Votre adresse de courriel n'est pas confirmée. $1",
 	'translationnotifications-email-notset' => "Vous n'avez pas fourni d'adresse de courriel. Vous pouvez le faire dans vos [[Special:Preferences|préférences]].",
 	'translationnotifications-languages' => 'Langues',
@@ -1718,7 +1728,7 @@ $messages['ja'] = array(
 	'translationnotifications-translatablepage-title' => '翻訳対象ページの名前：',
 	'translationnotifications-error-no-translatable-pages' => 'このウィキには翻訳対象ページはありません。',
 	'translationnotifications-email-subject' => 'ページ $1 を翻訳してください',
-	'translationnotifications-edit-summary' => '翻訳の通知',
+	'translationnotifications-edit-summary' => '翻訳の通知: $1',
 	'translationnotifications-email-priority' => 'このページの優先度は$1です。',
 	'translationnotifications-email-deadline' => 'このページの翻訳の締め切りは $1 です。',
 	'log-name-notifytranslators' => '翻訳の通知',
