@@ -2170,6 +2170,7 @@ $4
  */
 $messages['ml'] = array(
 	'translatorsignup' => 'പരിഭാഷകർക്ക് പേരുചേർക്കാം',
+	'translationnotifications-info' => 'താങ്കളുടെ വിവരങ്ങൾ',
 	'translationnotifications-username' => 'ഉപയോക്തൃനാമം:',
 	'translationnotifications-emailstatus' => 'ഇമെയിൽ സ്ഥിതി:',
 	'translationnotifications-email-confirmed' => 'താങ്കളുടെ ഇമെയിൽ വിലാസം സ്ഥിരീകരിച്ചതാണ്',
@@ -2179,12 +2180,54 @@ $messages['ml'] = array(
 	'translationnotifications-languages' => 'ഭാഷകൾ',
 	'translationnotifications-lang' => 'ഭാഷ #$1',
 	'translationnotifications-nolang' => 'ഭാഷ തിരഞ്ഞെടുക്കുക',
+	'translationnotifications-contact' => 'ബന്ധപ്പെടുന്നതിനുള്ള മാർഗ്ഗങ്ങൾ',
 	'translationnotifications-cmethod-email' => 'ഇമെയിൽ',
 	'translationnotifications-cmethod-talkpage' => 'സം‌വാദം താൾ',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'വേറൊരു വിക്കിയിലെ സംവാദതാൾ',
 	'translationnotifications-cmethod-feed' => 'ഫീഡ്',
+	'translationnotifications-frequency' => 'ബന്ധപ്പെടേണ്ട ആവൃത്തി',
+	'translationnotifications-freq-always' => 'പുതുതായി എന്തെങ്കിലും തർജ്ജമ ചെയ്യാനുള്ളപ്പോൾ',
+	'translationnotifications-freq-week' => 'ആഴ്ചയിൽ പരമാവധി ഒരു തവണ',
+	'translationnotifications-freq-month' => 'മാസത്തിൽ പരമാവധി ഒരു തവണ',
+	'translationnotifications-freq-weekly' => 'ആഴ്ചതോറും സമാഹാരം',
+	'translationnotifications-freq-monthly' => 'മാസം  തോറും സമാഹാരം',
+	'translationnotifications-submit' => 'സജ്ജീകരണം പുതുക്കുക',
+	'translationnotifications-signup-success' => 'നിങ്ങളുടെ തർജ്ജമാ അറിയിപ്പുകളുടെ സജ്ജീകരണം സംരക്ഷിച്ചിരിക്കുന്നു.',
+	'notifytranslators' => 'തർജ്ജമക്കാർക്കുള്ള അറിയിപ്പുകൾ',
+	'translationnotifications-submit-ok' => 'അറിയിപ്പുകൾ വരവുവെച്ചിരിക്കുന്നു, ഒരു പിന്നാമ്പുറജോലി അതു് വിതരണം ചെയ്യുന്നതായിരിക്കും.',
+	'translationnotifications-send-notification-button' => 'തർജ്ജമക്കാർക്കു് അറിയിപ്പുകൾ അയയ്ക്കുക',
+	'translationnotifications-deadline-label' => 'ഈ അറിയിപ്പിൽ പറഞ്ഞിരിക്കേണ്ട അവസാനതിയ്യതി',
+	'translationnotifications-languages-to-notify-label' => 'ഏതൊക്കെ ഭാഷകളെപ്പറ്റി അറിയിച്ചിരിക്കണം:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'കോമയിട്ട ഭാഷകളുടെ കോഡുകൾ, എല്ലാ ഭാഷകളെയും അറിയിക്കാൻ വെറുതെയിടുക',
 	'translationnotifications-priority' => 'പ്രാധാന്യം:',
 	'translationnotifications-priority-high' => 'ഉന്നതം',
 	'translationnotifications-priority-medium' => 'ഇടത്തരം',
+	'translationnotifications-priority-low' => 'താഴ്ന്നതു്',
+	'translationnotifications-priority-unset' => '(സജ്ജീകരിച്ചിട്ടില്ല)',
+	'translationnotifications-translatablepage-title' => 'തർജ്ജമയ്ക്കുള്ള താൾ',
+	'translationnotifications-error-no-translatable-pages' => 'ഈ വിക്കിയിൽ തർജ്ജമ ചെയ്യാനുള്ള താളുകളൊന്നും ഇല്ല',
+	'translationnotifications-email-subject' => 'ദയവായി ഈ താൾ പരിഭാഷപ്പെടുത്തുക: $1',
+	'translationnotifications-email-body' => 'നമസ്കാരം $1,
+
+{{SITENAME}} ൽ $2 ഭാഷയ്ക്ക്പരിഭാഷയ്ക്കായി പേരുചേർത്തിട്ടുള്ളതിനാലാണു് താങ്കൾക്കു് ഈ മെയിൽ അയയ്ക്കുന്നതു്.
+
+അവിടെ $3 എന്ന താൾ പരിഭാഷയ്ക്കായി ഉണ്ടു്.
+താഴെക്കൊടുത്തിരിക്കുന്ന കണ്ണി ഉപയോഗിച്ചു് നിങ്ങൾക്കു് അതിനെ പരിഭാഷപ്പെടുത്താം.
+<$4>
+
+$5
+$6
+
+$7
+
+താങ്കളുടെ സഹായത്തിനു വളരെയേറെ നന്ദി. താങ്കളെപ്പോലുള്ള പരിഭാഷകരാണു് {{SITENAME}} യഥാർത്തത്തിൽ ഒരു ബഹുഭാഷാ കൂട്ടായ്മയായി പ്രവർത്തിക്കാൻ സഹായിക്കുന്നതു്.
+
+നന്ദി!
+{{SITENAME}} തർജ്ജമാ ഏകോപനസംഘം
+
+----
+
+{{SITENAME}} ൽ പരിഭാഷയ്ക്കായി പേരുചേർത്തിട്ടുള്ളതിനാലാണു് താങ്കൾക്കു് ഈ മെയിൽ അയയ്ക്കുന്നതു്. മേലിൽ ഈ അറിയിപ്പുകൾ വേണ്ടെങ്കിലോ അറിയിക്കേണ്ട  രീതി മാറ്റണമെങ്കിലോ  $8 ദയവായി സന്ദർശിക്കുക.',
 	'logentry-translationnotifications-sent' => ' $1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; sent to {{PLURAL:$7|one recipient|$7 recipients}}, failed for {{PLURAL:$8|one recipient|$8 recipients}}, skipped for {{PLURAL:$9|one recipient|$9 recipients}}',
 	'translationnotifications-log-alllanguages' => 'എല്ലാ ഭാഷകളും',
 	'translationnotifications-nodeadline' => 'ഒന്നുമില്ല',
