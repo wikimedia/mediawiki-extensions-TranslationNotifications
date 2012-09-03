@@ -2220,7 +2220,7 @@ $6
 
 $7
 
-താങ്കളുടെ സഹായത്തിനു വളരെയേറെ നന്ദി. താങ്കളെപ്പോലുള്ള പരിഭാഷകരാണു് {{SITENAME}} യഥാർത്തത്തിൽ ഒരു ബഹുഭാഷാ കൂട്ടായ്മയായി പ്രവർത്തിക്കാൻ സഹായിക്കുന്നതു്.
+താങ്കളുടെ സഹായത്തിനു വളരെയേറെ നന്ദി. താങ്കളെപ്പോലുള്ള പരിഭാഷകരാണു് {{SITENAME}} യഥാർത്ഥത്തിൽ ഒരു ബഹുഭാഷാ കൂട്ടായ്മയായി പ്രവർത്തിക്കാൻ സഹായിക്കുന്നതു്.
 
 നന്ദി!
 {{SITENAME}} തർജ്ജമാ ഏകോപനസംഘം
@@ -2228,7 +2228,13 @@ $7
 ----
 
 {{SITENAME}} ൽ പരിഭാഷയ്ക്കായി പേരുചേർത്തിട്ടുള്ളതിനാലാണു് താങ്കൾക്കു് ഈ മെയിൽ അയയ്ക്കുന്നതു്. മേലിൽ ഈ അറിയിപ്പുകൾ വേണ്ടെങ്കിലോ അറിയിക്കേണ്ട  രീതി മാറ്റണമെങ്കിലോ  $8 ദയവായി സന്ദർശിക്കുക.',
+	'translationnotifications-edit-summary' => 'പരിഭാഷാ അറിയിപ്പു് : $1',
+	'translationnotifications-email-priority' => 'ഈ താളിന്റെ മുൻഗണന $1 ആണു്',
+	'translationnotifications-email-deadline' => 'ഈ താൾ പരിഭാഷപ്പെടുത്തുന്നതിനുള്ള അവസാന തിയ്യതി $1 ആണു്.',
 	'logentry-translationnotifications-sent' => ' $1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; sent to {{PLURAL:$7|one recipient|$7 recipients}}, failed for {{PLURAL:$8|one recipient|$8 recipients}}, skipped for {{PLURAL:$9|one recipient|$9 recipients}}',
+	'log-name-notifytranslators' => 'പരിഭാഷാ അറിയിപ്പുകൾ',
+	'translationnotifications-sent-title' => 'പരിഭാഷാ അറിയിപ്പു് അയച്ചിരിക്കുന്നു.',
+	'translationnotifications-sent-body' => 'പരിഭാഷാ അറിയിപ്പു് അയച്ചിരിക്കുന്നു.',
 	'translationnotifications-log-alllanguages' => 'എല്ലാ ഭാഷകളും',
 	'translationnotifications-nodeadline' => 'ഒന്നുമില്ല',
 	'translationnotifications-signup-legal' => '{{SITENAME}} എന്ന വിക്കിയെക്കുറിച്ചു് നിങ്ങള്‍ക്കു് താത്പര്യമുണ്ടായേക്കാവുന്ന വിവരങ്ങള്‍ സംബന്ധിച്ചു് ഞങ്ങള്‍ക്കു് നിങ്ങളെ ബന്ധപ്പെടാമെന്നു നിങ്ങള്‍ സമ്മതിയ്ക്കുന്നു. നിങ്ങള്‍ തരുന്ന വിവരങ്ങള്‍ [[{{MediaWiki:Privacypage}}|സ്വകാര്യതാനയം]] അനുസരിച്ചു്ആയിരിക്കും  എന്നും നിങ്ങള്‍ സമ്മതിയ്ക്കുന്നു.',
