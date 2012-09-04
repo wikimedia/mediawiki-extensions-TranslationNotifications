@@ -3560,12 +3560,90 @@ Bạn nhận được thư điện tử này vì bạn đã quyết định nh�
 );
 
 /** Yiddish (ייִדיש)
+ * @author פוילישער
  * @author පසිඳු කාවින්ද
  */
 $messages['yi'] = array(
-	'translationnotifications-username' => 'באַניצער נאָמען:',
+	'translationnotifications-info' => 'באַניצער אינפֿאָרמאַציע',
+	'translationnotifications-username' => 'באַניצער־נאָמען:',
+	'translationnotifications-emailstatus' => 'ע־פאסט סטאטוס:',
+	'translationnotifications-email-confirmed' => 'אייער ע־פאסט אדרעס איז באשטעטיקט',
 	'translationnotifications-languages' => 'שפּראַכן',
+	'translationnotifications-lang' => 'שפראך #$1',
+	'translationnotifications-nolang' => 'קלויבט א שפראך',
 	'translationnotifications-cmethod-talkpage' => 'רעדן בלאַט',
+	'translationnotifications-priority-high' => 'הויך',
+	'translationnotifications-priority-medium' => 'מיטל',
+	'translationnotifications-priority-low' => 'נידעריק',
+	'translationnotifications-priority-unset' => '(נישט געשטעלט)',
+	'translationnotifications-translatablepage-title' => 'נאמען פון בלאט איבערצוזעצן:',
+	'translationnotifications-error-no-translatable-pages' => 'נישטא קיין איבערזעצבארע בלעטער אין דער וויקי.',
+	'translationnotifications-email-subject' => 'זייט אזוי גוט זעצט איבער דעם בלאט $1',
+	'translationnotifications-email-body' => 'טייערער $1,
+
+איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגשריבן ווי אן איבערזעצער אויף $2 ביי {{SITENAME}}.
+
+עס איז פאראן א בלאט איבערצוזעצן דארט: $3.
+
+איר קענט אים איבערזעצן דורך קליקן אויפן לינק:
+<$4>
+
+$5
+$6
+
+$7
+
+אייער הילף ווערט שטארק אפגעשאצט. איבערזעצער ווי איר העלפן {{SITENAME}} פונקציאנירן
+ווי אן אמת\'ע פילשפראכיקע געמיינדע.
+
+א ייש"כ!
+{{SITENAME}} איבערזעצונג קאארדינאטארן
+
+----
+
+איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגעשריבן צו באקומען בליצבריוון מיט א שייכות צו איבערזעצונגען ביי  {{SITENAME}}. זיך אומאבאנירן, אדער צו ענדערן  אייער אנזאג פרעפערענצן פאר איבערזעצונגען, זייט אזוי גוט באזוכט $8.',
+	'translationnotifications-talkpage-body' => 'טייערער $2,
+
+איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגשריבן ווי אן איבערזעצער אויף $3 ביי {{SITENAME}}.
+ס\'איז פאראן דער בלאט [[$4]] איבערצוזעצן. איר קענט אים איבערזעצן דא:
+$5
+
+$6
+$7
+
+$8
+
+אייער הילף ווערט שטארק אפגעשאצט. איבערזעצער ווי איר העלפן  {{SITENAME}} פונקציאנירן
+ווי אן אמת\'ע פילשפראכיקע געמיינדע.
+
+א ייש"כ!
+
+{{SITENAME}} איבערזעצונג קאארדינאטארן',
+	'translationnotifications-notification-url-listitem' => 'איבערזעצן אויף $1',
+	'translationnotifications-digestemail-body' => 'טייערער $1,
+
+איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגשריבן ווי אן איבערזעצער אויף $2 ביי {{SITENAME}}.
+
+עס  {{PLURAL:$3|איז פאראן 1 בלאט|זענען פאראן $3 בלעטער}} איבערצוזעצן. פרטים קענט איר טרעפן אונטן.
+
+$4
+
+אייער הילף ווערט שטארק אפגעשאצט. איבערזעצער ווי איר העלפן  {{SITENAME}} פונקציאנירן
+ווי אן אמת\'ע פילשפראכיקע געמיינדע.
+
+א ייש"כ!
+{{SITENAME}} איבערזעצונג אדמיניסטראטארן
+
+----
+
+איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגעשריבן צו באקומען בליצבריוון מיט א שייכות צו איבערזעצונגען ביי  {{SITENAME}}. זיך אומאבאנירן, אדער צו ענדערן  אייער אנזאג פרעפערענצן פאר איבערזעצונגען, זייט אזוי גוט באזוכט <$5>.',
+	'translationnotifications-digestemail-notification-line' => 'אום $1, האט $2 מארקירט דעם בלאט "$3" פאר איבערזעצן. איר קענט אים איבערזעצן ביי $4.',
+	'translationnotifications-edit-summary' => 'איבערזעצונג אנזאג: $1',
+	'log-name-notifytranslators' => 'איבערזעצונג אנזאגן',
+	'translationnotifications-sent-title' => 'איבערזעצונג אנזאג געשיקט',
+	'translationnotifications-sent-body' => 'איבערזעצונג אנזאג איז געשיקט געווארן.',
+	'translationnotifications-log-alllanguages' => 'אלע שפראַכן',
+	'translationnotifications-nodeadline' => 'קיין',
 );
 
 /** Simplified Chinese (‪中文（简体）‬)
