@@ -395,7 +395,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 				$translationURLsItems[] = "* [$translationURL $translationMsg]";
 				break;
 			case 'email':
-				$translationURLsItems[] = "* $translationMsg: $translationURL";
+				$translationURLsItems[] = "* $translationMsg: <$translationURL>";
 				break;
 			default:
 				return '';

@@ -61,7 +61,7 @@ You are receiving this e-mail because you signed up as a translator to $2 on {{S
 
 There is a page to translate there: $3.
 You can translate it by clicking the following link:
-<$4>
+$4
 
 $5
 $6
