@@ -131,6 +131,7 @@ You are receiving this e-mail because you signed up to receive e-mails related t
  * @author Amire80
  * @author Cquoi
  * @author Kghbln
+ * @author Nemo bis
  * @author Raymond
  * @author SPQRobin
  * @author Siebrand
@@ -180,7 +181,7 @@ $messages['qqq'] = array(
 * $1 - Translator's username or real name, if specified.
 * $2 - A comma list of language names.
 * $3 - Translatable page name.
-* <$4> - A bullet list of URLs.
+* $4 - A bullet list of URLs.
 * $5 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
 * $7 - A custom message that can be added by the notification sender.",
@@ -416,7 +417,7 @@ du erhältst diese E-Mail, da du dich als Übersetzer(in) für $2 auf {{SITENAME
 
 An folgender Stelle ist eine Seite zum Übersetzen vorhanden: $3.
 Du kannst sie nach dem Klicken auf den folgenden Link übersetzen:
-<$4>
+$4
 
 $5
 $6
@@ -498,7 +499,7 @@ Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $2 auf {{SITENAM
 
 An folgender Stelle ist eine neue Seite zum Übersetzen vorhanden: $3.
 Übersetzen Sie sie bitte nach dem Klicken auf den folgenden Link:
-<$4>
+$4
 
 $5
 $6
@@ -614,7 +615,7 @@ Dostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ za $2 na {{GRAMMAR:l
 
 Dajo nowy bok, kótaryž musy se pśełožowaś: $3.
 Móžoš jen pśełožiś, z tym až kliknjoš na slědujucy wótkaz:
-<$4>
+$4
 
 $5
 $6
@@ -728,7 +729,7 @@ Estás recibiendo este mensaje de correo electrónico porque te inscribiste como
 
 Aquí hay una página para traducir: $3.
 Puedes traducirla haciendo clic en el enlace siguiente:
-<$4>
+$4
 
 $5
 $6
@@ -843,7 +844,7 @@ Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $2 keelde tõ
 
 Tõlkimiseks on järgmine lehekülg: $3.
 Et see tõlkida, klõpsa palun järgmisele lingile:
-<$4>
+$4
 
 $5
 $6
@@ -1025,7 +1026,7 @@ Vous recevez ce courriel parce que vous vous êtes inscrit comme traducteur de $
 
 Il y a une page à traduire ici : $3.
 Vous pouvez la traduire en cliquant sur le lien suivant :
-<$4>
+$4
 
 $5
 $6
@@ -1167,7 +1168,7 @@ Recibiu este correo electrónico porque está inscrito como tradutor ao $2 en {{
 
 Hai unha páxina que traducir alí: $3.
 Pode traducila premendo na seguinte ligazón:
-<$4>
+$4
 
 $5
 $6
@@ -1283,7 +1284,7 @@ $messages['he'] = array(
 
 יש שם דף חדש שצריך לתרגם: $3.
 אפשר לתרגם אותו על־ידי לחיצה על הקישור הבא:
-<$4>
+$4
 
 $5
 $6
@@ -1399,7 +1400,7 @@ Dóstawaš tutu e-mejl, dokelž sy so jako přełožowar za $2 na {{GRAMMAR:loka
 
 Je nowa strona, kotraž dyrbi so přełožować: $3.
 Móžeš ju přełožować, kliknjo na slědowacy wotkaz:
-<$4>
+$4
 
 $5
 $6
@@ -1529,7 +1530,7 @@ Tu recipe iste message perque tu es inscribite como traductor in $2 in {{SITENAM
 
 Il ha un nove pagina a traducer: $3.
 Per favor traduce lo a partir del sequente ligamine:
-<$4>
+$4
 
 $5
 $6
@@ -1638,7 +1639,7 @@ Ricevi questa email perché ti sei registrato come traduttore di $2 su {{SITENAM
 
 C'è una pagina da tradurre: $3.
 Clicca su questo collegamento per iniziare a tradurla:
-<$4>
+$4
 
 $5
 $6
@@ -1872,7 +1873,7 @@ $messages['ko'] = array(
 
 여기에 번역에 대한 문서가 있습니다: $3.
 다음 링크를 클릭하여 번역할 수 있습니다:
-<$4>
+$4
 
 $5
 $6
@@ -2096,7 +2097,7 @@ $messages['mk'] = array(
 
 Има нова страница што треба да се преведе: $3.
 Преведете ја на следнава врска:
-<$4>
+$4
 
 $5
 $6
@@ -2213,7 +2214,7 @@ $messages['ml'] = array(
 
 അവിടെ $3 എന്ന താൾ പരിഭാഷയ്ക്കായി ഉണ്ടു്.
 താഴെക്കൊടുത്തിരിക്കുന്ന കണ്ണി ഉപയോഗിച്ചു് നിങ്ങൾക്കു് അതിനെ പരിഭാഷപ്പെടുത്താം.
-<$4>
+$4
 
 $5
 $6
@@ -2291,7 +2292,7 @@ Anda menerima e-mel ini kerana anda telah mendaftarkan diri sebagai penterjemah 
 Ada satu halaman untuk diterjemahkan di situ: $3.
 
 Anda boleh menterjemahkannya dengan mengklik pautan yang berikut:
-<$4>
+$4
 
 $5
 $6
@@ -2430,7 +2431,7 @@ Du mottar denne e-posten fordi du er meldt på som oversetter til $2 på {{SITEN
 
 Det er en ny side å oversette der: $3
 Vennligst oversett den ved å følge denne lenka:
-<$4>
+$4
 
 $5
 $6
@@ -2531,7 +2532,7 @@ U ontvangt deze e-mail omdat u zich heeft opgegeven als vertaler voor het $2 op 
 
 Er is een pagina te vertalen: $3.
 U kunt deze vertalen door op de volgende verwijzing te klikken:
-<$4>
+$4
 
 $5
 $6
@@ -2639,7 +2640,7 @@ du grigschd die E-Mail wail disch als Iwasedza fa $2 uff {{SITENAME}} oigdraache
 
 Oan der Schdell isch ä naiji Said fas Iwasedze do: $3.
 Iwasedzse bidde nochm Drigge uff:
-<$4>
+$4
 
 $5
 $6
@@ -2740,7 +2741,7 @@ Otrzymujesz tę wiadomość e-mail, ponieważ użytkownik zarejestrował się ja
 
 Jest nowa strona do tłumaczenia:  $3 .
 Przetłumacz ją klikając poniższe łącze:
-<$4>
+$4
 
 $5
 $6
@@ -2896,7 +2897,7 @@ $messages['ru'] = array(
 
 Вот новая страница, требующая перевода:  $3.
 Пожалуйста переведите её, нажав на следующую ссылку:
-<$4>
+$4
 
 $5
 $6
@@ -3130,7 +3131,7 @@ $messages['ta'] = array(
 
 அங்கு மொழிபெயர்க்க இங்கு ஒரு பக்கம் உள்ளது: $3.
 கீழ்க்காணும் இணைப்பை சொடுக்குவதன் மூலம் நீங்கள் அதை மொழிபெயர்க்கலாம்:
-<$4>
+$4
 
 $5
 $6
@@ -3248,7 +3249,7 @@ Natanggap mo ang elektronikong liham na ito dahil nagparehistro ka bilang isang 
 
 Mayroong isang pahinang isasalinwika roon: $3.
 Maisasalinwika iyon sa pamamagitan ng paglagitik sa sumusunod na kawing:
-<<$4>>
+<$4>
 
 $5
 $6
@@ -3364,7 +3365,7 @@ $messages['uk'] = array(
 
 Є нова сторінка для перекладу: $3.
 Будь ласка, перекладіть її, клацнувши такі посилання:
-<$4>
+$4
 
 $5
 $6
@@ -3505,7 +3506,7 @@ Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biê
 
 Hiện có trang để dịch tại đấy: $3.
 Bạn có thể dịch nó dùng liên kết sau:
-<$4>
+$4
 
 $5
 $6
@@ -3590,7 +3591,7 @@ $messages['yi'] = array(
 עס איז פאראן א בלאט איבערצוזעצן דארט: $3.
 
 איר קענט אים איבערזעצן דורך קליקן אויפן לינק:
-<$4>
+$4
 
 $5
 $6
