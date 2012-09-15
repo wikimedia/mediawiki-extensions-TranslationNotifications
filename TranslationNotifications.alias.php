@@ -49,6 +49,11 @@ $specialPageAliases['he'] = array(
 	'TranslatorSignup' => array( 'רישום_מתרגמים' ),
 );
 
+/** Japanese (日本語) */
+$specialPageAliases['ja'] = array(
+	'TranslatorSignup' => array( '翻訳者登録' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'NotifyTranslators' => array( '번역자알림' ),

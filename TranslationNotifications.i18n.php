@@ -286,6 +286,38 @@ $messages['be-tarask'] = array(
 	'notifytranslators' => 'Паведаміць перакладчыкам',
 	'translationnotifications-submit-ok' => 'Паведамленьни были даданыя ў чаргу на адпраўку ў фонавым рэжыме.',
 	'translationnotifications-send-notification-button' => 'Даслаць паведамленьне перакладчыкам',
+	'translationnotifications-deadline-label' => 'Тэрмін здачы для адлюстраваньня ў апавяшчэньні:',
+	'translationnotifications-languages-to-notify-label' => 'Мовы для апавяшчэньня:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Сьпіс кодаў моваў праз коску; пакіньце поле пустым, каб даслаць на ўсе мовы.',
+	'translationnotifications-priority' => 'Прыярытэт:',
+	'translationnotifications-priority-high' => 'высокі',
+	'translationnotifications-priority-medium' => 'сярэдні',
+	'translationnotifications-priority-low' => 'нізкі',
+	'translationnotifications-priority-unset' => '(не зададзена)',
+	'translationnotifications-translatablepage-title' => 'Перакладальная назва старонкі:',
+	'translationnotifications-error-no-translatable-pages' => 'У гэтай вікі няма старонак для перакладу.',
+	'translationnotifications-email-subject' => 'Калі ласка, перакладзіце старонку $1',
+	'translationnotifications-email-body' => 'Вітаем, $1.
+
+Вы атрымалі гэты ліст, бо заявілі сябе перакладчыкам на $2 у {{GRAMMAR:месны|{{SITENAME}}}}.
+
+Для перакладу даступная старонка: $3.
+Вы можаце перакласьці яе, перайшоўшы па спасылцы:
+$4
+
+$5
+$6
+
+$7
+
+Мы вельмі ўдзячныя за вашу дапамогу. Перакладчыкі дапамагаюць {{GRAMMAR:давальны|{{SITENAME}}}} падтрымліваць статус сапраўды шматмоўнай супольнасьці.
+
+Вялікі дзякуй!
+Каардынатары перакладаў {{GRAMMAR:родны|{{SITENAME}}}}
+
+----
+
+Вы атрымалі гэты ліст, бо дазволілі атрыманьне электронных лістоў, датычных перакладаў у {{GRAMMAR:месны|{{SITENAME}}}}. Каб адпісацца ад апавяшчэньняў ці зьмяніць налады апавяшчэньня, наведайце $8, калі ласка.',
 );
 
 /** Breton (brezhoneg)
