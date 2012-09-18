@@ -2613,7 +2613,7 @@ U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-m
 	'translationnotifications-edit-summary' => 'Melding over vertaling: $1',
 	'translationnotifications-email-priority' => 'De prioriteit voor deze pagina is $1.',
 	'translationnotifications-email-deadline' => 'De deadline voor het vertalen van deze pagina is $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|heeft}} een melding verzonden voor de vertaalbare pagina $3; talen: $4; deadline: $5; prioriteit: $6; verzonden aan {{PLURAL:$7|één ontvangen|$7 ontvangers}}, mislukt voor {{PLURAL:$8|één ontvanger|$8 ontvangers}}, overgeslagen voor {{PLURAL:$9|één ontvanger|$9 ontvangers}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|heeft}} een melding verzonden voor de vertaalbare pagina $3; talen: $4; deadline: $5; prioriteit: $6; verzonden aan {{PLURAL:$7|één ontvanger|$7 ontvangers}}, mislukt voor {{PLURAL:$8|één ontvanger|$8 ontvangers}}, overgeslagen voor {{PLURAL:$9|één ontvanger|$9 ontvangers}}',
 	'log-name-notifytranslators' => 'Meldingen over vertalingen',
 	'log-description-notifytranslators' => "Een logboek van meldingen verzonden naar vertalers over vertaalbare pagina's",
 	'translationnotifications-sent-title' => 'De melding aan vertalers is verzonden',
