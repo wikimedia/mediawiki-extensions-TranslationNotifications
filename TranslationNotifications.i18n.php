@@ -132,6 +132,7 @@ You are receiving this e-mail because you signed up to receive e-mails related t
  * @author Cquoi
  * @author Kghbln
  * @author Nemo bis
+ * @author Olli
  * @author Raymond
  * @author SPQRobin
  * @author Siebrand
@@ -184,7 +185,8 @@ $messages['qqq'] = array(
 * $4 - A bullet list of URLs.
 * $5 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
-* $7 - A custom message that can be added by the notification sender.",
+* $7 - A custom message that can be added by the notification sender.
+* $8 - ???",
 	'translationnotifications-talkpage-body' => "The body of the notification on user talk page.
 
 * $2 - Translator's username or real name, if specified.
@@ -977,29 +979,120 @@ $messages['fa'] = array(
 
 /** Finnish (suomi)
  * @author Beluga
+ * @author Nike
+ * @author Olli
  */
 $messages['fi'] = array(
+	'translatorsignup' => 'Kääntäjäksi liittyminen',
+	'translatorsignup-summary' => 'Käytä tätä sivua liittyäksesi haluamiesi kielten kääntäjiksi, ja ilmoittaaksesi kuinka haluat käännöksiin liittyvien yhteydenottojen tapahtuvan.',
+	'translationnotifications-desc' => 'Sallii kääntäjien ottaa ilmoitukset käännöksistä käyttöön',
 	'translationnotifications-info' => 'Käyttäjätiedot',
 	'translationnotifications-username' => 'Käyttäjätunnus:',
 	'translationnotifications-emailstatus' => 'Sähköpostin tila:',
 	'translationnotifications-email-confirmed' => 'Sähköpostiosoite vahvistettiin',
+	'translationnotifications-email-disablemail' => 'Sähköpostiosoitteesi on vahvistettu, mutta [[Special:Preferences|asetuksissasi]] olet valinnut, että et halua vastaanottaa sähköpostia.',
 	'translationnotifications-email-unconfirmed' => 'Sähköpostiosoitettasi ei vahvistettu. $1',
+	'translationnotifications-email-notset' => 'Et ole antanut sähköpostiosoitetta. Voit antaa sen [[Special:Preferences|asetuksissa]].',
 	'translationnotifications-languages' => 'Kielet',
 	'translationnotifications-lang' => 'Kieli #$1',
 	'translationnotifications-nolang' => 'Valitse kieli',
+	'translationnotifications-contact' => 'Halutut yhteydenottotavat',
 	'translationnotifications-cmethod-email' => 'Sähköposti',
 	'translationnotifications-cmethod-talkpage' => 'Keskustelusivu',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Keskustelusivuni tässä wikissä:',
 	'translationnotifications-cmethod-feed' => 'Syöte',
+	'translationnotifications-frequency' => 'Yhteydenottoväli',
+	'translationnotifications-freq-always' => 'Heti, kun uutta käännettävää on tarjolla',
+	'translationnotifications-freq-week' => 'Enintään kerran viikossa',
+	'translationnotifications-freq-month' => 'Enintään kerran kuukaudessa',
 	'translationnotifications-freq-weekly' => 'Viikottainen tiivistelmä',
 	'translationnotifications-freq-monthly' => 'Kuukausittainen tiivistelmä',
 	'translationnotifications-submit' => 'Päivitä asetukset',
+	'translationnotifications-signup-success' => 'Käännöksien ilmoitusasetukset tallennettiin.',
+	'notifytranslators' => 'Käännösilmoitukset',
+	'translationnotifications-submit-ok' => 'Ilmoitukset on lisätty jonoon ja ne tullaan toimittamaan taustatehtävänä.',
+	'translationnotifications-send-notification-button' => 'Lähetä ilmoitus kääntäjille',
+	'translationnotifications-deadline-label' => 'Ilmoituksessa kerrottava käännöksen määräaika:',
+	'translationnotifications-languages-to-notify-label' => 'Minkä kielten kääntäjiä ilmoitetaan:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Pilkulla erotellut kielikoodit; jos haluat ilmoittaa kaikkien kielien kääntäjille, jätä tyhjäksi.',
 	'translationnotifications-priority' => 'Prioriteetti:',
 	'translationnotifications-priority-high' => 'korkea',
 	'translationnotifications-priority-medium' => 'keskiverto',
 	'translationnotifications-priority-low' => 'matala',
 	'translationnotifications-priority-unset' => '(ei asetettu)',
+	'translationnotifications-translatablepage-title' => 'Käännettävän sivun nimi:',
+	'translationnotifications-error-no-translatable-pages' => 'Tässä wikissä ei ole käännettäviä sivuja.',
+	'translationnotifications-email-subject' => 'Ole hyvä ja käännä sivu $1',
+	'translationnotifications-email-body' => 'Hei $1,
+
+Saat tämän sähköpostiviestin, koska olet ilmoittanut kielen/kielten $2 kääntäjäksi sivustolla {{SITENAME}}.
+
+Seuraava sivu on nyt saatavilla käännettäväksi: $3.
+Voit kääntää sen seuraavaa linkkiä napsauttamalla:
+$4
+
+$5
+$6
+
+$7
+
+Apuasi arvostetaan. Sinunlaisesi kääntäjät pitävät sivuston {{SITENAME}} toiminnassa
+monikielisenä yhteisönä.
+
+Kiitos!
+Sivuston {{SITENAME}} käännösvastaavat
+
+----
+
+Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä sivustolla  {{SITENAME}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy $8.',
+	'translationnotifications-talkpage-body' => 'Hei $2,
+
+Saat tämän ilmoituksen, koska olet liittynyt kielen/kielten $3 kääntäjäksi sivustolla {{SITENAME}}.
+Sivu [[$4]] on saatavilla käännettäväksi. Voit kääntää sen osoitteessa:
+$5
+
+$6
+$7
+
+$8
+
+Apuasi arvostetaan. Sinuntapaisesi kääntäjät pitävät sivuston {{SITENAME}} toiminnassa
+monikielisenä yhteisönä.
+
+Kiitos!
+
+Sivuston {{SITENAME}} käännösvastaavat',
+	'translationnotifications-notification-url-listitem' => 'käännä kielelle $1',
+	'translationnotifications-digestemail-subject' => 'Yhteenveto sivuston {{SITENAME}} käännöspyynnöistä',
+	'translationnotifications-digestemail-body' => 'Hei $1,
+
+Saat tämän sähköpostiviestin, koska olet ilmoittanut kielen/kielten $2 kääntäjäksi sivustolla {{SITENAME}}.
+
+Saatavilla on $3 siv{{PLURAL:$3|u|ua}} käännettäväksi. Tarkemmat tiedot annetaan alla.
+
+$4
+
+Apuasi arvostetaan. Sinunlaisesi kääntäjät pitävät sivuston {{SITENAME}} toiminnassa
+monikielisenä yhteisönä.
+
+Kiitos!
+Sivuston {{SITENAME}} käännösvastaavat
+
+----
+
+Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä sivustolla  {{SITENAME}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy sivulla <$5>.',
+	'translationnotifications-digestemail-notification-line' => '($1) $2 ilmoitti sivun "$3" käännettäväksi. Voit kääntää sen osoitteessa $4',
+	'translationnotifications-edit-summary' => 'Ilmoitus käännöksestä: $1',
+	'translationnotifications-email-priority' => 'Tämän sivun tärkeysaste on $1.',
+	'translationnotifications-email-deadline' => 'Tämä sivu tulisi kääntää viimeistään $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|lähetti}} ilmoituksen sivun $3 kääntämisestä; kielet: $4; määräaika: $5; tärkeysaste: $6; lähetettiin {{PLURAL:$7|yhdelle kääntäjälle|$7 kääntäjälle}}, epäonnistui {{PLURAL:$8|yhdelle kääntäjälle|$8 kääntäjälle}}, ohitettiin {{PLURAL:$9|yhdelle kääntäjälle|$9 kääntäjälle}}',
+	'log-name-notifytranslators' => 'Ilmoitukset käännöksistä',
+	'log-description-notifytranslators' => 'Loki ilmoituksista, jotka on lähetetty kääntäjille käännettävistä sivuista',
+	'translationnotifications-sent-title' => 'Käännösilmoitus lähetetty',
+	'translationnotifications-sent-body' => 'Käännösilmoitus lähetettiin.',
 	'translationnotifications-log-alllanguages' => 'kaikki kielet',
 	'translationnotifications-nodeadline' => 'ei mitään',
+	'translationnotifications-signup-legal' => 'Antamalla nämä tiedot, vahvistat, että voimme ottaa sinuun yhteyttä sivustoon {{SITENAME}} liittyvissä asioissa, joiden arvelemme kiinnostavan sinua. Hyväksyt, että tietojasi käytetään  [[{{MediaWiki:Privacypage}}|yksityisyydensuojan]] alaisena.',
 );
 
 /** French (français)
