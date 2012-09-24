@@ -139,7 +139,8 @@ JAVASCRIPT
 				$m["cmethod-$method"]['disabled'] = !$user->canReceiveEmail();
 			}
 
-			if ( $method === 'talkpage-elsewhere' ) {
+			global $wgLocalInterwiki;
+			if ( $method === 'talkpage-elsewhere' && $wgLocalInterwiki !== false ) {
 				$m['cmethod-talkpage-elsewhere-loc'] = array(
 					'type' => 'select',
 					'default' => $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere-loc' ),

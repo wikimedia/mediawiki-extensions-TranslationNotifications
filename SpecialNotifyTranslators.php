@@ -520,12 +520,17 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$this->notificationText
 		);
 
+		global $wgLocalInterwiki;
+		$titleForMessage = $this->translatablePageTitle;
+		if ( $destination === 'talkpageInOtherWiki' && $wgLocalInterwiki !== false ) {
+			$titleForMessage = ":$wgLocalInterwiki:$titleForMessage|$titleForMessage";
+		}
 		$text = $this->msg(
 			'translationnotifications-talkpage-body',
 			null, // $1 was used in the past and then removed.
 			$this->getUserName( $user ),
 			$userFirstLanguage->listToText( array_values( $relevantLanguages ) ),
-			$this->translatablePageTitle,
+			$titleForMessage,
 			$this->getTranslationURLs( $relevantLanguages, 'talkpage', $userFirstLanguage ),
 			$this->getPriorityClause( $userFirstLanguage ),
 			$this->getDeadlineClause( $userFirstLanguage ),
