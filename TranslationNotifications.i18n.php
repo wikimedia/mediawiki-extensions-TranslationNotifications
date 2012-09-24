@@ -186,7 +186,7 @@ $messages['qqq'] = array(
 * $5 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
 * $7 - A custom message that can be added by the notification sender.
-* $8 - ???",
+* $8 - URL to the special page, to unsubscribe",
 	'translationnotifications-talkpage-body' => "The body of the notification on user talk page.
 
 * $2 - Translator's username or real name, if specified.
