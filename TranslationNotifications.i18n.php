@@ -534,7 +534,7 @@ Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Üb
 	'translationnotifications-signup-legal' => 'Mit Angabe dieser Informationen stimmst du zu, dass wir dich bezüglich Themen im Zusammenhang mit {{SITENAME}} kontaktieren können, die unserer Meinung nach für dich von Interesse sind. Du stimmst zudem zu, dass deine Daten unseren [[{{MediaWiki:Privacypage}}|Datenschutzgrundsätzen]] unterliegen.',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Geitost
  * @author Kghbln
  */
@@ -2134,7 +2134,7 @@ $messages['ksh'] = array(
 	'translationnotifications-nodeadline' => 'kein',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -2529,7 +2529,7 @@ $messages['mt'] = array(
 	'translationnotifications-priority-low' => 'baxx',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $messages['nb'] = array(
 	'translatorsignup' => 'Registrer deg som oversetter',
 	'translatorsignup-summary' => 'Bruk denne siden for å vise hvilke språk du vil oversette til og hvordan du ønsker å bli kontaktet om nye forespørsler.',
@@ -3795,7 +3795,7 @@ $4
 	'translationnotifications-nodeadline' => 'קיין',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Liangent
  * @author Shirayuki
  */
