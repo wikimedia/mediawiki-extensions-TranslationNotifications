@@ -135,6 +135,7 @@ You are receiving this e-mail because you signed up to receive e-mails related t
  * @author Olli
  * @author Raymond
  * @author SPQRobin
+ * @author Shirayuki
  * @author Siebrand
  */
 $messages['qqq'] = array(
@@ -147,7 +148,7 @@ $messages['qqq'] = array(
 	'translationnotifications-email-confirmed' => 'Status of e-mail confirmation after {{msg-mw|translationnotifications-emailstatus}}.',
 	'translationnotifications-email-disablemail' => 'A message that appears on top of Special:TranslatorSignup if the email address is confirmed, the user disabled email in the preferences.',
 	'translationnotifications-email-unconfirmed' => 'Status of e-mail confirmation after {{msg-mw|translationnotifications-emailstatus}}. Parameters:
-* $1 is a button which can be used to send confirmation email. Button text is {{msg-mw|mediawiki:confirmemail_send}}.',
+* $1 is a button which can be used to send confirmation email. Button text is {{msg-mw|confirmemail_send}}.',
 	'translationnotifications-email-notset' => 'Status of e-mail confirmation after {{msg-mw|translationnotifications-emailstatus}}.',
 	'translationnotifications-languages' => 'Fieldset header',
 	'translationnotifications-lang' => 'Label for select, $1 is a number',
@@ -1847,18 +1848,30 @@ Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di pos
  * @author Shirayuki
  */
 $messages['ja'] = array(
+	'translatorsignup' => '翻訳者登録',
+	'translatorsignup-summary' => 'このページでは、あなたがどの言語に翻訳できるかを伝えることができ、新しい翻訳依頼を受け取る手段を指定できます。',
+	'translationnotifications-desc' => '翻訳者が登録して翻訳の通知を受信できるようにする',
 	'translationnotifications-info' => '利用者情報',
-	'translationnotifications-username' => '利用者名：',
-	'translationnotifications-emailstatus' => 'メールの状態：',
+	'translationnotifications-username' => '利用者名:',
+	'translationnotifications-emailstatus' => 'メールアドレスの状態:',
+	'translationnotifications-email-confirmed' => 'メールアドレスは検証済みです',
+	'translationnotifications-email-disablemail' => 'メールアドレスは検証済みですが、[[Special:Preferences|個人設定]]でメールを受け取る設定にしていません。',
+	'translationnotifications-email-unconfirmed' => 'メールアドレスは未検証です。$1',
 	'translationnotifications-email-notset' => 'あなたはメールアドレスを設定していません。[[Special:Preferences|個人設定]]で設定できます。',
 	'translationnotifications-languages' => '言語',
 	'translationnotifications-lang' => '言語 #$1',
 	'translationnotifications-nolang' => '言語を選択',
+	'translationnotifications-contact' => '希望する連絡手段',
 	'translationnotifications-cmethod-email' => 'メール',
 	'translationnotifications-cmethod-talkpage' => 'トークページ',
 	'translationnotifications-cmethod-talkpage-elsewhere' => '他のウィキのトークページ',
 	'translationnotifications-cmethod-feed' => 'フィード',
 	'translationnotifications-frequency' => '連絡の頻度',
+	'translationnotifications-freq-always' => '翻訳対象が新たに追加されるたびに',
+	'translationnotifications-freq-week' => '週 1 通まで',
+	'translationnotifications-freq-month' => '月 1 通まで',
+	'translationnotifications-submit' => '設定を更新',
+	'translationnotifications-signup-success' => '翻訳の通知の設定を保存しました。',
 	'notifytranslators' => '翻訳者に通知',
 	'translationnotifications-submit-ok' => '通知をキューに追加しました。通知はバックグラウンドジョブによって送信されます。',
 	'translationnotifications-send-notification-button' => '翻訳者に通知を送信',
@@ -1869,10 +1882,11 @@ $messages['ja'] = array(
 	'translationnotifications-priority-high' => '高',
 	'translationnotifications-priority-medium' => '中',
 	'translationnotifications-priority-low' => '低',
-	'translationnotifications-priority-unset' => '（未設定）',
-	'translationnotifications-translatablepage-title' => '翻訳対象ページの名前：',
+	'translationnotifications-priority-unset' => '(未設定)',
+	'translationnotifications-translatablepage-title' => '翻訳対象のページ名:',
 	'translationnotifications-error-no-translatable-pages' => 'このウィキには翻訳対象ページはありません。',
 	'translationnotifications-email-subject' => 'ページ $1 を翻訳してください',
+	'translationnotifications-notification-url-listitem' => '$1に翻訳',
 	'translationnotifications-edit-summary' => '翻訳の通知: $1',
 	'translationnotifications-email-priority' => 'このページの優先度は$1です。',
 	'translationnotifications-email-deadline' => 'このページの翻訳の締め切りは $1 です。',
