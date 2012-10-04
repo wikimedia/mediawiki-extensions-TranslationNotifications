@@ -420,7 +420,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * notification to the user.
 	 * @param $user User to whom the email is being sent
 	 * @param $languagesToNotify Array A list of languages that are notified. Empty for all languages.
-	 * @return boolean true if it was successful
+	 * @return array
 	 */
 	protected function getRelevantLanguages( $user, $languagesToNotify ) {
 		$userLanguages = $this->getUserLanguages( $user );
@@ -469,8 +469,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$this->getPriorityClause( $userFirstLanguage ),
 			$this->getDeadlineClause( $userFirstLanguage ),
 			$this->notificationText,
-			$signupURL
-		)->inLanguage( $userFirstLanguage )->text();
+			$signupURL )
+			->numParams( count( $relevantLanguages ) ) // $9
+			->inLanguage( $userFirstLanguage )->text();
 
 		global $wgNoReplyAddress;
 		$sender = $this->getUser();
@@ -534,8 +535,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$this->getTranslationURLs( $relevantLanguages, 'talkpage', $userFirstLanguage ),
 			$this->getPriorityClause( $userFirstLanguage ),
 			$this->getDeadlineClause( $userFirstLanguage ),
-			$notificationText
-			)->inLanguage( $userFirstLanguage )->text()
+			$notificationText )
+			->numParams( count( $relevantLanguages ) )
+			->inLanguage( $userFirstLanguage )
+			->text()
 			// Bidi-isolation of site name from date
 			. $userFirstLanguage->getDirMarkEntity()
 			. ', ~~~~~'; // Date and time
