@@ -340,8 +340,10 @@ $8
 
 Каардынатары перакладаў {{GRAMMAR:родны|{{SITENAME}}}}',
 	'translationnotifications-edit-summary' => 'Апавяшчэньне пра пераклад: $1',
+	'translationnotifications-email-priority' => 'Прыярытэт гэтай старонкі — $1.',
 	'translationnotifications-email-deadline' => 'Апошні тэрмін для перакладу гэтай старонкі — $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|апавясьціў|апавясьціла}} пра пераклад старонкі «$3»; мовы: $4; тэрмін: $5; прыярытэт: $6; даслана {{PLURAL:$7|аднаму адрасату|$7 адрасатам}}, няўдала даслана {{PLURAL:$8|аднаму адрасату|$8 адрасатам}}, не даслана {{PLURAL:$9|аднаму адрасату|$9 адрасатам}}',
+	'log-name-notifytranslators' => 'Апавяшчэньні пра пераклад',
 );
 
 /** Breton (brezhoneg)

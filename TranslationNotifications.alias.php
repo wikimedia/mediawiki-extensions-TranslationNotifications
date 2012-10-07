@@ -51,6 +51,7 @@ $specialPageAliases['he'] = array(
 
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
+	'NotifyTranslators' => array( '翻訳者通知' ),
 	'TranslatorSignup' => array( '翻訳者登録' ),
 );
 
