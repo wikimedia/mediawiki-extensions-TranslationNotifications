@@ -247,15 +247,38 @@ $messages['tru'] = array(
  * @author Bishnu Saikia
  */
 $messages['as'] = array(
+	'translatorsignup' => 'অনুবাদক ৰূপে পঞ্জীয়ন',
 	'translationnotifications-info' => 'সদস্যৰ তথ্য',
 	'translationnotifications-username' => 'সদস্য নাম:',
 	'translationnotifications-emailstatus' => 'ই-মেইলৰ স্থিতি:',
+	'translationnotifications-email-confirmed' => 'আপোনাৰ ইমেইল ঠিকনা নিশ্চিত হ’ল',
+	'translationnotifications-email-unconfirmed' => '$1, আপোনাৰ ইমেইল ঠিকনা নিশ্চিত কৰা হোৱা নাই।',
 	'translationnotifications-languages' => 'ভাষাসমূহ',
 	'translationnotifications-lang' => 'ভাষা #$1',
+	'translationnotifications-nolang' => 'ভাষা নির্বাচন কৰক',
+	'translationnotifications-contact' => 'যোগাযোগ প্ৰক্ৰিয়াৰ বাবে নিৰ্বাচিত পছন্দসমূহ',
 	'translationnotifications-cmethod-email' => 'ই-মেইল',
 	'translationnotifications-cmethod-talkpage' => 'আলোচনা পৃষ্ঠা',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'অন্য ৱিকিৰ আলোচনা পৃষ্ঠা',
 	'translationnotifications-cmethod-feed' => 'ভুক্তি',
+	'translationnotifications-frequency' => 'সদায়েই যোগাযোগ ৰাখক',
+	'translationnotifications-freq-always' => 'যেতিয়াই নতুন কিবা ভাঙনিৰ কাম থাকে',
+	'translationnotifications-freq-week' => 'সপ্তাহত কমেও এবাৰকৈ',
+	'translationnotifications-freq-month' => 'মাহত কমেও এবাৰকৈ',
+	'translationnotifications-freq-weekly' => 'সাপ্তাহিক ভূক্তি',
+	'translationnotifications-freq-monthly' => 'মাহিলী ভূক্তি',
+	'translationnotifications-submit' => 'পছন্দসমূহ সাঁচি ৰাখক',
+	'translationnotifications-signup-success' => 'আপোনাৰ ভাঙনিৰ জাননীসমূহৰ পছন্দ সাঁচি ৰখা হৈছে',
+	'notifytranslators' => 'ভাঙনিকৰ্তাক জনাওক',
+	'translationnotifications-send-notification-button' => 'ভাঙনিকৰ্তালৈ জাননী প্ৰেৰণ কৰক',
+	'translationnotifications-priority' => 'প্ৰাথমিকতা',
+	'translationnotifications-priority-high' => 'উচ্চ',
+	'translationnotifications-priority-medium' => 'মধ্যম',
+	'translationnotifications-priority-low' => 'নিম্ন',
+	'translationnotifications-notification-url-listitem' => '$1’লৈ ভাঙনি',
+	'translationnotifications-edit-summary' => 'ভাঙনিৰ জাননী: $1',
 	'translationnotifications-log-alllanguages' => 'সকলোবোৰ ভাষা',
+	'translationnotifications-nodeadline' => 'একো নাই',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
@@ -2751,6 +2774,38 @@ U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-m
 	'translationnotifications-log-alllanguages' => 'alle talen',
 	'translationnotifications-nodeadline' => 'geen',
 	'translationnotifications-signup-legal' => 'Door deze gegevens te verstrekken stemt u ermee in dat we contact met u mogen opnemen over onderwerpen over {{SITENAME}} waarvan wij denken dat ze uw interesse hebben. U gaat stemt ermee in dat uw gegevens onder ons [[{{MediaWiki:Privacypage}}|privacybeleid]] vallen.',
+);
+
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
+ * @author Njardarlogar
+ */
+$messages['nn'] = array(
+	'translatorsignup' => 'Omsetjarregistrering',
+	'translatorsignup-summary' => 'Nytta denne sida til å visa kva for språk du kan setja om til, og korleis du ynskjer å verta kontakta om nye omsetjingsførespurnader.',
+	'translationnotifications-info' => 'Brukarinformasjon',
+	'translationnotifications-username' => 'Brukarnamn:',
+	'translationnotifications-emailstatus' => 'E-poststode:',
+	'translationnotifications-email-confirmed' => 'E-postadressa di er stadfest',
+	'translationnotifications-email-unconfirmed' => 'E-postadressa di er ikkje stadfest. $1',
+	'translationnotifications-languages' => 'Språk',
+	'translationnotifications-lang' => 'Språk $1',
+	'translationnotifications-nolang' => 'Vel eit språk',
+	'translationnotifications-contact' => 'Føretrekte kontaktmetodar',
+	'translationnotifications-cmethod-email' => 'E-post',
+	'translationnotifications-cmethod-talkpage' => 'Diskusjonsside',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Diskusjonsside på ein annan wiki',
+	'translationnotifications-cmethod-feed' => 'Mating',
+	'translationnotifications-frequency' => 'Kontaktfrekvens',
+	'translationnotifications-freq-always' => 'Når det er noko nytt å setja om',
+	'translationnotifications-freq-week' => 'Høgst éin gong i veka',
+	'translationnotifications-freq-month' => 'Høgst éin gong i månaden',
+	'translationnotifications-freq-weekly' => 'Vekessamandrag',
+	'translationnotifications-freq-monthly' => 'Månadssamandrag',
+	'translationnotifications-submit' => 'Oppdater innstillingane',
+	'translationnotifications-signup-success' => 'Omsetjingsinnstillingane dine vart lagra.',
+	'translationnotifications-log-alllanguages' => 'alle språk',
+	'translationnotifications-nodeadline' => 'ingen',
+	'translationnotifications-signup-legal' => 'Du samtykkjer i at ved å gjeva opp denne informasjonen kan me kontakta deg om emne relaterte til {{SITENAME}} som me trur kan vera av interesse for deg. Du samtykkjer i at dataa dine er underlagde [[{{MediaWiki:Privacypage}}|retningslinene våre for personvern]].',
 );
 
 /** Pälzisch (Pälzisch)
