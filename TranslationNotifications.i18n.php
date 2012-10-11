@@ -2781,7 +2781,7 @@ U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-m
  */
 $messages['nn'] = array(
 	'translatorsignup' => 'Omsetjarregistrering',
-	'translatorsignup-summary' => 'Nytta denne sida til å visa kva for språk du kan setja om til, og korleis du ynskjer å verta kontakta om nye omsetjingsførespurnader.',
+	'translatorsignup-summary' => 'Nytta denne sida til å visa kva for språk du kan setja om til og korleis du ynskjer å verta kontakta om nye omsetjingsførespurnader.',
 	'translationnotifications-info' => 'Brukarinformasjon',
 	'translationnotifications-username' => 'Brukarnamn:',
 	'translationnotifications-emailstatus' => 'E-poststode:',
