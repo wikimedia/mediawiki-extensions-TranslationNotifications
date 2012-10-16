@@ -1149,6 +1149,7 @@ Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-i
  * @author Gomoko
  * @author Tititou36
  * @author Urhixidur
+ * @author Verdy p
  * @author Wyz
  */
 $messages['fr'] = array(
@@ -1156,7 +1157,7 @@ $messages['fr'] = array(
 	'translatorsignup-summary' => 'Utilisez cette page pour indiquer dans quelles langues vous pouvez traduire, et comment vous souhaitez être contacté sur les nouvelles demandes de traduction.',
 	'translationnotifications-desc' => "Permet aux traducteurs de s'inscrire pour des notifications de traduction",
 	'translationnotifications-info' => "Information sur l'utilisateur",
-	'translationnotifications-username' => "Nom de l'utilisateur:",
+	'translationnotifications-username' => 'Nom d’utilisateur :',
 	'translationnotifications-emailstatus' => 'État du courriel:',
 	'translationnotifications-email-confirmed' => 'Votre adresse de courriel est confirmée',
 	'translationnotifications-email-disablemail' => 'Votre adresse de courriel est confirmée, mais dans [[Special:Preferences|vos préférences]] vous avez demandé à ne plus recevoir de correspondance électronique.',
