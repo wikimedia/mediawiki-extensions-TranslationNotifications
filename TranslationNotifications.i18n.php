@@ -235,14 +235,6 @@ Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.',
 );
 
-/** Turoyo (Ṫuroyo)
- * @author Ariyo
- */
-$messages['tru'] = array(
-	'translationnotifications-languages' => 'Leşone',
-	'translationnotifications-lang' => 'Leşono $1',
-);
-
 /** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  */
@@ -592,7 +584,7 @@ die Übersetzungsadministratoren von {{SITENAME}}
 
 ----
 
-Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen, besuchen Sie bitte $8.',
+Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen, besuchen Sie bitte $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $3 auf {{SITENAME}} registriert haben.
@@ -620,7 +612,7 @@ die Übersetzungsadministratoren von {{SITENAME}}
 
 ----
 
-Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen, besuchen Sie bitte <$5>.',
+Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen, besuchen Sie bitte <$5>.', # Fuzzy
 	'translationnotifications-signup-legal' => 'Mit Angabe dieser Informationen stimmen Sie zu, dass wir Sie bezüglich Themen im Zusammenhang mit {{SITENAME}} kontaktieren können, die unserer Meinung nach für Sie von Interesse sind. Sie stimmen zudem zu, dass Ihre Daten unseren [[{{MediaWiki:Privacypage}}|Datenschutzgrundsätzen]] unterliegen.',
 );
 
@@ -1715,7 +1707,7 @@ Le administratores de traduction de {{SITENAME}}
 
 ----
 
-Tu ha recipite iste message perque tu te ha inscribite pro reciper e-mail sur traductiones in {{SITENAME}}. Pro cancellar le subscription o pro cambiar le preferentias de notification pro traductiones, per favor visita $8',
+Tu ha recipite iste message perque tu te ha inscribite pro reciper e-mail sur traductiones in {{SITENAME}}. Pro cancellar le subscription o pro cambiar le preferentias de notification pro traductiones, per favor visita $8', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Salute $2,
 
 Tu recipe iste notification perque tu te inscribeva como traductor de $3 in {{SITENAME}}.
@@ -1729,7 +1721,7 @@ $8
 
 Gratias!
 
-Le administratores de traduction de {{SITENAME}}',
+Le administratores de traduction de {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'traducer in $1',
 	'translationnotifications-digestemail-subject' => 'Digesto in e-mail con requestas de traduction ab {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Salute $1,
@@ -1745,7 +1737,7 @@ Le administratores de traduction de {{SITENAME}}
 
 ----
 
-Tu ha recipite iste message perque tu te ha inscribite pro reciper e-mail sur traductiones in {{SITENAME}}. Pro cancellar le subscription o pro cambiar le preferentias de notification pro traductiones, per favor visita <$5>',
+Tu ha recipite iste message perque tu te ha inscribite pro reciper e-mail sur traductiones in {{SITENAME}}. Pro cancellar le subscription o pro cambiar le preferentias de notification pro traductiones, per favor visita <$5>', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'Le $1, $2 marcava "$3" pro traduction. Tu pote traducer lo a $4',
 	'translationnotifications-edit-summary' => 'Notification de traduction: $1',
 	'translationnotifications-email-priority' => 'Le prioritate de iste pagina es $1.',
@@ -2154,7 +2146,11 @@ $messages['ksh'] = array(
 	'translationnotifications-freq-weekly' => 'Zosammefassong vun der Woch',
 	'translationnotifications-freq-monthly' => 'Moonatlesche Zosammefaßßong',
 	'translationnotifications-submit' => 'Lohß jonn',
+	'translationnotifications-signup-success' => 'Ding Enschtällonge för de Nohreeschte övver de Övversäzonge sin jäz faßjehallde.',
 	'notifytranslators' => 'Övversäzer benohreeschtijje',
+	'translationnotifications-submit-ok' => 'De Metdeilonge sin jäz aam Waade un wääde us Schlang vun enem Hengerjrondsprojramm noh un bei verscheck.',
+	'translationnotifications-send-notification-button' => 'Donn en Metdeilong aan de Övversäzer verschecke',
+	'translationnotifications-deadline-label' => ' Deadline in heh dä Metdeilong:', # Fuzzy
 	'translationnotifications-languages-to-notify-label' => 'Opforderonge för wat för en Schprooche verschecke:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'En Leß met Köözele för Schprooche met Kommas derzwesche. Don nix enjävve, öm alle Schprooche ze krijje.',
 	'translationnotifications-priority' => 'Rang:',
@@ -2165,9 +2161,68 @@ $messages['ksh'] = array(
 	'translationnotifications-translatablepage-title' => 'der Naame vun dä Sigg för zem Övversäze:',
 	'translationnotifications-error-no-translatable-pages' => 'Mer han kein övversäzbaa Sigge em Wiki.',
 	'translationnotifications-email-subject' => 'Bes esu jood un donn de Sigg „$1“ övversäze',
+	'translationnotifications-email-body' => "Daach $1,
+
+heh di e-mail kriß De, weil De Desch als ene Övversäzer för de {{PLURAL:$9|Schprooch|Schprooche|kein Schprooche}} $2 op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs.
+
+Di Sigg „$3“ mööd övversaz wääde.
+Dat kanns De övver heh dä Lengk donn:
+$4
+
+$5
+$6
+
+$7
+
+Ding Hölp es ärsch jään jesinn. Als Övversäzer helfs De met, dat {{GRAMMAR:1{{SITENAME}}}} als en Gemeinschaff met ville Schprooche joot doh schteiht.
+
+Onsere häzlejje Dank doför saare
+de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v{{SITENAME}}}}
+
+----
+
+Do häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät draan ändere wells, jangk noh $8.",
+	'translationnotifications-talkpage-body' => "Daach $2,
+
+Do kriß heh di Metdeilong, weil De Desch als ene Övversäzer för de {{PLURAL:$9|Schprooch|Schprooche|kein Schprooche}} $3 op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs.
+
+Di Sigg „[[$4]]“ mööd övversaz wääde.
+Dat kanns De övver heh dä Lengk donn:
+$5
+
+$6
+$7
+
+$8
+
+Ding Hölp es ärsch jään jesinn. Als Övversäzer helfs De met, dat {{GRAMMAR:1{{SITENAME}}}} als en Gemeinschaff met ville Schprooche joot doh schteiht.
+
+Onsere häzlejje Dank doför saare
+
+de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v{{SITENAME}}}}",
 	'translationnotifications-notification-url-listitem' => 'övversäze op $1',
+	'translationnotifications-digestemail-subject' => 'Zosammejefaß Metdeilong för Övversäzonge {{GRAMMAR:2 v|{{SITENAME}}}}',
+	'translationnotifications-digestemail-body' => "Daach $1,
+
+heh di e-mail kriß De, weil De Desch als ene Övversäzer för $2 op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs.
+
+{{PLURAL:$3|Ein Sigg|$3 Sigge|Kein Sigg}} mööd övversaz wääde. De Einzelheite schtonn onge.
+
+$4
+
+Ding Hölp es ärsch jään jesinn. Als Övversäzer helfs De met, dat {{GRAMMAR:1{{SITENAME}}}} als en Gemeinschaff met ville Schprooche joot doh schteiht.
+
+Onsere häzlejje Dank doför saare
+de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v{{SITENAME}}}}
+
+----
+
+Do häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät draan ändere wells, jangk noh $5.",
+	'translationnotifications-digestemail-notification-line' => 'Aam $1 hät {{GENDER:$2|dä|et|dä Metmaacher|de|dat}} $2 di Sigg „$3“ för et Övversäze freijejovve. Do kanns se övversäzze op dä Sigg: $4',
+	'translationnotifications-edit-summary' => 'Övversäzongsnohreesch: $1',
 	'translationnotifications-email-priority' => 'Der Rang vun dä Sigg es $1.',
 	'translationnotifications-email-deadline' => 'Di Sigg moß bes zom $1 övversaz sin.',
+	'logentry-translationnotifications-sent' => '{{GENDER:$2|Dä|Dat|Dä Metmaacher|De|Dat}} $1 häd en Metdeilong övver et Övversäze vun dä Sigg $3 en dä Schproche $4, met däm Jeweesch $6 un däm Dattum $5 för fäädesch ze wääde aan {{PLURAL:$7|eine|$7|keine}} Metmaacher verscheck, för {{PLURAL:$8|eine |$8|keine}} Metmaacher hät dat nit jeflup un {{PLURAL:$9|eine|$9|keine}} woodte tiräk övverjange.', # Fuzzy
 	'log-name-notifytranslators' => 'Logbooch vun de Opforderonge zem Övversäze',
 	'log-description-notifytranslators' => 'Et Logbooch övver de Nohreeschte aan Övversäzere övver de övversäzbaa Sigge',
 	'translationnotifications-sent-title' => 'Opforderonge verdeilt',
@@ -2575,7 +2630,8 @@ $messages['mt'] = array(
 	'translationnotifications-priority-low' => 'baxx',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk (bokmål)‎)
+ */
 $messages['nb'] = array(
 	'translatorsignup' => 'Registrer deg som oversetter',
 	'translatorsignup-summary' => 'Bruk denne siden for å vise hvilke språk du vil oversette til og hvordan du ønsker å bli kontaktet om nye forespørsler.',
@@ -2600,7 +2656,7 @@ $messages['nb'] = array(
 	'translationnotifications-freq-month' => 'Maks én gang i måneden',
 	'translationnotifications-freq-weekly' => 'Ukentlig sammendrag',
 	'translationnotifications-freq-monthly' => 'Månedlig sammendrag',
-	'translationnotifications-submit' => 'Registrer deg',
+	'translationnotifications-submit' => 'Registrer deg', # Fuzzy
 	'notifytranslators' => 'Varsle oversettere',
 	'translationnotifications-submit-ok' => 'Varslene har blitt lagt til i en kø og leveres av en bakgrunnsjobb.',
 	'translationnotifications-send-notification-button' => 'Send varsel til oversettere',
@@ -2629,7 +2685,7 @@ $6
 $7
 
 Takk!
-{{SITENAME}}s oversettelsesadministratorer',
+{{SITENAME}}s oversettelsesadministratorer', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Hei $2,
 
 Du mottar dette varselet fordi du er påmeldt som oversetter til $3 på {{SITENAME}}.
@@ -2643,7 +2699,7 @@ $8
 
 Takk!
 
-{{SITENAME}}s oversettelsesadministratorer',
+{{SITENAME}}s oversettelsesadministratorer', # Fuzzy
 	'translationnotifications-digestemail-subject' => 'Sammendragsepost for oversettelser på {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hei $1,
 
@@ -2656,9 +2712,9 @@ $4
 For å endre varselsinnstillingene dine, gå til <$5>.
 
 Takk!
-{{SITENAME}}s oversettelsesadministratorer',
+{{SITENAME}}s oversettelsesadministratorer', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => '$2 merket «$3» for oversettelse $1. Du kan oversette den på $4',
-	'translationnotifications-edit-summary' => 'Oversettelsesvarsel',
+	'translationnotifications-edit-summary' => 'Oversettelsesvarsel', # Fuzzy
 	'translationnotifications-email-priority' => 'Denne siden har $1 prioritet.',
 	'translationnotifications-email-deadline' => 'Tidsfristen for å oversette denne siden er $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sendte}} et varsel om oversetting av siden $3; språk: $4; tidsfrist: $5; prioritet: $6; sendt til {{PLURAL:$7|én mottaker|$7 mottakere}}, mislyktes for {{PLURAL:$8|én mottaker|$8 mottakere}}, hoppet over for {{PLURAL:$9|én mottaker|$9 mottakere}}',
@@ -2841,7 +2897,7 @@ $messages['pfl'] = array(
 	'translationnotifications-freq-month' => 'Hegschdens ämol im Monad',
 	'translationnotifications-freq-weekly' => 'Weschndlischi Iwasischd',
 	'translationnotifications-freq-monthly' => 'Monadlischi Iwasischd',
-	'translationnotifications-submit' => 'Oamelde',
+	'translationnotifications-submit' => 'Oamelde', # Fuzzy
 	'notifytranslators' => 'Iwasedza bnochrischdische',
 	'translationnotifications-submit-ok' => 'Die Bnochrischdischung fas Iwasedze isch inäner Wardeschlong un wead vunäm Hinagrunduffdraach vaschiggd.',
 	'translationnotifications-send-notification-button' => 'Ä Bnochrischdischung zude Iwasedza schigge',
@@ -2870,7 +2926,7 @@ $6
 $7
 
 Dongschä,
-die Midawaida vun {{SITENAME}}',
+die Midawaida vun {{SITENAME}}', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Hey $2,
 
 du grigschd die E-Mail wail disch als Iwasedza fa $3 uff {{SITENAME}} oigdraache hoschd.
@@ -2883,7 +2939,7 @@ $7
 $8
 
 Dongschä,
-die Midawaida vun {{SITENAME}}',
+die Midawaida vun {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'iwasedze uff $1',
 	'translationnotifications-digestemail-subject' => 'Lischd vun E-Mail fa Uffdräch fas Iwasedze vun {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "Hey $1,
@@ -2897,9 +2953,9 @@ $4
 Um doi Oischdellunge fa Bnochrischdischunge fas Iwasedze zu änare, konschd <$5> uffsuche.
 
 Dongschä,
-die Midawaida vun {{SITENAME}}",
+die Midawaida vun {{SITENAME}}", # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'Oam $1 hod $2 die Said „$3“ fas Iwasedze frai gewe. Du konnschdse una $4 Iwasedze.',
-	'translationnotifications-edit-summary' => 'Iwasedzungsnochrichd',
+	'translationnotifications-edit-summary' => 'Iwasedzungsnochrichd', # Fuzzy
 	'translationnotifications-email-priority' => 'Die Wischdischkaid vunde Said fas Iwasedze isch $1.',
 	'translationnotifications-email-deadline' => 'Die Frischd fas Iwasedze vunde Said laafd bis zum $1.',
 	'logentry-translationnotifications-sent' => "$1 hod ä Nochrischd fa die Iwasedzung vunde Said $3 inde Schbrooche $4 midde Frischd $5 unde Dringlischkaid $6, mid Eafolsch {{PLURAL:$7|oanen|oan $7}} Embfenga un ohne Eafolsch {{PLURAL:$8|oanen|oan $8}} Embfenga {{GENDER:$2|gschiggd}}, {{PLURAL:$9|un'es ischn|un'esin $9}} Embfenga ned oagschriwwe worre.",
@@ -3131,7 +3187,7 @@ $7
 
 ----
 
-Вы получили это сообщение, поскольку подписались на получение сообщений, связанных с переводами для {{SITENAME}}. Чтобы отписаться или изменить свои настройки уведомлений о переводах, перейдите по ссылке $8.',
+Вы получили это сообщение, поскольку подписались на получение сообщений, связанных с переводами для {{SITENAME}}. Чтобы отписаться или изменить свои настройки уведомлений о переводах, перейдите по ссылке $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Здравствуйте, $2!
 
 Вы получили это письмо, так как зарегистрировались на сайте {{SITENAME}} в качестве переводчика на следующий язык: $3.
@@ -3145,7 +3201,7 @@ $8
 
 Спасибо!
 
-Администраторы переводов {{SITENAME}}',
+Администраторы переводов {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'перевести на $1',
 	'translationnotifications-digestemail-subject' => 'Дайджест запросов на перевод от {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Здравствуйте, $1!
@@ -3161,7 +3217,7 @@ $4
 
 ----
 
-Вы получили это сообщение, поскольку подписались на получение сообщений, связанных с переводами для {{SITENAME}}. Чтобы отписаться или изменить свои настройки уведомлений о переводах, перейдите по ссылке <$5>.',
+Вы получили это сообщение, поскольку подписались на получение сообщений, связанных с переводами для {{SITENAME}}. Чтобы отписаться или изменить свои настройки уведомлений о переводах, перейдите по ссылке <$5>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => '$1 участник $2 пометил страницу «$3» доступную для перевода. Вы можете перевести её, перейдя по ссылке $4',
 	'translationnotifications-edit-summary' => 'Уведомление о переводе: $1',
 	'translationnotifications-email-priority' => 'Приоритет этой страницы — $1.',
@@ -3537,6 +3593,14 @@ Nakakatanggap ka ng ganitong elektronikong liham dahil nagpatala ka upang makata
 	'translationnotifications-signup-legal' => 'Sumasang-ayon ka na sa pamamagitan ng pagbibigay ng kabatirang ito na maaaring makipag-ugnayan kami sa iyo hinggil sa mga paksang may kaugnayan sa {{SITENAME}} na iniisip naming makakatawag ng pagpansin mo. Sumasang-ayon ka na ang dato mo ay nakapailalim sa aming [[{{MediaWiki:Privacypage}}|patakaran ng paglilihim.]]',
 );
 
+/** Turoyo (Ṫuroyo)
+ * @author Ariyo
+ */
+$messages['tru'] = array(
+	'translationnotifications-languages' => 'Leşone',
+	'translationnotifications-lang' => 'Leşono $1',
+);
+
 /** Ukrainian (українська)
  * @author Olvin
  */
@@ -3599,7 +3663,7 @@ $7
 
 ----
 
-Ви отримуєте ці повідомлення електронною поштою тому, що ви підписалися на отримання повідомлень щодо перекладу на {{SITENAME}}. Щоб відписатися або змінити параметри сповіщення про переклади, будь ласка, відвідайте $8',
+Ви отримуєте ці повідомлення електронною поштою тому, що ви підписалися на отримання повідомлень щодо перекладу на {{SITENAME}}. Щоб відписатися або змінити параметри сповіщення про переклади, будь ласка, відвідайте $8', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Привіт  $2!
 
 Ви отримали це повідомлення тому, що ви зареєстровані на {{SITENAME}} як перекладач такими мовами: $3.
@@ -3613,7 +3677,7 @@ $8
 
 Дякуємо!
 
-Адмінстрація перекладу {{SITENAME}}',
+Адмінстрація перекладу {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'Перекласти мовою $1',
 	'translationnotifications-digestemail-subject' => 'Дайджест повідомлення електронною поштою із запитами перекладу  від {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Привіт,  $1. 
@@ -3630,7 +3694,7 @@ $4
 
 ----
 
-Ви отримуєте ці повідомлення електронною поштою, бо ви підписалися на отримання повідомлень щодо перекладу на {{SITENAME}}. Щоб відписатися або змінити параметри сповіщення про переклади, будь ласка, відвідайте <$5>',
+Ви отримуєте ці повідомлення електронною поштою, бо ви підписалися на отримання повідомлень щодо перекладу на {{SITENAME}}. Щоб відписатися або змінити параметри сповіщення про переклади, будь ласка, відвідайте <$5>', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => '$1  $2 сторінку $3 позначено для перекладу. Ви можете перекласти  її: $4.',
 	'translationnotifications-edit-summary' => 'Сповіщення перекладу: $1',
 	'translationnotifications-email-priority' => 'Пріоритет цієї сторінки — $1.',
@@ -3740,7 +3804,7 @@ Nhóm điều phối biên dịch {{SITENAME}}
 
 ----
 
-Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $8.',
+Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Xin chào $2,
 
 Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $3 tại {{SITENAME}}.
@@ -3754,7 +3818,7 @@ $8
 
 Cám ơn!
 
-Nhóm điều phối biên dịch {{SITENAME}}',
+Nhóm điều phối biên dịch {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'dịch ra $1',
 	'translationnotifications-digestemail-subject' => 'Thư điện tử tóm tắt các yêu cầu biên dịch từ {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Xin chào $1,
@@ -4044,7 +4108,7 @@ $1
 
 ----
 
-您因已登記翻譯{{SITENAME}}而收到此電郵。要取消訂閱或更改設置請到$8。',
+您因已登記翻譯{{SITENAME}}而收到此電郵。要取消訂閱或更改設置請到$8。', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => '於$1，$2標記了“$3”為需要翻譯。您可以在$4進行翻譯',
 	'translationnotifications-edit-summary' => '翻譯通知：$1',
 	'translationnotifications-email-priority' => '這個頁面有$1重要度。',
@@ -4058,4 +4122,3 @@ $1
 	'translationnotifications-nodeadline' => '無',
 	'translationnotifications-signup-legal' => '您同意若提供此資訊，我們可能就有關{{SITENAME}}，而我們又認為您感興趣的主題與您聯繫。您同意您的資料將按照[[{{MediaWiki:Privacypage}}|私隱攻策]]處理。',
 );
-
