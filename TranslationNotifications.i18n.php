@@ -1907,6 +1907,7 @@ $messages['ja'] = array(
 	'translationnotifications-error-no-translatable-pages' => 'このウィキには翻訳対象ページはありません。',
 	'translationnotifications-email-subject' => 'ページ $1 を翻訳してください',
 	'translationnotifications-notification-url-listitem' => '$1に翻訳',
+	'translationnotifications-digestemail-subject' => '{{SITENAME}}からの翻訳要請ダイジェストメール',
 	'translationnotifications-edit-summary' => '翻訳の通知: $1',
 	'translationnotifications-email-priority' => 'このページの優先度は$1です。',
 	'translationnotifications-email-deadline' => 'このページの翻訳の締め切りは $1 です。',
@@ -3710,6 +3711,7 @@ $4
 );
 
 /** Urdu (اردو)
+ * @author Muhammad Shuaib
  * @author පසිඳු කාවින්ද
  */
 $messages['ur'] = array(
@@ -3735,6 +3737,24 @@ $messages['ur'] = array(
 	'translationnotifications-priority-medium' => 'درمیانے',
 	'translationnotifications-priority-low' => 'کم',
 	'translationnotifications-translatablepage-title' => 'ترجمہ صفحہ کا نام:',
+	'translationnotifications-talkpage-body' => 'سلام $2،
+
+آپ کو یہ اطلاع اس لیے موصول ہورہی ہے کہ آپ {{SITENAME}} پر بطور مترجم $3 درج ہیں۔
+صفحہ [[$4]] ترجمہ کے لیے دستیاب ہے۔ آپ اس کا ترجمہ یہاں کرسکتے ہیں:
+$5
+
+$6
+$7
+
+$8
+
+آپ کی معاونت نہایت قابل قدر ہے۔ آپ جیسے مترجمین {{SITENAME}} کی مدد کرسکتے ہیں تاکہ متعدد الالسنہ برادری کی حیثیت سے کام کیا جاسکے۔
+
+شکریہ!
+
+{{SITENAME}} ترجمہ سے مربوط افراد', # Fuzzy
+	'translationnotifications-notification-url-listitem' => 'ترجمہ در $1',
+	'translationnotifications-edit-summary' => 'اطلاع برائے ترجمہ: $1',
 	'log-name-notifytranslators' => 'ترجمہ کی اطلاعات',
 	'translationnotifications-sent-title' => 'ترجمہ اطلاع بھیجا',
 	'translationnotifications-sent-body' => 'ترجمہ اطلاعاتی پیغام بھیجا گیا تھا.',
