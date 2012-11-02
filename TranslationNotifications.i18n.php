@@ -3810,7 +3810,7 @@ $messages['vi'] = array(
 	'translationnotifications-translatablepage-title' => 'Tên trang dịch được:',
 	'translationnotifications-error-no-translatable-pages' => 'Không có trang dịch được tại wiki này.',
 	'translationnotifications-email-subject' => 'Xin vui lòng dịch trang $1',
-	'translationnotifications-email-body' => 'Xin chào $1,
+	'translationnotifications-email-body' => '{{PLURAL:$9}}Xin chào $1,
 
 Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $2 tại {{SITENAME}}.
 
@@ -3828,8 +3828,8 @@ Nhóm điều phối biên dịch {{SITENAME}}
 
 ----
 
-Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $8.', # Fuzzy
-	'translationnotifications-talkpage-body' => 'Xin chào $2,
+Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $8.',
+	'translationnotifications-talkpage-body' => '{{PLURAL:$9}}Xin chào $2,
 
 Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $3 tại {{SITENAME}}.
 Trang [[$4]] mới có sẵn để dịch. Bạn có thể dịch nó dùng liên kết sau:
@@ -3842,7 +3842,7 @@ $8
 
 Cám ơn!
 
-Nhóm điều phối biên dịch {{SITENAME}}', # Fuzzy
+Nhóm điều phối biên dịch {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'dịch ra $1',
 	'translationnotifications-digestemail-subject' => 'Thư điện tử tóm tắt các yêu cầu biên dịch từ {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Xin chào $1,
