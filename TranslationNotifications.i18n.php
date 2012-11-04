@@ -365,6 +365,23 @@ $8
 	'translationnotifications-nodeadline' => 'няма',
 );
 
+/** Bengali (বাংলা)
+ * @author Bellayet
+ */
+$messages['bn'] = array(
+	'translationnotifications-username' => 'ব্যবহারকারী নাম:',
+	'translationnotifications-languages' => 'ভাষা',
+	'translationnotifications-cmethod-email' => 'ই-মেইল',
+	'translationnotifications-cmethod-talkpage' => 'আলাপ পাতা',
+	'translationnotifications-cmethod-feed' => 'ফিড',
+	'translationnotifications-priority' => 'গুরুত্ব:',
+	'translationnotifications-priority-high' => 'উচ্চ',
+	'translationnotifications-priority-medium' => 'মধ্যম',
+	'translationnotifications-priority-low' => 'নিম্ন',
+	'translationnotifications-log-alllanguages' => 'সকল ভাষা',
+	'translationnotifications-nodeadline' => 'কিছু না',
+);
+
 /** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
