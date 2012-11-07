@@ -1021,14 +1021,29 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Mjbmr
+ * @author Reza1615
  */
 $messages['fa'] = array(
+	'translatorsignup' => 'ثبت نام مترجم',
+	'translationnotifications-info' => 'اطلاعات کاربر',
+	'translationnotifications-username' => 'نام کاربری:',
+	'translationnotifications-emailstatus' => 'وضعیت پست الکترونیکی:',
+	'translationnotifications-email-confirmed' => 'نشانی پست الکترونیک تائید شده‌است',
 	'translationnotifications-languages' => 'زبان‌ها',
-	'translationnotifications-lang' => 'زبان #$1',
+	'translationnotifications-lang' => 'زبان شماره $1',
 	'translationnotifications-nolang' => 'یک زبان را انتخاب کنید',
+	'translationnotifications-contact' => 'روش تماس مطلوب',
 	'translationnotifications-cmethod-email' => 'پست الکترونیکی',
 	'translationnotifications-cmethod-talkpage' => 'صفحهٔ بحث',
-	'translationnotifications-submit' => 'تنظیمات به روز رسانی',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'صفحهٔ بحث در ویکی دیگر',
+	'translationnotifications-cmethod-feed' => 'خبرخوان',
+	'translationnotifications-frequency' => 'تناوب تماس',
+	'translationnotifications-freq-always' => 'هنگامی که چیز جدیدی برای ترجمه وجود دارد',
+	'translationnotifications-freq-week' => 'یکبار در هفته',
+	'translationnotifications-freq-month' => 'یکبار در ماه',
+	'translationnotifications-freq-weekly' => 'خلاصهٔ هفتگی',
+	'translationnotifications-freq-monthly' => 'حلاصهٔ یک ماه',
+	'translationnotifications-submit' => 'تنظیمات به‌روز رسانی',
 	'translationnotifications-priority' => 'اولویت:',
 	'translationnotifications-priority-high' => 'بالا',
 	'translationnotifications-priority-medium' => 'متوسط',
