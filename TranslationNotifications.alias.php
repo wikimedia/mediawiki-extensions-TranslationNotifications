@@ -77,3 +77,9 @@ $specialPageAliases['nl'] = array(
 	'NotifyTranslators' => array( 'Vertalersmeldingen' ),
 	'TranslatorSignup' => array( 'Vertalersregistratie' ),
 );
+
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'NotifyTranslators' => array( '通知译者' ),
+	'TranslatorSignup' => array( '译者登录' ),
+);
