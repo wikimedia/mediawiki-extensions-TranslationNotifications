@@ -68,8 +68,7 @@ $6
 
 $7
 
-Your help is greatly appreciated. Translators like you help {{SITENAME}} to function
-as a truly multilingual community.
+Your help is greatly appreciated. Translators like you help {{SITENAME}} to function as a truly multilingual community.
 
 Thank you!
 {{SITENAME}} translation coordinators
@@ -88,8 +87,7 @@ $7
 
 $8
 
-Your help is greatly appreciated. Translators like you help {{SITENAME}} to function
-as a truly multilingual community.
+Your help is greatly appreciated. Translators like you help {{SITENAME}} to function as a truly multilingual community.
 
 Thank you!
 
@@ -104,8 +102,7 @@ There {{PLURAL:$3|is 1 page|are $3 pages}} available for translation. The detail
 
 $4
 
-Your help is greatly appreciated. Translators like you help {{SITENAME}} to function
-as a truly multilingual community.
+Your help is greatly appreciated. Translators like you help {{SITENAME}} to function as a truly multilingual community.
 
 Thank you!
 {{SITENAME}} translation administrators
