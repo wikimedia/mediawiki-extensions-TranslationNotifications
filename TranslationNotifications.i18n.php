@@ -68,7 +68,8 @@ $6
 
 $7
 
-Your help is greatly appreciated. Translators like you help {{SITENAME}} to function as a truly multilingual community.
+Your help is greatly appreciated. Translators like you help {{SITENAME}} to function
+as a truly multilingual community.
 
 Thank you!
 {{SITENAME}} translation coordinators
@@ -87,7 +88,8 @@ $7
 
 $8
 
-Your help is greatly appreciated. Translators like you help {{SITENAME}} to function as a truly multilingual community.
+Your help is greatly appreciated. Translators like you help {{SITENAME}} to function
+as a truly multilingual community.
 
 Thank you!
 
@@ -102,7 +104,8 @@ There {{PLURAL:$3|is 1 page|are $3 pages}} available for translation. The detail
 
 $4
 
-Your help is greatly appreciated. Translators like you help {{SITENAME}} to function as a truly multilingual community.
+Your help is greatly appreciated. Translators like you help {{SITENAME}} to function
+as a truly multilingual community.
 
 Thank you!
 {{SITENAME}} translation administrators
@@ -504,10 +507,10 @@ $messages['de'] = array(
 	'translationnotifications-email-subject' => 'Bitte übersetze die Seite $1.',
 	'translationnotifications-email-body' => 'Hallo $1,
 
-du erhältst diese E-Mail, da du dich als Übersetzer(in) für $2 auf {{SITENAME}} registriert hast.
+du erhältst diese E-Mail, da du dich als Übersetzer(in) für die {{PLURAL:$9|Sprache|Sprachen}} $2 auf {{SITENAME}} registriert hast.
 
-An folgender Stelle ist eine Seite zum Übersetzen vorhanden: $3.
-Du kannst sie nach dem Klicken auf den folgenden Link übersetzen:
+Die zu übersetzende Seite: $3.
+Sie kann nach einem Klick auf den folgenden Link übersetzt werden:
 $4
 
 $5
@@ -515,15 +518,14 @@ $6
 
 $7
 
-Deine Hilfe wird sehr geschätzt. Übersetzer wie du helfen dabei, dass {{SITENAME}}
-als wirklich mehrsprachige Gemeinschaft fungiert.
+Deine Hilfe wird sehr geschätzt. Übersetzer wie du helfen dabei, dass {{SITENAME}} als wirklich mehrsprachige Gemeinschaft fungiert.
 
 Vielen Dank,
 die Übersetzungskoordinatoren von {{SITENAME}}
 
 ----
 
-Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen, besuche bitte $8.',
+Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails für Übersetzungen auf {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen besuche bitte $8.',
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 du erhältst diese E-Mail, da du dich als Übersetzer(in) für $3 auf {{SITENAME}} registriert hast.
@@ -560,8 +562,8 @@ die Übersetzungsadministratoren von {{SITENAME}}
 Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen, besuche bitte <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'Am $1 gab $2 die Seite „$3“ zur Übersetzung frei. Du kannst sie unter $4 übersetzen.',
 	'translationnotifications-edit-summary' => 'Übersetzungsbenachrichtigung: $1',
-	'translationnotifications-email-priority' => 'Die Übersetzungspriorität dieser Seite ist $1.',
-	'translationnotifications-email-deadline' => 'Die Frist zur Übersetzung dieser Seite läuft bis zum $1.',
+	'translationnotifications-email-priority' => 'Übersetzungspriorität dieser Seite: $1.',
+	'translationnotifications-email-deadline' => 'Frist zur Übersetzung der Seite: $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sandte}} eine Benachrichtigung bezüglich der Übersetzung der Seite $3 in die Sprachen $4, mit der Frist $5 und der Priorität $6, erfolgreich an {{PLURAL:$7|einen Empfänger|$7 Empfänger}} und erfolglos an {{PLURAL:$8|einen Empfänger|$8 Empfänger}}, wobei {{PLURAL:$9|ein Empfänger nicht angeschrieben wurde|$9 Empfänger nicht angeschrieben wurden}}.',
 	'log-name-notifytranslators' => 'Übersetzungsbenachrichtigungs-Logbuch',
 	'log-description-notifytranslators' => 'Das Logbuch der Benachrichtigungen, die bezüglich übersetzbarer Seiten an die Übersetzer gesandt wurden.',
@@ -586,10 +588,10 @@ $messages['de-formal'] = array(
 	'translationnotifications-email-subject' => 'Bitte übersetzen Sie die Seite $1.',
 	'translationnotifications-email-body' => 'Hallo $1,
 
-Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $2 auf {{SITENAME}} registriert haben.
+Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für die {{PLURAL:$9|Sprache|Sprachen}} $2 auf {{SITENAME}} registriert haben.
 
-An folgender Stelle ist eine neue Seite zum Übersetzen vorhanden: $3.
-Übersetzen Sie sie bitte nach dem Klicken auf den folgenden Link:
+Die zu übersetzende Seite: $3.
+Sie kann nach einem Klick auf den folgenden Link übersetzt werden:
 $4
 
 $5
@@ -597,12 +599,14 @@ $6
 
 $7
 
+Ihre Hilfe wird sehr geschätzt. Übersetzer wie Sie helfen dabei, dass {{SITENAME}} als wirklich mehrsprachige Gemeinschaft fungiert.
+
 Vielen Dank,
-die Übersetzungsadministratoren von {{SITENAME}}
+die Übersetzungskoordinatoren von {{SITENAME}}
 
 ----
 
-Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen, besuchen Sie bitte $8.', # Fuzzy
+Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails für Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen besuchen Sie bitte $8.',
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $3 auf {{SITENAME}} registriert haben.
