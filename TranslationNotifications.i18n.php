@@ -2040,6 +2040,7 @@ $messages['ka'] = array(
 );
 
 /** Korean (한국어)
+ * @author Kwj2772
  * @author 아라
  */
 $messages['ko'] = array(
@@ -2069,7 +2070,7 @@ $messages['ko'] = array(
 	'translationnotifications-freq-monthly' => '월마다 알림',
 	'translationnotifications-submit' => '설정 업데이트',
 	'translationnotifications-signup-success' => '사용자 번역 알림 환경 설정이 저장되었습니다.',
-	'notifytranslators' => '알림을 받는 번역자',
+	'notifytranslators' => '번역자에게 알림',
 	'translationnotifications-submit-ok' => '알림이 대기열에 추가하고 백그라운드 작업으로 전달됩니다.',
 	'translationnotifications-send-notification-button' => '번역자한테 알림 보내기',
 	'translationnotifications-deadline-label' => '이 알림에 나타나는 마감일:',
