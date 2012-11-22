@@ -84,6 +84,12 @@ $specialPageAliases['nl'] = array(
 	'TranslatorSignup' => array( 'Vertalersregistratie' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'NotifyTranslators' => array( 'NotificaTraduttori' ),
+	'TranslatorSignup' => array( 'IscrizioneTraduttore' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'NotifyTranslators' => array( '通知译者' ),
