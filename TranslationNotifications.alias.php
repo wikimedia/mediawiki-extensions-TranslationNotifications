@@ -26,6 +26,11 @@ $specialPageAliases['as'] = array(
 	'TranslatorSignup' => array( 'অনুবাদৰ_পঞ্জীভুক্তি' ),
 );
 
+/** буряад (буряад) */
+$specialPageAliases['bxr'] = array(
+	'NotifyTranslators' => array( 'Оршуулагшада_мэдүүлхэ' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'NotifyTranslators' => array( 'Übersetzerbenachrichtigung' ),
