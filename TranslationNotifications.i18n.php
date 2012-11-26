@@ -367,9 +367,14 @@ $8
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Nasir8891
  */
 $messages['bn'] = array(
+	'translationnotifications-info' => 'ব্যবহারকারীর তথ্য',
 	'translationnotifications-username' => 'ব্যবহারকারী নাম:',
+	'translationnotifications-emailstatus' => 'ইমেইলের অবস্থা:',
+	'translationnotifications-email-confirmed' => 'আপনার ইমেইল ঠিকানা নিশ্চিত করা হয়েছে',
+	'translationnotifications-email-unconfirmed' => 'আপনার ইমেইল ঠিকানা নিশ্চিত করা হয়নি। $1',
 	'translationnotifications-languages' => 'ভাষা',
 	'translationnotifications-cmethod-email' => 'ই-মেইল',
 	'translationnotifications-cmethod-talkpage' => 'আলাপ পাতা',
