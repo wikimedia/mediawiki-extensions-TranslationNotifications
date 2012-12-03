@@ -2887,11 +2887,14 @@ U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-m
 $messages['nn'] = array(
 	'translatorsignup' => 'Omsetjarregistrering',
 	'translatorsignup-summary' => 'Nytta denne sida til å visa kva for språk du kan setja om til og korleis du ynskjer å verta kontakta om nye omsetjingsførespurnader.',
+	'translationnotifications-desc' => 'Gjev omsetjarar høve til å melda seg på omsetjingsvarsel',
 	'translationnotifications-info' => 'Brukarinformasjon',
 	'translationnotifications-username' => 'Brukarnamn:',
 	'translationnotifications-emailstatus' => 'E-poststode:',
 	'translationnotifications-email-confirmed' => 'E-postadressa di er stadfest',
+	'translationnotifications-email-disablemail' => 'E-postadressa di er stadfest, men i [[Special:Preferences|innstillingane dine]] har du bede om å ikkje få e-post.',
 	'translationnotifications-email-unconfirmed' => 'E-postadressa di er ikkje stadfest. $1',
+	'translationnotifications-email-notset' => 'Du har ikkje oppgjeve ei e-postadresse. Du kan gjera dette i [[Special:Preferences|innstillingane dine]].',
 	'translationnotifications-languages' => 'Språk',
 	'translationnotifications-lang' => 'Språk $1',
 	'translationnotifications-nolang' => 'Vel eit språk',
@@ -2908,6 +2911,29 @@ $messages['nn'] = array(
 	'translationnotifications-freq-monthly' => 'Månadssamandrag',
 	'translationnotifications-submit' => 'Oppdater innstillingane',
 	'translationnotifications-signup-success' => 'Omsetjingsinnstillingane dine vart lagra.',
+	'translationnotifications-priority' => 'Prioritet:',
+	'translationnotifications-priority-high' => 'høg',
+	'translationnotifications-priority-medium' => 'medels',
+	'translationnotifications-priority-low' => 'låg',
+	'translationnotifications-priority-unset' => '(ikkje sett)',
+	'translationnotifications-email-subject' => 'Gjer vel å setja om sida $1',
+	'translationnotifications-talkpage-body' => 'Hei $2,
+
+Du mottek dette varselet av di du melde deg på som omsetjar {{PLURAL:$9|for}} $3 på {{SITENAME}}.
+Sida [[$4]] er tilgjengeleg for omsetjing. Du kan setja henne om her:
+$5
+
+$6
+$7
+
+$8
+
+Hjelpa di er høgt verdsett. Omsetjarar som deg hjelper {{SITENAME}} med å fungera som eit sant mangspråkleg fellesskap.
+
+Takk!
+
+Omsetjingskoordinatorane for {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'set om til $1',
 	'translationnotifications-log-alllanguages' => 'alle språk',
 	'translationnotifications-nodeadline' => 'ingen',
 	'translationnotifications-signup-legal' => 'Du samtykkjer i at ved å gjeva opp denne informasjonen kan me kontakta deg om emne relaterte til {{SITENAME}} som me trur kan vera av interesse for deg. Du samtykkjer i at dataa dine er underlagde [[{{MediaWiki:Privacypage}}|retningslinene våre for personvern]].',
