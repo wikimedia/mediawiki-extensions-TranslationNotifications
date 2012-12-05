@@ -2934,6 +2934,13 @@ Takk!
 
 Omsetjingskoordinatorane for {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'set om til $1',
+	'translationnotifications-edit-summary' => 'Omsetjingsvarsel: $1',
+	'translationnotifications-email-priority' => 'Sida har $1 prioritet.',
+	'translationnotifications-email-deadline' => 'Fristen for å setja om sida er $1.',
+	'log-name-notifytranslators' => 'Omsetjingsvarsel',
+	'log-description-notifytranslators' => 'Ein logg over varsel sende til omsetjarar om omsetbare sider',
+	'translationnotifications-sent-title' => 'Omsetjingsvarselet er sendt',
+	'translationnotifications-sent-body' => 'Omsetjingsvarsel vart sendt',
 	'translationnotifications-log-alllanguages' => 'alle språk',
 	'translationnotifications-nodeadline' => 'ingen',
 	'translationnotifications-signup-legal' => 'Du samtykkjer i at ved å gjeva opp denne informasjonen kan me kontakta deg om emne relaterte til {{SITENAME}} som me trur kan vera av interesse for deg. Du samtykkjer i at dataa dine er underlagde [[{{MediaWiki:Privacypage}}|retningslinene våre for personvern]].',
