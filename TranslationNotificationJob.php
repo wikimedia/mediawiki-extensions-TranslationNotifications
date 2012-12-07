@@ -5,8 +5,8 @@
  * @ingroup JobQueue
  */
 class TranslationNotificationJob extends Job {
-	public function __construct( $title, $params ) {
-		parent::__construct( 'translationNotificationJob', $title, $params );
+	public function __construct( $title, $params, $id = 0 ) {
+		parent::__construct( 'translationNotificationJob', $title, $params, $id );
 	}
 
 	/**
