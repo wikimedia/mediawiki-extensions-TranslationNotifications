@@ -3047,6 +3047,7 @@ die Midawaida vun {{SITENAME}}", # Fuzzy
 /** Polish (polski)
  * @author Ankry
  * @author BeginaFelicysym
+ * @author Odie2
  * @author Woytecr
  */
 $messages['pl'] = array(
@@ -3110,6 +3111,22 @@ Zespół {{SITENAME}}
 
 Otrzymujesz tę wiadomość e-mail, ponieważ ten użytkownik zgodził się otrzymywać e-maile związane z tłumaczeniami portalu {{SITENAME}}.
 Aby anulować subskrypcję lub zmienić swoje preferencje powiadamiania o tłumaczeniach, odwiedź $8',
+	'translationnotifications-talkpage-body' => 'Witaj $2,
+
+Otrzymałeś to powiadomienie, ponieważ dostałeś uprawnienia do tłumaczenia {{PLURAL:$9|języku}} $3 na {{SITENAME}}.
+Teraz możesz tłumaczyć stronę [[$4]]. Możesz to przetłumaczyć tutaj:
+$5
+
+$6
+$7
+
+$8
+
+Twoja pomoc jest bardzo mile widziana. Tłumacze pomogą stronie {{SITENAME}} stworzyć wielojęzyczną społeczność.
+
+Dziękujemy!
+
+Koordynator tłumaczeń {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'przetłumacz na $1',
 	'translationnotifications-digestemail-subject' => 'Wiadomość ze streszczeniem próśb o tłumaczenie z witryny {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Witaj $1,
@@ -3139,6 +3156,7 @@ Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile 
 	'translationnotifications-sent-body' => 'Powiadomienie o tłumaczeniu zostało wysłane.',
 	'translationnotifications-log-alllanguages' => 'wszystkie języki',
 	'translationnotifications-nodeadline' => 'brak',
+	'translationnotifications-signup-legal' => 'Dostarczając te informacje, użytkownik zgadzasz się z tym, że możemy skontaktować się z tobą w tematami związanymi ze stroną {{SITENAME}}, które naszym zdaniem mogą być dla ciebie interesujące. Zgadzasz się, również z tym, że Twoje dane osobowe będą przetwarzane zgodnie z naszymi [[{{MediaWiki:Privacypage}}|zasadami]].',
 );
 
 /** Pashto (پښتو)
