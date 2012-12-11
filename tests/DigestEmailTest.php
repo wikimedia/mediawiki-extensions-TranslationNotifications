@@ -13,7 +13,15 @@
  * @group Database
  */
 class DigestEmailTest extends MediaWikiTestCase {
+	/**
+	 * @var DigestEmailer
+	 */
 	private $emailer;
+
+	/**
+	 * @var array
+	 */
+	private $translators_conf;
 
 	function setUp() {
 		parent::setUp();

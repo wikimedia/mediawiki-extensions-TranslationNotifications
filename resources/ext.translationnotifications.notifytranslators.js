@@ -8,6 +8,8 @@
  */
 
 jQuery( document ).ready( function( $ ) {
+	'use strict';
+
 	// Based on UploadWizard
 	$( '#mw-input-wpDeadlineDate' ).datepicker( {
 		dateFormat: 'yy-mm-dd',

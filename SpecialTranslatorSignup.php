@@ -166,6 +166,11 @@ JAVASCRIPT
 		return $m;
 	}
 
+	/**
+	 * @todo Document
+	 * @param $formData ???
+	 * @param $form ???
+	 */
 	public function formSubmit( $formData, $form ) {
 		$user = $this->getUser();
 

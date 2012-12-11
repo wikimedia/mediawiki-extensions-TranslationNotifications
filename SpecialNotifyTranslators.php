@@ -20,7 +20,10 @@
 class SpecialNotifyTranslators extends SpecialPage {
 	public static $right = 'translate-manage';
 	private $notificationText = '';
-	private $translatablePageTitle = '';
+	/**
+	 * @var Title
+	 */
+	private $translatablePageTitle;
 	private $deadlineDate = '';
 	private $priority = '';
 	private $sourceLanguageCode = '';
@@ -72,11 +75,13 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * @return array or string with an error message key in case of error
 	 */
 	private function getFormFields() {
-
 		// Translatable pages dropdown
 		$translatablePages = MessageGroups::getGroupsByType( 'WikiPageMessageGroup' );
 
 		$translatablePagesOptions = array();
+		/**
+		 * @var WikiPageMessageGroup $page
+		 */
 		foreach ( $translatablePages as $page ) {
 			if ( MessageGroups::getPriority( $page ) === 'discouraged' ) {
 				continue;
@@ -153,7 +158,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	/**
 	 * Callback for the submit button.
 	 *
-	 * TODO: document
+	 * @todo Document
 	 */
 	public function submitNotifyTranslatorsForm( $formData, $form ) {
 		$this->translatablePageTitle = Title::newFromID( $formData['TranslatablePage'] );
@@ -213,8 +218,8 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'always' => 0,
 			'week' => 604800, // seconds in week
 			'month' => 2678400, // seconds in month
-			'weekly' => 604800, // TODO, digest not implemented yet
-			'monthly' => 2678400, // TODO, digest not implemented yet
+			'weekly' => 604800, // seconds in week
+			'monthly' => 2678400, // seconds in month
 		);
 		$currentUnixTime = wfTimestamp();
 		$currentDBTime = $dbr->timestamp( $currentUnixTime );
@@ -298,8 +303,8 @@ class SpecialNotifyTranslators extends SpecialPage {
 	/**
 	 * Returns a language that a user signed up for in
 	 * Special:TranslatorSignup.
-	 * @param User
-	 * @param number Number of language.
+	 * @param User $user
+	 * @param int Number of language.
 	 * @return string Language code, or null if it wasn't defined.
 	 */
 	protected function getUserLanguageOption( $user, $langNum ) {
@@ -309,8 +314,8 @@ class SpecialNotifyTranslators extends SpecialPage {
 	/**
 	 * Returns the code of the first language to which a user signed up in
 	 * Special:TranslatorSignup.
-	 * @param User
-	 * @return language code.
+	 * @param User $user
+	 * @return string Language code.
 	 */
 	protected function getUserFirstLanguage( $user ) {
 		return $this->getUserLanguageOption( $user, 1 );
@@ -319,7 +324,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	/**
 	 * Returns an array of all language codes to which a user signed up in
 	 * Special:TranslatorSignup.
-	 * @param User
+	 * @param User $user
 	 * @return array of language codes.
 	 */
 	protected function getUserLanguages( $user ) {
@@ -335,6 +340,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 		return $userLanguages;
 	}
 
+	/**
+	 * @param User $user
+	 * @return string
+	 */
 	protected function getUserName( $user ) {
 		$name = $user->getRealName();
 		if ( $name  === '' ) {
@@ -343,6 +352,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 		return $name;
 	}
 
+	/**
+	 * @param string $priority
+	 * @return Message
+	 */
 	protected function getPriorityMessage( $priority ) {
 		// possible messages here:
 		// 'translationnotifications-priority-high'
@@ -352,6 +365,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 		return $this->msg( "translationnotifications-priority-$priority" );
 	}
 
+	/**
+	 * @param string $userFirstLanguage Language code set as first preference
+	 * @return string
+	 */
 	protected function getPriorityClause( $userFirstLanguage ) {
 		if ( $this->priority === 'unset' ) {
 			return '';
@@ -364,6 +381,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 		)->inLanguage( $userFirstLanguage )->text();
 	}
 
+	/**
+	 * @param string $languageCode
+	 * @return string Translation URL
+	 */
 	protected function getTranslationURL( $languageCode ) {
 		$page = TranslatablePage::newFromTitle( $this->translatablePageTitle );
 		$translationURL = SpecialPage::getTitleFor( 'Translate' )->getCanonicalUrl(
@@ -374,9 +395,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 	/**
 	 * Returns a list of URLs for page translation in every language.
-	 * @param $languages Array A hash of language codes and language names.
-	 * @param $contactMethod string The contact method - 'talkpage' or 'email'.
-	 * @param $inLanguage Mixed: language code or Language object.
+	 * @param string[] $languages A hash of language codes and language names.
+	 * @param string $contactMethod The contact method - 'talkpage' or 'email'.
+	 * @param string|Language $inLanguage Language code or Language object.
 	 * @return string
 	 */
 	protected function getTranslationURLs( $languages, $contactMethod, $inLanguage ) {
@@ -405,6 +426,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 		return implode( "\n", $translationURLsItems );
 	}
 
+	/**
+	 * @param string $userFirstLanguage Language code
+	 * @return string
+	 */
 	protected function getDeadlineClause( $userFirstLanguage ) {
 		if ( $this->deadlineDate === '' ) {
 			return '';
@@ -418,9 +443,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 	/**
 	 * Returns a list of language codes and names for the current
 	 * notification to the user.
-	 * @param $user User to whom the email is being sent
-	 * @param $languagesToNotify Array A list of languages that are notified. Empty for all languages.
-	 * @return array
+	 * @param User $user User to whom the email is being sent
+	 * @param string[] $languagesToNotify A list of languages that are notified. Empty for all languages.
+	 * @return string[] Array of language codes
 	 */
 	protected function getRelevantLanguages( $user, $languagesToNotify ) {
 		$userLanguages = $this->getUserLanguages( $user );
@@ -492,11 +517,11 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 	/**
 	 * Leave a message on the user's talk page.
-	 * @param $user User To whom the message to be sent
-	 * @param $languagesToNotify Array A list of languages that are notified. Empty for all languages.
-	 * @param $destination string Whether to send it to a talk page on this wiki ('talkpageHere', default)
+	 * @param User $user To whom the message to be sent
+	 * @param string[] $languagesToNotify A list of languages that are notified. Empty for all languages.
+	 * @param string $destination Whether to send it to a talk page on this wiki ('talkpageHere', default)
 	 *               or another one ('talkpageInOtherWiki').
-	 * @return boolean true if it was successful
+	 * @return boolean True if it was successful
 	 */
 	public function leaveUserMessage(
 		User $user,
