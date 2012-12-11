@@ -42,13 +42,27 @@ class TranslationNotificationJob extends Job {
 	private function publishHere() {
 		$text = '== ' . $this->params['editSummary'] . " ==\n\n" . $this->textDiv();
 
-		$talkPage = new Article( $this->title, 0 );
+		$talkPage = WikiPage::factory( $this->title );
 		$flags = $talkPage->checkFlags( 0 );
 		if ( $flags & EDIT_UPDATE ) {
-			$text = $talkPage->getRawText() . "\n" . $text;
+			$content = $talkPage->getContent( Revision::RAW );
+			if ( $content instanceof TextContent ) {
+				$textContent = $content->getNativeData();
+			} else {
+				// Cannot do anything with non-TextContent pages. Shouldn't happen.
+				return false;
+			}
+
+			$text = $textContent . "\n" . $text;
 		}
 		$editor = User::newFromID( $this->params['editor'] );
-		$status = $talkPage->doEdit( $text, $this->params['editSummary'], $flags, false, $editor );
+		$status = $talkPage->doEditContent(
+			ContentHandler::makeContent( $text, $this->title ),
+			$this->params['editSummary'],
+			$flags,
+			false,
+			$editor
+		);
 
 		return $status->isGood();
 	}

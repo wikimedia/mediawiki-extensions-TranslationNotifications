@@ -153,7 +153,7 @@ class DigestEmailer extends Maintenance {
 				'replyto' => $emailFrom,
 			);
 			$job = new EmaillingJob( null, $params );
-			$job->insert();
+			JobQueueGroup::singleton()->push( $job );
 
 			$user->setOption( 'translationnotifications-last-digest', wfTimestamp() );
 			$user->saveSettings();

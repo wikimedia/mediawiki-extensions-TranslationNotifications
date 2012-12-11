@@ -487,7 +487,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'replyto' => $emailFrom,
 		);
 		$job = new EmaillingJob( $this->translatablePageTitle, $params );
-		return $job->insert();
+		return JobQueueGroup::singleton()->push( $job );
 	}
 
 	/**
@@ -559,6 +559,6 @@ class SpecialNotifyTranslators extends SpecialPage {
 		}
 
 		$job = new TranslationNotificationJob( $user->getTalkPage(), $params );
-		return $job->insert();
+		return JobQueueGroup::singleton()->push( $job );
 	}
 }
