@@ -395,7 +395,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 	/**
 	 * Returns a list of URLs for page translation in every language.
-	 * @param string[] $languages A hash of language codes and language names.
+	 * @param string[] $languages A list of language codes and language names.
 	 * @param string $contactMethod The contact method - 'talkpage' or 'email'.
 	 * @param string|Language $inLanguage Language code or Language object.
 	 * @return string

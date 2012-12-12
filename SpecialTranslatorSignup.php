@@ -167,9 +167,9 @@ JAVASCRIPT
 	}
 
 	/**
-	 * @todo Document
-	 * @param $formData ???
-	 * @param $form ???
+	 * @param array $formData
+	 * @param HTMLForm $form
+	 * @see HTMLForm::setSubmitCallback
 	 */
 	public function formSubmit( $formData, $form ) {
 		$user = $this->getUser();
