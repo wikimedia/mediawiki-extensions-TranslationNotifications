@@ -2886,7 +2886,7 @@ U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-m
  */
 $messages['nn'] = array(
 	'translatorsignup' => 'Omsetjarregistrering',
-	'translatorsignup-summary' => 'Nytta denne sida til å visa kva for språk du kan setja om til og korleis du ynskjer å verta kontakta om nye omsetjingsførespurnader.',
+	'translatorsignup-summary' => 'Nytt denne sida til å visa kva for språk du kan setja om til og korleis du ynskjer å verta kontakta om nye omsetjingsførespurnader.',
 	'translationnotifications-desc' => 'Gjev omsetjarar høve til å melda seg på omsetjingsvarsel',
 	'translationnotifications-info' => 'Brukarinformasjon',
 	'translationnotifications-username' => 'Brukarnamn:',
@@ -2943,7 +2943,7 @@ Omsetjingskoordinatorane for {{SITENAME}}',
 	'translationnotifications-sent-body' => 'Omsetjingsvarsel vart sendt',
 	'translationnotifications-log-alllanguages' => 'alle språk',
 	'translationnotifications-nodeadline' => 'ingen',
-	'translationnotifications-signup-legal' => 'Du samtykkjer i at ved å gjeva opp denne informasjonen kan me kontakta deg om emne relaterte til {{SITENAME}} som me trur kan vera av interesse for deg. Du samtykkjer i at dataa dine er underlagde [[{{MediaWiki:Privacypage}}|retningslinene våre for personvern]].',
+	'translationnotifications-signup-legal' => 'Du samtykkjer i at ved å gje opp denne informasjonen kan me kontakta deg om emne relaterte til {{SITENAME}} som me trur kan vera av interesse for deg. Du samtykkjer i at dataa dine er underlagde [[{{MediaWiki:Privacypage}}|retningslinene våre for personvern]].',
 );
 
 /** Pälzisch (Pälzisch)
