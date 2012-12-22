@@ -337,7 +337,7 @@ $7
 
 ----
 
-Вы атрымалі гэты ліст, бо дазволілі атрыманьне электронных лістоў, датычных перакладаў у {{GRAMMAR:месны|{{SITENAME}}}}. Каб адпісацца ад апавяшчэньняў ці зьмяніць налады апавяшчэньня, наведайце $8, калі ласка.',
+Вы атрымалі гэты ліст, бо дазволілі атрыманьне электронных лістоў, датычных перакладаў у {{GRAMMAR:месны|{{SITENAME}}}}. Каб адпісацца ад апавяшчэньняў ці зьмяніць налады апавяшчэньня, наведайце $8, калі ласка.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Вітаем, $2!
 
 Вы атрымалі гэтае апавяшчэньне, бо заявілі сябе перакладчыкам на мовы $3 у {{GRAMMAR:месны|{{SITENAME}}}}.
@@ -729,7 +729,7 @@ Pśełožowańske koordinatory {{GRAMMAR:genitiw|{{SITENAME}}}}
 
 ----
 
-Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k $8',
+Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k $8', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš toś tu powěźeńku, dokulaž sy se ako pśełožowaŕ za $3 na {{SITENAME}} zregistrěrował.
@@ -844,7 +844,7 @@ Los coordinadores de traducción de {{SITENAME}}
 
 ----
 
-Estás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita $8.',
+Estás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Hola $2,
 
 Estás recibiendo esta notificación porque te inscribiste como traductor  de {{SITENAME}} en $3.
@@ -960,7 +960,7 @@ Tõlkekoordineerijad
 
 ----
 
-Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge $8.',
+Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Tere, $2.
 
 Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $3 keelde tõlkijana.
@@ -1125,7 +1125,7 @@ Sivuston {{SITENAME}} käännösvastaavat
 
 ----
 
-Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä sivustolla  {{SITENAME}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy $8.',
+Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä sivustolla  {{SITENAME}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Hei $2,
 
 Saat tämän ilmoituksen, koska olet liittynyt kielen/kielten $3 kääntäjäksi sivustolla {{SITENAME}}.
@@ -1245,7 +1245,7 @@ Merci !
 Les coordonnateurs de traduction de {{SITENAME}}
 
 ----
-Vous recevez ce courriel parce que vous avez signé pour recevoir des courriels concernant les traductions sur {{SITENAME}}. Pour vous désabonner ou modifier vos préférences de notification pour les traductions, veuillez visiter $8.',
+Vous recevez ce courriel parce que vous avez signé pour recevoir des courriels concernant les traductions sur {{SITENAME}}. Pour vous désabonner ou modifier vos préférences de notification pour les traductions, veuillez visiter $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => "Bonjour $2,
 
 Vous recevez cette notification parce que vous êtes inscrit comme traducteur de $3 sur {{SITENAME}}.
@@ -1390,7 +1390,7 @@ Os coordinadores das traducións de {{SITENAME}}
 
 ----
 
-Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite $8.',
+Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Boas, $2:
 
 Recibiu esta notificación porque está inscrito como tradutor ao $3 en {{SITENAME}}.
@@ -1506,7 +1506,7 @@ $7
 ----
 
 קיבלת את המכתב הזה כי נרשמת לקבלת מכתבים בנושא תרגומים באתר {{SITENAME}}. כדי לבטל את המינוי או לשנות את הגדרות שלך על ההודעות בנושא תרגומים, נא לבקר בדף הבא:
-$8',
+$8', # Fuzzy
 	'translationnotifications-talkpage-body' => 'שלום $2,
 
 קיבלת את ההודעה הזאת מכיוון שנרשמת בתור מתרגם ל{{GRAMMAR:תחילית|$3}} באתר {{SITENAME}}.
@@ -1622,7 +1622,7 @@ Přełožowanscy koordinatorojo {{GRAMMAR:genitiw|{{SITENAME}}}}
 
 ----
 
-Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k $8.',
+Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
@@ -1859,7 +1859,7 @@ Grazie!
 I coordinatori delle traduzioni di {{SITENAME}}
 
 ----
-Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $8.",
+Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $8.", # Fuzzy
 	'translationnotifications-talkpage-body' => 'Ciao $2,
 
 Ricevi questa email perché ti sei registrato come traduttore $3 su {{SITENAME}}.
@@ -2110,7 +2110,7 @@ $7
 
 ----
 
-{{SITENAME}}에 번역에 대해 이메일을 받도록 가입했기 때문에 이 이메일을 받았습니다. 구독을 취소하거나 번역에 대한 사용자 알림 환경 설정을 바꾸려면 $8로 방문하세요.',
+{{SITENAME}}에 번역에 대해 이메일을 받도록 가입했기 때문에 이 이메일을 받았습니다. 구독을 취소하거나 번역에 대한 사용자 알림 환경 설정을 바꾸려면 $8로 방문하세요.', # Fuzzy
 	'translationnotifications-talkpage-body' => '$2 안녕하세요,
 
 {{SITENAME}}에 $3로 번역에 가입했기 때문에 이 알림을 받았습니다.
@@ -2402,7 +2402,7 @@ $7
 
 ----
 
-Поракава ја добивате бидејќи се пријавивте да примате пошта во врска со преводи на {{SITENAME}}. Ако сакате да се откажете од известувањата или  да ги измените нагодувањата за истите, посетете ја страницата $8',
+Поракава ја добивате бидејќи се пријавивте да примате пошта во врска со преводи на {{SITENAME}}. Ако сакате да се откажете од известувањата или  да ги измените нагодувањата за истите, посетете ја страницата $8', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Здраво $2,
 
 Го добивате ова известување бидејќи се пријавивте за преведувач на {{SITENAME}} на $3.
@@ -2517,7 +2517,7 @@ $7
 
 ----
 
-{{SITENAME}} സംരംഭത്തിൽ പരിഭാഷയ്ക്കായി പേരുചേർത്തിട്ടുള്ളതിനാലാണ് താങ്കൾക്ക് ഈ ഇമെയിൽ അയയ്ക്കുന്നതു്. ഈ അറിയിപ്പുകൾ വേണ്ടെങ്കിലോ അറിയിക്കേണ്ട  രീതി മാറ്റണമെങ്കിലോ $8 ദയവായി സന്ദർശിക്കുക.',
+{{SITENAME}} സംരംഭത്തിൽ പരിഭാഷയ്ക്കായി പേരുചേർത്തിട്ടുള്ളതിനാലാണ് താങ്കൾക്ക് ഈ ഇമെയിൽ അയയ്ക്കുന്നതു്. ഈ അറിയിപ്പുകൾ വേണ്ടെങ്കിലോ അറിയിക്കേണ്ട  രീതി മാറ്റണമെങ്കിലോ $8 ദയവായി സന്ദർശിക്കുക.', # Fuzzy
 	'translationnotifications-edit-summary' => 'പരിഭാഷാ അറിയിപ്പ്: $1',
 	'translationnotifications-email-priority' => 'ഈ താളിന്റെ മുൻഗണന $1 ആണ്.',
 	'translationnotifications-email-deadline' => 'ഈ താൾ പരിഭാഷപ്പെടുത്തുന്നതിനുള്ള അവസാന തീയതി $1 ആണ്.',
@@ -2596,7 +2596,7 @@ Penyelaras penterjemahan {{SITENAME}}
 
 ----
 
-Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari $8.',
+Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => '$2,
 
 Anda sedang menerima pemberitahuan ini kerana anda mendaftar diri sebagai penterjemah kepada $3 di {{SITENAME}}.
@@ -2818,7 +2818,7 @@ $messages['nl'] = array(
 	'translationnotifications-email-subject' => 'Vertaal alstublieft de pagina $1',
 	'translationnotifications-email-body' => 'Hallo $1,
 
-U ontvangt deze e-mail omdat u zich heeft opgegeven als vertaler voor het $2 op {{SITENAME}}.
+U ontvangt deze e-mail omdat u zich heeft opgegeven als vertaler voor de {{PLURAL:$9|taal|talen}} $2 op {{SITENAME}}.
 
 Er is een pagina te vertalen: $3.
 U kunt deze vertalen door op de volgende verwijzing te klikken:
@@ -2829,7 +2829,9 @@ $6
 
 $7
 
-Bedankt!
+Uw hulp wordt enorm op prijs gesteld. Door vertalers zoals u functioneert {{SITENAME}} als een echte meertalige gemeenschap.
+
+Dank u wel!
 Vertalingencoördinatoren van {{SITENAME}}
 
 ----
@@ -3110,7 +3112,7 @@ Zespół {{SITENAME}}
 ----
 
 Otrzymujesz tę wiadomość e-mail, ponieważ ten użytkownik zgodził się otrzymywać e-maile związane z tłumaczeniami portalu {{SITENAME}}.
-Aby anulować subskrypcję lub zmienić swoje preferencje powiadamiania o tłumaczeniach, odwiedź $8',
+Aby anulować subskrypcję lub zmienić swoje preferencje powiadamiania o tłumaczeniach, odwiedź $8', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 Otrzymałeś to powiadomienie, ponieważ dostałeś uprawnienia do tłumaczenia {{PLURAL:$9|języku}} $3 na {{SITENAME}}.
@@ -3518,7 +3520,7 @@ $7
 
 ----
 
-{{SITENAME}} தளத்தில் மொழிபெயர்ப்பு தொடர்பான மின்னஞ்சல்களை பெற நீங்கள் பதிவு செய்துள்ளதால், இந்த மின்னஞ்சலை நீங்கள் பெறுகிறீர்கள். பதிவு நீக்க அல்லது மொழிபெயர்ப்புக்கான அறிவிக்கை விருப்பத்தேர்வுகளை மாற்ற, தயவுசெய்து பார்க்க $8.',
+{{SITENAME}} தளத்தில் மொழிபெயர்ப்பு தொடர்பான மின்னஞ்சல்களை பெற நீங்கள் பதிவு செய்துள்ளதால், இந்த மின்னஞ்சலை நீங்கள் பெறுகிறீர்கள். பதிவு நீக்க அல்லது மொழிபெயர்ப்புக்கான அறிவிக்கை விருப்பத்தேர்வுகளை மாற்ற, தயவுசெய்து பார்க்க $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'வணக்கம் $2,
 
 {{SITENAME}} இல் $3 மொழிக்கான மொழிபெயர்ப்பாளராக பதிவு செய்துள்ளதால், நீங்கள் இந்த அறிவிக்கையைப் பெறுகிறீர்கள்.
@@ -3637,7 +3639,7 @@ Mga tagapangasiwa ng salinwika ng {{SITENAME}}
 
 ----
 
-Nakakatanggap ka ng ganitong elektronikong liham dahil nagpatala ka upang makatanggap ng mga e-liham na may kaugnayan sa mga salinwika na nasa {{SITENAME}}. Upang huwag nang magpasipi o upang baguhin ang mga kanaisan mo ng pagpapabatid para sa mga salinwika, paki dumalaw sa $8.',
+Nakakatanggap ka ng ganitong elektronikong liham dahil nagpatala ka upang makatanggap ng mga e-liham na may kaugnayan sa mga salinwika na nasa {{SITENAME}}. Upang huwag nang magpasipi o upang baguhin ang mga kanaisan mo ng pagpapabatid para sa mga salinwika, paki dumalaw sa $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Kumusta $2,
 
 Natanggap mo ang pagpapabatid na ito dahil nagpatala ka bilang isang tagapagsalinwika sa $3 doon sa {{SITENAME}}.
@@ -4009,7 +4011,7 @@ $7
 
 ----
 
-איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגעשריבן צו באקומען בליצבריוון מיט א שייכות צו איבערזעצונגען ביי  {{SITENAME}}. זיך אומאבאנירן, אדער צו ענדערן  אייער אנזאג פרעפערענצן פאר איבערזעצונגען, זייט אזוי גוט באזוכט $8.',
+איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגעשריבן צו באקומען בליצבריוון מיט א שייכות צו איבערזעצונגען ביי  {{SITENAME}}. זיך אומאבאנירן, אדער צו ענדערן  אייער אנזאג פרעפערענצן פאר איבערזעצונגען, זייט אזוי גוט באזוכט $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'טייערער $2,
 
 איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגשריבן ווי אן איבערזעצער אויף $3 ביי {{SITENAME}}.
