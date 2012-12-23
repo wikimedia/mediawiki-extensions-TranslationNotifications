@@ -365,6 +365,15 @@ $8
 	'translationnotifications-nodeadline' => 'няма',
 );
 
+/** Bulgarian (български)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['bg'] = array(
+	'translationnotifications-username' => 'Потребителско име:',
+	'translationnotifications-languages' => 'Езици',
+	'translationnotifications-cmethod-email' => 'Е-поща',
+);
+
 /** Bengali (বাংলা)
  * @author Bellayet
  * @author Nasir8891
@@ -776,6 +785,119 @@ Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach 
 	'translationnotifications-log-alllanguages' => 'wšykne rěcy',
 	'translationnotifications-nodeadline' => 'žeden',
 	'translationnotifications-signup-legal' => 'Pśez pódawanje toś tych informacijow zwólijoš, až móžomy se z tobu nastupajucy temy w zwisku {{GRAMMAR:instrumental|{{SITENAME}}}} do zwiska stajiś, kótarež by mógli śi zajimowaś. Zwólijoš do togo, až waše daty pódlaže našym [[{{MediaWiki:Privacypage}}|pšawidłam priwatnosći]].',
+);
+
+/** Esperanto (Esperanto)
+ * @author Blahma
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'translatorsignup' => 'Tradukista abono',
+	'translatorsignup-summary' => 'En tiu ĉi paĝo indiku en kiujn lingvojn vi scias traduki kaj kiel oni kontaktu vin pri novaj tradukpetoj.',
+	'translationnotifications-desc' => 'Permesi al tradukistoj aboni sciigojn pri tradukoj',
+	'translationnotifications-info' => 'Informoj pri la uzanto',
+	'translationnotifications-username' => 'Salutnomo:',
+	'translationnotifications-emailstatus' => 'Repoŝta stato:',
+	'translationnotifications-email-confirmed' => 'Via retpoŝtadreso ne estas konfirmita',
+	'translationnotifications-email-disablemail' => 'Via retpoŝtadreso estas konfirmita, sed en [[Special:Preferences|viaj preferoj]] vi petis ne ricevadi retpoŝton.',
+	'translationnotifications-email-unconfirmed' => 'Via retpoŝtadreso ne estas konfirmita. $1',
+	'translationnotifications-email-notset' => 'Vi ne provizis retpoŝtadreson. Vi povas tion fari en viaj [[Special:Preferences|preferoj]].',
+	'translationnotifications-languages' => 'Lingvoj',
+	'translationnotifications-lang' => 'Lingvo #$1',
+	'translationnotifications-nolang' => 'Elektu lingvon',
+	'translationnotifications-contact' => 'Preferataj kontaktmetodoj',
+	'translationnotifications-cmethod-email' => 'Retadreso',
+	'translationnotifications-cmethod-talkpage' => 'Diskuto-paĝo',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Diskutpaĝo en alia vikio',
+	'translationnotifications-cmethod-feed' => 'Fluo',
+	'translationnotifications-frequency' => 'Kontaktofteco',
+	'translationnotifications-freq-always' => 'Kiam estas nova tradukendaĵo',
+	'translationnotifications-freq-week' => 'Maksimume unufoje semajne',
+	'translationnotifications-freq-month' => 'Maksimume unufoje monate',
+	'translationnotifications-freq-weekly' => 'Semajna kompilaĵo',
+	'translationnotifications-freq-monthly' => 'Monata kompilaĵo',
+	'translationnotifications-submit' => 'Ĝisdatigi la agordojn',
+	'translationnotifications-signup-success' => 'Viaj preferoj pri traduksciigoj estas konservitaj.',
+	'notifytranslators' => 'Sciigi tradukistojn',
+	'translationnotifications-submit-ok' => 'Sciigoj estas envicigitaj kaj nun dissendiĝas helpe de fona procezo.',
+	'translationnotifications-send-notification-button' => 'Sendi sciigon al tradukistoj',
+	'translationnotifications-deadline-label' => 'Limdato indikota en tiu ĉi sciigo:',
+	'translationnotifications-languages-to-notify-label' => 'Kiujn lingvojn sciigi:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Perkome disigita listo de lingvokodoj; lasu malplena por sciigi ĉiujn lingvojn.',
+	'translationnotifications-priority' => 'Prioritato:',
+	'translationnotifications-priority-high' => 'alta',
+	'translationnotifications-priority-medium' => 'meza',
+	'translationnotifications-priority-low' => 'malalta',
+	'translationnotifications-priority-unset' => '(neagordita)',
+	'translationnotifications-translatablepage-title' => 'Nomo de la tradukenda paĝo:',
+	'translationnotifications-error-no-translatable-pages' => 'En tiu ĉi vikio ekzistas neniuj tradukeblaj paĝoj.',
+	'translationnotifications-email-subject' => 'Bonvolu traduki la paĝon $1',
+	'translationnotifications-email-body' => 'Saluton $1,
+
+vi ricevas tiun ĉi mesaĝon, ĉar vi registriĝis kiel tradukisto de {{PLURAL:$9|la lingvo|la lingvoj}} $2 ĉe {{SITENAME}}.
+
+Ekzistas tradukebla paĝo ĉe: $3.
+Vi povas ektraduki ĝin klakante la sekvan ligilon:
+$4
+
+$5
+$6
+
+$7
+
+Ni tre aprezos vian helpon. Tradukistoj kiel vi helpas al {{SITENAME}} funkcii kiel vere multlingva komunumo.
+
+Dankon!
+traduk-kunordigantoj de {{SITENAME}}
+
+----
+
+Vi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITENAME}}. Por malaboni aŭ ŝanĝi viajn sciigajn preferojn, bonvolu viziti $8.',
+	'translationnotifications-talkpage-body' => 'Saluton $2,
+
+vi ricevas tiun ĉi mesaĝon, ĉar vi registriĝis kiel tradukisto de {{PLURAL:$9|la lingvo|la lingvoj}} $2 ĉe {{SITENAME}}.
+La paĝo [[$4]] estas tradukpreta. Vi povas traduki ĝin ĉe:
+$5
+
+$6
+$7
+
+$8
+
+Ni tre aprezos vian helpon. Tradukistoj kiel vi helpas al {{SITENAME}} funkcii kiel vere multlingva komunumo.
+
+Dankon!
+traduk-kunordigantoj de {{SITENAME}}', # Fuzzy
+	'translationnotifications-notification-url-listitem' => 'traduki al $1',
+	'translationnotifications-digestemail-subject' => 'Retpoŝta kompilaĵo de tradukpetoj el {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Saluton $1,
+
+vi ricevas tiun ĉi mesaĝon, ĉar vi registriĝis kiel tradukisto de $2 ĉe {{SITENAME}}.
+
+Ekzistas {{PLURAL:$3|1 tradukpreta paĝo|$3 tradukpretaj paĝoj}}. Detaloj sekvas sube.
+
+$4
+
+Ni tre aprezos vian helpon. Tradukistoj kiel vi helpas al {{SITENAME}} funkcii kiel vere multlingva komunumo.
+
+Dankon!
+traduk-kunordigantoj de {{SITENAME}}
+
+----
+
+Vi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITENAME}}. Por malaboni aŭ ŝanĝi viajn sciigajn preferojn, bonvolu viziti <$5>.',
+	'translationnotifications-digestemail-notification-line' => 'Je $1, $2 markis "$3" tradukpreta. Vi povas traduki ĝin ĉe $4',
+	'translationnotifications-edit-summary' => 'Traduksciigo: $1',
+	'translationnotifications-email-priority' => 'La prioritato de tiu ĉi paĝo estas $1.',
+	'translationnotifications-email-deadline' => 'La limdato por traduko de tiu ĉi paĝo estas $1.',
+	'logentry-translationnotifications-sent' => '$1 dissendis sciigon pri tradukado de la paĝo $3; lingvoj: $4; limdato: $5; prioritato: $6; sendita al {{PLURAL:$7|unu ricevanto|$7 ricevantoj}}, malsukcesis ĉe {{PLURAL:$8|unu ricevanto|$8 ricevantoj}}, preterpasita ĉe {{PLURAL:$9|unu ricevanto|$9 ricevantoj}}', # Fuzzy
+	'log-name-notifytranslators' => 'Traduksciigoj',
+	'log-description-notifytranslators' => 'Protokolo pri sciigoj pri tradukeblaj paĝoj dissenditaj al tradukistoj',
+	'translationnotifications-sent-title' => 'Traduksciigo sendita',
+	'translationnotifications-sent-body' => 'Traduksciigo estas sendita.',
+	'translationnotifications-log-alllanguages' => 'ĉiuj lingvoj',
+	'translationnotifications-nodeadline' => 'neniu',
+	'translationnotifications-signup-legal' => 'Provizante tiun ĉi informon vi konsentas, ke ni povas vin kontakti pri temoj rilataj al {{SITENAME}} kiujn ni taksos interesaj por vi. Vi konsentas ke viaj datumoj subiĝas al nia [[{{MediaWiki:Privacypage}}|privateca politiko.]]',
 );
 
 /** Spanish (español)
@@ -1794,6 +1916,13 @@ Tu ha recipite iste message perque tu te ha inscribite pro reciper e-mail sur tr
 	'translationnotifications-signup-legal' => 'Per fornir iste information tu accepta que nos pote contactar te concernente themas associate a {{SITENAME}} le quales nos pensa que pote esser de interesse a te. Tu accepta que tu datos es subjecte a nostre [[{{MediaWiki:Privacypage}}|politica de confidentialitate]].',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['id'] = array(
+	'translationnotifications-cmethod-email' => 'Surel',
+);
+
 /** Italian (italiano)
  * @author Beta16
  * @author Darth Kule
@@ -2091,7 +2220,7 @@ $messages['ko'] = array(
 	'translationnotifications-email-subject' => '$1 문서를 번역하세요',
 	'translationnotifications-email-body' => '$1 안녕하세요,
 
-{{SITENAME}}에 $2로 번역에 가입했기 때문에 이 이메일을 받았습니다.
+{{SITENAME}}에 $2{{PLURAL:$9|로}} 번역에 가입했기 때문에 이 이메일을 받았습니다.
 
 여기에 번역에 대한 문서가 있습니다: $3.
 다음 링크를 클릭하여 번역할 수 있습니다:
@@ -2110,7 +2239,7 @@ $7
 
 ----
 
-{{SITENAME}}에 번역에 대해 이메일을 받도록 가입했기 때문에 이 이메일을 받았습니다. 구독을 취소하거나 번역에 대한 사용자 알림 환경 설정을 바꾸려면 $8로 방문하세요.', # Fuzzy
+{{SITENAME}}에 번역에 대해 이메일을 받도록 가입했기 때문에 이 이메일을 받았습니다. 구독을 취소하거나 번역에 대한 사용자 알림 환경 설정을 바꾸려면 $8로 방문하세요.',
 	'translationnotifications-talkpage-body' => '$2 안녕하세요,
 
 {{SITENAME}}에 $3로 번역에 가입했기 때문에 이 알림을 받았습니다.
@@ -2382,7 +2511,7 @@ $messages['mk'] = array(
 	'translationnotifications-email-subject' => 'Преведете ја пораката $1',
 	'translationnotifications-email-body' => 'Здраво $1,
 
-Писмово го примате бидејќи се пријавивте за преведувач на $2 на {{SITENAME}}.
+Писмово го примате бидејќи се пријавивте за преведувач {{PLURAL:$9|на}} $2 на {{SITENAME}}.
 
 Има нова страница што треба да се преведе: $3.
 Преведете ја на следнава врска:
@@ -2402,7 +2531,7 @@ $7
 
 ----
 
-Поракава ја добивате бидејќи се пријавивте да примате пошта во врска со преводи на {{SITENAME}}. Ако сакате да се откажете од известувањата или  да ги измените нагодувањата за истите, посетете ја страницата $8', # Fuzzy
+Поракава ја добивате бидејќи се пријавивте да примате пошта во врска со преводи на {{SITENAME}}. Ако сакате да се откажете од известувањата или  да ги измените нагодувањата за истите, посетете ја страницата $8',
 	'translationnotifications-talkpage-body' => 'Здраво $2,
 
 Го добивате ова известување бидејќи се пријавивте за преведувач на {{SITENAME}} на $3.
@@ -3455,7 +3584,9 @@ $messages['sv'] = array(
 	'translationnotifications-priority-low' => 'låg',
 	'translationnotifications-priority-unset' => '(inte inställd)',
 	'translationnotifications-translatablepage-title' => 'Namn på översättningsbar sida:',
+	'translationnotifications-email-subject' => 'Var god översätt sidan $1',
 	'translationnotifications-notification-url-listitem' => 'översätt till $1',
+	'translationnotifications-digestemail-subject' => 'E-postsammandrag för översättningsbegäran från {{SITENAME}}',
 	'translationnotifications-edit-summary' => 'Översättningsmeddelande: $1',
 	'translationnotifications-log-alllanguages' => 'alla språk',
 	'translationnotifications-nodeadline' => 'ingen',
