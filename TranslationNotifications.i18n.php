@@ -1351,7 +1351,7 @@ $messages['fr'] = array(
 	'translationnotifications-email-subject' => 'Veuillez traduire la page $1',
 	'translationnotifications-email-body' => 'Bonjour $1,
 
-Vous recevez ce courriel parce que vous vous êtes inscrit comme traducteur de $2 sur {{SITENAME}}.
+Vous recevez ce courriel parce que vous vous êtes inscrit comme traducteur {{PLURAL:$9|de}} $2 sur {{SITENAME}}.
 
 Il y a une page à traduire ici : $3.
 Vous pouvez la traduire en cliquant sur le lien suivant :
@@ -1367,7 +1367,7 @@ Merci !
 Les coordonnateurs de traduction de {{SITENAME}}
 
 ----
-Vous recevez ce courriel parce que vous avez signé pour recevoir des courriels concernant les traductions sur {{SITENAME}}. Pour vous désabonner ou modifier vos préférences de notification pour les traductions, veuillez visiter $8.', # Fuzzy
+Vous recevez ce courriel parce que vous avez signé pour recevoir des courriels concernant les traductions sur {{SITENAME}}. Pour vous désabonner ou modifier vos préférences de notification pour les traductions, veuillez visiter $8.',
 	'translationnotifications-talkpage-body' => "Bonjour $2,
 
 Vous recevez cette notification parce que vous êtes inscrit comme traducteur de $3 sur {{SITENAME}}.
@@ -1971,7 +1971,7 @@ $messages['it'] = array(
 	'translationnotifications-email-subject' => 'Si prega di tradurre la pagina $1',
 	'translationnotifications-email-body' => "Ciao $1,
 
-Ricevi questa email perché ti sei registrato come traduttore di $2 su {{SITENAME}}.
+Ricevi questa email perché ti sei registrato come traduttore {{PLURAL:$9|in}} $2 su {{SITENAME}}.
 
 C'è una pagina da tradurre: $3.
 Clicca su questo collegamento per iniziare a tradurla:
@@ -1988,7 +1988,7 @@ Grazie!
 I coordinatori delle traduzioni di {{SITENAME}}
 
 ----
-Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $8.", # Fuzzy
+Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $8.",
 	'translationnotifications-talkpage-body' => 'Ciao $2,
 
 Ricevi questa email perché ti sei registrato come traduttore $3 su {{SITENAME}}.
