@@ -720,7 +720,7 @@ $messages['dsb'] = array(
 	'translationnotifications-email-subject' => 'Pšosym pśełož bok $1',
 	'translationnotifications-email-body' => 'Witaj $1,
 
-Dostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował.
+Dostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ {{PLURAL:$9|za}} $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował.
 
 Dajo nowy bok, kótaryž musy se pśełožowaś: $3.
 Móžoš jen pśełožiś, z tym až kliknjoš na slědujucy wótkaz:
@@ -738,7 +738,7 @@ Pśełožowańske koordinatory {{GRAMMAR:genitiw|{{SITENAME}}}}
 
 ----
 
-Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k $8', # Fuzzy
+Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k $8',
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš toś tu powěźeńku, dokulaž sy se ako pśełožowaŕ za $3 na {{SITENAME}} zregistrěrował.
@@ -1725,7 +1725,7 @@ $messages['hsb'] = array(
 	'translationnotifications-email-subject' => 'Prošu přełož stronu $1',
 	'translationnotifications-email-body' => 'Witaj $1,
 
-Dóstawaš tutu e-mejl, dokelž sy so jako přełožowar za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował.
+Dóstawaš tutu e-mejl, dokelž sy so jako přełožowar {{PLURAL:$9|za}} $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował.
 
 Je nowa strona, kotraž dyrbi so přełožować: $3.
 Móžeš ju přełožować, kliknjo na slědowacy wotkaz:
@@ -1744,7 +1744,7 @@ Přełožowanscy koordinatorojo {{GRAMMAR:genitiw|{{SITENAME}}}}
 
 ----
 
-Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k $8.', # Fuzzy
+Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k $8.',
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
@@ -3599,6 +3599,7 @@ $messages['sv'] = array(
  * @author மதனாஹரன்
  */
 $messages['ta'] = array(
+	'translatorsignup' => 'மொழிபெயர்ப்பாளர் பதிவு செய்தல்',
 	'translationnotifications-info' => 'பயனர் தகவல்',
 	'translationnotifications-username' => 'பயனர் பெயர்:',
 	'translationnotifications-emailstatus' => 'மின்னஞ்சல் நிகழ்நிலை:',
