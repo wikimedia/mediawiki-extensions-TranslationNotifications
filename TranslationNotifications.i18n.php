@@ -1493,7 +1493,7 @@ $messages['gl'] = array(
 	'translationnotifications-email-subject' => 'Por favor, traduza a páxina "$1"',
 	'translationnotifications-email-body' => 'Boas, $1:
 
-Recibiu este correo electrónico porque está inscrito como tradutor ao $2 en {{SITENAME}}.
+Recibiu este correo electrónico porque está inscrito como tradutor {{PLURAL:$9|ao}} $2 en {{SITENAME}}.
 
 Hai unha páxina que traducir alí: $3.
 Pode traducila premendo na seguinte ligazón:
@@ -1512,7 +1512,7 @@ Os coordinadores das traducións de {{SITENAME}}
 
 ----
 
-Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite $8.', # Fuzzy
+Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite $8.',
 	'translationnotifications-talkpage-body' => 'Boas, $2:
 
 Recibiu esta notificación porque está inscrito como tradutor ao $3 en {{SITENAME}}.
@@ -3486,6 +3486,7 @@ $messages['rue'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'translatorsignup' => 'පරිවර්තක ලියාපදිංචිය',
 	'translationnotifications-info' => 'පරිශීලකගේ තොරතුරු',
 	'translationnotifications-username' => 'පරිශීලක නාමය:',
 	'translationnotifications-emailstatus' => 'විද්‍යුත්-තැපැල් තත්වය:',
@@ -3495,6 +3496,7 @@ $messages['si'] = array(
 	'translationnotifications-nolang' => 'භාෂාවක් තෝරාගන්න',
 	'translationnotifications-cmethod-email' => 'විද්‍යුත් තැපෑල',
 	'translationnotifications-cmethod-talkpage' => 'සාකච්ඡා පිටුව',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'වෙනත් විකියක කතාබහ පිටුව',
 	'translationnotifications-cmethod-feed' => 'පෝෂකය',
 	'translationnotifications-frequency' => 'සම්බන්ධ කිරීමේ වාර ගණන',
 	'translationnotifications-freq-week' => 'ගොඩක්ම සතියකට වරක්',

@@ -100,3 +100,9 @@ $specialPageAliases['zh-hans'] = array(
 	'NotifyTranslators' => array( '通知译者' ),
 	'TranslatorSignup' => array( '译者登录' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'NotifyTranslators' => array( '通知翻譯者' ),
+	'TranslatorSignup' => array( '翻譯者註冊' ),
+);
