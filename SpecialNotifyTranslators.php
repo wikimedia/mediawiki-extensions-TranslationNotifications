@@ -496,6 +496,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$this->notificationText,
 			$signupURL )
 			->numParams( count( $relevantLanguages ) ) // $9
+			->params( $user->getName() ) // $10
 			->inLanguage( $userFirstLanguage )->text();
 
 		global $wgNoReplyAddress;
@@ -553,7 +554,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		}
 		$text = $this->msg(
 			'translationnotifications-talkpage-body',
-			null, // $1 was used in the past and then removed.
+			$user->getName(),
 			$this->getUserName( $user ),
 			$userFirstLanguage->listToText( array_values( $relevantLanguages ) ),
 			$titleForMessage,

@@ -57,7 +57,7 @@ $messages['en'] = array(
 	'translationnotifications-email-subject' => 'Please translate the page $1',
 	'translationnotifications-email-body' => 'Hello $1,
 
-You are receiving this e-mail because you signed up as a translator {{PLURAL:$9|to}} $2 on {{SITENAME}}.
+You are receiving this e-mail because you {{GENDER:$10|signed up}} as a translator {{PLURAL:$9|to}} $2 on {{SITENAME}}.
 
 There is a page to translate there: $3.
 You can translate it by clicking the following link:
@@ -79,7 +79,7 @@ Thank you!
 You are receiving this e-mail because you signed up to receive e-mails related to translations on {{SITENAME}}. To unsubscribe or to change your notification preferences for translations, please visit $8.',
 	'translationnotifications-talkpage-body' => 'Hello $2,
 
-You are receiving this notification because you signed up as a translator {{PLURAL:$9|to}} $3 on {{SITENAME}}.
+You are receiving this notification because you {{GENDER:$1|signed up}} as a translator {{PLURAL:$9|to}} $3 on {{SITENAME}}.
 The page [[$4]] is available for translation. You can translate it here:
 $5
 
@@ -98,7 +98,7 @@ Thank you!
 	'translationnotifications-digestemail-subject' => 'Digest e-mail for translation requests from {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hello $1,
 
-You are receiving this e-mail because you signed up as a translator to $2 on {{SITENAME}}.
+You are receiving this e-mail because you {{GENDER:$1|signed up}} as a translator to $2 on {{SITENAME}}.
 
 There {{PLURAL:$3|is 1 page|are $3 pages}} available for translation. The details are given below.
 
@@ -188,7 +188,8 @@ $messages['qqq'] = array(
 * $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
 * $7 - A custom message that can be added by the notification sender.
 * $8 - URL to the special page, to unsubscribe.
-* $9 - Number of languages. Can be used in PLURAL.",
+* $9 - Number of languages. Can be used in PLURAL.
+* $10- Plain text username used for GENDER.",
 	'translationnotifications-talkpage-body' => "The body of the notification on user talk page.
 
 * $2 - Translator's username or real name, if specified.
