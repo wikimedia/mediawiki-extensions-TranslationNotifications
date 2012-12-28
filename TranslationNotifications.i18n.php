@@ -1062,7 +1062,7 @@ $messages['et'] = array(
 	'translationnotifications-email-subject' => 'Palun tõlgi lehekülg $1',
 	'translationnotifications-email-body' => 'Tere, $1.
 
-Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $2 keelde tõlkijana.
+Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $2 {{PLURAL:$9|keelde}} tõlkijana.
 
 Tõlkimiseks on järgmine lehekülg: $3.
 Et see tõlkida, klõpsa palun järgmisele lingile:
@@ -1082,7 +1082,7 @@ Tõlkekoordineerijad
 
 ----
 
-Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge $8.', # Fuzzy
+Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge $8.',
 	'translationnotifications-talkpage-body' => 'Tere, $2.
 
 Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $3 keelde tõlkijana.
@@ -3288,6 +3288,16 @@ Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile 
 	'translationnotifications-log-alllanguages' => 'wszystkie języki',
 	'translationnotifications-nodeadline' => 'brak',
 	'translationnotifications-signup-legal' => 'Dostarczając te informacje, użytkownik zgadzasz się z tym, że możemy skontaktować się z tobą w tematami związanymi ze stroną {{SITENAME}}, które naszym zdaniem mogą być dla ciebie interesujące. Zgadzasz się, również z tym, że Twoje dane osobowe będą przetwarzane zgodnie z naszymi [[{{MediaWiki:Privacypage}}|zasadami]].',
+);
+
+/** Piedmontese (Piemontèis)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['pms'] = array(
+	'translationnotifications-username' => 'Stranòm:',
+	'translationnotifications-languages' => 'Lenghe',
+	'translationnotifications-cmethod-email' => 'Pòsta eletrònica',
+	'translationnotifications-nodeadline' => 'gnun',
 );
 
 /** Pashto (پښتو)
