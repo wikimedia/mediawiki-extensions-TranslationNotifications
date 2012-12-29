@@ -3291,13 +3291,121 @@ Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile 
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Dragonòt
  * @author පසිඳු කාවින්ද
  */
 $messages['pms'] = array(
+	'translatorsignup' => 'Iscrission al tradutor',
+	'translatorsignup-summary' => 'Dòvra sta pagina për andiché an che lenga it veule volté, e com it veule esse contatà a propòsit ëd neuve arceste ëd tradussion.',
+	'translationnotifications-desc' => 'A përmëtt al tradutor ëd marchesse për notificassion ëd tradussion',
+	'translationnotifications-info' => 'Anformassion utent',
 	'translationnotifications-username' => 'Stranòm:',
+	'translationnotifications-emailstatus' => "Stat ëd l'e-mail:",
+	'translationnotifications-email-confirmed' => "Toa adrëssa ëd pòsta eletrònica a l'é confirmà",
+	'translationnotifications-email-disablemail' => "Toa adrëssa ëd corel a l'é confirmà, ma an [[Special:Preferences|your preferences]] it l'has ciamà d'arsèive pa corej.",
+	'translationnotifications-email-unconfirmed' => "Toa adrëssa ëd pòsta eletrònica a l'é pa confirmà. $1",
+	'translationnotifications-email-notset' => "It l'has pa dàit n'adrëssa ëd corel. It peule fé sòn ant ij tò [[Special:Preferences|gust]].",
 	'translationnotifications-languages' => 'Lenghe',
+	'translationnotifications-lang' => 'Lenga #$1',
+	'translationnotifications-nolang' => 'Sern na lenga',
+	'translationnotifications-contact' => 'Métod ëd contat preferì',
 	'translationnotifications-cmethod-email' => 'Pòsta eletrònica',
+	'translationnotifications-cmethod-talkpage' => 'Pàgina ëd discussion',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pagina ëd discussion dzor àutra wiki',
+	'translationnotifications-cmethod-feed' => 'Fluss',
+	'translationnotifications-frequency' => 'Frequensa ëd contat',
+	'translationnotifications-freq-always' => 'Quand a-i é quaicòs ëd neuv da volté',
+	'translationnotifications-freq-week' => 'Al pi na vira a sman-a',
+	'translationnotifications-freq-month' => 'Al pi na vira al mèis',
+	'translationnotifications-freq-weekly' => 'Resumé setimanal',
+	'translationnotifications-freq-monthly' => 'Resumé mensil',
+	'translationnotifications-submit' => "Paràmeter d'agiornament",
+	'translationnotifications-signup-success' => 'Ij tò gust ëd notìfica ëd tradussion a son stàit salvà.',
+	'notifytranslators' => 'Notìfica tradutor',
+	'translationnotifications-submit-ok' => 'Notìfiche a son stàite giontà a la coa e a son consignà da un process an background.',
+	'translationnotifications-send-notification-button' => 'Manda na notìfica ai tradutor',
+	'translationnotifications-deadline-label' => 'Fin da andiché an sta notìfica:',
+	'translationnotifications-languages-to-notify-label' => 'Che lenghe notifiché:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Còdes ëd lenghe separà da vìrgole; lassa bianch për notifiché tute le lenghe.',
+	'translationnotifications-priority' => 'Priorità:',
+	'translationnotifications-priority-high' => 'àut',
+	'translationnotifications-priority-medium' => 'medi',
+	'translationnotifications-priority-low' => 'bass',
+	'translationnotifications-priority-unset' => '(disativà)',
+	'translationnotifications-translatablepage-title' => 'Nòm ëd pagina voltàbila:',
+	'translationnotifications-error-no-translatable-pages' => 'A-i son gnun-e pagine voltàbile an sta wiki.',
+	'translationnotifications-email-subject' => 'Për piasì volta la pagina $1.',
+	'translationnotifications-email-body' => "Cerea $1,
+
+It të stas arseivend sto corel përché it ses signate com tradutor {{PLURAL:$9|a}} $2 dzor {{SITENAME}}.
+
+A-i é na pagina da volté ambelessì: $3.
+It peule voltela sgnacand ij colegament sota:
+$4
+
+$5
+$6
+
+$7
+
+Tò agiut a l'é motobin pressià. Ij tradutor com ti a giuto {{SITENAME}} a funsioné
+com na comunità verament multilingual.
+
+Mersì!
+{{SITENAME}} coordinador ëd tradussion
+
+----
+
+It të stas arseivend sto corel përchè it ses signate për arseive corej relativ a tradussion dzor {{SITENAME}}. Për disiscrivte o për cangé ij tò gust ëd notìfica, për piasì vìsita $8.",
+	'translationnotifications-talkpage-body' => "Cerea $2,
+
+It të stas arseivend sta notìfica përché it ses signate com tradutor {{PLURAL:$9|a}} $3 dzor {{SITENAME}}.
+La pagina [[$4]] a l'é disponìbila për tradussion. It peule voltela ambelessì:
+$5
+
+$6
+$7
+
+$8
+
+Tò agiut a l'é motobin pressià. Ij tradutor com ti a giuto {{SITENAME}} a funsioné
+com na comunità verament multilingual.
+
+Mersì!
+
+{{SITENAME}} coordinador ëd tradussion",
+	'translationnotifications-notification-url-listitem' => 'vòlta an $1',
+	'translationnotifications-digestemail-subject' => 'Resumé corej për arceste ëd tradussion da {{SITENAME}}',
+	'translationnotifications-digestemail-body' => "Cerea $1,
+
+It të stas arseivend sto corel përché it ses signate com tradutor a $2 dzor {{SITENAME}}.
+
+A-i {{PLURAL:$3|é 1 pagina|son $3 pagine}} disponìbij për tradussion.
+Ij detaj a son dàit sota.
+
+$4
+
+Tò agiut a l'é motobin pressià. Ij tradutor com ti a giuto {{SITENAME}} a funsioné
+com na comunità verament multilingual.
+
+Mersì!
+{{SITENAME}} coordinador ëd tradussion
+
+----
+
+It të stas arseivend sto corel përchè it ses signate për arseive corej relativ a tradussion dzor {{SITENAME}}. Për disiscrivte o për cangé ij tò gust ëd notìfica për tradussion, për piasì vìsita <$5>.",
+	'translationnotifications-digestemail-notification-line' => 'Ël $1, $2 a l\'é marcasse "$3" për tradussion. It peule voltelo a $4',
+	'translationnotifications-edit-summary' => 'Notìfiche ëd tradussion: $1',
+	'translationnotifications-email-priority' => "La priorità dë sta pagina a l'é $1.",
+	'translationnotifications-email-deadline' => "La fin për volté sta pagina a l'é $1.",
+	'logentry-translationnotifications-sent' => "$1 {{GENDER:$2|a l'ha mandà}} na notìfica a propòsit ëd volté la pagina $3; lenghe: $4; fin: $5; priorità: $6; mandà a {{PLURAL:$7|un ricevent|$7 ricevent}}, falì për {{PLURAL:$8|un ricevent|$8 ricevent}}, sautà për {{PLURAL:$9|un ricevent|$9 ricevent}}",
+	'log-name-notifytranslators' => 'Notìfiche ëd tradussion',
+	'log-description-notifytranslators' => 'Un registr ëd notìfiche mandà ai tradutor a propòsit ëd pagine voltàbile',
+	'translationnotifications-sent-title' => 'Notìfiche ëd tradussion mandà',
+	'translationnotifications-sent-body' => "La notìfica ëd tradussion a l'é stàita mandà.",
+	'translationnotifications-log-alllanguages' => 'tute le lenghe',
 	'translationnotifications-nodeadline' => 'gnun',
+	'translationnotifications-signup-legal' => "It ses d'acòrdi che an dasend sta anformassion noi podoma contatete rësguard argoment relativ a {{SITENAME}} che noi pensoma a peulo esse d'anteresse për ti. It ses d'acòrdi che ij tò dat a son soget a nòsta [[{{MediaWiki:Privacypage}}|polìtica ëd privatëssa.]]",
 );
 
 /** Pashto (پښتو)
