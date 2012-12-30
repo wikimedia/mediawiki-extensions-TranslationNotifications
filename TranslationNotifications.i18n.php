@@ -437,6 +437,7 @@ $messages['br'] = array(
 
 /** Czech (česky)
  * @author Chmee2
+ * @author Vks
  */
 $messages['cs'] = array(
 	'translationnotifications-info' => 'Informace o uživateli',
@@ -448,6 +449,7 @@ $messages['cs'] = array(
 	'translationnotifications-cmethod-email' => 'E-mail',
 	'translationnotifications-cmethod-talkpage' => 'Diskusní stránka',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Diskuzní stránka na jiných wiki',
+	'translationnotifications-cmethod-feed' => 'Kanály:',
 	'translationnotifications-frequency' => 'Četnost kontaktu',
 	'translationnotifications-freq-always' => 'Když je něco nového k překladu',
 	'translationnotifications-freq-week' => 'Maximálně jednou za týden',
@@ -2705,7 +2707,7 @@ $messages['ms'] = array(
 	'translationnotifications-email-subject' => 'Sila terjemahkan laman $1',
 	'translationnotifications-email-body' => '$1,
 
-Anda menerima e-mel ini kerana anda telah mendaftarkan diri sebagai penterjemah $2 di {{SITENAME}}.
+Anda menerima e-mel ini kerana anda telah mendaftarkan diri sebagai penterjemah kepada {{PLURAL:$9|bahasa|bahasa-bahasa}} $2 di {{SITENAME}}.
 
 Ada satu halaman untuk diterjemahkan di situ: $3.
 
@@ -2725,7 +2727,7 @@ Penyelaras penterjemahan {{SITENAME}}
 
 ----
 
-Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari $8.', # Fuzzy
+Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari $8.',
 	'translationnotifications-talkpage-body' => '$2,
 
 Anda sedang menerima pemberitahuan ini kerana anda mendaftar diri sebagai penterjemah kepada $3 di {{SITENAME}}.
@@ -3609,21 +3611,26 @@ $messages['si'] = array(
 	'translationnotifications-username' => 'පරිශීලක නාමය:',
 	'translationnotifications-emailstatus' => 'විද්‍යුත්-තැපැල් තත්වය:',
 	'translationnotifications-email-confirmed' => 'ඔබේ විද්‍යුත්-තැපැල් ලිපිනය තහවුරු කරන ලදී',
+	'translationnotifications-email-unconfirmed' => 'ඔබේ විද්‍යුත්-තැපැල් ලිපිනය තහවුරු කරන නොලදී. $1',
 	'translationnotifications-languages' => 'භාෂාවන්',
 	'translationnotifications-lang' => 'භාෂාව #$1',
 	'translationnotifications-nolang' => 'භාෂාවක් තෝරාගන්න',
+	'translationnotifications-contact' => 'වරණිත සම්බන්ධක ක්‍රම',
 	'translationnotifications-cmethod-email' => 'විද්‍යුත් තැපෑල',
 	'translationnotifications-cmethod-talkpage' => 'සාකච්ඡා පිටුව',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'වෙනත් විකියක කතාබහ පිටුව',
 	'translationnotifications-cmethod-feed' => 'පෝෂකය',
 	'translationnotifications-frequency' => 'සම්බන්ධ කිරීමේ වාර ගණන',
+	'translationnotifications-freq-always' => 'එහි පරිවර්තනය කිරීමට අලුතින් යමක් ඇති විට',
 	'translationnotifications-freq-week' => 'ගොඩක්ම සතියකට වරක්',
 	'translationnotifications-freq-month' => 'ගොඩක්ම මාසකයකට වරක්',
 	'translationnotifications-freq-weekly' => 'සතිපතා සංහිතාව',
 	'translationnotifications-freq-monthly' => 'මාසික සංහිතාව',
 	'translationnotifications-submit' => 'යාවත්කාලීන සැකසුම්',
+	'translationnotifications-signup-success' => 'ඔබේ පරිවර්තන නිවේදන අභිරුචින් සුරක්ෂිත කරන ලදී.',
 	'notifytranslators' => 'පරිවර්තකයන් දැනුවත් කරන්න',
 	'translationnotifications-send-notification-button' => 'පරිවර්තකයන් වෙත නිවේදනයක් යවන්න',
+	'translationnotifications-deadline-label' => 'මෙම නිවේදනයෙහි පෙන්වා දිය යුතු කාල සීමාව:',
 	'translationnotifications-languages-to-notify-label' => 'නිවේදනය කල යුතු භාෂාවන්:',
 	'translationnotifications-priority' => 'ප්‍රමුඛත්වය:',
 	'translationnotifications-priority-high' => 'ඉහළ',
@@ -3631,10 +3638,13 @@ $messages['si'] = array(
 	'translationnotifications-priority-low' => 'අවම',
 	'translationnotifications-priority-unset' => '(සකසා නැත)',
 	'translationnotifications-translatablepage-title' => 'පරිවර්තනමය පිටු නාමය:',
+	'translationnotifications-error-no-translatable-pages' => 'මෙම විකියේ පරිවර්තනමය පිටු කිසිවක් නොමැත.',
 	'translationnotifications-email-subject' => 'කරුණාකර $1 පිටුව පරිවර්තනය කරන්න',
 	'translationnotifications-notification-url-listitem' => '$1 වෙත පරිවර්තනය කරන්න',
+	'translationnotifications-digestemail-notification-line' => '$1 දී, $2 විසින් "$3" පරිවර්තනය සඳහා සලකුණු කර ඇත. ඔබට එය $4 හිදී පරිවර්තනය කර හැක',
 	'translationnotifications-edit-summary' => 'පරිවර්තන දැනුම් දීම: $1',
 	'translationnotifications-email-priority' => 'මෙම පිටුවෙහි ප්‍රමුඛතාවය $1 යි.',
+	'translationnotifications-email-deadline' => 'මෙම පිටුව පරිවර්තනය කිරීමේ නියමිත කාලය $1 වේ.',
 	'log-name-notifytranslators' => 'පරිවර්තන නිවේදනයන්',
 	'translationnotifications-sent-title' => 'පරිවර්තන නිවේදනය යවන ලදී',
 	'translationnotifications-sent-body' => 'පරිවර්තන නිවේදනය යවන ලදී.',
