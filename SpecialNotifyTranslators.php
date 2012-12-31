@@ -29,16 +29,14 @@ class SpecialNotifyTranslators extends SpecialPage {
 	private $sourceLanguageCode = '';
 
 	public function __construct() {
-		parent::__construct( 'NotifyTranslators' );
+		parent::__construct( 'NotifyTranslators', self::$right );
 	}
 
 	public function execute( $parameters ) {
 		global $wgContLang;
 		$this->setHeaders();
 
-		if ( !$this->getUser()->isAllowed( self::$right ) ) {
-			throw new PermissionsError( self::$right );
-		}
+		$this->checkPermissions();
 
 		$htmlFormDataModel = $this->getFormFields();
 		$output = $this->getOutput();
