@@ -1421,7 +1421,7 @@ Vous recevez ce courriel parce que vous avez souscrit à la réception de courri
  */
 $messages['frp'] = array(
 	'translationnotifications-info' => 'Enformacions sur l’utilisator',
-	'translationnotifications-username' => 'Nom de l’utilisator :',
+	'translationnotifications-username' => 'Nom d’utilisator :',
 	'translationnotifications-languages' => 'Lengoues',
 	'translationnotifications-lang' => 'Lengoua numerô $1',
 	'translationnotifications-nolang' => 'Chouèsésséd na lengoua',
@@ -2952,7 +2952,7 @@ $messages['nl'] = array(
 U ontvangt deze e-mail omdat u zich heeft opgegeven als vertaler voor de {{PLURAL:$9|taal|talen}} $2 op {{SITENAME}}.
 
 Er is een pagina te vertalen: $3.
-U kunt deze vertalen door op de volgende verwijzing te klikken:
+U kunt deze vertalen door op de volgende koppeling te klikken:
 $4
 
 $5
@@ -3436,6 +3436,8 @@ $messages['pt'] = array(
 
 /** Romanian (română)
  * @author Firilacroco
+ * @author Minisarm
+ * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'translationnotifications-info' => 'Informații despre utilizator',
@@ -3461,6 +3463,7 @@ $messages['ro'] = array(
 	'translationnotifications-submit' => 'Actualizați setările',
 	'translationnotifications-signup-success' => 'Preferințele dumneavoastră de notificare au fost salvate.',
 	'notifytranslators' => 'Informați traducătorii',
+	'translationnotifications-languages-to-notify-label' => 'Ce limbi să fie notificate:',
 	'translationnotifications-priority' => 'Prioritate:',
 	'translationnotifications-priority-high' => 'mare',
 	'translationnotifications-priority-medium' => 'medie',
@@ -3469,6 +3472,10 @@ $messages['ro'] = array(
 	'translationnotifications-translatablepage-title' => 'Numele paginii de tradus:',
 	'translationnotifications-error-no-translatable-pages' => 'Nu există pagini de tradus pe acest wiki.',
 	'translationnotifications-email-subject' => 'Vă rugăm să traduceți pagina $1',
+	'translationnotifications-edit-summary' => 'Notificare de traducere: $1',
+	'translationnotifications-email-priority' => 'Prioritatea acestei pagini este $1.',
+	'translationnotifications-log-alllanguages' => 'toate limbile',
+	'translationnotifications-nodeadline' => 'niciuna',
 );
 
 /** Russian (русский)
@@ -3607,6 +3614,7 @@ $messages['rue'] = array(
  */
 $messages['si'] = array(
 	'translatorsignup' => 'පරිවර්තක ලියාපදිංචිය',
+	'translationnotifications-desc' => 'පරිවර්තන නිවේදන වෙත ලියාපදිචි වීම සඳහා පරිවර්තකයන් හට ඉඩ දෙන්න',
 	'translationnotifications-info' => 'පරිශීලකගේ තොරතුරු',
 	'translationnotifications-username' => 'පරිශීලක නාමය:',
 	'translationnotifications-emailstatus' => 'විද්‍යුත්-තැපැල් තත්වය:',
@@ -3958,6 +3966,25 @@ Nakakatanggap ka ng ganitong elektronikong liham dahil nagpatala ka upang makata
 $messages['tru'] = array(
 	'translationnotifications-languages' => 'Leşone',
 	'translationnotifications-lang' => 'Leşono $1',
+);
+
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'translationnotifications-info' => 'ئىشلەتكۈچى ئۇچۇرى',
+	'translationnotifications-username' => 'ئىشلەتكۈچى ئاتى:',
+	'translationnotifications-languages' => 'تىللار',
+	'translationnotifications-nolang' => 'بىر تىل تاللاڭ',
+	'translationnotifications-cmethod-email' => 'ئېلخەت',
+	'translationnotifications-cmethod-talkpage' => 'مۇنازىرە بېتى',
+	'translationnotifications-cmethod-feed' => 'قانال',
+	'translationnotifications-priority' => 'ئالدىنلىق:',
+	'translationnotifications-priority-high' => 'يۇقىرى',
+	'translationnotifications-priority-medium' => 'ئوتتۇرا',
+	'translationnotifications-priority-low' => 'تۆۋەن',
+	'translationnotifications-priority-unset' => '(تەڭشەلمىگەن)',
+	'translationnotifications-nodeadline' => 'يوق',
 );
 
 /** Ukrainian (українська)
