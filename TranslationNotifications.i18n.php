@@ -1422,6 +1422,7 @@ Vous recevez ce courriel parce que vous avez souscrit à la réception de courri
 $messages['frp'] = array(
 	'translationnotifications-info' => 'Enformacions sur l’utilisator',
 	'translationnotifications-username' => 'Nom d’utilisator :',
+	'translationnotifications-emailstatus' => 'Ètat du mèssâjo :',
 	'translationnotifications-languages' => 'Lengoues',
 	'translationnotifications-lang' => 'Lengoua numerô $1',
 	'translationnotifications-nolang' => 'Chouèsésséd na lengoua',
