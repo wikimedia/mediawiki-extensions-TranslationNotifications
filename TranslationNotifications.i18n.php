@@ -741,7 +741,7 @@ Pśełožowańske koordinatory {{GRAMMAR:genitiw|{{SITENAME}}}}
 
 ----
 
-Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k $8',
+Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k $8', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš toś tu powěźeńku, dokulaž sy se ako pśełožowaŕ za $3 na {{SITENAME}} zregistrěrował.
@@ -757,7 +757,7 @@ Twója pomoc jo wjelgin witana. Pśełožowarje ako ty pomagaju, aby {{SITENAME}
 
 Wulki źěk!
 
-Pśełožowańske koordinatory {{GRAMMAR:genitiw|{{SITENAME}}}}',
+Pśełožowańske koordinatory {{GRAMMAR:genitiw|{{SITENAME}}}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'do $1 pśełožiś',
 	'translationnotifications-digestemail-subject' => 'E-mailowy pśeglěd za póžedane pśełožki wót {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-digestemail-body' => 'Witaj $1,
@@ -775,7 +775,7 @@ Wjeliki źěk!
 
 ----
 
-Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k <$5>.',
+Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k <$5>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'Dnja $1 jo $2 bok "$3" za pśełožowanje markěrował. Móžoš ju na $4 pśełožowaś.',
 	'translationnotifications-edit-summary' => 'Pśełožowańska powěźeńka: $1',
 	'translationnotifications-email-priority' => 'Priorita toś togo boka jo $1.',
@@ -1085,7 +1085,7 @@ Tõlkekoordineerijad
 
 ----
 
-Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge $8.',
+Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Tere, $2.
 
 Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $3 keelde tõlkijana.
@@ -1103,7 +1103,7 @@ tõelise paljukeelse kogukonnana.
 Aitäh!
 
 Tõlkekoordineerijad
-{{SITENAME}}',
+{{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'tõlgi $1 keelde',
 	'translationnotifications-digestemail-subject' => 'Tõlkepalvete ülevaade võrgukohast {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Tere, $1.
@@ -1122,7 +1122,7 @@ Tõlkekoordineerijad
 
 ----
 
-Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge <$5>.',
+Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge <$5>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => '$1: $2 märkis lehekülje "$3" tõlkimiseks. Saad selle tõlkida siin: $4.',
 	'translationnotifications-edit-summary' => 'Tõlketeavitus: $1',
 	'translationnotifications-email-priority' => 'Selle lehekülje tõlkimine on $1.',
@@ -1516,7 +1516,7 @@ Os coordinadores das traducións de {{SITENAME}}
 
 ----
 
-Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite $8.',
+Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Boas, $2:
 
 Recibiu esta notificación porque está inscrito como tradutor ao $3 en {{SITENAME}}.
@@ -1533,7 +1533,7 @@ como unha gran comunidade multilingüe.
 
 Grazas!
 
-Os coordinadores das traducións de {{SITENAME}}',
+Os coordinadores das traducións de {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'traducir ao $1',
 	'translationnotifications-digestemail-subject' => 'Correo electrónico de resumo sobre as solicitudes de tradución de {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Boas, $1:
@@ -1552,7 +1552,7 @@ Os coordinadores das traducións de {{SITENAME}}
 
 ----
 
-Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite <$5>.',
+Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite <$5>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'O $1, $2 marcou "$3" para a súa tradución. Pode traducila en $4',
 	'translationnotifications-edit-summary' => 'Notificación de tradución: $1',
 	'translationnotifications-email-priority' => 'A prioridade desta páxina é $1.',
@@ -1748,7 +1748,7 @@ Přełožowanscy koordinatorojo {{GRAMMAR:genitiw|{{SITENAME}}}}
 
 ----
 
-Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k $8.',
+Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
 dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
@@ -1764,7 +1764,7 @@ Waša pomoc je jara witana. Přełožowarjo kaž ty pomhaja, zo by {{SITENAME}} 
 
 Wulki dźak!
 
-Přełožowanscy koordinatorojo {{GRAMMAR:genitiw|{{SITENAME}}}}',
+Přełožowanscy koordinatorojo {{GRAMMAR:genitiw|{{SITENAME}}}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'do $1 přełožić',
 	'translationnotifications-digestemail-subject' => 'E-mejlowy přehlad za požadane přełožki wot {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-digestemail-body' => 'Witaj $1,
@@ -1781,7 +1781,7 @@ Wulki dźak!
 
 ----
 
-Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k <$5>.',
+Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k <$5>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'Dnja $1 je $2 stronu "$3" za přełožowanje woznamjenił. Móžeš ju na $4 přełožować.',
 	'translationnotifications-edit-summary' => 'Přełožowanska zdźělenka: $1',
 	'translationnotifications-email-priority' => 'Priorita tuteje strony je $1.',
@@ -1992,7 +1992,7 @@ Grazie!
 I coordinatori delle traduzioni di {{SITENAME}}
 
 ----
-Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $8.",
+Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $8.", # Fuzzy
 	'translationnotifications-talkpage-body' => 'Ciao $2,
 
 Ricevi questa email perché ti sei registrato come traduttore $3 su {{SITENAME}}.
@@ -2007,7 +2007,7 @@ $8
 Il tuo aiuto è molto apprezzato. I traduttori come te aiutano {{SITENAME}} a essere una reale comunità multilingua.
 
 Grazie!
-I coordinatori delle traduzioni su {{SITENAME}}',
+I coordinatori delle traduzioni su {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'traduci in $1',
 	'translationnotifications-digestemail-subject' => 'Email selezionate per le richieste di traduzione da parte del sito {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "Ciao $1,
@@ -2024,7 +2024,7 @@ Grazie!
 Gli amministratori delle traduzioni di {{SITENAME}}
 
 ----
-Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita <$5>.",
+Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita <$5>.", # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'Il $1, $2 ha segnalato la pagina "$3" affinché venga tradotta. Puoi tradurla su $4',
 	'translationnotifications-edit-summary' => 'Notifica di traduzione: $1',
 	'translationnotifications-email-priority' => 'La priorità di questa pagina è $1.',
@@ -2729,7 +2729,7 @@ Penyelaras penterjemahan {{SITENAME}}
 
 ----
 
-Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari $8.',
+Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => '$2,
 
 Anda sedang menerima pemberitahuan ini kerana anda mendaftar diri sebagai penterjemah kepada $3 di {{SITENAME}}.
@@ -2746,7 +2746,7 @@ Pertolongan anda amat dihargai. Para penterjemah seperti anda membantu {{SITENAM
 
 Terima kasih!
 
-Penyelaras penterjemahan {{SITENAME}}',
+Penyelaras penterjemahan {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'terjemah kepada $1',
 	'translationnotifications-digestemail-subject' => 'E-mel ikhtisar untuk permohonan penterjemahan dari {{SITENAME}}',
 	'translationnotifications-digestemail-body' => '$1,
@@ -2765,7 +2765,7 @@ Penyelaras penterjemahan {{SITENAME}}
 
 ----
 
-Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari <$5>.',
+Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari <$5>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'Pada $1, $2 memohon supaya "$3" diterjemahkannya. Anda boleh menterjemahkannya di $4',
 	'translationnotifications-edit-summary' => 'Pemberitahuan penterjemahan: $1',
 	'translationnotifications-email-priority' => 'Laman ini diberi prioriti $1.',
@@ -2969,7 +2969,7 @@ Vertalingencoördinatoren van {{SITENAME}}
 
 ----
 
-U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar $8 om u uit te schrijven of om uw instellingen aan te passen.',
+U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar $8 om u uit te schrijven of om uw instellingen aan te passen.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 U ontvangt deze melding omdat u zich heeft opgegeven als vertaler voor het $3 op {{SITENAME}}.
@@ -2985,7 +2985,7 @@ Uw hulp wordt enorm op prijs gesteld. Met vertalers zoals u is {{SITENAME}} een 
 
 Bedankt!
 
-Vertalingenbeheerders van {{SITENAME}}',
+Vertalingenbeheerders van {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'vertalen in het $1',
 	'translationnotifications-digestemail-subject' => 'E-mail met samenvatting voor vertaalverzoeken van {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "Hallo $1,
@@ -3001,7 +3001,7 @@ Vertalingenbeheerders van {{SITENAME}}
 
 ----
 
-U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar <$5> om u uit te schrijven of om uw instellingen aan te passen.",
+U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar <$5> om u uit te schrijven of om uw instellingen aan te passen.", # Fuzzy
 	'translationnotifications-digestemail-notification-line' => '$2 heeft "$3" op $1 voor vertaling gemarkeerd. U kunt de pagina vertalen via $4',
 	'translationnotifications-edit-summary' => 'Melding over vertaling: $1',
 	'translationnotifications-email-priority' => 'De prioriteit voor deze pagina is $1.',
@@ -3360,7 +3360,7 @@ Mersì!
 
 ----
 
-It të stas arseivend sto corel përchè it ses signate për arseive corej relativ a tradussion dzor {{SITENAME}}. Për disiscrivte o për cangé ij tò gust ëd notìfica, për piasì vìsita $8.",
+It të stas arseivend sto corel përchè it ses signate për arseive corej relativ a tradussion dzor {{SITENAME}}. Për disiscrivte o për cangé ij tò gust ëd notìfica, për piasì vìsita $8.", # Fuzzy
 	'translationnotifications-talkpage-body' => "Cerea $2,
 
 It të stas arseivend sta notìfica përché it ses signate com tradutor {{PLURAL:$9|a}} $3 dzor {{SITENAME}}.
@@ -3377,7 +3377,7 @@ com na comunità verament multilingual.
 
 Mersì!
 
-{{SITENAME}} coordinador ëd tradussion",
+{{SITENAME}} coordinador ëd tradussion", # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'vòlta an $1',
 	'translationnotifications-digestemail-subject' => 'Resumé corej për arceste ëd tradussion da {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "Cerea $1,
@@ -3397,7 +3397,7 @@ Mersì!
 
 ----
 
-It të stas arseivend sto corel përchè it ses signate për arseive corej relativ a tradussion dzor {{SITENAME}}. Për disiscrivte o për cangé ij tò gust ëd notìfica për tradussion, për piasì vìsita <$5>.",
+It të stas arseivend sto corel përchè it ses signate për arseive corej relativ a tradussion dzor {{SITENAME}}. Për disiscrivte o për cangé ij tò gust ëd notìfica për tradussion, për piasì vìsita <$5>.", # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'Ël $1, $2 a l\'é marcasse "$3" për tradussion. It peule voltelo a $4',
 	'translationnotifications-edit-summary' => 'Notìfiche ëd tradussion: $1',
 	'translationnotifications-email-priority' => "La priorità dë sta pagina a l'é $1.",
@@ -3809,7 +3809,7 @@ $8
 உங்கள் உதவி பெரிதும் பாராட்டப்படுகிறது. உங்களைப் போன்ற மொழிபெயர்ப்பாளர்களே {{SITENAME}} தளம் ஒரு உண்மையான பன்மொழி சமுதாயமாக செயல்பட உதவுகின்றனர்.
 
 நன்றி!
-{{SITENAME}} மொழிபெயர்ப்பு ஒருங்கிணைப்பாளர்கள்',
+{{SITENAME}} மொழிபெயர்ப்பு ஒருங்கிணைப்பாளர்கள்', # Fuzzy
 	'translationnotifications-notification-url-listitem' => '$1க்கு மொழிபெயர்க்கவும்',
 	'translationnotifications-digestemail-body' => 'வணக்கம் $1,
 
@@ -3825,7 +3825,7 @@ $4
 
 ----
 
-{{SITENAME}} தளத்தில் மொழிபெயர்ப்பு தொடர்பான மின்னஞ்சல்களை பெற நீங்கள் பதிவு செய்துள்ளதால், இந்த மின்னஞ்சலை நீங்கள் பெறுகிறீர்கள். பதிவு நீக்க அல்லது மொழிபெயர்ப்புக்கான அறிவிக்கை விருப்பத்தேர்வுகளை மாற்ற, தயவுசெய்து செல்லவும் <$5>.',
+{{SITENAME}} தளத்தில் மொழிபெயர்ப்பு தொடர்பான மின்னஞ்சல்களை பெற நீங்கள் பதிவு செய்துள்ளதால், இந்த மின்னஞ்சலை நீங்கள் பெறுகிறீர்கள். பதிவு நீக்க அல்லது மொழிபெயர்ப்புக்கான அறிவிக்கை விருப்பத்தேர்வுகளை மாற்ற, தயவுசெய்து செல்லவும் <$5>.', # Fuzzy
 	'translationnotifications-edit-summary' => 'மொழிபெயர்ப்பு அறிவிப்பு: $1',
 	'translationnotifications-email-priority' => 'இந்த பக்கத்தின் முக்கியத்துவம்: $1',
 	'translationnotifications-email-deadline' => 'இப்பக்கத்தை மொழிபெயர்க்க கடைசி நாள் $1',
