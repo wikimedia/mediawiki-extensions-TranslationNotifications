@@ -52,7 +52,8 @@ class DigestEmailer extends Maintenance {
 			$user = User::newFromId( $translator );
 			$notificationFreq = $user->getOption( 'translationnotifications-freq' );
 
-			$this->output( "Sending digest to: $user\n\tFrequency preference: $notificationFreq\n" );
+			$userName = $user->getName();
+			$this->output( "Sending digest to: $userName\n\tFrequency preference: $notificationFreq\n" );
 			$signedUpLangCodes = array();
 			foreach ( range( 1, 3 ) as $langNum ) {
 				$langCode = $user->getOption( "translationnotifications-lang-$langNum" );
@@ -136,12 +137,12 @@ class DigestEmailer extends Maintenance {
 
 			$signupURL = SpecialPage::getTitleFor( 'TranslatorSignup' )->getCanonicalUrl();
 			$digestMailBody = wfMessage( 'translationnotifications-digestemail-body',
-					$user,
-					$firstLang,
-					$count,
-					$notificationText,
-					$signupURL
-					)->inLanguage( $firstLangCode )->text();
+				$userName,
+				$firstLang,
+				$count,
+				$notificationText,
+				$signupURL
+			)->inLanguage( $firstLangCode )->text();
 
 			$emailFrom = new MailAddress( $wgNoReplyAddress );
 			$emailTo = new MailAddress( $user );
