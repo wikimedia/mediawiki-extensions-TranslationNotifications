@@ -524,7 +524,7 @@ $messages['de'] = array(
 	'translationnotifications-email-subject' => 'Bitte übersetze die Seite $1.',
 	'translationnotifications-email-body' => 'Hallo $1,
 
-du erhältst diese E-Mail, da du dich als Übersetzer(in) für die {{PLURAL:$9|Sprache|Sprachen}} $2 auf {{SITENAME}} registriert hast.
+du erhältst diese E-Mail, da du dich als Übersetzer(in) für die {{PLURAL:$9|Sprache|Sprachen}} $2 auf {{SITENAME}} {{GENDER:$10|registriert}} hast.
 
 Die zu übersetzende Seite: $3.
 Sie kann nach einem Klick auf den folgenden Link übersetzt werden:
@@ -545,7 +545,7 @@ die Übersetzungskoordinatoren von {{SITENAME}}
 Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails für Übersetzungen auf {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen besuche bitte $8.',
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
-du erhältst diese E-Mail, da du dich als Übersetzer(in) für $3 auf {{SITENAME}} registriert hast.
+du erhältst diese E-Mail, da du dich als Übersetzer(in) {{PLURAL:$9|für}} $3 auf {{SITENAME}} {{GENDER:$1|registriert}} hast.
 Die Seite [[$4]] ist zum Übersetzen vorhanden. Du kannst sie hier übersetzen:
 $5
 
@@ -563,7 +563,7 @@ die Übersetzungskoordinatoren von {{SITENAME}}',
 	'translationnotifications-digestemail-subject' => 'E-Mail-Übersicht zu Übersetzungsanforderungen von {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hallo $1,
 
-du erhältst diese E-Mail, da du dich als Übersetzer(in) für $2 auf {{SITENAME}} registriert hast.
+du erhältst diese E-Mail, da du dich als Übersetzer(in) für $2 auf {{SITENAME}} {{GENDER:$1|registriert}} hast.
 Es {{PLURAL:$3|ist eine Seite|sind $3 Seiten}} zum Übersetzen vorhanden. Einzelheiten sind unten angegeben:
 
 $4
@@ -1354,7 +1354,7 @@ $messages['fr'] = array(
 	'translationnotifications-email-subject' => 'Veuillez traduire la page $1',
 	'translationnotifications-email-body' => 'Bonjour $1,
 
-Vous recevez ce courriel parce que vous vous êtes inscrit comme traducteur {{PLURAL:$9|de}} $2 sur {{SITENAME}}.
+Vous recevez ce courriel parce que vous vous êtes {{GENDER:$10|inscrit|inscrite}} comme {{GENDER:$10|traducteur|traductrice}} {{PLURAL:$9|de}} $2 sur {{SITENAME}}.
 
 Il y a une page à traduire ici : $3.
 Vous pouvez la traduire en cliquant sur le lien suivant :
@@ -1371,10 +1371,10 @@ Les coordonnateurs de traduction de {{SITENAME}}
 
 ----
 Vous recevez ce courriel parce que vous avez signé pour recevoir des courriels concernant les traductions sur {{SITENAME}}. Pour vous désabonner ou modifier vos préférences de notification pour les traductions, veuillez visiter $8.',
-	'translationnotifications-talkpage-body' => "Bonjour $2,
+	'translationnotifications-talkpage-body' => 'Bonjour $2,
 
-Vous recevez cette notification parce que vous êtes inscrit comme traducteur de $3 sur {{SITENAME}}.
-Une nouvelle page, [[$4]], est disponible pour la traduction. Vous pouvez la traduire ici :
+Vous recevez cette notification parce que vous êtes {{GENDER:$1|inscrit|inscrite}} comme {{GENDER:$1|traducteur|traductrice}} de {{PLURAL:$9|$3}} sur {{SITENAME}}.
+La page [[$4]] est disponible pour la traduction. Vous pouvez la traduire ici:
 $5
 
 $6
@@ -1382,20 +1382,23 @@ $7
 
 $8
 
+Votre aide est grandement appréciée. Des traducteurs comme vous aident {{SITENAME}} à fonctionner comme une communauté réellement multilingue.
+
 Merci !
 
-L'équipe de {{SITENAME}}",
+Les coordinateurs de la traduction de {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'traduire en $1',
 	'translationnotifications-digestemail-subject' => 'Courriel de synthèse pour les demandes de traduction de {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Bonjour $1,
 
-Vous recevez ce courriel parce que vous inscrit comme traducteur de $2 sur {{SITENAME}}.
+Vous recevez ce courriel parce que vous  vous êtes {{GENDER:$1|inscrit|inscrite}} comme {{GENDER:$1|traducteur|traductrice}} de $2 sur {{SITENAME}}.
 
 {{PLURAL:$3|1 page est disponible|$3 pages sont disponibles}} pour la traduction. Les détails sont donnés ci-dessous.
 
 $4
 
-Nous apprécions votre aide. Votre traduction sera déterminante pour que {{SITENAME}} soit une communauté véritablement multi-langue.
+Votre aide est grandement appréciée. Les traducteurs comme vous aider à {{SITENAME}} de la fonction
+comme une véritable communauté multilingue.
 
 Merci!
 Les administrateurs de la traduction de {{SITENAME}}
@@ -2515,7 +2518,7 @@ $messages['mk'] = array(
 	'translationnotifications-email-subject' => 'Преведете ја пораката $1',
 	'translationnotifications-email-body' => 'Здраво $1,
 
-Писмово го примате бидејќи се пријавивте за преведувач {{PLURAL:$9|на}} $2 на {{SITENAME}}.
+Писмово го примате бидејќи  {{GENDER:$10|се пријавивте}} за преведувач {{PLURAL:$9|на}} $2 на {{SITENAME}}.
 
 Има нова страница што треба да се преведе: $3.
 Преведете ја на следнава врска:
@@ -2538,7 +2541,7 @@ $7
 Поракава ја добивате бидејќи се пријавивте да примате пошта во врска со преводи на {{SITENAME}}. Ако сакате да се откажете од известувањата или  да ги измените нагодувањата за истите, посетете ја страницата $8',
 	'translationnotifications-talkpage-body' => 'Здраво $2,
 
-Го добивате ова известување бидејќи се пријавивте за преведувач на {{SITENAME}} на $3.
+Го добивате ова известување бидејќи {{GENDER:$10|се пријавивте}} за преведувач {{PLURAL:$9|на}} {{SITENAME}} на $3.
 Новата страница [[$4]] чека на преведување. Ве молиме, преведете ја тука:
 $5
 
