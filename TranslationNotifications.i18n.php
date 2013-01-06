@@ -1978,7 +1978,7 @@ $messages['it'] = array(
 	'translationnotifications-email-subject' => 'Si prega di tradurre la pagina $1',
 	'translationnotifications-email-body' => "Ciao $1,
 
-Ricevi questa email perché ti sei registrato come traduttore {{PLURAL:$9|in}} $2 su {{SITENAME}}.
+Ricevi questa email perché ti sei {{GENDER:$10|registrato come traduttore|registrata come traduttrice|registrato/a come traduttore/trice}} {{PLURAL:$9|in}} $2 su {{SITENAME}}.
 
 C'è una pagina da tradurre: $3.
 Clicca su questo collegamento per iniziare a tradurla:
@@ -1995,10 +1995,10 @@ Grazie!
 I coordinatori delle traduzioni di {{SITENAME}}
 
 ----
-Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $8.", # Fuzzy
+Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $8.",
 	'translationnotifications-talkpage-body' => 'Ciao $2,
 
-Ricevi questa email perché ti sei registrato come traduttore $3 su {{SITENAME}}.
+Ricevi questa email perché ti sei {{GENDER:$10|registrato come traduttore|registrata come traduttrice|registrato/a come traduttore/trice}} $3 su {{SITENAME}}.
 La pagina [[$4]] è disponibile per la traduzione. Visita questo collegamento per iniziare a tradurla:
 $5
 
@@ -2015,7 +2015,7 @@ I coordinatori delle traduzioni su {{SITENAME}}', # Fuzzy
 	'translationnotifications-digestemail-subject' => 'Email selezionate per le richieste di traduzione da parte del sito {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "Ciao $1,
 
-Ricevi questa email perché ti sei registrato come traduttore $2 su {{SITENAME}}.
+Ricevi questa email perché ti sei {{GENDER:$10|registrato come traduttore|registrata come traduttrice|registrato/a come traduttore/trice}} $2 su {{SITENAME}}.
 
 {{PLURAL:$3|C'è 1 pagina disponibile|Ci sono $3 pagine disponibili}} per la traduzione. I dettagli sono riportati di seguito.
 
@@ -2027,7 +2027,7 @@ Grazie!
 Gli amministratori delle traduzioni di {{SITENAME}}
 
 ----
-Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita <$5>.", # Fuzzy
+Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita <$5>.",
 	'translationnotifications-digestemail-notification-line' => 'Il $1, $2 ha segnalato la pagina "$3" affinché venga tradotta. Puoi tradurla su $4',
 	'translationnotifications-edit-summary' => 'Notifica di traduzione: $1',
 	'translationnotifications-email-priority' => 'La priorità di questa pagina è $1.',
@@ -2712,7 +2712,7 @@ $messages['ms'] = array(
 	'translationnotifications-email-subject' => 'Sila terjemahkan laman $1',
 	'translationnotifications-email-body' => '$1,
 
-Anda menerima e-mel ini kerana anda telah mendaftarkan diri sebagai penterjemah kepada {{PLURAL:$9|bahasa|bahasa-bahasa}} $2 di {{SITENAME}}.
+Anda menerima e-mel ini kerana anda telah {{GENDER:$10|mendaftar diri}} sebagai penterjemah kepada {{PLURAL:$9|bahasa|bahasa-bahasa}} $2 di {{SITENAME}}.
 
 Ada satu halaman untuk diterjemahkan di situ: $3.
 
@@ -2732,10 +2732,10 @@ Penyelaras penterjemahan {{SITENAME}}
 
 ----
 
-Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari $8.', # Fuzzy
+Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari $8.',
 	'translationnotifications-talkpage-body' => '$2,
 
-Anda sedang menerima pemberitahuan ini kerana anda mendaftar diri sebagai penterjemah kepada $3 di {{SITENAME}}.
+Anda sedang menerima pemberitahuan ini kerana anda {{GENDER:$1|mendaftar diri}} sebagai penterjemah ke {{PLURAL:$9|bahasa|bahasa-bahasa}} $3 di {{SITENAME}}.
 
 Satu halaman baru, [[$4]] sedia untuk diterjemahkan. Sila terjemahkannya:
 $5
@@ -2749,12 +2749,12 @@ Pertolongan anda amat dihargai. Para penterjemah seperti anda membantu {{SITENAM
 
 Terima kasih!
 
-Penyelaras penterjemahan {{SITENAME}}', # Fuzzy
+Penyelaras penterjemahan {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'terjemah kepada $1',
 	'translationnotifications-digestemail-subject' => 'E-mel ikhtisar untuk permohonan penterjemahan dari {{SITENAME}}',
 	'translationnotifications-digestemail-body' => '$1,
 
-Anda sedang menerima e-mel ini kerana anda mendaftar diri sebagai penterjemah kepada $2 di {{SITENAME}}.
+Anda sedang menerima e-mel ini kerana anda telah {{GENDER:$1|mendaftar}} diri sebagai penterjemah ke bahasa $2 di {{SITENAME}}.
 
 Terdapat $3 halaman yang sedia untuk diterjemah. Butiran-butirannya adalah seperti berikut.
 
@@ -2768,7 +2768,7 @@ Penyelaras penterjemahan {{SITENAME}}
 
 ----
 
-Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari <$5>.', # Fuzzy
+Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang berkaitan dengan penterjemahan di {{SITENAME}}. Untuk membatalkan langganan atau menukar tetapan pemberitahuan anda, sila layari <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'Pada $1, $2 memohon supaya "$3" diterjemahkannya. Anda boleh menterjemahkannya di $4',
 	'translationnotifications-edit-summary' => 'Pemberitahuan penterjemahan: $1',
 	'translationnotifications-email-priority' => 'Laman ini diberi prioriti $1.',
