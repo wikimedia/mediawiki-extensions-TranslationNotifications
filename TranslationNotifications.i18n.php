@@ -434,6 +434,13 @@ $messages['br'] = array(
 	'translationnotifications-nodeadline' => 'hini ebet',
 );
 
+/** Sorani Kurdish (کوردی)
+ * @author Calak
+ */
+$messages['ckb'] = array(
+	'translationnotifications-cmethod-email' => 'ئیمەیل',
+);
+
 /** Czech (česky)
  * @author Chmee2
  * @author Vks
@@ -579,7 +586,7 @@ Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Üb
 	'translationnotifications-edit-summary' => 'Übersetzungsbenachrichtigung: $1',
 	'translationnotifications-email-priority' => 'Übersetzungspriorität dieser Seite: $1.',
 	'translationnotifications-email-deadline' => 'Frist zur Übersetzung der Seite: $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sandte}} eine Benachrichtigung bezüglich der Übersetzung der Seite $3 in die Sprachen $4, mit der Frist $5 und der Priorität $6, erfolgreich an {{PLURAL:$7|einen Empfänger|$7 Empfänger}} und erfolglos an {{PLURAL:$8|einen Empfänger|$8 Empfänger}}, wobei {{PLURAL:$9|ein Empfänger nicht angeschrieben wurde|$9 Empfänger nicht angeschrieben wurden}}.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sandte}} eine Benachrichtigung bezüglich der Übersetzung der Seite $3 in die {{PLURAL:$1|Sprache|Sprachen}} $4, mit der Frist $5 und der Priorität $6, erfolgreich an {{PLURAL:$7|einen Empfänger|$7 Empfänger}} und erfolglos an {{PLURAL:$8|einen Empfänger|$8 Empfänger}}, wobei {{PLURAL:$9|ein Empfänger nicht angeschrieben wurde|$9 Empfänger nicht angeschrieben wurden}}.',
 	'log-name-notifytranslators' => 'Übersetzungsbenachrichtigungs-Logbuch',
 	'log-description-notifytranslators' => 'Das Logbuch der Benachrichtigungen, die bezüglich übersetzbarer Seiten an die Übersetzer gesandt wurden.',
 	'translationnotifications-sent-title' => 'Übersetzungsbenachrichtigung verschickt',
@@ -1408,7 +1415,7 @@ Vous recevez ce courriel parce que vous avez souscrit à la réception de courri
 	'translationnotifications-edit-summary' => 'Notification de traduction : $1',
 	'translationnotifications-email-priority' => 'La priorité de cette page est $1.',
 	'translationnotifications-email-deadline' => 'La date limite pour traduire cette page est $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|a envoyé}} une notification sur la traduction de la page $3; langues: $4; délai limite: $5; priorité: $6; envoyé à {{PLURAL:$7|un destinataire|$7 destinataires}}, en échec pour {{PLURAL:$8|un destinataire|$8 destinataires}}, sauté pour {{PLURAL:$9|un destinataire|$9 destinataires}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|a envoyé}} une notification sur la traduction de la page $3; {{PLURAL:$1|langue|langues}}: $4; délai limite: $5; priorité: $6; envoyé à {{PLURAL:$7|un destinataire|$7 destinataires}}, en échec pour {{PLURAL:$8|un destinataire|$8 destinataires}}, sauté pour {{PLURAL:$9|un destinataire|$9 destinataires}}',
 	'log-name-notifytranslators' => 'Notifications de traduction',
 	'log-description-notifytranslators' => 'Un journal des notifications envoyées aux traducteurs sur les pages à traduire',
 	'translationnotifications-sent-title' => 'Notification de traduction envoyée',
@@ -2030,7 +2037,7 @@ Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di pos
 	'translationnotifications-edit-summary' => 'Notifica di traduzione: $1',
 	'translationnotifications-email-priority' => 'La priorità di questa pagina è $1.',
 	'translationnotifications-email-deadline' => 'Il termine ultimo per la traduzione di questa pagina è $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha inviato}} una notifica sulla traduzione della pagina $3; lingue: $4; termine: $5; priorità: $6; inviata a {{PLURAL:$7|un destinatario|$7 destinatari}}, non inviata a {{PLURAL:$8|un destinatario|$8 destinatari}}, omessa a {{PLURAL:$9|un destinatario|$9 destinatari}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha inviato}} una notifica sulla traduzione della pagina $3; lingue: $4; termine: $5; priorità: $6; inviata a {{PLURAL:$7|un destinatario|$7 destinatari}}, non inviata a {{PLURAL:$8|un destinatario|$8 destinatari}}, omessa a {{PLURAL:$9|un destinatario|$9 destinatari}}', # Fuzzy
 	'log-name-notifytranslators' => 'Notifiche di traduzione',
 	'log-description-notifytranslators' => 'Una serie di notifiche riguardanti le pagine traducibili sono state inviate ai traduttori.',
 	'translationnotifications-sent-title' => 'Notifica di traduzione inviata',
@@ -2087,7 +2094,9 @@ $messages['ja'] = array(
 	'translationnotifications-edit-summary' => '翻訳の通知: $1',
 	'translationnotifications-email-priority' => 'このページの優先度は$1です。',
 	'translationnotifications-email-deadline' => 'このページの翻訳の締め切りは $1 です。',
+	'logentry-translationnotifications-sent' => '$1 がページ $3 の翻訳について通知を{{GENDER:$2|送信しました}}。{{PLURAL:$1|言語}}: $4、締め切り: $5、優先度: $6。送信成功 {{PLURAL:$7|$7 人}}、失敗 {{PLURAL:$8|$8 人}}、スキップ {{PLURAL:$9|$9 人}}',
 	'log-name-notifytranslators' => '翻訳の通知',
+	'log-description-notifytranslators' => '翻訳対象ページについて翻訳者宛に送信した通知の記録',
 	'translationnotifications-sent-title' => '翻訳の通知を送信しました',
 	'translationnotifications-sent-body' => '翻訳の通知を送信しました。',
 	'translationnotifications-log-alllanguages' => 'すべての言語',
@@ -2578,7 +2587,7 @@ $4
 	'translationnotifications-edit-summary' => 'Известување за превод: $1',
 	'translationnotifications-email-priority' => 'Приоритетот на оваа страница е $1.',
 	'translationnotifications-email-deadline' => 'Крајниот рок за преведување на оваа страница е $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|испрати}} известување за преведување на страницата $3; јазици: $4; краен рок: $5; приоритет: $6. Известувањето е испратено на {{PLURAL:$7|еден примач|$7 примачи}}, не успеа кај {{PLURAL:$8|еден примач|$8 примачи}} и изостави {{PLURAL:$9|еден примач|$9 примачи}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|испрати}} известување за преведување на страницата $3; {{PLURAL:$1|јазик|јазици}}: $4; краен рок: $5; приоритет: $6. Известувањето е испратено на {{PLURAL:$7|еден примач|$7 примачи}}, не успеа кај {{PLURAL:$8|еден примач|$8 примачи}} и изостави {{PLURAL:$9|еден примач|$9 примачи}}',
 	'log-name-notifytranslators' => 'Известувања за преведување',
 	'log-description-notifytranslators' => 'Дневник на известувањата што им се испраќаат на преведувачите со што им се соопштува кои страници се достапни за преведување',
 	'translationnotifications-sent-title' => 'Известувањето за преведување е испратено',
@@ -2771,7 +2780,7 @@ Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang be
 	'translationnotifications-edit-summary' => 'Pemberitahuan penterjemahan: $1',
 	'translationnotifications-email-priority' => 'Laman ini diberi prioriti $1.',
 	'translationnotifications-email-deadline' => 'Tarikh tutup penterjemahan laman ini ialah $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|menghantar}} pemberitahuan tentang penterjemahan laman $3; bahasa: $4; tarikh tutup: $5; keutamaan: $6; dihantar ke $7 penerima, gagal disampaikan kepada $8 penerima, dilangkaunya $9 penerima',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|menghantar}} pemberitahuan tentang penterjemahan laman $3; bahasa: $4; tarikh tutup: $5; keutamaan: $6; dihantar ke $7 penerima, gagal disampaikan kepada $8 penerima, dilangkaunya $9 penerima', # Fuzzy
 	'log-name-notifytranslators' => 'Pemberitahuan penterjemahan',
 	'log-description-notifytranslators' => 'Log pemberitahuan yang dihantar kepada penterjemah tentang laman-laman yang boleh diterjemah',
 	'translationnotifications-sent-title' => 'Pemberitahuan penterjemahan dihantar',
@@ -3007,7 +3016,7 @@ U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-m
 	'translationnotifications-edit-summary' => 'Melding over vertaling: $1',
 	'translationnotifications-email-priority' => 'De prioriteit voor deze pagina is $1.',
 	'translationnotifications-email-deadline' => 'De deadline voor het vertalen van deze pagina is $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|heeft}} een melding verzonden voor de vertaalbare pagina $3; talen: $4; deadline: $5; prioriteit: $6; verzonden aan {{PLURAL:$7|één ontvanger|$7 ontvangers}}, mislukt voor {{PLURAL:$8|één ontvanger|$8 ontvangers}}, overgeslagen voor {{PLURAL:$9|één ontvanger|$9 ontvangers}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|heeft}} een melding verzonden voor de vertaalbare pagina $3; talen: $4; deadline: $5; prioriteit: $6; verzonden aan {{PLURAL:$7|één ontvanger|$7 ontvangers}}, mislukt voor {{PLURAL:$8|één ontvanger|$8 ontvangers}}, overgeslagen voor {{PLURAL:$9|één ontvanger|$9 ontvangers}}', # Fuzzy
 	'log-name-notifytranslators' => 'Meldingen over vertalingen',
 	'log-description-notifytranslators' => "Een logboek van meldingen verzonden naar vertalers over vertaalbare pagina's",
 	'translationnotifications-sent-title' => 'De melding aan vertalers is verzonden',
@@ -3403,7 +3412,7 @@ It të stas arseivend sto corel përchè it ses signate për arseive corej relat
 	'translationnotifications-edit-summary' => 'Notìfiche ëd tradussion: $1',
 	'translationnotifications-email-priority' => "La priorità dë sta pagina a l'é $1.",
 	'translationnotifications-email-deadline' => "La fin për volté sta pagina a l'é $1.",
-	'logentry-translationnotifications-sent' => "$1 {{GENDER:$2|a l'ha mandà}} na notìfica a propòsit ëd volté la pagina $3; lenghe: $4; fin: $5; priorità: $6; mandà a {{PLURAL:$7|un ricevent|$7 ricevent}}, falì për {{PLURAL:$8|un ricevent|$8 ricevent}}, sautà për {{PLURAL:$9|un ricevent|$9 ricevent}}",
+	'logentry-translationnotifications-sent' => "$1 {{GENDER:$2|a l'ha mandà}} na notìfica a propòsit ëd volté la pagina $3; lenghe: $4; fin: $5; priorità: $6; mandà a {{PLURAL:$7|un ricevent|$7 ricevent}}, falì për {{PLURAL:$8|un ricevent|$8 ricevent}}, sautà për {{PLURAL:$9|un ricevent|$9 ricevent}}", # Fuzzy
 	'log-name-notifytranslators' => 'Notìfiche ëd tradussion',
 	'log-description-notifytranslators' => 'Un registr ëd notìfiche mandà ai tradutor a propòsit ëd pagine voltàbile',
 	'translationnotifications-sent-title' => 'Notìfiche ëd tradussion mandà',
