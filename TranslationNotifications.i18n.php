@@ -117,7 +117,7 @@ You are receiving this e-mail because you signed up to receive e-mails related t
 	'translationnotifications-edit-summary' => 'Translation notification: $1',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
 	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3; languages: $4; deadline: $5; priority: $6; sent to {{PLURAL:$7|one recipient|$7 recipients}}, failed for {{PLURAL:$8|one recipient|$8 recipients}}, skipped for {{PLURAL:$9|one recipient|$9 recipients}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3; {{PLURAL:$1|language|languages}}: $4; deadline: $5; priority: $6; sent to {{PLURAL:$7|one recipient|$7 recipients}}, failed for {{PLURAL:$8|one recipient|$8 recipients}}, skipped for {{PLURAL:$9|one recipient|$9 recipients}}',
 	'log-name-notifytranslators' => 'Translation notifications',
 	'log-description-notifytranslators' => 'A log of notifications sent to translators about translatable pages',
 	'translationnotifications-sent-title' => 'Translation notification sent',
@@ -218,15 +218,13 @@ $messages['qqq'] = array(
 
 Used in {{msg-mw|translationnotifications-email-body}}',
 	'logentry-translationnotifications-sent' => '{{logentry}}
-* $1 - username
-* $2 - username for gender
-* $3 - translatable page title
 * $4 - list of language codes, or {{msg-mw|translationnotifications-log-alllanguages}}
 * $5 - deadline
 * $6 - priority
 * $7 - number of recipients to whom the notification was sent successfully
 * $8 - number of recipients to whom sending the notification failed
-* $9 - number of recipients to whom the notification was not sent because it was too early to send it according to their preferences.',
+* $9 - number of recipients to whom the notification was not sent because it was too early to send it according to their preferences.
+* $10 - number of notified languages; 999 in case of {{msg-mw|translationnotifications-log-alllanguages}}.',
 	'log-name-notifytranslators' => 'Log page title.',
 	'log-description-notifytranslators' => 'Log page description',
 	'translationnotifications-sent-title' => 'The title of the page shown after the notification is sent.

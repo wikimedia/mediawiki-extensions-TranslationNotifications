@@ -12,7 +12,6 @@
  * Some hooks for TranslationNotifications extension.
  */
 class TranslationNotificationsHooks {
-
 	/**
 	 * @param $type
 	 * @param $action
@@ -40,6 +39,8 @@ class TranslationNotificationsHooks {
 		$sentSuccess = $params[3];
 		$sentFail = $params[4];
 		$tooEarly = $params[5];
+		// Set language count to a high number when "all".
+		$languageCount = $params[0] ? count( explode( ',', $notifiedLanguages ) ) : 999;
 
 		// possible messages here:
 		// 'translationnotifications-priority-high'
@@ -57,12 +58,13 @@ class TranslationNotificationsHooks {
 			'', // User link in the new system
 			'#', // User name for gender in the new system
 			Message::rawParam( $link ),
-			$notifiedLanguages,
-			$deadlineDate,
-			$priorityText,
-			$sentSuccess,
-			$sentFail,
-			$tooEarly
+			$notifiedLanguages, // $4
+			$deadlineDate, // $5
+			$priorityText, // $6
+			$sentSuccess, // $7
+			$sentFail, // $8
+			$tooEarly, // $9
+			$languageCount // $10
 		)->inLanguage( $language )->text();
 	}
 }
