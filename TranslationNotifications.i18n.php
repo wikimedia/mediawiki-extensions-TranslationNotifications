@@ -3351,7 +3351,7 @@ $messages['pms'] = array(
 	'translationnotifications-email-subject' => 'Për piasì volta la pagina $1.',
 	'translationnotifications-email-body' => "Cerea $1,
 
-It të stas arseivend sto corel përché it ses signate com tradutor {{PLURAL:$9|a}} $2 dzor {{SITENAME}}.
+It të stas arseivend sto corel përché {{GENDER:$10|it ses signate}} com tradutor {{PLURAL:$9|a}} $2 dzor {{SITENAME}}.
 
 A-i é na pagina da volté ambelessì: $3.
 It peule voltela sgnacand ij colegament sota:
@@ -3370,10 +3370,10 @@ Mersì!
 
 ----
 
-It të stas arseivend sto corel përchè it ses signate për arseive corej relativ a tradussion dzor {{SITENAME}}. Për disiscrivte o për cangé ij tò gust ëd notìfica, për piasì vìsita $8.", # Fuzzy
+It të stas arseivend sto corel përchè it ses signate për arseive corej relativ a tradussion dzor {{SITENAME}}. Për disiscrivte o për cangé ij tò gust ëd notìfica, për piasì vìsita $8.",
 	'translationnotifications-talkpage-body' => "Cerea $2,
 
-It të stas arseivend sta notìfica përché it ses signate com tradutor {{PLURAL:$9|a}} $3 dzor {{SITENAME}}.
+It të stas arseivend sta notìfica përché {{GENDER:$1|it ses signate}} com tradutor {{PLURAL:$9|a}} $3 dzor {{SITENAME}}.
 La pagina [[$4]] a l'é disponìbila për tradussion. It peule voltela ambelessì:
 $5
 
@@ -3387,12 +3387,12 @@ com na comunità verament multilingual.
 
 Mersì!
 
-{{SITENAME}} coordinador ëd tradussion", # Fuzzy
+{{SITENAME}} coordinador ëd tradussion",
 	'translationnotifications-notification-url-listitem' => 'vòlta an $1',
 	'translationnotifications-digestemail-subject' => 'Resumé corej për arceste ëd tradussion da {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "Cerea $1,
 
-It të stas arseivend sto corel përché it ses signate com tradutor a $2 dzor {{SITENAME}}.
+It të stas arseivend sto corel përché {{GENDER:$1|it ses signate}} com tradutor a $2 dzor {{SITENAME}}.
 
 A-i {{PLURAL:$3|é 1 pagina|son $3 pagine}} disponìbij për tradussion.
 Ij detaj a son dàit sota.
@@ -3407,12 +3407,12 @@ Mersì!
 
 ----
 
-It të stas arseivend sto corel përchè it ses signate për arseive corej relativ a tradussion dzor {{SITENAME}}. Për disiscrivte o për cangé ij tò gust ëd notìfica për tradussion, për piasì vìsita <$5>.", # Fuzzy
+It të stas arseivend sto corel përchè it ses signate për arseive corej relativ a tradussion dzor {{SITENAME}}. Për disiscrivte o për cangé ij tò gust ëd notìfica për tradussion, për piasì vìsita <$5>.",
 	'translationnotifications-digestemail-notification-line' => 'Ël $1, $2 a l\'é marcasse "$3" për tradussion. It peule voltelo a $4',
 	'translationnotifications-edit-summary' => 'Notìfiche ëd tradussion: $1',
 	'translationnotifications-email-priority' => "La priorità dë sta pagina a l'é $1.",
 	'translationnotifications-email-deadline' => "La fin për volté sta pagina a l'é $1.",
-	'logentry-translationnotifications-sent' => "$1 {{GENDER:$2|a l'ha mandà}} na notìfica a propòsit ëd volté la pagina $3; lenghe: $4; fin: $5; priorità: $6; mandà a {{PLURAL:$7|un ricevent|$7 ricevent}}, falì për {{PLURAL:$8|un ricevent|$8 ricevent}}, sautà për {{PLURAL:$9|un ricevent|$9 ricevent}}", # Fuzzy
+	'logentry-translationnotifications-sent' => "$1 {{GENDER:$2|a l'ha mandà}} na notìfica a propòsit ëd volté la pagina $3; {{PLURAL:$1|lenga|lenghe}}: $4; fin: $5; priorità: $6; mandà a {{PLURAL:$7|un ricevent|$7 ricevent}}, falì për {{PLURAL:$8|un ricevent|$8 ricevent}}, sautà për {{PLURAL:$9|un ricevent|$9 ricevent}}",
 	'log-name-notifytranslators' => 'Notìfiche ëd tradussion',
 	'log-description-notifytranslators' => 'Un registr ëd notìfiche mandà ai tradutor a propòsit ëd pagine voltàbile',
 	'translationnotifications-sent-title' => 'Notìfiche ëd tradussion mandà',
