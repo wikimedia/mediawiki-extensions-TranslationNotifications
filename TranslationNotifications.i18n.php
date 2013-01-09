@@ -1505,7 +1505,7 @@ $messages['gl'] = array(
 	'translationnotifications-email-subject' => 'Por favor, traduza a páxina "$1"',
 	'translationnotifications-email-body' => 'Boas, $1:
 
-Recibiu este correo electrónico porque está inscrito como tradutor {{PLURAL:$9|ao}} $2 en {{SITENAME}}.
+Recibiu este correo electrónico porque está {{GENDER:$10|inscrito|inscrita}} como {{GENDER:$10|tradutor|tradutora}} {{PLURAL:$9|ao}} $2 en {{SITENAME}}.
 
 Hai unha páxina que traducir alí: $3.
 Pode traducila premendo na seguinte ligazón:
@@ -1524,10 +1524,10 @@ Os coordinadores das traducións de {{SITENAME}}
 
 ----
 
-Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite $8.', # Fuzzy
+Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite $8.',
 	'translationnotifications-talkpage-body' => 'Boas, $2:
 
-Recibiu esta notificación porque está inscrito como tradutor ao $3 en {{SITENAME}}.
+Recibiu esta notificación porque está {{GENDER:$1|inscrito|inscrita}} como {{GENDER:$1|tradutor|tradutora}} {{PLURAL:$9|ao}} $3 en {{SITENAME}}.
 A páxina "[[$4]]" está dispoñible para a súa tradución. Pode traducila aquí:
 $5
 
@@ -1541,12 +1541,12 @@ como unha gran comunidade multilingüe.
 
 Grazas!
 
-Os coordinadores das traducións de {{SITENAME}}', # Fuzzy
+Os coordinadores das traducións de {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'traducir ao $1',
 	'translationnotifications-digestemail-subject' => 'Correo electrónico de resumo sobre as solicitudes de tradución de {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Boas, $1:
 
-Recibiu este correo electrónico porque está inscrito como tradutor ao $2 en {{SITENAME}}.
+Recibiu este correo electrónico porque está {{GENDER:$1|inscrito|inscrita}} como {{GENDER:$1|tradutor|tradutora}} ao $2 en {{SITENAME}}.
 
 Hai {{PLURAL:$3|1 nova páxina|$3 novas páxinas}} que traducir alí. A continuación están os detalles.
 
@@ -1560,12 +1560,12 @@ Os coordinadores das traducións de {{SITENAME}}
 
 ----
 
-Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite <$5>.', # Fuzzy
+Recibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'O $1, $2 marcou "$3" para a súa tradución. Pode traducila en $4',
 	'translationnotifications-edit-summary' => 'Notificación de tradución: $1',
 	'translationnotifications-email-priority' => 'A prioridade desta páxina é $1.',
 	'translationnotifications-email-deadline' => 'A data límite para traducir a páxina é $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|enviou}} correctamente unha notificación sobre a tradución da páxina "$3"; linguas: $4; data límite: $5; prioridade: $6; {{PLURAL:$7|recibiuna 1 destinatario|recibírona $7 destinatarios}}; {{PLURAL:$8|1 destinatario non a recibiu|$8 destinatarios non a recibiron}}; {{PLURAL:$9|omitiuse 1 destinatario|omitíronse $9 destinatarios}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|enviou}} correctamente unha notificación sobre a tradución da páxina "$3"; {{PLURAL:$1|lingua|linguas}}: $4; data límite: $5; prioridade: $6; {{PLURAL:$7|recibiuna 1 destinatario|recibírona $7 destinatarios}}; {{PLURAL:$8|1 destinatario non a recibiu|$8 destinatarios non a recibiron}}; {{PLURAL:$9|omitiuse 1 destinatario|omitíronse $9 destinatarios}}',
 	'log-name-notifytranslators' => 'Notificacións de tradución',
 	'log-description-notifytranslators' => 'Un rexistro das notificacións enviadas aos tradutores sobre a tradución de páxinas',
 	'translationnotifications-sent-title' => 'Notificación de tradución enviada',
