@@ -4467,7 +4467,7 @@ $messages['zh-hant'] = array(
 	'translationnotifications-translatablepage-title' => '可翻譯頁面名：',
 	'translationnotifications-error-no-translatable-pages' => '這個wiki中沒有可翻譯頁面。',
 	'translationnotifications-email-subject' => '請翻譯頁面$1',
-	'translationnotifications-email-body' => '敬啟者：
+	'translationnotifications-email-body' => '$1：
 
 閣下因已於{{SITENAME}}登記成為$2（共$9項）的翻譯者而收到此封郵件。
 
@@ -4492,9 +4492,9 @@ $1
 ----
 
 您因已登記翻譯{{SITENAME}}而收到此電郵。要取消訂閱或更改設置請到$8。',
-	'translationnotifications-talkpage-body' => '敬啟者：
+	'translationnotifications-talkpage-body' => '$2：
 
-閣下因已於{{SITENAME}}登記成為$3（共$9項）的翻譯者而收到此通知。
+閣下因已於{{SITENAME}}{{GENDER:$1|登記}}成為$3（共$9項）的翻譯者而收到此通知。
 
 這裡有一頁需要您協助翻譯：[[$4]]現已可供翻譯。您可以按以下的連結來進行翻譯：
 $5
@@ -4508,13 +4508,10 @@ $8
 
 多謝！
 
-　　此致
-$2
-
 {{SITENAME}}翻譯協調員',
 	'translationnotifications-notification-url-listitem' => '翻譯為$1',
 	'translationnotifications-digestemail-subject' => '來自{{SITENAME}}的翻譯請求的摘要電子郵件',
-	'translationnotifications-digestemail-body' => '敬啟者：
+	'translationnotifications-digestemail-body' => '$1：
 
 閣下因已於{{SITENAME}}登記成為$2的翻譯者而收到此通知。
 
@@ -4525,14 +4522,11 @@ $4
 
 多謝！
 
-　　此致
-$1
-
-{{SITENAME}}翻譯協調員
+{{SITENAME}}翻譯協調員 謹啟
 
 ----
 
-您因已登記翻譯{{SITENAME}}而收到此電郵。要取消訂閱或更改設置請到$8。', # Fuzzy
+您因已登記翻譯{{SITENAME}}而收到此電郵。要取消訂閱或更改設置請往 < $5>。',
 	'translationnotifications-digestemail-notification-line' => '於$1，$2標記了“$3”為需要翻譯。您可以在$4進行翻譯',
 	'translationnotifications-edit-summary' => '翻譯通知：$1',
 	'translationnotifications-email-priority' => '這個頁面有$1重要度。',
