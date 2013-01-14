@@ -171,7 +171,8 @@ $messages['qqq'] = array(
 	'translationnotifications-deadline-label' => 'A label for the deadline field, which will have a datepicker.',
 	'translationnotifications-languages-to-notify-label' => 'A label for language codes field.',
 	'translationnotifications-priority' => 'A label for translation priority field.',
-	'translationnotifications-priority-high' => 'high (priority), an item in a dropdown box.',
+	'translationnotifications-priority-high' => 'high (priority), an item in a dropdown box.
+{{Identical|High}}',
 	'translationnotifications-priority-medium' => 'medium (priority), an item in a dropdown box.',
 	'translationnotifications-priority-low' => 'low (priority), an item in a dropdown box.',
 	'translationnotifications-priority-unset' => 'unset (priority), an item in a dropdown box.',
