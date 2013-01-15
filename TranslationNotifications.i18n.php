@@ -2004,7 +2004,7 @@ I coordinatori delle traduzioni di {{SITENAME}}
 Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $8.",
 	'translationnotifications-talkpage-body' => 'Ciao $2,
 
-Ricevi questa email perché ti sei {{GENDER:$10|registrato come traduttore|registrata come traduttrice|registrato/a come traduttore/trice}} $3 su {{SITENAME}}.
+Ricevi questa email perché ti sei {{GENDER:$10|registrato come traduttore|registrata come traduttrice|registrato/a come traduttore/trice}} {{PLURAL:$9|$3}} su {{SITENAME}}.
 La pagina [[$4]] è disponibile per la traduzione. Visita questo collegamento per iniziare a tradurla:
 $5
 
@@ -2016,7 +2016,7 @@ $8
 Il tuo aiuto è molto apprezzato. I traduttori come te aiutano {{SITENAME}} a essere una reale comunità multilingua.
 
 Grazie!
-I coordinatori delle traduzioni su {{SITENAME}}', # Fuzzy
+I coordinatori delle traduzioni su {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'traduci in $1',
 	'translationnotifications-digestemail-subject' => 'Email selezionate per le richieste di traduzione da parte del sito {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "Ciao $1,
