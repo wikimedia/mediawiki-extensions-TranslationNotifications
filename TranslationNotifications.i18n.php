@@ -3491,6 +3491,14 @@ $messages['ro'] = array(
 	'translationnotifications-nodeadline' => 'niciuna',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'translationnotifications-lang' => 'Lénghe #$1',
+	'translationnotifications-cmethod-email' => 'E-mail',
+);
+
 /** Russian (русский)
  * @author Kaganer
  */
