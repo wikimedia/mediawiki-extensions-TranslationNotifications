@@ -3743,10 +3743,12 @@ $messages['sv'] = array(
 	'translationnotifications-priority-low' => 'låg',
 	'translationnotifications-priority-unset' => '(inte inställd)',
 	'translationnotifications-translatablepage-title' => 'Namn på översättningsbar sida:',
+	'translationnotifications-error-no-translatable-pages' => 'Det finns inga översättningsbara sidor på denna wiki.',
 	'translationnotifications-email-subject' => 'Var god översätt sidan $1',
 	'translationnotifications-notification-url-listitem' => 'översätt till $1',
 	'translationnotifications-digestemail-subject' => 'E-postsammandrag för översättningsbegäran från {{SITENAME}}',
 	'translationnotifications-edit-summary' => 'Översättningsmeddelande: $1',
+	'translationnotifications-email-priority' => 'Prioriteten för denna sida är $1.',
 	'translationnotifications-log-alllanguages' => 'alla språk',
 	'translationnotifications-nodeadline' => 'ingen',
 );
