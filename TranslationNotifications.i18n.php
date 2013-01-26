@@ -3447,6 +3447,59 @@ $messages['pt'] = array(
 	'translationnotifications-email-deadline' => 'A data limite para traduzir esta página é $1.',
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author 555
+ */
+$messages['pt-br'] = array(
+	'translatorsignup' => 'Inscrição como tradutor',
+	'translatorsignup-summary' => 'Use esta página para indicar quais são os idiomas em que você pode realizar traduções e a forma que de contato preferencial para ser avisado de novos pedidos de tradução.',
+	'translationnotifications-desc' => 'Permite que tradutores se inscrevam para receber notificações de novos materiais a traduzir',
+	'translationnotifications-info' => 'Informação sobre o usuário',
+	'translationnotifications-username' => 'Nome de usuário:',
+	'translationnotifications-emailstatus' => 'Status do e-mail:',
+	'translationnotifications-email-confirmed' => 'Seu endereço de e-mail já está confirmado',
+	'translationnotifications-email-disablemail' => 'Seu endereço de e-mail já está confirmado, mas, em [[Special:Preferences|suas preferências]], está definido para não receber mensagens de e-mail.',
+	'translationnotifications-email-unconfirmed' => 'Seu endereço de e-mail não está confirmado. $1',
+	'translationnotifications-email-notset' => 'Você não tem um endereço de e-mail especificado. É possível fazer isso nas [[Special:Preferences|suas preferências]].',
+	'translationnotifications-languages' => 'Idiomas',
+	'translationnotifications-lang' => 'Idioma $1',
+	'translationnotifications-nolang' => 'Escolha um idioma',
+	'translationnotifications-contact' => 'Forma de contato preferencial',
+	'translationnotifications-cmethod-email' => 'E-mail',
+	'translationnotifications-cmethod-talkpage' => 'Página de discussão',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Página de discussão em outro wiki',
+	'translationnotifications-cmethod-feed' => 'Feed',
+	'translationnotifications-frequency' => 'Freqüência de contato',
+	'translationnotifications-freq-always' => 'Sempre que houver algo novo para traduzir',
+	'translationnotifications-freq-week' => 'No máximo uma vez por semana',
+	'translationnotifications-freq-month' => 'No máximo uma vez por mês',
+	'translationnotifications-freq-weekly' => 'Resumo semanal',
+	'translationnotifications-freq-monthly' => 'Resumo mensal',
+	'translationnotifications-submit' => 'Atualizar configurações',
+	'translationnotifications-signup-success' => 'As suas preferências de notificação de traduções foram salvas.',
+	'notifytranslators' => 'Notificar tradutores',
+	'translationnotifications-submit-ok' => 'As notificações foram adicionadas em uma fila de sistema e serão entregues por um processo executado em segundo plano.',
+	'translationnotifications-send-notification-button' => 'Enviar notificação para os tradutores',
+	'translationnotifications-deadline-label' => 'Prazo a ser indicado nesta notificação:',
+	'translationnotifications-languages-to-notify-label' => 'Notificar em quais idiomas:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Códigos de idiomas separados por vírgulas. Deixe em branco para notificar todos os idiomas disponíveis.',
+	'translationnotifications-priority' => 'Prioridade:',
+	'translationnotifications-priority-high' => 'alta',
+	'translationnotifications-priority-medium' => 'média',
+	'translationnotifications-priority-low' => 'baixa',
+	'translationnotifications-priority-unset' => '(indefinida)',
+	'translationnotifications-translatablepage-title' => 'Nome da página traduzível:',
+	'translationnotifications-error-no-translatable-pages' => 'Não há, neste momento, páginas traduzíveis neste wiki.',
+	'translationnotifications-email-subject' => 'Ajude-nos traduzindo a página $1',
+	'translationnotifications-notification-url-listitem' => 'traduzir em $1',
+	'translationnotifications-digestemail-subject' => 'Resumo das solicitações de tradução do wiki {{SITENAME}}',
+	'translationnotifications-digestemail-notification-line' => 'Em $1, $2 marcou a página "$3" para tradução. Você pode traduzi-la a partir do link $4',
+	'translationnotifications-edit-summary' => 'Notificação de tradução: $1',
+	'translationnotifications-email-priority' => 'A prioridade para esta página é $1.',
+	'translationnotifications-email-deadline' => 'O prazo para que esta página receba traduções é $1.',
+	'log-name-notifytranslators' => 'Notificações de tradução',
+);
+
 /** Romanian (română)
  * @author Firilacroco
  * @author Minisarm
