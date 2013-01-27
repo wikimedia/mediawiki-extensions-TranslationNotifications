@@ -353,12 +353,12 @@ $8
 
 Вялікі дзякуй!
 
-Каардынатары перакладаў {{GRAMMAR:родны|{{SITENAME}}}}',
+Каардынатары перакладаў {{GRAMMAR:родны|{{SITENAME}}}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'перакласьці на $1',
 	'translationnotifications-edit-summary' => 'Апавяшчэньне пра пераклад: $1',
 	'translationnotifications-email-priority' => 'Прыярытэт гэтай старонкі — $1.',
 	'translationnotifications-email-deadline' => 'Апошні тэрмін для перакладу гэтай старонкі — $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|апавясьціў|апавясьціла}} пра пераклад старонкі «$3»; мовы: $4; тэрмін: $5; прыярытэт: $6; даслана {{PLURAL:$7|аднаму адрасату|$7 адрасатам}}, няўдала даслана {{PLURAL:$8|аднаму адрасату|$8 адрасатам}}, не даслана {{PLURAL:$9|аднаму адрасату|$9 адрасатам}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|апавясьціў|апавясьціла}} пра пераклад старонкі «$3»; мовы: $4; тэрмін: $5; прыярытэт: $6; даслана {{PLURAL:$7|аднаму адрасату|$7 адрасатам}}, няўдала даслана {{PLURAL:$8|аднаму адрасату|$8 адрасатам}}, не даслана {{PLURAL:$9|аднаму адрасату|$9 адрасатам}}', # Fuzzy
 	'log-name-notifytranslators' => 'Апавяшчэньні пра пераклад',
 	'translationnotifications-sent-title' => 'Апавяшчэньне пра пераклад высланае',
 	'translationnotifications-log-alllanguages' => 'усе мовы',
@@ -629,7 +629,7 @@ die Übersetzungskoordinatoren von {{SITENAME}}
 
 ----
 
-Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails für Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen besuchen Sie bitte $8.',
+Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails für Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen besuchen Sie bitte $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $3 auf {{SITENAME}} registriert haben.
@@ -642,7 +642,7 @@ $7
 $8
 
 Vielen Dank,
-die Übersetzungskoordinatoren von {{SITENAME}}',
+die Übersetzungskoordinatoren von {{SITENAME}}', # Fuzzy
 	'translationnotifications-digestemail-body' => 'Hallo $1,
 
 Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $2 auf {{SITENAME}} registriert haben.
@@ -786,7 +786,7 @@ Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach 
 	'translationnotifications-edit-summary' => 'Pśełožowańska powěźeńka: $1',
 	'translationnotifications-email-priority' => 'Priorita toś togo boka jo $1.',
 	'translationnotifications-email-deadline' => 'Termin za pśełožowanje toś togo boka jo $1.',
-	'logentry-translationnotifications-sent' => '$1 jo powěźeńku wó pśełožowańskem boku $3 {{GENDER:$2|pósłał|posłała}}; rěcy: $4; termin $5; priorita $6; jo ju na {{PLURAL:$7|jadnogo dostawarja|$7 dostawarjowu|$7 dostawarjow|$7 dostawarjow}} {{GENDER:$2|pósłał|pósłała}}, jo se njeraźiła za {{PLURAL:$8|jadnogo dostawarja|$8 dostawarjowu$8 dostawarjow|$8 dostawarjow}}, jo se pśeskócyła za  {{PLURAL:$9|jadnogo dostawarja|$9 dostawarjowu|$9 dostawarjow|$9 dostawarjow}}.',
+	'logentry-translationnotifications-sent' => '$1 jo powěźeńku wó pśełožowańskem boku $3 {{GENDER:$2|pósłał|posłała}}; rěcy: $4; termin $5; priorita $6; jo ju na {{PLURAL:$7|jadnogo dostawarja|$7 dostawarjowu|$7 dostawarjow|$7 dostawarjow}} {{GENDER:$2|pósłał|pósłała}}, jo se njeraźiła za {{PLURAL:$8|jadnogo dostawarja|$8 dostawarjowu$8 dostawarjow|$8 dostawarjow}}, jo se pśeskócyła za  {{PLURAL:$9|jadnogo dostawarja|$9 dostawarjowu|$9 dostawarjow|$9 dostawarjow}}.', # Fuzzy
 	'log-name-notifytranslators' => 'Pśełožowańske powěźeńki',
 	'log-description-notifytranslators' => 'Protokol wó powěžeńkach, kótarež su se pśełožowarjam wó pśełožujobnych bokach pósłali',
 	'translationnotifications-sent-title' => 'Pśełožowańska powěźeńka jo se pósłała',
@@ -861,7 +861,7 @@ traduk-kunordigantoj de {{SITENAME}}
 
 ----
 
-Vi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITENAME}}. Por malaboni aŭ ŝanĝi viajn sciigajn preferojn, bonvolu viziti $8.',
+Vi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITENAME}}. Por malaboni aŭ ŝanĝi viajn sciigajn preferojn, bonvolu viziti $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Saluton $2,
 
 vi ricevas tiun ĉi mesaĝon, ĉar vi registriĝis kiel tradukisto de {{PLURAL:$9|la lingvo|la lingvoj}} $2 ĉe {{SITENAME}}.
@@ -894,7 +894,7 @@ traduk-kunordigantoj de {{SITENAME}}
 
 ----
 
-Vi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITENAME}}. Por malaboni aŭ ŝanĝi viajn sciigajn preferojn, bonvolu viziti <$5>.',
+Vi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITENAME}}. Por malaboni aŭ ŝanĝi viajn sciigajn preferojn, bonvolu viziti <$5>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'Je $1, $2 markis "$3" tradukpreta. Vi povas traduki ĝin ĉe $4',
 	'translationnotifications-edit-summary' => 'Traduksciigo: $1',
 	'translationnotifications-email-priority' => 'La prioritato de tiu ĉi paĝo estas $1.',
@@ -992,7 +992,7 @@ Agradecemos enormemente tu ayuda. Traductores como tú hacen que {{SITENAME}} fu
 como una verdadera comunidad multilingüe.
 ¡Gracias!
 
-Los coordinadores de traducción de {{SITENAME}}',
+Los coordinadores de traducción de {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'traducir al $1',
 	'translationnotifications-digestemail-subject' => 'Correo electrónico de resumen para solicitudes de traducción de {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hola $1,
@@ -1011,12 +1011,12 @@ Los administradores de traducción de {{SITENAME}}
 
 ----
 
-Estás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita <$5>.',
+Estás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita <$5>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'En $1, $2  ha marcado "$3" para su traducción. Puede traducirlo en $4',
 	'translationnotifications-edit-summary' => 'Notificación de traducción: $1',
 	'translationnotifications-email-priority' => 'La prioridad de esta página es  $1.',
 	'translationnotifications-email-deadline' => 'La fecha límite para la traducción de esta página es  $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha enviado}} una notificación sobre la traducción de la página $3; idiomas: $4; fecha límite: $5; prioridad: $6; ha llegado a {{PLURAL:$7|un destinatario|$7  destinatarios}}, ha fallado en {{PLURAL:$8|un destinatario|$8 destinatarios}}, ha omitido a {{PLURAL:$9|un destinatario|$9 destinatarios}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha enviado}} una notificación sobre la traducción de la página $3; idiomas: $4; fecha límite: $5; prioridad: $6; ha llegado a {{PLURAL:$7|un destinatario|$7  destinatarios}}, ha fallado en {{PLURAL:$8|un destinatario|$8 destinatarios}}, ha omitido a {{PLURAL:$9|un destinatario|$9 destinatarios}}', # Fuzzy
 	'log-name-notifytranslators' => 'Notificaciones de traducción',
 	'log-description-notifytranslators' => 'Un registro de las notificaciones enviadas a los traductores sobre las páginas traducibles',
 	'translationnotifications-sent-title' => 'Notificación de traducción enviada',
@@ -1133,7 +1133,7 @@ Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-
 	'translationnotifications-edit-summary' => 'Tõlketeavitus: $1',
 	'translationnotifications-email-priority' => 'Selle lehekülje tõlkimine on $1.',
 	'translationnotifications-email-deadline' => 'Selle tõlke tähtaeg on $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|saatis}} teavituse lehekülje $3 tõlkimise kohta; keeled: $4; tähtaeg: $5; tähtsus: $6; saadetud {{PLURAL:$7|ühele|$7}} tõlkijale, {{PLURAL:$8|ühele|$8}} tõlkijale saatmine ebaõnnestus, {{PLURAL:$9|üks tõlkija|$9 tõlkijat}} vahele jäetud',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|saatis}} teavituse lehekülje $3 tõlkimise kohta; keeled: $4; tähtaeg: $5; tähtsus: $6; saadetud {{PLURAL:$7|ühele|$7}} tõlkijale, {{PLURAL:$8|ühele|$8}} tõlkijale saatmine ebaõnnestus, {{PLURAL:$9|üks tõlkija|$9 tõlkijat}} vahele jäetud', # Fuzzy
 	'log-name-notifytranslators' => 'Tõlketeavitused',
 	'log-description-notifytranslators' => 'Tõlkijatele lehekülgede tõlkimise kohta saadetud teavituste logi',
 	'translationnotifications-sent-title' => 'Tõlketeavitus saadetud',
@@ -1273,7 +1273,7 @@ monikielisenä yhteisönä.
 
 Kiitos!
 
-Sivuston {{SITENAME}} käännösvastaavat',
+Sivuston {{SITENAME}} käännösvastaavat', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'käännä kielelle $1',
 	'translationnotifications-digestemail-subject' => 'Yhteenveto sivuston {{SITENAME}} käännöspyynnöistä',
 	'translationnotifications-digestemail-body' => 'Hei $1,
@@ -1292,12 +1292,12 @@ Sivuston {{SITENAME}} käännösvastaavat
 
 ----
 
-Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä sivustolla  {{SITENAME}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy sivulla <$5>.',
+Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä sivustolla  {{SITENAME}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy sivulla <$5>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => '($1) $2 ilmoitti sivun "$3" käännettäväksi. Voit kääntää sen osoitteessa $4',
 	'translationnotifications-edit-summary' => 'Ilmoitus käännöksestä: $1',
 	'translationnotifications-email-priority' => 'Tämän sivun tärkeysaste on $1.',
 	'translationnotifications-email-deadline' => 'Tämä sivu tulisi kääntää viimeistään $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|lähetti}} ilmoituksen sivun $3 kääntämisestä; kielet: $4; määräaika: $5; tärkeysaste: $6; lähetettiin {{PLURAL:$7|yhdelle kääntäjälle|$7 kääntäjälle}}, epäonnistui {{PLURAL:$8|yhdelle kääntäjälle|$8 kääntäjälle}}, ohitettiin {{PLURAL:$9|yhdelle kääntäjälle|$9 kääntäjälle}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|lähetti}} ilmoituksen sivun $3 kääntämisestä; kielet: $4; määräaika: $5; tärkeysaste: $6; lähetettiin {{PLURAL:$7|yhdelle kääntäjälle|$7 kääntäjälle}}, epäonnistui {{PLURAL:$8|yhdelle kääntäjälle|$8 kääntäjälle}}, ohitettiin {{PLURAL:$9|yhdelle kääntäjälle|$9 kääntäjälle}}', # Fuzzy
 	'log-name-notifytranslators' => 'Ilmoitukset käännöksistä',
 	'log-description-notifytranslators' => 'Loki ilmoituksista, jotka on lähetetty kääntäjille käännettävistä sivuista',
 	'translationnotifications-sent-title' => 'Käännösilmoitus lähetetty',
@@ -1658,7 +1658,7 @@ $8
 
 תודה!
 
-רכזי תרגום באתר {{SITENAME}}',
+רכזי תרגום באתר {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'תרגום ל{{GRAMMAR:תחילית|$1}}',
 	'translationnotifications-digestemail-subject' => 'מכתב עם סיכום בקשות תרגום מאתר {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "שלום $1,
@@ -1677,12 +1677,12 @@ $4
 
 ----
 
-קיבלת את המכתב הזה כי נרשמת לקבלת מכתבים בנושא תרגומים באתר {{SITENAME}}. כדי לבטל את המינוי או לשנות את הגדרות שלך על ההודעות בנושא תרגומים, נא לבקר בדף <$5> .",
+קיבלת את המכתב הזה כי נרשמת לקבלת מכתבים בנושא תרגומים באתר {{SITENAME}}. כדי לבטל את המינוי או לשנות את הגדרות שלך על ההודעות בנושא תרגומים, נא לבקר בדף <$5> .", # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'ב־$1, המשתמש $2 סימן את הדף "$3" לתרגום. אפשר לתרגם אותו בקישור $4',
 	'translationnotifications-edit-summary' => 'הודעה על תרגום: $1',
 	'translationnotifications-email-priority' => 'העדיפות של הדף הזה: $1.',
 	'translationnotifications-email-deadline' => 'התאריך הסופי לתרגום הדף הזה הוא $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|שלח|שלחה}} מכתב עם בקשה לתרגם את הדף $3; שפות: $4; תאריך סופי: $5; עדיפות: $6; השליחה הצליחה ל{{PLURAL:$7|מקבל אחד|־$7 מקבלים}}, נכשלה ל{{PLURAL:$8|מקבל אחד|־$8 מקבלים}}, ודילגה על {{PLURAL:$9|מקבל אחד|$9 מקבלים}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|שלח|שלחה}} מכתב עם בקשה לתרגם את הדף $3; שפות: $4; תאריך סופי: $5; עדיפות: $6; השליחה הצליחה ל{{PLURAL:$7|מקבל אחד|־$7 מקבלים}}, נכשלה ל{{PLURAL:$8|מקבל אחד|־$8 מקבלים}}, ודילגה על {{PLURAL:$9|מקבל אחד|$9 מקבלים}}', # Fuzzy
 	'log-name-notifytranslators' => 'מכתבים למתרגמים',
 	'log-description-notifytranslators' => 'יומן של מכתבים שנשלחים למתרגמים על דפים שאפשר לתרגם',
 	'translationnotifications-sent-title' => 'נשלח מכתב למתרגמים',
@@ -1795,7 +1795,7 @@ Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na 
 	'translationnotifications-edit-summary' => 'Přełožowanska zdźělenka: $1',
 	'translationnotifications-email-priority' => 'Priorita tuteje strony je $1.',
 	'translationnotifications-email-deadline' => 'Termin za přełožowanje tuteje strony je $1.',
-	'logentry-translationnotifications-sent' => '$1 je zdźělenku wo přełožowanskej stronje $3 {{GENDER:$2|pósłał|posłała}}; rěče: $4; termin $5; priorita $6; je ju na {{PLURAL:$7|jednoho přijimarja|$7 přijimarjow|$7 přijimarjow|$7 prijimarjow}}  {{GENDER:$2|pósłał|pósłała}}, je so njeporadźiła za {{PLURAL:$8|jednoho přijimarja|$8 přijimarjow|$8 přijimarjow|$8 přijimarjow}}, je so přeskočiła za  {{PLURAL:$9|jednoho přijimarja|$9 přijimarjow|$9 přijimarjow|$9 přijimarjow}}.',
+	'logentry-translationnotifications-sent' => '$1 je zdźělenku wo přełožowanskej stronje $3 {{GENDER:$2|pósłał|posłała}}; rěče: $4; termin $5; priorita $6; je ju na {{PLURAL:$7|jednoho přijimarja|$7 přijimarjow|$7 přijimarjow|$7 prijimarjow}}  {{GENDER:$2|pósłał|pósłała}}, je so njeporadźiła za {{PLURAL:$8|jednoho přijimarja|$8 přijimarjow|$8 přijimarjow|$8 přijimarjow}}, je so přeskočiła za  {{PLURAL:$9|jednoho přijimarja|$9 přijimarjow|$9 přijimarjow|$9 přijimarjow}}.', # Fuzzy
 	'log-name-notifytranslators' => 'Přełožowanske zdźělenki',
 	'log-description-notifytranslators' => 'Protokol wo zdźělenkach, kotrež su so přełožowarjam wo přełožujomnych stronach pósłali',
 	'translationnotifications-sent-title' => 'Přełožowanska zdźělenka je so pósłała',
@@ -1919,7 +1919,7 @@ Tu ha recipite iste message perque tu te ha inscribite pro reciper e-mail sur tr
 	'translationnotifications-edit-summary' => 'Notification de traduction: $1',
 	'translationnotifications-email-priority' => 'Le prioritate de iste pagina es $1.',
 	'translationnotifications-email-deadline' => 'Le data limite pro traducer iste pagina es $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|inviava}} un notification sur le traduction del pagina $3; linguas: $4; data limite: $5; prioritate: $6; inviate a {{PLURAL:$7|un destinatario|$7 destinatarios}}, invio fallite pro {{PLURAL:$8|un destinatario|$8 destinatarios}}, non inviate a {{PLURAL:$9|un destinatario|$9 destinatarios}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|inviava}} un notification sur le traduction del pagina $3; linguas: $4; data limite: $5; prioritate: $6; inviate a {{PLURAL:$7|un destinatario|$7 destinatarios}}, invio fallite pro {{PLURAL:$8|un destinatario|$8 destinatarios}}, non inviate a {{PLURAL:$9|un destinatario|$9 destinatarios}}', # Fuzzy
 	'log-name-notifytranslators' => 'Notificationes de traduction',
 	'log-description-notifytranslators' => 'Un registro de notificationes inviate a traductores sur paginas traducibile',
 	'translationnotifications-sent-title' => 'Notification de traduction inviate',
@@ -2369,7 +2369,7 @@ de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v{{SITENAME}}}}
 
 ----
 
-Do häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät draan ändere wells, jangk noh $8.",
+Do häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät draan ändere wells, jangk noh $8.", # Fuzzy
 	'translationnotifications-talkpage-body' => "Daach $2,
 
 Do kriß heh di Metdeilong, weil De Desch als ene Övversäzer för de {{PLURAL:$9|Schprooch|Schprooche|kein Schprooche}} $3 op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs.
@@ -2387,7 +2387,7 @@ Ding Hölp es ärsch jään jesinn. Als Övversäzer helfs De met, dat {{GRAMMAR
 
 Onsere häzlejje Dank doför saare
 
-de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v{{SITENAME}}}}",
+de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v{{SITENAME}}}}", # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'övversäze op $1',
 	'translationnotifications-digestemail-subject' => 'Zosammejefaß Metdeilong för Övversäzonge {{GRAMMAR:2 v|{{SITENAME}}}}',
 	'translationnotifications-digestemail-body' => "Daach $1,
@@ -2405,7 +2405,7 @@ de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v{{SITENAME}}}}
 
 ----
 
-Do häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät draan ändere wells, jangk noh $5.",
+Do häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät draan ändere wells, jangk noh $5.", # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'Aam $1 hät {{GENDER:$2|dä|et|dä Metmaacher|de|dat}} $2 di Sigg „$3“ för et Övversäze freijejovve. Do kanns se övversäzze op dä Sigg: $4',
 	'translationnotifications-edit-summary' => 'Övversäzongsnohreesch: $1',
 	'translationnotifications-email-priority' => 'Der Rang vun dä Sigg es $1.',
@@ -2665,7 +2665,7 @@ $7
 	'translationnotifications-edit-summary' => 'പരിഭാഷാ അറിയിപ്പ്: $1',
 	'translationnotifications-email-priority' => 'ഈ താളിന്റെ മുൻഗണന $1 ആണ്.',
 	'translationnotifications-email-deadline' => 'ഈ താൾ പരിഭാഷപ്പെടുത്തുന്നതിനുള്ള അവസാന തീയതി $1 ആണ്.',
-	'logentry-translationnotifications-sent' => 'പരിഭാഷപ്പെടുത്താനുള്ള താൾ $3; ഭാഷകൾ: $4; അവസാന തീയതി: $5; മുൻഗണന: $6; എന്നിവയുള്ള അറിയിപ്പ് {{PLURAL:$7|ഒരു സ്വീകർത്താവിന്|$7 സ്വീകർത്താക്കൾക്ക്}} $1 {{GENDER:$2|അയച്ചു}},  {{PLURAL:$8|ഒരു സ്വീകർത്താവിനുള്ളത്|$8 സ്വീകർത്താക്കൾക്കുള്ളത്}} പരാജയപ്പെട്ടു, {{PLURAL:$9|ഒരു സ്വീകർത്താവിനുള്ളത്|$9 സ്വീകർത്താക്കൾക്കുള്ളത്}} ഒഴിവാക്കി',
+	'logentry-translationnotifications-sent' => 'പരിഭാഷപ്പെടുത്താനുള്ള താൾ $3; ഭാഷകൾ: $4; അവസാന തീയതി: $5; മുൻഗണന: $6; എന്നിവയുള്ള അറിയിപ്പ് {{PLURAL:$7|ഒരു സ്വീകർത്താവിന്|$7 സ്വീകർത്താക്കൾക്ക്}} $1 {{GENDER:$2|അയച്ചു}},  {{PLURAL:$8|ഒരു സ്വീകർത്താവിനുള്ളത്|$8 സ്വീകർത്താക്കൾക്കുള്ളത്}} പരാജയപ്പെട്ടു, {{PLURAL:$9|ഒരു സ്വീകർത്താവിനുള്ളത്|$9 സ്വീകർത്താക്കൾക്കുള്ളത്}} ഒഴിവാക്കി', # Fuzzy
 	'log-name-notifytranslators' => 'പരിഭാഷാ അറിയിപ്പുകൾ',
 	'translationnotifications-sent-title' => 'പരിഭാഷാ അറിയിപ്പു് അയച്ചിരിക്കുന്നു.',
 	'translationnotifications-sent-body' => 'പരിഭാഷാ അറിയിപ്പു് അയച്ചിരിക്കുന്നു.',
@@ -2905,7 +2905,7 @@ Takk!
 	'translationnotifications-edit-summary' => 'Oversettelsesvarsel', # Fuzzy
 	'translationnotifications-email-priority' => 'Denne siden har $1 prioritet.',
 	'translationnotifications-email-deadline' => 'Tidsfristen for å oversette denne siden er $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sendte}} et varsel om oversetting av siden $3; språk: $4; tidsfrist: $5; prioritet: $6; sendt til {{PLURAL:$7|én mottaker|$7 mottakere}}, mislyktes for {{PLURAL:$8|én mottaker|$8 mottakere}}, hoppet over for {{PLURAL:$9|én mottaker|$9 mottakere}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sendte}} et varsel om oversetting av siden $3; språk: $4; tidsfrist: $5; prioritet: $6; sendt til {{PLURAL:$7|én mottaker|$7 mottakere}}, mislyktes for {{PLURAL:$8|én mottaker|$8 mottakere}}, hoppet over for {{PLURAL:$9|én mottaker|$9 mottakere}}', # Fuzzy
 	'log-name-notifytranslators' => 'Oversettelsesvarsler',
 	'log-description-notifytranslators' => 'En logg over varsler om oversettbare sider sendt til oversettere',
 	'translationnotifications-sent-title' => 'Oversettelsesvarsel sendt',
@@ -3078,7 +3078,7 @@ Hjelpa di er høgt verdsett. Omsetjarar som deg hjelper {{SITENAME}} med å fung
 
 Takk!
 
-Omsetjingskoordinatorane for {{SITENAME}}',
+Omsetjingskoordinatorane for {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'set om til $1',
 	'translationnotifications-edit-summary' => 'Omsetjingsvarsel: $1',
 	'translationnotifications-email-priority' => 'Sida har $1 prioritet.',
@@ -3181,7 +3181,7 @@ die Midawaida vun {{SITENAME}}", # Fuzzy
 	'translationnotifications-edit-summary' => 'Iwasedzungsnochrichd', # Fuzzy
 	'translationnotifications-email-priority' => 'Die Wischdischkaid vunde Said fas Iwasedze isch $1.',
 	'translationnotifications-email-deadline' => 'Die Frischd fas Iwasedze vunde Said laafd bis zum $1.',
-	'logentry-translationnotifications-sent' => "$1 hod ä Nochrischd fa die Iwasedzung vunde Said $3 inde Schbrooche $4 midde Frischd $5 unde Dringlischkaid $6, mid Eafolsch {{PLURAL:$7|oanen|oan $7}} Embfenga un ohne Eafolsch {{PLURAL:$8|oanen|oan $8}} Embfenga {{GENDER:$2|gschiggd}}, {{PLURAL:$9|un'es ischn|un'esin $9}} Embfenga ned oagschriwwe worre.",
+	'logentry-translationnotifications-sent' => "$1 hod ä Nochrischd fa die Iwasedzung vunde Said $3 inde Schbrooche $4 midde Frischd $5 unde Dringlischkaid $6, mid Eafolsch {{PLURAL:$7|oanen|oan $7}} Embfenga un ohne Eafolsch {{PLURAL:$8|oanen|oan $8}} Embfenga {{GENDER:$2|gschiggd}}, {{PLURAL:$9|un'es ischn|un'esin $9}} Embfenga ned oagschriwwe worre.", # Fuzzy
 	'log-name-notifytranslators' => 'Iwasedzungsnochrichde-Logbuch',
 	'log-description-notifytranslators' => "S'Logbuch vun Bnochrischdischunge, wu oan Iwasedza fas Iwasedze vun Saide gonge sin.",
 	'translationnotifications-sent-title' => 'Iwasedzungsnochrichd gschigd',
@@ -3272,7 +3272,7 @@ Twoja pomoc jest bardzo mile widziana. Tłumacze pomogą stronie {{SITENAME}} st
 
 Dziękujemy!
 
-Koordynator tłumaczeń {{SITENAME}}',
+Koordynator tłumaczeń {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'przetłumacz na $1',
 	'translationnotifications-digestemail-subject' => 'Wiadomość ze streszczeniem próśb o tłumaczenie z witryny {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Witaj $1,
@@ -3290,12 +3290,12 @@ Administratorzy tłumaczeń {{SITENAME}}
 
 ----
 
-Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile dotyczące tłumaczeń na {{SITENAME}}. Aby wypisać się ze subskrypcji lub zmienić preferencje powiadomień, odwiedź stronę <$5>',
+Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile dotyczące tłumaczeń na {{SITENAME}}. Aby wypisać się ze subskrypcji lub zmienić preferencje powiadomień, odwiedź stronę <$5>', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'Dnia $1, $2 oznaczył "$3" jako do przetłumaczenia. Można tłumaczyć stronę na $4.',
 	'translationnotifications-edit-summary' => 'Powiadomienie o tłumaczeniu: $1',
 	'translationnotifications-email-priority' => 'Priorytet tej strony to  $1 .',
 	'translationnotifications-email-deadline' => 'Nieprzekraczalny termin tłumaczenia tej strony to $1 .',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|wysyłał|wysłała}} powiadomienie w sprawie tłumaczenia strony $3; języki: $4; termin $5; priorytet $6; do {{PLURAL:$7|jednego adresata|$7 adresatów}} pomyślnie, do {{PLURAL:$8|jednego adresata|$8 adresatów}} bezskutecznie, pominięto {{PLURAL:$9|jednego adresata|$9 adresatów}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|wysyłał|wysłała}} powiadomienie w sprawie tłumaczenia strony $3; języki: $4; termin $5; priorytet $6; do {{PLURAL:$7|jednego adresata|$7 adresatów}} pomyślnie, do {{PLURAL:$8|jednego adresata|$8 adresatów}} bezskutecznie, pominięto {{PLURAL:$9|jednego adresata|$9 adresatów}}', # Fuzzy
 	'log-name-notifytranslators' => 'Powiadomienia o tłumaczeniach',
 	'log-description-notifytranslators' => 'Dziennik powiadomień wysyłanych do tłumaczy o stronach do przetłumaczenia',
 	'translationnotifications-sent-title' => 'Wysłano powiadomienie tłumaczenia',
@@ -3649,7 +3649,7 @@ $4
 	'translationnotifications-edit-summary' => 'Уведомление о переводе: $1',
 	'translationnotifications-email-priority' => 'Приоритет этой страницы — $1.',
 	'translationnotifications-email-deadline' => 'Крайний срок для перевода этой страницы — $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|отправил|отправила}} уведомление о переводе страницы $3; языки: $4; крайний срок: $5; приоритет: $6; послано {{PLURAL:$7|одному адресату|$7 адресатам|$7 адресатам}}, неудачно для {{PLURAL:$8|одного адресата|$8 адресатов}}, пропущено для {{PLURAL:$9|одного адресата|$9 адресатов}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|отправил|отправила}} уведомление о переводе страницы $3; языки: $4; крайний срок: $5; приоритет: $6; послано {{PLURAL:$7|одному адресату|$7 адресатам|$7 адресатам}}, неудачно для {{PLURAL:$8|одного адресата|$8 адресатов}}, пропущено для {{PLURAL:$9|одного адресата|$9 адресатов}}', # Fuzzy
 	'log-name-notifytranslators' => 'Уведомления о переводе',
 	'log-description-notifytranslators' => 'Журнал отправленных переводчикам уведомлений, касающихся переводимых страниц',
 	'translationnotifications-sent-title' => 'Уведомление о переводе отправлено',
@@ -4002,7 +4002,7 @@ bilang isang tunay na pamayanan ng maramihang mga wika.
 
 Salamat sa iyo!
 
-Mga koordinador sa pagsasalinwika ng {{SITENAME}}',
+Mga koordinador sa pagsasalinwika ng {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'isalinwika upang maging $1',
 	'translationnotifications-digestemail-subject' => 'Elektronikong liham ng kabuuran para sa mga kahilingan ng pagsasalinwika magmula sa {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Kumusta $1,
@@ -4021,12 +4021,12 @@ Mga tagapangasiwa ng salinwika ng {{SITENAME}}
 
 ----
 
-Nakakatanggap ka ng ganitong elektronikong liham dahil nagpatala ka upang makatanggap ng mga e-liham na may kaugnayan sa mga salinwika na nasa {{SITENAME}}. Upang huwag nang magpasipi o upang baguhin ang mga kanaisan mo ng pagpapabatid para sa mga salinwika, paki dalawin ang <<$5>>.',
+Nakakatanggap ka ng ganitong elektronikong liham dahil nagpatala ka upang makatanggap ng mga e-liham na may kaugnayan sa mga salinwika na nasa {{SITENAME}}. Upang huwag nang magpasipi o upang baguhin ang mga kanaisan mo ng pagpapabatid para sa mga salinwika, paki dalawin ang <<$5>>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'Noong $1, minarkahan ni $2 ang "$3" para maisalinwika. Maisasalinwika mo ito roon sa $4',
 	'translationnotifications-edit-summary' => 'Pagpapabatid ng salinwika: $1',
 	'translationnotifications-email-priority' => 'Ang dapat na unahin sa pahinang ito ay ang $1.',
 	'translationnotifications-email-deadline' => 'Ang huling araw para sa pagsasalinwika ng pahinang ito ay $1.',
-	'logentry-translationnotifications-sent' => '{{GENDER:$2|Nagpadala}} si $1 ng isang pagpapabatid hinggil sa pagsasalinwika ng pahinang $3; mga wika: $4; huling araw: $5; pagkakauna: $6; ipinadala sa {{PLURAL:$7|isang tagatanggap|$7 mga tagatanggap}}, nabigo para sa {{PLURAL:$8|isang tagatanggap|$8 mga tagatanggap}}, nilaktawan para sa {{PLURAL:$9|isang tagatanggap|$9 mga tagatanggap}}',
+	'logentry-translationnotifications-sent' => '{{GENDER:$2|Nagpadala}} si $1 ng isang pagpapabatid hinggil sa pagsasalinwika ng pahinang $3; mga wika: $4; huling araw: $5; pagkakauna: $6; ipinadala sa {{PLURAL:$7|isang tagatanggap|$7 mga tagatanggap}}, nabigo para sa {{PLURAL:$8|isang tagatanggap|$8 mga tagatanggap}}, nilaktawan para sa {{PLURAL:$9|isang tagatanggap|$9 mga tagatanggap}}', # Fuzzy
 	'log-name-notifytranslators' => 'Mga pagpapabatid ng pagsasalinwika',
 	'log-description-notifytranslators' => 'Isang talaan ng mga pagpapabatid ang ipinadala sa mga tagapagsalinwika hinggil sa mga pahinang maisasalinwika',
 	'translationnotifications-sent-title' => 'Naipadala na ang pagpapabatid ng salinwika',
@@ -4291,7 +4291,7 @@ Nhóm điều phối biên dịch {{SITENAME}}
 
 ----
 
-Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $8.',
+Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => '{{PLURAL:$9}}Xin chào $2,
 
 Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $3 tại {{SITENAME}}.
@@ -4305,7 +4305,7 @@ $8
 
 Cám ơn!
 
-Nhóm điều phối biên dịch {{SITENAME}}',
+Nhóm điều phối biên dịch {{SITENAME}}', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'dịch ra $1',
 	'translationnotifications-digestemail-subject' => 'Thư điện tử tóm tắt các yêu cầu biên dịch từ {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Xin chào $1,
@@ -4322,12 +4322,12 @@ Ban quản lý biên dịch {{SITENAME}}
 
 ----
 
-Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào <$5>.',
+Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào <$5>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'Ngày $1, $2 đã đánh dấu “$3” là cần được dịch. Bạn có thể biên dịch nó tại $4.',
 	'translationnotifications-edit-summary' => 'Thông báo biên dịch: $1',
 	'translationnotifications-email-priority' => 'Trang này có ưu tiên $1.',
 	'translationnotifications-email-deadline' => 'Công việc dịch trang này sẽ hết hạn $1.',
-	'logentry-translationnotifications-sent' => '{{GENDER:$2}}$1 đã gửi thông báo về việc thông dịch trang $3; ngôn ngữ: $4; ngày hạn: $5; ưu tiên: $6; được gửi cho $7 người, không gửi được cho $8 người, bỏ qua $9 người',
+	'logentry-translationnotifications-sent' => '{{GENDER:$2}}$1 đã gửi thông báo về việc thông dịch trang $3; ngôn ngữ: $4; ngày hạn: $5; ưu tiên: $6; được gửi cho $7 người, không gửi được cho $8 người, bỏ qua $9 người', # Fuzzy
 	'log-name-notifytranslators' => 'Thông báo biên dịch',
 	'log-description-notifytranslators' => 'Nhật trình các thông báo được gửi cho biên dịch viên về các trang dịch được',
 	'translationnotifications-sent-title' => 'Thông báo biên dịch đã được gửi',
@@ -4399,7 +4399,7 @@ $8
 
 א ייש"כ!
 
-{{SITENAME}} איבערזעצונג קאארדינאטארן',
+{{SITENAME}} איבערזעצונג קאארדינאטארן', # Fuzzy
 	'translationnotifications-notification-url-listitem' => 'איבערזעצן אויף $1',
 	'translationnotifications-digestemail-body' => 'טייערער $1,
 
@@ -4417,12 +4417,12 @@ $4
 
 ----
 
-איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגעשריבן צו באקומען בליצבריוון מיט א שייכות צו איבערזעצונגען ביי  {{SITENAME}}. זיך אומאבאנירן, אדער צו ענדערן  אייער אנזאג פרעפערענצן פאר איבערזעצונגען, זייט אזוי גוט באזוכט <$5>.',
+איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגעשריבן צו באקומען בליצבריוון מיט א שייכות צו איבערזעצונגען ביי  {{SITENAME}}. זיך אומאבאנירן, אדער צו ענדערן  אייער אנזאג פרעפערענצן פאר איבערזעצונגען, זייט אזוי גוט באזוכט <$5>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => 'אום $1, האט $2 מארקירט דעם בלאט "$3" פאר איבערזעצן. איר קענט אים איבערזעצן ביי $4.',
 	'translationnotifications-edit-summary' => 'איבערזעצונג אנזאג: $1',
 	'translationnotifications-email-priority' => 'די פריאריטעט פון דעם בלאט איז $1.',
 	'translationnotifications-email-deadline' => 'דער טערמין פאר איבערזעצן דעם בלאט איז $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|האט געשיקט}} אן אנזאג וועגן איבערזעצן בלאט $3; שפראכן: $4; טערמין: $5; פריאריטעט: $6; געשיקט מיט דערפאלג צו {{PLURAL:$7|איין באקומער|$7 באקומער}}, דורכגעפאלן פאר {{PLURAL:$8|איין באקומער|$8 באקומער}}, איבערגעהיפט {{PLURAL:$9|איין באקומער|$9 באקומער}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|האט געשיקט}} אן אנזאג וועגן איבערזעצן בלאט $3; שפראכן: $4; טערמין: $5; פריאריטעט: $6; געשיקט מיט דערפאלג צו {{PLURAL:$7|איין באקומער|$7 באקומער}}, דורכגעפאלן פאר {{PLURAL:$8|איין באקומער|$8 באקומער}}, איבערגעהיפט {{PLURAL:$9|איין באקומער|$9 באקומער}}', # Fuzzy
 	'log-name-notifytranslators' => 'איבערזעצונג אנזאגן',
 	'log-description-notifytranslators' => 'לאגבוך פון אנזאגן געשיקט צו איבערזעצער וועגן איבערזעצבארע בלעטער',
 	'translationnotifications-sent-title' => 'איבערזעצונג אנזאג געשיקט',
@@ -4482,7 +4482,7 @@ $messages['zh-hans'] = array(
 	'translationnotifications-edit-summary' => '翻译通知：$1',
 	'translationnotifications-email-priority' => '这个页面有$1重要度。',
 	'translationnotifications-email-deadline' => '翻译这个页面的截止日期是$1。',
-	'logentry-translationnotifications-sent' => '$1{{GENDER:$2|发送了}}翻译页面$3的通知；语言：$4；截止日期：$5；重要度：$6；已发送给$7个收件人，给$8个收件人的通知发送失败，跳过了$9个收件人',
+	'logentry-translationnotifications-sent' => '$1{{GENDER:$2|发送了}}翻译页面$3的通知；语言：$4；截止日期：$5；重要度：$6；已发送给$7个收件人，给$8个收件人的通知发送失败，跳过了$9个收件人', # Fuzzy
 	'log-name-notifytranslators' => '翻译通知',
 	'log-description-notifytranslators' => '向翻译者发送可翻译页面通知的日志',
 	'translationnotifications-sent-title' => '翻译通知已发送',
