@@ -83,6 +83,12 @@ $specialPageAliases['mk'] = array(
 	'TranslatorSignup' => array( 'ПријаваНаПреведувачи' ),
 );
 
+/** Malayalam (മലയാളം) */
+$specialPageAliases['ml'] = array(
+	'NotifyTranslators' => array( 'പരിഭാഷകരെഅറിയിക്കുക' ),
+	'TranslatorSignup' => array( 'പരിഭാഷകരെപേരുചേർക്കുക' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'NotifyTranslators' => array( 'Vertalersmeldingen' ),

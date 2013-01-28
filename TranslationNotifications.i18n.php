@@ -2962,7 +2962,7 @@ $messages['nl'] = array(
 	'translationnotifications-email-subject' => 'Vertaal alstublieft de pagina $1',
 	'translationnotifications-email-body' => 'Hallo $1,
 
-U ontvangt deze e-mail omdat u zich heeft opgegeven als vertaler voor de {{PLURAL:$9|taal|talen}} $2 op {{SITENAME}}.
+U ontvangt deze e-mail omdat u zich heeft opgegeven als {{GENDER:$10|vertaler}} voor de {{PLURAL:$9|taal|talen}} $2 op {{SITENAME}}.
 
 Er is een pagina te vertalen: $3.
 U kunt deze vertalen door op de volgende koppeling te klikken:
@@ -2980,10 +2980,10 @@ Vertalingencoördinatoren van {{SITENAME}}
 
 ----
 
-U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar $8 om u uit te schrijven of om uw instellingen aan te passen.', # Fuzzy
+U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar $8 om u uit te schrijven of om uw instellingen aan te passen.',
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
-U ontvangt deze melding omdat u zich heeft opgegeven als vertaler voor het $3 op {{SITENAME}}.
+U ontvangt deze melding omdat u zich heeft opgegeven als {{GENDER:$1|vertaler}} voor {{PLURAL:$9|het|de talen}} $3  op {{SITENAME}}.
 De pagina [[$4]] is beschikbaar voor vertaling. Vertaal deze alstublieft hier:
 $5
 
@@ -2996,12 +2996,12 @@ Uw hulp wordt enorm op prijs gesteld. Met vertalers zoals u is {{SITENAME}} een 
 
 Bedankt!
 
-Vertalingenbeheerders van {{SITENAME}}', # Fuzzy
+Vertalingenbeheerders van {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'vertalen in het $1',
 	'translationnotifications-digestemail-subject' => 'E-mail met samenvatting voor vertaalverzoeken van {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "Hallo $1,
 
-U ontvangt deze e-mail omdat u bent ingeschreven als vertaler voor $2 op {{SITENAME}}.
+U ontvangt deze e-mail omdat u bent ingeschreven als {{GENDER:$1|vertaler}} voor $2 op {{SITENAME}}.
 
 Er {{PLURAL:$3|staat één nieuwe pagina|staan $3 nieuwe pagina's}} ter vertaling. De details zijn hieronder te lezen:
 
@@ -3012,12 +3012,12 @@ Vertalingenbeheerders van {{SITENAME}}
 
 ----
 
-U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar <$5> om u uit te schrijven of om uw instellingen aan te passen.", # Fuzzy
+U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar <$5> om u uit te schrijven of om uw instellingen aan te passen.",
 	'translationnotifications-digestemail-notification-line' => '$2 heeft "$3" op $1 voor vertaling gemarkeerd. U kunt de pagina vertalen via $4',
 	'translationnotifications-edit-summary' => 'Melding over vertaling: $1',
 	'translationnotifications-email-priority' => 'De prioriteit voor deze pagina is $1.',
 	'translationnotifications-email-deadline' => 'De deadline voor het vertalen van deze pagina is $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|heeft}} een melding verzonden voor de vertaalbare pagina $3; talen: $4; deadline: $5; prioriteit: $6; verzonden aan {{PLURAL:$7|één ontvanger|$7 ontvangers}}, mislukt voor {{PLURAL:$8|één ontvanger|$8 ontvangers}}, overgeslagen voor {{PLURAL:$9|één ontvanger|$9 ontvangers}}', # Fuzzy
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|heeft}} een melding verzonden voor de vertaalbare pagina $3; {{PLURAL:$1|taal|talen}}: $4; deadline: $5; prioriteit: $6; verzonden aan {{PLURAL:$7|één ontvanger|$7 ontvangers}}, mislukt voor {{PLURAL:$8|één ontvanger|$8 ontvangers}}, overgeslagen voor {{PLURAL:$9|één ontvanger|$9 ontvangers}}',
 	'log-name-notifytranslators' => 'Meldingen over vertalingen',
 	'log-description-notifytranslators' => "Een logboek van meldingen verzonden naar vertalers over vertaalbare pagina's",
 	'translationnotifications-sent-title' => 'De melding aan vertalers is verzonden',
