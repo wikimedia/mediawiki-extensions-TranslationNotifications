@@ -1,0 +1,12 @@
+{
+        "name": "mediawiki/translation-notifications",
+        "type": "mediawiki-extension",
+        "description": "Manage communication with translators",
+        "homepage": "http://www.mediawiki.org/wiki/Extension:TranslationNotifications",
+        "license" : "GPL-2.0+",
+
+        "require": {
+				"composer/installers" : "*",
+                "mediawiki/translate" : "dev-master"
+        }
+}
