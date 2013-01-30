@@ -3065,7 +3065,7 @@ $messages['nn'] = array(
 	'translationnotifications-email-subject' => 'Gjer vel å setja om sida $1',
 	'translationnotifications-talkpage-body' => 'Hei $2,
 
-Du mottek dette varselet av di du melde deg på som omsetjar {{PLURAL:$9|for}} $3 på {{SITENAME}}.
+Du mottek dette varselet av di du {{GENDER:$1|melde deg på}} som omsetjar {{PLURAL:$9|for}} $3 på {{SITENAME}}.
 Sida [[$4]] er tilgjengeleg for omsetjing. Du kan setja henne om her:
 $5
 
@@ -3074,11 +3074,11 @@ $7
 
 $8
 
-Hjelpa di er høgt verdsett. Omsetjarar som deg hjelper {{SITENAME}} med å fungera som eit sant mangspråkleg fellesskap.
+Hjelpa di er høgt verdsett. Omsetjarar som deg hjelper {{SITENAME}} med å fungera som ein sann mangspråkleg fellesskap.
 
 Takk!
 
-Omsetjingskoordinatorane for {{SITENAME}}', # Fuzzy
+Omsetjingskoordinatorane for {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'set om til $1',
 	'translationnotifications-edit-summary' => 'Omsetjingsvarsel: $1',
 	'translationnotifications-email-priority' => 'Sida har $1 prioritet.',
