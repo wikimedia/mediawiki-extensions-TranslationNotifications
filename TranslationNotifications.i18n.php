@@ -4352,6 +4352,11 @@ $messages['yi'] = array(
 	'translationnotifications-nolang' => 'קלויבט א שפראך',
 	'translationnotifications-cmethod-email' => 'ע-פאסט',
 	'translationnotifications-cmethod-talkpage' => 'רעדן בלאַט',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'רעדן בלאט אויף אן אנדער וויקי',
+	'translationnotifications-freq-week' => 'העכסטנס איינמאל א וואך',
+	'translationnotifications-freq-month' => 'העכסטנס איינמאל א מאנאט',
+	'translationnotifications-freq-weekly' => 'וואכנטלעכער באריכט',
+	'translationnotifications-freq-monthly' => 'מאנאטלעכער באריכט',
 	'translationnotifications-priority' => 'פריאריטעט:',
 	'translationnotifications-priority-high' => 'הויך',
 	'translationnotifications-priority-medium' => 'מיטל',
@@ -4362,7 +4367,7 @@ $messages['yi'] = array(
 	'translationnotifications-email-subject' => 'זייט אזוי גוט זעצט איבער דעם בלאט $1',
 	'translationnotifications-email-body' => 'טייערער $1,
 
-איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגשריבן ווי אן איבערזעצער אויף $2 ביי {{SITENAME}}.
+איר באקומט דעם ע־פאסט ווייל איר {{GENDER:$10|האט זיך אונטערגשריבן}} ווי אן איבערזעצער {{PLURAL:$9|אויף}} $2 ביי {{SITENAME}}.
 
 עס איז פאראן א בלאט איבערצוזעצן דארט: $3.
 
@@ -4382,10 +4387,10 @@ $7
 
 ----
 
-איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגעשריבן צו באקומען בליצבריוון מיט א שייכות צו איבערזעצונגען ביי  {{SITENAME}}. זיך אומאבאנירן, אדער צו ענדערן  אייער אנזאג פרעפערענצן פאר איבערזעצונגען, זייט אזוי גוט באזוכט $8.', # Fuzzy
+איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגעשריבן צו באקומען בליצבריוון מיט א שייכות צו איבערזעצונגען ביי  {{SITENAME}}. זיך אומאבאנירן, אדער צו ענדערן  אייער אנזאג פרעפערענצן פאר איבערזעצונגען, זייט אזוי גוט באזוכט $8.',
 	'translationnotifications-talkpage-body' => 'טייערער $2,
 
-איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגשריבן ווי אן איבערזעצער אויף $3 ביי {{SITENAME}}.
+איר באקומט דעם ע־פאסט ווייל איר {{GENDER:$1|האט זיך אונטערגשריבן}} ווי אן איבערזעצער {{PLURAL:$9|אויף}} $3 ביי {{SITENAME}}.
 ס\'איז פאראן דער בלאט [[$4]] איבערצוזעצן. איר קענט אים איבערזעצן דא:
 $5
 
@@ -4399,7 +4404,7 @@ $8
 
 א ייש"כ!
 
-{{SITENAME}} איבערזעצונג קאארדינאטארן', # Fuzzy
+{{SITENAME}} איבערזעצונג קאארדינאטארן',
 	'translationnotifications-notification-url-listitem' => 'איבערזעצן אויף $1',
 	'translationnotifications-digestemail-body' => 'טייערער $1,
 
