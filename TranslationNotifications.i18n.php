@@ -231,7 +231,8 @@ Used in {{msg-mw|translationnotifications-email-body}}',
 	'translationnotifications-sent-title' => 'The title of the page shown after the notification is sent.
 Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
-	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified. Traduction en français : "aucune" (date limite)',
+	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified. Traduction en français : "aucune" (date limite).
+{{Identical|None}}',
 	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.',
 );
 
@@ -3548,8 +3549,14 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'translationnotifications-info' => "'Mbormaziune de l'utende",
+	'translationnotifications-username' => "Nome de l'utende:",
+	'translationnotifications-emailstatus' => "State d'a mail:",
+	'translationnotifications-languages' => 'Lènghe',
 	'translationnotifications-lang' => 'Lénghe #$1',
+	'translationnotifications-nolang' => "Scacchie 'na lènghe",
 	'translationnotifications-cmethod-email' => 'E-mail',
+	'translationnotifications-cmethod-talkpage' => "Pàgene de le 'ngazzaminde",
 );
 
 /** Russian (русский)
