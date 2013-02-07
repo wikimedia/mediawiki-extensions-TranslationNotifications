@@ -3028,7 +3028,7 @@ U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-m
 	'translationnotifications-signup-legal' => 'Door deze gegevens te verstrekken stemt u ermee in dat we contact met u mogen opnemen over onderwerpen over {{SITENAME}} waarvan wij denken dat ze uw interesse hebben. U gaat stemt ermee in dat uw gegevens onder ons [[{{MediaWiki:Privacypage}}|privacybeleid]] vallen.',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Njardarlogar
  */
 $messages['nn'] = array(
