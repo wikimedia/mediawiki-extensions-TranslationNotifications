@@ -2178,6 +2178,8 @@ $messages['ka'] = array(
 	'translationnotifications-cmethod-talkpage' => 'განხილვის გვერდი',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'განხილვის გვერდი სხვა ვიკიში',
 	'translationnotifications-cmethod-feed' => 'არხი',
+	'translationnotifications-freq-weekly' => 'ყოველკვირეული დაიჯესტი',
+	'translationnotifications-freq-monthly' => 'ყოველთვიური დაიჯესტი',
 	'translationnotifications-submit' => 'პარამეტრების განახლება',
 	'translationnotifications-priority' => 'პრიორიტეტი:',
 	'translationnotifications-priority-high' => 'მაღალი',
@@ -2185,6 +2187,7 @@ $messages['ka'] = array(
 	'translationnotifications-priority-low' => 'დაბალი',
 	'translationnotifications-priority-unset' => '(არ არის არჩეული)',
 	'translationnotifications-translatablepage-title' => 'თარგმნადი გვერდის სახელი:',
+	'translationnotifications-email-subject' => 'გთხოვთ, თარგმნეთ გვერდი $1',
 	'translationnotifications-log-alllanguages' => 'ყველა ენა',
 	'translationnotifications-nodeadline' => 'არა',
 );
