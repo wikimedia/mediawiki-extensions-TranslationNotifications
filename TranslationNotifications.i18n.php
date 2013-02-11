@@ -143,7 +143,8 @@ $messages['qqq'] = array(
 	'translatorsignup-summary' => 'Text on top of Special:TranslatorSignup.',
 	'translationnotifications-desc' => '{{desc}}',
 	'translationnotifications-info' => 'Fieldset header',
-	'translationnotifications-username' => 'Label followed by username',
+	'translationnotifications-username' => 'Label followed by username.
+{{Identical|Username}}',
 	'translationnotifications-emailstatus' => 'Label',
 	'translationnotifications-email-confirmed' => 'Status of e-mail confirmation after {{msg-mw|translationnotifications-emailstatus}}.',
 	'translationnotifications-email-disablemail' => 'A message that appears on top of Special:TranslatorSignup if the email address is confirmed, the user disabled email in the preferences.',
@@ -1623,7 +1624,7 @@ $messages['he'] = array(
 	'translationnotifications-email-subject' => 'נא לתרגם את הדף $1',
 	'translationnotifications-email-body' => 'שלום $1,
 
-קיבלת את המכתב הזה כי נרשמת בתור מתרגם ל$2 באתר {{SITENAME}}.
+קיבלת את המכתב הזה כי נרשמת בתור {{GENDER:$10|מתרגם|מתרגמת}} {{PLURAL:$9}ל}}$2 באתר {{SITENAME}}.
 
 יש שם דף חדש שצריך לתרגם: $3.
 אפשר לתרגם אותו על־ידי לחיצה על הקישור הבא:
@@ -1631,10 +1632,11 @@ $4
 
 $5
 $6
+
 $7
 
 אנחנו מעריכים מאוד את עזרתך. מתרגמים כמוך עוזרים לאתר {{SITENAME}} לתפקד
-כמו קהילה רב־לשונית אמתית.
+כקהילה רב־לשונית אמתית.
 
 תודה!
 רכזי תרגום באתר {{SITENAME}}
@@ -1645,7 +1647,7 @@ $7
 $8', # Fuzzy
 	'translationnotifications-talkpage-body' => 'שלום $2,
 
-קיבלת את ההודעה הזאת מכיוון שנרשמת בתור מתרגם ל{{GRAMMAR:תחילית|$3}} באתר {{SITENAME}}.
+קיבלת את ההודעה הזאת מכיוון שנרשמת בתור {{GENDER:$1|מתרגם|מתרגמת}} {{PLURAL:$9|ל}}{{GRAMMAR:תחילית|$3}} באתר {{SITENAME}}.
 דף חדש בשם [[$4]] זמין לתרגום. אנו מבקשים ממך לתרגם אותו בקישור הבא:
 $5
 
@@ -1659,12 +1661,12 @@ $8
 
 תודה!
 
-רכזי תרגום באתר {{SITENAME}}', # Fuzzy
+רכזי תרגום באתר {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'תרגום ל{{GRAMMAR:תחילית|$1}}',
 	'translationnotifications-digestemail-subject' => 'מכתב עם סיכום בקשות תרגום מאתר {{SITENAME}}',
 	'translationnotifications-digestemail-body' => "שלום $1,
 
-קיבלת את ההודעה הזאת מכיוון שנרשמת בתור מתרגם ל{{GRAMMAR:תחילית|$2}} באתר {{SITENAME}}.
+קיבלת את ההודעה הזאת מכיוון שנרשמת בתור {{GENDER:$1|מתרגם|מתרגמת}} {{PLURAL:$3|ל}}{{GRAMMAR:תחילית|$2}} באתר {{SITENAME}}.
 {{PLURAL:$3|דף אחד חדש זמין|יש $3 דפים חדשים שזמינים}} לתרגום. ר' את הפרטים להלן.
 
 $4
@@ -1678,12 +1680,12 @@ $4
 
 ----
 
-קיבלת את המכתב הזה כי נרשמת לקבלת מכתבים בנושא תרגומים באתר {{SITENAME}}. כדי לבטל את המינוי או לשנות את הגדרות שלך על ההודעות בנושא תרגומים, נא לבקר בדף <$5> .", # Fuzzy
+קיבלת את המכתב הזה כי נרשמת לקבלת מכתבים בנושא תרגומים באתר {{SITENAME}}. כדי לבטל את המינוי או לשנות את הגדרות שלך על ההודעות בנושא תרגומים, נא לבקר בדף <$5> .",
 	'translationnotifications-digestemail-notification-line' => 'ב־$1, המשתמש $2 סימן את הדף "$3" לתרגום. אפשר לתרגם אותו בקישור $4',
 	'translationnotifications-edit-summary' => 'הודעה על תרגום: $1',
 	'translationnotifications-email-priority' => 'העדיפות של הדף הזה: $1.',
 	'translationnotifications-email-deadline' => 'התאריך הסופי לתרגום הדף הזה הוא $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|שלח|שלחה}} מכתב עם בקשה לתרגם את הדף $3; שפות: $4; תאריך סופי: $5; עדיפות: $6; השליחה הצליחה ל{{PLURAL:$7|מקבל אחד|־$7 מקבלים}}, נכשלה ל{{PLURAL:$8|מקבל אחד|־$8 מקבלים}}, ודילגה על {{PLURAL:$9|מקבל אחד|$9 מקבלים}}', # Fuzzy
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|שלח|שלחה}} מכתב עם בקשה לתרגם את הדף $3; {{PLURAL:$1|שפה|שפות}}: $4; תאריך סופי: $5; עדיפות: $6; השליחה הצליחה ל{{PLURAL:$7|מקבל אחד|־$7 מקבלים}}, נכשלה {{PLURAL:$8|למקבל אחד|ל־$8 מקבלים}}, ודילגה על {{PLURAL:$9|מקבל אחד|$9 מקבלים}}',
 	'log-name-notifytranslators' => 'מכתבים למתרגמים',
 	'log-description-notifytranslators' => 'יומן של מכתבים שנשלחים למתרגמים על דפים שאפשר לתרגם',
 	'translationnotifications-sent-title' => 'נשלח מכתב למתרגמים',
@@ -4367,6 +4369,7 @@ $messages['yi'] = array(
 	'translationnotifications-freq-month' => 'העכסטנס איינמאל א מאנאט',
 	'translationnotifications-freq-weekly' => 'וואכנטלעכער באריכט',
 	'translationnotifications-freq-monthly' => 'מאנאטלעכער באריכט',
+	'translationnotifications-submit' => 'דערהיינטיקן איינשטעלונגען',
 	'translationnotifications-priority' => 'פריאריטעט:',
 	'translationnotifications-priority-high' => 'הויך',
 	'translationnotifications-priority-medium' => 'מיטל',
@@ -4418,7 +4421,7 @@ $8
 	'translationnotifications-notification-url-listitem' => 'איבערזעצן אויף $1',
 	'translationnotifications-digestemail-body' => 'טייערער $1,
 
-איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגשריבן ווי אן איבערזעצער אויף $2 ביי {{SITENAME}}.
+איר באקומט דעם ע־פאסט ווייל איר {{GENDER:$1|האט זיך אונטערגשריבן}} ווי אן איבערזעצער אויף $2 ביי {{SITENAME}}.
 
 עס  {{PLURAL:$3|איז פאראן 1 בלאט|זענען פאראן $3 בלעטער}} איבערצוזעצן. פרטים קענט איר טרעפן אונטן.
 
@@ -4432,12 +4435,12 @@ $4
 
 ----
 
-איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגעשריבן צו באקומען בליצבריוון מיט א שייכות צו איבערזעצונגען ביי  {{SITENAME}}. זיך אומאבאנירן, אדער צו ענדערן  אייער אנזאג פרעפערענצן פאר איבערזעצונגען, זייט אזוי גוט באזוכט <$5>.', # Fuzzy
+איר באקומט דעם ע־פאסט ווייל איר האט זיך אונטערגעשריבן צו באקומען בליצבריוון מיט א שייכות צו איבערזעצונגען ביי  {{SITENAME}}. זיך אומאבאנירן, אדער צו ענדערן  אייער אנזאג פרעפערענצן פאר איבערזעצונגען, זייט אזוי גוט באזוכט <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'אום $1, האט $2 מארקירט דעם בלאט "$3" פאר איבערזעצן. איר קענט אים איבערזעצן ביי $4.',
 	'translationnotifications-edit-summary' => 'איבערזעצונג אנזאג: $1',
 	'translationnotifications-email-priority' => 'די פריאריטעט פון דעם בלאט איז $1.',
 	'translationnotifications-email-deadline' => 'דער טערמין פאר איבערזעצן דעם בלאט איז $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|האט געשיקט}} אן אנזאג וועגן איבערזעצן בלאט $3; שפראכן: $4; טערמין: $5; פריאריטעט: $6; געשיקט מיט דערפאלג צו {{PLURAL:$7|איין באקומער|$7 באקומער}}, דורכגעפאלן פאר {{PLURAL:$8|איין באקומער|$8 באקומער}}, איבערגעהיפט {{PLURAL:$9|איין באקומער|$9 באקומער}}', # Fuzzy
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|האט געשיקט}} אן אנזאג וועגן איבערזעצן בלאט $3; {{PLURAL:$1|שפראך|שפראכן}}: $4; טערמין: $5; פריאריטעט: $6; געשיקט מיט דערפאלג צו {{PLURAL:$7|איין באקומער|$7 באקומער}}, דורכגעפאלן פאר {{PLURAL:$8|איין באקומער|$8 באקומער}}, איבערגעהיפט {{PLURAL:$9|איין באקומער|$9 באקומער}}',
 	'log-name-notifytranslators' => 'איבערזעצונג אנזאגן',
 	'log-description-notifytranslators' => 'לאגבוך פון אנזאגן געשיקט צו איבערזעצער וועגן איבערזעצבארע בלעטער',
 	'translationnotifications-sent-title' => 'איבערזעצונג אנזאג געשיקט',
