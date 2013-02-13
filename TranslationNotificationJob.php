@@ -16,13 +16,17 @@ class TranslationNotificationJob extends Job {
 	 */
 	public function run() {
 		if ( isset( $this->params['otherwiki'] ) ) {
-			$publishInOtherWikiResult = $this->publishInOtherWiki();
-			wfDebug( 'Sending translation notification to a talk page in '
-				. $this->params['otherwiki']
-				. ": $publishInOtherWikiResult\n" );
+			$status = $this->publishInOtherWiki();
 		} else {
-			$this->publishHere();
+			$status = $this->publishHere();
 		}
+
+		if ( $status !== true ) {
+			$this->setLastError( $status );
+			return false;
+		}
+
+		return true;
 	}
 
 	private function textDiv() {
@@ -50,7 +54,7 @@ class TranslationNotificationJob extends Job {
 				$textContent = $content->getNativeData();
 			} else {
 				// Cannot do anything with non-TextContent pages. Shouldn't happen.
-				return false;
+				return true;
 			}
 
 			$text = $textContent . "\n" . $text;
@@ -203,6 +207,6 @@ class TranslationNotificationJob extends Job {
 			return "Error editing the page";
 		}
 
-		return "The page was edited succesfully";
+		return true;
 	}
 }
