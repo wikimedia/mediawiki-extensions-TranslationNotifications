@@ -1073,7 +1073,7 @@ $messages['et'] = array(
 	'translationnotifications-email-subject' => 'Palun tõlgi lehekülg $1',
 	'translationnotifications-email-body' => 'Tere, $1.
 
-Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $2 {{PLURAL:$9|keelde}} tõlkijana.
+Said selle e-kirja, sest {{GENDER:$10|andsid}} võrgukohas {{SITENAME}} end üles $2 {{PLURAL:$9|keelde}} tõlkijana.
 
 Tõlkimiseks on järgmine lehekülg: $3.
 Et see tõlkida, klõpsa palun järgmisele lingile:
@@ -1093,10 +1093,10 @@ Tõlkekoordineerijad
 
 ----
 
-Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge $8.', # Fuzzy
+Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge $8.',
 	'translationnotifications-talkpage-body' => 'Tere, $2.
 
-Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $3 keelde tõlkijana.
+Said selle e-kirja, sest {{GENDER:$1|andsid}} võrgukohas {{SITENAME}} end üles {{PLURAL:$9|$3}} keelde tõlkijana.
 Lehekülg [[$4]] on saadaval tõlkimiseks. Palun tõlgi see siin:
 $5
 
@@ -1111,12 +1111,12 @@ tõelise paljukeelse kogukonnana.
 Aitäh!
 
 Tõlkekoordineerijad
-{{SITENAME}}', # Fuzzy
+{{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'tõlgi $1 keelde',
 	'translationnotifications-digestemail-subject' => 'Tõlkepalvete ülevaade võrgukohast {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Tere, $1.
 
-Said selle e-kirja, sest andsid võrgukohas {{SITENAME}} end üles $2 keelde tõlkijana.
+Said selle e-kirja, sest {{GENDER:$1|andsid}} võrgukohas {{SITENAME}} end üles $2 keelde tõlkijana.
 {{PLURAL:$3|Üks lehekülg|$3 lehekülge}} on tõlkida. Üksikasjad leiad altpoolt.
 
 $4
@@ -1130,7 +1130,7 @@ Tõlkekoordineerijad
 
 ----
 
-Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge <$5>.', # Fuzzy
+Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge <$5>.',
 	'translationnotifications-digestemail-notification-line' => '$1: $2 märkis lehekülje "$3" tõlkimiseks. Saad selle tõlkida siin: $4.',
 	'translationnotifications-edit-summary' => 'Tõlketeavitus: $1',
 	'translationnotifications-email-priority' => 'Selle lehekülje tõlkimine on $1.',
