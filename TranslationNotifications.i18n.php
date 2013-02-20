@@ -171,7 +171,8 @@ $messages['qqq'] = array(
 	'translationnotifications-send-notification-button' => 'A title for the submit button of the translator notification form.',
 	'translationnotifications-deadline-label' => 'A label for the deadline field, which will have a datepicker.',
 	'translationnotifications-languages-to-notify-label' => 'A label for language codes field.',
-	'translationnotifications-priority' => 'A label for translation priority field.',
+	'translationnotifications-priority' => 'A label for translation priority field.
+{{Identical|Priority}}',
 	'translationnotifications-priority-high' => 'high (priority), an item in a dropdown box.
 {{Identical|High}}',
 	'translationnotifications-priority-medium' => 'medium (priority), an item in a dropdown box.',
@@ -2082,10 +2083,10 @@ $messages['ja'] = array(
 	'notifytranslators' => '翻訳者に通知',
 	'translationnotifications-submit-ok' => '通知をキューに追加しました。通知はバックグラウンドジョブによって送信されます。',
 	'translationnotifications-send-notification-button' => '翻訳者に通知を送信',
-	'translationnotifications-deadline-label' => 'この通知で指定する締め切り：',
-	'translationnotifications-languages-to-notify-label' => '通知する言語：',
+	'translationnotifications-deadline-label' => 'この通知で指定する締め切り:',
+	'translationnotifications-languages-to-notify-label' => '通知する言語:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'カンマ区切りの言語コードです。すべての言語を通知する場合は空欄にします。',
-	'translationnotifications-priority' => '優先度：',
+	'translationnotifications-priority' => '優先度:',
 	'translationnotifications-priority-high' => '高',
 	'translationnotifications-priority-medium' => '中',
 	'translationnotifications-priority-low' => '低',
