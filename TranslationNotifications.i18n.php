@@ -3316,16 +3316,17 @@ Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile 
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  * @author පසිඳු කාවින්ද
  */
 $messages['pms'] = array(
 	'translatorsignup' => 'Iscrission al tradutor',
-	'translatorsignup-summary' => 'Dòvra sta pagina për andiché an che lenga it veule volté, e com it veule esse contatà a propòsit ëd neuve arceste ëd tradussion.',
-	'translationnotifications-desc' => 'A përmëtt al tradutor ëd marchesse për notificassion ëd tradussion',
-	'translationnotifications-info' => 'Anformassion utent',
+	'translatorsignup-summary' => "Ch'a deuvra costa pàgina për andiché an che lenga a peul volté, e com a veul esse contatà a propòsit ëd le neuve arceste ëd tradussion.",
+	'translationnotifications-desc' => 'A përmët ai tradutor ëd marchesse për dle notìfiche ëd tradussion',
+	'translationnotifications-info' => "Anformassion an sl'utent",
 	'translationnotifications-username' => 'Stranòm:',
-	'translationnotifications-emailstatus' => "Stat ëd l'e-mail:",
+	'translationnotifications-emailstatus' => 'Stat ëd la pòsta eletrònica:',
 	'translationnotifications-email-confirmed' => "Toa adrëssa ëd pòsta eletrònica a l'é confirmà",
 	'translationnotifications-email-disablemail' => "Toa adrëssa ëd corel a l'é confirmà, ma an [[Special:Preferences|your preferences]] it l'has ciamà d'arsèive pa corej.",
 	'translationnotifications-email-unconfirmed' => "Toa adrëssa ëd pòsta eletrònica a l'é pa confirmà. $1",
