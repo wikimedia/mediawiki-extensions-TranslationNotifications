@@ -3341,32 +3341,32 @@ $messages['pms'] = array(
 	'translationnotifications-cmethod-feed' => 'Fluss',
 	'translationnotifications-frequency' => 'Frequensa ëd contat',
 	'translationnotifications-freq-always' => 'Quand a-i é quaicòs ëd neuv da volté',
-	'translationnotifications-freq-week' => 'Al pi na vira a sman-a',
+	'translationnotifications-freq-week' => 'Al pi na vira a la sman-a',
 	'translationnotifications-freq-month' => 'Al pi na vira al mèis',
-	'translationnotifications-freq-weekly' => 'Resumé setimanal',
+	'translationnotifications-freq-weekly' => 'Resumé ebdomadari',
 	'translationnotifications-freq-monthly' => 'Resumé mensil',
 	'translationnotifications-submit' => "Paràmeter d'agiornament",
 	'translationnotifications-signup-success' => 'Ij tò gust ëd notìfica ëd tradussion a son stàit salvà.',
-	'notifytranslators' => 'Notìfica tradutor',
-	'translationnotifications-submit-ok' => 'Notìfiche a son stàite giontà a la coa e a son consignà da un process an background.',
+	'notifytranslators' => 'Anformé ij tradutor',
+	'translationnotifications-submit-ok' => 'Dle notìfiche a son stàite giontà a na coa e a son consignà da un process dë sfond.',
 	'translationnotifications-send-notification-button' => 'Manda na notìfica ai tradutor',
 	'translationnotifications-deadline-label' => 'Fin da andiché an sta notìfica:',
 	'translationnotifications-languages-to-notify-label' => 'Che lenghe notifiché:',
-	'translationnotifications-languages-to-notify-label-help-message' => 'Còdes ëd lenghe separà da vìrgole; lassa bianch për notifiché tute le lenghe.',
+	'translationnotifications-languages-to-notify-label-help-message' => "Còdes ëd lenga separà da dle vìrgole; ch'a lassa veuid për notifiché tute le lenghe.",
 	'translationnotifications-priority' => 'Priorità:',
 	'translationnotifications-priority-high' => 'àut',
-	'translationnotifications-priority-medium' => 'medi',
+	'translationnotifications-priority-medium' => 'mesan-a',
 	'translationnotifications-priority-low' => 'bass',
 	'translationnotifications-priority-unset' => '(disativà)',
-	'translationnotifications-translatablepage-title' => 'Nòm ëd pagina voltàbila:',
-	'translationnotifications-error-no-translatable-pages' => 'A-i son gnun-e pagine voltàbile an sta wiki.',
-	'translationnotifications-email-subject' => 'Për piasì volta la pagina $1.',
+	'translationnotifications-translatablepage-title' => 'Nòm ëd la pàgina da volté:',
+	'translationnotifications-error-no-translatable-pages' => 'A-i son gnun-e pàgine da volté an costa wiki.',
+	'translationnotifications-email-subject' => "Për piasì, ch'a vòlta la pàgina $1.",
 	'translationnotifications-email-body' => "Cerea $1,
 
-It të stas arseivend sto corel përché {{GENDER:$10|it ses signate}} com tradutor {{PLURAL:$9|a}} $2 dzor {{SITENAME}}.
+A arsèiv ës mëssagi përché {{GENDER:$10|a l'é marcasse}} com tradutor {{PLURAL:$9|a}} $2 dzor {{SITENAME}}.
 
 A-i é na pagina da volté ambelessì: $3.
-It peule voltela sgnacand ij colegament sota:
+A peul voltela an sgnacand ansima a costa liura:
 $4
 
 $5
@@ -3374,19 +3374,19 @@ $6
 
 $7
 
-Tò agiut a l'é motobin pressià. Ij tradutor com ti a giuto {{SITENAME}} a funsioné
-com na comunità verament multilingual.
+Sò agiut a l'é motobin apressià. Ij tradutor com chiel a giuto {{SITENAME}} a marcé
+com na comunità multilenga për da bon.
 
 Mersì!
-{{SITENAME}} coordinador ëd tradussion
+Ij coordinator ëd tradussion ëd {{SITENAME}}
 
 ----
 
-It të stas arseivend sto corel përchè it ses signate për arseive corej relativ a tradussion dzor {{SITENAME}}. Për disiscrivte o për cangé ij tò gust ëd notìfica, për piasì vìsita $8.",
+A arsèiv ëd mëssagi përchè a l'é marcasse për arsèive dij mëssagi relativ a le tradussion dzor {{SITENAME}}. Për scancelé soa anscrission o për cangé ij sò gust ëd notìfica, për piasì ch'a vìsita $8.",
 	'translationnotifications-talkpage-body' => "Cerea $2,
 
-It të stas arseivend sta notìfica përché {{GENDER:$1|it ses signate}} com tradutor {{PLURAL:$9|a}} $3 dzor {{SITENAME}}.
-La pagina [[$4]] a l'é disponìbila për tradussion. It peule voltela ambelessì:
+A arsèiv sta notìfica përché {{GENDER:$1|a l'é marcasse}} com tradutor {{PLURAL:$9|a}} $3 dzor {{SITENAME}}.
+La pàgina [[$4]] a l'é disponìbil për la tradussion. A peul voltela ambelessì:
 $5
 
 $6
@@ -3394,35 +3394,35 @@ $7
 
 $8
 
-Tò agiut a l'é motobin pressià. Ij tradutor com ti a giuto {{SITENAME}} a funsioné
-com na comunità verament multilingual.
+Sò agiut a l'é motobin apressià. Dij tradutor com chiel a giuto {{SITENAME}} a marcé
+com na comunità multilenga për da bon.
 
 Mersì!
 
-{{SITENAME}} coordinador ëd tradussion",
+Ij coordinator ëd la tradussion ëd {{SITENAME}}",
 	'translationnotifications-notification-url-listitem' => 'vòlta an $1',
-	'translationnotifications-digestemail-subject' => 'Resumé corej për arceste ëd tradussion da {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => "Mëssagi ëd sìntesi për j'arceste ëd tradussion da {{SITENAME}}",
 	'translationnotifications-digestemail-body' => "Cerea $1,
 
-It të stas arseivend sto corel përché {{GENDER:$1|it ses signate}} com tradutor a $2 dzor {{SITENAME}}.
+A arsèiv ës mëssagi përché {{GENDER:$1|a l'é marcasse}} com tradutor an $2 dzor {{SITENAME}}.
 
-A-i {{PLURAL:$3|é 1 pagina|son $3 pagine}} disponìbij për tradussion.
-Ij detaj a son dàit sota.
+A-i {{PLURAL:$3|é 1 pàgina|son $3 pàgine}} disponìbij për la tradussion.
+Ij detaj a son dàit sì-sota.
 
 $4
 
-Tò agiut a l'é motobin pressià. Ij tradutor com ti a giuto {{SITENAME}} a funsioné
-com na comunità verament multilingual.
+Sò agiut a l'é motobin apressià. Dij tradutor com chiel a giuto {{SITENAME}} a marcé
+com na comunità multilenga për da bon.
 
 Mersì!
-{{SITENAME}} coordinador ëd tradussion
+Ij coordinator ëd la tradussion ëd {{SITENAME}}
 
 ----
 
-It të stas arseivend sto corel përchè it ses signate për arseive corej relativ a tradussion dzor {{SITENAME}}. Për disiscrivte o për cangé ij tò gust ëd notìfica për tradussion, për piasì vìsita <$5>.",
-	'translationnotifications-digestemail-notification-line' => 'Ël $1, $2 a l\'é marcasse "$3" për tradussion. It peule voltelo a $4',
+A arsèiv ës mëssagi përchè a l'é marcasse për arsèive dij mëssagi relativ a le tradussion dzor {{SITENAME}}. Për scancelé soa anscrission o për cangé ij sò gust ëd notìfica për le tradussion, për piasì ch'a vìsita <$5>.",
+	'translationnotifications-digestemail-notification-line' => "Ël $1, $2 a l'ha marcà «$3» për la tradussion. A peul voltelo a $4",
 	'translationnotifications-edit-summary' => 'Notìfiche ëd tradussion: $1',
-	'translationnotifications-email-priority' => "La priorità dë sta pagina a l'é $1.",
+	'translationnotifications-email-priority' => "La priorità dë sta pàgina a l'é $1.",
 	'translationnotifications-email-deadline' => "La fin për volté sta pagina a l'é $1.",
 	'logentry-translationnotifications-sent' => "$1 {{GENDER:$2|a l'ha mandà}} na notìfica a propòsit ëd volté la pagina $3; {{PLURAL:$1|lenga|lenghe}}: $4; fin: $5; priorità: $6; mandà a {{PLURAL:$7|un ricevent|$7 ricevent}}, falì për {{PLURAL:$8|un ricevent|$8 ricevent}}, sautà për {{PLURAL:$9|un ricevent|$9 ricevent}}",
 	'log-name-notifytranslators' => 'Notìfiche ëd tradussion',
