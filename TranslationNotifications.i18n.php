@@ -117,7 +117,7 @@ You are receiving this e-mail because you signed up to receive e-mails related t
 	'translationnotifications-edit-summary' => 'Translation notification: $1',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
 	'translationnotifications-email-deadline' => 'The deadline for translating this page is $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3; {{PLURAL:$1|language|languages}}: $4; deadline: $5; priority: $6; sent to {{PLURAL:$7|one recipient|$7 recipients}}, failed for {{PLURAL:$8|one recipient|$8 recipients}}, skipped for {{PLURAL:$9|one recipient|$9 recipients}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|sent}} a notification about translating page $3; {{PLURAL:$10|language|languages}}: $4; deadline: $5; priority: $6; sent to {{PLURAL:$7|one recipient|$7 recipients}}, failed for {{PLURAL:$8|one recipient|$8 recipients}}, skipped for {{PLURAL:$9|one recipient|$9 recipients}}',
 	'log-name-notifytranslators' => 'Translation notifications',
 	'log-description-notifytranslators' => 'A log of notifications sent to translators about translatable pages',
 	'translationnotifications-sent-title' => 'Translation notification sent',
