@@ -18,16 +18,16 @@ $messages['en'] = array(
 	'translationnotifications-desc' => 'Allows translators to sign up for translation notifications',
 	'translationnotifications-info' => 'User information',
 	'translationnotifications-username' => 'Username:',
-	'translationnotifications-emailstatus' => 'E-mail status:',
-	'translationnotifications-email-confirmed' => 'Your e-mail address is confirmed',
-	'translationnotifications-email-disablemail' => 'Your e-mail address is confirmed, but in [[Special:Preferences|your preferences]] you asked not to receive e-mail.',
-	'translationnotifications-email-unconfirmed' => 'Your e-mail address is not confirmed. $1',
-	'translationnotifications-email-notset' => 'You have not provided an e-mail address. You can do that in your [[Special:Preferences|preferences]].',
+	'translationnotifications-emailstatus' => 'Email status:',
+	'translationnotifications-email-confirmed' => 'Your email address is confirmed',
+	'translationnotifications-email-disablemail' => 'Your email address is confirmed, but in [[Special:Preferences|your preferences]] you asked not to receive email.',
+	'translationnotifications-email-unconfirmed' => 'Your email address is not confirmed. $1',
+	'translationnotifications-email-notset' => 'You have not provided an email address. You can do that in your [[Special:Preferences|preferences]].',
 	'translationnotifications-languages' => 'Languages',
 	'translationnotifications-lang' => 'Language #$1',
 	'translationnotifications-nolang' => 'Choose a language',
 	'translationnotifications-contact' => 'Preferred contact methods',
-	'translationnotifications-cmethod-email' => 'E-mail',
+	'translationnotifications-cmethod-email' => 'Email',
 	'translationnotifications-cmethod-talkpage' => 'Talk page',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Talk page on other wiki',
 	'translationnotifications-cmethod-feed' => 'Feed',
@@ -57,7 +57,7 @@ $messages['en'] = array(
 	'translationnotifications-email-subject' => 'Please translate the page $1',
 	'translationnotifications-email-body' => 'Hello $1,
 
-You are receiving this e-mail because you {{GENDER:$10|signed up}} as a translator {{PLURAL:$9|to}} $2 on {{SITENAME}}.
+You are receiving this email because you {{GENDER:$10|signed up}} as a translator {{PLURAL:$9|to}} $2 on {{SITENAME}}.
 
 There is a page to translate there: $3.
 You can translate it by clicking the following link:
@@ -76,7 +76,7 @@ Thank you!
 
 ----
 
-You are receiving this e-mail because you signed up to receive e-mails related to translations on {{SITENAME}}. To unsubscribe or to change your notification preferences for translations, please visit $8.',
+You are receiving this email because you signed up to receive emails related to translations on {{SITENAME}}. To unsubscribe or to change your notification preferences for translations, please visit $8.',
 	'translationnotifications-talkpage-body' => 'Hello $2,
 
 You are receiving this notification because you {{GENDER:$1|signed up}} as a translator {{PLURAL:$9|to}} $3 on {{SITENAME}}.
@@ -95,10 +95,10 @@ Thank you!
 
 {{SITENAME}} translation coordinators',
 	'translationnotifications-notification-url-listitem' => 'translate to $1',
-	'translationnotifications-digestemail-subject' => 'Digest e-mail for translation requests from {{SITENAME}}',
+	'translationnotifications-digestemail-subject' => 'Digest email for translation requests from {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hello $1,
 
-You are receiving this e-mail because you {{GENDER:$1|signed up}} as a translator to $2 on {{SITENAME}}.
+You are receiving this email because you {{GENDER:$1|signed up}} as a translator to $2 on {{SITENAME}}.
 
 There {{PLURAL:$3|is 1 page|are $3 pages}} available for translation. The details are given below.
 
@@ -112,7 +112,7 @@ Thank you!
 
 ----
 
-You are receiving this e-mail because you signed up to receive e-mails related to translations on {{SITENAME}}. To unsubscribe or to change your notification preferences for translations, please visit <$5>.',
+You are receiving this email because you signed up to receive emails related to translations on {{SITENAME}}. To unsubscribe or to change your notification preferences for translations, please visit <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'On $1, $2 marked "$3" for translation. You can translate it at $4',
 	'translationnotifications-edit-summary' => 'Translation notification: $1',
 	'translationnotifications-email-priority' => 'The priority of this page is $1.',
@@ -146,11 +146,11 @@ $messages['qqq'] = array(
 	'translationnotifications-username' => 'Label followed by username.
 {{Identical|Username}}',
 	'translationnotifications-emailstatus' => 'Label',
-	'translationnotifications-email-confirmed' => 'Status of e-mail confirmation after {{msg-mw|translationnotifications-emailstatus}}.',
+	'translationnotifications-email-confirmed' => 'Status of email confirmation after {{msg-mw|translationnotifications-emailstatus}}.',
 	'translationnotifications-email-disablemail' => 'A message that appears on top of Special:TranslatorSignup if the email address is confirmed, the user disabled email in the preferences.',
-	'translationnotifications-email-unconfirmed' => 'Status of e-mail confirmation after {{msg-mw|translationnotifications-emailstatus}}. Parameters:
+	'translationnotifications-email-unconfirmed' => 'Status of email confirmation after {{msg-mw|translationnotifications-emailstatus}}. Parameters:
 * $1 is a button which can be used to send confirmation email. Button text is {{msg-mw|confirmemail_send}}.',
-	'translationnotifications-email-notset' => 'Status of e-mail confirmation after {{msg-mw|translationnotifications-emailstatus}}.',
+	'translationnotifications-email-notset' => 'Status of email confirmation after {{msg-mw|translationnotifications-emailstatus}}.',
 	'translationnotifications-languages' => 'Fieldset header',
 	'translationnotifications-lang' => 'Label for select, $1 is a number',
 	'translationnotifications-nolang' => 'First option in a language select',
