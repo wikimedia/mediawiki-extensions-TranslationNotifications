@@ -1419,7 +1419,7 @@ Vous recevez ce courriel parce que vous avez souscrit à la réception de courri
 	'translationnotifications-edit-summary' => 'Notification de traduction : $1',
 	'translationnotifications-email-priority' => 'La priorité de cette page est $1.',
 	'translationnotifications-email-deadline' => 'La date limite pour traduire cette page est $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|a envoyé}} une notification sur la traduction de la page $3; {{PLURAL:$1|langue|langues}}: $4; délai limite: $5; priorité: $6; envoyé à {{PLURAL:$7|un destinataire|$7 destinataires}}, en échec pour {{PLURAL:$8|un destinataire|$8 destinataires}}, sauté pour {{PLURAL:$9|un destinataire|$9 destinataires}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|a envoyé}} une notification sur la traduction de la page $3; {{PLURAL:$1|langue|langues}}: $4; délai limite: $5; priorité: $6; envoyé à {{PLURAL:$7|un destinataire|$7 destinataires}}, échec pour {{PLURAL:$8|un destinataire|$8 destinataires}}, sauté pour {{PLURAL:$9|un destinataire|$9 destinataires}}',
 	'log-name-notifytranslators' => 'Notifications de traduction',
 	'log-description-notifytranslators' => 'Un journal des notifications envoyées aux traducteurs sur les pages à traduire',
 	'translationnotifications-sent-title' => 'Notification de traduction envoyée',
@@ -2595,7 +2595,7 @@ $4
 	'translationnotifications-edit-summary' => 'Известување за превод: $1',
 	'translationnotifications-email-priority' => 'Приоритетот на оваа страница е $1.',
 	'translationnotifications-email-deadline' => 'Крајниот рок за преведување на оваа страница е $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|испрати}} известување за преведување на страницата $3; {{PLURAL:$1|јазик|јазици}}: $4; краен рок: $5; приоритет: $6. Известувањето е испратено на {{PLURAL:$7|еден примач|$7 примачи}}, не успеа кај {{PLURAL:$8|еден примач|$8 примачи}} и изостави {{PLURAL:$9|еден примач|$9 примачи}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|испрати}} известување за преведување на страницата $3; {{PLURAL:$10|јазик|јазици}}: $4; краен рок: $5; приоритет: $6. Известувањето е испратено на {{PLURAL:$7|еден примач|$7 примачи}}, не успеа кај {{PLURAL:$8|еден примач|$8 примачи}} и изостави {{PLURAL:$9|еден примач|$9 примачи}}',
 	'log-name-notifytranslators' => 'Известувања за преведување',
 	'log-description-notifytranslators' => 'Дневник на известувањата што им се испраќаат на преведувачите со што им се соопштува кои страници се достапни за преведување',
 	'translationnotifications-sent-title' => 'Известувањето за преведување е испратено',
@@ -3427,11 +3427,11 @@ A arsèiv ës mëssagi përchè a l'é marcasse për arsèive dij mëssagi relat
 	'logentry-translationnotifications-sent' => "$1 {{GENDER:$2|a l'ha mandà}} na notìfica an sla tradussion ëd la pàgina $3; {{PLURAL:$1|lenga|lenghe}}: $4; scadensa: $5; priorità: $6; mandà a {{PLURAL:$7|un destinatari|$7 destinatari}}, falì për {{PLURAL:$8|un destinatari|$8 destinatari}}, sautà për {{PLURAL:$9|un destinatari|$9 destinatari}}", # Fuzzy
 	'log-name-notifytranslators' => 'Notìfiche ëd tradussion',
 	'log-description-notifytranslators' => 'Un registr ëd le notìfiche mandà ai tradutor a propòsit ëd le pàgine da volté',
-	'translationnotifications-sent-title' => 'Notìfiche ëd tradussion mandà',
+	'translationnotifications-sent-title' => 'Notìfica ëd tradussion mandà',
 	'translationnotifications-sent-body' => "La notìfica ëd tradussion a l'é stàita mandà.",
 	'translationnotifications-log-alllanguages' => 'tute le lenghe',
 	'translationnotifications-nodeadline' => 'gnun',
-	'translationnotifications-signup-legal' => "It ses d'acòrdi che an dasend sta anformassion noi podoma contatete rësguard argoment relativ a {{SITENAME}} che noi pensoma a peulo esse d'anteresse për ti. It ses d'acòrdi che ij tò dat a son soget a nòsta [[{{MediaWiki:Privacypage}}|polìtica ëd privatëssa.]]",
+	'translationnotifications-signup-legal' => "A l'é d'acòrdi che an dasend costa anformassion noi podoma contatelo a propòsit dj'argoment relativ a {{SITENAME}} che noi pensoma a peulo esse d'anteresse për chiel. A l'é d'acòrdi che ij sò dat a sio sogetà a nòstre [[{{MediaWiki:Privacypage}}|régole ëd confidensialità]].",
 );
 
 /** Pashto (پښتو)
