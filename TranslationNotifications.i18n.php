@@ -141,7 +141,7 @@ You are receiving this email because you signed up to receive emails related to 
 $messages['qqq'] = array(
 	'translatorsignup' => 'Special page header',
 	'translatorsignup-summary' => 'Text on top of Special:TranslatorSignup.',
-	'translationnotifications-desc' => '{{desc}}',
+	'translationnotifications-desc' => '{{desc|name=Translation Notifications|url=http://www.mediawiki.org/wiki/Extension:TranslationNotifications}}',
 	'translationnotifications-info' => 'Fieldset header',
 	'translationnotifications-username' => 'Label followed by username.
 {{Identical|Username}}',
@@ -2788,7 +2788,7 @@ Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang be
 	'translationnotifications-edit-summary' => 'Pemberitahuan penterjemahan: $1',
 	'translationnotifications-email-priority' => 'Laman ini diberi prioriti $1.',
 	'translationnotifications-email-deadline' => 'Tarikh tutup penterjemahan laman ini ialah $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|menghantar}} pemberitahuan tentang penterjemahan laman $3; {{PLURAL:$1|bahasa|bahasa-bahasa}}: $4; tarikh tutup: $5; keutamaan: $6; dihantar ke $7 penerima, gagal disampaikan kepada $8 penerima, dilangkaunya $9 penerima',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|menghantar}} pemberitahuan tentang penterjemahan laman $3; {{PLURAL:$10|bahasa|bahasa-bahasa}}: $4; tarikh tutup: $5; keutamaan: $6; dihantar ke $7 penerima, gagal disampaikan kepada $8 penerima, dilangkaunya $9 penerima',
 	'log-name-notifytranslators' => 'Pemberitahuan penterjemahan',
 	'log-description-notifytranslators' => 'Log pemberitahuan yang dihantar kepada penterjemah tentang laman-laman yang boleh diterjemah',
 	'translationnotifications-sent-title' => 'Pemberitahuan penterjemahan dihantar',
