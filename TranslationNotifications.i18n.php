@@ -400,6 +400,7 @@ $messages['bn'] = array(
 );
 
 /** Breton (brezhoneg)
+ * @author Fohanno
  * @author Fulup
  * @author Y-M D
  */
@@ -434,6 +435,7 @@ $messages['br'] = array(
 	'translationnotifications-email-subject' => "Troit ar bajenn $1, mar plij ganeoc'h",
 	'translationnotifications-notification-url-listitem' => 'treiñ e $1',
 	'translationnotifications-email-priority' => '$1 eo live priorelezh ar bajenn-mañ.',
+	'log-name-notifytranslators' => 'Kemennoù treiñ',
 	'translationnotifications-log-alllanguages' => 'an holl yezhoù',
 	'translationnotifications-nodeadline' => 'hini ebet',
 );
