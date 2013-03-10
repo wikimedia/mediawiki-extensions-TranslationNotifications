@@ -1138,7 +1138,7 @@ Said selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-
 	'translationnotifications-edit-summary' => 'Tõlketeavitus: $1',
 	'translationnotifications-email-priority' => 'Selle lehekülje tõlkimine on $1.',
 	'translationnotifications-email-deadline' => 'Selle tõlke tähtaeg on $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|saatis}} teavituse lehekülje $3 tõlkimise kohta; keeled: $4; tähtaeg: $5; tähtsus: $6; saadetud {{PLURAL:$7|ühele|$7}} tõlkijale, {{PLURAL:$8|ühele|$8}} tõlkijale saatmine ebaõnnestus, {{PLURAL:$9|üks tõlkija|$9 tõlkijat}} vahele jäetud', # Fuzzy
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|saatis}} teavituse lehekülje $3 tõlkimise kohta; {{PLURAL:$10|keel|keeled}}: $4; tähtaeg: $5; tähtsus: $6; saadetud {{PLURAL:$7|ühele|$7}} tõlkijale, {{PLURAL:$8|ühele|$8}} tõlkijale saatmine ebaõnnestus, {{PLURAL:$9|üks tõlkija|$9 tõlkijat}} vahele jäetud',
 	'log-name-notifytranslators' => 'Tõlketeavitused',
 	'log-description-notifytranslators' => 'Tõlkijatele lehekülgede tõlkimise kohta saadetud teavituste logi',
 	'translationnotifications-sent-title' => 'Tõlketeavitus saadetud',
