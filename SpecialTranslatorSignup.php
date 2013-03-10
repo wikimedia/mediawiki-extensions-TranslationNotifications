@@ -128,6 +128,9 @@ JAVASCRIPT
 				continue;
 			}
 
+			// Give grep a chance to find the usages:
+			// translationnotifications-cmethod-email, translationnotifications-cmethod-talkpage,
+			// translationnotifications-cmethod-talkpage-elsewhere, translationnotifications-cmethod-feed
 			$m["cmethod-$method"] = array(
 				'type' => 'check',
 				'label-message' => "translationnotifications-cmethod-$method",
