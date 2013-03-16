@@ -2471,6 +2471,7 @@ $messages['lb'] = array(
 	'translationnotifications-send-notification-button' => "Eng Matdeelung un d'Iwwersetzer schécken",
 	'translationnotifications-deadline-label' => 'Delai deen an dëser Matdeelung gesat gëtt:',
 	'translationnotifications-languages-to-notify-label' => 'Wat fir Sprooche sollen informéiert ginn:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Kommagetrennte Sproochcoden; eidel loosse fir Matdeelunge fir all Sproochen ze kréien.',
 	'translationnotifications-priority' => 'Prioritéit:',
 	'translationnotifications-priority-high' => 'héich',
 	'translationnotifications-priority-medium' => 'mëttel',
@@ -2485,6 +2486,8 @@ $messages['lb'] = array(
 	'translationnotifications-email-priority' => "D'Prioritéit vun dëser Säit ass $1.",
 	'translationnotifications-email-deadline' => "Den Delai fir dës säit z'iwwersetzen ass den $1.",
 	'log-name-notifytranslators' => 'Iwwersetzungs-Matdeelungen',
+	'translationnotifications-sent-title' => 'Iwwersetzungs-Matdeelung geschéckt',
+	'translationnotifications-sent-body' => "D'Iwwersetzungs-Matdeelung gouf geschéckt",
 	'translationnotifications-log-alllanguages' => 'all Sproochen',
 	'translationnotifications-nodeadline' => 'keng',
 );
