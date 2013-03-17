@@ -1744,7 +1744,7 @@ $messages['hsb'] = array(
 	'translationnotifications-email-subject' => 'Prošu přełož stronu $1',
 	'translationnotifications-email-body' => 'Witaj $1,
 
-Dóstawaš tutu e-mejl, dokelž sy so jako přełožowar {{PLURAL:$9|za}} $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował.
+Dóstawaš tutu e-mejl, dokelž sy so jako přełožowar {{PLURAL:$9|za}} $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} {{GENDER:$10|zregistrował|zregistrowała}}.
 
 Je nowa strona, kotraž dyrbi so přełožować: $3.
 Móžeš ju přełožować, kliknjo na slědowacy wotkaz:
@@ -1763,10 +1763,10 @@ Přełožowanscy koordinatorojo {{GRAMMAR:genitiw|{{SITENAME}}}}
 
 ----
 
-Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k $8.', # Fuzzy
+Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k $8.',
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
-dostawaš tutu zdźělenku, dokelž sy so jako přełožowar za $3 na {{SITENAME}} zregistrował.
+dostawaš tutu zdźělenku, dokelž sy so jako přełožowar {{PLURAL:$9|za}} $3 na {{SITENAME}} {{GENDER:$1|zregistrował|zregistrowała}}.
 Strona [[$4]] steji za přełožowanje k dispoziciji. Móžeš ju tu přełožić:
 $5
 
@@ -1779,12 +1779,12 @@ Waša pomoc je jara witana. Přełožowarjo kaž ty pomhaja, zo by {{SITENAME}} 
 
 Wulki dźak!
 
-Přełožowanscy koordinatorojo {{GRAMMAR:genitiw|{{SITENAME}}}}', # Fuzzy
+Přełožowanscy koordinatorojo {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-notification-url-listitem' => 'do $1 přełožić',
 	'translationnotifications-digestemail-subject' => 'E-mejlowy přehlad za požadane přełožki wot {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-digestemail-body' => 'Witaj $1,
 
-dostawaš tutu e-mejl, dokelž sy so jako přełožowar za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował.
+dostawaš tutu e-mejl, dokelž sy so jako přełožowar za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} {{GENDER:$1|zregistrował|zregistrowała}}.
 {{PLURAL:$3|Je 1 strona|Stej $3 stronje|Su $3 strony|Je $3 stronow}} za přełožowanje k dispoziciji.  Podrobnosće namakaš deleka.
 
 $4
@@ -1796,12 +1796,12 @@ Wulki dźak!
 
 ----
 
-Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k <$5>.', # Fuzzy
+Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrował. Zo by přijeće e-mejlow wotskazał abo swoje zdźělenske nastajenja změnił, dźi prošu k <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'Dnja $1 je $2 stronu "$3" za přełožowanje woznamjenił. Móžeš ju na $4 přełožować.',
 	'translationnotifications-edit-summary' => 'Přełožowanska zdźělenka: $1',
 	'translationnotifications-email-priority' => 'Priorita tuteje strony je $1.',
 	'translationnotifications-email-deadline' => 'Termin za přełožowanje tuteje strony je $1.',
-	'logentry-translationnotifications-sent' => '$1 je zdźělenku wo přełožowanskej stronje $3 {{GENDER:$2|pósłał|posłała}}; rěče: $4; termin $5; priorita $6; je ju na {{PLURAL:$7|jednoho přijimarja|$7 přijimarjow|$7 přijimarjow|$7 prijimarjow}}  {{GENDER:$2|pósłał|pósłała}}, je so njeporadźiła za {{PLURAL:$8|jednoho přijimarja|$8 přijimarjow|$8 přijimarjow|$8 přijimarjow}}, je so přeskočiła za  {{PLURAL:$9|jednoho přijimarja|$9 přijimarjow|$9 přijimarjow|$9 přijimarjow}}.', # Fuzzy
+	'logentry-translationnotifications-sent' => '$1 je zdźělenku wo přełožowanskej stronje $3 {{GENDER:$2|pósłał|posłała}}; {{PLURAL:$10|rěč|rěči|rěče}}: $4; termin $5; priorita $6; je ju na {{PLURAL:$7|jednoho přijimarja|$7 přijimarjow}}  {{GENDER:$2|pósłał|pósłała}}, je so njeporadźiła za {{PLURAL:$8|jednoho přijimarja|$8 přijimarjow}}, je so přeskočiła za  {{PLURAL:$9|jednoho přijimarja|$9 přijimarjow}}.',
 	'log-name-notifytranslators' => 'Přełožowanske zdźělenki',
 	'log-description-notifytranslators' => 'Protokol wo zdźělenkach, kotrež su so přełožowarjam wo přełožujomnych stronach pósłali',
 	'translationnotifications-sent-title' => 'Přełožowanska zdźělenka je so pósłała',
