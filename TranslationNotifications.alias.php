@@ -43,6 +43,12 @@ $specialPageAliases['diq'] = array(
 	'TranslatorSignup' => array( 'AçarnayışDekewtış' ),
 );
 
+/** Esperanto (Esperanto) */
+$specialPageAliases['eo'] = array(
+	'NotifyTranslators' => array( 'Atentigi_tradukanton', 'Atentigi_tradukiston' ),
+	'TranslatorSignup' => array( 'Registrigi_kiel_tradukanto', 'Registrigi_kiel_tradukisto' ),
+);
+
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
 	'TranslatorSignup' => array( 'Übersetzerregistrierig' ),
