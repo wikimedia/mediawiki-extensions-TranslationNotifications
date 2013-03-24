@@ -7,6 +7,8 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
  * @ingroup Extensions
  *
  * @author Niklas Laxström
+ * @author Amir E. Aharoni
+ * @author Santhosh Thottingal
  * @copyright Copyright © 2012, Niklas Laxström
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
@@ -18,7 +20,13 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'TranslationNotifications',
 	'version'        => '2012-03-02',
-	'author'         => array( 'Niklas Laxström' ),
+	'author'         => array(
+		'Niklas Laxström',
+		'Amir E. Aharoni',
+		'Santhosh Thottingal',
+		'Siebrand Mazeland',
+		'Jon Harald Søby',
+	),
 	'descriptionmsg' => 'translationnotifications-desc',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:TranslationNotifications',
 );
