@@ -3209,11 +3209,12 @@ die Midawaida vun {{SITENAME}}", # Fuzzy
  * @author Ankry
  * @author BeginaFelicysym
  * @author Odie2
+ * @author Rzuwig
  * @author Woytecr
  */
 $messages['pl'] = array(
 	'translatorsignup' => 'Rejestracja tłumacza',
-	'translatorsignup-summary' => 'Użyj tej strony, aby wskazać, jakie języki możesz tłumaczyć w i w jaki sposób mamy się z Tobą kontaktować w sprawie nowych tłumaczeń.',
+	'translatorsignup-summary' => 'Użyj tej strony, aby wskazać jakie języki możesz tłumaczyć i w jaki sposób mamy się z Tobą kontaktować w sprawie nowych tłumaczeń.',
 	'translationnotifications-desc' => 'Umożliwia zarejestrowanie się przez tłumaczy aby otrzymywać powiadomienia na temat tłumaczeń',
 	'translationnotifications-info' => 'Informacje o użytkowniku',
 	'translationnotifications-username' => 'Nazwa użytkownika:',
