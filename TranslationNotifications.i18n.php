@@ -238,6 +238,17 @@ Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.',
 );
 
+/** Arabic (العربية)
+ * @author ترجمان05
+ */
+$messages['ar'] = array(
+	'translationnotifications-info' => 'معلومات المستخدم',
+	'translationnotifications-username' => 'اسم المستخدم:',
+	'translationnotifications-cmethod-email' => 'البريد الإلكتروني',
+	'translationnotifications-log-alllanguages' => 'كل اللغات',
+	'translationnotifications-nodeadline' => 'لا شيء',
+);
+
 /** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  */
