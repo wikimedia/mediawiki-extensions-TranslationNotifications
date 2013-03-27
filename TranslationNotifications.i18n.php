@@ -139,7 +139,7 @@ You are receiving this email because you signed up to receive emails related to 
  * @author Siebrand
  */
 $messages['qqq'] = array(
-	'translatorsignup' => 'Special page header',
+	'translatorsignup' => '{{doc-special|TranslatorSignup}}',
 	'translatorsignup-summary' => 'Text on top of Special:TranslatorSignup.',
 	'translationnotifications-desc' => '{{desc|name=Translation Notifications|url=http://www.mediawiki.org/wiki/Extension:TranslationNotifications}}',
 	'translationnotifications-info' => 'Fieldset header',
@@ -167,7 +167,7 @@ $messages['qqq'] = array(
 	'translationnotifications-freq-monthly' => 'Radio option label',
 	'translationnotifications-submit' => 'Submit button text',
 	'translationnotifications-signup-success' => 'A message that appears on the top of Special:TranslatorSignup after saving the preferences.',
-	'notifytranslators' => 'The title of the Special:NotifyTranslators special page.',
+	'notifytranslators' => '{{doc-special|NotifyTranslators}}',
 	'translationnotifications-send-notification-button' => 'A title for the submit button of the translator notification form.',
 	'translationnotifications-deadline-label' => 'A label for the deadline field, which will have a datepicker.',
 	'translationnotifications-languages-to-notify-label' => 'A label for language codes field.',
@@ -679,10 +679,11 @@ Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Ü
 
 /** Zazaki (Zazaki)
  * @author Erdemaslancan
+ * @author Mirzali
  */
 $messages['diq'] = array(
 	'translationnotifications-info' => 'Zanışiya Karberi',
-	'translationnotifications-username' => 'Namey karberi:',
+	'translationnotifications-username' => 'Nameyê karberi:',
 	'translationnotifications-emailstatus' => 'Weziyetê e-posta:',
 	'translationnotifications-languages' => 'Zıwani',
 	'translationnotifications-lang' => 'Zıwan: $1',
