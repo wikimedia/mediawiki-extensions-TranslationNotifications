@@ -4326,10 +4326,10 @@ Nhóm điều phối biên dịch {{SITENAME}}
 
 ----
 
-Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $8.', # Fuzzy
+Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $8.',
 	'translationnotifications-talkpage-body' => '{{PLURAL:$9}}Xin chào $2,
 
-Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $3 tại {{SITENAME}}.
+Bạn nhận được thư điện tử này vì bạn đã {{GENDER:$1}}đăng ký làm biên dịch viên $3 tại {{SITENAME}}.
 Trang [[$4]] mới có sẵn để dịch. Bạn có thể dịch nó dùng liên kết sau:
 $5
 
@@ -4340,7 +4340,7 @@ $8
 
 Cám ơn!
 
-Nhóm điều phối biên dịch {{SITENAME}}', # Fuzzy
+Nhóm điều phối biên dịch {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'dịch ra $1',
 	'translationnotifications-digestemail-subject' => 'Thư điện tử tóm tắt các yêu cầu biên dịch từ {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Xin chào $1,
@@ -4357,12 +4357,12 @@ Ban quản lý biên dịch {{SITENAME}}
 
 ----
 
-Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào <$5>.', # Fuzzy
+Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'Ngày $1, $2 đã đánh dấu “$3” là cần được dịch. Bạn có thể biên dịch nó tại $4.',
 	'translationnotifications-edit-summary' => 'Thông báo biên dịch: $1',
 	'translationnotifications-email-priority' => 'Trang này có ưu tiên $1.',
 	'translationnotifications-email-deadline' => 'Công việc dịch trang này sẽ hết hạn $1.',
-	'logentry-translationnotifications-sent' => '{{GENDER:$2}}$1 đã gửi thông báo về việc thông dịch trang $3; ngôn ngữ: $4; ngày hạn: $5; ưu tiên: $6; được gửi cho $7 người, không gửi được cho $8 người, bỏ qua $9 người', # Fuzzy
+	'logentry-translationnotifications-sent' => '{{GENDER:$2}}$1 đã gửi thông báo về việc thông dịch trang $3; ngôn ngữ: $4; ngày hạn: $5; ưu tiên: $6; được gửi cho $7 người, không gửi được cho $8 người, bỏ qua $9 người',
 	'log-name-notifytranslators' => 'Thông báo biên dịch',
 	'log-description-notifytranslators' => 'Nhật trình các thông báo được gửi cho biên dịch viên về các trang dịch được',
 	'translationnotifications-sent-title' => 'Thông báo biên dịch đã được gửi',
