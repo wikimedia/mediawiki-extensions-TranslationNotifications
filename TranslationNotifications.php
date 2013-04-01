@@ -80,3 +80,5 @@ $wgTranslationNotificationsSignupLegalMessage = 'translationnotifications-signup
 foreach ( range( 1, 3 ) as $langNum ) {
 	$wgDefaultUserOptions["translationnotifications-lang-$langNum"] = '';
 }
+
+$wgHooks['GetPreferences'][] = 'TranslationNotificationsHooks::onGetPreferences';

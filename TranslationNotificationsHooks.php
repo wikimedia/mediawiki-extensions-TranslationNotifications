@@ -68,4 +68,22 @@ class TranslationNotificationsHooks {
 			$languageCount // $10
 		)->inLanguage( $language )->text();
 	}
+
+	public static function onGetPreferences( $user, &$preferences ) {
+		foreach ( array(
+			'translationnotifications-lang-1',
+			'translationnotifications-lang-2',
+			'translationnotifications-lang-3',
+			'translationnotifications-cmethod-email',
+			'translationnotifications-cmethod-talkpage',
+			'translationnotifications-cmethod-talkpage-elsewhere-loc',
+			'translationnotifications-freq',
+		) as $preference ) {
+			$preferences[$preference] = array(
+				'type' => 'api',
+			);
+		}
+
+		return true;
+	}
 }
