@@ -7,10 +7,13 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-jQuery( document ).ready( function( $ ) {
+jQuery( document ).ready( function( $, mw ) {
 	'use strict';
 
-	// Based on UploadWizard
+	var previewId = 'translation-notification-preview';
+
+	// Show a datepicker.
+	// Based on UploadWizard.
 	$( '#mw-input-wpDeadlineDate' ).datepicker( {
 		dateFormat: 'yy-mm-dd',
 		constrainInput: false,
@@ -31,5 +34,62 @@ jQuery( document ).ready( function( $ ) {
 		}
 	} );
 
-	$( "#wpUserLanguage" ).multiselectautocomplete( { inputbox : '#mw-input-wpLanguagesToNotify' } );
-} );
+	// Attach the language autocomplete widget.
+	$( '#wpUserLanguage' ).multiselectautocomplete( { inputbox : '#mw-input-wpLanguagesToNotify' } );
+
+	/**
+	 * Notification preview
+	 */
+	// Add the preview button
+
+	$( '#notifytranslators-form' ).after(
+		$( '<button>' )
+			.text( mw.msg( 'translationnotifications-preview-notification-button' ) )
+			.click( function () {
+				var fullText,
+					uri = new mw.Uri(),
+					priority = '',
+					deadline = '',
+					translatablePage = $( '#mw-input-wpTranslatablePage :selected' ).text(),
+					userName = mw.user.getName(),
+					$priority = $( '#mw-input-wpPriority :selected' ),
+					deadlineDate = $( '#mw-input-wpDeadlineDate' ).val();
+
+				uri.path = mw.config.get( 'wgScript' );
+				uri.query = {
+					title: 'Special:Translate',
+					group: 'page-' + translatablePage
+				};
+
+				if ( $priority.val() !== 'unset' ) {
+					priority = mw.msg( 'translationnotifications-email-priority', $priority.text() );
+				}
+
+				if ( deadlineDate !== '' ) {
+					deadline = mw.msg( 'translationnotifications-email-deadline', deadlineDate );
+				}
+
+				fullText = mw.message( 'translationnotifications-talkpage-body',
+					userName,
+					userName,
+					mw.msg( 'translationnotifications-generic-languages' ),
+					translatablePage,
+					'[' + uri.toString() + ' ' + translatablePage + ']',
+					priority,
+					deadline,
+					$( '#mw-input-wpNotificationText' ).val(),
+					1 // it's just an example, so provide one language
+				);
+
+				new mw.Api().parse( fullText.escaped().replace( /\n{3,}/g, '\n\n' ) )
+					.done( function ( parsedNotification ) {
+						$( '#' + previewId )
+							.html( parsedNotification )
+							.show();
+					} );
+			} ),
+		$( '<div>' )
+			.hide()
+			.attr( { id: previewId } )
+	);
+}( jQuery, mediaWiki ) );

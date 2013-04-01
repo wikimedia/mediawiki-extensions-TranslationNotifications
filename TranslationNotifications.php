@@ -54,8 +54,20 @@ $resourcePaths = array(
 $wgResourceModules['ext.translationnotifications.notifytranslators'] = array(
 	'scripts' => 'resources/ext.translationnotifications.notifytranslators.js',
 	'dependencies' => array(
+		'mediawiki.jqueryMsg',
+		'mediawiki.Uri',
+		'mediawiki.api',
+		'mediawiki.api.parse',
+		'mediawiki.user',
 		'jquery.ui.datepicker',
 		'ext.translate.multiselectautocomplete',
+	),
+	'messages' => array(
+		'translationnotifications-preview-notification-button',
+		'translationnotifications-talkpage-body',
+		'translationnotifications-generic-languages',
+		'translationnotifications-email-priority',
+		'translationnotifications-email-deadline',
 	),
 ) + $resourcePaths;
 

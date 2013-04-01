@@ -43,7 +43,8 @@ $messages['en'] = array(
 	// Special:Notify translators
 	'notifytranslators' => 'Notify translators',
 	'translationnotifications-submit-ok' => 'Notifications have been added to a queue and are delivered by a background job.',
-	'translationnotifications-send-notification-button' => 'Send a notification to translators',
+	'translationnotifications-send-notification-button' => 'Send notification to translators',
+	'translationnotifications-preview-notification-button' => 'Preview notification',
 	'translationnotifications-deadline-label' => 'Deadline to indicate in this notification:',
 	'translationnotifications-languages-to-notify-label' => 'Which languages to notify:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Comma-separated language codes; leave blank to notify for all languages.',
@@ -124,7 +125,9 @@ You are receiving this email because you signed up to receive emails related to 
 	'translationnotifications-sent-body' => 'Translation notification was sent.',
 	'translationnotifications-log-alllanguages' => 'all languages',
 	'translationnotifications-nodeadline' => 'none',
-	'translationnotifications-signup-legal' => 'You agree that by providing this information we may contact you regarding topics related to {{SITENAME}} we think may be of interest to you. You agree your data is subject to our  [[{{MediaWiki:Privacypage}}|privacy policy]].'
+	'translationnotifications-signup-legal' => 'You agree that by providing this information we may contact you regarding topics related to {{SITENAME}} we think may be of interest to you. You agree your data is subject to our  [[{{MediaWiki:Privacypage}}|privacy policy]].',
+
+	'translationnotifications-generic-languages' => '<languages>',
 );
 
 /** Message documentation (Message documentation)
@@ -169,6 +172,7 @@ $messages['qqq'] = array(
 	'translationnotifications-signup-success' => 'A message that appears on the top of Special:TranslatorSignup after saving the preferences.',
 	'notifytranslators' => '{{doc-special|NotifyTranslators}}',
 	'translationnotifications-send-notification-button' => 'A title for the submit button of the translator notification form.',
+	'translationnotifications-preview-notification-button' => 'A title for the preview button. Pressing the button shows the previewed notification below the form.',
 	'translationnotifications-deadline-label' => 'A label for the deadline field, which will have a datepicker.',
 	'translationnotifications-languages-to-notify-label' => 'A label for language codes field.',
 	'translationnotifications-priority' => 'A label for translation priority field.
@@ -194,7 +198,7 @@ $messages['qqq'] = array(
 * $9 - Number of languages. Can be used in PLURAL.
 * $10- Plain text username used for GENDER.",
 	'translationnotifications-talkpage-body' => "The body of the notification on user talk page.
-
+* $1 - Plain user name, can be used for GENDER.
 * $2 - Translator's username or real name, if specified.
 * $3 - A comma list of language names.
 * $4 - Translatable page name.
@@ -236,6 +240,7 @@ Similar to {{msg-mw|emailsent}}.',
 	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified. Traduction en français : "aucune" (date limite).
 {{Identical|None}}',
 	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.',
+	'translationnotifications-generic-languages' => 'A generic placeholder that is shown in the previewed notification instead of a list of language names.',
 );
 
 /** Arabic (العربية)
@@ -1626,6 +1631,7 @@ $messages['he'] = array(
 	'notifytranslators' => 'מכתבים למתרגמים',
 	'translationnotifications-submit-ok' => 'ההודעות נוספו לתור המשימות ויישלחו על־ידי משימת רקע.',
 	'translationnotifications-send-notification-button' => 'שליחת מכתבים למתרגמים',
+	'translationnotifications-preview-notification-button' => 'תצוגה מקדימה',
 	'translationnotifications-deadline-label' => 'תאריך סופי שיתווסף להודעה:',
 	'translationnotifications-languages-to-notify-label' => 'רשימת שפות שהמתרגמים אליהן יקבלו את ההודעה:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'רשימה מופרדת בפסיקים של קודי שפה; אם השדה יהיה ריק, ההודעה תישלח לדוברי כל השפות.',
@@ -1708,6 +1714,7 @@ $4
 	'translationnotifications-log-alllanguages' => 'כל השפות',
 	'translationnotifications-nodeadline' => 'אין',
 	'translationnotifications-signup-legal' => 'מתן המידע הזה מהווה את הסכמתך לכך שניצור אתך קשר בנושאים שקשורים לאתר {{SITENAME}} ושנראה לנו שיעניינו אותך. הנתונים שלך כפופים ל[[{{MediaWiki:Privacypage}}|מדיניות הפרטיות]] שלנו.',
+	'translationnotifications-generic-languages' => '<שפות>',
 );
 
 /** Upper Sorbian (hornjoserbsce)
