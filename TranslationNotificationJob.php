@@ -59,13 +59,14 @@ class TranslationNotificationJob extends Job {
 
 			$text = $textContent . "\n" . $text;
 		}
-		$editor = User::newFromID( $this->params['editor'] );
+
+		global $wgNotificationUsername;
 		$status = $talkPage->doEditContent(
 			ContentHandler::makeContent( $text, $this->title ),
 			$this->params['editSummary'],
 			$flags,
 			false,
-			$editor
+			User::newFromName( $wgNotificationUsername )
 		);
 
 		return $status->isGood();
