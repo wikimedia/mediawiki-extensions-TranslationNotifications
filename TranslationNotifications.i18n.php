@@ -171,10 +171,13 @@ $messages['qqq'] = array(
 	'translationnotifications-submit' => 'Submit button text',
 	'translationnotifications-signup-success' => 'A message that appears on the top of Special:TranslatorSignup after saving the preferences.',
 	'notifytranslators' => '{{doc-special|NotifyTranslators}}',
+	'translationnotifications-submit-ok' => 'Used as success message.',
 	'translationnotifications-send-notification-button' => 'A title for the submit button of the translator notification form.',
 	'translationnotifications-preview-notification-button' => 'A title for the preview button. Pressing the button shows the previewed notification below the form.',
 	'translationnotifications-deadline-label' => 'A label for the deadline field, which will have a datepicker.',
 	'translationnotifications-languages-to-notify-label' => 'A label for language codes field.',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Used as help message for the "Languages to notify" textarea.
+Its label is {{msg-mw|Translationnotifications-languages-to-notify-label}}.',
 	'translationnotifications-priority' => 'A label for translation priority field.
 {{Identical|Priority}}',
 	'translationnotifications-priority-high' => 'high (priority), an item in a dropdown box.
@@ -198,22 +201,26 @@ $messages['qqq'] = array(
 * $9 - Number of languages. Can be used in PLURAL.
 * $10- Plain text username used for GENDER.",
 	'translationnotifications-talkpage-body' => "The body of the notification on user talk page.
-* $1 - Plain user name, can be used for GENDER.
-* $2 - Translator's username or real name, if specified.
-* $3 - A comma list of language names.
-* $4 - Translatable page name.
-* $5 - A bulleted list of URLs to translation pages.
+* $1 - plain username, can be used for GENDER
+* $2 - translator's username or real name, if specified
+* $3 - a comma list of language names, or the placeholder text {{msg-mw|Translationnotifications-generic-languages}}
+* $4 - translatable page name
+* $5 - a bulleted list of URLs to translation pages
 * $6 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $7 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
-* $8 - A custom message that can be added by the notification sender.
-* $9 - Number of languages. Can be used in PLURAL.",
+* $8 - a custom message that can be added by the notification sender
+* $9 - number of languages, can be used in PLURAL",
 	'translationnotifications-notification-url-listitem' => 'This is an item in a bullted list of hyperlinks to translation pages. $1 is a language name.',
-	'translationnotifications-digestemail-body' => '
+	'translationnotifications-digestemail-subject' => 'Used as mail subject.
+
+The mail body is the following message:
+* {{msg-mw|Translationnotifications-digestemail-body}}',
+	'translationnotifications-digestemail-body' => 'Parameters:
 * $1 - username
 * $2 - first language preference of user
-* $3 - number of pages available for translation.
-* $4 - The list of notifications, this is the main part of the email.
-* <$5> - Link to [[Special:NotifyTranslators]]',
+* $3 - number of pages available for translation
+* $4 - the list of notifications, this is the main part of the email
+* $5 - link to [[Special:NotifyTranslators]]',
 	'translationnotifications-digestemail-notification-line' => 'The message line for notification in the digest.
 * $1 - date
 * $2 - user name
@@ -235,12 +242,20 @@ Used in {{msg-mw|translationnotifications-email-body}}',
 	'log-name-notifytranslators' => 'Log page title.',
 	'log-description-notifytranslators' => 'Log page description',
 	'translationnotifications-sent-title' => 'The title of the page shown after the notification is sent.
-Similar to {{msg-mw|emailsent}}.',
+Similar to {{msg-mw|emailsent}}.
+
+The body for this title may be {{msg-mw|Translationnotifications-sent-body}}.',
+	'translationnotifications-sent-body' => 'May be used as page body.
+
+The title for this message is {{msg-mw|Translationnotifications-sent-title}}.',
 	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
 	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified. Traduction en français : "aucune" (date limite).
 {{Identical|None}}',
 	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.',
-	'translationnotifications-generic-languages' => 'A generic placeholder that is shown in the previewed notification instead of a list of language names.',
+	'translationnotifications-generic-languages' => 'A generic placeholder that is shown in the previewed notification instead of a list of language names.
+
+Used as <code>$3</code> in the following message:
+* {{msg-mw|Translationnotifications-talkpage-body}}.',
 );
 
 /** Arabic (العربية)
@@ -538,6 +553,7 @@ $messages['de'] = array(
 	'notifytranslators' => 'Übersetzer benachrichtigen',
 	'translationnotifications-submit-ok' => 'Die Übersetzungsbenachrichtigungen wurden zu einer Auftragswarteschlange hinzugefügt und werden von einem Hintergrundauftrag versandt.',
 	'translationnotifications-send-notification-button' => 'Benachrichtigung an die Übersetzer senden',
+	'translationnotifications-preview-notification-button' => 'Benachrichtigungsvorschau',
 	'translationnotifications-deadline-label' => 'In der Benachrichtigung anzugebenden Frist:',
 	'translationnotifications-languages-to-notify-label' => 'Benachrichtigungen zu folgenden Sprachen:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Kommagetrennte Sprachcodes; für Benachrichtigungen zu allen Sprachen frei lassen.',
@@ -616,6 +632,7 @@ Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Üb
 	'translationnotifications-log-alllanguages' => 'alle Sprachen',
 	'translationnotifications-nodeadline' => 'keine',
 	'translationnotifications-signup-legal' => 'Mit Angabe dieser Informationen stimmst du zu, dass wir dich bezüglich Themen im Zusammenhang mit {{SITENAME}} kontaktieren können, die unserer Meinung nach für dich von Interesse sind. Du stimmst zudem zu, dass deine Daten unseren [[{{MediaWiki:Privacypage}}|Datenschutzgrundsätzen]] unterliegen.',
+	'translationnotifications-generic-languages' => '<Sprachen>',
 );
 
 /** German (formal address) (Deutsch (Sie-Form)‎)
@@ -1334,6 +1351,7 @@ Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-i
  * @author Cquoi
  * @author DavidL
  * @author Gomoko
+ * @author Metroitendo
  * @author Tititou36
  * @author Urhixidur
  * @author Verdy p
@@ -1369,6 +1387,7 @@ $messages['fr'] = array(
 	'notifytranslators' => 'Informer les traducteurs',
 	'translationnotifications-submit-ok' => "Des notifications ont été ajoutées à une file d'attente et sont livrées par une tâche d'arrière-plan.",
 	'translationnotifications-send-notification-button' => 'Envoyer une notification aux traducteurs',
+	'translationnotifications-preview-notification-button' => 'Aperçu de la notification',
 	'translationnotifications-deadline-label' => 'Date limite à indiquer dans cette notification:',
 	'translationnotifications-languages-to-notify-label' => 'Langues à notifier :',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Codes de langue séparés par des virgules; laissez vide pour notifier toutes les langues.',
@@ -1446,6 +1465,7 @@ Vous recevez ce courriel parce que vous avez souscrit à la réception de courri
 	'translationnotifications-log-alllanguages' => 'toutes les langues',
 	'translationnotifications-nodeadline' => 'aucune',
 	'translationnotifications-signup-legal' => "En fournissant cette information, vous acceptez que nous puissions vous contacter concernant des sujets liés à {{SITENAME}} que nous pensons qu'ils soient intéressant pour vous. Vous acceptez que vos données soient soumises à notre [[{{MediaWiki:Privacypage}}|politique de confidentialité]].",
+	'translationnotifications-generic-languages' => '<languages>',
 );
 
 /** Franco-Provençal (arpetan)
@@ -1706,7 +1726,7 @@ $4
 	'translationnotifications-edit-summary' => 'הודעה על תרגום: $1',
 	'translationnotifications-email-priority' => 'העדיפות של הדף הזה: $1.',
 	'translationnotifications-email-deadline' => 'התאריך הסופי לתרגום הדף הזה הוא $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|שלח|שלחה}} מכתב עם בקשה לתרגם את הדף $3; {{PLURAL:$1|שפה|שפות}}: $4; תאריך סופי: $5; עדיפות: $6; השליחה הצליחה ל{{PLURAL:$7|מקבל אחד|־$7 מקבלים}}, נכשלה {{PLURAL:$8|למקבל אחד|ל־$8 מקבלים}}, ודילגה על {{PLURAL:$9|מקבל אחד|$9 מקבלים}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|שלח|שלחה}} מכתב עם בקשה לתרגם את הדף $3; {{PLURAL:$1|שפה|שפות}}: $4; תאריך סופי: $5; עדיפות: $6; השליחה הצליחה ל{{PLURAL:$7|מקבל אחד|־$7 מקבלים}}, נכשלה {{PLURAL:$8|למקבל אחד|ל־$8 מקבלים}}, ודילגה על {{PLURAL:$9|מקבל אחד|$9 מקבלים}}', # Fuzzy
 	'log-name-notifytranslators' => 'מכתבים למתרגמים',
 	'log-description-notifytranslators' => 'יומן של מכתבים שנשלחים למתרגמים על דפים שאפשר לתרגם',
 	'translationnotifications-sent-title' => 'נשלח מכתב למתרגמים',
@@ -2104,6 +2124,7 @@ $messages['ja'] = array(
 	'notifytranslators' => '翻訳者に通知',
 	'translationnotifications-submit-ok' => '通知をキューに追加しました。通知はバックグラウンドジョブによって送信されます。',
 	'translationnotifications-send-notification-button' => '翻訳者に通知を送信',
+	'translationnotifications-preview-notification-button' => '通知をプレビュー',
 	'translationnotifications-deadline-label' => 'この通知で指定する締め切り:',
 	'translationnotifications-languages-to-notify-label' => '通知する言語:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'カンマ区切りの言語コードです。すべての言語を通知する場合は空欄にします。',
@@ -2127,6 +2148,7 @@ $messages['ja'] = array(
 	'translationnotifications-sent-body' => '翻訳の通知を送信しました。',
 	'translationnotifications-log-alllanguages' => 'すべての言語',
 	'translationnotifications-nodeadline' => 'なし',
+	'translationnotifications-generic-languages' => '<言語を列挙>',
 );
 
 /** Javanese (Basa Jawa)
@@ -2662,7 +2684,7 @@ $messages['ml'] = array(
 	'translationnotifications-submit-ok' => 'അറിയിപ്പുകൾ നിരയിലേയ്ക്ക് ചേർത്തിരിക്കുന്നു, അത് വെളിയിൽ കാണാനാവാത്ത സൗകര്യമുപയോഗിച്ച് വിതരണം ചെയ്യുന്നതാണ്.',
 	'translationnotifications-send-notification-button' => 'പരിഭാഷകർക്ക് അറിയിപ്പുകൾ അയയ്ക്കുക',
 	'translationnotifications-deadline-label' => 'ഈ അറിയിപ്പിൽ കുറിക്കേണ്ട അവസാന തീയതി:',
-	'translationnotifications-languages-to-notify-label' => 'ഏതൊക്കെ ഭാഷകളെയാണു് അറിയിക്കേണ്ടത്:',
+	'translationnotifications-languages-to-notify-label' => 'ഏതൊക്കെ ഭാഷകളാണ് അറിയിക്കേണ്ടത്:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'ഭാഷാ കോഡുകൾ കോമ ഉപയോഗിച്ച് വേർതിരിച്ചുനൽകുക; എല്ലാ ഭാഷകളുടേയും അറിയിപ്പിനായി വെറുതെയിടുക.',
 	'translationnotifications-priority' => 'പ്രാധാന്യം:',
 	'translationnotifications-priority-high' => 'ഉന്നതം',
