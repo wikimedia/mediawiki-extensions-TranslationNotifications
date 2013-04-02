@@ -10,7 +10,8 @@
 jQuery( document ).ready( function( $, mw ) {
 	'use strict';
 
-	var previewId = 'translation-notification-preview';
+	var previewId = 'translation-notification-preview',
+		sendId = 'translationnotifications-send-notification-button';
 
 	// Show a datepicker.
 	// Based on UploadWizard.
@@ -40,8 +41,11 @@ jQuery( document ).ready( function( $, mw ) {
 	/**
 	 * Notification preview
 	 */
-	// Add the preview button
+	// Initially disable the send button to force at least one preview
+	$( '#' + sendId )
+		.prop( 'disabled', true );
 
+	// Add the preview button
 	$( '#notifytranslators-form' ).after(
 		$( '<button>' )
 			.text( mw.msg( 'translationnotifications-preview-notification-button' ) )
@@ -54,6 +58,10 @@ jQuery( document ).ready( function( $, mw ) {
 					userName = mw.user.getName(),
 					$priority = $( '#mw-input-wpPriority :selected' ),
 					deadlineDate = $( '#mw-input-wpDeadlineDate' ).val();
+
+				// Enable the send button after the first preview
+				$( '#' + sendId )
+					.prop( 'disabled', false );
 
 				uri.path = mw.config.get( 'wgScript' );
 				uri.query = {
