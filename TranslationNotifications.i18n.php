@@ -1534,7 +1534,8 @@ $messages['gl'] = array(
 	'translationnotifications-signup-success' => 'Gardáronse as súas preferencias sobre a notificación de traducións.',
 	'notifytranslators' => 'Informar aos tradutores',
 	'translationnotifications-submit-ok' => 'As notificacións engadíronse a unha cola de espera; un proceso ha envialas en segundo plano.',
-	'translationnotifications-send-notification-button' => 'Enviar unha notificación aos tradutores',
+	'translationnotifications-send-notification-button' => 'Enviar a notificación aos tradutores',
+	'translationnotifications-preview-notification-button' => 'Vista previa da notificación',
 	'translationnotifications-deadline-label' => 'Data límite a indicar nesta notificación:',
 	'translationnotifications-languages-to-notify-label' => 'Linguas ás que enviar a notificación:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Códigos de lingua separados por comas; déixeo en branco para notificar a todas as linguas.',
@@ -1616,6 +1617,7 @@ Recibiu este correo electrónico porque se inscribiu para recibir correos electr
 	'translationnotifications-log-alllanguages' => 'todas as linguas',
 	'translationnotifications-nodeadline' => 'ningunha',
 	'translationnotifications-signup-legal' => 'Acepta que ao proporcionar esta información podemos poñernos en contacto con vostede por temas relacionados con {{SITENAME}} que pensemos que poidan ser do seu interese. Acepta que os seus datos están suxeitos á nosa [[{{MediaWiki:Privacypage}}|política de protección de datos]].',
+	'translationnotifications-generic-languages' => '<linguas>',
 );
 
 /** Hebrew (עברית)
@@ -2016,6 +2018,7 @@ $messages['it'] = array(
 	'notifytranslators' => 'Informa i traduttori',
 	'translationnotifications-submit-ok' => 'Le notifiche sono state aggiunte a una coda e vengono consegnate da un processo in background.',
 	'translationnotifications-send-notification-button' => 'Invia una notifica ai traduttori',
+	'translationnotifications-preview-notification-button' => 'Anteprima della notifica',
 	'translationnotifications-deadline-label' => 'Termine da indicare in questa notifica:',
 	'translationnotifications-languages-to-notify-label' => 'Quali lingue notificare:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Codici di lingua separati da virgole; lasciare vuoto per notificare in tutte le lingue.',
@@ -2083,7 +2086,7 @@ Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di pos
 	'translationnotifications-edit-summary' => 'Notifica di traduzione: $1',
 	'translationnotifications-email-priority' => 'La priorità di questa pagina è $1.',
 	'translationnotifications-email-deadline' => 'Il termine ultimo per la traduzione di questa pagina è $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha inviato}} una notifica sulla traduzione della pagina $3; {{PLURAL:$1|lingua|lingue}}: $4; termine: $5; priorità: $6; inviata a {{PLURAL:$7|un destinatario|$7 destinatari}}, non inviata a {{PLURAL:$8|un destinatario|$8 destinatari}}, omessa a {{PLURAL:$9|un destinatario|$9 destinatari}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha inviato}} una notifica sulla traduzione della pagina $3; {{PLURAL:$10|lingua|lingue}}: $4; termine: $5; priorità: $6; inviata a {{PLURAL:$7|un destinatario|$7 destinatari}}, non inviata a {{PLURAL:$8|un destinatario|$8 destinatari}}, omessa a {{PLURAL:$9|un destinatario|$9 destinatari}}',
 	'log-name-notifytranslators' => 'Notifiche di traduzione',
 	'log-description-notifytranslators' => 'Una serie di notifiche riguardanti le pagine traducibili sono state inviate ai traduttori.',
 	'translationnotifications-sent-title' => 'Notifica di traduzione inviata',
@@ -2091,6 +2094,7 @@ Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di pos
 	'translationnotifications-log-alllanguages' => 'tutte le lingue',
 	'translationnotifications-nodeadline' => 'nessuno',
 	'translationnotifications-signup-legal' => 'Accetti che, fornendo queste informazioni, possiamo contattarti per quanto riguarda argomenti relativi a {{SITENAME}} che pensiamo possano interessarti. Accetti che i tuoi dati siano soggetti alla nostra [[{{MediaWiki:Privacypage}}|politica sulla privacy]].',
+	'translationnotifications-generic-languages' => '<lingue>',
 );
 
 /** Japanese (日本語)
@@ -2566,6 +2570,7 @@ $messages['mk'] = array(
 	'notifytranslators' => 'Известување на преведувачите',
 	'translationnotifications-submit-ok' => 'Известувањата се додадени во редицата на чекање и се испорачуваат со позадинска задача.',
 	'translationnotifications-send-notification-button' => 'Испрати известување до преведувачите',
+	'translationnotifications-preview-notification-button' => 'Прегл. известување',
 	'translationnotifications-deadline-label' => 'Рок во известувањето:',
 	'translationnotifications-languages-to-notify-label' => 'Кои јазици да се известат:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Јазични кодови одделени со запирка; оставете го ова празно ако сакате да ги известите сите јазици.',
@@ -2649,6 +2654,7 @@ $4
 	'translationnotifications-log-alllanguages' => 'сите јазици',
 	'translationnotifications-nodeadline' => 'без рок',
 	'translationnotifications-signup-legal' => 'Поднесувајќи ги овие информации, се согласувате да бидете контактирани во врска со темите поврзани со {{SITENAME}} што мислиме дека ќе ве интересираат. Се согласувате дека вашите податоци подлежат на нашите [[{{MediaWiki:Privacypage}}|правила за заштита на личните податоци.]]',
+	'translationnotifications-generic-languages' => '<јазици>',
 );
 
 /** Malayalam (മലയാളം)
@@ -4422,6 +4428,7 @@ $messages['yi'] = array(
 	'translationnotifications-freq-weekly' => 'וואכנטלעכער באריכט',
 	'translationnotifications-freq-monthly' => 'מאנאטלעכער באריכט',
 	'translationnotifications-submit' => 'דערהיינטיקן איינשטעלונגען',
+	'translationnotifications-languages-to-notify-label' => 'וועלכע שפראכן מודיע זיין:',
 	'translationnotifications-priority' => 'פריאריטעט:',
 	'translationnotifications-priority-high' => 'הויך',
 	'translationnotifications-priority-medium' => 'מיטל',
@@ -4492,7 +4499,7 @@ $4
 	'translationnotifications-edit-summary' => 'איבערזעצונג אנזאג: $1',
 	'translationnotifications-email-priority' => 'די פריאריטעט פון דעם בלאט איז $1.',
 	'translationnotifications-email-deadline' => 'דער טערמין פאר איבערזעצן דעם בלאט איז $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|האט געשיקט}} אן אנזאג וועגן איבערזעצן בלאט $3; {{PLURAL:$1|שפראך|שפראכן}}: $4; טערמין: $5; פריאריטעט: $6; געשיקט מיט דערפאלג צו {{PLURAL:$7|איין באקומער|$7 באקומער}}, דורכגעפאלן פאר {{PLURAL:$8|איין באקומער|$8 באקומער}}, איבערגעהיפט {{PLURAL:$9|איין באקומער|$9 באקומער}}',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|האט געשיקט}} אן אנזאג וועגן איבערזעצן בלאט $3; {{PLURAL:$10|שפראך|שפראכן}}: $4; טערמין: $5; פריאריטעט: $6; געשיקט מיט דערפאלג צו {{PLURAL:$7|איין באקומער|$7 באקומער}}, דורכגעפאלן פאר {{PLURAL:$8|איין באקומער|$8 באקומער}}, איבערגעהיפט {{PLURAL:$9|איין באקומער|$9 באקומער}}',
 	'log-name-notifytranslators' => 'איבערזעצונג אנזאגן',
 	'log-description-notifytranslators' => 'לאגבוך פון אנזאגן געשיקט צו איבערזעצער וועגן איבערזעצבארע בלעטער',
 	'translationnotifications-sent-title' => 'איבערזעצונג אנזאג געשיקט',
