@@ -130,7 +130,10 @@ You are receiving this email because you signed up to receive emails related to 
 	'translationnotifications-generic-languages' => '<languages>',
 );
 
-/** Message documentation (Message documentation)
+/** Message documentation (This is the name of the message documentation language code (qqq). Follow the rules of your languages and use small first letter if it doesn't capitalize language names always.
+
+It might be easier to translate it as "translation guidelines" or "translation help".
+{{Identical|Message documentation}})
  * @author Amire80
  * @author Cquoi
  * @author Kghbln
@@ -2471,6 +2474,7 @@ Do häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{SITENAME}}}} enje
 	'translationnotifications-sent-body' => 'De Opforderonge zom Övversäze sin verdeilt woode.',
 	'translationnotifications-log-alllanguages' => 'all Schprooche',
 	'translationnotifications-nodeadline' => 'kein',
+	'translationnotifications-generic-languages' => '<Schprooche>',
 );
 
 /** Kurdish (Latin script) (Kurdî (latînî)‎)
@@ -4332,6 +4336,7 @@ $messages['vi'] = array(
 	'notifytranslators' => 'Báo cho biên dịch viên',
 	'translationnotifications-submit-ok' => 'Các thông báo đã được thêm vào hàng đợi gửi trong bối cảnh.',
 	'translationnotifications-send-notification-button' => 'Gửi thông báo cho các biên dịch viên.',
+	'translationnotifications-preview-notification-button' => 'Xem trước thông báo',
 	'translationnotifications-deadline-label' => 'Ngày hạn để nhắc đến trong thông báo này:',
 	'translationnotifications-languages-to-notify-label' => 'Các ngôn ngữ để báo:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Các mã ngôn ngữ (phân cách bằng dấu phẩy); để trống để báo tất cả các ngôn ngữ.',
@@ -4405,6 +4410,7 @@ Bạn nhận được thư điện tử này vì bạn đã quyết định nh�
 	'translationnotifications-log-alllanguages' => 'tất cả các ngôn ngữ',
 	'translationnotifications-nodeadline' => 'không có',
 	'translationnotifications-signup-legal' => 'Với việc cung cấp thông tin này, bạn đồng ý cho phép chúng tôi liên lạc với bạn về các đề tài có liên quan đến {{SITENAME}} mà bạn có thể quan tâm đến. Bạn đồng ý rằng dữ liệu của bạn sẽ được sử dụng theo [[{{MediaWiki:Privacypage}}|quy định quyền riêng tư]] của chúng tôi.',
+	'translationnotifications-generic-languages' => '<các ngôn ngữ>',
 );
 
 /** Yiddish (ייִדיש)
@@ -4603,6 +4609,7 @@ $messages['zh-hant'] = array(
 	'notifytranslators' => '通知翻譯者',
 	'translationnotifications-submit-ok' => '通知已添加到隊列並將在後台完成。',
 	'translationnotifications-send-notification-button' => '給翻譯者發送通知',
+	'translationnotifications-preview-notification-button' => '預覽通知',
 	'translationnotifications-deadline-label' => '這個通知指明的截止日期：',
 	'translationnotifications-languages-to-notify-label' => '通知的語言：',
 	'translationnotifications-languages-to-notify-label-help-message' => '逗號分隔的語言代碼，留空以通知所有語言。',
@@ -4678,7 +4685,7 @@ $4
 	'translationnotifications-edit-summary' => '翻譯通知：$1',
 	'translationnotifications-email-priority' => '這個頁面有$1重要度。',
 	'translationnotifications-email-deadline' => '翻譯這個頁面的截止日期是$1。',
-	'logentry-translationnotifications-sent' => '$1{{GENDER:$2|發送了}}翻譯頁面$3的通知；語言：$4；截止日期：$5；重要度：$6；已發送給$7個收件人，給$8個收件人的通知發送失敗，跳過了$9個收件人',
+	'logentry-translationnotifications-sent' => '$1{{GENDER:$2|發送了}}翻譯頁面$3的通知；{{PLURAL:$1|語言|語言}}：$4；截止日期：$5；重要度：$6；已發送給$7個收件人，給$8個收件人的通知發送失敗，跳過了$9個收件人',
 	'log-name-notifytranslators' => '翻譯通知',
 	'log-description-notifytranslators' => '向翻譯者發送可翻譯頁面通知的日誌',
 	'translationnotifications-sent-title' => '翻譯通知已發送',
@@ -4686,4 +4693,5 @@ $4
 	'translationnotifications-log-alllanguages' => '所有語言',
 	'translationnotifications-nodeadline' => '無',
 	'translationnotifications-signup-legal' => '您同意若提供此資訊，我們可能就有關{{SITENAME}}，而我們又認為您感興趣的主題與您聯繫。您同意您的資料將按照[[{{MediaWiki:Privacypage}}|私隱攻策]]處理。',
+	'translationnotifications-generic-languages' => '<languages>',
 );
