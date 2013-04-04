@@ -127,7 +127,7 @@ You are receiving this email because you signed up to receive emails related to 
 	'translationnotifications-nodeadline' => 'none',
 	'translationnotifications-signup-legal' => 'You agree that by providing this information we may contact you regarding topics related to {{SITENAME}} we think may be of interest to you. You agree your data is subject to our  [[{{MediaWiki:Privacypage}}|privacy policy]].',
 
-	'translationnotifications-generic-languages' => '<languages>',
+	'translationnotifications-generic-languages' => '&lt;languages>',
 );
 
 /** Message documentation (Message documentation)
