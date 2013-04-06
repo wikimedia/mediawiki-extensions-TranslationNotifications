@@ -1986,6 +1986,13 @@ $messages['id'] = array(
 	'translationnotifications-cmethod-email' => 'Surel',
 );
 
+/** Icelandic (íslenska)
+ * @author Snævar
+ */
+$messages['is'] = array(
+	'translationnotifications-notification-url-listitem' => 'þýða á $1',
+);
+
 /** Italian (italiano)
  * @author Beta16
  * @author Darth Kule
