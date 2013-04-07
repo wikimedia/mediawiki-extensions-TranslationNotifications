@@ -130,10 +130,7 @@ You are receiving this email because you signed up to receive emails related to 
 	'translationnotifications-generic-languages' => '<languages>',
 );
 
-/** Message documentation (This is the name of the message documentation language code (qqq). Follow the rules of your languages and use small first letter if it doesn't capitalize language names always.
-
-It might be easier to translate it as "translation guidelines" or "translation help".
-{{Identical|Message documentation}})
+/** Message documentation (Message documentation)
  * @author Amire80
  * @author Cquoi
  * @author Kghbln
@@ -1235,6 +1232,7 @@ $messages['fa'] = array(
  * @author Beluga
  * @author Nike
  * @author Olli
+ * @author Silvonen
  */
 $messages['fi'] = array(
 	'translatorsignup' => 'Kääntäjäksi liittyminen',
@@ -1266,6 +1264,7 @@ $messages['fi'] = array(
 	'notifytranslators' => 'Käännösilmoitukset',
 	'translationnotifications-submit-ok' => 'Ilmoitukset on lisätty jonoon ja ne tullaan toimittamaan taustatehtävänä.',
 	'translationnotifications-send-notification-button' => 'Lähetä ilmoitus kääntäjille',
+	'translationnotifications-preview-notification-button' => 'Ilmoituksen esikatselu',
 	'translationnotifications-deadline-label' => 'Ilmoituksessa kerrottava käännöksen määräaika:',
 	'translationnotifications-languages-to-notify-label' => 'Minkä kielten kääntäjiä ilmoitetaan:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Pilkulla erotellut kielikoodit; jos haluat ilmoittaa kaikkien kielien kääntäjille, jätä tyhjäksi.',
@@ -3019,6 +3018,7 @@ $messages['nl'] = array(
 	'notifytranslators' => 'Meldingen voor vertalers',
 	'translationnotifications-submit-ok' => 'De meldingen zijn toegevoegd aan een wachtrij en worden via een achtergrondtaak afgeleverd.',
 	'translationnotifications-send-notification-button' => 'Bericht naar vertalers sturen',
+	'translationnotifications-preview-notification-button' => 'Voorbeeld melding',
 	'translationnotifications-deadline-label' => 'Deadline voor deze melding:',
 	'translationnotifications-languages-to-notify-label' => 'Voor welke talen een melding gemaakt moet worden:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Komma gescheiden taalcodes; laat leeg om een melding voor alle vertalers te maken.',
@@ -3095,6 +3095,7 @@ U ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-m
 	'translationnotifications-log-alllanguages' => 'alle talen',
 	'translationnotifications-nodeadline' => 'geen',
 	'translationnotifications-signup-legal' => 'Door deze gegevens te verstrekken stemt u ermee in dat we contact met u mogen opnemen over onderwerpen over {{SITENAME}} waarvan wij denken dat ze uw interesse hebben. U gaat stemt ermee in dat uw gegevens onder ons [[{{MediaWiki:Privacypage}}|privacybeleid]] vallen.',
+	'translationnotifications-generic-languages' => '&lt;talen>',
 );
 
 /** Norwegian Nynorsk (norsk nynorsk)
