@@ -632,7 +632,7 @@ Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Üb
 	'translationnotifications-log-alllanguages' => 'alle Sprachen',
 	'translationnotifications-nodeadline' => 'keine',
 	'translationnotifications-signup-legal' => 'Mit Angabe dieser Informationen stimmst du zu, dass wir dich bezüglich Themen im Zusammenhang mit {{SITENAME}} kontaktieren können, die unserer Meinung nach für dich von Interesse sind. Du stimmst zudem zu, dass deine Daten unseren [[{{MediaWiki:Privacypage}}|Datenschutzgrundsätzen]] unterliegen.',
-	'translationnotifications-generic-languages' => '<Sprachen>',
+	'translationnotifications-generic-languages' => '&lt;Sprachen>',
 );
 
 /** German (formal address) (Deutsch (Sie-Form)‎)
@@ -1467,7 +1467,7 @@ Vous recevez ce courriel parce que vous avez souscrit à la réception de courri
 	'translationnotifications-log-alllanguages' => 'toutes les langues',
 	'translationnotifications-nodeadline' => 'aucune',
 	'translationnotifications-signup-legal' => "En fournissant cette information, vous acceptez que nous puissions vous contacter concernant des sujets liés à {{SITENAME}} que nous pensons qu'ils soient intéressant pour vous. Vous acceptez que vos données soient soumises à notre [[{{MediaWiki:Privacypage}}|politique de confidentialité]].",
-	'translationnotifications-generic-languages' => '<languages>',
+	'translationnotifications-generic-languages' => '&lt;languages>',
 );
 
 /** Franco-Provençal (arpetan)
@@ -1619,7 +1619,7 @@ Recibiu este correo electrónico porque se inscribiu para recibir correos electr
 	'translationnotifications-log-alllanguages' => 'todas as linguas',
 	'translationnotifications-nodeadline' => 'ningunha',
 	'translationnotifications-signup-legal' => 'Acepta que ao proporcionar esta información podemos poñernos en contacto con vostede por temas relacionados con {{SITENAME}} que pensemos que poidan ser do seu interese. Acepta que os seus datos están suxeitos á nosa [[{{MediaWiki:Privacypage}}|política de protección de datos]].',
-	'translationnotifications-generic-languages' => '<linguas>',
+	'translationnotifications-generic-languages' => '&lt;linguas>',
 );
 
 /** Hebrew (עברית)
@@ -1738,7 +1738,7 @@ $4
 	'translationnotifications-log-alllanguages' => 'כל השפות',
 	'translationnotifications-nodeadline' => 'אין',
 	'translationnotifications-signup-legal' => 'מתן המידע הזה מהווה את הסכמתך לכך שניצור אתך קשר בנושאים שקשורים לאתר {{SITENAME}} ושנראה לנו שיעניינו אותך. הנתונים שלך כפופים ל[[{{MediaWiki:Privacypage}}|מדיניות הפרטיות]] שלנו.',
-	'translationnotifications-generic-languages' => '<שפות>',
+	'translationnotifications-generic-languages' => '&lt;שפות>',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -2103,7 +2103,7 @@ Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di pos
 	'translationnotifications-log-alllanguages' => 'tutte le lingue',
 	'translationnotifications-nodeadline' => 'nessuno',
 	'translationnotifications-signup-legal' => 'Accetti che, fornendo queste informazioni, possiamo contattarti per quanto riguarda argomenti relativi a {{SITENAME}} che pensiamo possano interessarti. Accetti che i tuoi dati siano soggetti alla nostra [[{{MediaWiki:Privacypage}}|politica sulla privacy]].',
-	'translationnotifications-generic-languages' => '<lingue>',
+	'translationnotifications-generic-languages' => '&lt;lingue>',
 );
 
 /** Japanese (日本語)
@@ -2161,7 +2161,7 @@ $messages['ja'] = array(
 	'translationnotifications-sent-body' => '翻訳の通知を送信しました。',
 	'translationnotifications-log-alllanguages' => 'すべての言語',
 	'translationnotifications-nodeadline' => 'なし',
-	'translationnotifications-generic-languages' => '<言語を列挙>',
+	'translationnotifications-generic-languages' => '&lt;言語を列挙>',
 );
 
 /** Javanese (Basa Jawa)
@@ -2480,7 +2480,7 @@ Do häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{SITENAME}}}} enje
 	'translationnotifications-sent-body' => 'De Opforderonge zom Övversäze sin verdeilt woode.',
 	'translationnotifications-log-alllanguages' => 'all Schprooche',
 	'translationnotifications-nodeadline' => 'kein',
-	'translationnotifications-generic-languages' => '<Schprooche>',
+	'translationnotifications-generic-languages' => '&lt;Schprooche>',
 );
 
 /** Kurdish (Latin script) (Kurdî (latînî)‎)
@@ -2664,7 +2664,7 @@ $4
 	'translationnotifications-log-alllanguages' => 'сите јазици',
 	'translationnotifications-nodeadline' => 'без рок',
 	'translationnotifications-signup-legal' => 'Поднесувајќи ги овие информации, се согласувате да бидете контактирани во врска со темите поврзани со {{SITENAME}} што мислиме дека ќе ве интересираат. Се согласувате дека вашите податоци подлежат на нашите [[{{MediaWiki:Privacypage}}|правила за заштита на личните податоци.]]',
-	'translationnotifications-generic-languages' => '<јазици>',
+	'translationnotifications-generic-languages' => '&lt;јазици>',
 );
 
 /** Malayalam (മലയാളം)
@@ -2996,7 +2996,7 @@ $messages['nl'] = array(
 	'translationnotifications-username' => 'Gebruikersnaam:',
 	'translationnotifications-emailstatus' => 'E-mailadresstatus:',
 	'translationnotifications-email-confirmed' => 'Uw e-mailadres is bevestigd',
-	'translationnotifications-email-disablemail' => 'Uw e-mailadres is bevestigd, maar in [[Special:Preferences|uw voorkeuren]] hebt u aangegeven geen e-mail te willen ontvangen.',
+	'translationnotifications-email-disablemail' => 'Uw e-mailadres is bevestigd, maar in [[Special:Preferences|uw voorkeuren]] hebt u opgegeven geen e-mail te willen ontvangen.',
 	'translationnotifications-email-unconfirmed' => 'Uw e-mailadres is niet bevestigd. $1',
 	'translationnotifications-email-notset' => 'U hebt geen e-mailadres opgegeven. U kunt dit doen in uw [[Special:Preferences|voorkeuren]].',
 	'translationnotifications-languages' => 'Talen',
@@ -3632,6 +3632,11 @@ $messages['roa-tara'] = array(
 	'translationnotifications-nolang' => "Scacchie 'na lènghe",
 	'translationnotifications-cmethod-email' => 'E-mail',
 	'translationnotifications-cmethod-talkpage' => "Pàgene de le 'ngazzaminde",
+	'translationnotifications-priority' => 'Priorità:',
+	'translationnotifications-priority-high' => 'ierte',
+	'translationnotifications-priority-medium' => 'medie',
+	'translationnotifications-priority-low' => 'vasce',
+	'translationnotifications-priority-unset' => "(none 'mbostate)",
 );
 
 /** Russian (русский)
@@ -4418,7 +4423,7 @@ Bạn nhận được thư điện tử này vì bạn đã quyết định nh�
 	'translationnotifications-log-alllanguages' => 'tất cả các ngôn ngữ',
 	'translationnotifications-nodeadline' => 'không có',
 	'translationnotifications-signup-legal' => 'Với việc cung cấp thông tin này, bạn đồng ý cho phép chúng tôi liên lạc với bạn về các đề tài có liên quan đến {{SITENAME}} mà bạn có thể quan tâm đến. Bạn đồng ý rằng dữ liệu của bạn sẽ được sử dụng theo [[{{MediaWiki:Privacypage}}|quy định quyền riêng tư]] của chúng tôi.',
-	'translationnotifications-generic-languages' => '<các ngôn ngữ>',
+	'translationnotifications-generic-languages' => '&lt;các ngôn ngữ>',
 );
 
 /** Yiddish (ייִדיש)
@@ -4701,5 +4706,5 @@ $4
 	'translationnotifications-log-alllanguages' => '所有語言',
 	'translationnotifications-nodeadline' => '無',
 	'translationnotifications-signup-legal' => '您同意若提供此資訊，我們可能就有關{{SITENAME}}，而我們又認為您感興趣的主題與您聯繫。您同意您的資料將按照[[{{MediaWiki:Privacypage}}|私隱攻策]]處理。',
-	'translationnotifications-generic-languages' => '<languages>',
+	'translationnotifications-generic-languages' => '&lt;languages>',
 );
