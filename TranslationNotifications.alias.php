@@ -20,7 +20,7 @@ $specialPageAliases['ar'] = array(
 	'TranslatorSignup' => array( 'اشتراك_المستخدمين' ),
 );
 
-/** Assamese (অসমীয়া) */
+/** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
 	'NotifyTranslators' => array( 'অনুবাদকক_জাননী_প্ৰেৰণ' ),
 	'TranslatorSignup' => array( 'অনুবাদৰ_পঞ্জীভুক্তি' ),
@@ -99,6 +99,12 @@ $specialPageAliases['ml'] = array(
 $specialPageAliases['nl'] = array(
 	'NotifyTranslators' => array( 'Vertalersmeldingen' ),
 	'TranslatorSignup' => array( 'Vertalersregistratie' ),
+);
+
+/** Russian (русский) */
+$specialPageAliases['ru'] = array(
+	'NotifyTranslators' => array( 'Уведомить_переводчиков' ),
+	'TranslatorSignup' => array( 'Регистрация_переводчиков' ),
 );
 
 /** Sicilian (sicilianu) */
