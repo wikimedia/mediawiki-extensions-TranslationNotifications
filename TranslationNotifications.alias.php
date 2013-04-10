@@ -81,6 +81,7 @@ $specialPageAliases['ko'] = array(
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'NotifyTranslators' => array( 'Iwwersetzer_informéieren' ),
+	'TranslatorSignup' => array( 'Achreiwung_als_Iwwersetzer' ),
 );
 
 /** Macedonian (македонски) */
