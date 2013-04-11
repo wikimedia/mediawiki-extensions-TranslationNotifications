@@ -419,6 +419,8 @@ $messages['bn'] = array(
 	'translationnotifications-email-confirmed' => 'আপনার ইমেইল ঠিকানা নিশ্চিত করা হয়েছে',
 	'translationnotifications-email-unconfirmed' => 'আপনার ইমেইল ঠিকানা নিশ্চিত করা হয়নি। $1',
 	'translationnotifications-languages' => 'ভাষা',
+	'translationnotifications-lang' => 'ভাষা #$1',
+	'translationnotifications-nolang' => 'ভাষা নির্বাচন',
 	'translationnotifications-cmethod-email' => 'ই-মেইল',
 	'translationnotifications-cmethod-talkpage' => 'আলাপ পাতা',
 	'translationnotifications-cmethod-feed' => 'ফিড',
@@ -531,7 +533,7 @@ $messages['de'] = array(
 	'translationnotifications-username' => 'Benutzername:',
 	'translationnotifications-emailstatus' => 'E-Mail-Status:',
 	'translationnotifications-email-confirmed' => 'Deine E-Mail-Adresse ist bestätigt',
-	'translationnotifications-email-disablemail' => 'Deine E-Mail-Adresse ist bestätigt, du bittest allerdings über [[Special:Preferences|deine Einstellungen]] darum, keine E-Mails zugesandt zu bekommen.',
+	'translationnotifications-email-disablemail' => 'Deine E-Mail-Adresse ist bestätigt, du bittest allerdings in [[Special:Preferences|deinen Einstellungen]] darum, keine E-Mails zugesandt zu bekommen.',
 	'translationnotifications-email-unconfirmed' => 'Deine E-Mail-Adresse ist nicht bestätigt. $1',
 	'translationnotifications-email-notset' => 'Du hast keine E-Mail-Adresse angegeben. Dies kannst du in deinen [[Special:Preferences|Einstellungen]] tun.',
 	'translationnotifications-languages' => 'Sprachen',
@@ -588,7 +590,7 @@ die Übersetzungskoordinatoren von {{SITENAME}}
 Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails für Übersetzungen auf {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen besuche bitte $8.',
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
-du erhältst diese E-Mail, da du dich als Übersetzer(in) {{PLURAL:$9|für}} $3 auf {{SITENAME}} {{GENDER:$1|registriert}} hast.
+du erhältst diese E-Mail, da du dich als {{GENDER:$1|Übersetzer|Übersetzerin}} {{PLURAL:$9|für}} $3 bei {{SITENAME}} registriert hast.
 Die Seite [[$4]] ist zum Übersetzen vorhanden. Du kannst sie hier übersetzen:
 $5
 
@@ -606,7 +608,7 @@ die Übersetzungskoordinatoren von {{SITENAME}}',
 	'translationnotifications-digestemail-subject' => 'E-Mail-Übersicht zu Übersetzungsanforderungen von {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hallo $1,
 
-du erhältst diese E-Mail, da du dich als Übersetzer(in) für $2 auf {{SITENAME}} {{GENDER:$1|registriert}} hast.
+du erhältst diese E-Mail, da du dich als Übersetzer(in) für $2 bei {{SITENAME}} {{GENDER:$1|registriert}} hast.
 Es {{PLURAL:$3|ist eine Seite|sind $3 Seiten}} zum Übersetzen vorhanden. Einzelheiten sind unten angegeben:
 
 $4
@@ -619,7 +621,7 @@ die Übersetzungsadministratoren von {{SITENAME}}
 
 ----
 
-Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen, besuche bitte <$5>.',
+Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Übersetzungen bei {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen besuche bitte <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'Am $1 gab $2 die Seite „$3“ zur Übersetzung frei. Du kannst sie unter $4 übersetzen.',
 	'translationnotifications-edit-summary' => 'Übersetzungsbenachrichtigung: $1',
 	'translationnotifications-email-priority' => 'Übersetzungspriorität dieser Seite: $1.',
@@ -635,6 +637,44 @@ Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Üb
 	'translationnotifications-generic-languages' => '&lt;Sprachen>',
 );
 
+/** Swiss High German (Schweizer Hochdeutsch)
+ * @author Geitost
+ */
+$messages['de-ch'] = array(
+	'translationnotifications-talkpage-body' => 'Hallo $2,
+
+du erhältst dieses E-Mail, da du dich als {{GENDER:$1|Übersetzer|Übersetzerin}} für $3 bei {{SITENAME}} registriert hast.
+Die Seite [[$4]] ist zum Übersetzen vorhanden. Du kannst sie hier übersetzen:
+$5
+
+$6
+$7
+
+$8
+
+Deine Hilfe wird sehr geschätzt. Übersetzer wie du helfen dabei, dass {{SITENAME}}
+als wirklich mehrsprachige Gemeinschaft fungiert.
+
+Vielen Dank,
+die Übersetzungskoordinatoren von {{SITENAME}}', # Fuzzy
+	'translationnotifications-digestemail-body' => 'Hallo $1,
+
+du erhältst dieses E-Mail, da du dich als Übersetzer(in) für $2 bei {{SITENAME}} {{GENDER:$1|registriert}} hast.
+Es {{PLURAL:$3|ist eine Seite|sind $3 Seiten}} zum Übersetzen vorhanden. Einzelheiten sind unten angegeben:
+
+$4
+
+Deine Hilfe wird sehr geschätzt. Übersetzer wie du helfen dabei, dass {{SITENAME}}
+als wirklich mehrsprachige Gemeinschaft fungiert.
+
+Vielen Dank,
+die Übersetzungsadministratoren von {{SITENAME}}
+
+----
+
+Du erhältst dieses E-Mail, da du dich zum Empfang von E-Mails bezüglich der Übersetzungen bei {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen besuche bitte <$5>.',
+);
+
 /** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Geitost
  * @author Kghbln
@@ -642,7 +682,7 @@ Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Üb
 $messages['de-formal'] = array(
 	'translatorsignup-summary' => 'Nutzen Sie diese Seite, um anzugeben, in welche Sprachen Sie übersetzen können und wie Sie bei Übersetzungsanfragen benachrichtigt werden möchten.',
 	'translationnotifications-email-confirmed' => 'Ihre E-Mail-Adresse ist bestätigt',
-	'translationnotifications-email-disablemail' => 'Ihre E-Mail-Adresse ist bestätigt, bitten allerdings über [[Special:Preferences|Ihren Einstellungen]] darum, keine E-Mails zugesandt zu bekommen.',
+	'translationnotifications-email-disablemail' => 'Ihre E-Mail-Adresse ist bestätigt, Sie bitten allerdings in [[Special:Preferences|Ihren Einstellungen]] darum, keine E-Mails zugesandt zu bekommen.',
 	'translationnotifications-email-unconfirmed' => 'Ihre E-Mail-Adresse ist nicht bestätigt. $1',
 	'translationnotifications-email-notset' => 'Sie haben keine E-Mail-Adresse angegeben. Dies können Sie in Ihren [[Special:Preferences|Einstellungen]] tun.',
 	'translationnotifications-nolang' => 'Wählen Sie eine Sprache',
@@ -670,7 +710,7 @@ die Übersetzungskoordinatoren von {{SITENAME}}
 Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails für Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen besuchen Sie bitte $8.', # Fuzzy
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
-Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $3 auf {{SITENAME}} registriert haben.
+Sie erhalten diese E-Mail, da Sie sich als {{GENDER:$1|Übersetzer|Übersetzerin}} für $3 bei {{SITENAME}} registriert haben.
 Eine Seite [[$4]] ist zum Übersetzen vorhanden. Sie können sie hier übersetzen:
 $5
 
@@ -683,7 +723,7 @@ Vielen Dank,
 die Übersetzungskoordinatoren von {{SITENAME}}', # Fuzzy
 	'translationnotifications-digestemail-body' => 'Hallo $1,
 
-Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $2 auf {{SITENAME}} registriert haben.
+Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für $2 bei {{SITENAME}} registriert haben.
 Es {{PLURAL:$3|ist eine Seite|sind $3 Seiten}} zum Übersetzen vorhanden. Einzelheiten sind unten angegeben:
 
 $4
@@ -695,7 +735,7 @@ die Übersetzungsadministratoren von {{SITENAME}}
 
 ----
 
-Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen, besuchen Sie bitte <$5>.', # Fuzzy
+Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails bezüglich der Übersetzungen bei {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen besuchen Sie bitte <$5>.',
 	'translationnotifications-signup-legal' => 'Mit Angabe dieser Informationen stimmen Sie zu, dass wir Sie bezüglich Themen im Zusammenhang mit {{SITENAME}} kontaktieren können, die unserer Meinung nach für Sie von Interesse sind. Sie stimmen zudem zu, dass Ihre Daten unseren [[{{MediaWiki:Privacypage}}|Datenschutzgrundsätzen]] unterliegen.',
 );
 
@@ -2358,7 +2398,7 @@ $4
 	'translationnotifications-edit-summary' => '번역 알림: $1',
 	'translationnotifications-email-priority' => '이 문서의 우선 순위는 $1입니다.',
 	'translationnotifications-email-deadline' => '이 문서의 번역에 대한 마감일은 $1입니다.',
-	'logentry-translationnotifications-sent' => '$1 사용자가 $3 번역 문서에 대한 알림을 {{GENDER:$2|보냈습니다}}. {{PLURAL:$1|언어}}: $4; 마감일: $5; 우선 순위: $6; {{PLURAL:$7|받는 사람 한명|받는 사람 $7명}}한테 보냄, {{PLURAL:$8|받는 사람 한명|받는 사람 $8명}}한테 보내기 실패, {{PLURAL:$9|받는 사람 한명|받는 사람 $9명}}한테 보내기 생략',
+	'logentry-translationnotifications-sent' => '$1 사용자가 $3 번역 문서에 대한 알림을 {{GENDER:$2|보냈습니다}}. {{PLURAL:$10|언어}}: $4; 마감일: $5; 중요도: $6; {{PLURAL:$7|받는 사람 한명|받는 사람 $7명}}한테 보냄, {{PLURAL:$8|받는 사람 한명|받는 사람 $8명}}한테 보내기 실패, {{PLURAL:$9|받는 사람 한명|받는 사람 $9명}}한테 보내기 생략',
 	'log-name-notifytranslators' => '번역 알림',
 	'log-description-notifytranslators' => '번역 가능한 문서에 대한 알림을 번역자한테 보낸 기록입니다',
 	'translationnotifications-sent-title' => '번역 알림 보내기',
