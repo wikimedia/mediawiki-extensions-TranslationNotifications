@@ -569,9 +569,9 @@ $messages['de'] = array(
 	'translationnotifications-email-subject' => 'Bitte übersetze die Seite $1.',
 	'translationnotifications-email-body' => 'Hallo $1,
 
-du erhältst diese E-Mail, da du dich als Übersetzer(in) für die {{PLURAL:$9|Sprache|Sprachen}} $2 auf {{SITENAME}} {{GENDER:$10|registriert}} hast.
+du erhältst diese E-Mail, da du dich als {{GENDER:$10|Übersetzer|Übersetzerin}} für die {{PLURAL:$9|Sprache|Sprachen}} $2 bei {{SITENAME}} registriert hast.
 
-Die zu übersetzende Seite: $3.
+Es gibt dort eine übersetzende Seite: $3.
 Sie kann nach einem Klick auf den folgenden Link übersetzt werden:
 $4
 
@@ -587,7 +587,7 @@ die Übersetzungskoordinatoren von {{SITENAME}}
 
 ----
 
-Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails für Übersetzungen auf {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen besuche bitte $8.',
+Du erhältst diese E-Mail, da du dich für den Empfang von E-Mails für Übersetzungen bei {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen besuche bitte $8.',
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 du erhältst diese E-Mail, da du dich als {{GENDER:$1|Übersetzer|Übersetzerin}} {{PLURAL:$9|für}} $3 bei {{SITENAME}} registriert hast.
@@ -641,6 +641,27 @@ Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Üb
  * @author Geitost
  */
 $messages['de-ch'] = array(
+	'translationnotifications-email-body' => 'Hallo $1,
+
+du erhältst dieses E-Mail, da du dich als {{GENDER:$10|Übersetzer|Übersetzerin}} für die {{PLURAL:$9|Sprache|Sprachen}} $2 bei {{SITENAME}} registriert hast.
+
+Es gibt dort eine übersetzende Seite: $3.
+Sie kann nach einem Klick auf den folgenden Link übersetzt werden:
+$4
+
+$5
+$6
+
+$7
+
+Deine Hilfe wird sehr geschätzt. Übersetzer wie du helfen dabei, dass {{SITENAME}} als wirklich mehrsprachige Gemeinschaft fungiert.
+
+Vielen Dank,
+die Übersetzungskoordinatoren von {{SITENAME}}
+
+----
+
+Du erhältst dieses E-Mail, da du dich für den Empfang von E-Mails für Übersetzungen bei {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen besuche bitte $8.',
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 du erhältst dieses E-Mail, da du dich als {{GENDER:$1|Übersetzer|Übersetzerin}} für $3 bei {{SITENAME}} registriert hast.
@@ -689,9 +710,9 @@ $messages['de-formal'] = array(
 	'translationnotifications-email-subject' => 'Bitte übersetzen Sie die Seite $1.',
 	'translationnotifications-email-body' => 'Hallo $1,
 
-Sie erhalten diese E-Mail, da Sie sich als Übersetzer(in) für die {{PLURAL:$9|Sprache|Sprachen}} $2 auf {{SITENAME}} registriert haben.
+Sie erhalten diese E-Mail, da Sie sich als {{GENDER:$10|Übersetzer|Übersetzerin}} für die {{PLURAL:$9|Sprache|Sprachen}} $2 bei {{SITENAME}} registriert haben.
 
-Die zu übersetzende Seite: $3.
+Es gibt dort eine übersetzende Seite: $3.
 Sie kann nach einem Klick auf den folgenden Link übersetzt werden:
 $4
 
@@ -707,7 +728,7 @@ die Übersetzungskoordinatoren von {{SITENAME}}
 
 ----
 
-Sie erhalten diese E-Mail, da Sie sich zum Empfang von E-Mails für Übersetzungen auf {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen besuchen Sie bitte $8.', # Fuzzy
+Sie erhalten diese E-Mail, da Sie sich für den Empfang von E-Mails für Übersetzungen bei {{SITENAME}} registriert haben. Zum Abmelden oder Ändern Ihrer Benachrichtigungseinstellungen für Übersetzungen besuchen Sie bitte $8.',
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
 Sie erhalten diese E-Mail, da Sie sich als {{GENDER:$1|Übersetzer|Übersetzerin}} für $3 bei {{SITENAME}} registriert haben.
