@@ -307,6 +307,37 @@ $messages['as'] = array(
 	'translationnotifications-nodeadline' => 'একো নাই',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'translatorsignup' => 'Inscripción de traductores',
+	'translatorsignup-summary' => 'Use esta páxina pa indicar en qué llingües pue traducir, e como quier que nos pongamos en contautu pa les nueves solicitúes de traducción.',
+	'translationnotifications-desc' => 'Permite a los traductores suscribise a los avisos de traducción',
+	'translationnotifications-info' => 'Información del usuariu',
+	'translationnotifications-username' => "Nome d'usuariu:",
+	'translationnotifications-emailstatus' => 'Estáu del corréu:',
+	'translationnotifications-email-confirmed' => 'La so direición de corréu electrónicu ta confirmada',
+	'translationnotifications-email-disablemail' => 'La so direición de corréu electrónicu ta confirmada, pero [[Special:Preferences|nes preferencies]] pidió nun recibir correos.',
+	'translationnotifications-email-unconfirmed' => 'La so direición de corréu electrónicu nun ta confirmada. $1',
+	'translationnotifications-email-notset' => 'Nun dio denguna direición de corréu electrónicu. Pue facelo nes sos [[Special:Preferences|preferencies]].',
+	'translationnotifications-languages' => 'Llingües',
+	'translationnotifications-lang' => 'Llingua num. $1',
+	'translationnotifications-nolang' => 'Escueya una llingua',
+	'translationnotifications-contact' => 'Métodos de contactu preferíos',
+	'translationnotifications-cmethod-email' => 'Corréu',
+	'translationnotifications-cmethod-talkpage' => "Páxina d'alderique",
+	'translationnotifications-cmethod-talkpage-elsewhere' => "Páxina d'alderique d'otra wiki",
+	'translationnotifications-cmethod-feed' => 'Canal de noticies',
+	'translationnotifications-frequency' => 'Frecuencia del contactu',
+	'translationnotifications-freq-always' => 'Cuando esista daqué nuevo pa traducir',
+	'translationnotifications-freq-week' => 'Como muncho una vez a la selmana',
+	'translationnotifications-freq-month' => 'Como muncho una vez al mes',
+	'translationnotifications-freq-weekly' => 'Boletín selmanal',
+	'translationnotifications-freq-monthly' => 'Boletín mensual',
+	'translationnotifications-submit' => 'Anovar la configuración',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
@@ -409,6 +440,7 @@ $messages['bg'] = array(
 );
 
 /** Bengali (বাংলা)
+ * @author Anubhab91
  * @author Bellayet
  * @author Nasir8891
  */
@@ -420,7 +452,7 @@ $messages['bn'] = array(
 	'translationnotifications-email-unconfirmed' => 'আপনার ইমেইল ঠিকানা নিশ্চিত করা হয়নি। $1',
 	'translationnotifications-languages' => 'ভাষা',
 	'translationnotifications-lang' => 'ভাষা #$1',
-	'translationnotifications-nolang' => 'ভাষা নির্বাচন',
+	'translationnotifications-nolang' => 'একটি ভাষা নির্বাচন করুন',
 	'translationnotifications-cmethod-email' => 'ই-মেইল',
 	'translationnotifications-cmethod-talkpage' => 'আলাপ পাতা',
 	'translationnotifications-cmethod-feed' => 'ফিড',
