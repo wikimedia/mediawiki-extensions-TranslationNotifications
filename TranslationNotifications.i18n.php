@@ -336,6 +336,94 @@ $messages['ast'] = array(
 	'translationnotifications-freq-weekly' => 'Boletín selmanal',
 	'translationnotifications-freq-monthly' => 'Boletín mensual',
 	'translationnotifications-submit' => 'Anovar la configuración',
+	'translationnotifications-signup-success' => "Guardaronse les sos preferencies d'avisos de traducciones.",
+	'notifytranslators' => 'Avisar a los traductores',
+	'translationnotifications-submit-ok' => 'Los avisos amestaronse a una cola y entreguense por una xera en segundu planu.',
+	'translationnotifications-send-notification-button' => 'Unviar un avisu a los traductores',
+	'translationnotifications-preview-notification-button' => 'Vista previa del avisu',
+	'translationnotifications-deadline-label' => 'Data tope a indicar nesti avisu:',
+	'translationnotifications-languages-to-notify-label' => "A qué idiomes hai qu'avisar:",
+	'translationnotifications-languages-to-notify-label-help-message' => "Códigos d'idioma separaos por comes; dexar balero p'avisar a tolos idiomes.",
+	'translationnotifications-priority' => 'Prioridá:',
+	'translationnotifications-priority-high' => 'alta',
+	'translationnotifications-priority-medium' => 'media',
+	'translationnotifications-priority-low' => 'baxa',
+	'translationnotifications-priority-unset' => '(non definida)',
+	'translationnotifications-translatablepage-title' => 'Nome de la páxina traducible:',
+	'translationnotifications-error-no-translatable-pages' => 'Nun hai páxines traducibles nesta wiki.',
+	'translationnotifications-email-subject' => 'Por favor, traduza la páxina $1',
+	'translationnotifications-email-body' => "Hola $1,
+
+Recibió esti corréu electrónicu porque inscribióse como {{GENDER:$10|traductor|traductora}} {{PLURAL:$9|al}} $2 en {{SITENAME}}.
+
+Allí hai una páxina pa traducir: $3.
+Pue traducila calcando nel enllaz siguiente:
+$4
+
+$5
+$6
+
+$7
+
+Agradecemos enforma la so ayuda. {{GENDER:$10|Los|Les}} traductores como vusté ayuden a que {{SITENAME}} funcione
+como una verdadera comunidá multillingüe.
+
+¡Gracies!
+Los coordinadores de traducciones de {{SITENAME}}
+
+----
+
+Recibió esti corréu electrónicu porque inscribióse pa recibir correos rellacionaos coles traducciones de {{SITENAME}}. Pa torgar la suscripción o camudar les preferencies d'avisos de traducción, visite $8.",
+	'translationnotifications-talkpage-body' => 'Hola $2,
+
+Recibió esti avisu porque inscribióse como {{GENDER:$1|traductor|traductora}} {{PLURAL:$9|al}} $3 en {{SITENAME}}.
+
+La páxina [[$4]] ta disponible pa traducir. Pue traducila equí:
+$5
+
+$6
+$7
+
+$8
+
+Agradecemos enforma la so ayuda. {{GENDER:$1|Los|Les}} traductores como vusté ayuden a que {{SITENAME}} funcione
+como una verdadera comunidá multillingüe.
+
+¡Gracies!
+Los coordinadores de traducciones de {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'traducir al $1',
+	'translationnotifications-digestemail-subject' => 'Corréu electrónicu de resume sobro les solicitúes de traducción de {{SITENAME}}',
+	'translationnotifications-digestemail-body' => "Hola $1,
+
+Recibió esti corréu electrónicu porque inscribióse como {{GENDER:$1|traductor|traductora}} al $2 en {{SITENAME}}.
+
+Allí hai {{PLURAL:$3|una páxina|$3 páxines}} pa traducir. Más abaxo danse los detalles
+
+$4
+
+
+Agradecemos enforma la so ayuda. {{GENDER:$1|Los|Les}} traductores como vusté ayuden a que {{SITENAME}} funcione
+como una verdadera comunidá multillingüe.
+
+¡Gracies!
+Los coordinadores de traducciones de {{SITENAME}}
+
+----
+
+Recibió esti corréu electrónicu porque inscribióse pa recibir correos rellacionaos coles traducciones de {{SITENAME}}. Pa torgar la suscripción o camudar les preferencies d'avisos de traducción, visite <$5>.",
+	'translationnotifications-digestemail-notification-line' => 'El $1, $2  marcó pa traducir «$3». Pue traducilo en $4',
+	'translationnotifications-edit-summary' => 'Avisu de traducción: $1',
+	'translationnotifications-email-priority' => "La prioridá d'esta páxina ye $1.",
+	'translationnotifications-email-deadline' => 'La data tope pa traducir esta páxina ye $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|unvió}} un avisu de traducción de la páxina $3; {{PLURAL:$10|llingua|llingües}}: $4; data tope: $5; prioridá: $6; unviáu a {{PLURAL:$7|1 destinatariu|$7 destinatarios}}; falló pa {{PLURAL:$8|1 destinatariu|$8 destinatarios}}; saltáu pa {{PLURAL:$9|1 destinatariu|$9 destinatarios}}',
+	'log-name-notifytranslators' => 'Avisos de traducción',
+	'log-description-notifytranslators' => 'Un rexistru de los avisos unviaos a los traductores sobro páxines traducibles',
+	'translationnotifications-sent-title' => "Unviáu l'avisu de traducción",
+	'translationnotifications-sent-body' => "Unvióse l'avisu de traducción.",
+	'translationnotifications-log-alllanguages' => 'toles llingües',
+	'translationnotifications-nodeadline' => 'denguna',
+	'translationnotifications-signup-legal' => 'Aceuta que por dar esta información podemos ponenos en contautu con vusté sobro asuntos rellacionaos con {{SITENAME}} que creamos que puen interesa-y. Aceuta que los sos datos queden suxetos a la nuesa [[{{MediaWiki:Privacypage}}|política de proteición de datos]].',
+	'translationnotifications-generic-languages' => '&lt;llingües>',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
