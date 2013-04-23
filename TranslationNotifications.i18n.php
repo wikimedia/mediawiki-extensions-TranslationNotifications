@@ -2957,6 +2957,7 @@ $messages['ms'] = array(
 	'notifytranslators' => 'Beritahu penterjemah',
 	'translationnotifications-submit-ok' => 'Pemberitahuan telah ditambahkan dalam baris gilir dan dikirim oleh kerja latar belakang.',
 	'translationnotifications-send-notification-button' => 'Hantar pemberitahuan kepada para penterjemah',
+	'translationnotifications-preview-notification-button' => 'Pratayang pemberitahuan',
 	'translationnotifications-deadline-label' => 'Tarikh tutup untuk dinyatakan dalam pemberitahuan ini:',
 	'translationnotifications-languages-to-notify-label' => 'Bahasa-bahasa untuk diberitahukan:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Kod bahasa diasing-asingkan oleh koma; biarkan kosong untuk memberitahu untuk semua bahasa.',
@@ -3039,6 +3040,7 @@ Anda menerima e-mel ini kerana anda telah mendaftar untuk menerima e-mel yang be
 	'translationnotifications-log-alllanguages' => 'semua bahasa',
 	'translationnotifications-nodeadline' => 'tiada',
 	'translationnotifications-signup-legal' => 'Anda bersetuju bahawa dengan memberikan maklumat ini, kami boleh menghubungi anda berkenaan perihal-perihal yang berkaitan dengan {{SITENAME}} yang kami rasa berkaitan dengan anda. Anda bersetuju bahawa data anda tertakluk pada [[{{MediaWiki:Privacypage}}|dasar privasi]] kami.',
+	'translationnotifications-generic-languages' => '&lt;bahasa>',
 );
 
 /** Maltese (Malti)
@@ -3779,7 +3781,7 @@ $messages['ro'] = array(
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pagină de discuții pe alt wiki',
 	'translationnotifications-frequency' => 'Frecvența de contact',
 	'translationnotifications-freq-always' => 'Atunci când este ceva nou de tradus',
-	'translationnotifications-freq-week' => 'Ce mult o dată pe săptămână',
+	'translationnotifications-freq-week' => 'Cel mult o dată pe săptămână',
 	'translationnotifications-freq-month' => 'Cel mult o dată pe lună',
 	'translationnotifications-freq-weekly' => 'Rezumat săptămânal',
 	'translationnotifications-freq-monthly' => 'Rezumat lunar',
