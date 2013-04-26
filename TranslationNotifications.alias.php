@@ -114,6 +114,12 @@ $specialPageAliases['scn'] = array(
 	'TranslatorSignup' => array( 'IscrizioneTraduttore' ),
 );
 
+/** Ukrainian (українська) */
+$specialPageAliases['uk'] = array(
+	'NotifyTranslators' => array( 'Сповістити_перекладачів' ),
+	'TranslatorSignup' => array( 'Підписка_перекладачів' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'NotifyTranslators' => array( '通知译者' ),

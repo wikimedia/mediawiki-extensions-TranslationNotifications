@@ -3779,6 +3779,7 @@ $messages['ro'] = array(
 	'translationnotifications-cmethod-email' => 'E-mail',
 	'translationnotifications-cmethod-talkpage' => 'Pagină de discuții',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Pagină de discuții pe alt wiki',
+	'translationnotifications-cmethod-feed' => 'Flux',
 	'translationnotifications-frequency' => 'Frecvența de contact',
 	'translationnotifications-freq-always' => 'Atunci când este ceva nou de tradus',
 	'translationnotifications-freq-week' => 'Cel mult o dată pe săptămână',
@@ -3801,6 +3802,7 @@ $messages['ro'] = array(
 	'translationnotifications-email-priority' => 'Prioritatea acestei pagini este $1.',
 	'translationnotifications-log-alllanguages' => 'toate limbile',
 	'translationnotifications-nodeadline' => 'niciuna',
+	'translationnotifications-generic-languages' => '&lt;limbi>',
 );
 
 /** tarandíne (tarandíne)
