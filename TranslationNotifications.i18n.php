@@ -4336,6 +4336,7 @@ $messages['ug-arab'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Base
  * @author Olvin
  * @author Ата
  */
@@ -4369,6 +4370,7 @@ $messages['uk'] = array(
 	'notifytranslators' => 'Сповістити перекладачів',
 	'translationnotifications-submit-ok' => 'Сповіщення було поставлено у чергу і вони розсилаються у фоновому режимі.',
 	'translationnotifications-send-notification-button' => 'Надіслати сповіщення перекладачам',
+	'translationnotifications-preview-notification-button' => 'Попередній перегляд сповіщення',
 	'translationnotifications-deadline-label' => 'Кінцевий термін, зазначений у цьому повідомленні:',
 	'translationnotifications-languages-to-notify-label' => 'Мови для сповіщення:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Відокремлені комою коди мов; Залиште порожнім для сповіщення всіх мов.',
@@ -4439,7 +4441,7 @@ $4
 	'translationnotifications-edit-summary' => 'Сповіщення перекладу: $1',
 	'translationnotifications-email-priority' => 'Пріоритет цієї сторінки — $1.',
 	'translationnotifications-email-deadline' => 'Кінцевий термін для перекладу цієї сторінки – $1 .',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|надіслав|надіслала}} сповіщення про сторінки до перекладу ($3 {{PLURAL:$1|мовою|мовами}} $4) із кінцевим терміном $5 та пріоритетом $6. Вдало надіслано {{PLURAL:$7|$7 одержувачу|$7 одержувачам}}, невдало - {{PLURAL:$8|$8 одежувачу|$8 одержувачам}}, {{PLURAL:$9|$9 одержувача|$9 одержувачів}} було пропущено.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|надіслав|надіслала}} сповіщення про сторінки до перекладу ($3 {{PLURAL:$10|мовою|мовами}} $4) із кінцевим терміном $5 та пріоритетом $6. Вдало надіслано {{PLURAL:$7|$7 одержувачу|$7 одержувачам}}, невдало — {{PLURAL:$8|$8 одежувачу|$8 одержувачам}}, {{PLURAL:$9|$9 одержувача|$9 одержувачів}} було пропущено.',
 	'log-name-notifytranslators' => 'Сповіщення перекладу',
 	'log-description-notifytranslators' => 'Журнал сповіщень, надісланих перекладачам, про сторінки до перекладу.',
 	'translationnotifications-sent-title' => 'Повідомлення про переклад надіслано.',
@@ -4447,6 +4449,7 @@ $4
 	'translationnotifications-log-alllanguages' => 'усі мови',
 	'translationnotifications-nodeadline' => 'немає',
 	'translationnotifications-signup-legal' => 'Надаючи цю інформацію, Ви погоджуєтеся, що ми можемо контактувати з Вами за темами, що стосуються {{SITENAME}}, які, на нашу думку, можуть бути цікавими для Вас. Ви погоджуєтеся, що ваші дані є предметом [[{{MediaWiki:Privacypage}}|нашої політики конфіденційності]].',
+	'translationnotifications-generic-languages' => '&lt;мови>',
 );
 
 /** Urdu (اردو)
