@@ -3450,6 +3450,7 @@ die Midawaida vun {{SITENAME}}", # Fuzzy
 /** Polish (polski)
  * @author Ankry
  * @author BeginaFelicysym
+ * @author Chrumps
  * @author Odie2
  * @author Rzuwig
  * @author Woytecr
@@ -3560,7 +3561,7 @@ Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile 
 	'translationnotifications-sent-body' => 'Powiadomienie o tłumaczeniu zostało wysłane.',
 	'translationnotifications-log-alllanguages' => 'wszystkie języki',
 	'translationnotifications-nodeadline' => 'brak',
-	'translationnotifications-signup-legal' => 'Dostarczając te informacje, użytkownik zgadzasz się z tym, że możemy skontaktować się z tobą w tematami związanymi ze stroną {{SITENAME}}, które naszym zdaniem mogą być dla ciebie interesujące. Zgadzasz się, również z tym, że Twoje dane osobowe będą przetwarzane zgodnie z naszymi [[{{MediaWiki:Privacypage}}|zasadami]].',
+	'translationnotifications-signup-legal' => 'Dostarczając te informacje, zgadzasz się z tym, że możemy skontaktować się z Tobą odnośnie tematów związanych ze stroną {{SITENAME}}, które naszym zdaniem mogą być dla Ciebie interesujące. Zgadzasz się również z tym, że Twoje dane osobowe będą przetwarzane zgodnie z naszymi [[{{MediaWiki:Privacypage}}|zasadami]].',
 );
 
 /** Piedmontese (Piemontèis)
