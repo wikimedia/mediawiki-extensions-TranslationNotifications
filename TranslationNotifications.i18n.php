@@ -2278,7 +2278,7 @@ Hai ricevuto questa email perché ti sei registrato per ricevere messaggi di pos
 	'translationnotifications-email-deadline' => 'Il termine ultimo per la traduzione di questa pagina è $1.',
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha inviato}} una notifica sulla traduzione della pagina $3; {{PLURAL:$10|lingua|lingue}}: $4; termine: $5; priorità: $6; inviata a {{PLURAL:$7|un destinatario|$7 destinatari}}, non inviata a {{PLURAL:$8|un destinatario|$8 destinatari}}, omessa a {{PLURAL:$9|un destinatario|$9 destinatari}}',
 	'log-name-notifytranslators' => 'Notifiche di traduzione',
-	'log-description-notifytranslators' => 'Una serie di notifiche riguardanti le pagine traducibili sono state inviate ai traduttori.',
+	'log-description-notifytranslators' => 'Registro delle notifiche inviate ai traduttori riguardanti le pagine traducibili',
 	'translationnotifications-sent-title' => 'Notifica di traduzione inviata',
 	'translationnotifications-sent-body' => 'La notifica di traduzione è stata inviata.',
 	'translationnotifications-log-alllanguages' => 'tutte le lingue',
