@@ -3614,7 +3614,7 @@ $messages['pms'] = array(
 
 A arsèiv ës mëssagi përché {{GENDER:$10|a l'é marcasse}} com tradutor {{PLURAL:$9|a}} $2 dzor {{SITENAME}}.
 
-A-i é na pagina da volté ambelessì: $3.
+A-i é na pàgina da volté ambelessì: $3.
 A peul voltela an sgnacand ansima a costa liura:
 $4
 
