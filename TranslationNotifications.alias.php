@@ -120,6 +120,11 @@ $specialPageAliases['uk'] = array(
 	'TranslatorSignup' => array( 'Підписка_перекладачів' ),
 );
 
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'NotifyTranslators' => array( 'Thông_báo_biên_dịch_viên' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'NotifyTranslators' => array( '通知译者' ),
