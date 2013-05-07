@@ -154,8 +154,11 @@ $messages['qqq'] = array(
 	'translationnotifications-email-unconfirmed' => 'Status of email confirmation after {{msg-mw|translationnotifications-emailstatus}}. Parameters:
 * $1 is a button which can be used to send confirmation email. Button text is {{msg-mw|confirmemail_send}}.',
 	'translationnotifications-email-notset' => 'Status of email confirmation after {{msg-mw|translationnotifications-emailstatus}}.',
-	'translationnotifications-languages' => 'Fieldset header',
-	'translationnotifications-lang' => 'Label for select, $1 is a number',
+	'translationnotifications-languages' => 'Fieldset header.
+{{Identical|Language}}',
+	'translationnotifications-lang' => 'Label for select. Parameters:
+* $1 - a number
+{{Identical|Language}}',
 	'translationnotifications-nolang' => 'First option in a language select',
 	'translationnotifications-contact' => 'Fieldset header',
 	'translationnotifications-cmethod-email' => 'Check option label',
