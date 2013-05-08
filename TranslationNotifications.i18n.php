@@ -258,7 +258,8 @@ The title for this message is {{msg-mw|Translationnotifications-sent-title}}.',
 	'translationnotifications-generic-languages' => 'A generic placeholder that is shown in the previewed notification instead of a list of language names.
 
 Used as <code>$3</code> in the following message:
-* {{msg-mw|Translationnotifications-talkpage-body}}.',
+* {{msg-mw|Translationnotifications-talkpage-body}}.
+{{Identical|Language}}',
 );
 
 /** Arabic (العربية)
