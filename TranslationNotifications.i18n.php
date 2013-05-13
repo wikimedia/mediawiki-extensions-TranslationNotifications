@@ -552,6 +552,12 @@ $messages['bn'] = array(
 	'translationnotifications-priority-high' => 'উচ্চ',
 	'translationnotifications-priority-medium' => 'মধ্যম',
 	'translationnotifications-priority-low' => 'নিম্ন',
+	'translationnotifications-priority-unset' => '(অনির্দিষ্ট)',
+	'translationnotifications-notification-url-listitem' => '$1 অনুবাদ করুন',
+	'translationnotifications-edit-summary' => 'অনুবাদ নোটিশ: $1',
+	'translationnotifications-email-priority' => 'এই পাতার গুরুত্ব হল $1।',
+	'translationnotifications-email-deadline' => 'অনুবাদ সম্পন্ন করার শেষ তারিখ হল $1।',
+	'log-name-notifytranslators' => 'অনুবাদ নোটিশ',
 	'translationnotifications-log-alllanguages' => 'সকল ভাষা',
 	'translationnotifications-nodeadline' => 'কিছু না',
 );
