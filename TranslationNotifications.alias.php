@@ -43,6 +43,12 @@ $specialPageAliases['diq'] = array(
 	'TranslatorSignup' => array( 'AçarnayışDekewtış' ),
 );
 
+/** Greek (Ελληνικά) */
+$specialPageAliases['el'] = array(
+	'NotifyTranslators' => array( 'ΕιδοποίησηΜεταφραστών' ),
+	'TranslatorSignup' => array( 'ΕγγραφήΜεταφραστή' ),
+);
+
 /** Esperanto (Esperanto) */
 $specialPageAliases['eo'] = array(
 	'NotifyTranslators' => array( 'Atentigi_tradukanton', 'Atentigi_tradukiston' ),

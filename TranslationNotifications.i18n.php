@@ -2713,6 +2713,7 @@ $messages['lb'] = array(
 	'translationnotifications-freq-weekly' => 'Wëchentleche Resumé',
 	'translationnotifications-freq-monthly' => 'Monatleche Resumé',
 	'translationnotifications-submit' => 'Astellungen aktualiséieren',
+	'translationnotifications-signup-success' => 'Är Asteelunge vun den Iwwersetzungsnotifikatioune goufe gespäichert.',
 	'notifytranslators' => 'Iwwersetzer informéieren',
 	'translationnotifications-send-notification-button' => "Eng Matdeelung un d'Iwwersetzer schécken",
 	'translationnotifications-deadline-label' => 'Delai deen an dëser Matdeelung gesat gëtt:',
@@ -2736,6 +2737,7 @@ $messages['lb'] = array(
 	'translationnotifications-sent-body' => "D'Iwwersetzungs-Matdeelung gouf geschéckt",
 	'translationnotifications-log-alllanguages' => 'all Sproochen',
 	'translationnotifications-nodeadline' => 'keng',
+	'translationnotifications-generic-languages' => '&lt;Sproochen>',
 );
 
 /** Macedonian (македонски)
