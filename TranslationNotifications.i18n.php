@@ -4046,6 +4046,37 @@ $messages['sk'] = array(
 	'translationnotifications-nodeadline' => 'nič',
 );
 
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Милан Јелисавчић
+ */
+$messages['sr-ec'] = array(
+	'translationnotifications-info' => 'Кориснички подаци',
+	'translationnotifications-username' => 'Корисничко име:',
+	'translationnotifications-emailstatus' => 'Статус е-поште:',
+	'translationnotifications-email-confirmed' => 'Ваша е-адреса је потврђена',
+	'translationnotifications-languages' => 'Језици',
+	'translationnotifications-lang' => 'Језик #$1',
+	'translationnotifications-nolang' => 'Изаберите језик',
+	'translationnotifications-cmethod-email' => 'Е-пошта',
+	'translationnotifications-cmethod-talkpage' => 'Страница за разговор',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Страница за разговор на другој вики',
+	'translationnotifications-freq-week' => 'Највише једном недељно',
+	'translationnotifications-freq-month' => 'Највише једном месечно',
+	'translationnotifications-freq-weekly' => 'Недељни преглед',
+	'translationnotifications-freq-monthly' => 'Месечни преглед',
+	'translationnotifications-submit' => 'Ажурирај подешавања',
+	'notifytranslators' => 'Обавештавање преводиоца',
+	'translationnotifications-send-notification-button' => 'Пошаљи обавештење преводиоцима',
+	'translationnotifications-priority' => 'Приоритет:',
+	'translationnotifications-priority-high' => 'висок',
+	'translationnotifications-priority-medium' => 'средњи',
+	'translationnotifications-priority-low' => 'низак',
+	'translationnotifications-priority-unset' => '(непостављен)',
+	'translationnotifications-notification-url-listitem' => 'преведи на $1',
+	'translationnotifications-log-alllanguages' => 'сви језици',
+	'translationnotifications-nodeadline' => 'ниједан',
+);
+
 /** Swedish (svenska)
  * @author WikiPhoenix
  */
