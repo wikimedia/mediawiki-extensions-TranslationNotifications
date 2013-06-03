@@ -555,8 +555,8 @@ $messages['bn'] = array(
 	'translationnotifications-priority-unset' => '(অনির্দিষ্ট)',
 	'translationnotifications-notification-url-listitem' => '$1 ভাষায় অনুবাদ করুন',
 	'translationnotifications-edit-summary' => 'অনুবাদ বিজ্ঞপ্তি: $1',
-	'translationnotifications-email-priority' => 'এই পাতার গুরুত্ব হল $1।',
-	'translationnotifications-email-deadline' => 'অনুবাদ সম্পন্ন করার শেষ তারিখ হল $1।',
+	'translationnotifications-email-priority' => 'এই পাতার অগ্রাধিকার হল $1।',
+	'translationnotifications-email-deadline' => 'অনুবাদ সম্পন্ন করার শেষ তারিখ $1।',
 	'log-name-notifytranslators' => 'অনুবাদ বিজ্ঞপ্তি',
 	'translationnotifications-log-alllanguages' => 'সকল ভাষা',
 	'translationnotifications-nodeadline' => 'কিছু না',
@@ -601,6 +601,13 @@ $messages['br'] = array(
 	'log-name-notifytranslators' => 'Kemennoù treiñ',
 	'translationnotifications-log-alllanguages' => 'an holl yezhoù',
 	'translationnotifications-nodeadline' => 'hini ebet',
+);
+
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'translationnotifications-lang' => 'Мотт № $1',
 );
 
 /** Sorani Kurdish (کوردی)
@@ -1921,7 +1928,7 @@ $4
 	'translationnotifications-edit-summary' => 'הודעה על תרגום: $1',
 	'translationnotifications-email-priority' => 'העדיפות של הדף הזה: $1.',
 	'translationnotifications-email-deadline' => 'התאריך הסופי לתרגום הדף הזה הוא $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|שלח|שלחה}} מכתב עם בקשה לתרגם את הדף $3; {{PLURAL:$1|שפה|שפות}}: $4; תאריך סופי: $5; עדיפות: $6; השליחה הצליחה ל{{PLURAL:$7|מקבל אחד|־$7 מקבלים}}, נכשלה {{PLURAL:$8|למקבל אחד|ל־$8 מקבלים}}, ודילגה על {{PLURAL:$9|מקבל אחד|$9 מקבלים}}', # Fuzzy
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|שלח|שלחה}} מכתב עם בקשה לתרגם את הדף $3; {{PLURAL:$10|שפה|שפות}}: $4; תאריך סופי: $5; עדיפות: $6; השליחה הצליחה ל{{PLURAL:$7|מקבל אחד|־$7 מקבלים}}, נכשלה {{PLURAL:$8|למקבל אחד|ל־$8 מקבלים}}, ודילגה על {{PLURAL:$9|מקבל אחד|$9 מקבלים}}',
 	'log-name-notifytranslators' => 'מכתבים למתרגמים',
 	'log-description-notifytranslators' => 'יומן של מכתבים שנשלחים למתרגמים על דפים שאפשר לתרגם',
 	'translationnotifications-sent-title' => 'נשלח מכתב למתרגמים',
@@ -2592,7 +2599,8 @@ $messages['ksh'] = array(
 	'notifytranslators' => 'Övversäzer benohreeschtijje',
 	'translationnotifications-submit-ok' => 'De Metdeilonge sin jäz aam Waade un wääde us Schlang vun enem Hengerjrondsprojramm noh un bei verscheck.',
 	'translationnotifications-send-notification-button' => 'Donn en Metdeilong aan de Övversäzer verschecke',
-	'translationnotifications-deadline-label' => ' Deadline in heh dä Metdeilong:', # Fuzzy
+	'translationnotifications-preview-notification-button' => 'Vor_Aanseesch vun dä Metdeilong',
+	'translationnotifications-deadline-label' => 'Wann sull heh di Metdeilong fäädesch sin:',
 	'translationnotifications-languages-to-notify-label' => 'Opforderonge för wat för en Schprooche verschecke:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'En Leß met Köözele för Schprooche met Kommas derzwesche. Don nix enjävve, öm alle Schprooche ze krijje.',
 	'translationnotifications-priority' => 'Rang:',
@@ -2605,7 +2613,7 @@ $messages['ksh'] = array(
 	'translationnotifications-email-subject' => 'Bes esu jood un donn de Sigg „$1“ övversäze',
 	'translationnotifications-email-body' => "Daach $1,
 
-heh di e-mail kriß De, weil De Desch als ene Övversäzer för de {{PLURAL:$9|Schprooch|Schprooche|kein Schprooche}} $2 op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs.
+heh di e-mail kriß De, weil De Desch als ene Övversäzer för de {{PLURAL:$9|Schprooch|Schprooche|kein Schprooche}} $2 op {{GRAMMAR:3|{{ucfirst:{{SITENAME}}}}}} enjedraare häs.
 
 Di Sigg „$3“ mööd övversaz wääde.
 Dat kanns De övver heh dä Lengk donn:
@@ -2616,17 +2624,17 @@ $6
 
 $7
 
-Ding Hölp es ärsch jään jesinn. Als Övversäzer helfs De met, dat {{GRAMMAR:1{{SITENAME}}}} als en Gemeinschaff met ville Schprooche joot doh schteiht.
+Ding Hölp es ärsch jään jesinn. Als Övversäzer helfs De met, dat {{GRAMMAR:1{{ucfirst:{{SITENAME}}}}}} als en Gemeinschaff met ville Schprooche joot doh schteiht.
 
 Onsere häzlejje Dank doför saare
-de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v{{SITENAME}}}}
+de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v{{ucfirst:{{SITENAME}}}}}}
 
 ----
 
-Do häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät draan ändere wells, jangk noh $8.", # Fuzzy
+Do häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{ucfirst:{{SITENAME}}}}}} enjedraare häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät draan ändere wells, jangk noh $8.",
 	'translationnotifications-talkpage-body' => "Daach $2,
 
-Do kriß heh di Metdeilong, weil De Desch als ene Övversäzer för de {{PLURAL:$9|Schprooch|Schprooche|kein Schprooche}} $3 op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs.
+Do kriß heh di Metdeilong, weil De Desch als ene Övversäzer för de {{PLURAL:$9|Schprooch|Schprooche|kein Schprooche}} $3 op {{GRAMMAR:3|{{ucfirst:{{SITENAME}}}}}} enjedraare häs.
 
 Di Sigg „[[$4]]“ mööd övversaz wääde.
 Dat kanns De övver heh dä Lengk donn:
@@ -2641,36 +2649,37 @@ Ding Hölp es ärsch jään jesinn. Als Övversäzer helfs De met, dat {{GRAMMAR
 
 Onsere häzlejje Dank doför saare
 
-de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v{{SITENAME}}}}", # Fuzzy
+de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v|{{ucfirst:{{SITENAME}}}}}}{{GENDER:$1}}",
 	'translationnotifications-notification-url-listitem' => 'övversäze op $1',
 	'translationnotifications-digestemail-subject' => 'Zosammejefaß Metdeilong för Övversäzonge {{GRAMMAR:2 v|{{SITENAME}}}}',
 	'translationnotifications-digestemail-body' => "Daach $1,
 
-heh di e-mail kriß De, weil De Desch als ene Övversäzer för $2 op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs.
+heh di e-mail kriß De, weil De Desch als ene Övversäzer för $2 op {{GRAMMAR:3|{{ucfirst:{{SITENAME}}}}}} enjedraare häs.
 
 {{PLURAL:$3|Ein Sigg|$3 Sigge|Kein Sigg}} mööd övversaz wääde. De Einzelheite schtonn onge.
 
 $4
 
-Ding Hölp es ärsch jään jesinn. Als Övversäzer helfs De met, dat {{GRAMMAR:1{{SITENAME}}}} als en Gemeinschaff met ville Schprooche joot doh schteiht.
+Ding Hölp es ärsch jään jesinn. Als Övversäzer helfs De met, dat {{GRAMMAR:1|{{ucfirst:{{SITENAME}}}}}} als en Gemeinschaff met ville Schprooche joot doh schteiht.
 
 Onsere häzlejje Dank doför saare
-de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v{{SITENAME}}}}
+de Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v|{{ucfirst:{{SITENAME}}}}}}
 
 ----
 
-Do häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{SITENAME}}}} enjedraare häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät draan ändere wells, jangk noh $5.", # Fuzzy
+Do häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{ucfirst:{{SITENAME}}}}}} enjedraare häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät draan ändere wells, jangk noh <$5>.",
 	'translationnotifications-digestemail-notification-line' => 'Aam $1 hät {{GENDER:$2|dä|et|dä Metmaacher|de|dat}} $2 di Sigg „$3“ för et Övversäze freijejovve. Do kanns se övversäzze op dä Sigg: $4',
 	'translationnotifications-edit-summary' => 'Övversäzongsnohreesch: $1',
 	'translationnotifications-email-priority' => 'Der Rang vun dä Sigg es $1.',
 	'translationnotifications-email-deadline' => 'Di Sigg moß bes zom $1 övversaz sin.',
-	'logentry-translationnotifications-sent' => '{{GENDER:$2|Dä|Dat|Dä Metmaacher|De|Dat}} $1 häd en Metdeilong övver et Övversäze vun dä Sigg $3 en dä Schproche $4, met däm Jeweesch $6 un däm Dattum $5 för fäädesch ze wääde aan {{PLURAL:$7|eine|$7|keine}} Metmaacher verscheck, för {{PLURAL:$8|eine |$8|keine}} Metmaacher hät dat nit jeflup un {{PLURAL:$9|eine|$9|keine}} woodte tiräk övverjange.', # Fuzzy
+	'logentry-translationnotifications-sent' => '{{GENDER:$2|Dä|Dat|Dä Metmaacher|De|Dat}} $1 häd en Metdeilong övver et Övversäze vun dä Sigg $3 en dä Schproche $4, met däm Jeweesch $6 un däm Dattum $5 för fäädesch ze wääde aan {{PLURAL:$7|eine|$7|keine}} Metmaacher verscheck, för {{PLURAL:$8|eine |$8|keine}} Metmaacher hät dat nit jeflup un {{PLURAL:$9|eine|$9|keine}} woodte tiräk övverjange.',
 	'log-name-notifytranslators' => 'Logbooch vun de Opforderonge zem Övversäze',
 	'log-description-notifytranslators' => 'Et Logbooch övver de Nohreeschte aan Övversäzere övver de övversäzbaa Sigge',
 	'translationnotifications-sent-title' => 'Opforderonge verdeilt',
 	'translationnotifications-sent-body' => 'De Opforderonge zom Övversäze sin verdeilt woode.',
 	'translationnotifications-log-alllanguages' => 'all Schprooche',
 	'translationnotifications-nodeadline' => 'kein',
+	'translationnotifications-signup-legal' => 'Wann De heh di Aanjaabe määß, dann beß De dermet enverschtannde, dat mer Desch en Saache {{GRAMMAR:2 v|{{ucfirst:{{SITENAME}}}}}} aanschriive künne, un dat met Dinge Daate noh ons [[{{MediaWiki:Privacypage}}|Rääjelle för prevaate Daate]] ömjejange weedt.',
 	'translationnotifications-generic-languages' => '&lt;Schprooche>',
 );
 
@@ -2717,6 +2726,7 @@ $messages['lb'] = array(
 	'notifytranslators' => 'Iwwersetzer informéieren',
 	'translationnotifications-submit-ok' => 'Notifikatioune goufen op eng Lëscht (Queue) derbäigesat a gi mat engem Programm am Hannergrond geschéckt.',
 	'translationnotifications-send-notification-button' => "Eng Matdeelung un d'Iwwersetzer schécken",
+	'translationnotifications-preview-notification-button' => 'Notifikatioun weisen ouni se ze späicheren',
 	'translationnotifications-deadline-label' => 'Delai deen an dëser Matdeelung gesat gëtt:',
 	'translationnotifications-languages-to-notify-label' => 'Wat fir Sprooche sollen informéiert ginn:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Kommagetrennte Sproochcoden; eidel loosse fir Matdeelunge fir all Sproochen ze kréien.',
@@ -2735,6 +2745,7 @@ $messages['lb'] = array(
 	'translationnotifications-email-priority' => "D'Prioritéit vun dëser Säit ass $1.",
 	'translationnotifications-email-deadline' => "Den Delai fir dës säit z'iwwersetzen ass den $1.",
 	'log-name-notifytranslators' => 'Iwwersetzungs-Matdeelungen',
+	'log-description-notifytranslators' => "E Logbuch vun den Notifikatiounen vun de Säite fir z'iwwersetzen déi un d'Iwwersetzer geschéckt goufen",
 	'translationnotifications-sent-title' => 'Iwwersetzungs-Matdeelung geschéckt',
 	'translationnotifications-sent-body' => "D'Iwwersetzungs-Matdeelung gouf geschéckt",
 	'translationnotifications-log-alllanguages' => 'all Sproochen',
