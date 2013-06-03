@@ -273,7 +273,7 @@ $messages['ar'] = array(
 	'translationnotifications-nodeadline' => 'لا شيء',
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  */
 $messages['as'] = array(
@@ -1149,6 +1149,7 @@ Vi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITE
 /** Spanish (español)
  * @author Armando-Martin
  * @author Dferg
+ * @author MarcoAurelio
  */
 $messages['es'] = array(
 	'translatorsignup' => 'Inscripción de traductores',
@@ -3095,7 +3096,7 @@ $messages['mt'] = array(
 	'translationnotifications-priority-low' => 'baxx',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  */
 $messages['nb'] = array(
 	'translatorsignup' => 'Registrer deg som oversetter',
