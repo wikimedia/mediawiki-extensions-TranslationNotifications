@@ -1397,6 +1397,7 @@ $messages['eu'] = array(
 /** Persian (فارسی)
  * @author Mjbmr
  * @author Reza1615
+ * @author درفش کاویانی
  */
 $messages['fa'] = array(
 	'translatorsignup' => 'ثبت نام مترجم',
@@ -1404,6 +1405,7 @@ $messages['fa'] = array(
 	'translationnotifications-username' => 'نام کاربری:',
 	'translationnotifications-emailstatus' => 'وضعیت پست الکترونیکی:',
 	'translationnotifications-email-confirmed' => 'نشانی پست الکترونیک تائید شده‌است',
+	'translationnotifications-email-unconfirmed' => 'نشانی رایانامه (ایمیل) شما تأیید نشده‌است. $1',
 	'translationnotifications-languages' => 'زبان‌ها',
 	'translationnotifications-lang' => 'زبان شماره $1',
 	'translationnotifications-nolang' => 'یک زبان را انتخاب کنید',
@@ -1419,12 +1421,16 @@ $messages['fa'] = array(
 	'translationnotifications-freq-weekly' => 'خلاصهٔ هفتگی',
 	'translationnotifications-freq-monthly' => 'حلاصهٔ یک ماه',
 	'translationnotifications-submit' => 'تنظیمات به‌روز رسانی',
+	'translationnotifications-send-notification-button' => 'ارسال اعلان به مترجم‌ها',
+	'translationnotifications-preview-notification-button' => 'پیش‌نمایش اعلان',
 	'translationnotifications-priority' => 'اولویت:',
 	'translationnotifications-priority-high' => 'بالا',
 	'translationnotifications-priority-medium' => 'متوسط',
 	'translationnotifications-priority-low' => 'کم',
+	'translationnotifications-email-subject' => 'لطفاً صفحهٔ $1 را ترجمه کنید.',
 	'translationnotifications-log-alllanguages' => 'همۀ زبان‌ها',
 	'translationnotifications-nodeadline' => 'هیچ‌کدام',
+	'translationnotifications-generic-languages' => 'زبان‌ها',
 );
 
 /** Finnish (suomi)
