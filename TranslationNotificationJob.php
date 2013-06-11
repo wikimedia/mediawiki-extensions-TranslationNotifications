@@ -195,6 +195,7 @@ class TranslationNotificationJob extends Job {
 					// in this case, because sometimes people redirect a Latin
 					// username to a username in their script.
 					'redirect' => '',
+					'bot' => '1', // This will be ignored if the user doesn't have the "bot" userright
 				)
 			)
 		);
