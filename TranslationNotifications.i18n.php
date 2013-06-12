@@ -4568,6 +4568,13 @@ $8
 	'translationnotifications-nodeadline' => 'کوئی بھی نہیں',
 );
 
+/** Uzbek (oʻzbekcha)
+ * @author Sociologist
+ */
+$messages['uz'] = array(
+	'translationnotifications-username' => 'Foydalanuvchi nomi:',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  */
