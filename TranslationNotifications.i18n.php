@@ -3842,6 +3842,7 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'translatorsignup' => "Reggistrazione d'u traduttore",
 	'translationnotifications-info' => "'Mbormaziune de l'utende",
 	'translationnotifications-username' => "Nome de l'utende:",
 	'translationnotifications-emailstatus' => "State d'a mail:",
@@ -3850,11 +3851,17 @@ $messages['roa-tara'] = array(
 	'translationnotifications-nolang' => "Scacchie 'na lènghe",
 	'translationnotifications-cmethod-email' => 'E-mail',
 	'translationnotifications-cmethod-talkpage' => "Pàgene de le 'ngazzaminde",
+	'translationnotifications-cmethod-feed' => 'Feed',
 	'translationnotifications-priority' => 'Priorità:',
 	'translationnotifications-priority-high' => 'ierte',
 	'translationnotifications-priority-medium' => 'medie',
 	'translationnotifications-priority-low' => 'vasce',
 	'translationnotifications-priority-unset' => "(none 'mbostate)",
+	'translationnotifications-notification-url-listitem' => "traduce jndr'à $1",
+	'log-name-notifytranslators' => 'Notifiche de traduzione',
+	'translationnotifications-log-alllanguages' => 'tutte le lènghe',
+	'translationnotifications-nodeadline' => 'ninde',
+	'translationnotifications-generic-languages' => '&lt;lènghe>',
 );
 
 /** Russian (русский)
