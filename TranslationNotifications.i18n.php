@@ -2454,6 +2454,7 @@ $messages['ka'] = array(
 	'translationnotifications-email-subject' => 'გთხოვთ, თარგმნეთ გვერდი $1',
 	'translationnotifications-log-alllanguages' => 'ყველა ენა',
 	'translationnotifications-nodeadline' => 'არა',
+	'translationnotifications-generic-languages' => '&lt;ენები>',
 );
 
 /** Korean (한국어)
