@@ -164,7 +164,8 @@ $messages['qqq'] = array(
 	'translationnotifications-cmethod-email' => 'Check option label',
 	'translationnotifications-cmethod-talkpage' => 'Check option label',
 	'translationnotifications-cmethod-talkpage-elsewhere' => 'Check option label',
-	'translationnotifications-cmethod-feed' => 'Check option label',
+	'translationnotifications-cmethod-feed' => 'Check option label.
+{{Identical|Feed}}',
 	'translationnotifications-frequency' => 'Fieldset header',
 	'translationnotifications-freq-always' => 'Radio option label',
 	'translationnotifications-freq-week' => 'Radio option label',
