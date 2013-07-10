@@ -609,6 +609,7 @@ $messages['br'] = array(
  */
 $messages['ce'] = array(
 	'translationnotifications-lang' => 'Мотт № $1',
+	'translationnotifications-nolang' => 'Харжа мотт',
 );
 
 /** Sorani Kurdish (کوردی)
@@ -2573,6 +2574,13 @@ $4
 	'translationnotifications-log-alllanguages' => '모든 언어',
 	'translationnotifications-nodeadline' => '없음',
 	'translationnotifications-signup-legal' => '우리가 당신에게 관심이 있을 것으로 생각하는 {{SITENAME}}에 우리가 관련 있는 주제와 관련하여 연락을 할 수 있도록 이 정보를 제공하는 데 동의합니다. 데이터에 동의하면 [[{{MediaWiki:Privacypage}}|개인정보 정책]]의 적용을 받습니다.',
+);
+
+/** Karachay-Balkar (къарачай-малкъар)
+ * @author Iltever
+ */
+$messages['krc'] = array(
+	'translationnotifications-languages' => 'Тилле',
 );
 
 /** Colognian (Ripoarisch)
