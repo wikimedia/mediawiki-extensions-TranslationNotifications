@@ -608,8 +608,10 @@ $messages['br'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'translationnotifications-languages' => 'Меттанаш',
 	'translationnotifications-lang' => 'Мотт № $1',
 	'translationnotifications-nolang' => 'Харжа мотт',
+	'translationnotifications-log-alllanguages' => 'берриге меттанаш',
 );
 
 /** Sorani Kurdish (کوردی)
