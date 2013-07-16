@@ -2506,9 +2506,9 @@ $messages['ko'] = array(
 	'translationnotifications-translatablepage-title' => '번역 가능한 문서 이름:',
 	'translationnotifications-error-no-translatable-pages' => '이 위키에 번역 가능한 문서가 없습니다.',
 	'translationnotifications-email-subject' => '$1 문서를 번역하세요',
-	'translationnotifications-email-body' => '$1 안녕하세요,
+	'translationnotifications-email-body' => '$1님 안녕하세요,
 
-{{SITENAME}}에 $2{{PLURAL:$9|로}} 번역에 {{GENDER:$10|가입}}했기 때문에 이 이메일을 받았습니다.
+{{SITENAME}}에 $2 번역자{{PLURAL:$9|로}} {{GENDER:$10|등록}}했기 때문에 이 이메일을 받았습니다.
 
 여기에 번역에 대한 문서가 있습니다: $3.
 다음 링크를 클릭하여 번역할 수 있습니다:
@@ -2519,19 +2519,19 @@ $6
 
 $7
 
-여러분의 도움을 높게 평가하고 있습니다. 여러분과 같은 번역자는 진정한
-다언어 공동체로서 {{SITENAME}}에 돕습니다.
+여러분의 도움을 높게 평가하고 있습니다. 여러분과 같은 번역자들이 {{SITENAME}}이(가) 
+진정한 다언어 공동체로 기능할 수 있도록 돕는 것입니다.
 
 감사합니다!
 {{SITENAME}} 번역 담당자
 
 ----
 
-{{SITENAME}}에 번역에 대해 이메일을 받도록 가입했기 때문에 이 이메일을 받았습니다. 구독을 취소하거나 번역에 대한 사용자 알림 환경 설정을 바꾸려면 $8로 방문하세요.',
-	'translationnotifications-talkpage-body' => '$2 안녕하세요,
+{{SITENAME}}의 번역에 관해 등록하고 이메일을 받도록 설정했기 때문에 이 이메일을 받았습니다. 구독을 취소하거나 번역에 대한 사용자 알림 환경 설정을 바꾸려면 $8을 방문하시기 바랍니다.',
+	'translationnotifications-talkpage-body' => '$2님 안녕하세요,
 
-{{SITENAME}}에 $3{{PLURAL:$9|로}} 번역에 {{GENDER:$1|가입}}했기 때문에 이 알림을 받았습니다.
-번역에 대해 [[$4]] 문서가 있습니다. 여기서 이를 번역할 수 있습니다:
+{{SITENAME}}에 $3 번역자로{{PLURAL:$9|로}} {{GENDER:$1|등록}}했기 때문에 이 알림을 보내 드립니다.
+[[$4]] 문서가 번역 대상으로 올라와 있습니다. 여기서 이를 번역할 수 있습니다:
 $5
 
 $6
@@ -2539,24 +2539,24 @@ $7
 
 $8
 
-여러분의 도움을 높게 평가하고 있습니다. 여러분과 같은 번역자는 진정한
-다언어 공동체로서 {{SITENAME}}에 돕습니다.
+여러분의 도움을 높게 평가하고 있습니다. 여러분과 같은 번역자들이 {{SITENAME}}이(가) 
+진정한 다언어 공동체로 기능할 수 있도록 돕는 것입니다.
 
 감사합니다!
 
 {{SITENAME}} 번역 담당자',
 	'translationnotifications-notification-url-listitem' => '$1 번역',
 	'translationnotifications-digestemail-subject' => '{{SITENAME}}에서 번역 요청에 대해 이메일로 알립니다',
-	'translationnotifications-digestemail-body' => '$1 안녕하세요,
+	'translationnotifications-digestemail-body' => '$1님 안녕하세요,
 
-{{SITENAME}}에 $2로 번역에 {{GENDER:$1|가입}}했기 때문에 이 이메일을 받았습니다.
+{{SITENAME}}에 $2 번역자로 {{GENDER:$1|등록}}했기 때문에 이 이메일을 받았습니다.
 
-번역에 대한 문서 $3개가 있습니다. 자세한 내용은 아래에 있습니다.
+번역이 필요한 {{PLURAL:$3|문서 1개|문서 $3개}}가 있습니다. 자세한 내용은 아래에 있습니다.
 
 $4
 
-여러분의 도움을 높게 평가하고 있습니다. 여러분과 같은 번역자는 진정한
-다언어 공동체로서 {{SITENAME}}에 돕습니다.
+여러분의 도움을 높게 평가하고 있습니다. 여러분과 같은 번역자들이 {{SITENAME}}이(가) 
+진정한 다언어 공동체로 기능할 수 있도록 돕는 것입니다.
 
 감사합니다!
 {{SITENAME}} 번역 관리자
