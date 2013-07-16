@@ -61,12 +61,17 @@ class TranslationNotificationJob extends Job {
 		}
 
 		global $wgNotificationUsername;
+		$user = User::newFromName( $wgNotificationUsername );
+		if ( $user->isAllowed( 'bot' ) ) {
+			$flags = $flags | EDIT_FORCE_BOT; // If the user has the bot right, mark edit as bot
+		}
+
 		$status = $talkPage->doEditContent(
 			ContentHandler::makeContent( $text, $this->title ),
 			$this->params['editSummary'],
 			$flags,
 			false,
-			User::newFromName( $wgNotificationUsername )
+			$user
 		);
 
 		return $status->isGood();
