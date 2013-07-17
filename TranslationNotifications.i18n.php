@@ -4164,6 +4164,7 @@ $messages['sr-ec'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Jopparn
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
@@ -4192,6 +4193,7 @@ $messages['sv'] = array(
 	'translationnotifications-submit' => 'Uppdatera inställningar',
 	'notifytranslators' => 'Meddela översättare',
 	'translationnotifications-send-notification-button' => 'Skicka ett meddelande till översättare',
+	'translationnotifications-preview-notification-button' => 'Förhandsgranska meddelande',
 	'translationnotifications-deadline-label' => 'Tidsgränsen att ange i denna anmälan:',
 	'translationnotifications-languages-to-notify-label' => 'Vilka språk som ska meddelas:',
 	'translationnotifications-priority' => 'Prioritet:',
@@ -4206,6 +4208,9 @@ $messages['sv'] = array(
 	'translationnotifications-digestemail-subject' => 'E-postsammandrag för översättningsbegäran från {{SITENAME}}',
 	'translationnotifications-edit-summary' => 'Översättningsmeddelande: $1',
 	'translationnotifications-email-priority' => 'Prioriteten för denna sida är $1.',
+	'translationnotifications-email-deadline' => 'Tidsfristen för att översätta denna sida är $1.',
+	'translationnotifications-sent-title' => 'Översättningsmeddelande skickat',
+	'translationnotifications-sent-body' => 'Översättningsmeddelande skickades.',
 	'translationnotifications-log-alllanguages' => 'alla språk',
 	'translationnotifications-nodeadline' => 'ingen',
 );
