@@ -660,6 +660,15 @@ $messages['cs'] = array(
 	'translationnotifications-nodeadline' => 'žádný',
 );
 
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+ * @author ОйЛ
+ */
+$messages['cu'] = array(
+	'translationnotifications-languages' => 'ѩꙁꙑци',
+	'translationnotifications-lang' => 'ѩꙁꙑкъ $1',
+	'translationnotifications-generic-languages' => '&lt;ѩꙁꙑци>',
+);
+
 /** German (Deutsch)
  * @author Geitost
  * @author Kghbln
@@ -2468,7 +2477,7 @@ $messages['ka'] = array(
 $messages['ko'] = array(
 	'translatorsignup' => '번역자 가입',
 	'translatorsignup-summary' => '번역할 언어를 나타내고 새로운 번역 요청에 대해 연락을 하고 싶어하는지에 대해 이 문서를 사용합니다.',
-	'translationnotifications-desc' => '번역자가 번역 알림에 가입 허용',
+	'translationnotifications-desc' => '번역자가 번역 알림에 가입할 수 있습니다',
 	'translationnotifications-info' => '사용자 정보',
 	'translationnotifications-username' => '사용자 이름:',
 	'translationnotifications-emailstatus' => '이메일 상태:',
@@ -2495,6 +2504,7 @@ $messages['ko'] = array(
 	'notifytranslators' => '번역자에게 알림',
 	'translationnotifications-submit-ok' => '알림이 대기열에 추가하고 백그라운드 작업으로 전달됩니다.',
 	'translationnotifications-send-notification-button' => '번역자한테 알림 보내기',
+	'translationnotifications-preview-notification-button' => '알림 미리 보기',
 	'translationnotifications-deadline-label' => '이 알림에 나타나는 마감일:',
 	'translationnotifications-languages-to-notify-label' => '어떤 언어 알리기:',
 	'translationnotifications-languages-to-notify-label-help-message' => '쉼표로 구분한 언어 코드; 모든 언어에 대해 알림을 비웁니다.',
@@ -2502,7 +2512,7 @@ $messages['ko'] = array(
 	'translationnotifications-priority-high' => '높음',
 	'translationnotifications-priority-medium' => '중간',
 	'translationnotifications-priority-low' => '낮음',
-	'translationnotifications-priority-unset' => '(미설정)',
+	'translationnotifications-priority-unset' => '(설정 안함)',
 	'translationnotifications-translatablepage-title' => '번역 가능한 문서 이름:',
 	'translationnotifications-error-no-translatable-pages' => '이 위키에 번역 가능한 문서가 없습니다.',
 	'translationnotifications-email-subject' => '$1 문서를 번역하세요',
@@ -2576,6 +2586,7 @@ $4
 	'translationnotifications-log-alllanguages' => '모든 언어',
 	'translationnotifications-nodeadline' => '없음',
 	'translationnotifications-signup-legal' => '우리가 당신에게 관심이 있을 것으로 생각하는 {{SITENAME}}에 우리가 관련 있는 주제와 관련하여 연락을 할 수 있도록 이 정보를 제공하는 데 동의합니다. 데이터에 동의하면 [[{{MediaWiki:Privacypage}}|개인정보 정책]]의 적용을 받습니다.',
+	'translationnotifications-generic-languages' => '&lt;언어>',
 );
 
 /** Karachay-Balkar (къарачай-малкъар)
