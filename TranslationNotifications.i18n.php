@@ -608,6 +608,7 @@ $messages['br'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'translationnotifications-username' => 'Декъашхон цӀе:',
 	'translationnotifications-languages' => 'Меттанаш',
 	'translationnotifications-lang' => 'Мотт № $1',
 	'translationnotifications-nolang' => 'Харжа мотт',
