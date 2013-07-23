@@ -31,6 +31,12 @@ $specialPageAliases['bxr'] = array(
 	'NotifyTranslators' => array( 'Оршуулагшада_мэдүүлхэ' ),
 );
 
+/** Chechen (нохчийн) */
+$specialPageAliases['ce'] = array(
+	'NotifyTranslators' => array( 'Хаийта_гочдархошна' ),
+	'TranslatorSignup' => array( 'Гочдархой_дӀабазбалар' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'NotifyTranslators' => array( 'Übersetzerbenachrichtigung' ),
