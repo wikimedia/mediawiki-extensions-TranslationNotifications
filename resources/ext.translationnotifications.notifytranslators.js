@@ -101,5 +101,5 @@
 				.attr( { id: previewId } )
 		);
 
-	});
+	} );
 }( jQuery, mediaWiki ) );

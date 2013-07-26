@@ -39,7 +39,11 @@ class DigestEmailTest extends MediaWikiTestCase {
 		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
 		foreach ( $translators as $translator ) {
 			$this->expectOutputRegex( '/[a-zA-Z\n]*1 notifications to send/' );
-			$this->assertEquals( $mailstatus[$translator], 1, User::newFromId( $translator ). " should get a mail" );
+			$this->assertEquals(
+				$mailstatus[$translator],
+				1,
+				User::newFromId( $translator ) . " should get a mail"
+			);
 		}
 	}
 
@@ -49,7 +53,12 @@ class DigestEmailTest extends MediaWikiTestCase {
 		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
 		foreach ( $translators as $translator ) {
 			$this->expectOutputRegex( '/[a-zA-Z\n]*0 notifications to send/' );
-			$this->assertEquals( $mailstatus[$translator], 0, User::newFromId( $translator ). " should not get a mail. Notification is not for this translator" );
+			$this->assertEquals(
+				$mailstatus[$translator],
+				0,
+				User::newFromId( $translator ) . " should not get a mail. " .
+					"Notification is not for this translator"
+			);
 		}
 	}
 
@@ -59,7 +68,11 @@ class DigestEmailTest extends MediaWikiTestCase {
 		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
 		foreach ( $translators as $translator ) {
 			$this->expectOutputRegex( '/[a-zA-Z\n]*1 notifications to send/' );
-			$this->assertEquals( $mailstatus[$translator], 1, User::newFromId( $translator ). " should get a mail" );
+			$this->assertEquals(
+				$mailstatus[$translator],
+				1,
+				User::newFromId( $translator ) . " should get a mail"
+			);
 		}
 	}
 
@@ -69,7 +82,11 @@ class DigestEmailTest extends MediaWikiTestCase {
 		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
 		foreach ( $translators as $translator ) {
 			$this->expectOutputRegex( '/[a-zA-Z\n]*0 notifications to send/' );
-			$this->assertEquals( $mailstatus[$translator], 0, User::newFromId( $translator ). " should not get a mail. Notifications are expired" );
+			$this->assertEquals(
+				$mailstatus[$translator],
+				0,
+				User::newFromId( $translator ) . " should not get a mail. Notifications are expired"
+			);
 		}
 	}
 
@@ -79,12 +96,20 @@ class DigestEmailTest extends MediaWikiTestCase {
 		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
 		foreach ( $translators as $translator ) {
 			$this->expectOutputRegex( '/[a-zA-Z\n]*1 notifications to send/' );
-			$this->assertEquals( $mailstatus[$translator], 1, User::newFromId( $translator ). " should get a mail" );
+			$this->assertEquals(
+				$mailstatus[$translator],
+				1,
+				User::newFromId( $translator ) . " should get a mail"
+			);
 		}
 		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
 		foreach ( $translators as $translator ) {
 			$this->expectOutputRegex( '/[a-zA-Z\n]*Not sending notifications/' );
-			$this->assertEquals( $mailstatus[$translator], 0, User::newFromId( $translator ). " should not get a mail, this is a repeat" );
+			$this->assertEquals(
+				$mailstatus[$translator],
+				0,
+				User::newFromId( $translator ) . " should not get a mail, this is a repeat"
+			);
 		}
 	}
 
@@ -97,7 +122,8 @@ class DigestEmailTest extends MediaWikiTestCase {
 			'announcedate' => '-1 day',
 			'announcer' => 'me',
 			'translatablepage' => Title::newFromText( 'TestTitle' ),
-			);
+		);
+
 		return $notifications;
 	}
 
@@ -105,12 +131,13 @@ class DigestEmailTest extends MediaWikiTestCase {
 		$notifications = array();
 		$notifications[] = array(
 			'languages' => 'invalid',
-			'deadline' =>'+1 month' ,
+			'deadline' => '+1 month',
 			'priority' => 'medium',
 			'announcedate' => '-1 day',
 			'announcer' => 'me',
 			'translatablepage' => Title::newFromText( 'TestTitle' ),
-			);
+		);
+
 		return $notifications;
 	}
 
@@ -118,12 +145,13 @@ class DigestEmailTest extends MediaWikiTestCase {
 		$notifications = array();
 		$notifications[] = array(
 			'languages' => '', // all languages
-			'deadline' =>'-1 month' ,
+			'deadline' => '-1 month',
 			'priority' => 'medium',
 			'announcedate' => '-1 day',
 			'announcer' => 'me',
 			'translatablepage' => Title::newFromText( 'TestTitle' ),
-			);
+		);
+
 		return $notifications;
 	}
 
@@ -134,12 +162,13 @@ class DigestEmailTest extends MediaWikiTestCase {
 				$translators[] = $this->getTranslator( $translator_conf );
 			}
 		}
+
 		return $translators;
 	}
 
 	private function getTranslator( $translator_conf ) {
 		$user = User::newFromName( $translator_conf['username'] );
-		if( $user->getID() === 0 ) {
+		if ( $user->getID() === 0 ) {
 			$user->addToDatabase();
 		}
 		$user->setOption( 'translationnotifications-lang-1', $translator_conf['language'] );
@@ -147,7 +176,7 @@ class DigestEmailTest extends MediaWikiTestCase {
 		$user->setOption( 'translationnotifications-last-digest', strtotime( '-2 month' ) );
 		$user->setOption( 'translationnotifications-freq', $translator_conf['digest_frequency'] );
 		$user->saveSettings();
+
 		return $user->getId();
 	}
-
 }

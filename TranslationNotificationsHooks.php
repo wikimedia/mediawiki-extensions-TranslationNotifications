@@ -21,7 +21,9 @@ class TranslationNotificationsHooks {
 	 * @param $params array
 	 * @return String
 	 */
-	public static function formatTranslationNotificationLogEntry( $type, $action, $title, $forUI, $params ) {
+	public static function formatTranslationNotificationLogEntry( $type, $action, $title,
+		$forUI, $params
+	) {
 		global $wgLang, $wgContLang;
 
 		$language = $forUI === null ? $wgContLang : $wgLang;
@@ -55,6 +57,7 @@ class TranslationNotificationsHooks {
 		$link = $forUI ?
 			Linker::link( $title, null, array(), array( 'oldid' => $params[0] ) ) :
 			$title->getPrefixedText();
+
 		return wfMessage( 'logentry-translationnotifications-sent' )->params(
 			'', // User link in the new system
 			'#', // User name for gender in the new system
@@ -70,15 +73,17 @@ class TranslationNotificationsHooks {
 	}
 
 	public static function onGetPreferences( $user, &$preferences ) {
-		foreach ( array(
-			'translationnotifications-lang-1',
-			'translationnotifications-lang-2',
-			'translationnotifications-lang-3',
-			'translationnotifications-cmethod-email',
-			'translationnotifications-cmethod-talkpage',
-			'translationnotifications-cmethod-talkpage-elsewhere-loc',
-			'translationnotifications-freq',
-		) as $preference ) {
+		foreach (
+			array(
+				'translationnotifications-lang-1',
+				'translationnotifications-lang-2',
+				'translationnotifications-lang-3',
+				'translationnotifications-cmethod-email',
+				'translationnotifications-cmethod-talkpage',
+				'translationnotifications-cmethod-talkpage-elsewhere-loc',
+				'translationnotifications-freq',
+			) as $preference
+		) {
 			$preferences[$preference] = array(
 				'type' => 'api',
 			);

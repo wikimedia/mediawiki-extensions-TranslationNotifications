@@ -17,10 +17,10 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
  * Extension credits properties.
  */
 $wgExtensionCredits['specialpage'][] = array(
-	'path'           => __FILE__,
-	'name'           => 'TranslationNotifications',
-	'version'        => '2012-03-02',
-	'author'         => array(
+	'path' => __FILE__,
+	'name' => 'TranslationNotifications',
+	'version' => '2012-03-02',
+	'author' => array(
 		'Niklas Laxström',
 		'Amir E. Aharoni',
 		'Santhosh Thottingal',
@@ -28,7 +28,7 @@ $wgExtensionCredits['specialpage'][] = array(
 		'Jon Harald Søby',
 	),
 	'descriptionmsg' => 'translationnotifications-desc',
-	'url'            => 'https://www.mediawiki.org/wiki/Extension:TranslationNotifications',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:TranslationNotifications',
 );
 
 $dir = dirname( __FILE__ );
@@ -37,7 +37,8 @@ $wgSpecialPages['NotifyTranslators'] = 'SpecialNotifyTranslators';
 $wgSpecialPageGroups['TranslatorSignup'] = 'login';
 $wgSpecialPageGroups['NotifyTranslators'] = 'users';
 $wgExtensionMessagesFiles['TranslationNotifications'] = "$dir/TranslationNotifications.i18n.php";
-$wgExtensionMessagesFiles['TranslationNotificationsAlias'] = "$dir/TranslationNotifications.alias.php";
+$wgExtensionMessagesFiles['TranslationNotificationsAlias'] =
+	"$dir/TranslationNotifications.alias.php";
 $wgAutoloadClasses['SpecialTranslatorSignup'] = "$dir/SpecialTranslatorSignup.php";
 $wgAutoloadClasses['SpecialNotifyTranslators'] = "$dir/SpecialNotifyTranslators.php";
 $wgAutoloadClasses['TranslationNotificationsHooks'] = "$dir/TranslationNotificationsHooks.php";
@@ -79,7 +80,8 @@ $wgTranslationNotificationsContactMethods = array(
 );
 
 $wgLogTypes[] = 'notifytranslators';
-$wgLogActionsHandlers['notifytranslators/sent'] = 'TranslationNotificationsHooks::formatTranslationNotificationLogEntry';
+$wgLogActionsHandlers['notifytranslators/sent'] =
+	'TranslationNotificationsHooks::formatTranslationNotificationLogEntry';
 
 $wgNotificationUsername = false;
 $wgNotificationUserPassword = false;

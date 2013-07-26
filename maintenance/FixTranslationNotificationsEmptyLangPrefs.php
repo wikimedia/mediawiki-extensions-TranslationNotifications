@@ -14,11 +14,12 @@
 
 // Standard boilerplate to define $IP
 if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
-        $IP = getenv( 'MW_INSTALL_PATH' );
+	$IP = getenv( 'MW_INSTALL_PATH' );
 } else {
-        $dir = dirname( __FILE__ ); $IP = "$dir/../../..";
+	$dir = dirname( __FILE__ );
+	$IP = "$dir/../../..";
 }
-require_once( "$IP/maintenance/Maintenance.php" );
+require_once "$IP/maintenance/Maintenance.php";
 
 class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
 	function execute() {
@@ -41,4 +42,4 @@ class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
 }
 
 $maintClass = 'FixTranslationNotificationsEmptyLangPrefs';
-require_once( RUN_MAINTENANCE_IF_MAIN );
+require_once RUN_MAINTENANCE_IF_MAIN;

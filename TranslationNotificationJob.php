@@ -23,6 +23,7 @@ class TranslationNotificationJob extends Job {
 
 		if ( $status !== true ) {
 			$this->setLastError( $status );
+
 			return false;
 		}
 
@@ -31,6 +32,7 @@ class TranslationNotificationJob extends Job {
 
 	private function textDiv() {
 		$dir = Language::factory( $this->params['languageCode'] )->getDir();
+
 		// Possible classes:
 		// mw-content-ltr, mw-content-rtl
 		return Html::rawElement(
@@ -88,8 +90,8 @@ class TranslationNotificationJob extends Job {
 		wfDebug( "publishInOtherWiki API: Get login token\n" );
 
 		$loginUrl = wfAppendQuery( $otherWikiBaseUrl, array(
-				'action' => 'login',
-				'format' => 'json',
+			'action' => 'login',
+			'format' => 'json',
 		) );
 		$getLoginTokenRequest = MWHttpRequest::factory(
 			$loginUrl,
@@ -200,7 +202,7 @@ class TranslationNotificationJob extends Job {
 					// in this case, because sometimes people redirect a Latin
 					// username to a username in their script.
 					'redirect' => '',
-					'bot' => '1', // This will be ignored if the user doesn't have the "bot" userright
+					'bot' => '1', // Ignored if the user doesn't have the "bot" userright
 				)
 			)
 		);

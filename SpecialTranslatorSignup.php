@@ -54,7 +54,9 @@ class SpecialTranslatorSignup extends SpecialPage {
 <<<JAVASCRIPT
 jQuery( function ( $ ) {
 	var toggle = function () {
-		$( '#mw-input-wpcmethod-talkpage-elsewhere-loc' ).toggle( $( '#mw-input-wpcmethod-talkpage-elsewhere' ).prop( 'checked' ) );
+		$( '#mw-input-wpcmethod-talkpage-elsewhere-loc' )
+			.toggle( $( '#mw-input-wpcmethod-talkpage-elsewhere' )
+			.prop( 'checked' ) );
 	};
 	toggle();
 	$( '#mw-input-wpcmethod-talkpage-elsewhere' ).change( toggle );
@@ -62,8 +64,13 @@ jQuery( function ( $ ) {
 JAVASCRIPT
 		);
 		// Show the legal text regarding the notifications.
-		if( $wgTranslationNotificationsSignupLegalMessage ) { // Do not show if value is empty or false.
-			$legalText = Html::RawElement( 'div', array( 'class' => 'mw-infobox' ), $this->msg( $wgTranslationNotificationsSignupLegalMessage )->parseAsBlock() );
+		// Do not show if value is empty or false.
+		if ( $wgTranslationNotificationsSignupLegalMessage ) {
+			$legalText = Html::RawElement(
+				'div',
+				array( 'class' => 'mw-infobox' ),
+				$this->msg( $wgTranslationNotificationsSignupLegalMessage )->parseAsBlock()
+			);
 			$this->getOutput()->addHTML( $legalText );
 		}
 	}
@@ -85,9 +92,13 @@ JAVASCRIPT
 			} else {
 				$status = $this->msg( 'translationnotifications-email-confirmed' )->parse();
 			}
-		} elseif ( trim( $user->getEmail() ) !== '' )  {
-			$submit = Xml::submitButton( $this->msg( 'confirmemail_send' )->text(), array( 'name' => 'x' ) );
-			$status = $this->msg( 'translationnotifications-email-unconfirmed' )->rawParams( $submit )->parse();
+		} elseif ( trim( $user->getEmail() ) !== '' ) {
+			$submit = Xml::submitButton(
+				$this->msg( 'confirmemail_send' )->text(),
+				array( 'name' => 'x' )
+			);
+			$status = $this->msg( 'translationnotifications-email-unconfirmed' )
+				->rawParams( $submit )->parse();
 		} else {
 			$status = $this->msg( 'translationnotifications-email-notset' )->parse();
 		}
@@ -109,19 +120,24 @@ JAVASCRIPT
 			$options[$display] = $code;
 		}
 
-		$options = array( wfMessage( 'translationnotifications-nolang' )->plain() => '' ) + $options;
+		$options =
+			array( wfMessage( 'translationnotifications-nolang' )->plain() => '' ) + $options;
 
 		for ( $i = 1; $i < 4; $i++ ) {
+			$formatted = $this->getLanguage()->formatNum( $i );
 			$m["lang-$i"] = array(
 				'type' => 'select',
-				'label-message' => array( "translationnotifications-lang", $this->getLanguage()->formatNum( $i ) ),
+				'label-message' => array( 'translationnotifications-lang', $formatted ),
 				'section' => 'languages',
 				'options' => $options,
 				'default' => $user->getOption( "translationnotifications-lang-$i" ),
 			);
 
 			if ( $i === 1 ) {
-				$m["lang-$i"]['default'] = $user->getOption( "translationnotifications-lang-$i", $this->getLanguage()->getCode() );
+				$m["lang-$i"]['default'] = $user->getOption(
+					"translationnotifications-lang-$i",
+					$this->getLanguage()->getCode()
+				);
 				$m["lang-$i"]['required'] = true;
 			}
 		}
@@ -133,7 +149,8 @@ JAVASCRIPT
 
 			// Give grep a chance to find the usages:
 			// translationnotifications-cmethod-email, translationnotifications-cmethod-talkpage,
-			// translationnotifications-cmethod-talkpage-elsewhere, translationnotifications-cmethod-feed
+			// translationnotifications-cmethod-talkpage-elsewhere,
+			// translationnotifications-cmethod-feed
 			$m["cmethod-$method"] = array(
 				'type' => 'check',
 				'label-message' => "translationnotifications-cmethod-$method",
@@ -161,10 +178,10 @@ JAVASCRIPT
 			'default' => $user->getOption( 'translationnotifications-freq', 'always' ),
 			'section' => 'frequency',
 			'options' => array(
-				$this->msg( 'translationnotifications-freq-always' )->text()  => 'always',
-				$this->msg( 'translationnotifications-freq-week' )->text()    => 'week',
-				$this->msg( 'translationnotifications-freq-month' )->text()   => 'month',
-				$this->msg( 'translationnotifications-freq-weekly' )->text()  => 'weekly',
+				$this->msg( 'translationnotifications-freq-always' )->text() => 'always',
+				$this->msg( 'translationnotifications-freq-week' )->text() => 'week',
+				$this->msg( 'translationnotifications-freq-month' )->text() => 'month',
+				$this->msg( 'translationnotifications-freq-weekly' )->text() => 'weekly',
 				$this->msg( 'translationnotifications-freq-monthly' )->text() => 'monthly',
 			),
 		);
@@ -182,6 +199,7 @@ JAVASCRIPT
 
 		if ( $this->getRequest()->getVal( 'x' ) === $this->msg( 'confirmemail_send' )->text() ) {
 			$user->sendConfirmationMail( 'set' );
+
 			return;
 		}
 
@@ -210,9 +228,9 @@ JAVASCRIPT
 			// Skip inactive and special wikis
 			list( $site, $lang ) = $wgConf->siteFromDB( $wgDBname );
 			if ( $matrix->isClosed( $lang, $site )
-			  || $matrix->isPrivate( $lang, $site )
-			  || $matrix->isFishbowl( $lang, $site ) )
-			{
+				|| $matrix->isPrivate( $lang, $site )
+				|| $matrix->isFishbowl( $lang, $site )
+			) {
 				continue;
 			}
 
