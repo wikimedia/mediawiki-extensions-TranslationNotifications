@@ -18,7 +18,6 @@
  *
  * @ingroup SpecialPage TranslateSpecialPage
  */
-
 class SpecialNotifyTranslators extends SpecialPage {
 	public static $right = 'translate-manage';
 	private $notificationText = '';
@@ -40,7 +39,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 		$this->checkPermissions();
 
-		$htmlFormDataModel = $this->getFormFields();
+		$htmlFormDataModel = $this->getFormFields(
+			$this->getRequest()->getInt( 'tpage' )
+		);
 		$output = $this->getOutput();
 
 		if ( !is_array( $htmlFormDataModel ) ) {
@@ -79,9 +80,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 	/**
 	 * Builds the form fields
 	 *
+	 * @param int $tpage Article ID to preselect as translatable page in form
 	 * @return array or string with an error message key in case of error
 	 */
-	private function getFormFields() {
+	private function getFormFields( $tpage = 0 ) {
 		// Translatable pages dropdown
 		$translatablePages = MessageGroups::getGroupsByType( 'WikiPageMessageGroup' );
 
@@ -103,11 +105,12 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 		$formFields = array();
 
+		$default = (int) $tpage !== 0 ? $tpage : 'unset';
 		$formFields['TranslatablePage'] = array(
 			'type' => 'select',
 			'label-message' => array( 'translationnotifications-translatablepage-title' ),
 			'options' => $translatablePagesOptions,
-			'default' => 'unset',
+			'default' => $default
 		);
 
 		// Languages to notify input box
