@@ -140,7 +140,7 @@ $specialPageAliases['vi'] = array(
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'NotifyTranslators' => array( '通知译者' ),
-	'TranslatorSignup' => array( '译者登录' ),
+	'TranslatorSignup' => array( '译者登记' ),
 );
 
 /** Traditional Chinese (中文（繁體）‎) */
