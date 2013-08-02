@@ -31,9 +31,9 @@ class TranslationNotificationsHooks {
 		// If specific languages were defined, show them.
 		// If no specific languages were defined (empty string), show the "all languages"
 		// in the user's language.
-		$notifiedLanguages = $params[0]
-			? $params[0]
-			: wfMessage( 'translationnotifications-log-alllanguages' )->text();
+		$notifiedLanguages = $params[0] ?
+			$params[0] :
+			wfMessage( 'translationnotifications-log-alllanguages' )->text();
 		$deadlineDate = $params[1];
 		if ( strlen( $deadlineDate ) === 0 ) {
 			$deadlineDate = wfMessage( 'translationnotifications-nodeadline' )->text();

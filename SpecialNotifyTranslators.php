@@ -243,9 +243,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$user = User::newFromID( $row->up_user );
 
 			$userTimestamp = $user->getOption( $timestampOptionName, null );
-			$userUnixTimestamp = ( $userTimestamp == null )
-				? wfTimestamp( TS_UNIX, '20120101000000' ) // An old timestamp
-				: wfTimestamp( TS_UNIX, $userTimestamp );
+			$userUnixTimestamp = ( $userTimestamp == null ) ?
+				wfTimestamp( TS_UNIX, '20120101000000' ) : // An old timestamp
+				wfTimestamp( TS_UNIX, $userTimestamp );
 
 			$timeSinceNotification = $currentUnixTime - $userUnixTimestamp;
 			$userTranslationFrequency =
