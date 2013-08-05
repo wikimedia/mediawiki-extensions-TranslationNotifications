@@ -4874,6 +4874,7 @@ $4
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Liangent
+ * @author Qiyue2001
  * @author Shirayuki
  */
 $messages['zh-hans'] = array(
@@ -4923,7 +4924,7 @@ $messages['zh-hans'] = array(
 	'translationnotifications-edit-summary' => '翻译通知：$1',
 	'translationnotifications-email-priority' => '这个页面有$1重要度。',
 	'translationnotifications-email-deadline' => '翻译这个页面的截止日期是$1。',
-	'logentry-translationnotifications-sent' => '$1{{GENDER:$2|发送了}}翻译页面$3的通知；语言：$4；截止日期：$5；重要度：$6；已发送给$7个收件人，给$8个收件人的通知发送失败，跳过了$9个收件人', # Fuzzy
+	'logentry-translationnotifications-sent' => '$1{{GENDER:$2|发送了}}关于翻译页面$3的通知；语言：$4；截止日期：$5；重要度：$6；已发送给$7个收件人，给$8个收件人的通知发送失败，跳过了$9个收件人',
 	'log-name-notifytranslators' => '翻译通知',
 	'log-description-notifytranslators' => '向翻译者发送可翻译页面通知的日志',
 	'translationnotifications-sent-title' => '翻译通知已发送',
