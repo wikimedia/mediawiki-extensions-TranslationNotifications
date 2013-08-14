@@ -151,8 +151,10 @@ $messages['qqq'] = array(
 	'translationnotifications-emailstatus' => 'Label',
 	'translationnotifications-email-confirmed' => 'Status of email confirmation after {{msg-mw|translationnotifications-emailstatus}}.',
 	'translationnotifications-email-disablemail' => 'A message that appears on top of Special:TranslatorSignup if the email address is confirmed, the user disabled email in the preferences.',
-	'translationnotifications-email-unconfirmed' => 'Status of email confirmation after {{msg-mw|translationnotifications-emailstatus}}. Parameters:
-* $1 is a button which can be used to send confirmation email. Button text is {{msg-mw|confirmemail_send}}.',
+	'translationnotifications-email-unconfirmed' => 'Status of email confirmation after {{msg-mw|Translationnotifications-emailstatus}}.
+
+Parameters:
+* $1 - a button which can be used to send confirmation email. Button text is {{msg-mw|Confirmemail send}}.',
 	'translationnotifications-email-notset' => 'Status of email confirmation after {{msg-mw|translationnotifications-emailstatus}}.',
 	'translationnotifications-languages' => 'Fieldset header.
 {{Identical|Language}}',
@@ -464,6 +466,7 @@ $messages['be-tarask'] = array(
 	'notifytranslators' => 'Паведаміць перакладчыкам',
 	'translationnotifications-submit-ok' => 'Паведамленьни были даданыя ў чаргу на адпраўку ў фонавым рэжыме.',
 	'translationnotifications-send-notification-button' => 'Даслаць паведамленьне перакладчыкам',
+	'translationnotifications-preview-notification-button' => 'Папярэдні прагляд паведамленьня',
 	'translationnotifications-deadline-label' => 'Тэрмін здачы для адлюстраваньня ў апавяшчэньні:',
 	'translationnotifications-languages-to-notify-label' => 'Мовы для апавяшчэньня:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Сьпіс кодаў моваў праз коску; пакіньце поле пустым, каб даслаць на ўсе мовы.',
@@ -519,8 +522,10 @@ $8
 	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|апавясьціў|апавясьціла}} пра пераклад старонкі «$3»; мовы: $4; тэрмін: $5; прыярытэт: $6; даслана {{PLURAL:$7|аднаму адрасату|$7 адрасатам}}, няўдала даслана {{PLURAL:$8|аднаму адрасату|$8 адрасатам}}, не даслана {{PLURAL:$9|аднаму адрасату|$9 адрасатам}}', # Fuzzy
 	'log-name-notifytranslators' => 'Апавяшчэньні пра пераклад',
 	'translationnotifications-sent-title' => 'Апавяшчэньне пра пераклад высланае',
+	'translationnotifications-sent-body' => 'Апавяшчэньне пра пераклад высланае.',
 	'translationnotifications-log-alllanguages' => 'усе мовы',
 	'translationnotifications-nodeadline' => 'няма',
+	'translationnotifications-generic-languages' => '&lt;мовы>',
 );
 
 /** Bulgarian (български)
@@ -2819,6 +2824,28 @@ $messages['lb'] = array(
 	'translationnotifications-translatablepage-title' => 'Numm vun der Säit déi iwwersat soll ginn:',
 	'translationnotifications-error-no-translatable-pages' => "Et gëtt keng Säite fir z'iwwersetzen op dëser Wiki.",
 	'translationnotifications-email-subject' => "Iwwersetzt w.e.g. d'Säit $1",
+	'translationnotifications-email-body' => "Bonjour $1,
+
+Dir kritt dës E-Mail well Dir Iech als Iwwersetzer {{PLURAL:$9|fir}} $2 op {{SITENAME}}  {{GENDER:$10|ageschriwwen}} hutt.
+
+Et gëtt do eng Säit fir z'iwwersetzen: $3.
+Dir Kënnt se iwwersetze wann Dir op dëse Link klickt:
+$4
+
+$5
+$6
+
+$7
+
+Är Hëllef gëtt appreciéiert. Iwwersetzer wéi Dir hëllefe(n) {{SITENAME}} als wierklech méisproocheg Gemeinschaft ze fionctionéieren.
+
+Villmools merci!
+
+{{SITENAME}} Iwwersetzungscoordinateuren
+
+----
+
+Dir kritt dës E-Mail well Dir Iech ageschriwwen hutt fir e-Mailen a Verbindung mat Iwwersetzungen op {{SITENAME}} ze kréien. Fir dat ofzebestellen oder fir Är Astellunge vun den Notifikatiounen z'änneren, besicht eis w.e.g. op $8.",
 	'translationnotifications-notification-url-listitem' => 'op $1 iwwersetzen',
 	'translationnotifications-digestemail-subject' => 'Zesummegefaassten E-mail fir Iwwersetzungsufroe vu(n) {{SITENAME}}',
 	'translationnotifications-digestemail-notification-line' => 'Den $1 huet de(n) $2 d\'Säit "$3" fir d\'Iwwersetze markéiert. Dir kënnt et op $4 iwwersetzen',
