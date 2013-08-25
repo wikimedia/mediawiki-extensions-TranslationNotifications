@@ -193,19 +193,19 @@ Its label is {{msg-mw|Translationnotifications-languages-to-notify-label}}.',
 	'translationnotifications-priority-unset' => 'unset (priority), an item in a dropdown box.',
 	'translationnotifications-translatablepage-title' => 'A label for language codes field. Can be translated as "A page designated for translation, intended for translation", etc.',
 	'translationnotifications-error-no-translatable-pages' => 'An error message.',
-	'translationnotifications-email-subject' => 'A subject for the email sent to translators.',
-	'translationnotifications-email-body' => "The body of the email message sent to translators.
-
-* $1 - Translator's username or real name, if specified.
-* $2 - A comma list of language names.
-* $3 - Translatable page name.
-* $4 - A bullet list of URLs.
+	'translationnotifications-email-subject' => 'A subject for the email sent to translators. Parameters:
+* $1 - page title for the translatable page',
+	'translationnotifications-email-body' => "The body of the email message sent to translators. Parameters:
+* $1 - Translator's username or real name, if specified
+* $2 - A comma list of language names
+* $3 - Translatable page name
+* $4 - A bullet list of URLs
 * $5 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.
 * $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.
-* $7 - A custom message that can be added by the notification sender.
-* $8 - URL to the special page, to unsubscribe.
-* $9 - Number of languages. Can be used in PLURAL.
-* $10- Plain text username used for GENDER.",
+* $7 - A custom message that can be added by the notification sender
+* $8 - URL to the special page, to unsubscribe
+* $9 - Number of languages. Can be used in PLURAL
+* $10　- Plain text username used for GENDER",
 	'translationnotifications-talkpage-body' => "The body of the notification on user talk page.
 * $1 - plain username, can be used for GENDER
 * $2 - translator's username or real name, if specified
@@ -233,10 +233,19 @@ The mail body is the following message:
 * $3 - translatable page title
 * $4 - link to [[Special:Translate]] page for the users first language.',
 	'translationnotifications-edit-summary' => 'The edit summary for the notification text added to the user talk page. $1 is the page title.',
-	'translationnotifications-email-priority' => 'Used in {{msg-mw|translationnotifications-email-body}}',
-	'translationnotifications-email-deadline' => '$1 is a date.
+	'translationnotifications-email-priority' => 'Used as <code>$5</code> in the following email body:
+* {{msg-mw|translationnotifications-email-body}}
 
-Used in {{msg-mw|translationnotifications-email-body}}',
+Parameters:
+* $1 - priority. Any one of the following messages:
+** {{msg-mw|Translationnotifications-priority-high}}
+** {{msg-mw|Translationnotifications-priority-medium}}
+** {{msg-mw|Translationnotifications-priority-low}}',
+	'translationnotifications-email-deadline' => 'Used as <code>$6</code> in the following email body:
+* {{msg-mw|Translationnotifications-email-body}}.
+
+Parameters:
+* $1 - date, or the message {{msg-mw|Translationnotifications-nodeadline}}',
 	'logentry-translationnotifications-sent' => '{{logentry}}
 * $4 - list of language codes, or {{msg-mw|translationnotifications-log-alllanguages}}
 * $5 - deadline
@@ -255,7 +264,9 @@ The body for this title may be {{msg-mw|Translationnotifications-sent-body}}.',
 
 The title for this message is {{msg-mw|Translationnotifications-sent-title}}.',
 	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
-	'translationnotifications-nodeadline' => 'Appears in the log message, saying that no deadline was specified. Traduction en français : "aucune" (date limite).
+	'translationnotifications-nodeadline' => 'Says that no deadline was specified.
+
+Used as <code>$1</code> in {{msg-mw|Translationnotifications-email-deadline}}.
 {{Identical|None}}',
 	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.',
 	'translationnotifications-generic-languages' => 'A generic placeholder that is shown in the previewed notification instead of a list of language names.
