@@ -287,6 +287,13 @@ $messages['ar'] = array(
 	'translationnotifications-nodeadline' => 'لا شيء',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'translationnotifications-notification-url-listitem' => 'ܬܪܓܡ ܠ $1',
+);
+
 /** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  */
