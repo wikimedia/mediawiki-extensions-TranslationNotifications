@@ -584,6 +584,7 @@ $messages['bn'] = array(
 	'log-name-notifytranslators' => 'অনুবাদ বিজ্ঞপ্তি',
 	'translationnotifications-log-alllanguages' => 'সকল ভাষা',
 	'translationnotifications-nodeadline' => 'কিছু না',
+	'translationnotifications-generic-languages' => '&lt;ভাষাসমূহ>',
 );
 
 /** Breton (brezhoneg)
@@ -692,6 +693,13 @@ $messages['cu'] = array(
 	'translationnotifications-languages' => 'ѩꙁꙑци',
 	'translationnotifications-lang' => 'ѩꙁꙑкъ $1',
 	'translationnotifications-generic-languages' => '&lt;ѩꙁꙑци>',
+);
+
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'translationnotifications-generic-languages' => '&lt;ieithoedd>',
 );
 
 /** German (Deutsch)
@@ -1187,6 +1195,7 @@ Vi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITE
 /** Spanish (español)
  * @author Armando-Martin
  * @author Dferg
+ * @author Fitoschido
  * @author MarcoAurelio
  */
 $messages['es'] = array(
@@ -1219,6 +1228,7 @@ $messages['es'] = array(
 	'notifytranslators' => 'Notificar a los traductores',
 	'translationnotifications-submit-ok' => 'Las notificaciones se han añadido a una cola y son enviadas mediante una tarea en segundo plano.',
 	'translationnotifications-send-notification-button' => 'Enviar una notificación a los traductores',
+	'translationnotifications-preview-notification-button' => 'Previsualizar la notificación',
 	'translationnotifications-deadline-label' => 'Fecha límite a indicar en esta notificación:',
 	'translationnotifications-languages-to-notify-label' => 'Idiomas en los que notificar:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Códigos de idioma separados por comas; dejar en blanco para notificar en todos los idiomas.',
