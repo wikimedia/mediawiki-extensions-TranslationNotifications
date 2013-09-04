@@ -699,6 +699,8 @@ $messages['cu'] = array(
  * @author Lloffiwr
  */
 $messages['cy'] = array(
+	'translationnotifications-log-alllanguages' => 'pob iaith',
+	'translationnotifications-nodeadline' => 'dim',
 	'translationnotifications-generic-languages' => '&lt;ieithoedd>',
 );
 
