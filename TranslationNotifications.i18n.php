@@ -268,7 +268,9 @@ The title for this message is {{msg-mw|Translationnotifications-sent-title}}.',
 
 Used as <code>$1</code> in {{msg-mw|Translationnotifications-email-deadline}}.
 {{Identical|None}}',
-	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.',
+	'translationnotifications-signup-legal' => 'Legal text shown at the bottom of [[Special:TranslatorSignup]] page.
+
+Refers to {{msg-mw|Privacypage}}.',
 	'translationnotifications-generic-languages' => 'A generic placeholder that is shown in the previewed notification instead of a list of language names.
 
 Used as <code>$3</code> in the following message:
