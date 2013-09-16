@@ -2811,6 +2811,22 @@ $messages['ky'] = array(
 	'translationnotifications-nodeadline' => 'жок',
 );
 
+/** Latin (Latina)
+ * @author Autokrator
+ */
+$messages['la'] = array(
+	'translationnotifications-username' => 'Nomen usoris:',
+	'translationnotifications-emailstatus' => 'Status inscriptionis electronicae:',
+	'translationnotifications-email-confirmed' => 'Inscriptio electronica tua confirmata est',
+	'translationnotifications-languages' => 'Linguae',
+	'translationnotifications-lang' => 'Lingua #$1',
+	'translationnotifications-nolang' => 'Linguam eligere',
+	'translationnotifications-cmethod-talkpage' => 'Disputatio',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Disputatio aliae Vicipaediae',
+	'translationnotifications-log-alllanguages' => 'omnes linguae',
+	'translationnotifications-nodeadline' => 'nullus',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
