@@ -410,8 +410,12 @@ class SpecialNotifyTranslators extends SpecialPage {
 	protected function getTranslationURL( $languageCode ) {
 		$page = TranslatablePage::newFromTitle( $this->translatablePageTitle );
 		$translationURL = SpecialPage::getTitleFor( 'Translate' )->getCanonicalUrl(
-			array( 'group' => $page->getMessageGroupId(),
-				'language' => $languageCode ) );
+			array(
+				'group' => $page->getMessageGroupId(),
+				'language' => $languageCode,
+				'action' => 'page'
+			)
+		);
 
 		return $translationURL;
 	}

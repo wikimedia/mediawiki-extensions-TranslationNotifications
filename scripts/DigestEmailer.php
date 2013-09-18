@@ -120,8 +120,12 @@ class DigestEmailer extends Maintenance {
 
 				$page = TranslatablePage::newFromTitle( $notification['translatablepage'] );
 				$translationURL = SpecialPage::getTitleFor( 'Translate' )->getCanonicalUrl(
-					array( 'group' => $page->getMessageGroupId(),
-						'language' => $firstLangCode ) );
+					array(
+						'group' => $page->getMessageGroupId(),
+						'language' => $firstLangCode,
+						'action' => 'page'
+					)
+				);
 
 				$notificationText .= wfMessage(
 					'translationnotifications-digestemail-notification-line',
