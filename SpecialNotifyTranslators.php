@@ -410,13 +410,21 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * @return string Translation URL
 	 */
 	protected function getTranslationURL( $languageCode ) {
+		global $wgTranslationNotificationsAlwaysHttpsInEmail;
+
 		$page = TranslatablePage::newFromTitle( $this->translatablePageTitle );
-		$translationURL = SpecialPage::getTitleFor( 'Translate' )->getCanonicalUrl(
+		$urlType = $wgTranslationNotificationsAlwaysHttpsInEmail === false ?
+			PROTO_CANONICAL :
+			PROTO_HTTPS;
+
+		$translationURL = SpecialPage::getTitleFor( 'Translate' )->getFullURL(
 			array(
 				'group' => $page->getMessageGroupId(),
 				'language' => $languageCode,
 				'action' => 'page'
-			)
+			),
+			false,
+			$urlType
 		);
 
 		return $translationURL;
@@ -514,26 +522,43 @@ class SpecialNotifyTranslators extends SpecialPage {
 	protected function sendTranslationNotificationEmail( User $user,
 		$languagesToNotify = array()
 	) {
+		global $wgNoReplyAddress, $wgTranslationNotificationsAlwaysHttpsInEmail;
+
 		$relevantLanguages = $this->getRelevantLanguages( $user, $languagesToNotify );
 		$userFirstLanguage = Language::factory( $this->getUserFirstLanguage( $user ) );
-
 		$emailSubject = self::getNotificationSubject( $userFirstLanguage );
-		$signupURL = SpecialPage::getTitleFor( 'TranslatorSignup' )->getCanonicalUrl();
+
+		$urlType = $wgTranslationNotificationsAlwaysHttpsInEmail === false ?
+			PROTO_CANONICAL :
+			PROTO_HTTPS;
+
+		$signupURL = SpecialPage::getTitleFor( 'TranslatorSignup' )->getFullURL(
+			'',
+			false,
+			$urlType
+		);
+
+		$translationUrls = $this->getTranslationURLs(
+			$relevantLanguages,
+			'email',
+			$userFirstLanguage
+		);
+
 		$emailBody = $this->msg(
 			'translationnotifications-email-body',
 			$this->getUserName( $user ),
 			$userFirstLanguage->listToText( array_values( $relevantLanguages ) ),
 			$this->translatablePageTitle,
-			$this->getTranslationURLs( $relevantLanguages, 'email', $userFirstLanguage ),
+			$translationUrls,
 			$this->getPriorityClause( $userFirstLanguage ),
 			$this->getDeadlineClause( $userFirstLanguage ),
 			$this->notificationText,
-			$signupURL )
+			$signupURL
+		)
 			->numParams( count( $relevantLanguages ) ) // $9
 			->params( $user->getName() ) // $10
 			->inLanguage( $userFirstLanguage )->text();
 
-		global $wgNoReplyAddress;
 		$sender = $this->getUser();
 
 		// Do not publish the sender's email, but include his/her name

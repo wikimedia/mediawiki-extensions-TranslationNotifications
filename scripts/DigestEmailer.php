@@ -43,7 +43,8 @@ class DigestEmailer extends Maintenance {
 	}
 
 	public function sendEmails( $translators, $notifications ) {
-		global $wgNoReplyAddress;
+		global $wgNoReplyAddress, $wgTranslationNotificationsAlwaysHttpsInEmail;
+
 		$mailstatus = array();
 		foreach ( $translators as $translator ) {
 			$notificationText = "";
@@ -92,6 +93,10 @@ class DigestEmailer extends Maintenance {
 			$this->output( "\tSending notification since " .
 				date( 'D M j G:i:s T Y', $startTimeStamp ) . " \n" );
 
+			$urlType = $wgTranslationNotificationsAlwaysHttpsInEmail === false ?
+				PROTO_CANONICAL :
+				PROTO_HTTPS;
+
 			foreach ( $notifications as $notification ) {
 				$announcedate = strtotime( $notification['announcedate'] );
 
@@ -118,12 +123,14 @@ class DigestEmailer extends Maintenance {
 				}
 
 				$page = TranslatablePage::newFromTitle( $notification['translatablepage'] );
-				$translationURL = SpecialPage::getTitleFor( 'Translate' )->getCanonicalUrl(
+				$translationURL = SpecialPage::getTitleFor( 'Translate' )->getFullURL(
 					array(
 						'group' => $page->getMessageGroupId(),
 						'language' => $firstLangCode,
 						'action' => 'page'
-					)
+					),
+					false,
+					$urlType
 				);
 
 				$notificationText .= wfMessage(
@@ -160,7 +167,12 @@ class DigestEmailer extends Maintenance {
 				continue;
 			}
 
-			$signupURL = SpecialPage::getTitleFor( 'TranslatorSignup' )->getCanonicalUrl();
+			$signupURL = SpecialPage::getTitleFor( 'TranslatorSignup' )->getFullURL(
+				'',
+				false,
+				$urlType
+			);
+
 			$digestMailBody = wfMessage( 'translationnotifications-digestemail-body',
 				$userName,
 				$firstLang,
