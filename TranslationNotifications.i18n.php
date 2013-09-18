@@ -144,7 +144,7 @@ You are receiving this email because you signed up to receive emails related to 
 $messages['qqq'] = array(
 	'translatorsignup' => '{{doc-special|TranslatorSignup}}',
 	'translatorsignup-summary' => 'Text on top of Special:TranslatorSignup.',
-	'translationnotifications-desc' => '{{desc|name=Translation Notifications|url=http://www.mediawiki.org/wiki/Extension:TranslationNotifications}}',
+	'translationnotifications-desc' => '{{desc|name=Translation Notifications|url=https://www.mediawiki.org/wiki/Extension:TranslationNotifications}}',
 	'translationnotifications-info' => 'Fieldset header',
 	'translationnotifications-username' => 'Label followed by username.
 {{Identical|Username}}',
