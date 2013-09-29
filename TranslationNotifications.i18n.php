@@ -1447,17 +1447,22 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Dalba
  * @author Mjbmr
  * @author Reza1615
  * @author درفش کاویانی
  */
 $messages['fa'] = array(
 	'translatorsignup' => 'ثبت نام مترجم',
+	'translatorsignup-summary' => 'از این صفحه برای مشخص‌کردن زبان‌هایی که می‌توانید به آن‌ها ترجمه کنید، و روشی که تمایل دارید در مورد درخواست‌های تازهٔ ترجمه با شما تماس گرفته شود استفاده نمایید.',
+	'translationnotifications-desc' => 'به مترجمان اجازه می‌دهد برای اطلاعیه‌های ترجمه نام‌نویسی کنند',
 	'translationnotifications-info' => 'اطلاعات کاربر',
 	'translationnotifications-username' => 'نام کاربری:',
 	'translationnotifications-emailstatus' => 'وضعیت پست الکترونیکی:',
 	'translationnotifications-email-confirmed' => 'نشانی پست الکترونیک تائید شده‌است',
+	'translationnotifications-email-disablemail' => 'رایانشانی شما تأیید شده است، اما در [[Special:Preferences|ترجیحاتتان]] خواسته‌اید رایانامه‌ای دریافت نکنید.',
 	'translationnotifications-email-unconfirmed' => 'نشانی رایانامه (ایمیل) شما تأیید نشده‌است. $1',
+	'translationnotifications-email-notset' => 'شما رایانشانی‌ای فراهم نیاورده‌اید. این کار را می‌توانید از [[Special:Preferences|ترجیحات]] انجام دهید.',
 	'translationnotifications-languages' => 'زبان‌ها',
 	'translationnotifications-lang' => 'زبان شماره $1',
 	'translationnotifications-nolang' => 'یک زبان را انتخاب کنید',
@@ -1473,13 +1478,72 @@ $messages['fa'] = array(
 	'translationnotifications-freq-weekly' => 'خلاصهٔ هفتگی',
 	'translationnotifications-freq-monthly' => 'حلاصهٔ یک ماه',
 	'translationnotifications-submit' => 'تنظیمات به‌روز رسانی',
+	'translationnotifications-signup-success' => 'ترجیحات اطلاع‌رسانی‌های ترجمهٔ شما ذخیره شد.',
+	'notifytranslators' => 'آگاه‌سازی مترجمان',
+	'translationnotifications-submit-ok' => 'آگاه‌سازی‌ها به یک صف سپرده شده و توسط یک برنامه در پس‌زمینه توزیع می‌شوند.',
 	'translationnotifications-send-notification-button' => 'ارسال اعلان به مترجم‌ها',
 	'translationnotifications-preview-notification-button' => 'پیش‌نمایش اعلان',
+	'translationnotifications-deadline-label' => 'مهلت مشخص‌شده در این آگاه‌سازی:',
+	'translationnotifications-languages-to-notify-label' => 'چه زبان‌هایی آگاه شوند:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'کدهای زبان جداشده با کاما؛ برای آگاه‌سازی همهٔ زبان‌ها خالی بگذارید.',
 	'translationnotifications-priority' => 'اولویت:',
 	'translationnotifications-priority-high' => 'بالا',
 	'translationnotifications-priority-medium' => 'متوسط',
 	'translationnotifications-priority-low' => 'کم',
+	'translationnotifications-priority-unset' => '(تنظیم‌نشده)',
+	'translationnotifications-translatablepage-title' => 'نام صفحهٔ ترجمه‌پذیر:',
+	'translationnotifications-error-no-translatable-pages' => 'هیچ صفحهٔ ترجمه‌پذیری در این ویکی وجود ندارد.',
 	'translationnotifications-email-subject' => 'لطفاً صفحهٔ $1 را ترجمه کنید.',
+	'translationnotifications-email-body' => 'سلام  $1،
+
+شما این ایمیل را به این علت دریافت می‌کنید که به عنوان مترجم $2 {{PLURAL:$9|در}} {{SITENAME}} {{GENDER:$10|نام‌نویسی کرده‌اید}}.
+
+صفحه‌ای برای ترجمه وجود دارد: $3.
+می‌توانید با کلیک‌کردن روی پیوند زیر ترجمه‌اش کنید:
+$4
+
+$5
+$6
+
+$7
+
+از کمک شما کمال تشکر را داریم. مترجمانی چون شما هستند که کمک می‌کنند {{SITENAME}} به عنوان یک جامعهٔ چندزبانهٔ حقیقی عمل کند.
+
+متشکرم!
+هماهنگ‌کنندگان ترجمهٔ {{SITENAME}}
+
+----
+
+این رایانامه را به این سبب دریافت می‌کنید که برای دریافت رایانامه‌های مربوط به ترجمه در {{SITENAME}} نام‌نویسی کرده‌اید. برای لغو اشتراک یا تغییر ترجیحات آگاه‌سازی‌های ترجمهٔ خود، لطفاً به $8 بروید.',
+	'translationnotifications-talkpage-body' => 'سلام $2،
+N!شما این آگاه‌سازی را دریافت می‌کنید چون به عنوان مترجم $3 {{PLURAL:$9|در}} {{SITENAME}} {{GENDER:$1|نام‌نویسی کرده‌اید}}.
+صفحهٔ [[$4]] برای ترجمه آماده است. شما می‌توانید آن را از اینجا ترجمه کنید:
+$5
+N!$6
+$7
+N!$8
+N!پیشاپیش از کمک شما قدردانی می‌کنیم. مترجمانی چون شما هستند که کمک می‌کنند {{SITENAME}} به عنوان یک جامعهٔ واقعاً چندزبانه عمل کند.
+N!متشکرم!
+N!هماهنگ‌کنندگان ترجمهٔ {{SITENAME}}',
+	'translationnotifications-notification-url-listitem' => 'ترجمه به $1',
+	'translationnotifications-digestemail-subject' => 'رایانامهٔ سرجمع‌شده برای درخواست‌های ترجمهٔ {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'سلام $1،
+N!شما این ایمیل را به این علت دریافت می‌کنید که به عنوان مترجم $2 در {{SITENAME}} {{GENDER:$1|نام‌نویسی کرده‌اید}}.
+N!هم‌اکنون {{PLURAL:$3|۱ صفحه|$3 صفحه}} برای ترجمه آماده است. جزئیات در زیر داده شده‌است.
+N!$4
+N!پیشاپیش از کمک شما سپاسگزاریم. مترجمانی چون شما هستند که به عملکرد {{SITENAME}} به عنوان یک جامعهٔ واقعاً چندزبانه کمک می‌کنند.
+N!متشکرم!
+سرپرستان ترجمهٔ {{SITENAME}}
+N!----
+N!این رایانامه را به این سبب دریافت می‌کنید که برای دریافت رایانامه‌های مربوط به ترجمه در {{SITENAME}} نام‌نویسی کرده‌اید. برای لغو اشتراک یا تغییر ترجیحات آگاه‌سازی‌هایتان لطفاً از <$5> بازدید کنید.',
+	'translationnotifications-digestemail-notification-line' => 'در $1، $2 «$3» را برای ترجمه نشانه‌گذاری کرد. می‌توانید آن را از اینجا ترجمه کنید: $4',
+	'translationnotifications-edit-summary' => 'آگاه‌سازی ترجمه: $1',
+	'translationnotifications-email-priority' => 'اولویت این صفحه $1 است.',
+	'translationnotifications-email-deadline' => 'آخرین مهلت برای ترجمهٔ این صفحه $1 است.',
+	'log-name-notifytranslators' => 'آگاه‌سازی‌های ترجمه',
+	'log-description-notifytranslators' => 'سیاهه‌ای از آگاه‌سازی‌های فرستاده‌شده به مترجمان در مورد صفحه‌های ترجمه‌پذیر',
+	'translationnotifications-sent-title' => 'آگاه‌سازی ترجمه فرستاده‌شد',
+	'translationnotifications-sent-body' => 'آگاه‌سازی ترجمه فرستاده شد.',
 	'translationnotifications-log-alllanguages' => 'همۀ زبان‌ها',
 	'translationnotifications-nodeadline' => 'هیچ‌کدام',
 	'translationnotifications-generic-languages' => 'زبان‌ها',
@@ -2624,7 +2688,7 @@ $4
 	'translationnotifications-sent-body' => '번역 알림을 보냈습니다.',
 	'translationnotifications-log-alllanguages' => '모든 언어',
 	'translationnotifications-nodeadline' => '없음',
-	'translationnotifications-signup-legal' => '우리가 당신에게 관심이 있을 것으로 생각하는 {{SITENAME}}에 우리가 관련 있는 주제와 관련하여 연락을 할 수 있도록 이 정보를 제공하는 데 동의합니다. 데이터에 동의하면 [[{{MediaWiki:Privacypage}}|개인정보 정책]]의 적용을 받습니다.',
+	'translationnotifications-signup-legal' => '우리가 당신에게 관심이 있을 것으로 생각하는 {{SITENAME}}에 우리가 관련 있는 주제와 관련하여 연락을 할 수 있도록 이 정보를 제공하는 데 동의합니다. 데이터에 동의하면 [[{{MediaWiki:Privacypage}}|개인 정보 정책]]의 적용을 받습니다.',
 	'translationnotifications-generic-languages' => '&lt;언어>',
 );
 
@@ -4015,6 +4079,7 @@ $messages['roa-tara'] = array(
 
 /** Russian (русский)
  * @author Kaganer
+ * @author Okras
  */
 $messages['ru'] = array(
 	'translatorsignup' => 'Регистрация в качестве переводчика',
@@ -4059,7 +4124,7 @@ $messages['ru'] = array(
 	'translationnotifications-email-subject' => 'Переведите, пожалуйста, страницу $1',
 	'translationnotifications-email-body' => 'Здравствуйте, $1!
 
-Вы получили это письмо, так как зарегистрировались на сайте {{SITENAME}} в качестве переводчика на следующий язык: $2.
+Вы получили это письмо, так как зарегистрировались на сайте {{SITENAME}} в качестве переводчика на {{PLURAL:$9|следующий язык|следующие языки}}: $2.
 
 Вот новая страница, требующая перевода:  $3.
 Пожалуйста переведите её, нажав на следующую ссылку:
@@ -4070,15 +4135,17 @@ $6
 
 $7
 
+Мы были бы очень признательны за вашу помощь. Переводчики вроде вас помогают сделать {{SITENAME}} подлинно многоязычным сообществом.
+
 Спасибо!
-Администраторы переводов {{SITENAME}}
+Координаторы переводов {{SITENAME}}
 
 ----
 
-Вы получили это сообщение, поскольку подписались на получение сообщений, связанных с переводами для {{SITENAME}}. Чтобы отписаться или изменить свои настройки уведомлений о переводах, перейдите по ссылке $8.', # Fuzzy
+Вы получили это сообщение, поскольку подписались на получение сообщений, связанных с переводами для {{SITENAME}}. Чтобы отписаться или изменить свои настройки уведомлений о переводах, перейдите по ссылке $8.',
 	'translationnotifications-talkpage-body' => 'Здравствуйте, $2!
 
-Вы получили это письмо, так как зарегистрировались на сайте {{SITENAME}} в качестве переводчика на следующий язык: $3.
+Вы получили это письмо, так как {{GENDER:$1|зарегистрировались}} на сайте {{SITENAME}} в качестве переводчика на {{PLURAL:$9|следующий язык|следующие языки}}: $3.
 Новая доступная для перевода страница — [[$4]]. Пожалуйста, переведите её:
 $5
 
@@ -4087,30 +4154,34 @@ $7
 
 $8
 
+Мы были бы очень признательны за вашу помощь. Переводчики вроде вас помогают сделать {{SITENAME}} подлинно многоязычным сообществом.
+
 Спасибо!
 
-Администраторы переводов {{SITENAME}}', # Fuzzy
+Координаторы переводов {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'перевести на $1',
 	'translationnotifications-digestemail-subject' => 'Дайджест запросов на перевод от {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Здравствуйте, $1!
 
-Вы получили это письмо, так как зарегистрированы на сайте {{SITENAME}} в качестве переводчика на следующий язык: $2.
+Вы получили это письмо, так как {{GENDER:$1|зарегистрированы}} на сайте {{SITENAME}} в качестве переводчика на следующий язык: $2.
 
 Имеется $3 {{PLURAL:$3|страница|страницы|страниц}} для перевода. Подробности — ниже.
 
 $4
+
+Мы были бы очень признательны за вашу помощь. Переводчики вроде вас помогают сделать {{SITENAME}} подлинно многоязычным сообществом.
 
 Спасибо!
 Сотрудники {{SITENAME}}
 
 ----
 
-Вы получили это сообщение, поскольку подписались на получение сообщений, связанных с переводами для {{SITENAME}}. Чтобы отписаться или изменить свои настройки уведомлений о переводах, перейдите по ссылке <$5>.', # Fuzzy
+Вы получили это сообщение, поскольку подписались на получение сообщений, связанных с переводами для {{SITENAME}}. Чтобы отписаться или изменить свои настройки уведомлений о переводах, перейдите по ссылке <$5>.',
 	'translationnotifications-digestemail-notification-line' => '$1 участник $2 пометил страницу «$3» доступную для перевода. Вы можете перевести её, перейдя по ссылке $4',
 	'translationnotifications-edit-summary' => 'Уведомление о переводе: $1',
 	'translationnotifications-email-priority' => 'Приоритет этой страницы — $1.',
 	'translationnotifications-email-deadline' => 'Крайний срок для перевода этой страницы — $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|отправил|отправила}} уведомление о переводе страницы $3; языки: $4; крайний срок: $5; приоритет: $6; послано {{PLURAL:$7|одному адресату|$7 адресатам|$7 адресатам}}, неудачно для {{PLURAL:$8|одного адресата|$8 адресатов}}, пропущено для {{PLURAL:$9|одного адресата|$9 адресатов}}', # Fuzzy
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|отправил|отправила}} уведомление о переводе страницы $3; {{PLURAL:$10|язык|языки}}: $4; крайний срок: $5; приоритет: $6; послано {{PLURAL:$7|одному адресату|$7 адресатам}}, неудачно для {{PLURAL:$8|одного адресата|$8 адресатов}}, пропущено для {{PLURAL:$9|одного адресата|$9 адресатов}}',
 	'log-name-notifytranslators' => 'Уведомления о переводе',
 	'log-description-notifytranslators' => 'Журнал отправленных переводчикам уведомлений, касающихся переводимых страниц',
 	'translationnotifications-sent-title' => 'Уведомление о переводе отправлено',
