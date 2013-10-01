@@ -5019,6 +5019,7 @@ $4
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Hzy980512
  * @author Liangent
  * @author Qiyue2001
  * @author Shirayuki
@@ -5053,6 +5054,7 @@ $messages['zh-hans'] = array(
 	'notifytranslators' => '通知翻译者',
 	'translationnotifications-submit-ok' => '通知已添加到队列并将在后台完成。',
 	'translationnotifications-send-notification-button' => '给翻译者发送通知',
+	'translationnotifications-preview-notification-button' => '预览通知',
 	'translationnotifications-deadline-label' => '这个通知指明的截止日期：',
 	'translationnotifications-languages-to-notify-label' => '通知的语言：',
 	'translationnotifications-languages-to-notify-label-help-message' => '逗号分隔的语言代码，留空以通知所有语言。',
@@ -5064,6 +5066,31 @@ $messages['zh-hans'] = array(
 	'translationnotifications-translatablepage-title' => '可翻译页面名：',
 	'translationnotifications-error-no-translatable-pages' => '这个wiki中没有可翻译页面。',
 	'translationnotifications-email-subject' => '请翻译页面$1',
+	'translationnotifications-email-body' => '您好$1，
+
+这封邮件是为了通知您您在{{SITENAME}}（共$9项）上注册成了一位译者。
+
+有一个页面可以翻译：$3。
+您可以点击下面的链接来翻译此页面：
+$4
+
+$5
+$6
+
+$7
+
+十分感谢您的帮助。正是有了想您一样的翻译员，{{SITENAME}}才能成为一个多语言社区。
+
+谢谢！
+
+ 　　此致
+$1
+
+{{SITENAME}}翻译协调员
+
+---
+
+您收到这封邮件是因为您注册了{{SITENAME}}的翻译。您可以通过访问$8，修改通知设置来取消订阅这类邮件。', # Fuzzy
 	'translationnotifications-notification-url-listitem' => '翻译为$1',
 	'translationnotifications-digestemail-subject' => '来自{{SITENAME}}的翻译请求的摘要电子邮件',
 	'translationnotifications-digestemail-notification-line' => '于$1，$2标记了“$3”为需要翻译。您可以在$4进行翻译',
