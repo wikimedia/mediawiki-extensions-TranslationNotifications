@@ -701,6 +701,9 @@ $messages['cu'] = array(
  * @author Lloffiwr
  */
 $messages['cy'] = array(
+	'translatorsignup' => 'Cofrestru fel cyfieithydd',
+	'translatorsignup-summary' => "Defnyddiwch y dudalen hon i nodi'r ieithoedd y medrwch gyfieithu iddynt, a'r modd yr hoffech gael gwybod bod pethau newydd i'w cyfieithu.",
+	'translationnotifications-desc' => 'Yn galluogi cyfieithwyr i gofrestru er mwyn derbyn hysbysiadau am y gwaith cyfieithu',
 	'translationnotifications-log-alllanguages' => 'pob iaith',
 	'translationnotifications-nodeadline' => 'dim',
 	'translationnotifications-generic-languages' => '&lt;ieithoedd>',
@@ -4865,7 +4868,7 @@ $6
 
 $7
 
-Cám ơn!
+Cảm ơn!
 Nhóm điều phối biên dịch {{SITENAME}}
 
 ----
@@ -4882,7 +4885,7 @@ $7
 
 $8
 
-Cám ơn!
+Cảm ơn!
 
 Nhóm điều phối biên dịch {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'dịch ra $1',
@@ -4895,7 +4898,7 @@ Hiện có {{PLURAL:$3|trang|$3 trang}} để dịch. Các chi tiết được �
 
 $4
 
-Rất cám ơn sự giúp đỡ của bạn. {{SITENAME}} hoạt động nhờ các biên dịch viên như bạn.
+Rất cảm ơn sự giúp đỡ của bạn. {{SITENAME}} hoạt động nhờ các biên dịch viên như bạn.
 
 Ban quản lý biên dịch {{SITENAME}}
 
@@ -5021,6 +5024,7 @@ $4
 /** Simplified Chinese (中文（简体）‎)
  * @author Hzy980512
  * @author Liangent
+ * @author Liuxinyu970226
  * @author Qiyue2001
  * @author Shirayuki
  */
@@ -5068,7 +5072,7 @@ $messages['zh-hans'] = array(
 	'translationnotifications-email-subject' => '请翻译页面$1',
 	'translationnotifications-email-body' => '您好$1，
 
-这封邮件是为了通知您您在{{SITENAME}}（共$9项）上注册成了一位译者。
+您收到此邮件，是因为您{{PLURAL:$9|作为}}$2的译者在{{SITENAME}}成功{{GENDER:$10|注册}}。
 
 有一个页面可以翻译：$3。
 您可以点击下面的链接来翻译此页面：
@@ -5079,18 +5083,14 @@ $6
 
 $7
 
-十分感谢您的帮助。正是有了想您一样的翻译员，{{SITENAME}}才能成为一个多语言社区。
+十分感谢您的帮助。正是有了像您一样的译者，{{SITENAME}}才能成为一个多语言社区。
 
-谢谢！
+非常感谢！
+{{SITENAME}}翻译团队
 
- 　　此致
-$1
+----
 
-{{SITENAME}}翻译协调员
-
----
-
-您收到这封邮件是因为您注册了{{SITENAME}}的翻译。您可以通过访问$8，修改通知设置来取消订阅这类邮件。', # Fuzzy
+您收到此封邮件，是因为您在{{SITENAME}}的设置页面设置了接受邮件。如果您想退订或修改翻译相关的邮件通知，请点击$8。',
 	'translationnotifications-notification-url-listitem' => '翻译为$1',
 	'translationnotifications-digestemail-subject' => '来自{{SITENAME}}的翻译请求的摘要电子邮件',
 	'translationnotifications-digestemail-notification-line' => '于$1，$2标记了“$3”为需要翻译。您可以在$4进行翻译',
