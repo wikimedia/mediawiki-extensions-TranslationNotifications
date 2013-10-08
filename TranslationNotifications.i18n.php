@@ -2846,7 +2846,7 @@ $messages['ku-latn'] = array(
 	'translationnotifications-log-alllanguages' => 'hemû ziman',
 );
 
-/** Kirghiz (Кыргызча)
+/** Kyrgyz (Кыргызча)
  * @author Викиней
  */
 $messages['ky'] = array(
@@ -4131,6 +4131,7 @@ $messages['ru'] = array(
 	'notifytranslators' => 'Уведомить переводчиков',
 	'translationnotifications-submit-ok' => 'Уведомления были добавлены в очередь и отправляются в фоновом режиме.',
 	'translationnotifications-send-notification-button' => 'Отправить переводчикам уведомление',
+	'translationnotifications-preview-notification-button' => 'Предпросмотр уведомлений',
 	'translationnotifications-deadline-label' => 'Крайний срок, указываемый в этом уведомлении:',
 	'translationnotifications-languages-to-notify-label' => 'К каким языкам относится уведомление:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Коды языков, разделяемые запятой; оставьте поле пустым, если уведомление касается всех языков.',
@@ -4209,6 +4210,7 @@ $4
 	'translationnotifications-log-alllanguages' => 'все языки',
 	'translationnotifications-nodeadline' => 'нет',
 	'translationnotifications-signup-legal' => 'Предоставляя эту информацию, вы соглашаетесь с тем, что мы можем связаться с вами относительно связанных с {{SITENAME}} тем, которые, на наш взгляд, могут быть вам интересны. Вы также соглашаетесь с тем, что ваши персональные данные будут обрабатываться согласно нашей [[{{MediaWiki:Privacypage}}|политике конфиденциальности.]]',
+	'translationnotifications-generic-languages' => '&lt;языки>',
 );
 
 /** Rusyn (русиньскый)
