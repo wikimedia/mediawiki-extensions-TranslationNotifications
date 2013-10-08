@@ -263,7 +263,8 @@ The body for this title may be {{msg-mw|Translationnotifications-sent-body}}.',
 	'translationnotifications-sent-body' => 'May be used as page body.
 
 The title for this message is {{msg-mw|Translationnotifications-sent-title}}.',
-	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.',
+	'translationnotifications-log-alllanguages' => 'Appears in the log message, saying that the notification was sent to translators to all languages.
+{{Identical|All languages}}',
 	'translationnotifications-nodeadline' => 'Says that no deadline was specified.
 
 Used as <code>$1</code> in {{msg-mw|Translationnotifications-email-deadline}}.
@@ -4833,9 +4834,9 @@ $messages['uz'] = array(
  * @author Minh Nguyen
  */
 $messages['vi'] = array(
-	'translatorsignup' => 'Đăng ký biên dịch viên',
+	'translatorsignup' => 'Ghi danh làm biên dịch viên',
 	'translatorsignup-summary' => 'Sử dụng trang này để cho biết các ngôn ngữ mà bạn có thể biên dịch ra và làm thế nào để liên lạc với bạn về các yêu cầu bản dịch.',
-	'translationnotifications-desc' => 'Cho phép các biên dịch viên đăng ký để nhận các thông báo biên dịch',
+	'translationnotifications-desc' => 'Cho phép các biên dịch viên ghi danh để nhận các thông báo biên dịch',
 	'translationnotifications-info' => 'Thông tin cá nhân',
 	'translationnotifications-username' => 'Tên người dùng:',
 	'translationnotifications-emailstatus' => 'Trạng thái thư điện tử:',
@@ -4876,7 +4877,7 @@ $messages['vi'] = array(
 	'translationnotifications-email-subject' => 'Xin vui lòng dịch trang $1',
 	'translationnotifications-email-body' => '{{PLURAL:$9}}Xin chào $1,
 
-Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $2 tại {{SITENAME}}.
+Bạn nhận được thư điện tử này vì bạn đã ghi danh làm biên dịch viên $2 tại {{SITENAME}}.
 
 Hiện có trang để dịch tại đấy: $3.
 Bạn có thể dịch nó dùng liên kết sau:
@@ -4895,7 +4896,7 @@ Nhóm điều phối biên dịch {{SITENAME}}
 Bạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $8.',
 	'translationnotifications-talkpage-body' => '{{PLURAL:$9}}Xin chào $2,
 
-Bạn nhận được thư điện tử này vì bạn đã {{GENDER:$1}}đăng ký làm biên dịch viên $3 tại {{SITENAME}}.
+Bạn nhận được thư điện tử này vì bạn đã {{GENDER:$1}}ghi danh làm biên dịch viên $3 tại {{SITENAME}}.
 Trang [[$4]] mới có sẵn để dịch. Bạn có thể dịch nó dùng liên kết sau:
 $5
 
@@ -4911,7 +4912,7 @@ Nhóm điều phối biên dịch {{SITENAME}}',
 	'translationnotifications-digestemail-subject' => 'Thư điện tử tóm tắt các yêu cầu biên dịch từ {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Xin chào $1,
 
-Bạn nhận được thư điện tử này vì bạn đã đăng ký làm biên dịch viên $2 tại {{SITENAME}}.
+Bạn nhận được thư điện tử này vì bạn đã ghi danh làm biên dịch viên $2 tại {{SITENAME}}.
 
 Hiện có {{PLURAL:$3|trang|$3 trang}} để dịch. Các chi tiết được đưa dưới đây:
 
