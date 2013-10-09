@@ -64,9 +64,8 @@ class DigestEmailer extends Maintenance {
 				}
 			}
 			$firstLangCode = $user->getOption( 'translationnotifications-lang-1' );
-			$firstLang = Language::factory(
-				$firstLangCode )->fetchLanguageName( $signedUpLangCodes[0]
-			);
+			$firstLang = Language::factory( $firstLangCode )
+				->fetchLanguageName( $signedUpLangCodes[0] );
 			$this->output( "\tSigned up for: " . implode( ', ', $signedUpLangCodes ) . "\n" );
 
 			// Draft the mail for this user

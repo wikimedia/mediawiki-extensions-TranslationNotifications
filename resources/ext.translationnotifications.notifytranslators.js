@@ -36,7 +36,7 @@
 		} );
 
 		// Attach the language autocomplete widget.
-		$( '#wpUserLanguage' ).multiselectautocomplete( { inputbox : '#mw-input-wpLanguagesToNotify' } );
+		$( '#wpUserLanguage' ).multiselectautocomplete( { inputbox: '#mw-input-wpLanguagesToNotify' } );
 
 		/**
 		 * Notification preview
@@ -100,6 +100,5 @@
 				.hide()
 				.attr( { id: previewId } )
 		);
-
 	} );
 }( jQuery, mediaWiki ) );

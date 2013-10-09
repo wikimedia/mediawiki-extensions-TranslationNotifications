@@ -105,7 +105,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 		$formFields = array();
 
-		$default = (int) $tpage !== 0 ? $tpage : 'unset';
+		$default = (int)$tpage !== 0 ? $tpage : 'unset';
 		$formFields['TranslatablePage'] = array(
 			'type' => 'select',
 			'label-message' => array( 'translationnotifications-translatablepage-title' ),
@@ -603,10 +603,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$notificationText
 		)->numParams( count( $relevantLanguages ) )
 			->inLanguage( $userFirstLanguage )
-			->text()
-			// Bidi-isolation of site name from date
-			. $userFirstLanguage->getDirMarkEntity()
-			. ', ~~~~~'; // Date and time
+			->text();
+		// Bidi-isolation of site name from date
+		$text .= $userFirstLanguage->getDirMarkEntity() .
+			', ~~~~~'; // Date and time
 
 		$editSummary = $this->msg(
 			'translationnotifications-edit-summary',
