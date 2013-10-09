@@ -4824,10 +4824,12 @@ $8
 );
 
 /** Uzbek (oʻzbekcha)
+ * @author CoderSI
  * @author Sociologist
  */
 $messages['uz'] = array(
 	'translationnotifications-username' => 'Foydalanuvchi nomi:',
+	'translationnotifications-languages' => 'Tillar',
 );
 
 /** Vietnamese (Tiếng Việt)
