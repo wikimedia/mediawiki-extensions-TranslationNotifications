@@ -2595,6 +2595,7 @@ $messages['ka'] = array(
 );
 
 /** Korean (한국어)
+ * @author Hym411
  * @author Kwj2772
  * @author 아라
  */
@@ -2618,7 +2619,7 @@ $messages['ko'] = array(
 	'translationnotifications-cmethod-talkpage-elsewhere' => '다른 위키에서의 토론 문서',
 	'translationnotifications-cmethod-feed' => '피드',
 	'translationnotifications-frequency' => '연락 빈도',
-	'translationnotifications-freq-always' => '번역의 새로운 무언가가 있을 때',
+	'translationnotifications-freq-always' => '번역할 새로운 문서가 있을 때',
 	'translationnotifications-freq-week' => '일주일에 많아야 한 번',
 	'translationnotifications-freq-month' => '한달에 많아야 한 번',
 	'translationnotifications-freq-weekly' => '주마다 알림',
