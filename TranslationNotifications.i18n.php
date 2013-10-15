@@ -2327,6 +2327,13 @@ $messages['id'] = array(
 	'translationnotifications-cmethod-email' => 'Surel',
 );
 
+/** Ido (Ido)
+ * @author Malafaya
+ */
+$messages['io'] = array(
+	'translationnotifications-languages' => 'Lingui',
+);
+
 /** Icelandic (íslenska)
  * @author Snævar
  */
@@ -2993,6 +3000,22 @@ Dir kritt dës E-Mail well Dir Iech ageschriwwen hutt fir e-Mailen a Verbindung 
 	'translationnotifications-log-alllanguages' => 'all Sproochen',
 	'translationnotifications-nodeadline' => 'keng',
 	'translationnotifications-generic-languages' => '&lt;Sproochen>',
+);
+
+/** لوری (لوری)
+ * @author Mogoeilor
+ */
+$messages['lrc'] = array(
+	'translatorsignup' => 'اومائن د سيستم والريار',
+	'translationnotifications-info' => 'دونسمنيا كارور',
+	'translationnotifications-username' => 'نوم كاروری:',
+	'translationnotifications-emailstatus' => 'شلك ايميل:',
+	'translationnotifications-languages' => 'زونيا',
+	'translationnotifications-lang' => 'زون#$1',
+	'translationnotifications-nolang' => 'يه گل زون انتخاو بكيد',
+	'translationnotifications-cmethod-email' => 'ايميل',
+	'translationnotifications-cmethod-talkpage' => 'بلگه چك چنه',
+	'translationnotifications-cmethod-feed' => 'خورخو',
 );
 
 /** Macedonian (македонски)
@@ -4941,6 +4964,13 @@ Bạn nhận được thư điện tử này vì bạn đã quyết định nh�
 	'translationnotifications-nodeadline' => 'không có',
 	'translationnotifications-signup-legal' => 'Với việc cung cấp thông tin này, bạn đồng ý cho phép chúng tôi liên lạc với bạn về các đề tài có liên quan đến {{SITENAME}} mà bạn có thể quan tâm đến. Bạn đồng ý rằng dữ liệu của bạn sẽ được sử dụng theo [[{{MediaWiki:Privacypage}}|quy định quyền riêng tư]] của chúng tôi.',
 	'translationnotifications-generic-languages' => '&lt;các ngôn ngữ>',
+);
+
+/** Volapük (Volapük)
+ * @author Malafaya
+ */
+$messages['vo'] = array(
+	'translationnotifications-languages' => 'Püks',
 );
 
 /** Yiddish (ייִדיש)
