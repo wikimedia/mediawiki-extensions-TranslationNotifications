@@ -2717,7 +2717,7 @@ $4
 	'translationnotifications-sent-body' => '번역 알림을 보냈습니다.',
 	'translationnotifications-log-alllanguages' => '모든 언어',
 	'translationnotifications-nodeadline' => '없음',
-	'translationnotifications-signup-legal' => '우리가 당신에게 관심이 있을 것으로 생각하는 {{SITENAME}}에 우리가 관련 있는 주제와 관련하여 연락을 할 수 있도록 이 정보를 제공하는 데 동의합니다. 데이터에 동의하면 [[{{MediaWiki:Privacypage}}|개인 정보 정책]]의 적용을 받습니다.',
+	'translationnotifications-signup-legal' => '당신은 우리가 당신에게 관심이 있을 것으로 생각되는 {{SITENAME}}에 우리가 관련 있는 주제와 관련하여 {{SITENAME}}에서 연락할 수 있도록 이 정보를 제공하는 데 동의합니다. 정보 제공에 동의하면 [[{{MediaWiki:Privacypage}}|개인 정보 정책]]의 적용을 받습니다.',
 	'translationnotifications-generic-languages' => '&lt;언어>',
 );
 
