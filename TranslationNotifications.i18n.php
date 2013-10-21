@@ -1482,6 +1482,7 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Dalba
+ * @author Ebraminio
  * @author Mjbmr
  * @author Reza1615
  * @author درفش کاویانی
@@ -1493,7 +1494,7 @@ $messages['fa'] = array(
 	'translationnotifications-info' => 'اطلاعات کاربر',
 	'translationnotifications-username' => 'نام کاربری:',
 	'translationnotifications-emailstatus' => 'وضعیت پست الکترونیکی:',
-	'translationnotifications-email-confirmed' => 'نشانی پست الکترونیک تائید شده‌است',
+	'translationnotifications-email-confirmed' => 'نشانی رایانامه تائید شده‌است',
 	'translationnotifications-email-disablemail' => 'رایانشانی شما تأیید شده است، اما در [[Special:Preferences|ترجیحاتتان]] خواسته‌اید رایانامه‌ای دریافت نکنید.',
 	'translationnotifications-email-unconfirmed' => 'نشانی رایانامه (ایمیل) شما تأیید نشده‌است. $1',
 	'translationnotifications-email-notset' => 'شما رایانشانی‌ای فراهم نیاورده‌اید. این کار را می‌توانید از [[Special:Preferences|ترجیحات]] انجام دهید.',
