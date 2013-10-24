@@ -4433,6 +4433,7 @@ $messages['sv'] = array(
 	'translationnotifications-sent-body' => 'Översättningsmeddelande skickades.',
 	'translationnotifications-log-alllanguages' => 'alla språk',
 	'translationnotifications-nodeadline' => 'ingen',
+	'translationnotifications-generic-languages' => '&lt;languages>',
 );
 
 /** Tamil (தமிழ்)
