@@ -4385,15 +4385,18 @@ $messages['sr-ec'] = array(
 
 /** Swedish (svenska)
  * @author Jopparn
+ * @author Skalman
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'translatorsignup' => 'Översättarregistrering',
+	'translatorsignup-summary' => 'Använd den här sidan för att visa till vilka språk du kan översätta, och hur du vill bli kontaktad gällande nya översättningar.',
 	'translationnotifications-desc' => 'Låter översättare registrera sig för översättningsmeddelanden',
 	'translationnotifications-info' => 'Användarinformation',
 	'translationnotifications-username' => 'Användarnamn:',
 	'translationnotifications-emailstatus' => 'E-poststatus:',
 	'translationnotifications-email-confirmed' => 'Din e-postadress är bekräftad',
+	'translationnotifications-email-disablemail' => 'Din e-postadress har bekräftats, men i [[Special:Preferences|dina inställningar]] har du bett att inte ta emot e-post.',
 	'translationnotifications-email-unconfirmed' => 'Din e-postadress är inte bekräftad. $1',
 	'translationnotifications-email-notset' => 'Du har inte angivit en e-postadress. Du kan göra det i dina [[Special:Preferences|inställningar]].',
 	'translationnotifications-languages' => 'Språk',
@@ -4411,11 +4414,14 @@ $messages['sv'] = array(
 	'translationnotifications-freq-weekly' => 'Sammandrag varje vecka',
 	'translationnotifications-freq-monthly' => 'Sammandrag varje månad',
 	'translationnotifications-submit' => 'Uppdatera inställningar',
+	'translationnotifications-signup-success' => 'Dina inställningar om översättningsnotifikationer har sparats.',
 	'notifytranslators' => 'Meddela översättare',
+	'translationnotifications-submit-ok' => 'Notifikationer har lagts till i en kö och levereras av ett bakgrundsjobb.',
 	'translationnotifications-send-notification-button' => 'Skicka ett meddelande till översättare',
 	'translationnotifications-preview-notification-button' => 'Förhandsgranska meddelande',
 	'translationnotifications-deadline-label' => 'Tidsgränsen att ange i denna anmälan:',
 	'translationnotifications-languages-to-notify-label' => 'Vilka språk som ska meddelas:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Kommaavgränsade språkkoder; lämna tomt för att få notifikationer för alla språk.',
 	'translationnotifications-priority' => 'Prioritet:',
 	'translationnotifications-priority-high' => 'hög',
 	'translationnotifications-priority-medium' => 'mellan',
@@ -4424,15 +4430,73 @@ $messages['sv'] = array(
 	'translationnotifications-translatablepage-title' => 'Namn på översättningsbar sida:',
 	'translationnotifications-error-no-translatable-pages' => 'Det finns inga översättningsbara sidor på denna wiki.',
 	'translationnotifications-email-subject' => 'Var god översätt sidan $1',
+	'translationnotifications-email-body' => 'Hej $1!
+
+Du får detta e-postmeddelande för att du {{GENDER:$10|registrerade dig}} som översättare {{PLURAL:$9|i}} $2 på {{SITENAME}}.
+
+Det finns en sida att översätta där: $3.
+Du kan översätta den genom att klicka på följande länk:
+$4
+
+$5
+$6
+
+$7
+
+Din hjälp är mycket uppskattad. Översättare som du hjälper {{SITENAME}} att fungera som en verkligt flerspråkig nätgemenskap.
+
+Tack!
+Översättningssamordnarna på {{SITENAME}}
+
+----
+
+Du får detta e-postmeddelande för att du bett att få översättningsrelaterad e-post på {{SITENAME}}. För att sluta få e-postmeddelanden eller ändra notifikationsinställningarna, besök $8.',
+	'translationnotifications-talkpage-body' => 'Hej $2!
+
+Du får detta e-postmeddelande för att du {{GENDER:$1|registrerade dig}} som översättare {{PLURAL:$9|i}} $3 på {{SITENAME}}.
+
+Sidan [[$4]] finns tillgänglig för översättning. Du kan översätta den genom att klicka på följande länk:
+$5
+
+$6
+$7
+
+$8
+
+Din hjälp är mycket uppskattad. Översättare som du hjälper {{SITENAME}} att fungera som en verkligt flerspråkig nätgemenskap.
+
+Tack!
+Översättningssamordnarna på {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'översätt till $1',
 	'translationnotifications-digestemail-subject' => 'E-postsammandrag för översättningsbegäran från {{SITENAME}}',
+	'translationnotifications-digestemail-body' => 'Hej $1!
+
+Du får detta e-postmeddelande för att du {{GENDER:$1|registrerade dig}} som översättare i $2 på {{SITENAME}}.
+
+Det finns {{PLURAL:$3|1 sida tillgänglig|$3 sidor tillgängliga}} för översättning. Detaljer ges nedan.
+
+$4
+
+Din hjälp är mycket uppskattad. Översättare som du hjälper {{SITENAME}} att fungera som en verkligt flerspråkig nätgemenskap.
+
+Tack!
+Översättningssamordnarna på {{SITENAME}}
+
+----
+
+Du får detta e-postmeddelande för att du bett att få översättningsrelaterad e-post på {{SITENAME}}. För att sluta få e-postmeddelanden eller ändra notifikationsinställningarna, besök <$5>.',
+	'translationnotifications-digestemail-notification-line' => '$2 markerade "$3" för översättning $1. Du kan översätta sidan på $4',
 	'translationnotifications-edit-summary' => 'Översättningsmeddelande: $1',
 	'translationnotifications-email-priority' => 'Prioriteten för denna sida är $1.',
 	'translationnotifications-email-deadline' => 'Tidsfristen för att översätta denna sida är $1.',
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|skickade}} en notifikation om översättning av sidan $3; {{PLURAL:$10|språk}}: $4; deadline: $5; prioritet: $6; skickad till {{PLURAL:$7|en|$7}} mottagare, misslyckades för {{PLURAL:$8|en|$8}} mottagare, hoppades över för {{PLURAL:$9|en|$9}} mottagare',
+	'log-name-notifytranslators' => 'Översättningsnotifikationer',
+	'log-description-notifytranslators' => 'En logg över notifikationer som skickats till översättare angående översättningsbara sidor',
 	'translationnotifications-sent-title' => 'Översättningsmeddelande skickat',
 	'translationnotifications-sent-body' => 'Översättningsmeddelande skickades.',
 	'translationnotifications-log-alllanguages' => 'alla språk',
 	'translationnotifications-nodeadline' => 'ingen',
+	'translationnotifications-signup-legal' => 'Du accepterar att genom att tillhandahålla denna information, så får vi kontakta dig om ämnen relaterade till {{SITENAME}} som vi tror kan vara av intresse för dig. Du godkänner att dina data är under vår [[{{MediaWiki:Privacypage}}|integritetspolicy]].',
 	'translationnotifications-generic-languages' => '&lt;languages>',
 );
 
