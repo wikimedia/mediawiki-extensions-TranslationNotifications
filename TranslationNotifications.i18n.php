@@ -4383,6 +4383,13 @@ $messages['sr-ec'] = array(
 	'translationnotifications-nodeadline' => 'ниједан',
 );
 
+/** Serbian (Latin script) (srpski (latinica)‎)
+ * @author Milicevic01
+ */
+$messages['sr-el'] = array(
+	'translationnotifications-languages' => 'Jezici',
+);
+
 /** Swedish (svenska)
  * @author Jopparn
  * @author Skalman
