@@ -3003,6 +3003,23 @@ Villmools merci!
 Dir kritt dës E-Mail well Dir Iech ageschriwwen hutt fir e-Mailen a Verbindung mat Iwwersetzungen op {{SITENAME}} ze kréien. Fir dat ofzebestellen oder fir Är Astellunge vun den Notifikatiounen z'änneren, besicht eis w.e.g. op $8.",
 	'translationnotifications-notification-url-listitem' => 'op $1 iwwersetzen',
 	'translationnotifications-digestemail-subject' => 'Zesummegefaassten E-mail fir Iwwersetzungsufroe vu(n) {{SITENAME}}',
+	'translationnotifications-digestemail-body' => "Bonjour $1,
+
+Dir kritt dës E-Mail well Dir Iech als Iwwersetzer fir $2 op {{SITENAME}}  {{GENDER:$1|ageschriwwen}} hutt.
+
+Et gëtt do {{PLURAL:$3|eng Säit|$3 Säite}} fir z'iwwersetzen. D'Detailer fannt Dir hei drënner.
+
+$4
+
+Är Hëllef gëtt appreciéiert. Iwwersetzer wéi Dir hëllefe(n) {{SITENAME}} als richteg méisproocheg Gemeinschaft ze funktionéieren.
+
+Villmools Merci!
+
+{{SITENAME}} Iwwersetzungscoordinateuren
+
+----
+
+Dir kritt dës E-Mail well Dir Iech ageschriwwen hutt fir e-Mailen a Verbindung mat Iwwersetzungen op {{SITENAME}} ze kréien. Fir dat ofzebestellen oder fir Är Astellunge vun den Notifikatiounen z'änneren, besicht eis w.e.g. op <$5>.",
 	'translationnotifications-digestemail-notification-line' => 'Den $1 huet de(n) $2 d\'Säit "$3" fir d\'Iwwersetze markéiert. Dir kënnt et op $4 iwwersetzen',
 	'translationnotifications-edit-summary' => 'Iwwersetzungs-Matdeelungen: $1',
 	'translationnotifications-email-priority' => "D'Prioritéit vun dëser Säit ass $1.",
