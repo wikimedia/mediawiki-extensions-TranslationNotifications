@@ -1589,6 +1589,7 @@ N!این رایانامه را به این سبب دریافت می‌کنید �
  * @author Nike
  * @author Olli
  * @author Silvonen
+ * @author Stryn
  */
 $messages['fi'] = array(
 	'translatorsignup' => 'Kääntäjäksi liittyminen',
@@ -1634,7 +1635,7 @@ $messages['fi'] = array(
 	'translationnotifications-email-subject' => 'Ole hyvä ja käännä sivu $1',
 	'translationnotifications-email-body' => 'Hei $1,
 
-Saat tämän sähköpostiviestin, koska olet ilmoittanut kielen/kielten $2 kääntäjäksi sivustolla {{SITENAME}}.
+Saat tämän sähköpostiviestin, koska olet {{GENDER:$10|ilmoittautunut}} {{PLURAL:$9|kielen|kielten}} $2 kääntäjäksi sivustolla {{SITENAME}}.
 
 Seuraava sivu on nyt saatavilla käännettäväksi: $3.
 Voit kääntää sen seuraavaa linkkiä napsauttamalla:
@@ -1653,11 +1654,11 @@ Sivuston {{SITENAME}} käännösvastaavat
 
 ----
 
-Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä sivustolla  {{SITENAME}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy $8.', # Fuzzy
+Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä sivustolla {{SITENAME}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy osoitteessa $8.',
 	'translationnotifications-talkpage-body' => 'Hei $2,
 
-Saat tämän ilmoituksen, koska olet liittynyt kielen/kielten $3 kääntäjäksi sivustolla {{SITENAME}}.
-Sivu [[$4]] on saatavilla käännettäväksi. Voit kääntää sen osoitteessa:
+Saat tämän ilmoituksen, koska olet {{GENDER:$10|ilmoittautunut}} {{PLURAL:$9|kielen|kielten}} $3 kääntäjäksi sivustolla {{SITENAME}}.
+Sivu [[$4]] on saatavilla käännettäväksi. Voit kääntää sen täällä:
 $5
 
 $6
@@ -1670,12 +1671,12 @@ monikielisenä yhteisönä.
 
 Kiitos!
 
-Sivuston {{SITENAME}} käännösvastaavat', # Fuzzy
+Sivuston {{SITENAME}} käännösvastaavat',
 	'translationnotifications-notification-url-listitem' => 'käännä kielelle $1',
 	'translationnotifications-digestemail-subject' => 'Yhteenveto sivuston {{SITENAME}} käännöspyynnöistä',
 	'translationnotifications-digestemail-body' => 'Hei $1,
 
-Saat tämän sähköpostiviestin, koska olet ilmoittanut kielen/kielten $2 kääntäjäksi sivustolla {{SITENAME}}.
+Saat tämän sähköpostiviestin, koska olet {{GENDER:$10|ilmoittautunut}} {{PLURAL:$9|kielen|kielten}} $2 kääntäjäksi sivustolla {{SITENAME}}.
 
 Saatavilla on $3 siv{{PLURAL:$3|u|ua}} käännettäväksi. Tarkemmat tiedot annetaan alla.
 
@@ -1689,12 +1690,12 @@ Sivuston {{SITENAME}} käännösvastaavat
 
 ----
 
-Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä sivustolla  {{SITENAME}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy sivulla <$5>.', # Fuzzy
+Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä sivustolla {{SITENAME}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy sivulla <$5>.', # Fuzzy
 	'translationnotifications-digestemail-notification-line' => '($1) $2 ilmoitti sivun "$3" käännettäväksi. Voit kääntää sen osoitteessa $4',
 	'translationnotifications-edit-summary' => 'Ilmoitus käännöksestä: $1',
 	'translationnotifications-email-priority' => 'Tämän sivun tärkeysaste on $1.',
 	'translationnotifications-email-deadline' => 'Tämä sivu tulisi kääntää viimeistään $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|lähetti}} ilmoituksen sivun $3 kääntämisestä; kielet: $4; määräaika: $5; tärkeysaste: $6; lähetettiin {{PLURAL:$7|yhdelle kääntäjälle|$7 kääntäjälle}}, epäonnistui {{PLURAL:$8|yhdelle kääntäjälle|$8 kääntäjälle}}, ohitettiin {{PLURAL:$9|yhdelle kääntäjälle|$9 kääntäjälle}}', # Fuzzy
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|lähetti}} ilmoituksen sivun $3 kääntämisestä; {{PLURAL:$10|kieli|kielet}}: $4; määräaika: $5; tärkeysaste: $6; lähetettiin {{PLURAL:$7|yhdelle kääntäjälle|$7 kääntäjälle}}, epäonnistui {{PLURAL:$8|yhdelle kääntäjälle|$8 kääntäjälle}}, ohitettiin {{PLURAL:$9|yhdelle kääntäjälle|$9 kääntäjälle}}',
 	'log-name-notifytranslators' => 'Ilmoitukset käännöksistä',
 	'log-description-notifytranslators' => 'Loki ilmoituksista, jotka on lähetetty kääntäjille käännettävistä sivuista',
 	'translationnotifications-sent-title' => 'Käännösilmoitus lähetetty',
@@ -1702,6 +1703,7 @@ Vastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-i
 	'translationnotifications-log-alllanguages' => 'kaikki kielet',
 	'translationnotifications-nodeadline' => 'ei mitään',
 	'translationnotifications-signup-legal' => 'Antamalla nämä tiedot, vahvistat, että voimme ottaa sinuun yhteyttä sivustoon {{SITENAME}} liittyvissä asioissa, joiden arvelemme kiinnostavan sinua. Hyväksyt, että tietojasi käytetään  [[{{MediaWiki:Privacypage}}|yksityisyydensuojan]] alaisena.',
+	'translationnotifications-generic-languages' => '&lt;languages>',
 );
 
 /** French (français)
