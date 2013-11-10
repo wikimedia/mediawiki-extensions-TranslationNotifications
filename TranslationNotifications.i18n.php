@@ -711,6 +711,7 @@ $messages['cy'] = array(
 	'translationnotifications-email-confirmed' => 'Cadarnhawyd eich cyfeiriad ebost',
 	'translationnotifications-email-disablemail' => 'Cadarnhawyd eich cyfeiriad ebost, ond yn [[Special:Preferences|eich dewisiadau]] fe ddywedasoch nad ydych am dderbyn ebyst.',
 	'translationnotifications-email-unconfirmed' => 'Ni chadarnhawyd eich cyfeiriad ebost. $1',
+	'translationnotifications-email-notset' => 'Nid ydych wedi rhoi cyfeiriad ebost. Gallwch wneud hynny drwy eich [[Special:Preferences|dewisiadau]].',
 	'translationnotifications-languages' => 'Ieithoedd',
 	'translationnotifications-lang' => 'Iaith rhif $1',
 	'translationnotifications-nolang' => 'Dewis iaith',
@@ -728,13 +729,24 @@ $messages['cy'] = array(
 	'translationnotifications-submit' => 'Diweddarer y gosodiadau',
 	'translationnotifications-signup-success' => 'Rhoddwyd eich dewisiadau hysbysu am gyfieithu ar gadw.',
 	'notifytranslators' => 'Hysbysu cyfieithwyr',
+	'translationnotifications-submit-ok' => 'Ychwanegwyd yr hysbysiadau i giw, a chânt eu hanfon gan feddalwedd yn gweithio yn y cefndir.',
+	'translationnotifications-send-notification-button' => 'Anfoner yr hysbysiad at y cyfieithwyr',
 	'translationnotifications-preview-notification-button' => 'Rhagolwg yr hysbysiad',
+	'translationnotifications-deadline-label' => "Y terfyn amser i'w nodi yn yr hysbysiad:",
 	'translationnotifications-languages-to-notify-label' => "Yr ieithoedd i'w hysbysu:",
+	'translationnotifications-languages-to-notify-label-help-message' => 'Codau iaith coma-wahanedig; gadewch yn wag i hysbysu i bob iaith.',
 	'translationnotifications-priority' => 'Pwysigrwydd:',
 	'translationnotifications-priority-high' => 'uchel',
 	'translationnotifications-priority-medium' => 'cymedrol',
 	'translationnotifications-priority-low' => 'isel',
 	'translationnotifications-priority-unset' => '(heb ei osod)',
+	'translationnotifications-translatablepage-title' => 'Enw tudalen y gellir ei chyfieithu:',
+	'translationnotifications-error-no-translatable-pages' => 'Nid oes unrhyw dudalennau y gellir eu cyfieithu ar y wici hwn.',
+	'translationnotifications-email-subject' => 'Cyfieithwch y dudalen $1 os gwelwch yn dda',
+	'translationnotifications-notification-url-listitem' => 'cyfieithu i $1',
+	'translationnotifications-digestemail-subject' => 'Ebost cryno o geisiadau ar {{SITENAME}} am gael cyfieithiadau',
+	'translationnotifications-email-priority' => "Mae pwysigrwydd $1 i'r dudalen.",
+	'translationnotifications-email-deadline' => "$1 yw amser terfyn cyfieithu'r dudalen.",
 	'translationnotifications-log-alllanguages' => 'pob iaith',
 	'translationnotifications-nodeadline' => 'dim',
 	'translationnotifications-generic-languages' => '&lt;ieithoedd>',
@@ -1761,7 +1773,7 @@ $messages['fr'] = array(
 	'translationnotifications-email-subject' => 'Veuillez traduire la page $1',
 	'translationnotifications-email-body' => 'Bonjour $1,
 
-Vous recevez ce courriel parce que vous vous êtes {{GENDER:$10|inscrit|inscrite}} comme {{GENDER:$10|traducteur|traductrice}} {{PLURAL:$9|de}} $2 sur {{SITENAME}}.
+Vous recevez ce courriel parce que vous vous êtes inscrit{{GENDER:$10||inscrit}} comme traduct{{GENDER:$10|eur|rice}} {{PLURAL:$9|de}} $2 sur {{SITENAME}}.
 
 Il y a une page à traduire ici : $3.
 Vous pouvez la traduire en cliquant sur le lien suivant :
@@ -1777,11 +1789,11 @@ Merci !
 Les coordonnateurs de traduction de {{SITENAME}}
 
 ----
-Vous recevez ce courriel parce que vous avez signé pour recevoir des courriels concernant les traductions sur {{SITENAME}}. Pour vous désabonner ou modifier vos préférences de notification pour les traductions, veuillez visiter $8.',
+Vous recevez ce courriel parce que vous vous êtes inscrit pour recevoir des courriels concernant les traductions sur {{SITENAME}}. Pour vous désabonner ou modifier vos préférences de notification pour les traductions, veuillez visiter $8.',
 	'translationnotifications-talkpage-body' => 'Bonjour $2,
 
-Vous recevez cette notification parce que vous êtes {{GENDER:$1|inscrit|inscrite}} comme {{GENDER:$1|traducteur|traductrice}} de {{PLURAL:$9|$3}} sur {{SITENAME}}.
-La page [[$4]] est disponible pour la traduction. Vous pouvez la traduire ici:
+Vous recevez cette notification parce que vous êtes inscrit{{GENDER:$1||e}} comme traduct{{GENDER:$1|eur|rice}} de {{PLURAL:$9|$3}} sur {{SITENAME}}.
+La page [[$4]] est disponible pour la traduction. Vous pouvez la traduire ici :
 $5
 
 $6
@@ -1798,21 +1810,20 @@ Les coordinateurs de la traduction de {{SITENAME}}',
 	'translationnotifications-digestemail-subject' => 'Courriel de synthèse pour les demandes de traduction de {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Bonjour $1,
 
-Vous recevez ce courriel parce que vous  vous êtes {{GENDER:$1|inscrit|inscrite}} comme {{GENDER:$1|traducteur|traductrice}} de $2 sur {{SITENAME}}.
+Vous recevez ce courriel parce que vous vous êtes inscrit{{GENDER:$1||e}} comme traduct{{GENDER:$1|eur|rice}} de $2 sur {{SITENAME}}.
 
 {{PLURAL:$3|1 page est disponible|$3 pages sont disponibles}} pour la traduction. Les détails sont donnés ci-dessous.
 
 $4
 
-Votre aide est grandement appréciée. Les traducteurs comme vous aider à {{SITENAME}} de la fonction
-comme une véritable communauté multilingue.
+Votre aide est grandement appréciée. Les traducteurs comme vous aident {{SITENAME}} à fonctionner comme une véritable communauté multilingue.
 
-Merci!
+Merci !
 Les administrateurs de la traduction de {{SITENAME}}
 
 ----
 
-Vous recevez ce courriel parce que vous avez souscrit à la réception de courriels concernant les traductions sur {{SITENAME}}. Pour modifier vos préférences de notification pour les traductions, veuillez visiter  <$5>.',
+Vous recevez ce courriel parce que vous vous êtes inscrit à la réception de courriels concernant les traductions sur {{SITENAME}}. Pour modifier vos préférences de notification pour les traductions, veuillez visiter  <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'Sur $1, $2 a marqué "$3" pour être traduit. Vous pouvez le traduire sur $4',
 	'translationnotifications-edit-summary' => 'Notification de traduction : $1',
 	'translationnotifications-email-priority' => 'La priorité de cette page est $1.',
