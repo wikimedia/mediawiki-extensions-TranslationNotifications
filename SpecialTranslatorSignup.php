@@ -217,14 +217,14 @@ JAVASCRIPT
 		if ( !class_exists( 'CentralAuthUser' ) ) {
 			return array();
 		}
-		$globalUser = new CentralAuthUser( $this->getUser()->getName() );
+		$globalUser = CentralAuthUser::getInstance( $this->getUser() );
 		if ( !$globalUser->exists() ) {
 			return array();
 		}
 
 		$matrix = new SiteMatrix();
 		$wikis = array();
-		foreach ( $globalUser->queryAttached() as $dbname => $value ) {
+		foreach ( $globalUser->listAttached() as $dbname ) {
 			// Skip inactive and special wikis
 			list( $site, $lang ) = $wgConf->siteFromDB( $wgDBname );
 			if ( $matrix->isClosed( $lang, $site )
