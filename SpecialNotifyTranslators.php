@@ -239,6 +239,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$sentFail = 0;
 		$tooEarly = 0;
 		$timestampOptionName = 'translationnotifications-timestamp';
+		$jobs = array();
 		foreach ( $translators as $row ) {
 			$user = User::newFromID( $row->up_user );
 
@@ -252,7 +253,6 @@ class SpecialNotifyTranslators extends SpecialPage {
 				$frequencies[$user->getOption( 'translationnotifications-freq' )];
 
 			if ( $timeSinceNotification > $userTranslationFrequency ) {
-				$status = true;
 				if ( $user->getOption( 'translationnotifications-cmethod-email' ) ) {
 					if ( $user->getOption( 'disablemail' ) ) {
 						// For some reason the user signed up to receive
@@ -262,35 +262,39 @@ class SpecialNotifyTranslators extends SpecialPage {
 						// contact method.
 						$user->setOption( 'translationnotifications-cmethod-email', false );
 					} elseif ( $user->getOption( 'translationnotifications-freq' ) === 'always' ) {
-						$status &= $this->sendTranslationNotificationEmail( $user );
+						$jobs[] = $this->sendTranslationNotificationEmail( $user );
 					}
 				}
 				if ( $user->getOption( 'translationnotifications-cmethod-talkpage' ) ) {
-					$status &= $this->leaveUserMessage(
+					$jobs[] = $this->leaveUserMessage(
 						$user,
 						$languagesToNotify,
 						'talkpageHere'
 					);
 				}
 				if ( $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere' ) ) {
-					$status &= $this->leaveUserMessage(
+					$jobs[] = $this->leaveUserMessage(
 						$user,
 						$languagesToNotify,
 						'talkpageInOtherWiki'
 					);
 				}
 
-				if ( $status ) {
-					$sentSuccess++;
-					$user->setOption( $timestampOptionName, $currentDBTime );
-				} else {
-					$sentFail++;
-				}
-
+				$user->setOption( $timestampOptionName, $currentDBTime );
 				$user->saveSettings();
 			} else {
 				$tooEarly++;
 			}
+		}
+
+		if ( $jobs ) {
+			$count = count( $jobs );
+			$status = JobQueueGroup::singleton()->push( $jobs );
+			if ( $status ) {
+				$sentSuccess = $count;
+			} else {
+				$sentFail = $count;
+			};
 		}
 
 		$logger = new LogPage( 'notifytranslators' );
@@ -507,7 +511,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * @param $user User to whom the email is being sent
 	 * @param $languagesToNotify Array A list of languages that are notified.
 	 * Empty for all languages.
-	 * @return boolean true if it was successful
+	 * @return EmaillingJob
 	 */
 	protected function sendTranslationNotificationEmail( User $user,
 		$languagesToNotify = array()
@@ -548,9 +552,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'subj' => $emailSubject,
 			'replyto' => $emailFrom,
 		);
-		$job = new EmaillingJob( $this->translatablePageTitle, $params );
-
-		return JobQueueGroup::singleton()->push( $job );
+		return new EmaillingJob( $this->translatablePageTitle, $params );
 	}
 
 	/**
@@ -560,7 +562,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * Empty for all languages.
 	 * @param string $destination Whether to send it to a talk page on this wiki
 	 * ('talkpageHere', default) or another one ('talkpageInOtherWiki').
-	 * @return boolean True if it was successful
+	 * @return TranslationNotificationJob
 	 */
 	public function leaveUserMessage( User $user, $languagesToNotify = array(),
 		$destination = 'talkpageHere'
@@ -624,8 +626,6 @@ class SpecialNotifyTranslators extends SpecialPage {
 				$user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere-loc' );
 		}
 
-		$job = new TranslationNotificationJob( $user->getTalkPage(), $params );
-
-		return JobQueueGroup::singleton()->push( $job );
+		return new TranslationNotificationJob( $user->getTalkPage(), $params );
 	}
 }
