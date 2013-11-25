@@ -64,16 +64,14 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$output->addWikiMsg( 'translationnotifications-submit-ok' );
 		} else {
 			$htmlForm->displayForm( $result );
+			// Dummy dropdown, will be invisible. Used as data source for language name autocompletion.
+			$languageSelector = Xml::languageSelector(
+				$wgContLang->getCode(),
+				false,
+				$this->getLanguage()->getCode()
+			);
+			$output->addHtml( $languageSelector[1] );
 		}
-
-		// Dummy dropdown, will be invisible. Used as data source for language name autocompletion.
-		$languageSelector = Xml::languageSelector(
-			$wgContLang->getCode(),
-			false,
-			$this->getLanguage()->getCode()
-		);
-		$output->addHtml( $languageSelector[1] );
-
 		$output->addModules( 'ext.translationnotifications.notifytranslators' );
 	}
 
