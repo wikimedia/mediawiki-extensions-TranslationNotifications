@@ -1049,6 +1049,7 @@ $messages['dsb'] = array(
 	'notifytranslators' => 'Pśełožowarjow informěrowaś',
 	'translationnotifications-submit-ok' => 'Powěźeńki su se čakańskemu rědoju pśidali a dodawaju se pśez proces w slězynje.',
 	'translationnotifications-send-notification-button' => 'Pśełožowarjam powěźeńku pósłaś',
+	'translationnotifications-preview-notification-button' => 'Pśeglěd powěźeńki',
 	'translationnotifications-deadline-label' => 'Termin, kótaryž musy se w toś tej powěźeńce pódaś:',
 	'translationnotifications-languages-to-notify-label' => 'Rěcy, kótarež maju se informěrowaś:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Rěcne kody źělone pśez komu; prozne wóstajiś, aby wšykne rěcy informěrowało.',
@@ -1062,7 +1063,7 @@ $messages['dsb'] = array(
 	'translationnotifications-email-subject' => 'Pšosym pśełož bok $1',
 	'translationnotifications-email-body' => 'Witaj $1,
 
-Dostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ {{PLURAL:$9|za}} $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował.
+Dostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ {{PLURAL:$9|za}} $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} {{GENDER:$10|zregistrěrował|zregistrěrowała}}.
 
 Dajo nowy bok, kótaryž musy se pśełožowaś: $3.
 Móžoš jen pśełožiś, z tym až kliknjoš na slědujucy wótkaz:
@@ -1080,11 +1081,11 @@ Pśełožowańske koordinatory {{GRAMMAR:genitiw|{{SITENAME}}}}
 
 ----
 
-Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k $8', # Fuzzy
+Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k $8',
 	'translationnotifications-talkpage-body' => 'Witaj $2,
 
-dostawaš toś tu powěźeńku, dokulaž sy se ako pśełožowaŕ za $3 na {{SITENAME}} zregistrěrował.
-Bok [[$4]] stoj za pśełožowanje k dispoziciji. Móžoš jen how pśełožowaś:
+dostawaš toś tu powěźeńku, dokulaž sy se ako pśełožowaŕ {{PLURAL:$9|za}} $3 na {{SITENAME}} {{GENDER:$1|zregistrěrował|zregistrěrowała}}.
+Bok [[$4]] stoj za pśełožowanje k dispoziciji. Móžoš jen how pśełožyś:
 $5
 
 $6
@@ -1092,16 +1093,16 @@ $7
 
 $8
 
-Twója pomoc jo wjelgin witana. Pśełožowarje ako ty pomagaju, aby {{SITENAME}} ako napšawdu wěcejrěcne zgromaźeństwo funkcioněrował.
+Waša pomoc jo wjelgin witana. Pśełožowarje ako ty pomagaju, aby {{SITENAME}} ako napšawdu wěcejrěcne zgromaźeństwo funkcioněrowało.  
 
-Wulki źěk!
+Wjeliki źěk!
 
-Pśełožowańske koordinatory {{GRAMMAR:genitiw|{{SITENAME}}}}', # Fuzzy
+Pśełožowańske koordinatory {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-notification-url-listitem' => 'do $1 pśełožiś',
 	'translationnotifications-digestemail-subject' => 'E-mailowy pśeglěd za póžedane pśełožki wót {{GRAMMAR:genitiw|{{SITENAME}}}}',
 	'translationnotifications-digestemail-body' => 'Witaj $1,
 
-dostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował.
+dostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} {{GENDER:$1|zregistrěrował|zregistěrował}}.
 {{PLURAL:$3|Jo 1 bok|Stej $3 boka|Su $3 boki|Jo $3 bokow}} za pśełožowanje k dispoziciji.  Drobnostki namakaš dołojce.
 
 $4
@@ -1114,12 +1115,12 @@ Wjeliki źěk!
 
 ----
 
-Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k <$5>.', # Fuzzy
+Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k <$5>.',
 	'translationnotifications-digestemail-notification-line' => 'Dnja $1 jo $2 bok "$3" za pśełožowanje markěrował. Móžoš ju na $4 pśełožowaś.',
 	'translationnotifications-edit-summary' => 'Pśełožowańska powěźeńka: $1',
 	'translationnotifications-email-priority' => 'Priorita toś togo boka jo $1.',
 	'translationnotifications-email-deadline' => 'Termin za pśełožowanje toś togo boka jo $1.',
-	'logentry-translationnotifications-sent' => '$1 jo powěźeńku wó pśełožowańskem boku $3 {{GENDER:$2|pósłał|posłała}}; rěcy: $4; termin $5; priorita $6; jo ju na {{PLURAL:$7|jadnogo dostawarja|$7 dostawarjowu|$7 dostawarjow|$7 dostawarjow}} {{GENDER:$2|pósłał|pósłała}}, jo se njeraźiła za {{PLURAL:$8|jadnogo dostawarja|$8 dostawarjowu$8 dostawarjow|$8 dostawarjow}}, jo se pśeskócyła za  {{PLURAL:$9|jadnogo dostawarja|$9 dostawarjowu|$9 dostawarjow|$9 dostawarjow}}.', # Fuzzy
+	'logentry-translationnotifications-sent' => '$1 jo powěźeńku wó pśełožowańskem boku $3 {{GENDER:$2|pósłał|posłała}}; {{PLURAL:$10|rěc|rěcy}}: $4; termin $5; priorita $6; jo ju na {{PLURAL:$7|jadnogo dostawarja|$7 dostawarjowu|$7 dostawarjow}} {{GENDER:$2|pósłał|pósłała}}, jo se njeraźiła za {{PLURAL:$8|jadnogo dostawarja|$8 dostawarjowu$8 dostawarjow}}, jo se pśeskócyła za  {{PLURAL:$9|jadnogo dostawarja|$9 dostawarjowu|$9 dostawarjow}}.',
 	'log-name-notifytranslators' => 'Pśełožowańske powěźeńki',
 	'log-description-notifytranslators' => 'Protokol wó powěžeńkach, kótarež su se pśełožowarjam wó pśełožujobnych bokach pósłali',
 	'translationnotifications-sent-title' => 'Pśełožowańska powěźeńka jo se pósłała',
@@ -1127,6 +1128,7 @@ Dostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach 
 	'translationnotifications-log-alllanguages' => 'wšykne rěcy',
 	'translationnotifications-nodeadline' => 'žeden',
 	'translationnotifications-signup-legal' => 'Pśez pódawanje toś tych informacijow zwólijoš, až móžomy se z tobu nastupajucy temy w zwisku {{GRAMMAR:instrumental|{{SITENAME}}}} do zwiska stajiś, kótarež by mógli śi zajimowaś. Zwólijoš do togo, až waše daty pódlaže našym [[{{MediaWiki:Privacypage}}|pšawidłam priwatnosći]].',
+	'translationnotifications-generic-languages' => '&lt;rěcy>',
 );
 
 /** Esperanto (Esperanto)
@@ -2143,6 +2145,7 @@ $messages['hsb'] = array(
 	'notifytranslators' => 'Přełožowarjow informować',
 	'translationnotifications-submit-ok' => 'Źdźělenki su so čakanskemu rynčkej přidali a dodawaja so přez proces w pozadku.',
 	'translationnotifications-send-notification-button' => 'Přełožowarjam zdźělenku pósłać',
+	'translationnotifications-preview-notification-button' => 'Přehlad zdźělenki',
 	'translationnotifications-deadline-label' => 'Termin, kotryž dyrbi so w tutej zdźělence podać:',
 	'translationnotifications-languages-to-notify-label' => 'Rěče, kotrež maja so informować:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Rěčne kody dźělene přez komu; prózdne wostajić, zo by wšě rěče informowało.',
@@ -2221,6 +2224,7 @@ Přijimaš tutu e-mejl, dokelž sy so za přijeće e-mejlow wo přełožkach na 
 	'translationnotifications-log-alllanguages' => 'wšě rěče',
 	'translationnotifications-nodeadline' => 'žadyn',
 	'translationnotifications-signup-legal' => 'Přez podawanje tutych informacijow přizwoliš, zo móžemy so z tobu nastupajo temy w zwisku {{GRAMMAR:instrumental|{{SITENAME}}}} do zwiska stajić, kotrež móhli će zajimować. Zwoliš do toho, zo waše daty našim [[{{MediaWiki:Privacypage}}|prawidłam priwatnosće]] podleža.',
+	'translationnotifications-generic-languages' => '&lt;rěče>',
 );
 
 /** Hungarian (magyar)
