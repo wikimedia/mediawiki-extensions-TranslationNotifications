@@ -3064,6 +3064,13 @@ $messages['lrc'] = array(
 	'translationnotifications-cmethod-email' => 'ايميل',
 	'translationnotifications-cmethod-talkpage' => 'بلگه چك چنه',
 	'translationnotifications-cmethod-feed' => 'خورخو',
+	'translationnotifications-freq-weekly' => 'چکسه هفته یی',
+	'translationnotifications-freq-monthly' => 'چکسه ماهونه',
+	'translationnotifications-priority-high' => 'برز',
+	'translationnotifications-priority-medium' => 'مینجا',
+	'translationnotifications-priority-low' => 'هار',
+	'translationnotifications-log-alllanguages' => 'همه زونيا',
+	'translationnotifications-nodeadline' => 'هيش كوم',
 );
 
 /** Macedonian (македонски)
