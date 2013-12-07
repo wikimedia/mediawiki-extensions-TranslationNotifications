@@ -650,7 +650,7 @@ $messages['ckb'] = array(
 	'translationnotifications-cmethod-email' => 'ئیمەیل',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Chmee2
  * @author Vks
  */
@@ -689,7 +689,7 @@ $messages['cs'] = array(
 	'translationnotifications-nodeadline' => 'žádný',
 );
 
-/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
