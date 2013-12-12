@@ -213,7 +213,7 @@ JAVASCRIPT
 	}
 
 	protected function getOtherWikis() {
-		global $wgConf, $wgDBname;
+		global $wgConf;
 		if ( !class_exists( 'CentralAuthUser' ) ) {
 			return array();
 		}
@@ -226,10 +226,10 @@ JAVASCRIPT
 		$wikis = array();
 		foreach ( $globalUser->listAttached() as $dbname ) {
 			// Skip inactive and special wikis
-			list( $site, $lang ) = $wgConf->siteFromDB( $wgDBname );
+			list( $site, $lang ) = $wgConf->siteFromDB( $dbname );
 			if ( $matrix->isClosed( $lang, $site )
-				|| $matrix->isPrivate( $lang, $site )
-				|| $matrix->isFishbowl( $lang, $site )
+				|| $matrix->isPrivate( $dbname )
+				|| $matrix->isFishbowl( $dbname )
 			) {
 				continue;
 			}
