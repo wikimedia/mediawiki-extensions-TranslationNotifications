@@ -3899,7 +3899,7 @@ Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile 
 	'translationnotifications-edit-summary' => 'Powiadomienie o tłumaczeniu: $1',
 	'translationnotifications-email-priority' => 'Priorytet tej strony to  $1 .',
 	'translationnotifications-email-deadline' => 'Nieprzekraczalny termin tłumaczenia tej strony to $1 .',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|wysyłał|wysłała}} powiadomienie w sprawie tłumaczenia strony $3; języki: $4; termin $5; priorytet $6; do {{PLURAL:$7|jednego adresata|$7 adresatów}} pomyślnie, do {{PLURAL:$8|jednego adresata|$8 adresatów}} bezskutecznie, pominięto {{PLURAL:$9|jednego adresata|$9 adresatów}}', # Fuzzy
+	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|wysyłał|wysłała}} powiadomienie w sprawie tłumaczenia strony $3; {{PLURAL:$10|język|języki|języków}}: $4; termin $5; priorytet $6; do {{PLURAL:$7|jednego adresata|$7 adresatów}} pomyślnie, do {{PLURAL:$8|jednego adresata|$8 adresatów}} bezskutecznie, pominięto {{PLURAL:$9|jednego adresata|$9 adresatów}}',
 	'log-name-notifytranslators' => 'Powiadomienia o tłumaczeniach',
 	'log-description-notifytranslators' => 'Dziennik powiadomień wysyłanych do tłumaczy o stronach do przetłumaczenia',
 	'translationnotifications-sent-title' => 'Wysłano powiadomienie tłumaczenia',
@@ -3907,6 +3907,7 @@ Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile 
 	'translationnotifications-log-alllanguages' => 'wszystkie języki',
 	'translationnotifications-nodeadline' => 'brak',
 	'translationnotifications-signup-legal' => 'Dostarczając te informacje, zgadzasz się z tym, że możemy skontaktować się z Tobą odnośnie tematów związanych ze stroną {{SITENAME}}, które naszym zdaniem mogą być dla Ciebie interesujące. Zgadzasz się również z tym, że Twoje dane osobowe będą przetwarzane zgodnie z naszymi [[{{MediaWiki:Privacypage}}|zasadami]].',
+	'translationnotifications-generic-languages' => '&lt;języki>',
 );
 
 /** Piedmontese (Piemontèis)
