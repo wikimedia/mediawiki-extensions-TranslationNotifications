@@ -3830,6 +3830,7 @@ $messages['pl'] = array(
 	'notifytranslators' => 'Powiadom tłumaczy',
 	'translationnotifications-submit-ok' => 'Powiadomienia zostały dodane do kolejki i są dostarczane przez zadanie w tle.',
 	'translationnotifications-send-notification-button' => 'Wyślij powiadomienia do tłumaczy',
+	'translationnotifications-preview-notification-button' => 'Pokaż podgląd powiadomienia',
 	'translationnotifications-deadline-label' => 'Termin do wskazania w tym powiadomieniu:',
 	'translationnotifications-languages-to-notify-label' => 'Jakie języki powiadomić:',
 	'translationnotifications-languages-to-notify-label-help-message' => 'Kody języków oddzielone przecinkami; pozostaw puste by powiadamiać dla wszystkich języków.',
