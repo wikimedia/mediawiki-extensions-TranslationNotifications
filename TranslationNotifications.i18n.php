@@ -5209,6 +5209,7 @@ $4
  * @author Liuxinyu970226
  * @author Qiyue2001
  * @author Shirayuki
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
 	'translatorsignup' => '翻译者登记',
@@ -5252,12 +5253,14 @@ $messages['zh-hans'] = array(
 	'translationnotifications-translatablepage-title' => '可翻译页面名：',
 	'translationnotifications-error-no-translatable-pages' => '这个wiki中没有可翻译页面。',
 	'translationnotifications-email-subject' => '请翻译页面$1',
-	'translationnotifications-email-body' => '您好$1，
+	'translationnotifications-email-body' => '$1：
 
-您收到此邮件，是因为您{{PLURAL:$9|作为}}$2的译者在{{SITENAME}}成功{{GENDER:$10|注册}}。
+你好！
 
-有一个页面可以翻译：$3。
-您可以点击下面的链接来翻译此页面：
+你收到这封邮件，是因为你是{{SITENAME}}{{PLURAL:$9|的}}$2{{GENDER:$10|注册}}译者。
+
+本网站上有一个待翻译的页面：$3。
+你可以点击下面的链接来翻译它：
 $4
 
 $5
@@ -5265,14 +5268,14 @@ $6
 
 $7
 
-十分感谢您的帮助。正是有了像您一样的译者，{{SITENAME}}才能成为一个多语言社区。
+我们非常感谢你的帮助。正是同你一样的译者们的积极帮助，才使{{SITENAME}}成为一个真正的多语社区。
 
-非常感谢！
-{{SITENAME}}翻译团队
+谢谢！
+{{SITENAME}}翻译协调团队
 
 ----
 
-您收到此封邮件，是因为您在{{SITENAME}}的设置页面设置了接受邮件。如果您想退订或修改翻译相关的邮件通知，请点击$8。',
+你收到这封邮件，是因为你在{{SITENAME}}登记接收与翻译有关的电子邮件。想要退订这类邮件或更改你的翻译通知设置，请访问$8。',
 	'translationnotifications-notification-url-listitem' => '翻译为$1',
 	'translationnotifications-digestemail-subject' => '来自{{SITENAME}}的翻译请求的摘要电子邮件',
 	'translationnotifications-digestemail-notification-line' => '于$1，$2标记了“$3”为需要翻译。您可以在$4进行翻译',
