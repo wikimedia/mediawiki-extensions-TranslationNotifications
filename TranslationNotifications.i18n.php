@@ -640,6 +640,7 @@ $messages['ce'] = array(
 	'translationnotifications-lang' => 'Мотт № $1',
 	'translationnotifications-nolang' => 'Харжа мотт',
 	'translationnotifications-submit' => 'Карлабаккха дӀанисбин гӀирс',
+	'translationnotifications-languages-to-notify-label' => 'Муьлхачу маттахь бу хаам:',
 	'translationnotifications-log-alllanguages' => 'берриге меттанаш',
 );
 
