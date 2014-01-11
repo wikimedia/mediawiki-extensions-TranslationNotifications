@@ -640,6 +640,7 @@ $messages['ce'] = array(
 	'translationnotifications-lang' => 'Мотт № $1',
 	'translationnotifications-nolang' => 'Харжа мотт',
 	'translationnotifications-submit' => 'Карлабаккха дӀанисбин гӀирс',
+	'translationnotifications-preview-notification-button' => 'Хаам хьалха муха бу хьажар',
 	'translationnotifications-languages-to-notify-label' => 'Муьлхачу маттахь бу хаам:',
 	'translationnotifications-log-alllanguages' => 'берриге меттанаш',
 );
@@ -1590,12 +1591,14 @@ N!این رایانامه را به این سبب دریافت می‌کنید �
 	'translationnotifications-edit-summary' => 'آگاه‌سازی ترجمه: $1',
 	'translationnotifications-email-priority' => 'اولویت این صفحه $1 است.',
 	'translationnotifications-email-deadline' => 'آخرین مهلت برای ترجمهٔ این صفحه $1 است.',
+	'logentry-translationnotifications-sent' => '$1  اطلاع‌رسانی در مورد ترجمهٔ صفحهٔ  $3  {{GENDER:$2|ارسال کرد}};  {{PLURAL:$10| زبان|زبان}}:  $4 ; آخرین مهلت:  $5 ؛ اولویت:  $6 ; فرستاده شده به  {{PLURAL:$7| یک گیرنده|$7 گیرنده}}، شکست‌خورده برای  {{PLURAL:$8|یک گیرنده| $8  گیرنده}}، رهاشده برای  {{PLURAL:$9|یک گیرنده|$9  گیرنده}}',
 	'log-name-notifytranslators' => 'آگاه‌سازی‌های ترجمه',
 	'log-description-notifytranslators' => 'سیاهه‌ای از آگاه‌سازی‌های فرستاده‌شده به مترجمان در مورد صفحه‌های ترجمه‌پذیر',
 	'translationnotifications-sent-title' => 'آگاه‌سازی ترجمه فرستاده‌شد',
 	'translationnotifications-sent-body' => 'آگاه‌سازی ترجمه فرستاده شد.',
 	'translationnotifications-log-alllanguages' => 'همۀ زبان‌ها',
 	'translationnotifications-nodeadline' => 'هیچ‌کدام',
+	'translationnotifications-signup-legal' => 'شما توافق می کنید که با ارائه این اطلاعات تماس، ممکن است با شما در مورد موضوعات مربوط به {{SITENAME}} که تصور می‌کنیم مورد علاقه شماست، تماس بگیریم. شما توافق می‌کنید اطلاعات شما تحت شرایط  [[{{MediaWiki:Privacypage}}|سیاست محرمانگی]] است.',
 	'translationnotifications-generic-languages' => 'زبان‌ها',
 );
 
