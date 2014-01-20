@@ -87,8 +87,6 @@ class TranslationNotificationJob extends Job {
 
 		// API: Get login token
 
-		wfDebug( "publishInOtherWiki API: Get login token\n" );
-
 		$loginUrl = wfAppendQuery( $otherWikiBaseUrl, array(
 			'action' => 'login',
 			'format' => 'json',
@@ -121,8 +119,6 @@ class TranslationNotificationJob extends Job {
 
 		// API: Do the login
 
-		wfDebug( "publishInOtherWiki API: Do the login\n" );
-
 		$loginRequest = MWHttpRequest::factory(
 			$loginUrl,
 			array(
@@ -146,8 +142,6 @@ class TranslationNotificationJob extends Job {
 		}
 
 		// API: Get an edit token
-
-		wfDebug( "publishInOtherWiki API: Get an edit token\n" );
 
 		$userTalkPage = $this->title->getFullText();
 		$editTokenUrl = wfAppendQuery( $otherWikiBaseUrl, array(
@@ -180,8 +174,6 @@ class TranslationNotificationJob extends Job {
 		}
 
 		// API: Edit the talk page
-
-		wfDebug( "publishInOtherWiki API: Edit the talk page\n" );
 
 		$editUrl = wfAppendQuery( $otherWikiBaseUrl, array(
 			'action' => 'edit',
