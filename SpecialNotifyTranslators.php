@@ -295,22 +295,20 @@ class SpecialNotifyTranslators extends SpecialPage {
 			};
 		}
 
-		$logger = new LogPage( 'notifytranslators' );
-		$logParams = array(
-			$languagesForLog,
-			$this->deadlineDate,
-			$this->priority,
-			$sentSuccess,
-			$sentFail,
-			$tooEarly,
-		);
-		$logger->addEntry(
-			'sent',
-			$this->translatablePageTitle,
-			'', // No comments
-			$logParams,
-			$this->getUser()
-		);
+		$logEntry = new ManualLogEntry( 'notifytranslators', 'sent' );
+		$logEntry->setPerformer( $this->getUser() );
+		$logEntry->setTarget( $this->translatablePageTitle );
+		$logEntry->setParameters( array(
+			'4::languagesForLog' => $languagesForLog,
+			'5::deadlineDate' => $this->deadlineDate,
+			'6::priority' => $this->priority,
+			'7::sentSuccess' => $sentSuccess,
+			'8::sentFail' => $sentFail,
+			'9::tooEarly' => $tooEarly,
+		) );
+
+		$logid = $logEntry->insert();
+		$logEntry->publish( $logid );
 
 		return true;
 	}
