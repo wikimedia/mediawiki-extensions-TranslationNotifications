@@ -44,7 +44,8 @@ $wgAutoloadClasses['SpecialNotifyTranslators'] = "$dir/SpecialNotifyTranslators.
 $wgAutoloadClasses['TranslationNotificationsHooks'] = "$dir/TranslationNotificationsHooks.php";
 $wgAutoloadClasses['TranslationNotificationJob'] = "$dir/TranslationNotificationJob.php";
 $wgAutoloadClasses['DigestEmailer'] = "$dir/scripts/DigestEmailer.php";
-
+$wgAutoloadClasses['TranslationNotificationsLogFormatter'] =
+	"$dir/TranslationNotificationsLogFormatter.php";
 $wgJobClasses['translationNotificationJob'] = 'TranslationNotificationJob';
 
 $resourcePaths = array(
@@ -80,8 +81,7 @@ $wgTranslationNotificationsContactMethods = array(
 );
 
 $wgLogTypes[] = 'notifytranslators';
-$wgLogActionsHandlers['notifytranslators/sent'] =
-	'TranslationNotificationsHooks::formatTranslationNotificationLogEntry';
+$wgLogActionsHandlers['notifytranslators/sent'] = 'TranslationNotificationsLogFormatter';
 
 $wgNotificationUsername = false;
 $wgNotificationUserPassword = false;
