@@ -1986,7 +1986,7 @@ Recibiu este correo electrónico porque se inscribiu para recibir correos electr
 	'translationnotifications-edit-summary' => 'Notificación de tradución: $1',
 	'translationnotifications-email-priority' => 'A prioridade desta páxina é $1.',
 	'translationnotifications-email-deadline' => 'A data límite para traducir a páxina é $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|enviou}} correctamente unha notificación sobre a tradución da páxina "$3"; {{PLURAL:$10|lingua|linguas}}: $4; data límite: $5; prioridade: $6; {{PLURAL:$7|recibiuna 1 destinatario|recibírona $7 destinatarios}}; {{PLURAL:$8|1 destinatario non a recibiu|$8 destinatarios non a recibiron}}; {{PLURAL:$9|omitiuse 1 destinatario|omitíronse $9 destinatarios}}',
+	'logentry-notifytranslators-sent' => '$1 {{GENDER:$2|enviou}} unha notificación sobre a tradución da páxina "$3"; {{PLURAL:$10|lingua|linguas}}: $4; data límite: $5; prioridade: $6; {{PLURAL:$7|recibiuna 1 destinatario|recibírona $7 destinatarios}}; {{PLURAL:$8|1 destinatario non a recibiu|$8 destinatarios non a recibiron}}; {{PLURAL:$9|omitiuse 1 destinatario|omitíronse $9 destinatarios}}',
 	'log-name-notifytranslators' => 'Notificacións de tradución',
 	'log-description-notifytranslators' => 'Un rexistro das notificacións enviadas aos tradutores sobre a tradución de páxinas',
 	'translationnotifications-sent-title' => 'Notificación de tradución enviada',
