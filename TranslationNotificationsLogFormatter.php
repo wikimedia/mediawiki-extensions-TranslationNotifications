@@ -18,6 +18,7 @@ class TranslationNotificationsLogFormatter extends LogFormatter {
 
 		// $params[3] is $languagesForLog,
 		// $params[4] is $deadlineDate,
+		// $params[5] is $priority
 		// $params[9] is $languageCount
 		// If no specific languages are defined, set languageForLog to 'all languages'.
 		if ( $params[3] === '' ) {
@@ -33,6 +34,14 @@ class TranslationNotificationsLogFormatter extends LogFormatter {
 			// If deadline is not set, deadlineDate is set to 'none'.
 			$params[4] = $this->msg( 'translationnotifications-nodeadline' )->text();
 		}
+		// possible messages here:
+		// 'translationnotifications-priority-high'
+		// 'translationnotifications-priority-low'
+		// 'translationnotifications-priority-medium'
+		// 'translationnotifications-priority-unset'
+		$params[5] = SpecialNotifyTranslators::getPriorityMessage( $params[5] )
+			->setContext( $this->context )
+			->text();
 
 		return $params;
 	}

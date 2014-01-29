@@ -125,7 +125,8 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$priorities = array( 'unset', 'high', 'medium', 'low' );
 
 		foreach ( $priorities as $priority ) {
-			$priorityMessage = $this->getPriorityMessage( $priority )->plain();
+			$priorityMessage =
+				self::getPriorityMessage( $priority )->setContext( $this->getContext() )->text();
 			$priorityOptions[$priorityMessage] = $priority;
 		}
 
@@ -377,13 +378,13 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * @param string $priority
 	 * @return Message
 	 */
-	protected function getPriorityMessage( $priority ) {
+	public static function getPriorityMessage( $priority ) {
 		// possible messages here:
 		// 'translationnotifications-priority-high'
 		// 'translationnotifications-priority-medium'
 		// 'translationnotifications-priority-low'
 		// 'translationnotifications-priority-unset'
-		return $this->msg( "translationnotifications-priority-$priority" );
+		return wfMessage( "translationnotifications-priority-$priority" );
 	}
 
 	/**
@@ -397,7 +398,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 		return $this->msg(
 			'translationnotifications-email-priority',
-			$this->getPriorityMessage(
+			self::getPriorityMessage(
 				$this->priority
 			)->inLanguage( $userFirstLanguage )->text()
 		)->inLanguage( $userFirstLanguage )->text();
