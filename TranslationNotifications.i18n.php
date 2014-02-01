@@ -1997,6 +1997,24 @@ Recibiu este correo electrónico porque se inscribiu para recibir correos electr
 	'translationnotifications-generic-languages' => '&lt;linguas>',
 );
 
+/** Gujarati (ગુજરાતી)
+ * @author KartikMistry
+ */
+$messages['gu'] = array(
+	'translationnotifications-info' => 'સભ્ય માહિતી',
+	'translationnotifications-username' => 'સભ્યનામ:',
+	'translationnotifications-emailstatus' => 'ઇમેલ સ્થિતિ:',
+	'translationnotifications-languages' => 'ભાષાઓ',
+	'translationnotifications-cmethod-email' => 'ઇમેઇલ',
+	'translationnotifications-priority' => 'અગ્રતા:',
+	'translationnotifications-priority-high' => 'ઉચ્ચ',
+	'translationnotifications-priority-medium' => 'મધ્યમ',
+	'translationnotifications-priority-low' => 'નીચી',
+	'translationnotifications-priority-unset' => '(ન ગોઠવેલ)',
+	'translationnotifications-log-alllanguages' => 'બધી ભાષાઓ',
+	'translationnotifications-nodeadline' => 'કોઇ નહીં',
+);
+
 /** Hebrew (עברית)
  * @author Amire80
  */
@@ -3831,7 +3849,7 @@ $messages['pl'] = array(
 	'translationnotifications-freq-monthly' => 'Miesięczne streszczenie',
 	'translationnotifications-submit' => 'Ustawienia aktualizacji',
 	'translationnotifications-signup-success' => 'Twoje preferencje powiadomień o tłumaczeniach zostały zapisane.',
-	'notifytranslators' => 'Powiadom tłumaczy',
+	'notifytranslators' => 'Powiadomienie tłumaczy',
 	'translationnotifications-submit-ok' => 'Powiadomienia zostały dodane do kolejki i są dostarczane przez zadanie w tle.',
 	'translationnotifications-send-notification-button' => 'Wyślij powiadomienia do tłumaczy',
 	'translationnotifications-preview-notification-button' => 'Pokaż podgląd powiadomienia',
@@ -3904,7 +3922,7 @@ Otrzymujesz ten e-mail ponieważ zarejestrowałeś się aby otrzymywać e-maile 
 	'translationnotifications-edit-summary' => 'Powiadomienie o tłumaczeniu: $1',
 	'translationnotifications-email-priority' => 'Priorytet tej strony to  $1 .',
 	'translationnotifications-email-deadline' => 'Nieprzekraczalny termin tłumaczenia tej strony to $1 .',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|wysyłał|wysłała}} powiadomienie w sprawie tłumaczenia strony $3; {{PLURAL:$10|język|języki|języków}}: $4; termin $5; priorytet $6; do {{PLURAL:$7|jednego adresata|$7 adresatów}} pomyślnie, do {{PLURAL:$8|jednego adresata|$8 adresatów}} bezskutecznie, pominięto {{PLURAL:$9|jednego adresata|$9 adresatów}}',
+	'logentry-notifytranslators-sent' => '$1 {{GENDER:$2|wysyłał|wysłała}} powiadomienie w sprawie tłumaczenia strony $3; {{PLURAL:$10|język|języki|języków}}: $4; termin $5; priorytet $6; do {{PLURAL:$7|jednego adresata|$7 adresatów}} pomyślnie, do {{PLURAL:$8|jednego adresata|$8 adresatów}} bezskutecznie, pominięto {{PLURAL:$9|jednego adresata|$9 adresatów}}',
 	'log-name-notifytranslators' => 'Powiadomienia o tłumaczeniach',
 	'log-description-notifytranslators' => 'Dziennik powiadomień wysyłanych do tłumaczy o stronach do przetłumaczenia',
 	'translationnotifications-sent-title' => 'Wysłano powiadomienie tłumaczenia',
