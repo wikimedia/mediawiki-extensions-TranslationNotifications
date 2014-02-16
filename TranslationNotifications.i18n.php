@@ -1545,9 +1545,9 @@ $messages['fa'] = array(
 	'translationnotifications-translatablepage-title' => 'نام صفحهٔ ترجمه‌پذیر:',
 	'translationnotifications-error-no-translatable-pages' => 'هیچ صفحهٔ ترجمه‌پذیری در این ویکی وجود ندارد.',
 	'translationnotifications-email-subject' => 'لطفاً صفحهٔ $1 را ترجمه کنید.',
-	'translationnotifications-email-body' => 'سلام  $1،
+	'translationnotifications-email-body' => 'سلام $1،
 
-شما این ایمیل را به این علت دریافت می‌کنید که به عنوان مترجم $2 {{PLURAL:$9|در}} {{SITENAME}} {{GENDER:$10|نام‌نویسی کرده‌اید}}.
+شما این رایانامه را به این علت دریافت می‌کنید که به عنوان مترجم $2 {{PLURAL:$9|در}} {{SITENAME}} {{GENDER:$10|نام‌نویسی کرده‌اید}}.
 
 صفحه‌ای برای ترجمه وجود دارد: $3.
 می‌توانید با کلیک‌کردن روی پیوند زیر ترجمه‌اش کنید:
@@ -1579,7 +1579,7 @@ N!هماهنگ‌کنندگان ترجمهٔ {{SITENAME}}',
 	'translationnotifications-notification-url-listitem' => 'ترجمه به $1',
 	'translationnotifications-digestemail-subject' => 'رایانامهٔ سرجمع‌شده برای درخواست‌های ترجمهٔ {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'سلام $1،
-N!شما این ایمیل را به این علت دریافت می‌کنید که به عنوان مترجم $2 در {{SITENAME}} {{GENDER:$1|نام‌نویسی کرده‌اید}}.
+N!شما این رایانامه را به این علت دریافت می‌کنید که به عنوان مترجم $2 در {{SITENAME}} {{GENDER:$1|نام‌نویسی کرده‌اید}}.
 N!هم‌اکنون {{PLURAL:$3|۱ صفحه|$3 صفحه}} برای ترجمه آماده است. جزئیات در زیر داده شده‌است.
 N!$4
 N!پیشاپیش از کمک شما سپاسگزاریم. مترجمانی چون شما هستند که به عملکرد {{SITENAME}} به عنوان یک جامعهٔ واقعاً چندزبانه کمک می‌کنند.
