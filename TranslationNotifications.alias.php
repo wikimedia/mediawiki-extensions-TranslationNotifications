@@ -21,6 +21,12 @@ $specialPageAliases['ar'] = array(
 	'TranslatorSignup' => array( 'اشتراك_المستخدمين' ),
 );
 
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
+	'NotifyTranslators' => array( 'اخطار_المترجمين' ),
+	'TranslatorSignup' => array( 'اشتراك_المترجمين' ),
+);
+
 /** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
 	'NotifyTranslators' => array( 'অনুবাদকক_জাননী_প্ৰেৰণ' ),
@@ -109,10 +115,21 @@ $specialPageAliases['ml'] = array(
 	'TranslatorSignup' => array( 'പരിഭാഷകരെപേരുചേർക്കുക' ),
 );
 
+/** Norwegian Bokmål (norsk bokmål) */
+$specialPageAliases['nb'] = array(
+	'NotifyTranslators' => array( 'Varsle_oversettere' ),
+	'TranslatorSignup' => array( 'Oversetterregistrering' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'NotifyTranslators' => array( 'Vertalersmeldingen' ),
 	'TranslatorSignup' => array( 'Vertalersregistratie' ),
+);
+
+/** Quechua (Runa Simi) */
+$specialPageAliases['qu'] = array(
+	'NotifyTranslators' => array( 'TikraqkunamanWillaykuy' ),
 );
 
 /** Russian (русский) */
@@ -136,6 +153,7 @@ $specialPageAliases['uk'] = array(
 /** Vietnamese (Tiếng Việt) */
 $specialPageAliases['vi'] = array(
 	'NotifyTranslators' => array( 'Thông_báo_biên_dịch_viên' ),
+	'TranslatorSignup' => array( 'Đăng_ký_biên_dịch_viên', 'Đăng_kí_biên_dịch_viên' ),
 );
 
 /** Simplified Chinese (中文（简体）‎) */

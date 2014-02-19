@@ -161,7 +161,8 @@ Parameters:
 	'translationnotifications-lang' => 'Label for select. Parameters:
 * $1 - a number
 {{Identical|Language}}',
-	'translationnotifications-nolang' => 'First option in a language select',
+	'translationnotifications-nolang' => 'First option in a language select.
+{{Identical|Choose language}}',
 	'translationnotifications-contact' => 'Fieldset header',
 	'translationnotifications-cmethod-email' => 'Check option label',
 	'translationnotifications-cmethod-talkpage' => 'Check option label',
@@ -4953,10 +4954,14 @@ $4
  */
 $messages['ur'] = array(
 	'translatorsignup' => 'مترجم سائن اپ',
+	'translatorsignup-summary' => 'کس زبان میں آپ ترجمہ کرسکتے ہیں، اور ترجمہ کی نئی درخواستوں پر آپ سے کس طرح رابطہ کیا جائے، اس کو بیان کرنے کے لیے اس صفحہ کو استعمال کریں.',
+	'translationnotifications-desc' => 'مترجمین کو اطلاعات ترجمہ کے لیے کھاتہ بنانے کی اجازت دیتا ہے',
 	'translationnotifications-info' => 'صارف کی معلومات',
 	'translationnotifications-username' => 'صارف کا نام:',
 	'translationnotifications-emailstatus' => 'ای میل کا درجہ:',
 	'translationnotifications-email-confirmed' => 'آپ کا ای میل ایڈریس کی تصدیق ہوتی ہے',
+	'translationnotifications-email-disablemail' => 'آپ کا برقی ڈاک پتہ تصدیق شدہ ہے، لیکن آپ نے [[خاص:ترجیحات|اپنی ترجیحات]] میں برقی ڈاک وصول نہیں کرنے کو منتخب کیا ہے.', # Fuzzy
+	'translationnotifications-email-unconfirmed' => 'آپ کا برقی ڈاک پتہ تصدیق شدہ نہیں ہے. $1',
 	'translationnotifications-languages' => 'زبانوں میں',
 	'translationnotifications-nolang' => 'ایک زبان کا انتخاب کریں',
 	'translationnotifications-contact' => 'پسندیدہ رابطہ طریقوں',
@@ -5309,13 +5314,14 @@ $7
 	'translationnotifications-edit-summary' => '翻译通知：$1',
 	'translationnotifications-email-priority' => '这个页面有$1重要度。',
 	'translationnotifications-email-deadline' => '翻译这个页面的截止日期是$1。',
-	'logentry-translationnotifications-sent' => '$1{{GENDER:$2|发送了}}关于翻译页面$3的通知；语言：$4；截止日期：$5；重要度：$6；已发送给$7个收件人，给$8个收件人的通知发送失败，跳过了$9个收件人',
+	'logentry-notifytranslators-sent' => '$1{{GENDER:$2|发送了}}关于翻译页面$3的通知；语言：$4；截止日期：$5；重要度：$6；已发送给$7个收件人，给$8个收件人的通知发送失败，跳过了$9个收件人',
 	'log-name-notifytranslators' => '翻译通知',
 	'log-description-notifytranslators' => '向翻译者发送可翻译页面通知的日志',
 	'translationnotifications-sent-title' => '翻译通知已发送',
 	'translationnotifications-sent-body' => '翻译通知已发送。',
 	'translationnotifications-log-alllanguages' => '所有语言',
 	'translationnotifications-nodeadline' => '无',
+	'translationnotifications-generic-languages' => '&lt;语言>',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
