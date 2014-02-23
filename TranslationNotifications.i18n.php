@@ -5308,6 +5308,20 @@ $7
 ----
 
 你收到这封邮件，是因为你在{{SITENAME}}登记接收与翻译有关的电子邮件。想要退订这类邮件或更改你的翻译通知设置，请访问$8。',
+	'translationnotifications-talkpage-body' => '嗨！$2，
+您收到此通知，是因为您作为一名$3{{PLURAL:$9|的}}翻译者在{{SITENAME}}{{GENDER:$1|注册了}}。页面[[$4]]已提供翻译。您可在此翻译：
+
+$5
+
+$6
+$7
+
+$8
+
+非常感谢您的帮助。像您一样的翻译者正在不断努力帮助{{SITENAME}}成为一个真正多语言的社群。
+
+感谢您！
+{{SITENAME}}翻译协调员',
 	'translationnotifications-notification-url-listitem' => '翻译为$1',
 	'translationnotifications-digestemail-subject' => '来自{{SITENAME}}的翻译请求的摘要电子邮件',
 	'translationnotifications-digestemail-notification-line' => '于$1，$2标记了“$3”为需要翻译。您可以在$4进行翻译',
