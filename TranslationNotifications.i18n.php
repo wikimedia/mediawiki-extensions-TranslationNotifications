@@ -5369,6 +5369,15 @@ $8
 {{SITENAME}}翻译协调员',
 	'translationnotifications-notification-url-listitem' => '翻译为$1',
 	'translationnotifications-digestemail-subject' => '来自{{SITENAME}}的翻译请求的摘要电子邮件',
+	'translationnotifications-digestemail-body' => '您好$1，
+您接收到此邮件，是因为您作为$2的译者在{{SITENAME}}注册。
+现有$3个页面可供翻译。详细信息如下。
+$4
+非常感谢您的帮助。像您一样的译者一直在帮助{{SITENAME}}成为一个多语言社群。
+感谢您！
+{{SITENAME}}翻译管理员
+----
+您接收到此邮件，是因为您在{{SITENAME}}注册并同意接受这类邮件。如需退订或更改邮件通知设置，请访问<$5>。',
 	'translationnotifications-digestemail-notification-line' => '于$1，$2标记了“$3”为需要翻译。您可以在$4进行翻译',
 	'translationnotifications-edit-summary' => '翻译通知：$1',
 	'translationnotifications-email-priority' => '这个页面有$1重要度。',
