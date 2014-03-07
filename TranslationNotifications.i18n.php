@@ -4342,6 +4342,124 @@ $messages['rue'] = array(
 	'translationnotifications-nodeadline' => 'жаден',
 );
 
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'translatorsignup' => 'Owerseter signup',
+	'translatorsignup-summary' => 'Uise this page tae indicate whit leids ye can owerset in, n hou ye want tae be contacted aneat new owersetin requests.',
+	'translationnotifications-desc' => 'Permits owerseters tae sign up fer owersetin notifications',
+	'translationnotifications-info' => 'Uiser information',
+	'translationnotifications-username' => 'Uisername:',
+	'translationnotifications-emailstatus' => 'Wab-mail status:',
+	'translationnotifications-email-confirmed' => 'Yer wab-mail address haes been confirmed',
+	'translationnotifications-email-disablemail' => "Yer wabmail address haes been confirmed, but in [[Special:Preferences|yer preferences]] ye'v asked to no receive wabmail.",
+	'translationnotifications-email-unconfirmed' => 'Yer wab-mail address haesna been confirmed. $1',
+	'translationnotifications-email-notset' => "Ye'v no provided ae wabmail address. Ye can dae that in yer [[Special:Preferences|preeeferences]].",
+	'translationnotifications-languages' => 'Leids',
+	'translationnotifications-lang' => 'Leid #$1',
+	'translationnotifications-nolang' => 'Pick ae leid',
+	'translationnotifications-contact' => 'Preferred contact methyds',
+	'translationnotifications-cmethod-email' => 'Wab-mail',
+	'translationnotifications-cmethod-talkpage' => 'Tauk page',
+	'translationnotifications-cmethod-talkpage-elsewhere' => 'Tauk page oan ither wiki',
+	'translationnotifications-cmethod-feed' => 'Feed',
+	'translationnotifications-frequency' => 'Contact frequencie',
+	'translationnotifications-freq-always' => 'Whan thaur is sommit new tae owerset',
+	'translationnotifications-freq-week' => 'At maist yince per week',
+	'translationnotifications-freq-month' => 'At maist yince per month',
+	'translationnotifications-freq-weekly' => 'Weeklie digest',
+	'translationnotifications-freq-monthly' => 'Monthlie digest',
+	'translationnotifications-submit' => 'Update settins',
+	'translationnotifications-signup-success' => 'Yer owersetin notification preeferences were hained.',
+	'notifytranslators' => 'Tell owerseters',
+	'translationnotifications-submit-ok' => 'Annooncments hae been added til ae line n ar delivert bi ae backgroon joab.',
+	'translationnotifications-send-notification-button' => 'Send annooncment til owerseters',
+	'translationnotifications-preview-notification-button' => 'Luikower annooncment',
+	'translationnotifications-deadline-label' => 'Deidline tae indicate in this annooncment:',
+	'translationnotifications-languages-to-notify-label' => 'Whit leids tae tell:',
+	'translationnotifications-languages-to-notify-label-help-message' => 'Comma-separated leid codes; lea blank tae tell fer aw leids.',
+	'translationnotifications-priority' => 'Prioritie:',
+	'translationnotifications-priority-high' => 'hei',
+	'translationnotifications-priority-medium' => 'midlin',
+	'translationnotifications-priority-low' => 'law',
+	'translationnotifications-priority-unset' => '(onset)',
+	'translationnotifications-translatablepage-title' => 'Owersetable page name:',
+	'translationnotifications-error-no-translatable-pages' => 'Thaur ar naw owersetable pages in this wiki.',
+	'translationnotifications-email-subject' => 'Please owerset the page $1',
+	'translationnotifications-email-body' => "Hallo $1,
+
+Ye'r gettin this wab-mail cause ye {{GENDER:$10|signed up}} aes aen owerseter {{PLURAL:$9|fer}} $2 oan {{SITENAME}}.
+
+Thaur is ae page tae owerset thaur: $3.
+Ye can owerset it bi clapin oan the link ablo:
+$4
+
+$5
+$6
+
+$7
+
+Yer heelp is grechtlie appreciated. owerseters like ye heelp {{SITENAME}} tae wark
+aes ae trulie multilingual communitie.
+
+Thank ye!
+Fae the {{SITENAME}} owersetin coordinaters
+
+----
+
+Ye'r gettin this wab-mail cause ye signed up tae get wab-mails relati til owersetins oan {{SITENAME}}. Tae onsubscreebe or tae chynge yer notifeecation preeferences fer owersetins, please veesit $8.",
+	'translationnotifications-talkpage-body' => "Hello $2,
+
+Ye'r gettin this notifeecation cause ye {{GENDER:$1|signed up}} aes aen owerseter {{PLURAL:$9|fer}} $3 oan {{SITENAME}}.
+The page [[$4]] is available fer owersetin. Ye can owerset it here:
+$5
+
+$6
+$7
+
+$8
+
+Yer heelp is grechtlie appreciated. Owerseters like ye heelp {{SITENAME}} tae wark
+aes ae trulie multilingual communitie.
+
+Thank ye!
+
+Fae the {{SITENAME}} translation coordinators",
+	'translationnotifications-notification-url-listitem' => 'owerset til $1',
+	'translationnotifications-digestemail-subject' => 'Rindoon wab-mail fer owersetin requests fae {{SITENAME}}',
+	'translationnotifications-digestemail-body' => "Hallo $1,
+
+Ye'r gettin this wab-mail cause ye {{GENDER:$1|signed up}} aes aen owerseter fer $2 oan {{SITENAME}}.
+
+Thaur {{PLURAL:$3|is 1 page|ar $3 pages}} available fer owersetin. The details ar gien ablo.
+
+$4
+
+Yer heelp is grechtlie appreciated. Owerseters like ye heelp {{SITENAME}} tae wark
+aes ae trulie multilingual communitie.
+
+Thank ye!
+Fae the {{SITENAME}} owersetin admeenistraters
+
+----
+
+Ye'r gettin this wab-mail cause ye signed up tae get wab-mails relatit til owersetins oan {{SITENAME}}. Tae onsubscreebe or tae chynge yer notifeecation preeferences fer owersetins, please veesit <$5>.",
+	'translationnotifications-digestemail-notification-line' => 'Oan $1, $2 maurkt "$3" fer owersetin. Ye can owerset it at $4',
+	'translationnotifications-edit-summary' => 'Owersetin annooncment: $1',
+	'translationnotifications-email-priority' => 'The prioritie o this page is $1.',
+	'translationnotifications-email-deadline' => 'The deidline fer owersetin this page is $1.',
+	'logentry-notifytranslators-sent' => '$1 {{GENDER:$2|sent}} aen annooncement aneat owersetin page $3; {{PLURAL:$10|leid|leids}}: $4; deidline: $5; prioritie: $6; sent til {{PLURAL:$7|yin receepient|$7 receepients}}, failed fer {{PLURAL:$8|yin receepient|$8 receepients}}, skipt fer {{PLURAL:$9|yin receepient|$9 receepients}}',
+	'log-name-notifytranslators' => 'Owersetin annooncements',
+	'log-description-notifytranslators' => 'Ae log o annooncements sent til oweerseters aneat owersetable pages',
+	'translationnotifications-sent-title' => 'Owersetin annooncement',
+	'translationnotifications-sent-body' => 'Owersetin annooncementn wis sent.',
+	'translationnotifications-log-alllanguages' => 'aw leids',
+	'translationnotifications-nodeadline' => 'nane',
+	'translationnotifications-signup-legal' => 'Ye agree that bi providin this information we can contact ye aneat topics relati til {{SITENAME}} that we think micht be o interest til ye. Ye agree that yer data is owerganged bi oor [[{{MediaWiki:Privacypage}}|preevacie policie]].',
+	'translationnotifications-generic-languages' => '&lt;languages>',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
