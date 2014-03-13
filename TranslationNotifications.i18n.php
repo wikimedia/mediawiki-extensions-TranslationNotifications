@@ -4576,6 +4576,7 @@ $messages['sr-el'] = array(
 
 /** Swedish (svenska)
  * @author Jopparn
+ * @author Lokal Profil
  * @author Skalman
  * @author WikiPhoenix
  */
@@ -4615,7 +4616,7 @@ $messages['sv'] = array(
 	'translationnotifications-languages-to-notify-label-help-message' => 'Kommaavgränsade språkkoder; lämna tomt för att få notifikationer för alla språk.',
 	'translationnotifications-priority' => 'Prioritet:',
 	'translationnotifications-priority-high' => 'hög',
-	'translationnotifications-priority-medium' => 'mellan',
+	'translationnotifications-priority-medium' => 'medel',
 	'translationnotifications-priority-low' => 'låg',
 	'translationnotifications-priority-unset' => '(inte inställd)',
 	'translationnotifications-translatablepage-title' => 'Namn på översättningsbar sida:',
@@ -4680,7 +4681,7 @@ Du får detta e-postmeddelande för att du bett att få översättningsrelaterad
 	'translationnotifications-edit-summary' => 'Översättningsmeddelande: $1',
 	'translationnotifications-email-priority' => 'Prioriteten för denna sida är $1.',
 	'translationnotifications-email-deadline' => 'Tidsfristen för att översätta denna sida är $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|skickade}} en notifikation om översättning av sidan $3; {{PLURAL:$10|språk}}: $4; deadline: $5; prioritet: $6; skickad till {{PLURAL:$7|en|$7}} mottagare, misslyckades för {{PLURAL:$8|en|$8}} mottagare, hoppades över för {{PLURAL:$9|en|$9}} mottagare',
+	'logentry-notifytranslators-sent' => '$1 {{GENDER:$2|skickade}} en notifikation om översättning av sidan $3; {{PLURAL:$10|språk}}: $4; deadline: $5; prioritet: $6; skickad till {{PLURAL:$7|en|$7}} mottagare, misslyckades för {{PLURAL:$8|en|$8}} mottagare, hoppades över för {{PLURAL:$9|en|$9}} mottagare',
 	'log-name-notifytranslators' => 'Översättningsnotifikationer',
 	'log-description-notifytranslators' => 'En logg över notifikationer som skickats till översättare angående översättningsbara sidor',
 	'translationnotifications-sent-title' => 'Översättningsmeddelande skickat',
