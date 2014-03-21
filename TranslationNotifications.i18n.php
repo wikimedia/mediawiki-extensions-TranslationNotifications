@@ -1265,7 +1265,7 @@ $messages['es'] = array(
 	'translationnotifications-email-unconfirmed' => 'No se ha confirmado su dirección de correo electrónico. $1',
 	'translationnotifications-email-notset' => 'No ha proporcionado una dirección de correo electrónico. Puede hacerlo en sus [[Special:Preferences|preferencias]].',
 	'translationnotifications-languages' => 'Idiomas',
-	'translationnotifications-lang' => 'Idioma #$1',
+	'translationnotifications-lang' => 'Idioma n.º $1',
 	'translationnotifications-nolang' => 'Elija un idioma',
 	'translationnotifications-contact' => 'Métodos de contactos preferidos',
 	'translationnotifications-cmethod-email' => 'Correo electrónico',
@@ -1357,7 +1357,7 @@ Estás recibiendo este mensaje porque te suscribiste para recibir correos electr
 	'translationnotifications-edit-summary' => 'Notificación de traducción: $1',
 	'translationnotifications-email-priority' => 'La prioridad de esta página es  $1.',
 	'translationnotifications-email-deadline' => 'La fecha límite para la traducción de esta página es  $1.',
-	'logentry-translationnotifications-sent' => '$1 {{GENDER:$2|ha enviado}} una notificación sobre la traducción de la página $3; idiomas: $4; fecha límite: $5; prioridad: $6; ha llegado a {{PLURAL:$7|un destinatario|$7  destinatarios}}, ha fallado en {{PLURAL:$8|un destinatario|$8 destinatarios}}, ha omitido a {{PLURAL:$9|un destinatario|$9 destinatarios}}', # Fuzzy
+	'logentry-notifytranslators-sent' => '$1 {{GENDER:$2|ha enviado}} una notificación sobre la traducción de la página $3; idiomas: $4; fecha límite: $5; prioridad: $6; ha llegado a {{PLURAL:$7|un destinatario|$7  destinatarios}}, ha fallado en {{PLURAL:$8|un destinatario|$8 destinatarios}}, ha omitido a {{PLURAL:$9|un destinatario|$9 destinatarios}}',
 	'log-name-notifytranslators' => 'Notificaciones de traducción',
 	'log-description-notifytranslators' => 'Un registro de las notificaciones enviadas a los traductores sobre las páginas traducibles',
 	'translationnotifications-sent-title' => 'Notificación de traducción enviada',
