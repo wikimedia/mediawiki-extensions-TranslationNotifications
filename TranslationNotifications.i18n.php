@@ -874,6 +874,7 @@ Du erhältst diese E-Mail, da du dich zum Empfang von E-Mails bezüglich der Üb
 );
 
 /** Swiss High German (Schweizer Hochdeutsch)
+ * @author Filzstift
  * @author Geitost
  */
 $messages['de-ch'] = array(
@@ -900,7 +901,7 @@ die Übersetzungskoordinatoren von {{SITENAME}}
 Du erhältst dieses E-Mail, da du dich für den Empfang von E-Mails für Übersetzungen bei {{SITENAME}} registriert hast. Zum Abmelden oder Ändern deiner Benachrichtigungseinstellungen für Übersetzungen besuche bitte $8.',
 	'translationnotifications-talkpage-body' => 'Hallo $2,
 
-du erhältst dieses E-Mail, da du dich als {{GENDER:$1|Übersetzer|Übersetzerin}} für $3 bei {{SITENAME}} registriert hast.
+du erhältst dieses E-Mail, da du dich als {{GENDER:$1|Übersetzer|Übersetzerin}} {{PLURAL:$9|für}} $3 bei {{SITENAME}} registriert hast.
 Die Seite [[$4]] ist zum Übersetzen vorhanden. Du kannst sie hier übersetzen:
 $5
 
@@ -913,7 +914,7 @@ Deine Hilfe wird sehr geschätzt. Übersetzer wie du helfen dabei, dass {{SITENA
 als wirklich mehrsprachige Gemeinschaft fungiert.
 
 Vielen Dank,
-die Übersetzungskoordinatoren von {{SITENAME}}', # Fuzzy
+die Übersetzungskoordinatoren von {{SITENAME}}',
 	'translationnotifications-digestemail-body' => 'Hallo $1,
 
 du erhältst dieses E-Mail, da du dich als Übersetzer(in) für $2 bei {{SITENAME}} {{GENDER:$1|registriert}} hast.
@@ -4389,10 +4390,10 @@ $messages['sco'] = array(
 	'translationnotifications-email-subject' => 'Please owerset the page $1',
 	'translationnotifications-email-body' => "Hallo $1,
 
-Ye'r gettin this wab-mail cause ye {{GENDER:$10|signed up}} aes aen owerseter {{PLURAL:$9|fer}} $2 oan {{SITENAME}}.
+Ye'r gettin this e-mail cause ye {{GENDER:$10|signed up}} aes aen owerseter {{PLURAL:$9|fer}} $2 oan {{SITENAME}}.
 
-Thaur is ae page tae owerset thaur: $3.
-Ye can owerset it bi clapin oan the link ablo:
+Thaur's ae page tae owerset thaur: $3.
+Ye can owerset it bi clapin oan the airtin ablo:
 $4
 
 $5
@@ -4400,7 +4401,7 @@ $6
 
 $7
 
-Yer heelp is grechtlie appreciated. owerseters like ye heelp {{SITENAME}} tae wark
+Yer heelp is mais appreciated. owerseters like ye heelp {{SITENAME}} tae wairk
 aes ae trulie multilingual communitie.
 
 Thank ye!
@@ -4408,7 +4409,7 @@ Fae the {{SITENAME}} owersetin coordinaters
 
 ----
 
-Ye'r gettin this wab-mail cause ye signed up tae get wab-mails relati til owersetins oan {{SITENAME}}. Tae onsubscreebe or tae chynge yer notifeecation preeferences fer owersetins, please veesit $8.",
+Ye'r gettin this wab-mail cause ye signed up tae get e-mails sib til owersetins oan {{SITENAME}}. Tae onsubscreebe or tae chynge yer notifeecation preeferances fer owersetins, please veesit $8.",
 	'translationnotifications-talkpage-body' => "Hello $2,
 
 Ye'r gettin this notifeecation cause ye {{GENDER:$1|signed up}} aes aen owerseter {{PLURAL:$9|fer}} $3 oan {{SITENAME}}.
