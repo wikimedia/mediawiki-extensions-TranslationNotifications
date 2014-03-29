@@ -1,0 +1,33 @@
+{
+    "@metadata": {
+        "authors": [
+            "Anubhab91",
+            "Bellayet",
+            "Nasir8891"
+        ]
+    },
+    "translationnotifications-info": "ব্যবহারকারীর তথ্য",
+    "translationnotifications-username": "ব্যবহারকারী নাম:",
+    "translationnotifications-emailstatus": "ইমেইলের অবস্থা:",
+    "translationnotifications-email-confirmed": "আপনার ইমেইল ঠিকানা নিশ্চিত করা হয়েছে",
+    "translationnotifications-email-unconfirmed": "আপনার ইমেইল ঠিকানা নিশ্চিত করা হয়নি। $1",
+    "translationnotifications-languages": "ভাষা",
+    "translationnotifications-lang": "ভাষা #$1",
+    "translationnotifications-nolang": "একটি ভাষা নির্বাচন করুন",
+    "translationnotifications-cmethod-email": "ই-মেইল",
+    "translationnotifications-cmethod-talkpage": "আলাপ পাতা",
+    "translationnotifications-cmethod-feed": "ফিড",
+    "translationnotifications-priority": "গুরুত্ব:",
+    "translationnotifications-priority-high": "উচ্চ",
+    "translationnotifications-priority-medium": "মধ্যম",
+    "translationnotifications-priority-low": "নিম্ন",
+    "translationnotifications-priority-unset": "(অনির্দিষ্ট)",
+    "translationnotifications-notification-url-listitem": "$1 ভাষায় অনুবাদ করুন",
+    "translationnotifications-edit-summary": "অনুবাদ বিজ্ঞপ্তি: $1",
+    "translationnotifications-email-priority": "এই পাতার অগ্রাধিকার হল $1।",
+    "translationnotifications-email-deadline": "অনুবাদ সম্পন্ন করার শেষ তারিখ $1।",
+    "log-name-notifytranslators": "অনুবাদ বিজ্ঞপ্তি",
+    "translationnotifications-log-alllanguages": "সকল ভাষা",
+    "translationnotifications-nodeadline": "কিছু না",
+    "translationnotifications-generic-languages": "&lt;ভাষাসমূহ>"
+}

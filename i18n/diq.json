@@ -1,0 +1,24 @@
+{
+    "@metadata": {
+        "authors": [
+            "Erdemaslancan",
+            "Mirzali"
+        ]
+    },
+    "translationnotifications-info": "Zanışiya Karberi",
+    "translationnotifications-username": "Nameyê karberi:",
+    "translationnotifications-emailstatus": "Weziyetê e-posta:",
+    "translationnotifications-languages": "Zıwani",
+    "translationnotifications-lang": "Zıwan: $1",
+    "translationnotifications-nolang": "Yew zıwan weçinê",
+    "translationnotifications-contact": "Metodê irtibat dê timarkerdışi",
+    "translationnotifications-cmethod-email": "E-posta",
+    "translationnotifications-cmethod-talkpage": "Pela werênayışi",
+    "translationnotifications-cmethod-feed": "Warikerdış",
+    "translationnotifications-priority": "Wahdeyey:",
+    "translationnotifications-priority-high": "berz",
+    "translationnotifications-priority-medium": "werte",
+    "translationnotifications-priority-low": "kılm",
+    "translationnotifications-log-alllanguages": "zıwani pêro",
+    "translationnotifications-nodeadline": "çıniyo"
+}

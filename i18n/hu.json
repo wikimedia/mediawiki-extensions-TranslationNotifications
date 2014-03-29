@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Dj"
+        ]
+    },
+    "translationnotifications-info": "Felhasználói adatok",
+    "translationnotifications-username": "Felhasználónév:",
+    "translationnotifications-emailstatus": "Email állapot:",
+    "translationnotifications-email-confirmed": "Az email címed megerősített",
+    "translationnotifications-email-disablemail": "Az email címed megerősített, de a [[Special:Preferences|beállításoknál]] nem kértél email értesítést.",
+    "translationnotifications-email-unconfirmed": "Az email címed nem megerősített. $1",
+    "translationnotifications-priority": "Prioritás:",
+    "translationnotifications-priority-high": "magas",
+    "translationnotifications-priority-medium": "közepes",
+    "translationnotifications-priority-low": "alacsony",
+    "translationnotifications-priority-unset": "(nem beállított)"
+}

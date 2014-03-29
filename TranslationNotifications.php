@@ -19,7 +19,7 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'TranslationNotifications',
-	'version' => '2012-03-02',
+	'version' => '2014-03-29',
 	'author' => array(
 		'Niklas Laxström',
 		'Amir E. Aharoni',
@@ -31,11 +31,12 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'https://www.mediawiki.org/wiki/Extension:TranslationNotifications',
 );
 
-$dir = dirname( __FILE__ );
+$dir = __DIR__;
 $wgSpecialPages['TranslatorSignup'] = 'SpecialTranslatorSignup';
 $wgSpecialPages['NotifyTranslators'] = 'SpecialNotifyTranslators';
 $wgSpecialPageGroups['TranslatorSignup'] = 'login';
 $wgSpecialPageGroups['NotifyTranslators'] = 'users';
+$wgMessagesDirs['TranslationNotifications'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['TranslationNotifications'] = "$dir/TranslationNotifications.i18n.php";
 $wgExtensionMessagesFiles['TranslationNotificationsAlias'] =
 	"$dir/TranslationNotifications.alias.php";
