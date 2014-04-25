@@ -47,7 +47,7 @@
 	"translationnotifications-languages-to-notify-label-help-message": "Used as help message for the \"Languages to notify\" textarea.\nIts label is {{msg-mw|Translationnotifications-languages-to-notify-label}}.",
 	"translationnotifications-priority": "A label for translation priority field.\n{{Identical|Priority}}",
 	"translationnotifications-priority-high": "high (priority), an item in a dropdown box.\n{{Identical|High}}",
-	"translationnotifications-priority-medium": "medium (priority), an item in a dropdown box.",
+	"translationnotifications-priority-medium": "medium (priority), an item in a dropdown box.\n{{Identical|Medium}}",
 	"translationnotifications-priority-low": "low (priority), an item in a dropdown box.",
 	"translationnotifications-priority-unset": "unset (priority), an item in a dropdown box.",
 	"translationnotifications-translatablepage-title": "A label for language codes field. Can be translated as \"A page designated for translation, intended for translation\", etc.",
