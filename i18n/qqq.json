@@ -26,7 +26,7 @@
 	"translationnotifications-lang": "Label for select. Parameters:\n* $1 - a number\n{{Identical|Language}}",
 	"translationnotifications-nolang": "First option in a language select.\n{{Identical|Choose language}}",
 	"translationnotifications-contact": "Fieldset header",
-	"translationnotifications-cmethod-email": "Check option label",
+	"translationnotifications-cmethod-email": "Check option label.\n{{Identical|E-mail}}",
 	"translationnotifications-cmethod-talkpage": "Check option label",
 	"translationnotifications-cmethod-talkpage-elsewhere": "Check option label",
 	"translationnotifications-cmethod-feed": "Check option label.\n{{Identical|Feed}}",
