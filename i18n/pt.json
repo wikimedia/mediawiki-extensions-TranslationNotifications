@@ -46,9 +46,21 @@
 	"translationnotifications-error-no-translatable-pages": "Não existem páginas traduzíveis nesta wiki.",
 	"translationnotifications-email-subject": "Por favor, traduza a página $1",
 	"translationnotifications-email-body": "Olá $1,\n\nEstá a receber este e-mail porque {{GENDER:$10|inscreveu-se}} como tradutor {{PLURAL:$9|de}} $2 em {{SITENAME}}.\n\nEstá disponível uma página para tradução: $3.\nPode traduzir ao clicar na ligação seguinte:\n$4\n\n$5\n$6\n\n$7\n\nA sua ajuda é bastante apreciada. Tradutores como você podem ajudar a {{SITENAME}} a funcionar como uma verdadeira comunidade multilingue.\n\nObrigado(a)!\nCoordenadores de tradução {{SITENAME}}\n\n----\n\nEstá a receber este e-mail porque está inscrito no programa de tradução de {{SITENAME}}. Para cancelar a subscrição ou alterar as suas configurações de notificação, visite $8.",
-	"translationnotifications-talkpage-body": "Olá $2,\n\nEstá a receber esta notificação porque {{GENDER:$10|inscreveu-se}} como tradutor {{PLURAL:$9|de}} $2 em {{SITENAME}}.\n\nA página [[$4]] está disponível para tradução. Pode traduzir aqui:\n$5\n\n$6\n$7\n\n$8\n\nA sua ajuda é bastante apreciada. Tradutores como você podem ajudar a {{SITENAME}} a funcionar como uma verdadeira comunidade multilingue.\n\nObrigado(a)!\nCoordenadores de tradução {{SITENAME}}",
+	"translationnotifications-talkpage-body": "Olá $2,\n\nEstá a receber esta notificação porque {{GENDER:$1|inscreveu-se}} como tradutor {{PLURAL:$9|de}} $3 em {{SITENAME}}.\n\nA página [[$4]] está disponível para tradução. Pode traduzir aqui:\n$5\n\n$6\n$7\n\n$8\n\nA sua ajuda é bastante apreciada. Tradutores como você podem ajudar a {{SITENAME}} a funcionar como uma verdadeira comunidade multilingue.\n\nObrigado(a)!\nCoordenadores de tradução {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "traduzir para $1",
 	"translationnotifications-digestemail-subject": "Resumo por e-mail para pedidos de tradução de {{SITENAME}}",
 	"translationnotifications-digestemail-body": "Olá $1,\n\nEstá a receber este e-mail porque {{GENDER:$10|inscreveu-se}} como tradutor de $2 em {{SITENAME}}.\n\n{{PLURAL:$3|Está disponível uma página|Estão disponíveis $3 páginas}} para tradução. Os detalhes são dados abaixo.\n\n$4\n\nA sua ajuda é bastante apreciada. Tradutores como você podem ajudar a {{SITENAME}} a funcionar como uma verdadeira comunidade multilingue.\n\nObrigado(a)!\nCoordenadores de tradução {{SITENAME}}\n\n----\n\nEstá a receber este e-mail porque está inscrito no programa de tradução de {{SITENAME}}. Para cancelar a subscrição ou alterar as suas configurações de notificação, visite <$5>.",
-	"translationnotifications-email-deadline": "A data limite para traduzir esta página é $1."
+	"translationnotifications-digestemail-notification-line": "A $1, $2 marcou \"$3\" para tradução. Pode traduzir a página em $4",
+	"translationnotifications-edit-summary": "Notificação de tradução: $1",
+	"translationnotifications-email-priority": "A prioridade desta página é $1.",
+	"translationnotifications-email-deadline": "A data limite para traduzir esta página é $1.",
+	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|enviou}} uma notificação sobre a tradução da página $3; {{PLURAL:$10|idioma|idiomas}}: $4; prazo: $5; prioridade: $6; enviar para {{PLURAL:$7|um destinatário|$7 destinatários}}, falhado para {{PLURAL:$8|um destinatário|$8 destinatários}}, ignorado para {{PLURAL:$9|um destinatário|$9 destinatários}}",
+	"log-name-notifytranslators": "Notificações de tradução",
+	"log-description-notifytranslators": "Registo de notificações enviado para os tradutores sobre páginas traduzíveis",
+	"translationnotifications-sent-title": "Notificação de tradução enviada",
+	"translationnotifications-sent-body": "A notificação de tradução foi enviada.",
+	"translationnotifications-log-alllanguages": "todos os idiomas",
+	"translationnotifications-nodeadline": "nenhum",
+	"translationnotifications-signup-legal": "Concorda que, ao fornecer esta informação, poderemos contatá-lo sobre temas relacionados com {{SITENAME}} que achemos que possa ser do seu interesse. Concorda ainda que os seus dados estão sujeitos à nossa [[{{MediaWiki:Privacypage}}|política de privacidade]].",
+	"translationnotifications-generic-languages": "&lt;idiomas>"
 }
