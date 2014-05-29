@@ -68,6 +68,12 @@ $specialPageAliases['eo'] = array(
 	'TranslatorSignup' => array( 'Registrigi_kiel_tradukanto', 'Registrigi_kiel_tradukisto' ),
 );
 
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'NotifyTranslators' => array( 'اطلاع‌ساختن_مترجم‌ها' ),
+	'TranslatorSignup' => array( 'ثبت‌نام_مترجم' ),
+);
+
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
 	'TranslatorSignup' => array( 'Übersetzerregistrierig' ),
