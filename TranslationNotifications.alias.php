@@ -85,6 +85,12 @@ $specialPageAliases['he'] = array(
 	'TranslatorSignup' => array( 'רישום_מתרגמים' ),
 );
 
+/** Upper Sorbian (hornjoserbsce) */
+$specialPageAliases['hsb'] = array(
+	'NotifyTranslators' => array( 'Přełožowarske_zdźělenje' ),
+	'TranslatorSignup' => array( 'Přełožowarske_registrowanje' ),
+);
+
 /** Italian (italiano) */
 $specialPageAliases['it'] = array(
 	'NotifyTranslators' => array( 'NotificaTraduttori' ),
