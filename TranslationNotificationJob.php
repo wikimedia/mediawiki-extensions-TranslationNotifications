@@ -62,10 +62,20 @@ class TranslationNotificationJob extends Job {
 			$text = $textContent . "\n" . $text;
 		}
 
-		global $wgNotificationUsername;
+		global $wgNotificationUsername, $wgNotificationUserPassword;
 		$user = User::newFromName( $wgNotificationUsername );
 		if ( $user->isAllowed( 'bot' ) ) {
 			$flags = $flags | EDIT_FORCE_BOT; // If the user has the bot right, mark edit as bot
+		}
+
+		// If user doesn't exist
+		if ( !$user->getId() ) {
+			$user->setPassword( $wgNotificationUserPassword );
+			$user->addToDatabase();
+			$user->saveSettings();
+			// Increment site_stats.ss_users
+			$ssu = new SiteStatsUpdate( 0, 0, 0, 0, 1 );
+			$ssu->doUpdate();
 		}
 
 		$status = $talkPage->doEditContent(
