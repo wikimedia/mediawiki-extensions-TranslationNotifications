@@ -156,6 +156,12 @@ $specialPageAliases['scn'] = array(
 	'TranslatorSignup' => array( 'IscrizioneTraduttore' ),
 );
 
+/** Tuvinian (тыва дыл) */
+$specialPageAliases['tyv'] = array(
+	'NotifyTranslators' => array( 'Очулдурукчуларга_медээлээр' ),
+	'TranslatorSignup' => array( 'Очулдурукчу_бүрүткели' ),
+);
+
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
 	'NotifyTranslators' => array( 'Сповістити_перекладачів' ),
