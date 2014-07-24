@@ -4,7 +4,8 @@
 			"Justincheng12345",
 			"Liangent",
 			"Simon Shek",
-			"Cwlin0416"
+			"Cwlin0416",
+			"LNDDYL"
 		]
 	},
 	"translatorsignup": "翻譯者註冊",
@@ -31,7 +32,7 @@
 	"translationnotifications-freq-month": "最多每月一次",
 	"translationnotifications-freq-weekly": "每周摘要",
 	"translationnotifications-freq-monthly": "每月摘要",
-	"translationnotifications-submit": "更新設置",
+	"translationnotifications-submit": "更新設定",
 	"translationnotifications-signup-success": "您的翻譯通知選項已保存。",
 	"notifytranslators": "通知翻譯者",
 	"translationnotifications-submit-ok": "通知已添加到隊列並將在後台完成。",
