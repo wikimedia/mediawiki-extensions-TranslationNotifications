@@ -3,7 +3,8 @@
 		"authors": [
 			"Chmee2",
 			"Vks",
-			"Matěj Suchánek"
+			"Matěj Suchánek",
+			"Mormegil"
 		]
 	},
 	"translationnotifications-info": "Informace o uživateli",
@@ -25,7 +26,7 @@
 	"translationnotifications-submit": "Aktualizovat nastavení",
 	"translationnotifications-signup-success": "Vaše preference oznámení o překladech byly uloženy.",
 	"notifytranslators": "Oznámit překladatelům",
-	"translationnotifications-submit-ok": "Oznámení byla přidána do fronty a jsou doručována na pozadí práce.",
+	"translationnotifications-submit-ok": "Oznámení byla přidána do fronty a jsou doručována úlohou na pozadí.",
 	"translationnotifications-send-notification-button": "Odeslat oznámení pro překladatele",
 	"translationnotifications-languages-to-notify-label": "Jaký jazyk oznámení?",
 	"translationnotifications-priority": "Priorita:",
