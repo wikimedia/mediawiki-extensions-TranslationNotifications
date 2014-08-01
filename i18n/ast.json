@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xuacu"
+			"Xuacu",
+			"Fitoschido"
 		]
 	},
 	"translatorsignup": "Inscripción de traductores",
@@ -61,6 +62,6 @@
 	"translationnotifications-sent-body": "Unvióse l'avisu de traducción.",
 	"translationnotifications-log-alllanguages": "toles llingües",
 	"translationnotifications-nodeadline": "denguna",
-	"translationnotifications-signup-legal": "Aceuta que por dar esta información podemos ponenos en contautu con vusté sobro asuntos rellacionaos con {{SITENAME}} que creamos que puen interesa-y. Aceuta que los sos datos queden suxetos a la nuesa [[{{MediaWiki:Privacypage}}|política de proteición de datos]].",
+	"translationnotifications-signup-legal": "Aceuta que por dar esta información podemos ponenos en contautu con vusté sobro asuntos rellacionaos con {{SITENAME}} que creamos que puen interesa-y. Aceuta que los sos datos queden suxetos a la nuesa [[{{MediaWiki:Privacypage}}|política de privacidá]].",
 	"translationnotifications-generic-languages": "&lt;llingües>"
 }
