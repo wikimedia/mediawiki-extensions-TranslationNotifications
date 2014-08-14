@@ -13,7 +13,7 @@
 	"translatorsignup-summary": "在這個頁面列明您可以翻譯的語言，以及您想讓我們如何通知您新的翻譯請求。",
 	"translationnotifications-desc": "允許翻譯者註冊以接受翻譯通知",
 	"translationnotifications-info": "使用者資訊",
-	"translationnotifications-username": "使用者名稱：",
+	"translationnotifications-username": "用戶名：",
 	"translationnotifications-emailstatus": "電子郵件狀態：",
 	"translationnotifications-email-confirmed": "使用者的電郵位址已經確認",
 	"translationnotifications-email-disablemail": "您的電子郵件位址已得到確認，但在[[Special:Preferences|您的偏好設定]]中您要求不接收電子郵件。",
