@@ -33,6 +33,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 		parent::__construct( 'NotifyTranslators', self::$right );
 	}
 
+	protected function getGroupName() {
+		return 'users';
+	}
+
 	public function execute( $parameters ) {
 		global $wgContLang;
 		$this->setHeaders();

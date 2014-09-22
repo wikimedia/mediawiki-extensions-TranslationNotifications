@@ -22,6 +22,10 @@ class SpecialTranslatorSignup extends SpecialPage {
 		parent::__construct( 'TranslatorSignup' );
 	}
 
+	protected function getGroupName() {
+		return 'login';
+	}
+
 	public function execute( $parameters ) {
 		global $wgTranslationNotificationsSignupLegalMessage;
 		if ( !$this->getUser()->isLoggedIn() ) {
