@@ -9,7 +9,8 @@
 			"Raymond",
 			"SPQRobin",
 			"Shirayuki",
-			"Siebrand"
+			"Siebrand",
+			"Liuxinyu970226"
 		]
 	},
 	"translatorsignup": "{{doc-special|TranslatorSignup}}",
@@ -48,7 +49,7 @@
 	"translationnotifications-priority": "A label for translation priority field.\n{{Identical|Priority}}",
 	"translationnotifications-priority-high": "high (priority), an item in a dropdown box.\n{{Identical|High}}",
 	"translationnotifications-priority-medium": "medium (priority), an item in a dropdown box.\n{{Identical|Medium}}",
-	"translationnotifications-priority-low": "low (priority), an item in a dropdown box.",
+	"translationnotifications-priority-low": "low (priority), an item in a dropdown box.\n{{Identical|Low}}",
 	"translationnotifications-priority-unset": "unset (priority), an item in a dropdown box.",
 	"translationnotifications-translatablepage-title": "A label for language codes field. Can be translated as \"A page designated for translation, intended for translation\", etc.",
 	"translationnotifications-error-no-translatable-pages": "An error message.",
