@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robin0van0der0vliet"
+		]
+	},
+	"translationnotifications-username": "Brûkersnamme:",
+	"translationnotifications-languages": "Talen",
+	"translationnotifications-lang": "Taal #$1",
+	"translationnotifications-cmethod-email": "E-mail",
+	"translationnotifications-generic-languages": "&lt;talen>"
+}
