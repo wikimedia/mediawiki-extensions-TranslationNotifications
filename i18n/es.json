@@ -4,7 +4,8 @@
 			"Armando-Martin",
 			"Dferg",
 			"Fitoschido",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"Macofe"
 		]
 	},
 	"translatorsignup": "Inscripción de traductores",
@@ -48,11 +49,11 @@
 	"translationnotifications-translatablepage-title": "Nombre de la página traducible:",
 	"translationnotifications-error-no-translatable-pages": "No hay páginas traducibles en este wiki.",
 	"translationnotifications-email-subject": "Por favor traduzca la página $1",
-	"translationnotifications-email-body": "Hola $1,\n\nEstás recibiendo este mensaje de correo electrónico porque te inscribiste como traductor al idioma $2 de {{SITENAME}}.\n\nAquí hay una página para traducir: $3.\nPuedes traducirla haciendo clic en el enlace siguiente:\n$4\n\n$5\n$6\n\n$7\n\nAgradecemos enormemente tu ayuda. Traductores como tu hacen que {{SITENAME}} funcione\ncomo una verdadera comunidad multilingüe.\n\n¡Gracias!\nLos coordinadores de traducción de {{SITENAME}}\n\n----\n\nEstás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita $8.",
-	"translationnotifications-talkpage-body": "Hola $2,\n\nEstás recibiendo esta notificación porque te inscribiste como traductor  de {{SITENAME}} en $3.\n\nLa página [[$4]] está disponible para su traducción. Puedes  traducirla aquí:\n$5\n\n$6\n$7\n\n$8\n\nAgradecemos enormemente tu ayuda. Traductores como tú hacen que {{SITENAME}} funcione\ncomo una verdadera comunidad multilingüe.\n¡Gracias!\n\nLos coordinadores de traducción de {{SITENAME}}",
+	"translationnotifications-email-body": "Hola $1,\n\nEstás recibiendo este mensaje de correo electrónico porque te inscribiste como {{GENDER:$10|traductor|traductora}} {{PLURAL:$9|de}} $2 en {{SITENAME}}.\n\nAquí hay una página para traducir: $3.\nPuedes traducirla haciendo clic en el enlace siguiente:\n$4\n\n$5\n$6\n\n$7\n\nAgradecemos enormemente tu ayuda. Traductores como tu hacen que {{SITENAME}} funcione\ncomo una verdadera comunidad multilingüe.\n\n¡Gracias!\nLos coordinadores de traducción de {{SITENAME}}\n\n----\n\nEstás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones en {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, visita $8.",
+	"translationnotifications-talkpage-body": "Hola $2,\n\nEstás recibiendo esta notificación porque te inscribiste como {{GENDER:$1|traductor|traductora}} {{PLURAL:$9|de}} $3 en {{SITENAME}}.\n\nLa página [[$4]] está disponible para su traducción. Puedes  traducirla aquí:\n$5\n\n$6\n$7\n\n$8\n\nAgradecemos enormemente tu ayuda. Traductores como tú hacen que {{SITENAME}} funcione\ncomo una verdadera comunidad multilingüe.\n¡Gracias!\n\nLos coordinadores de traducción de {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "traducir al $1",
 	"translationnotifications-digestemail-subject": "Correo electrónico de resumen para solicitudes de traducción de {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Hola $1,\n\nEstás recibiendo este mensaje porque te inscribiste como traductor de {{SITENAME}} al $2.\n\nHay {{PLURAL:$3|1 página|$3 páginas}} disponibles para su traducción. A continuación figuran los detalles.\n\n$4\n\nAgradecemos enormemente tu ayuda. Traductores como tú hacen que {{SITENAME}} funcione\ncomo una verdadera comunidad multilingüe.\n\n¡Gracias!\nLos administradores de traducción de {{SITENAME}}\n\n----\n\nEstás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita <$5>.",
+	"translationnotifications-digestemail-body": "Hola $1,\n\nEstás recibiendo este mensaje porque te inscribiste como {{GENDER:$1|traductor|traductora}} de $2 en {{SITENAME}}.\n\nHay {{PLURAL:$3|1 página|$3 páginas}} disponibles para su traducción. A continuación figuran los detalles.\n\n$4\n\nAgradecemos enormemente tu ayuda. Traductores como tú hacen que {{SITENAME}} funcione\ncomo una verdadera comunidad multilingüe.\n\n¡Gracias!\nLos administradores de traducción de {{SITENAME}}\n\n----\n\nEstás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones de {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, por favor visita <$5>.",
 	"translationnotifications-digestemail-notification-line": "En $1, $2  ha marcado \"$3\" para su traducción. Puede traducirlo en $4",
 	"translationnotifications-edit-summary": "Notificación de traducción: $1",
 	"translationnotifications-email-priority": "La prioridad de esta página es  $1.",
