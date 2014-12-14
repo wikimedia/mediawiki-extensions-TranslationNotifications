@@ -182,6 +182,6 @@ $specialPageAliases['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'NotifyTranslators' => array( '通知翻譯者' ),
-	'TranslatorSignup' => array( '翻譯者註冊' ),
+	'NotifyTranslators' => array( '通知翻譯人員' ),
+	'TranslatorSignup' => array( '翻譯人員造冊' ),
 );
