@@ -6,7 +6,8 @@
 			"Chrumps",
 			"Odie2",
 			"Rzuwig",
-			"Woytecr"
+			"Woytecr",
+			"WTM"
 		]
 	},
 	"translatorsignup": "Rejestracja tłumacza",
@@ -33,7 +34,7 @@
 	"translationnotifications-freq-month": "Co najwyżej raz w miesiącu",
 	"translationnotifications-freq-weekly": "Tygodniowe streszczenie",
 	"translationnotifications-freq-monthly": "Miesięczne streszczenie",
-	"translationnotifications-submit": "Ustawienia aktualizacji",
+	"translationnotifications-submit": "Aktualizuj ustawienia",
 	"translationnotifications-signup-success": "Twoje preferencje powiadomień o tłumaczeniach zostały zapisane.",
 	"notifytranslators": "Powiadomienie tłumaczy",
 	"translationnotifications-submit-ok": "Powiadomienia zostały dodane do kolejki i są dostarczane przez zadanie w tle.",
