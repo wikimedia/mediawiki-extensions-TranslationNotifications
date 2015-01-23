@@ -33,6 +33,12 @@ $specialPageAliases['as'] = array(
 	'TranslatorSignup' => array( 'অনুবাদৰ_পঞ্জীভুক্তি' ),
 );
 
+/** Avaric (авар) */
+$specialPageAliases['av'] = array(
+	'NotifyTranslators' => array( 'Уведомить_переводчиков' ),
+	'TranslatorSignup' => array( 'Регистрация_переводчиков' ),
+);
+
 /** буряад (буряад) */
 $specialPageAliases['bxr'] = array(
 	'NotifyTranslators' => array( 'Оршуулагшада_мэдүүлхэ' ),
