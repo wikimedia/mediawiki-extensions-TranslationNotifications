@@ -29,6 +29,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	),
 	'descriptionmsg' => 'translationnotifications-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:TranslationNotifications',
+	'license-name' => 'GPL-2.0+',
 );
 
 $dir = __DIR__;
