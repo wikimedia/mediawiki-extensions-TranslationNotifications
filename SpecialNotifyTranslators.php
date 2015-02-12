@@ -409,6 +409,26 @@ class SpecialNotifyTranslators extends SpecialPage {
 	}
 
 	/**
+	 * Returns URL to signup and change notification preferences
+	 * @return string Sinup URL
+	 */
+	protected function getSignupURL() {
+		global $wgTranslationNotificationsAlwaysHttpsInEmail;
+
+		$urlType = $wgTranslationNotificationsAlwaysHttpsInEmail === false ?
+			PROTO_CANONICAL :
+			PROTO_HTTPS;
+
+		$signupURL = SpecialPage::getTitleFor( 'TranslatorSignup' )->getFullURL(
+			'',
+			false,
+			$urlType
+		);
+
+		return $signupURL;
+	}
+
+	/**
 	 * @param string $languageCode
 	 * @return string Translation URL
 	 */
@@ -531,16 +551,6 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$userFirstLanguage = Language::factory( $this->getUserFirstLanguage( $user ) );
 		$emailSubject = self::getNotificationSubject( $userFirstLanguage );
 
-		$urlType = $wgTranslationNotificationsAlwaysHttpsInEmail === false ?
-			PROTO_CANONICAL :
-			PROTO_HTTPS;
-
-		$signupURL = SpecialPage::getTitleFor( 'TranslatorSignup' )->getFullURL(
-			'',
-			false,
-			$urlType
-		);
-
 		$translationUrls = $this->getTranslationURLs(
 			$relevantLanguages,
 			'email',
@@ -556,7 +566,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$this->getPriorityClause( $userFirstLanguage ),
 			$this->getDeadlineClause( $userFirstLanguage ),
 			$this->notificationText,
-			$signupURL
+			$this->getSignupURL()
 		)
 			->numParams( count( $relevantLanguages ) ) // $9
 			->params( $user->getName() ) // $10
@@ -628,7 +638,8 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$this->getTranslationURLs( $relevantLanguages, 'talkpage', $userFirstLanguage ),
 			$this->getPriorityClause( $userFirstLanguage ),
 			$this->getDeadlineClause( $userFirstLanguage ),
-			$notificationText
+			$notificationText,
+			$this->getSignupURL()
 		)->numParams( count( $relevantLanguages ) )
 			->inLanguage( $userFirstLanguage )
 			->text();
