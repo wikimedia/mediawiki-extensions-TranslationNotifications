@@ -27,7 +27,7 @@
 	"translationnotifications-cmethod-talkpage": "對話頁",
 	"translationnotifications-cmethod-talkpage-elsewhere": "其他 wiki 上的對話頁",
 	"translationnotifications-cmethod-feed": "供稿",
-	"translationnotifications-frequency": "聯繫頻率",
+	"translationnotifications-frequency": "聯絡頻率",
 	"translationnotifications-freq-always": "當有新內容需要翻譯時",
 	"translationnotifications-freq-week": "最多每週一次",
 	"translationnotifications-freq-month": "最多每月一次",
@@ -66,6 +66,6 @@
 	"translationnotifications-sent-body": "翻譯通知已傳送。",
 	"translationnotifications-log-alllanguages": "所有語言",
 	"translationnotifications-nodeadline": "無",
-	"translationnotifications-signup-legal": "您同意若提供此資訊，我們可能就有關{{SITENAME}}，而我們又認為您感興趣的主題與您聯繫。您同意您的資料將按照[[{{MediaWiki:Privacypage}}|私隱攻策]]處理。",
+	"translationnotifications-signup-legal": "您同意若提供此資訊，我們可能聯絡您有關 {{SITENAME}} 的主題，而我們認為您感興趣。您同意您的資料將按照我們[[{{MediaWiki:Privacypage}}|隱私攻策]]處理。",
 	"translationnotifications-generic-languages": "&lt;languages>"
 }
