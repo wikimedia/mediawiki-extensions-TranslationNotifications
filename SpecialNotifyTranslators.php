@@ -638,9 +638,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$this->getTranslationURLs( $relevantLanguages, 'talkpage', $userFirstLanguage ),
 			$this->getPriorityClause( $userFirstLanguage ),
 			$this->getDeadlineClause( $userFirstLanguage ),
-			$notificationText,
-			$this->getSignupURL()
-		)->numParams( count( $relevantLanguages ) )
+			$notificationText
+		)->numParams( count( $relevantLanguages ) ) // $9
+			->params( $this->getSignupURL() ) // $10
 			->inLanguage( $userFirstLanguage )
 			->text();
 		// Bidi-isolation of site name from date
