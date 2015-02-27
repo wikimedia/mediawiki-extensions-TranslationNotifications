@@ -3,7 +3,8 @@
 		"authors": [
 			"Anubhab91",
 			"Bellayet",
-			"Nasir8891"
+			"Nasir8891",
+			"Aftabuzzaman"
 		]
 	},
 	"translationnotifications-info": "ব্যবহারকারীর তথ্য",
@@ -22,6 +23,7 @@
 	"translationnotifications-priority-medium": "মধ্যম",
 	"translationnotifications-priority-low": "নিম্ন",
 	"translationnotifications-priority-unset": "(অনির্দিষ্ট)",
+	"translationnotifications-talkpage-body": "হ্যালো $2,\n\nআপনাকে এই বিজ্ঞপ্তিটি দেয়া হচ্ছে কারণ আপনি {{SITENAME}}তে $3র {{PLURAL:$9|জন্য}} অনুবাদক হিসাবে {{GENDER:$1|স্বাক্ষর করেছিলেন}}।\n[[$4]] পাতাটি অনুবাদের জন্য উপলব্ধ। আপনি এখানে এটি অনুবাদ করতে পারেন:\n$5\n\n$6\n$7\n\n$8\n\nআপনার সাহায্য ব্যাপকভাবে প্রশংসাযোগ্য। আপনার মত অনুবাদকগণ {{SITENAME}}কে একটি সত্যিকারের বহুভাষী সম্প্রদায় হিসেবে কাজ করতে সাহায্য করছে।\n\nআপনি আপনার বিজ্ঞপ্তি পছন্দগুলি [$10 এখানে] পরিবর্তন করতে পারবেন।\n\nআপনাকে ধন্যবাদ!\n\n{{SITENAME}} অনুবাদ সমন্বয়কারী",
 	"translationnotifications-notification-url-listitem": "$1 ভাষায় অনুবাদ করুন",
 	"translationnotifications-edit-summary": "অনুবাদ বিজ্ঞপ্তি: $1",
 	"translationnotifications-email-priority": "এই পাতার অগ্রাধিকার হল $1।",
