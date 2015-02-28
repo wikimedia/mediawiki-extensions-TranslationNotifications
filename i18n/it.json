@@ -3,7 +3,8 @@
 		"authors": [
 			"Beta16",
 			"Darth Kule",
-			"Ximo17"
+			"Ximo17",
+			"SuperVirtual"
 		]
 	},
 	"translatorsignup": "Iscrizione traduttore",
@@ -48,7 +49,7 @@
 	"translationnotifications-error-no-translatable-pages": "Non ci sono pagine traducibili in questo wiki.",
 	"translationnotifications-email-subject": "Si prega di tradurre la pagina $1",
 	"translationnotifications-email-body": "Ciao $1,\n\nRicevi questa email perché ti sei {{GENDER:$10|registrato come traduttore|registrata come traduttrice|registrato/a come traduttore/trice}} {{PLURAL:$9|in}} $2 su {{SITENAME}}.\n\nC'è una pagina da tradurre: $3.\nClicca su questo collegamento per iniziare a tradurla:\n$4\n\n$5\n$6\n\n$7\n\nIl tuo aiuto è molto apprezzato. I traduttori come te aiutano {{SITENAME}} a essere una reale comunità multilingua.\n\nGrazie!\nI coordinatori delle traduzioni di {{SITENAME}}\n\n----\nHai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita $8.",
-	"translationnotifications-talkpage-body": "Ciao $2,\n\nRicevi questa email perché ti sei {{GENDER:$10|registrato come traduttore|registrata come traduttrice|registrato/a come traduttore/trice}} {{PLURAL:$9|$3}} su {{SITENAME}}.\nLa pagina [[$4]] è disponibile per la traduzione. Visita questo collegamento per iniziare a tradurla:\n$5\n\n$6\n$7\n\n$8\n\nIl tuo aiuto è molto apprezzato. I traduttori come te aiutano {{SITENAME}} a essere una reale comunità multilingua.\n\nPuoi modificare le tue preferenze sulle notifiche [$9 qui].\n\nGrazie!\nI coordinatori delle traduzioni su {{SITENAME}}",
+	"translationnotifications-talkpage-body": "Ciao $2,\n\nRicevi questa email perché ti sei {{GENDER:$10|registrato come traduttore|registrata come traduttrice|registrato/a come traduttore/trice}} {{PLURAL:$9|$3}} su {{SITENAME}}.\nLa pagina [[$4]] è disponibile per la traduzione. Visita questo collegamento per iniziare a tradurla:\n$5\n\n$6\n$7\n\n$8\n\nIl tuo aiuto è molto apprezzato. I traduttori come te aiutano {{SITENAME}} a essere una reale comunità multilingua.\n\nPuoi modificare le tue preferenze sulle notifiche [$9 qui].\n\nGrazie!\n\nI coordinatori delle traduzioni su {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "traduci in $1",
 	"translationnotifications-digestemail-subject": "Email selezionate per le richieste di traduzione da parte del sito {{SITENAME}}",
 	"translationnotifications-digestemail-body": "Ciao $1,\n\nRicevi questa email perché ti sei {{GENDER:$10|registrato come traduttore|registrata come traduttrice|registrato/a come traduttore/trice}} $2 su {{SITENAME}}.\n\n{{PLURAL:$3|C'è 1 pagina disponibile|Ci sono $3 pagine disponibili}} per la traduzione. I dettagli sono riportati di seguito.\n\n$4\n\nIl tuo aiuto è molto apprezzato. I traduttori come te aiutano {{SITENAME}} a essere una reale comunità multilingua.\n\nGrazie!\nGli amministratori delle traduzioni di {{SITENAME}}\n\n----\nHai ricevuto questa email perché ti sei registrato per ricevere messaggi di posta elettronica relativi alle traduzioni su {{SITENAME}}. Per annullare l'iscrizione o modificare le preferenze di notifica per le traduzioni, visita <$5>.",
