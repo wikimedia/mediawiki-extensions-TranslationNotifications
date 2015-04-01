@@ -4,5 +4,17 @@
 			"Milicevic01"
 		]
 	},
-	"translationnotifications-languages": "Jezici"
+	"translatorsignup-summary": "Koristite ovu stranicu da navedete na koje jezike možete da prevodite i kako želite da budete obavešteni kad god je potrebno prevođenje.",
+	"translationnotifications-email-disablemail": "Vaša e-pošta je potvrđena, ali u [[Special:Preferences|vašim podešavanjima]] podesili ste da ne primate e-poštu.",
+	"translationnotifications-email-unconfirmed": "Vaša e-pošta nije potvrđena: $1",
+	"translationnotifications-languages": "Jezici",
+	"translationnotifications-contact": "Način obaveštavanja",
+	"translationnotifications-frequency": "Učestalost obaveštavanja",
+	"translationnotifications-freq-always": "Kad god ima nešto novo za prevođenje",
+	"translationnotifications-signup-success": "Vaša podešavanja obaveštenja su sačuvana.",
+	"translationnotifications-edit-summary": "Obaveštenje o prevodu: $1",
+	"translationnotifications-email-priority": "Prioritet ove stranice je $1.",
+	"translationnotifications-email-deadline": "Krajnji rok za prevod ove stranice je $1.",
+	"logentry-notifytranslators-sent": "$1 je {{GENDER:$2|poslao|poslala}} obaveštenje o prevodivoj stranici $3; {{PLURAL:$10|jezik|jezici}}: $4; rok: $5; prioritet: $6; poslato {{PLURAL:$7|jednom korisniku|$7 korisnika}}, nije poslato {{PLURAL:$8|jednom korisniku|$8 korisnika}}, preskočen {{PLURAL:$9|jedan korisnik|$9 korisnika}}",
+	"log-description-notifytranslators": "Dnevnik poslatih obaveštenja prevodiocima u vezi prevodivih stranica"
 }
