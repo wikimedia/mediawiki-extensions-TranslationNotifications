@@ -39,6 +39,11 @@ $specialPageAliases['av'] = array(
 	'TranslatorSignup' => array( 'Регистрация_переводчиков' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'TranslatorSignup' => array( 'ترجمه_کنۆک_ئی_سبت_نام' ),
+);
+
 /** буряад (буряад) */
 $specialPageAliases['bxr'] = array(
 	'NotifyTranslators' => array( 'Оршуулагшада_мэдүүлхэ' ),
