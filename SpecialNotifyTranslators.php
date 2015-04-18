@@ -238,8 +238,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$currentUnixTime = wfTimestamp();
 		$currentDBTime = $dbr->timestamp( $currentUnixTime );
 
-		$sentSuccess = 0;
-		$sentFail = 0;
+		$count = 0;
 		$tooEarly = 0;
 		$timestampOptionName = 'translationnotifications-timestamp';
 		$jobs = array();
@@ -292,12 +291,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 		if ( $jobs ) {
 			$count = count( $jobs );
-			$status = JobQueueGroup::singleton()->push( $jobs );
-			if ( $status ) {
-				$sentSuccess = $count;
-			} else {
-				$sentFail = $count;
-			};
+			JobQueueGroup::singleton()->push( $jobs );
 		}
 
 		$logEntry = new ManualLogEntry( 'notifytranslators', 'sent' );
@@ -307,8 +301,8 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'4::languagesForLog' => $languagesForLog,
 			'5::deadlineDate' => $this->deadlineDate,
 			'6::priority' => $this->priority,
-			'7::sentSuccess' => $sentSuccess,
-			'8::sentFail' => $sentFail,
+			'7::sentSuccess' => $count,
+			'8::sentFail' => 0,
 			'9::tooEarly' => $tooEarly,
 		) );
 
