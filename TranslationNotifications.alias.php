@@ -21,7 +21,7 @@ $specialPageAliases['ar'] = array(
 	'TranslatorSignup' => array( 'اشتراك_المستخدمين' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'NotifyTranslators' => array( 'اخطار_المترجمين' ),
 	'TranslatorSignup' => array( 'اشتراك_المترجمين' ),
