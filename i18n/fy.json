@@ -8,6 +8,7 @@
 	"translationnotifications-languages": "Talen",
 	"translationnotifications-lang": "Taal #$1",
 	"translationnotifications-cmethod-email": "E-mail",
+	"translationnotifications-notification-url-listitem": "oersette nei $1",
 	"translationnotifications-nodeadline": "gjin",
 	"translationnotifications-generic-languages": "&lt;talen>"
 }
