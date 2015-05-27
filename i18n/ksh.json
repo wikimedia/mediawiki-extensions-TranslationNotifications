@@ -42,7 +42,7 @@
 	"translationnotifications-priority-medium": "meddel",
 	"translationnotifications-priority-low": "klein",
 	"translationnotifications-priority-unset": "(nit jesaz)",
-	"translationnotifications-translatablepage-title": "der Naame vun dä Sigg för zem Övversäze:",
+	"translationnotifications-translatablepage-title": "Der Nahme vun dä Sigg för zem Övversäze:",
 	"translationnotifications-error-no-translatable-pages": "Mer han kein övversäzbaa Sigge em Wiki.",
 	"translationnotifications-email-subject": "Bes esu jood un donn de Sigg „$1“ övversäze",
 	"translationnotifications-email-body": "Daach $1,\n\nheh di e-mail kriß De, weil De Desch als ene Övversäzer för de {{PLURAL:$9|Schprohch|Schprohche|kein Schprohche}} $2 op {{GRAMMAR:3|{{ucfirst:{{SITENAME}}}}}} enjedraare häs.\n\nDi Sigg „$3“ mööd övversaz wääde.\nDat kanns De övver heh dä Lengk donn:\n$4\n\n$5\n$6\n\n$7\n\nDing Hölp es ärsch jään jesinn. Als Övversäzer helfs De met, dat {{GRAMMAR:1{{ucfirst:{{SITENAME}}}}}} als en Gemeinschaff met ville Schprohche joot doh schteiht.\n\nOnsere häzlejje Dank doför saare\nde Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v{{ucfirst:{{SITENAME}}}}}}\n\n----\n\nDo häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{ucfirst:{{SITENAME}}}}}} enjedraare häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät draan ändere wells, jangk noh $8.",
