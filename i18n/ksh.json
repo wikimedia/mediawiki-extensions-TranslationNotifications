@@ -54,7 +54,7 @@
 	"translationnotifications-edit-summary": "Övversäzongsnohreesch: $1",
 	"translationnotifications-email-priority": "Der Rang vun dä Sigg es $1.",
 	"translationnotifications-email-deadline": "Di Sigg moß bes zom $1 övversaz sin.",
-	"logentry-notifytranslators-sent": "{{GENDER:$2|Dä|Dat|Dä Metmaacher|De|Dat}} $1 häd en Metdeilong övver et Övversäze vun dä Sigg $3 en dä Schproche $4, met däm Jeweesch $6 un däm Dattum $5 för fäädesch ze wääde aan {{PLURAL:$7|eine|$7|keine}} Metmaacher verscheck, för {{PLURAL:$8|eine |$8|keine}} Metmaacher hät dat nit jeflup un {{PLURAL:$9|eine|$9|keine}} woodte tiräk övverjange.",
+	"logentry-notifytranslators-sent": "{{GENDER:$2|Dä|Dat|Dä Metmaacher|De|Dat}} $1 häd en Metdeilong övver et Övversäze vun dä Sigg $3 en dä Schproche $4, met däm Jeweesch $6 un däm Dattom $5 för fähdesch ze wähde aan {{PLURAL:$7|eine|$7|keine}} Metmaacher verscheck, för {{PLURAL:$8|eine |$8|keine}} Metmaacher hät dat nit jeflup un {{PLURAL:$9|eine|$9|keine}} wohdte tiräk övverjange.",
 	"log-name-notifytranslators": "Logbooch vun de Opforderonge zem Övversäze",
 	"log-description-notifytranslators": "Et Logbooch övver de Nohreeschte aan Övversäzere övver de övversäzbaa Sigge",
 	"translationnotifications-sent-title": "Opforderonge verdeilt",
