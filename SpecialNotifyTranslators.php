@@ -88,6 +88,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	private function getFormFields( $tpage = 0 ) {
 		// Translatable pages dropdown
 		$translatablePages = MessageGroups::getGroupsByType( 'WikiPageMessageGroup' );
+		usort( $translatablePages, array( 'MessageGroups', 'groupLabelSort' ) );
 
 		$translatablePagesOptions = array();
 		/**
