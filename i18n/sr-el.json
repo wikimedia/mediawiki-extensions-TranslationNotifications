@@ -12,6 +12,7 @@
 	"translationnotifications-frequency": "Učestalost obaveštavanja",
 	"translationnotifications-freq-always": "Kad god ima nešto novo za prevođenje",
 	"translationnotifications-signup-success": "Vaša podešavanja obaveštenja su sačuvana.",
+	"translationnotifications-talkpage-body": "Zdravo $2,\n\nPrimate ovo obaveštenje zato što ste {{GENDER:$1|prijavljeni}} kao prevodilac {{PLURAL:$9|na}} $3 na {{SITENAME}}.\nPotrebno je prevesti stranicu [[$4]]. Možete je prevesti ovde:\n$5\n\n$6\n$7\n\n$8\n\nVaša pomoć je veoma cenjena. Prevodioci kao što ste vi omogućuju da {{SITENAME}} funkcioniše kao prava višejezična zajednica.\n\nVaša podešavanja obaveštenja možete promeniti [$10 ovde].\n\nHvala puno!\n\n{{SITENAME}} - kordinatori za prevođenje",
 	"translationnotifications-edit-summary": "Obaveštenje o prevodu: $1",
 	"translationnotifications-email-priority": "Prioritet ove stranice je $1.",
 	"translationnotifications-email-deadline": "Krajnji rok za prevod ove stranice je $1.",
