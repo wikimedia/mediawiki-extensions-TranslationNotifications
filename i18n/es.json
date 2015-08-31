@@ -65,6 +65,6 @@
 	"translationnotifications-sent-body": "Se ha enviado la notificación de traducción.",
 	"translationnotifications-log-alllanguages": "todos los idiomas",
 	"translationnotifications-nodeadline": "ninguno",
-	"translationnotifications-signup-legal": "Usted acepta que al suministrar esta información nosotros podamos ponernos en contacto con usted en relación con temas relacionados con {{SITENAME}} que pensemos puedan ser de interés para usted. Usted acepta que sus datos puedan ser almacenados en los Estados Unidos de América y estar sujetos a nuestra [[{{MediaWiki:Privacypage}}|política de protección de datos.]]",
+	"translationnotifications-signup-legal": "Aceptas que al suministrar esta información nosotros podamos ponernos en contacto contigo en relación con temas relacionados con {{SITENAME}} que pensemos puedan ser de tu interés. Aceptas que tus datos estén sujetos a nuestra [[{{MediaWiki:Privacypage}}|política de privacidad]].",
 	"translationnotifications-generic-languages": "&lt;idiomas>"
 }
