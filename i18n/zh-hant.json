@@ -51,7 +51,7 @@
 	"translationnotifications-error-no-translatable-pages": "這個 wiki 中沒有可翻譯頁面。",
 	"translationnotifications-email-subject": "請翻譯頁面 $1",
 	"translationnotifications-email-body": "$1 ：\n\n閣下因已於 {{SITENAME}} 登記成為 $2  (共 $9 項) 的翻譯者而收到此封郵件。\n\n這裡有一頁需要您協助翻譯： $3 。\n您可以按以下的連結來進行翻譯：\n$4\n\n$5\n$6\n\n$7\n\n非常感謝您的幫助。像閣下一樣的翻譯者使 {{SITENAME}} 真正成為一多語言社群。\n\n多謝！\n\n　　此致\n$1\n\n{{SITENAME}} 翻譯協調員\n\n----\n\n您因已登記翻譯 {{SITENAME}} 而收到此電子郵件。要取消訂閱或更改偏好設定請到 $8 。",
-	"translationnotifications-talkpage-body": "$2：\n\n閣下因已於{{SITENAME}}{{GENDER:$1|登記}}成為 $3 (共 $9 項) 的翻譯者而收到此通知。\n\n這裡有一頁需要您協助翻譯：[[$4]]現已可供翻譯。您可以按以下的連結來進行翻譯：\n$5\n\n$6\n$7\n\n$8\n\n非常感謝您的幫助。像閣下一樣的翻譯者使{{SITENAME}}真正成為一多語言社群。\n\n您可通過 [$10 這裡] 變更您的通知設定。\n\n多謝！\n\n{{SITENAME}}翻譯協調員",
+	"translationnotifications-talkpage-body": "您好 $2，\n\n因您於 {{SITENAME}} {{GENDER:$1|註冊}}要成為翻譯人員所以接收到此通知。\n[[$4]] 頁面已經可以翻譯，您可至下列連結進行翻譯：\n$5\n\n$6\n$7\n\n$8\n\n非常感謝您的幫助。像您一樣的翻譯人員讓 {{SITENAME}} 成為真正的多語言社群。\n\n您可[$10 變更您的通知偏好設定]。\n\n感謝您的協助！\n\n{{SITENAME}} 翻譯協調員",
 	"translationnotifications-notification-url-listitem": "翻譯為 $1",
 	"translationnotifications-digestemail-subject": "來自 {{SITENAME}} 的翻譯請求的摘要電子郵件",
 	"translationnotifications-digestemail-body": "$1：\n\n閣下因已於{{SITENAME}}登記成為 $2 的翻譯者而收到此通知。\n\n這裡有 $3 頁需要您協助翻譯，詳情如下：\n$4\n\n非常感謝您的幫助。像閣下一樣的翻譯者使{{SITENAME}}真正成為一多語言社群。\n\n多謝！\n\n{{SITENAME}}翻譯協調員 謹啟\n\n----\n\n您因已登記翻譯{{SITENAME}}而收到此電子郵件。要取消訂閱或更改設定請往 < $5>。",
