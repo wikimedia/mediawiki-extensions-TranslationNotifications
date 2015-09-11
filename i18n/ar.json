@@ -1,12 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
-			"ترجمان05"
+			"ترجمان05",
+			"محمد أحمد عبد الفتاح"
 		]
 	},
+	"translationnotifications-desc": "يسمح للمترجمين بالاشتراك في إشعارات الترجمة",
 	"translationnotifications-info": "معلومات المستخدم",
 	"translationnotifications-username": "اسم المستخدم:",
+	"translationnotifications-emailstatus": "حالة البريد الإلكتروني:",
+	"translationnotifications-email-confirmed": "جرى تأكيد بريدك الإلكتروني",
 	"translationnotifications-cmethod-email": "البريد الإلكتروني",
+	"translationnotifications-priority": "الأولوية:",
+	"translationnotifications-priority-high": "عالية",
+	"translationnotifications-priority-medium": "متوسطة",
+	"translationnotifications-priority-low": "منخفضة",
+	"translationnotifications-priority-unset": "(غير محددة)",
+	"log-name-notifytranslators": "إشعارات الترجمة",
 	"translationnotifications-log-alllanguages": "كل اللغات",
 	"translationnotifications-nodeadline": "لا شيء"
 }
