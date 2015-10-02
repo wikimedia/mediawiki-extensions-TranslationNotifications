@@ -1,4 +1,4 @@
-/**
+/*!
  * JavaScript functions for embedding jQuery controls
  * into translation notification form.
  *
@@ -26,7 +26,7 @@
 			minDate: new Date()
 		} )
 		.data( 'open', 0 )
-		.click( function() {
+		.click( function () {
 			var $this = $( this );
 			if ( $this.data( 'open' ) === 0 ) {
 				$this.data( 'open', 1 ).datepicker( 'show' );

@@ -2,5 +2,6 @@
 *.kate-swp
 .ideanode_modules/
 /extensions/
+/node_modules/
 /vendor/
 /composer.lock
