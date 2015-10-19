@@ -36,7 +36,7 @@
 	"notifytranslators": "Meldingen voor vertalers",
 	"translationnotifications-submit-ok": "De meldingen zijn toegevoegd aan een wachtrij en worden via een achtergrondtaak afgeleverd.",
 	"translationnotifications-send-notification-button": "Bericht naar vertalers sturen",
-	"translationnotifications-preview-notification-button": "Voorbeeld melding",
+	"translationnotifications-preview-notification-button": "Voorvertoning melding",
 	"translationnotifications-deadline-label": "Deadline voor deze melding:",
 	"translationnotifications-languages-to-notify-label": "Voor welke talen een melding gemaakt moet worden:",
 	"translationnotifications-languages-to-notify-label-help-message": "Komma gescheiden taalcodes; laat leeg om een melding voor alle vertalers te maken.",
