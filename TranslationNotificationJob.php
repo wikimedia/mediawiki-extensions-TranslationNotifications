@@ -70,8 +70,8 @@ class TranslationNotificationJob extends Job {
 
 		// If user doesn't exist
 		if ( !$user->getId() ) {
-			$user->setPassword( $wgNotificationUserPassword );
 			$user->addToDatabase();
+			$user->setPassword( $wgNotificationUserPassword );
 			$user->saveSettings();
 			// Increment site_stats.ss_users
 			$ssu = new SiteStatsUpdate( 0, 0, 0, 0, 1 );
