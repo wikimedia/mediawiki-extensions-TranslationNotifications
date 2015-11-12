@@ -93,7 +93,7 @@ class TranslationNotificationJob extends Job {
 		global $wgNotificationUsername, $wgNotificationUserPassword;
 
 		$wiki = WikiMap::getWiki( $this->params['otherwiki'] );
-		$otherWikiBaseUrl = 'http://' . $wiki->getHostname() . wfScript( 'api' );
+		$otherWikiBaseUrl = $wiki->getCanonicalServer() . wfScript( 'api' );
 
 		// API: Get login token
 
