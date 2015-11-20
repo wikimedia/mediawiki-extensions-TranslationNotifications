@@ -1,5 +1,8 @@
 <?php
-if ( !defined( 'MEDIAWIKI' ) ) die();
+if ( !defined( 'MEDIAWIKI' ) ) {
+	die();
+}
+
 /**
  * An extension to keep in touch with translators
  *
@@ -49,7 +52,7 @@ $wgAutoloadClasses['TranslationNotificationsLogFormatter'] =
 $wgJobClasses['translationNotificationJob'] = 'TranslationNotificationJob';
 
 $resourcePaths = array(
-	'localBasePath' => dirname( __FILE__ ),
+	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'TranslationNotifications'
 );
 

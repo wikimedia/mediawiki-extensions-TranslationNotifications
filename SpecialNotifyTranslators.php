@@ -540,7 +540,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	protected function sendTranslationNotificationEmail( User $user,
 		$languagesToNotify = array()
 	) {
-		global $wgNoReplyAddress, $wgTranslationNotificationsAlwaysHttpsInEmail;
+		global $wgNoReplyAddress;
 
 		$relevantLanguages = $this->getRelevantLanguages( $user, $languagesToNotify );
 		$userFirstLanguage = Language::factory( $this->getUserFirstLanguage( $user ) );

@@ -9,11 +9,13 @@
 		"mediawiki/translate": "dev-master"
 	},
 	"require-dev": {
-		"jakub-onderka/php-parallel-lint": "0.9"
+		"jakub-onderka/php-parallel-lint": "0.9",
+		"mediawiki/mediawiki-codesniffer": "0.5.0"
 	},
 	"scripts": {
 		"test": [
-			"parallel-lint . --exclude node_modules --exclude vendor --exclude extensions"
+			"parallel-lint . --exclude node_modules --exclude vendor --exclude extensions",
+			"phpcs -p -s"
 		]
 	}
 }
