@@ -1,7 +1,4 @@
 <?php
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die();
-}
 
 /**
  * An extension to keep in touch with translators
@@ -12,7 +9,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  * @author Niklas Laxström
  * @author Amir E. Aharoni
  * @author Santhosh Thottingal
- * @copyright Copyright © 2012, Niklas Laxström
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
@@ -22,7 +18,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'TranslationNotifications',
-	'version' => '2014-03-29',
+	'version' => '2015-12-04',
 	'author' => array(
 		'Niklas Laxström',
 		'Amir E. Aharoni',
@@ -39,7 +35,6 @@ $dir = __DIR__;
 $wgSpecialPages['TranslatorSignup'] = 'SpecialTranslatorSignup';
 $wgSpecialPages['NotifyTranslators'] = 'SpecialNotifyTranslators';
 $wgMessagesDirs['TranslationNotifications'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['TranslationNotifications'] = "$dir/TranslationNotifications.i18n.php";
 $wgExtensionMessagesFiles['TranslationNotificationsAlias'] =
 	"$dir/TranslationNotifications.alias.php";
 $wgAutoloadClasses['SpecialTranslatorSignup'] = "$dir/SpecialTranslatorSignup.php";
