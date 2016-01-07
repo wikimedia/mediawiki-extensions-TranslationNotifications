@@ -1,0 +1,92 @@
+{
+	"name": "TranslationNotifications",
+	"version": "2015-12-04",
+	"author": [
+		"Niklas Laxström",
+		"Amir E. Aharoni",
+		"Santhosh Thottingal",
+		"Siebrand Mazeland",
+		"Jon Harald Søby"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:TranslationNotifications",
+	"descriptionmsg": "translationnotifications-desc",
+	"license-name": "GPL-2.0+",
+	"type": "specialpage",
+	"DefaultUserOptions": {
+		"translationnotifications-lang-1": "",
+		"translationnotifications-lang-2": "",
+		"translationnotifications-lang-3": ""
+	},
+	"SpecialPages": {
+		"TranslatorSignup": "SpecialTranslatorSignup",
+		"NotifyTranslators": "SpecialNotifyTranslators"
+	},
+	"JobClasses": {
+		"translationNotificationJob": "TranslationNotificationJob"
+	},
+	"LogTypes": [
+		"notifytranslators"
+	],
+	"LogActionsHandlers": {
+		"notifytranslators/sent": "TranslationNotificationsLogFormatter"
+	},
+	"MessagesDirs": {
+		"TranslationNotifications": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"TranslationNotificationsAlias": "TranslationNotifications.alias.php"
+	},
+	"AutoloadClasses": {
+		"SpecialTranslatorSignup": "SpecialTranslatorSignup.php",
+		"SpecialNotifyTranslators": "SpecialNotifyTranslators.php",
+		"TranslationNotificationsHooks": "TranslationNotificationsHooks.php",
+		"TranslationNotificationJob": "TranslationNotificationJob.php",
+		"DigestEmailer": "scripts/DigestEmailer.php",
+		"TranslationNotificationsLogFormatter": "TranslationNotificationsLogFormatter.php"
+	},
+	"ResourceModules": {
+		"ext.translationnotifications.notifytranslators": {
+			"scripts": "resources/ext.translationnotifications.notifytranslators.js",
+			"dependencies": [
+				"mediawiki.jqueryMsg",
+				"mediawiki.Uri",
+				"mediawiki.api",
+				"mediawiki.api.parse",
+				"mediawiki.user",
+				"jquery.ui.datepicker",
+				"ext.translate.multiselectautocomplete"
+			],
+			"messages": [
+				"translationnotifications-preview-notification-button",
+				"translationnotifications-talkpage-body",
+				"translationnotifications-generic-languages",
+				"translationnotifications-email-priority",
+				"translationnotifications-email-deadline"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "TranslationNotifications"
+	},
+	"Hooks": {
+		"GetPreferences": [
+			"TranslationNotificationsHooks::onGetPreferences"
+		]
+	},
+	"config": {
+		"TranslationNotificationsContactMethods": {
+			"email": true,
+			"talkpage": true,
+			"talkpage-elsewhere": false,
+			"feed": false
+		},
+		"NotificationUsername": false,
+		"NotificationUserPassword": false,
+		"TranslationNotificationsSignupLegalMessage": "translationnotifications-signup-legal",
+		"TranslationNotificationsAlwaysHttpsInEmail": false
+	},
+	"manifest_version": 1
+}
