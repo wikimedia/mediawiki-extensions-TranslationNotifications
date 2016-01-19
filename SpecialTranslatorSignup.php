@@ -22,6 +22,10 @@ class SpecialTranslatorSignup extends SpecialPage {
 		parent::__construct( 'TranslatorSignup' );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	protected function getGroupName() {
 		return 'login';
 	}

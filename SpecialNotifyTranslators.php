@@ -33,6 +33,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 		parent::__construct( 'NotifyTranslators', self::$right );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	protected function getGroupName() {
 		return 'users';
 	}
