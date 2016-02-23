@@ -10,7 +10,8 @@
 			"Urhixidur",
 			"Verdy p",
 			"Wyz",
-			"Wladek92"
+			"Wladek92",
+			"Fringio"
 		]
 	},
 	"translatorsignup": "Connexion du traducteur",
@@ -33,8 +34,8 @@
 	"translationnotifications-cmethod-feed": "Alimentation",
 	"translationnotifications-frequency": "Fréquence de contact",
 	"translationnotifications-freq-always": "Quand il y a quelque chose de nouveau à traduire",
-	"translationnotifications-freq-week": "Au moins une fois par semaine",
-	"translationnotifications-freq-month": "Au moins une fois par mois",
+	"translationnotifications-freq-week": "Une fois par semaine maximum",
+	"translationnotifications-freq-month": "Une fois par mois maximum",
 	"translationnotifications-freq-weekly": "Résumé hebdomadaire",
 	"translationnotifications-freq-monthly": "Résumé mensuel",
 	"translationnotifications-submit": "Mettre à jour les paramètres",
