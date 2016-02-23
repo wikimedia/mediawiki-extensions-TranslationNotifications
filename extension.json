@@ -65,6 +65,9 @@
 				"translationnotifications-email-priority",
 				"translationnotifications-email-deadline"
 			]
+		},
+		"ext.translationnotifications.translatorsignup": {
+			"scripts": "resources/ext.translationnotifications.translatorsignup.js"
 		}
 	},
 	"ResourceFileModulePaths": {

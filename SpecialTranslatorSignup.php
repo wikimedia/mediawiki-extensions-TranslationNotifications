@@ -40,7 +40,7 @@ class SpecialTranslatorSignup extends SpecialPage {
 		$this->outputHeader();
 
 		$context = $this->getContext();
-		$htmlForm = new HtmlForm( $this->getDataModel(), $context, 'translationnotifications' );
+		$htmlForm = new HTMLForm( $this->getDataModel(), $context, 'translationnotifications' );
 		$htmlForm->setId( 'translationnotifications-form' );
 		$htmlForm->setSubmitText( $context->msg( 'translationnotifications-submit' )->text() );
 		$htmlForm->setSubmitID( 'translationnotifications-submit' );
@@ -58,19 +58,7 @@ class SpecialTranslatorSignup extends SpecialPage {
 
 		$htmlForm->show();
 
-		$out->addInlineScript(
-<<<JAVASCRIPT
-jQuery( function ( $ ) {
-	var toggle = function () {
-		$( '#mw-input-wpcmethod-talkpage-elsewhere-loc' )
-			.toggle( $( '#mw-input-wpcmethod-talkpage-elsewhere' )
-			.prop( 'checked' ) );
-	};
-	toggle();
-	$( '#mw-input-wpcmethod-talkpage-elsewhere' ).change( toggle );
-} );
-JAVASCRIPT
-		);
+		$out->addModules( 'ext.translationnotifications.translatorsignup' );
 		// Show the legal text regarding the notifications.
 		// Do not show if value is empty or false.
 		if ( $wgTranslationNotificationsSignupLegalMessage ) {
