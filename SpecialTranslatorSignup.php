@@ -35,7 +35,7 @@ class SpecialTranslatorSignup extends SpecialPage {
 		if ( !$this->getUser()->isLoggedIn() ) {
 			throw new PermissionsError( 'read' );
 		}
-
+		$this->checkReadOnly();
 		$this->setHeaders();
 		$this->outputHeader();
 
