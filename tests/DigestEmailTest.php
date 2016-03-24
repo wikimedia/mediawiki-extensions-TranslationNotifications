@@ -114,49 +114,49 @@ class DigestEmailTest extends MediaWikiTestCase {
 	}
 
 	private function getNotifications() {
-		$notifications = array();
-		$notifications[] = array(
+		$notifications = [];
+		$notifications[] = [
 			'languages' => '', // all languages
 			'deadline' => '+1 month',
 			'priority' => 'medium',
 			'announcedate' => '-1 day',
 			'announcer' => 'me',
 			'translatablepage' => Title::newFromText( 'TestTitle' ),
-		);
+		];
 
 		return $notifications;
 	}
 
 	private function getNotificationsForInvalidLangs() {
-		$notifications = array();
-		$notifications[] = array(
+		$notifications = [];
+		$notifications[] = [
 			'languages' => 'invalid',
 			'deadline' => '+1 month',
 			'priority' => 'medium',
 			'announcedate' => '-1 day',
 			'announcer' => 'me',
 			'translatablepage' => Title::newFromText( 'TestTitle' ),
-		);
+		];
 
 		return $notifications;
 	}
 
 	private function getExpiredNotifications() {
-		$notifications = array();
-		$notifications[] = array(
+		$notifications = [];
+		$notifications[] = [
 			'languages' => '', // all languages
 			'deadline' => '-1 month',
 			'priority' => 'medium',
 			'announcedate' => '-1 day',
 			'announcer' => 'me',
 			'translatablepage' => Title::newFromText( 'TestTitle' ),
-		);
+		];
 
 		return $notifications;
 	}
 
 	private function getTranslators( $freq ) {
-		$translators = array();
+		$translators = [];
 		foreach ( $this->translators_conf as $translator_conf ) {
 			if ( $translator_conf['digest_frequency'] === $freq ) {
 				$translators[] = $this->getTranslator( $translator_conf );

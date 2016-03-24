@@ -37,10 +37,10 @@ class TranslationNotificationJob extends Job {
 		// mw-content-ltr, mw-content-rtl
 		return Html::rawElement(
 			'div',
-			array(
+			[
 				'lang' => $this->params['languageCode'],
 				'class' => "mw-content-$dir"
-			),
+			],
 			$this->params['text']
 		);
 	}
@@ -97,19 +97,19 @@ class TranslationNotificationJob extends Job {
 
 		// API: Get login token
 
-		$loginUrl = wfAppendQuery( $otherWikiBaseUrl, array(
+		$loginUrl = wfAppendQuery( $otherWikiBaseUrl, [
 			'action' => 'login',
 			'format' => 'json',
-		) );
+		] );
 		$getLoginTokenRequest = MWHttpRequest::factory(
 			$loginUrl,
-			array(
+			[
 				'method' => 'POST',
-				'postData' => array(
+				'postData' => [
 					'lgname' => $wgNotificationUsername,
 					'lgpassword' => $wgNotificationUserPassword,
-				)
-			)
+				]
+			]
 		);
 		$getLoginTokenRequest->execute();
 		$json = $getLoginTokenRequest->getContent();
@@ -131,14 +131,14 @@ class TranslationNotificationJob extends Job {
 
 		$loginRequest = MWHttpRequest::factory(
 			$loginUrl,
-			array(
+			[
 				'method' => 'POST',
-				'postData' => array(
+				'postData' => [
 					'lgname' => $wgNotificationUsername,
 					'lgpassword' => $wgNotificationUserPassword,
 					'lgtoken' => $loginToken,
-				)
-			)
+				]
+			]
 		);
 		$loginRequest->setCookieJar( $cookieJar );
 		$loginRequest->execute();
@@ -154,20 +154,20 @@ class TranslationNotificationJob extends Job {
 		// API: Get an edit token
 
 		$userTalkPage = $this->title->getFullText();
-		$editTokenUrl = wfAppendQuery( $otherWikiBaseUrl, array(
+		$editTokenUrl = wfAppendQuery( $otherWikiBaseUrl, [
 			'action' => 'query',
 			'format' => 'json',
-		) );
+		] );
 		$getEditTokenRequest = MWHttpRequest::factory(
 			$editTokenUrl,
-			array(
+			[
 				'method' => 'POST',
-				'postData' => array(
+				'postData' => [
 					'prop' => 'info',
 					'intoken' => 'edit',
 					'titles' => $userTalkPage,
-				)
-			)
+				]
+			]
 		);
 		$getEditTokenRequest->setCookieJar( $cookieJar );
 		$getEditTokenRequest->execute();
@@ -185,15 +185,15 @@ class TranslationNotificationJob extends Job {
 
 		// API: Edit the talk page
 
-		$editUrl = wfAppendQuery( $otherWikiBaseUrl, array(
+		$editUrl = wfAppendQuery( $otherWikiBaseUrl, [
 			'action' => 'edit',
 			'format' => 'json',
-		) );
+		] );
 		$editRequest = MWHttpRequest::factory(
 			$editUrl,
-			array(
+			[
 				'method' => 'POST',
-				'postData' => array(
+				'postData' => [
 					'title' => $userTalkPage,
 					'section' => 'new',
 					'text' => $this->textDiv(),
@@ -205,8 +205,8 @@ class TranslationNotificationJob extends Job {
 					// username to a username in their script.
 					'redirect' => '',
 					'bot' => '1', // Ignored if the user doesn't have the "bot" userright
-				)
-			)
+				]
+			]
 		);
 		$editRequest->setCookieJar( $cookieJar );
 		$editRequest->execute();

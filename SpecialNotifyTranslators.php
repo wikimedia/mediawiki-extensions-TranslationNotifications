@@ -65,7 +65,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$context->msg( 'translationnotifications-send-notification-button' )->text()
 		);
 		$htmlForm->setSubmitID( 'translationnotifications-send-notification-button' );
-		$htmlForm->setSubmitCallback( array( $this, 'submitNotifyTranslatorsForm' ) );
+		$htmlForm->setSubmitCallback( [ $this, 'submitNotifyTranslatorsForm' ] );
 		$htmlForm->prepareForm();
 		$result = $htmlForm->tryAuthorizedSubmit();
 		if ( $result === true || ( $result instanceof Status && $result->isGood() ) ) {
@@ -92,9 +92,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 	private function getFormFields( $tpage = 0 ) {
 		// Translatable pages dropdown
 		$translatablePages = MessageGroups::getGroupsByType( 'WikiPageMessageGroup' );
-		usort( $translatablePages, array( 'MessageGroups', 'groupLabelSort' ) );
+		usort( $translatablePages, [ 'MessageGroups', 'groupLabelSort' ] );
 
-		$translatablePagesOptions = array();
+		$translatablePagesOptions = [];
 		/**
 		 * @var WikiPageMessageGroup $page
 		 */
@@ -110,28 +110,28 @@ class SpecialNotifyTranslators extends SpecialPage {
 			return 'translationnotifications-error-no-translatable-pages';
 		}
 
-		$formFields = array();
+		$formFields = [];
 
 		$default = (int)$tpage !== 0 ? $tpage : 'unset';
-		$formFields['TranslatablePage'] = array(
+		$formFields['TranslatablePage'] = [
 			'type' => 'select',
-			'label-message' => array( 'translationnotifications-translatablepage-title' ),
+			'label-message' => [ 'translationnotifications-translatablepage-title' ],
 			'options' => $translatablePagesOptions,
 			'default' => $default
-		);
+		];
 
 		// Languages to notify input box
-		$formFields['LanguagesToNotify'] = array(
+		$formFields['LanguagesToNotify'] = [
 			'type' => 'text',
 			'rows' => 20,
 			'cols' => 80,
 			'label-message' => 'translationnotifications-languages-to-notify-label',
 			'help-message' => 'translationnotifications-languages-to-notify-label-help-message',
-		);
+		];
 
 		// Priority dropdown
-		$priorityOptions = array();
-		$priorities = array( 'unset', 'high', 'medium', 'low' );
+		$priorityOptions = [];
+		$priorities = [ 'unset', 'high', 'medium', 'low' ];
 
 		foreach ( $priorities as $priority ) {
 			$priorityMessage =
@@ -139,27 +139,27 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$priorityOptions[$priorityMessage] = $priority;
 		}
 
-		$formFields['Priority'] = array(
+		$formFields['Priority'] = [
 			'type' => 'select',
-			'label-message' => array( 'translationnotifications-priority' ),
+			'label-message' => [ 'translationnotifications-priority' ],
 			'options' => $priorityOptions,
 			'default' => 'unset',
-		);
+		];
 
 		// Deadline date input box with datepicker
-		$formFields['DeadlineDate'] = array(
+		$formFields['DeadlineDate'] = [
 			'type' => 'text',
 			'size' => 20,
 			'label-message' => 'translationnotifications-deadline-label',
-		);
+		];
 
 		// Custom text
-		$formFields['NotificationText'] = array(
+		$formFields['NotificationText'] = [
 			'type' => 'textarea',
 			'rows' => 20,
 			'cols' => 80,
 			'label-message' => 'emailmessage',
-		);
+		];
 
 		return $formFields;
 	}
@@ -190,9 +190,9 @@ class SpecialNotifyTranslators extends SpecialPage {
 
 		$dbr = wfGetDB( DB_SLAVE );
 		$propertyLikePattern = $dbr->buildLike( $langPropertyPrefix, $dbr->anyString() );
-		$translatorsConds = array(
+		$translatorsConds = [
 			"up_property $propertyLikePattern",
-		);
+		];
 
 		$pageSourceLangCode = $this->getSourceLanguage();
 
@@ -204,7 +204,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$languagesForLog = '';
 		if ( count( $languagesToNotify ) ) {
 			// Filter out the source language
-			$translatorsConds['up_value'] = array();
+			$translatorsConds['up_value'] = [];
 
 			foreach ( $languagesToNotify as $langCode ) {
 				if ( $langCode !== $pageSourceLangCode ) {
@@ -233,20 +233,20 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'DISTINCT'
 		);
 
-		$frequencies = array(
+		$frequencies = [
 			'always' => 0,
 			'week' => 604800, // seconds in week
 			'month' => 2678400, // seconds in month
 			'weekly' => 604800, // seconds in week
 			'monthly' => 2678400, // seconds in month
-		);
+		];
 		$currentUnixTime = wfTimestamp();
 		$currentDBTime = $dbr->timestamp( $currentUnixTime );
 
 		$count = 0;
 		$tooEarly = 0;
 		$timestampOptionName = 'translationnotifications-timestamp';
-		$jobs = array();
+		$jobs = [];
 		foreach ( $translators as $row ) {
 			$user = User::newFromID( $row->up_user );
 
@@ -302,14 +302,14 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$logEntry = new ManualLogEntry( 'notifytranslators', 'sent' );
 		$logEntry->setPerformer( $this->getUser() );
 		$logEntry->setTarget( $this->translatablePageTitle );
-		$logEntry->setParameters( array(
+		$logEntry->setParameters( [
 			'4::languagesForLog' => $languagesForLog,
 			'5::deadlineDate' => $this->deadlineDate,
 			'6::priority' => $this->priority,
 			'7::sentSuccess' => $count,
 			'8::sentFail' => 0,
 			'9::tooEarly' => $tooEarly,
-		) );
+		] );
 
 		$logid = $logEntry->insert();
 		$logEntry->publish( $logid );
@@ -352,7 +352,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * @return array of language codes.
 	 */
 	protected function getUserLanguages( $user ) {
-		$userLanguages = array();
+		$userLanguages = [];
 
 		foreach ( range( 1, 3 ) as $langNum ) {
 			$nextLanguage = $this->getUserLanguageOption( $user, $langNum );
@@ -440,11 +440,11 @@ class SpecialNotifyTranslators extends SpecialPage {
 			PROTO_HTTPS;
 
 		$translationURL = SpecialPage::getTitleFor( 'Translate' )->getFullURL(
-			array(
+			[
 				'group' => $page->getMessageGroupId(),
 				'language' => $languageCode,
 				'action' => 'page'
-			),
+			],
 			false,
 			$urlType
 		);
@@ -460,7 +460,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * @return string
 	 */
 	protected function getTranslationURLs( $languages, $contactMethod, $inLanguage ) {
-		$translationURLsItems = array();
+		$translationURLsItems = [];
 
 		foreach ( $languages as $code => $langName ) {
 			$translationURL = $this->getTranslationURL( $code );
@@ -512,7 +512,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$userLanguages = $this->getUserLanguages( $user );
 		$userFirstLanguageCode = $userLanguages[0];
 		$limitLanguages = count( $languagesToNotify );
-		$userLanguageNames = array();
+		$userLanguageNames = [];
 
 		foreach ( $userLanguages as $langCode ) {
 			// Don't add this language if particular languages were
@@ -542,7 +542,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * @return EmaillingJob
 	 */
 	protected function sendTranslationNotificationEmail( User $user,
-		$languagesToNotify = array()
+		$languagesToNotify = []
 	) {
 		global $wgNoReplyAddress;
 
@@ -580,13 +580,13 @@ class SpecialNotifyTranslators extends SpecialPage {
 			$sender->getRealName()
 		);
 		$emailTo = new MailAddress( $user );
-		$params = array(
+		$params = [
 			'to' => $emailTo,
 			'from' => $emailFrom,
 			'body' => $emailBody,
 			'subj' => $emailSubject,
 			'replyto' => $emailFrom,
-		);
+		];
 		return new EmaillingJob( $this->translatablePageTitle, $params );
 	}
 
@@ -599,7 +599,7 @@ class SpecialNotifyTranslators extends SpecialPage {
 	 * ('talkpageHere', default) or another one ('talkpageInOtherWiki').
 	 * @return TranslationNotificationJob
 	 */
-	public function leaveUserMessage( User $user, $languagesToNotify = array(),
+	public function leaveUserMessage( User $user, $languagesToNotify = [],
 		$destination = 'talkpageHere'
 	) {
 		$relevantLanguages = $this->getRelevantLanguages( $user, $languagesToNotify );
@@ -613,10 +613,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 		// Possible classes:
 		// mw-content-ltr, mw-content-rtl
 		$notificationText = Html::element( 'div',
-			array(
+			[
 				'lang' => $wgContLang->getCode(),
 				'class' => "mw-content-$dir"
-			),
+			],
 			$this->notificationText
 		);
 
@@ -650,12 +650,12 @@ class SpecialNotifyTranslators extends SpecialPage {
 			'translationnotifications-edit-summary',
 			$this->translatablePageTitle
 		)->inLanguage( $userFirstLanguage )->text();
-		$params = array(
+		$params = [
 			'text' => $text,
 			'editSummary' => $editSummary,
 			'editor' => $this->getUser()->getId(),
 			'languageCode' => $userFirstLanguageCode,
-		);
+		];
 
 		if ( $destination === 'talkpageInOtherWiki' ) {
 			$params['otherwiki'] =
