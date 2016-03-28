@@ -15,7 +15,7 @@
 class TranslationNotificationsHooks {
 	public static function onGetPreferences( $user, &$preferences ) {
 		foreach (
-			array(
+			[
 				'translationnotifications-lang-1',
 				'translationnotifications-lang-2',
 				'translationnotifications-lang-3',
@@ -23,11 +23,11 @@ class TranslationNotificationsHooks {
 				'translationnotifications-cmethod-talkpage',
 				'translationnotifications-cmethod-talkpage-elsewhere-loc',
 				'translationnotifications-freq',
-			) as $preference
+			] as $preference
 		) {
-			$preferences[$preference] = array(
+			$preferences[$preference] = [
 				'type' => 'api',
-			);
+			];
 		}
 
 		return true;

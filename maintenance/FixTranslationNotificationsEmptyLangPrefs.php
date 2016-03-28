@@ -31,10 +31,10 @@ class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
 
 		$dbw->delete(
 			'user_properties',
-			array(
+			[
 				"up_property $propertyLikePattern",
 				'up_value' => '',
-			),
+			],
 			__METHOD__
 		);
 	}

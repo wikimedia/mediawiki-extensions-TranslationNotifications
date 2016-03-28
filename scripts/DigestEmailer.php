@@ -44,7 +44,7 @@ class DigestEmailer extends Maintenance {
 	public function sendEmails( $translators, $notifications ) {
 		global $wgNoReplyAddress, $wgTranslationNotificationsAlwaysHttpsInEmail;
 
-		$mailstatus = array();
+		$mailstatus = [];
 		foreach ( $translators as $translator ) {
 			$notificationText = "";
 			$count = 0;
@@ -55,7 +55,7 @@ class DigestEmailer extends Maintenance {
 			$userName = $user->getName();
 			$this->output( "Sending digest to: $userName\n\t" .
 				"Frequency preference: $notificationFreq\n" );
-			$signedUpLangCodes = array();
+			$signedUpLangCodes = [];
 			foreach ( range( 1, 3 ) as $langNum ) {
 				$langCode = $user->getOption( "translationnotifications-lang-$langNum" );
 				if ( $langCode ) {
@@ -122,11 +122,11 @@ class DigestEmailer extends Maintenance {
 
 				$page = TranslatablePage::newFromTitle( $notification['translatablepage'] );
 				$translationURL = SpecialPage::getTitleFor( 'Translate' )->getFullURL(
-					array(
+					[
 						'group' => $page->getMessageGroupId(),
 						'language' => $firstLangCode,
 						'action' => 'page'
-					),
+					],
 					false,
 					$urlType
 				);
@@ -181,13 +181,13 @@ class DigestEmailer extends Maintenance {
 
 			$emailFrom = new MailAddress( $wgNoReplyAddress );
 			$emailTo = new MailAddress( $user );
-			$params = array(
+			$params = [
 				'to' => $emailTo,
 				'from' => $emailFrom,
 				'body' => $digestMailBody,
 				'subj' => $digestMailSubject,
 				'replyto' => $emailFrom,
-			);
+			];
 			$job = new EmaillingJob( null, $params );
 			JobQueueGroup::singleton()->push( $job );
 
@@ -199,12 +199,12 @@ class DigestEmailer extends Maintenance {
 	}
 
 	protected function sort( $notifications ) {
-		$prioritySet = array(
+		$prioritySet = [
 			'unset' => 0,
 			'low' => 1,
 			'medium' => 2,
 			'high' => 3
-		);
+		];
 		foreach ( $notifications as $key => $row ) {
 			$priority[$key] = $prioritySet[$row['priority']];
 			$announcedate[$key] = $row['announcedate'];
@@ -235,10 +235,10 @@ class DigestEmailer extends Maintenance {
 	}
 
 	protected function getTranslators() {
-		$translators = array();
+		$translators = [];
 		$dbr = wfGetDB( DB_SLAVE );
-		$translatorsConds = array( 'up_property' => 'translationnotifications-freq' );
-		$translatorsConds += array( 'up_value' => array( 'weekly', 'monthly' ) );
+		$translatorsConds = [ 'up_property' => 'translationnotifications-freq' ];
+		$translatorsConds += [ 'up_value' => [ 'weekly', 'monthly' ] ];
 		$result = $dbr->select(
 			'user_properties',
 			'up_user',
@@ -263,22 +263,22 @@ class DigestEmailer extends Maintenance {
 	protected function getNotifications() {
 		$dbr = wfGetDB( DB_SLAVE );
 		$logEntrySelectQuery = DatabaseLogEntry::getSelectQueryData();
-		$logFilter = array( 'log_type' => 'notifytranslators' );
+		$logFilter = [ 'log_type' => 'notifytranslators' ];
 		$lastMonthTimeStamp = $dbr->timestamp( strtotime( '-1 month' ) );
-		$logFilter += array(
+		$logFilter += [
 			"log_timestamp > $lastMonthTimeStamp",
-		);
+		];
 		$logEntrySelectQuery['conds'] = $logFilter;
 		$logs = $dbr->select(
 			$logEntrySelectQuery['tables'],
 			$logEntrySelectQuery['fields'],
 			$logEntrySelectQuery['conds'],
 			__METHOD__,
-			array( 'ORDER BY' => 'log_timestamp DESC' ),
+			[ 'ORDER BY' => 'log_timestamp DESC' ],
 			$logEntrySelectQuery['join_conds']
 		);
 
-		$notifications = array();
+		$notifications = [];
 		foreach ( $logs as $row ) {
 			$logEntry = DatabaseLogEntry::newFromRow( $row );
 			$logParams = $logEntry->getParameters();
@@ -291,14 +291,14 @@ class DigestEmailer extends Maintenance {
 				// An older notification about the same page.
 				continue;
 			}
-			$notifications[$translatablePage] = array(
+			$notifications[$translatablePage] = [
 				'languages' => $logParams[0],
 				'deadline' => $logParams[1],
 				'priority' => $logParams[2],
 				'announcedate' => wfTimestamp( TS_RFC2822, $logEntry->getTimestamp() ),
 				'announcer' => $logEntry->getPerformer(),
 				'translatablepage' => $logEntry->getTarget()
-			);
+			];
 		}
 
 		return $this->sort( $notifications );

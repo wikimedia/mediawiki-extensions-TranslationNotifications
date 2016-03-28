@@ -44,7 +44,7 @@ class SpecialTranslatorSignup extends SpecialPage {
 		$htmlForm->setId( 'translationnotifications-form' );
 		$htmlForm->setSubmitText( $context->msg( 'translationnotifications-submit' )->text() );
 		$htmlForm->setSubmitID( 'translationnotifications-submit' );
-		$htmlForm->setSubmitCallback( array( $this, 'formSubmit' ) );
+		$htmlForm->setSubmitCallback( [ $this, 'formSubmit' ] );
 
 		$out = $this->getOutput();
 
@@ -64,7 +64,7 @@ class SpecialTranslatorSignup extends SpecialPage {
 		if ( $wgTranslationNotificationsSignupLegalMessage ) {
 			$legalText = Html::RawElement(
 				'div',
-				array( 'class' => 'mw-infobox' ),
+				[ 'class' => 'mw-infobox' ],
 				$this->msg( $wgTranslationNotificationsSignupLegalMessage )->parseAsBlock()
 			);
 			$this->getOutput()->addHTML( $legalText );
@@ -74,12 +74,12 @@ class SpecialTranslatorSignup extends SpecialPage {
 	public function getDataModel() {
 		global $wgTranslationNotificationsContactMethods;
 
-		$m['username'] = array(
+		$m['username'] = [
 			'type' => 'info',
 			'label-message' => 'translationnotifications-username',
 			'default' => $this->getUser()->getName(),
 			'section' => 'info',
-		);
+		];
 
 		$user = $this->getUser();
 		if ( $user->isEmailConfirmed() ) {
@@ -91,7 +91,7 @@ class SpecialTranslatorSignup extends SpecialPage {
 		} elseif ( trim( $user->getEmail() ) !== '' ) {
 			$submit = Xml::submitButton(
 				$this->msg( 'confirmemail_send' )->text(),
-				array( 'name' => 'x' )
+				[ 'name' => 'x' ]
 			);
 			$status = $this->msg( 'translationnotifications-email-unconfirmed' )
 				->rawParams( $submit )->parse();
@@ -99,35 +99,35 @@ class SpecialTranslatorSignup extends SpecialPage {
 			$status = $this->msg( 'translationnotifications-email-notset' )->parse();
 		}
 
-		$m['emailstatus'] = array(
+		$m['emailstatus'] = [
 			'type' => 'info',
 			'label-message' => 'translationnotifications-emailstatus',
 			'default' => $status,
 			'section' => 'info',
 			'raw' => true,
-		);
+		];
 
 		$languages = Language::fetchLanguageNames();
 		ksort( $languages );
 
-		$options = array();
+		$options = [];
 		foreach ( $languages as $code => $name ) {
 			$display = wfBCP47( $code ) . ' - ' . $name;
 			$options[$display] = $code;
 		}
 
 		$options =
-			array( wfMessage( 'translationnotifications-nolang' )->plain() => '' ) + $options;
+			[ wfMessage( 'translationnotifications-nolang' )->plain() => '' ] + $options;
 
 		for ( $i = 1; $i < 4; $i++ ) {
 			$formatted = $this->getLanguage()->formatNum( $i );
-			$m["lang-$i"] = array(
+			$m["lang-$i"] = [
 				'type' => 'select',
-				'label-message' => array( 'translationnotifications-lang', $formatted ),
+				'label-message' => [ 'translationnotifications-lang', $formatted ],
 				'section' => 'languages',
 				'options' => $options,
 				'default' => $user->getOption( "translationnotifications-lang-$i" ),
-			);
+			];
 
 			if ( $i === 1 ) {
 				$m["lang-$i"]['default'] = $user->getOption(
@@ -147,12 +147,12 @@ class SpecialTranslatorSignup extends SpecialPage {
 			// translationnotifications-cmethod-email, translationnotifications-cmethod-talkpage,
 			// translationnotifications-cmethod-talkpage-elsewhere,
 			// translationnotifications-cmethod-feed
-			$m["cmethod-$method"] = array(
+			$m["cmethod-$method"] = [
 				'type' => 'check',
 				'label-message' => "translationnotifications-cmethod-$method",
 				'default' => $user->getOption( "translationnotifications-cmethod-$method" ),
 				'section' => 'contact',
-			);
+			];
 
 			if ( $method === 'email' ) {
 				$m["cmethod-$method"]['disabled'] = !$user->canReceiveEmail();
@@ -160,27 +160,27 @@ class SpecialTranslatorSignup extends SpecialPage {
 
 			global $wgLocalInterwiki;
 			if ( $method === 'talkpage-elsewhere' && $wgLocalInterwiki !== false ) {
-				$m['cmethod-talkpage-elsewhere-loc'] = array(
+				$m['cmethod-talkpage-elsewhere-loc'] = [
 					'type' => 'select',
 					'default' => $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere-loc' ),
 					'section' => 'contact',
 					'options' => $this->getOtherWikis(),
-				);
+				];
 			}
 		}
 
-		$m['freq'] = array(
+		$m['freq'] = [
 			'type' => 'radio',
 			'default' => $user->getOption( 'translationnotifications-freq', 'always' ),
 			'section' => 'frequency',
-			'options' => array(
+			'options' => [
 				$this->msg( 'translationnotifications-freq-always' )->text() => 'always',
 				$this->msg( 'translationnotifications-freq-week' )->text() => 'week',
 				$this->msg( 'translationnotifications-freq-month' )->text() => 'month',
 				$this->msg( 'translationnotifications-freq-weekly' )->text() => 'weekly',
 				$this->msg( 'translationnotifications-freq-monthly' )->text() => 'monthly',
-			),
-		);
+			],
+		];
 
 		return $m;
 	}
@@ -204,22 +204,22 @@ class SpecialTranslatorSignup extends SpecialPage {
 		}
 		$user->saveSettings();
 
-		$url = $form->getTitle()->getFullURL( array( 'signupresult' => 'submitted' ) );
+		$url = $form->getTitle()->getFullURL( [ 'signupresult' => 'submitted' ] );
 		$form->getContext()->getOutput()->redirect( $url );
 	}
 
 	protected function getOtherWikis() {
 		global $wgConf;
 		if ( !class_exists( 'CentralAuthUser' ) ) {
-			return array();
+			return [];
 		}
 		$globalUser = CentralAuthUser::getInstance( $this->getUser() );
 		if ( !$globalUser->exists() ) {
-			return array();
+			return [];
 		}
 
 		$matrix = new SiteMatrix();
-		$wikis = array();
+		$wikis = [];
 		foreach ( $globalUser->listAttached() as $dbname ) {
 			// Skip inactive and special wikis
 			list( $site, $lang ) = $wgConf->siteFromDB( $dbname );
