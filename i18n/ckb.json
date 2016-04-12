@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Calak"
+			"Calak",
+			"Sarchia"
 		]
 	},
-	"translationnotifications-cmethod-email": "ئیمەیل"
+	"translationnotifications-cmethod-email": "ئیمەیل",
+	"translationnotifications-nodeadline": "ھیچ"
 }
