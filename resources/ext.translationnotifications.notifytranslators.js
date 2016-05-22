@@ -54,7 +54,7 @@
 						uri = new mw.Uri(),
 						priority = '',
 						deadline = '',
-						translatablePage = $( '#mw-input-wpTranslatablePage :selected' ).text(),
+						translatablePage = $( '#mw-input-tpage :selected' ).text(),
 						userName = mw.user.getName(),
 						$priority = $( '#mw-input-wpPriority :selected' ),
 						deadlineDate = $( '#mw-input-wpDeadlineDate' ).val();

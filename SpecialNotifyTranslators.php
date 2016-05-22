@@ -71,14 +71,11 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 				'translationnotifications-error-no-translatable-pages' );
 		}
 
-		$tpage = $this->getRequest()->getInt( 'tpage' );
-		$tpage = $tpage !== 0 ? $tpage : 'unset';
-
 		$formFields['TranslatablePage'] = [
+			'name' => 'tpage',
 			'type' => 'select',
 			'label-message' => [ 'translationnotifications-translatablepage-title' ],
 			'options' => $pages,
-			'default' => $tpage,
 		];
 
 		// Dummy dropdown, will be invisible. Used as data source for language name autocompletion.
