@@ -18,7 +18,7 @@
  *
  * @ingroup SpecialPage TranslateSpecialPage
  */
-class SpecialNotifyTranslators extends SpecialPage {
+class SpecialNotifyTranslators extends FormSpecialPage {
 	public static $right = 'translate-manage';
 	private $notificationText = '';
 	/**
@@ -41,85 +41,58 @@ class SpecialNotifyTranslators extends SpecialPage {
 		return 'users';
 	}
 
-	public function execute( $parameters ) {
-		global $wgContLang;
-		$this->setHeaders();
+	protected function getMessagePrefix() {
+		return 'translationnotifications';
+	}
 
-		$this->checkPermissions();
-
-		$htmlFormDataModel = $this->getFormFields(
-			$this->getRequest()->getInt( 'tpage' )
-		);
-		$output = $this->getOutput();
-
-		if ( !is_array( $htmlFormDataModel ) ) {
-			$output->addWikiMsg( $htmlFormDataModel );
-
-			return;
-		}
-
-		$context = $this->getContext();
-		$htmlForm = new HtmlForm( $htmlFormDataModel, $context, 'translationnotifications' );
-		$htmlForm->setId( 'notifytranslators-form' );
-		$htmlForm->setSubmitText(
-			$context->msg( 'translationnotifications-send-notification-button' )->text()
-		);
-		$htmlForm->setSubmitID( 'translationnotifications-send-notification-button' );
-		$htmlForm->setSubmitCallback( [ $this, 'submitNotifyTranslatorsForm' ] );
-		$htmlForm->prepareForm();
-		$result = $htmlForm->tryAuthorizedSubmit();
-		if ( $result === true || ( $result instanceof Status && $result->isGood() ) ) {
-			$output->addWikiMsg( 'translationnotifications-submit-ok' );
-		} else {
-			$htmlForm->displayForm( $result );
-			// Dummy dropdown, will be invisible. Used as data source for language name autocompletion.
-			$languageSelector = Xml::languageSelector(
-				$wgContLang->getCode(),
-				false,
-				$this->getLanguage()->getCode()
-			);
-			$output->addHtml( $languageSelector[1] );
-		}
-		$output->addModules( 'ext.translationnotifications.notifytranslators' );
+	protected function alterForm( HTMLForm $form ) {
+		$form->setId( 'notifytranslators-form' );
+		$form->setSubmitID( 'translationnotifications-send-notification-button' );
+		$form->setSubmitTextMsg( 'translationnotifications-send-notification-button' );
+		$form->setWrapperLegend( false );
 	}
 
 	/**
-	 * Builds the form fields
+	 * Get the form fields for use by the HTMLForm.
+	 * We also set up the JavaScript needed on the form here.
 	 *
-	 * @param int $tpage Article ID to preselect as translatable page in form
-	 * @return array or string with an error message key in case of error
+	 * @return array
+	 * @throws ErrorPageError if there is no translatable page on this wiki
 	 */
-	private function getFormFields( $tpage = 0 ) {
-		// Translatable pages dropdown
-		$translatablePages = MessageGroups::getGroupsByType( 'WikiPageMessageGroup' );
-		usort( $translatablePages, [ 'MessageGroups', 'groupLabelSort' ] );
-
-		$translatablePagesOptions = [];
-		/**
-		 * @var WikiPageMessageGroup $page
-		 */
-		foreach ( $translatablePages as $page ) {
-			if ( MessageGroups::getPriority( $page ) === 'discouraged' ) {
-				continue;
-			}
-			$title = $page->getTitle();
-			$translatablePagesOptions[$title->getPrefixedText()] = $title->getArticleID();
-		}
-
-		if ( !count( $translatablePagesOptions ) ) {
-			return 'translationnotifications-error-no-translatable-pages';
-		}
+	protected function getFormFields() {
+		global $wgContLang;
+		$this->getOutput()->addModules( 'ext.translationnotifications.notifytranslators' );
 
 		$formFields = [];
 
-		$default = (int)$tpage !== 0 ? $tpage : 'unset';
+		$pages = $this->getTranslatablePages();
+		if ( count( $pages ) === 0 ) {
+			throw new ErrorPageError( 'notifytranslators',
+				'translationnotifications-error-no-translatable-pages' );
+		}
+
+		$tpage = $this->getRequest()->getInt( 'tpage' );
+		$tpage = $tpage !== 0 ? $tpage : 'unset';
+
 		$formFields['TranslatablePage'] = [
 			'type' => 'select',
 			'label-message' => [ 'translationnotifications-translatablepage-title' ],
-			'options' => $translatablePagesOptions,
-			'default' => $default
+			'options' => $pages,
+			'default' => $tpage,
 		];
 
+		// Dummy dropdown, will be invisible. Used as data source for language name autocompletion.
+		// @todo Implement a proper field with everything needed for this and make this less hackish
+		$languageSelector = Xml::languageSelector(
+			$wgContLang->getCode(),
+			false,
+			$this->getLanguage()->getCode()
+		);
+		$formFields['LanguagesList'] = [
+			'type' => 'info',
+			'raw' => true,
+			'default' => $languageSelector[1],
+		];
 		// Languages to notify input box
 		$formFields['LanguagesToNotify'] = [
 			'type' => 'text',
@@ -164,6 +137,29 @@ class SpecialNotifyTranslators extends SpecialPage {
 		return $formFields;
 	}
 
+	/**
+	 * @return array
+	 */
+	protected function getTranslatablePages() {
+		$translatablePages = MessageGroups::getGroupsByType( 'WikiPageMessageGroup' );
+		usort( $translatablePages, [ 'MessageGroups', 'groupLabelSort' ] );
+
+		$translatablePagesOptions = [];
+		/**
+		 * @var WikiPageMessageGroup $page
+		 */
+		foreach ( $translatablePages as $page ) {
+			if ( MessageGroups::getPriority( $page ) === 'discouraged' ) {
+				continue;
+			}
+			$title = $page->getTitle();
+			$translatablePagesOptions[$title->getPrefixedText()] = $title->getArticleID();
+
+		}
+
+		return $translatablePagesOptions;
+	}
+
 	private function getSourceLanguage() {
 		if ( $this->sourceLanguageCode === '' ) {
 			$translatablePage = TranslatablePage::newFromTitle( $this->translatablePageTitle );
@@ -176,9 +172,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 	/**
 	 * Callback for the submit button.
 	 *
+	 * @param array $formData
 	 * @todo Document
 	 */
-	public function submitNotifyTranslatorsForm( $formData, $form ) {
+	public function onSubmit( array $formData ) {
 		$this->translatablePageTitle = Title::newFromID( $formData['TranslatablePage'] );
 		$this->notificationText = $formData['NotificationText'];
 		$this->priority = $formData['Priority'];
@@ -315,6 +312,10 @@ class SpecialNotifyTranslators extends SpecialPage {
 		$logEntry->publish( $logid );
 
 		return true;
+	}
+
+	public function onSuccess() {
+		$this->getOutput()->addWikiMsg( 'translationnotifications-submit-ok' );
 	}
 
 	protected function getNotificationSubject( $userFirstLanguage ) {
