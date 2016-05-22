@@ -141,7 +141,10 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		$translatablePages = MessageGroups::getGroupsByType( 'WikiPageMessageGroup' );
 		usort( $translatablePages, [ 'MessageGroups', 'groupLabelSort' ] );
 
-		$translatablePagesOptions = [];
+		$titles = [];
+		// Retrieving article id requires doing DB queries.
+		// Make it more efficient by batching into one query.
+		$lb = new LinkBatch();
 		/**
 		 * @var WikiPageMessageGroup $page
 		 */
@@ -150,8 +153,14 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 				continue;
 			}
 			$title = $page->getTitle();
-			$translatablePagesOptions[$title->getPrefixedText()] = $title->getArticleID();
+			$lb->addObj( $title );
+			$titles[] = $title;
+		}
+		$lb->execute();
 
+		$translatablePagesOptions = [];
+		foreach ( $titles as $title ) {
+			$translatablePagesOptions[$title->getPrefixedText()] = $title->getArticleID();
 		}
 
 		return $translatablePagesOptions;
