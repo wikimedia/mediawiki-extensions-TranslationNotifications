@@ -52,17 +52,17 @@ class TranslationNotificationJob extends Job {
 		}
 
 		// API: Get login token
-		$loginUrl = wfAppendQuery( $baseUrl, [
-			'action' => 'login',
+		$tokenUrl = wfAppendQuery( $baseUrl, [
+			'action' => 'query',
 			'format' => 'json',
 		] );
 		$getLoginTokenRequest = MWHttpRequest::factory(
-			$loginUrl,
+			$tokenUrl,
 			[
 				'method' => 'POST',
 				'postData' => [
-					'lgname' => $wgNotificationUsername,
-					'lgpassword' => $wgNotificationUserPassword,
+					'meta' => 'tokens',
+					'type' => 'login',
 				]
 			]
 		);
@@ -72,18 +72,16 @@ class TranslationNotificationJob extends Job {
 
 		$response = FormatJson::decode( $json, true );
 
-		// TODO: Is this really the best way to test success?
-		if ( $response['login']['result'] !== 'NeedToken' ) {
-			return "Error getting a login token";
-		}
-
-		$loginToken = $response['login']['token'];
+		$loginToken = $response['query']['tokens']['logintoken'];
 		if ( strlen( $loginToken ) < 4 ) {
 			return "Error: Login token too short";
 		}
 
 		// API: Do the login
-
+		$loginUrl = wfAppendQuery( $baseUrl, [
+			'action' => 'login',
+			'format' => 'json',
+		] );
 		$loginRequest = MWHttpRequest::factory(
 			$loginUrl,
 			[
@@ -107,14 +105,9 @@ class TranslationNotificationJob extends Job {
 		}
 
 		// API: Get an edit token
-
 		$userTalkPage = $this->title->getFullText();
-		$editTokenUrl = wfAppendQuery( $baseUrl, [
-			'action' => 'query',
-			'format' => 'json',
-		] );
 		$getEditTokenRequest = MWHttpRequest::factory(
-			$editTokenUrl,
+			$tokenUrl,
 			[
 				'method' => 'POST',
 				'postData' => [
@@ -129,14 +122,12 @@ class TranslationNotificationJob extends Job {
 		$response = FormatJson::decode( $json, true );
 
 		$editToken = $response['query']['tokens']['csrftoken'];
-
 		// TODO: Is this really the best way to test success?
 		if ( strlen( $editToken ) < 4 ) {
 			return "Edit token too short";
 		}
 
 		// API: Edit the talk page
-
 		$editUrl = wfAppendQuery( $baseUrl, [
 			'action' => 'edit',
 			'format' => 'json',
