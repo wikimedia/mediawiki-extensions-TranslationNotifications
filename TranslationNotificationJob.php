@@ -15,11 +15,7 @@ class TranslationNotificationJob extends Job {
 	 * @return bool
 	 */
 	public function run() {
-		if ( isset( $this->params['otherwiki'] ) ) {
-			$status = $this->publishInOtherWiki();
-		} else {
-			$status = $this->publishHere();
-		}
+		$status = $this->publishInWiki();
 
 		if ( $status !== true ) {
 			$this->setLastError( $status );
@@ -45,59 +41,18 @@ class TranslationNotificationJob extends Job {
 		);
 	}
 
-	private function publishHere() {
-		$text = '== ' . $this->params['editSummary'] . " ==\n\n" . $this->textDiv();
-
-		$talkPage = WikiPage::factory( $this->title );
-		$flags = $talkPage->checkFlags( 0 );
-		if ( $flags & EDIT_UPDATE ) {
-			$content = $talkPage->getContent( Revision::RAW );
-			if ( $content instanceof TextContent ) {
-				$textContent = $content->getNativeData();
-			} else {
-				// Cannot do anything with non-TextContent pages. Shouldn't happen.
-				return true;
-			}
-
-			$text = $textContent . "\n" . $text;
-		}
-
-		global $wgNotificationUsername, $wgNotificationUserPassword;
-		$user = User::newFromName( $wgNotificationUsername );
-		if ( $user->isAllowed( 'bot' ) ) {
-			$flags = $flags | EDIT_FORCE_BOT; // If the user has the bot right, mark edit as bot
-		}
-
-		// If user doesn't exist
-		if ( !$user->getId() ) {
-			$user->addToDatabase();
-			$user->setPassword( $wgNotificationUserPassword );
-			$user->saveSettings();
-			// Increment site_stats.ss_users
-			$ssu = new SiteStatsUpdate( 0, 0, 0, 0, 1 );
-			$ssu->doUpdate();
-		}
-
-		$status = $talkPage->doEditContent(
-			ContentHandler::makeContent( $text, $this->title ),
-			$this->params['editSummary'],
-			$flags,
-			false,
-			$user
-		);
-
-		return $status->isGood();
-	}
-
-	private function publishInOtherWiki() {
+	private function publishInWiki() {
 		global $wgNotificationUsername, $wgNotificationUserPassword;
 
-		$wiki = WikiMap::getWiki( $this->params['otherwiki'] );
-		$otherWikiBaseUrl = $wiki->getCanonicalServer() . wfScript( 'api' );
+		if ( isset( $this->params['otherwiki'] ) ) {
+			$wiki = WikiMap::getWiki( $this->params['otherwiki'] );
+			$baseUrl = $wiki->getCanonicalServer() . wfScript( 'api' );
+		} else {
+			$baseUrl = wfExpandUrl( wfScript( 'api' ), PROTO_CANONICAL );
+		}
 
 		// API: Get login token
-
-		$loginUrl = wfAppendQuery( $otherWikiBaseUrl, [
+		$loginUrl = wfAppendQuery( $baseUrl, [
 			'action' => 'login',
 			'format' => 'json',
 		] );
@@ -154,7 +109,7 @@ class TranslationNotificationJob extends Job {
 		// API: Get an edit token
 
 		$userTalkPage = $this->title->getFullText();
-		$editTokenUrl = wfAppendQuery( $otherWikiBaseUrl, [
+		$editTokenUrl = wfAppendQuery( $baseUrl, [
 			'action' => 'query',
 			'format' => 'json',
 		] );
@@ -185,7 +140,7 @@ class TranslationNotificationJob extends Job {
 
 		// API: Edit the talk page
 
-		$editUrl = wfAppendQuery( $otherWikiBaseUrl, [
+		$editUrl = wfAppendQuery( $baseUrl, [
 			'action' => 'edit',
 			'format' => 'json',
 		] );
