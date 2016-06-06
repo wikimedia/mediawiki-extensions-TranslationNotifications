@@ -627,12 +627,12 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 			$this->notificationText
 		);
 
-		global $wgLocalInterwiki;
+		global $wgLocalInterwikis;
 
 		$titleForMessage = $this->translatablePageTitle;
 
-		if ( $destination === 'talkpageInOtherWiki' && $wgLocalInterwiki !== false ) {
-			$titleForMessage = ":$wgLocalInterwiki:$titleForMessage|$titleForMessage";
+		if ( $destination === 'talkpageInOtherWiki' && count( $wgLocalInterwikis ) ) {
+			$titleForMessage = ":$wgLocalInterwikis[0]:$titleForMessage|$titleForMessage";
 		}
 
 		$text = $this->msg(

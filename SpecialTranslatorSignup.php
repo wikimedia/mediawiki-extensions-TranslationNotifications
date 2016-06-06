@@ -158,8 +158,8 @@ class SpecialTranslatorSignup extends SpecialPage {
 				$m["cmethod-$method"]['disabled'] = !$user->canReceiveEmail();
 			}
 
-			global $wgLocalInterwiki;
-			if ( $method === 'talkpage-elsewhere' && $wgLocalInterwiki !== false ) {
+			global $wgLocalInterwikis;
+			if ( $method === 'talkpage-elsewhere' && count( $wgLocalInterwikis ) ) {
 				$m['cmethod-talkpage-elsewhere-loc'] = [
 					'type' => 'select',
 					'default' => $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere-loc' ),
