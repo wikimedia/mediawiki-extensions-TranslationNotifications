@@ -118,9 +118,7 @@ class TranslationNotificationJob extends Job {
 			[
 				'method' => 'POST',
 				'postData' => [
-					'prop' => 'info',
-					'intoken' => 'edit',
-					'titles' => $userTalkPage,
+					'meta' => 'tokens',
 				]
 			]
 		);
@@ -130,8 +128,7 @@ class TranslationNotificationJob extends Job {
 
 		$response = FormatJson::decode( $json, true );
 
-		$editTokenData = array_shift( $response['query']['pages'] );
-		$editToken = $editTokenData['edittoken'];
+		$editToken = $response['query']['tokens']['csrftoken'];
 
 		// TODO: Is this really the best way to test success?
 		if ( strlen( $editToken ) < 4 ) {
