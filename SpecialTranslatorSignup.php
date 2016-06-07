@@ -81,12 +81,13 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 				$status = $this->msg( 'translationnotifications-email-confirmed' )->parse();
 			}
 		} elseif ( trim( $user->getEmail() ) !== '' ) {
-			$submit = Xml::submitButton(
-				$this->msg( 'confirmemail_send' )->text(),
-				[ 'name' => 'x' ]
+			$confirmMail = Linker::linkKnown(
+				SpecialPage::getTitleFor( 'Confirmemail' ),
+				$this->msg( 'emailconfirmlink' )->escaped()
 			);
 			$status = $this->msg( 'translationnotifications-email-unconfirmed' )
-				->rawParams( $submit )->parse();
+				->rawParams( $confirmMail )->parse();
+
 		} else {
 			$status = $this->msg( 'translationnotifications-email-notset' )->parse();
 		}
@@ -182,12 +183,6 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 	 */
 	public function onSubmit( array $formData ) {
 		$user = $this->getUser();
-
-		if ( $this->getRequest()->getVal( 'x' ) === $this->msg( 'confirmemail_send' )->text() ) {
-			// @todo Show message to user.
-			$user->sendConfirmationMail( 'set' );
-			return;
-		}
 
 		foreach ( $formData as $key => $value ) {
 			$user->setOption( "translationnotifications-$key", $value );

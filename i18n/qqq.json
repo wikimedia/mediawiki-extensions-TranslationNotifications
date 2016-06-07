@@ -21,7 +21,7 @@
 	"translationnotifications-emailstatus": "Label",
 	"translationnotifications-email-confirmed": "Status of email confirmation after {{msg-mw|translationnotifications-emailstatus}}.",
 	"translationnotifications-email-disablemail": "A message that appears on top of Special:TranslatorSignup if the email address is confirmed, the user disabled email in the preferences.",
-	"translationnotifications-email-unconfirmed": "Status of email confirmation after {{msg-mw|Translationnotifications-emailstatus}}.\n\nParameters:\n* $1 - a button which can be used to send confirmation email. Button text is {{msg-mw|Confirmemail send}}.",
+	"translationnotifications-email-unconfirmed": "Status of email confirmation after {{msg-mw|Translationnotifications-emailstatus}}.\n\nParameters:\n* $1 - link to Special:Confirmemail. Label of the link is {{msg-mw|emailconfirmlink}}.",
 	"translationnotifications-email-notset": "Status of email confirmation after {{msg-mw|translationnotifications-emailstatus}}.",
 	"translationnotifications-languages": "Fieldset header.\n{{Identical|Language}}",
 	"translationnotifications-lang": "Label for select. Parameters:\n* $1 - a number\n{{Identical|Language}}",
