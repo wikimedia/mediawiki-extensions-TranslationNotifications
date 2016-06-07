@@ -83,7 +83,8 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		$languageSelector = Xml::languageSelector(
 			$wgContLang->getCode(),
 			false,
-			$this->getLanguage()->getCode()
+			$this->getLanguage()->getCode(),
+			[ 'style' => 'display: none;' ]
 		);
 		$formFields['LanguagesList'] = [
 			'type' => 'info',
