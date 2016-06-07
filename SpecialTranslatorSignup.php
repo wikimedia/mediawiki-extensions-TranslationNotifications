@@ -182,8 +182,9 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 	 * @param array $formData
 	 */
 	public function onSubmit( array $formData ) {
-		$user = $this->getUser();
+		$user = $this->getUser()->getInstanceForUpdate();
 
+		// @todo Needs input validation
 		foreach ( $formData as $key => $value ) {
 			$user->setOption( "translationnotifications-$key", $value );
 		}
