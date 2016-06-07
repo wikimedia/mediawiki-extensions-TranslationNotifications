@@ -17,7 +17,7 @@
  * @ingroup SpecialPage TranslateSpecialPage
  */
 
-class SpecialTranslatorSignup extends SpecialPage {
+class SpecialTranslatorSignup extends FormSpecialPage {
 	public function __construct() {
 		parent::__construct( 'TranslatorSignup' );
 	}
@@ -30,58 +30,50 @@ class SpecialTranslatorSignup extends SpecialPage {
 		return 'login';
 	}
 
-	public function execute( $parameters ) {
+	public function execute( $par ) {
+		$this->requireLogin();
+		parent::execute( $par );
+	}
+
+	protected function getMessagePrefix() {
+		return 'translationnotifications';
+	}
+
+	protected function alterForm( HTMLForm $form ) {
 		global $wgTranslationNotificationsSignupLegalMessage;
-		if ( !$this->getUser()->isLoggedIn() ) {
-			throw new PermissionsError( 'read' );
-		}
-		$this->checkReadOnly();
-		$this->setHeaders();
-		$this->outputHeader();
 
-		$context = $this->getContext();
-		$htmlForm = new HTMLForm( $this->getDataModel(), $context, 'translationnotifications' );
-		$htmlForm->setId( 'translationnotifications-form' );
-		$htmlForm->setSubmitText( $context->msg( 'translationnotifications-submit' )->text() );
-		$htmlForm->setSubmitID( 'translationnotifications-submit' );
-		$htmlForm->setSubmitCallback( [ $this, 'formSubmit' ] );
+		$form->setWrapperLegend( false );
+		$form->setId( 'translationnotifications-form' );
+		$form->setSubmitID( 'translationnotifications-submit' );
+		$form->setSubmitTextMsg( 'translationnotifications-submit' );
+		// Override FormSpecialPage. Otherwise 'translationnotifications-text'
+		// shown on Special:NotifyTranslators is shown here
+		$form->setHeaderText( $this->msg( 'translatorsignup-summary' )->parseAsBlock() );
 
-		$out = $this->getOutput();
-
-		$signUpResult = $this->getRequest()->getText( 'signupresult' );
-		if ( $signUpResult === 'submitted' ) {
-			$out->wrapWikiMsg(
-				"<div class=\"successbox\">\n$1\n</div>",
-				'translationnotifications-signup-success'
-			);
-		}
-
-		$htmlForm->show();
-
-		$out->addModules( 'ext.translationnotifications.translatorsignup' );
-		// Show the legal text regarding the notifications.
-		// Do not show if value is empty or false.
 		if ( $wgTranslationNotificationsSignupLegalMessage ) {
-			$legalText = Html::RawElement(
+			// Show the legal text regarding the notifications.
+			// Do not show if value is empty or false.
+			$legalText = Html::rawElement(
 				'div',
 				[ 'class' => 'mw-infobox' ],
 				$this->msg( $wgTranslationNotificationsSignupLegalMessage )->parseAsBlock()
 			);
-			$this->getOutput()->addHTML( $legalText );
+			$form->addPostText( $legalText );
 		}
 	}
 
-	public function getDataModel() {
+	protected function getFormFields() {
 		global $wgTranslationNotificationsContactMethods;
+		$this->getOutput()->addModules( 'ext.translationnotifications.translatorsignup' );
+		$user = $this->getUser();
 
 		$m['username'] = [
 			'type' => 'info',
 			'label-message' => 'translationnotifications-username',
-			'default' => $this->getUser()->getName(),
+			'default' => $user->getName(),
 			'section' => 'info',
 		];
 
-		$user = $this->getUser();
 		if ( $user->isEmailConfirmed() ) {
 			if ( $user->getOption( 'disablemail' ) ) {
 				$status = $this->msg( 'translationnotifications-email-disablemail' )->parse();
@@ -187,15 +179,13 @@ class SpecialTranslatorSignup extends SpecialPage {
 
 	/**
 	 * @param array $formData
-	 * @param HTMLForm $form
-	 * @see HTMLForm::setSubmitCallback
 	 */
-	public function formSubmit( $formData, $form ) {
+	public function onSubmit( array $formData ) {
 		$user = $this->getUser();
 
 		if ( $this->getRequest()->getVal( 'x' ) === $this->msg( 'confirmemail_send' )->text() ) {
+			// @todo Show message to user.
 			$user->sendConfirmationMail( 'set' );
-
 			return;
 		}
 
@@ -204,8 +194,14 @@ class SpecialTranslatorSignup extends SpecialPage {
 		}
 		$user->saveSettings();
 
-		$url = $form->getTitle()->getFullURL( [ 'signupresult' => 'submitted' ] );
-		$form->getContext()->getOutput()->redirect( $url );
+		return true;
+	}
+
+	public function onSuccess() {
+		$this->getOutput()->wrapWikiMsg(
+			"<div class=\"successbox\">\n$1\n</div>",
+			'translationnotifications-signup-success'
+		);
 	}
 
 	protected function getOtherWikis() {
