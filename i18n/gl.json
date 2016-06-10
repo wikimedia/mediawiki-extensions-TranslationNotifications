@@ -63,5 +63,6 @@
 	"translationnotifications-log-alllanguages": "todas as linguas",
 	"translationnotifications-nodeadline": "ningunha",
 	"translationnotifications-signup-legal": "Acepta que ao proporcionar esta información podemos poñernos en contacto con vostede por temas relacionados con {{SITENAME}} que pensemos que poidan ser do seu interese. Acepta que os seus datos están suxeitos á nosa [[{{MediaWiki:Privacypage}}|política de protección de datos]].",
-	"translationnotifications-generic-languages": "&lt;linguas>"
+	"translationnotifications-generic-languages": "&lt;linguas>",
+	"translationnotifications-text": "Use o seguinte formulario para enviar as solicitudes de tradución ós tradutores."
 }
