@@ -420,19 +420,22 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	 * @return string Sinup URL
 	 */
 	protected function getSignupURL() {
-		global $wgTranslationNotificationsAlwaysHttpsInEmail;
-
-		$urlType = $wgTranslationNotificationsAlwaysHttpsInEmail === false ?
-			PROTO_CANONICAL :
-			PROTO_HTTPS;
-
 		$signupURL = SpecialPage::getTitleFor( 'TranslatorSignup' )->getFullURL(
 			'',
 			false,
-			$urlType
+			$this->getUrlProtocol()
 		);
 
 		return $signupURL;
+	}
+
+	/**
+	 * @return string
+	 */
+	protected function getUrlProtocol() {
+		return $this->getConfig()->get( 'TranslationNotificationsAlwaysHttpsInEmail' ) === false
+			? PROTO_CANONICAL
+			: PROTO_HTTPS;
 	}
 
 	/**
@@ -440,13 +443,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	 * @return string Translation URL
 	 */
 	protected function getTranslationURL( $languageCode ) {
-		global $wgTranslationNotificationsAlwaysHttpsInEmail;
-
 		$page = TranslatablePage::newFromTitle( $this->translatablePageTitle );
-		$urlType = $wgTranslationNotificationsAlwaysHttpsInEmail === false ?
-			PROTO_CANONICAL :
-			PROTO_HTTPS;
-
 		$translationURL = SpecialPage::getTitleFor( 'Translate' )->getFullURL(
 			[
 				'group' => $page->getMessageGroupId(),
@@ -454,7 +451,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 				'action' => 'page'
 			],
 			false,
-			$urlType
+			$this->getUrlProtocol()
 		);
 
 		return $translationURL;
@@ -552,8 +549,6 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	protected function sendTranslationNotificationEmail( User $user,
 		$languagesToNotify = []
 	) {
-		global $wgNoReplyAddress;
-
 		$relevantLanguages = $this->getRelevantLanguages( $user, $languagesToNotify );
 		$userFirstLanguage = Language::factory( $this->getUserFirstLanguage( $user ) );
 		$emailSubject = self::getNotificationSubject( $userFirstLanguage );
@@ -583,7 +578,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 
 		// Do not publish the sender's email, but include his/her name
 		$emailFrom = new MailAddress(
-			$wgNoReplyAddress,
+			$this->getConfig()->get( 'NoReplyAddress' ),
 			$sender->getName(),
 			$sender->getRealName()
 		);
@@ -628,12 +623,11 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 			$this->notificationText
 		);
 
-		global $wgLocalInterwikis;
-
 		$titleForMessage = $this->translatablePageTitle;
 
-		if ( $destination === 'talkpageInOtherWiki' && count( $wgLocalInterwikis ) ) {
-			$titleForMessage = ":$wgLocalInterwikis[0]:$titleForMessage|$titleForMessage";
+		$localInterwikis = $this->getConfig()->get( 'LocalInterwikis' );
+		if ( $destination === 'talkpageInOtherWiki' && count( $localInterwikis ) ) {
+			$titleForMessage = ":$localInterwikis[0]:$titleForMessage|$titleForMessage";
 		}
 
 		$text = $this->msg(

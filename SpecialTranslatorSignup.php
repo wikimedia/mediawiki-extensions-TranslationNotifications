@@ -40,8 +40,6 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 	}
 
 	protected function alterForm( HTMLForm $form ) {
-		global $wgTranslationNotificationsSignupLegalMessage;
-
 		$form->setWrapperLegend( false );
 		$form->setId( 'translationnotifications-form' );
 		$form->setSubmitID( 'translationnotifications-submit' );
@@ -49,21 +47,23 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		// Override FormSpecialPage. Otherwise 'translationnotifications-text'
 		// shown on Special:NotifyTranslators is shown here
 		$form->setHeaderText( $this->msg( 'translatorsignup-summary' )->parseAsBlock() );
+	}
 
-		if ( $wgTranslationNotificationsSignupLegalMessage ) {
+	protected function postText() {
+		$legalMsg = $this->getConfig()->get( 'TranslationNotificationsSignupLegalMessage' );
+		if ( $legalMsg ) {
 			// Show the legal text regarding the notifications.
 			// Do not show if value is empty or false.
-			$legalText = Html::rawElement(
+			return Html::rawElement(
 				'div',
 				[ 'class' => 'mw-infobox' ],
-				$this->msg( $wgTranslationNotificationsSignupLegalMessage )->parseAsBlock()
+				$this->msg( $legalMsg )->parseAsBlock()
 			);
-			$form->addPostText( $legalText );
 		}
+		return '';
 	}
 
 	protected function getFormFields() {
-		global $wgTranslationNotificationsContactMethods;
 		$this->getOutput()->addModules( 'ext.translationnotifications.translatorsignup' );
 		$user = $this->getUser();
 
@@ -131,7 +131,9 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 			}
 		}
 
-		foreach ( $wgTranslationNotificationsContactMethods as $method => $value ) {
+		$config = $this->getConfig();
+		$contactMethods = $config->get( 'TranslationNotificationsContactMethods' );
+		foreach ( $contactMethods as $method => $value ) {
 			if ( $value === false ) {
 				continue;
 			}
@@ -151,8 +153,8 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 				$m["cmethod-$method"]['disabled'] = !$user->canReceiveEmail();
 			}
 
-			global $wgLocalInterwikis;
-			if ( $method === 'talkpage-elsewhere' && count( $wgLocalInterwikis ) ) {
+			$localInterwikis = $config->get( 'LocalInterwikis' );
+			if ( $method === 'talkpage-elsewhere' && count( $localInterwikis ) ) {
 				$m['cmethod-talkpage-elsewhere-loc'] = [
 					'type' => 'select',
 					'default' => $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere-loc' ),
