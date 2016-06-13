@@ -42,7 +42,12 @@ class DigestEmailer extends Maintenance {
 	}
 
 	public function sendEmails( $translators, $notifications ) {
-		global $wgNoReplyAddress, $wgTranslationNotificationsAlwaysHttpsInEmail;
+		$config = $this->getConfig();
+		// Initialize early to avoid calling these repeatedly within the loop
+		$noReplyAddress = $config->get( 'NoReplyAddress' );
+		$urlType = $config->get( 'TranslationNotificationsAlwaysHttpsInEmail' ) === false
+			? PROTO_CANONICAL
+			: PROTO_HTTPS;
 
 		$mailstatus = [];
 		foreach ( $translators as $translator ) {
@@ -90,10 +95,6 @@ class DigestEmailer extends Maintenance {
 			}
 			$this->output( "\tSending notification since " .
 				date( 'D M j G:i:s T Y', $startTimeStamp ) . " \n" );
-
-			$urlType = $wgTranslationNotificationsAlwaysHttpsInEmail === false ?
-				PROTO_CANONICAL :
-				PROTO_HTTPS;
 
 			foreach ( $notifications as $notification ) {
 				$announcedate = strtotime( $notification['announcedate'] );
@@ -179,7 +180,7 @@ class DigestEmailer extends Maintenance {
 				$signupURL
 			)->inLanguage( $firstLangCode )->text();
 
-			$emailFrom = new MailAddress( $wgNoReplyAddress );
+			$emailFrom = new MailAddress( $noReplyAddress );
 			$emailTo = new MailAddress( $user );
 			$params = [
 				'to' => $emailTo,
