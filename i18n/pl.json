@@ -12,7 +12,7 @@
 		]
 	},
 	"translatorsignup": "Rejestracja tłumacza",
-	"translatorsignup-summary": "Użyj tej strony, aby wskazać na jakie języki możesz tłumaczyć i w jaki sposób mamy się z Tobą kontaktować w sprawie nowych tłumaczeń.",
+	"translatorsignup-summary": "Użyj tej strony, aby wskazać, na jakie języki możesz tłumaczyć i w jaki sposób mamy się z Tobą kontaktować w sprawie nowych tłumaczeń.",
 	"translationnotifications-desc": "Umożliwia zarejestrowanie się przez tłumaczy aby otrzymywać powiadomienia na temat tłumaczeń",
 	"translationnotifications-info": "Informacje o użytkowniku",
 	"translationnotifications-username": "Nazwa użytkownika:",
@@ -68,7 +68,7 @@
 	"translationnotifications-sent-body": "Powiadomienie o tłumaczeniu zostało wysłane.",
 	"translationnotifications-log-alllanguages": "wszystkie języki",
 	"translationnotifications-nodeadline": "brak",
-	"translationnotifications-signup-legal": "Dostarczając te informacje, zgadzasz się z tym, że możemy skontaktować się z Tobą odnośnie tematów związanych ze stroną {{SITENAME}}, które naszym zdaniem mogą być dla Ciebie interesujące. Zgadzasz się również z tym, że Twoje dane osobowe będą przetwarzane zgodnie z naszymi [[{{MediaWiki:Privacypage}}|zasadami]].",
+	"translationnotifications-signup-legal": "Podając te informacje, zgadzasz się z tym, że możemy kontaktować się z Tobą odnośnie tematów związanych ze stroną {{SITENAME}}, które naszym zdaniem mogą być dla Ciebie interesujące. Zgadzasz się również z tym, że Twoje dane osobowe będą przetwarzane zgodnie z naszymi [[{{MediaWiki:Privacypage}}|zasadami]].",
 	"translationnotifications-generic-languages": "&lt;języki>",
 	"translationnotifications-text": "Skorzystaj z poniższego formularza, aby wysłać tłumaczom prośby o tłumaczenie."
 }
