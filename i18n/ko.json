@@ -5,7 +5,8 @@
 			"Kwj2772",
 			"아라",
 			"Revi",
-			"Jonghaya"
+			"Jonghaya",
+			"Ykhwong"
 		]
 	},
 	"translatorsignup": "번역자 가입",
@@ -29,7 +30,7 @@
 	"translationnotifications-frequency": "연락 빈도",
 	"translationnotifications-freq-always": "번역할 새로운 문서가 있을 때",
 	"translationnotifications-freq-week": "일주일에 많아야 한 번",
-	"translationnotifications-freq-month": "한달에 많아야 한 번",
+	"translationnotifications-freq-month": "한 달에 많아야 한 번",
 	"translationnotifications-freq-weekly": "주마다 알림",
 	"translationnotifications-freq-monthly": "월마다 알림",
 	"translationnotifications-submit": "설정 업데이트",
