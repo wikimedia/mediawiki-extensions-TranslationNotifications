@@ -46,7 +46,7 @@
 	"translationnotifications-error-no-translatable-pages": "Không có trang dịch được tại wiki này.",
 	"translationnotifications-email-subject": "Xin vui lòng dịch trang $1",
 	"translationnotifications-email-body": "{{PLURAL:$9}}Xin chào $1,\n\nBạn nhận được thư điện tử này vì bạn đã ghi danh làm biên dịch viên $2 tại {{SITENAME}}.\n\nHiện có trang để dịch tại đấy: $3.\nBạn có thể dịch nó dùng liên kết sau:\n$4\n\n$5\n$6\n\n$7\n\nCảm ơn!\nNhóm điều phối biên dịch {{SITENAME}}\n\n----\n\nBạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào $8.",
-	"translationnotifications-talkpage-body": "{{PLURAL:$9}}Xin chào $2,\n\nBạn nhận được thư điện tử này vì bạn đã {{GENDER:$1}}ghi danh làm biên dịch viên $3 tại {{SITENAME}}.\nTrang [[$4]] mới có sẵn để dịch. Bạn có thể dịch nó dùng liên kết sau:\n$5\n\n$6\n$7\n\n$8\n\nCảm ơn!\n\nNhóm điều phối biên dịch {{SITENAME}}",
+	"translationnotifications-talkpage-body": "{{PLURAL:$9}}Xin chào $2,\n\nBạn nhận được thư điện tử này vì bạn đã {{GENDER:$1}}ghi danh làm biên dịch viên $3 tại {{SITENAME}}.\nTrang [[$4]] mới có sẵn để dịch. Bạn có thể dịch nó dùng liên kết sau:\n$5\n\n$6\n$7\n\n$8\n\nBạn có thể [$10 thay đổi tùy chọn thông báo của bạn].\n\nCảm ơn!\n\nNhóm điều phối biên dịch {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "dịch ra $1",
 	"translationnotifications-digestemail-subject": "Thư điện tử tóm tắt các yêu cầu biên dịch từ {{SITENAME}}",
 	"translationnotifications-digestemail-body": "Xin chào $1,\n\nBạn nhận được thư điện tử này vì bạn đã ghi danh làm biên dịch viên $2 tại {{SITENAME}}.\n\nHiện có {{PLURAL:$3|trang|$3 trang}} để dịch. Các chi tiết được đưa dưới đây:\n\n$4\n\nRất cảm ơn sự giúp đỡ của bạn. {{SITENAME}} hoạt động nhờ các biên dịch viên như bạn.\n\nBan quản lý biên dịch {{SITENAME}}\n\n----\n\nBạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào <$5>.",
@@ -62,5 +62,6 @@
 	"translationnotifications-log-alllanguages": "tất cả các ngôn ngữ",
 	"translationnotifications-nodeadline": "không có",
 	"translationnotifications-signup-legal": "Với việc cung cấp thông tin này, bạn đồng ý cho phép chúng tôi liên lạc với bạn về các đề tài có liên quan đến {{SITENAME}} mà bạn có thể quan tâm đến. Bạn đồng ý rằng dữ liệu của bạn sẽ được sử dụng theo [[{{MediaWiki:Privacypage}}|quy định quyền riêng tư]] của chúng tôi.",
-	"translationnotifications-generic-languages": "&lt;các ngôn ngữ>"
+	"translationnotifications-generic-languages": "&lt;các ngôn ngữ>",
+	"translationnotifications-text": "Sử dụng biểu mẫu bên dưới để gửi lời yêu cầu biên dịch cho các biên dịch viên."
 }
