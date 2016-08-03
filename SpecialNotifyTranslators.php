@@ -582,7 +582,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 			$sender->getName(),
 			$sender->getRealName()
 		);
-		$emailTo = new MailAddress( $user );
+		$emailTo = MailAddress::newFromUser( $user );
 		$params = [
 			'to' => $emailTo,
 			'from' => $emailFrom,

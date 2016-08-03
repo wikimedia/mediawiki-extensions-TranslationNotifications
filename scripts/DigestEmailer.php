@@ -181,7 +181,7 @@ class DigestEmailer extends Maintenance {
 			)->inLanguage( $firstLangCode )->text();
 
 			$emailFrom = new MailAddress( $noReplyAddress );
-			$emailTo = new MailAddress( $user );
+			$emailTo = MailAddress::newFromUser( $user );
 			$params = [
 				'to' => $emailTo,
 				'from' => $emailFrom,
