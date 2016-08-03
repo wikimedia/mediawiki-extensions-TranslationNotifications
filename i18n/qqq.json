@@ -46,6 +46,7 @@
 	"translationnotifications-deadline-label": "A label for the deadline field, which will have a datepicker.",
 	"translationnotifications-languages-to-notify-label": "A label for language codes field.",
 	"translationnotifications-languages-to-notify-label-help-message": "Used as help message for the \"Languages to notify\" textarea.\nIts label is {{msg-mw|Translationnotifications-languages-to-notify-label}}.",
+	"translationnotifications-sourcelang-only": "Error message shown on Special:NotifyTranslators.",
 	"translationnotifications-priority": "A label for translation priority field.\n{{Identical|Priority}}",
 	"translationnotifications-priority-high": "high (priority), an item in a dropdown box.\n{{Identical|High}}",
 	"translationnotifications-priority-medium": "medium (priority), an item in a dropdown box.\n{{Identical|Medium}}",

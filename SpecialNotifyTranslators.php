@@ -219,8 +219,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 			$languagesToNotify = $translatorsConds['up_value'];
 
 			if ( count( $languagesToNotify ) === 0 ) {
-				throw new MWException( "A notification must not be sent only to " .
-					"translators to the source language." );
+				return Status::newFatal( 'translationnotifications-sourcelang-only' );
 			}
 
 			$languagesForLog = $this->getLanguage()->commaList( $languagesToNotify );

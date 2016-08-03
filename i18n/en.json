@@ -38,6 +38,7 @@
 	"translationnotifications-deadline-label": "Deadline to indicate in this notification:",
 	"translationnotifications-languages-to-notify-label": "Which languages to notify:",
 	"translationnotifications-languages-to-notify-label-help-message": "Comma-separated language codes; leave blank to notify for all languages.",
+	"translationnotifications-sourcelang-only": "A notification cannot be sent only to translators of the source language.",
 	"translationnotifications-priority": "Priority:",
 	"translationnotifications-priority-high": "high",
 	"translationnotifications-priority-medium": "medium",
