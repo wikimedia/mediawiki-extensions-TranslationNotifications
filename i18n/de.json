@@ -41,6 +41,7 @@
 	"translationnotifications-deadline-label": "In der Benachrichtigung anzugebenden Frist:",
 	"translationnotifications-languages-to-notify-label": "Benachrichtigungen zu folgenden Sprachen:",
 	"translationnotifications-languages-to-notify-label-help-message": "Kommagetrennte Sprachcodes; für Benachrichtigungen zu allen Sprachen frei lassen.",
+	"translationnotifications-sourcelang-only": "Eine Benachrichtigung kann nicht an Übersetzer nur der Quellsprache gesendet werden.",
 	"translationnotifications-priority": "Priorität:",
 	"translationnotifications-priority-high": "hoch",
 	"translationnotifications-priority-medium": "mittel",

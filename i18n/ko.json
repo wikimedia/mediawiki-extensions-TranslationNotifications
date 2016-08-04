@@ -42,6 +42,7 @@
 	"translationnotifications-deadline-label": "이 알림에 나타나는 마감일:",
 	"translationnotifications-languages-to-notify-label": "어떤 언어 알리기:",
 	"translationnotifications-languages-to-notify-label-help-message": "쉼표로 구분한 언어 코드; 모든 언어에 대해 알림을 비웁니다.",
+	"translationnotifications-sourcelang-only": "알림은 원본 언어의 번역자들에게만 보낼 수 없습니다.",
 	"translationnotifications-priority": "우선 순위:",
 	"translationnotifications-priority-high": "높음",
 	"translationnotifications-priority-medium": "중간",
