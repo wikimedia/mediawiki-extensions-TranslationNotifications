@@ -38,6 +38,7 @@
 	"translationnotifications-deadline-label": "Data límite a indicar nesta notificación:",
 	"translationnotifications-languages-to-notify-label": "Linguas ás que enviar a notificación:",
 	"translationnotifications-languages-to-notify-label-help-message": "Códigos de lingua separados por comas; déixeo en branco para notificar a todas as linguas.",
+	"translationnotifications-sourcelang-only": "Non pode enviarse unha notificación só ós tradutores da lingua de orixe.",
 	"translationnotifications-priority": "Prioridade:",
 	"translationnotifications-priority-high": "alta",
 	"translationnotifications-priority-medium": "media",
