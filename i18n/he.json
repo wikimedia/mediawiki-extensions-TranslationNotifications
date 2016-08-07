@@ -38,6 +38,7 @@
 	"translationnotifications-deadline-label": "תאריך סופי שיתווסף להודעה:",
 	"translationnotifications-languages-to-notify-label": "רשימת שפות שהמתרגמים אליהן יקבלו את ההודעה:",
 	"translationnotifications-languages-to-notify-label-help-message": "רשימה מופרדת בפסיקים של קודי שפה; אם השדה יהיה ריק, ההודעה תישלח לדוברי כל השפות.",
+	"translationnotifications-sourcelang-only": "לא ניתן לשלוח הודעה רק למתרגמים לשפת המקור.",
 	"translationnotifications-priority": "עדיפות:",
 	"translationnotifications-priority-high": "גבוהה",
 	"translationnotifications-priority-medium": "בינונית",

@@ -41,6 +41,7 @@
 	"translationnotifications-deadline-label": "Кінцевий термін, зазначений у цьому повідомленні:",
 	"translationnotifications-languages-to-notify-label": "Мови для сповіщення:",
 	"translationnotifications-languages-to-notify-label-help-message": "Відокремлені комою коди мов; залиште порожнім для сповіщення щодо всіх мов.",
+	"translationnotifications-sourcelang-only": "Сповіщення не можна надсилати тільки до перекладачів з вихідної мови",
 	"translationnotifications-priority": "Пріоритет:",
 	"translationnotifications-priority-high": "високий",
 	"translationnotifications-priority-medium": "середній",

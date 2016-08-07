@@ -4,7 +4,8 @@
 			"AvatarTeam",
 			"SPQRobin",
 			"Siebrand",
-			"HanV"
+			"HanV",
+			"MrLeopold"
 		]
 	},
 	"translatorsignup": "Vertalersregistratie",
@@ -40,6 +41,7 @@
 	"translationnotifications-deadline-label": "Deadline voor deze melding:",
 	"translationnotifications-languages-to-notify-label": "Voor welke talen een melding gemaakt moet worden:",
 	"translationnotifications-languages-to-notify-label-help-message": "Komma gescheiden taalcodes; laat leeg om een melding voor alle vertalers te maken.",
+	"translationnotifications-sourcelang-only": "Een bericht kan niet worden verzonden, enkel voor de vertalers van de brontaal.",
 	"translationnotifications-priority": "Prioriteit:",
 	"translationnotifications-priority-high": "hoog",
 	"translationnotifications-priority-medium": "gemiddeld",
