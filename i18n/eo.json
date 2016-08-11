@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Blahma",
-			"Yekrats"
+			"Yekrats",
+			"Robin van der Vliet"
 		]
 	},
 	"translatorsignup": "Tradukista abono",
 	"translatorsignup-summary": "En tiu ĉi paĝo indiku en kiujn lingvojn vi scias traduki kaj kiel oni kontaktu vin pri novaj tradukpetoj.",
 	"translationnotifications-desc": "Permesi al tradukistoj aboni sciigojn pri tradukoj",
 	"translationnotifications-info": "Informoj pri la uzanto",
-	"translationnotifications-username": "Salutnomo:",
+	"translationnotifications-username": "Uzantnomo:",
 	"translationnotifications-emailstatus": "Repoŝta stato:",
 	"translationnotifications-email-confirmed": "Via retpoŝtadreso ne estas konfirmita",
 	"translationnotifications-email-disablemail": "Via retpoŝtadreso estas konfirmita, sed en [[Special:Preferences|viaj preferoj]] vi petis ne ricevadi retpoŝton.",
@@ -61,5 +62,6 @@
 	"translationnotifications-sent-body": "Traduksciigo estas sendita.",
 	"translationnotifications-log-alllanguages": "ĉiuj lingvoj",
 	"translationnotifications-nodeadline": "neniu",
-	"translationnotifications-signup-legal": "Provizante tiun ĉi informon vi konsentas, ke ni povas vin kontakti pri temoj rilataj al {{SITENAME}} kiujn ni taksos interesaj por vi. Vi konsentas ke viaj datumoj subiĝas al nia [[{{MediaWiki:Privacypage}}|privateca politiko.]]"
+	"translationnotifications-signup-legal": "Provizante tiun ĉi informon vi konsentas, ke ni povas vin kontakti pri temoj rilataj al {{SITENAME}} kiujn ni taksos interesaj por vi. Vi konsentas ke viaj datumoj subiĝas al nia [[{{MediaWiki:Privacypage}}|privateca politiko.]]",
+	"translationnotifications-generic-languages": "&lt;lingvoj>"
 }
