@@ -38,6 +38,7 @@
 	"translationnotifications-deadline-label": "Data tope a indicar nesti avisu:",
 	"translationnotifications-languages-to-notify-label": "A qué idiomes hai qu'avisar:",
 	"translationnotifications-languages-to-notify-label-help-message": "Códigos d'idioma separaos por comes; dexar balero p'avisar a tolos idiomes.",
+	"translationnotifications-sourcelang-only": "Nun puede unviase namái una notificación a los traductores de la llingua orixinal.",
 	"translationnotifications-priority": "Prioridá:",
 	"translationnotifications-priority-high": "alta",
 	"translationnotifications-priority-medium": "media",
