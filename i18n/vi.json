@@ -37,6 +37,7 @@
 	"translationnotifications-deadline-label": "Ngày hạn để nhắc đến trong thông báo này:",
 	"translationnotifications-languages-to-notify-label": "Các ngôn ngữ để báo:",
 	"translationnotifications-languages-to-notify-label-help-message": "Các mã ngôn ngữ (phân cách bằng dấu phẩy); để trống để báo tất cả các ngôn ngữ.",
+	"translationnotifications-sourcelang-only": "Không thể chỉ thông báo các biên dịch viên từ ngôn ngữ gốc.",
 	"translationnotifications-priority": "Ưu tiên:",
 	"translationnotifications-priority-high": "cao",
 	"translationnotifications-priority-medium": "thường",
