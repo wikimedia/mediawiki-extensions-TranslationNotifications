@@ -4,5 +4,10 @@
 			"Cedric31"
 		]
 	},
-	"translatorsignup": "Connexion del traductor"
+	"translatorsignup": "Connexion del traductor",
+	"translationnotifications-languages": "Lengas",
+	"translationnotifications-lang": "Lenga #$1",
+	"translationnotifications-nolang": "Causir una lenga",
+	"translationnotifications-log-alllanguages": "totas las lengas",
+	"translationnotifications-generic-languages": "&lt;lengas>"
 }
