@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"StanProg"
 		]
 	},
 	"translationnotifications-username": "Потребителско име:",
 	"translationnotifications-languages": "Езици",
-	"translationnotifications-cmethod-email": "Е-поща"
+	"translationnotifications-cmethod-email": "Е-поща",
+	"translationnotifications-log-alllanguages": "всички езици"
 }
