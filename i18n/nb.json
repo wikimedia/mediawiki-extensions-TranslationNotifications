@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Danmichaelo"
+			"Danmichaelo",
+			"Jon Harald Søby"
 		]
 	},
 	"translatorsignup": "Registrer deg som oversetter",
@@ -37,6 +38,7 @@
 	"translationnotifications-deadline-label": "Siste frist til å oversette:",
 	"translationnotifications-languages-to-notify-label": "Hvilke språk som skal få varsel:",
 	"translationnotifications-languages-to-notify-label-help-message": "Kommaseparerte språkkoder; ikke skriv noe for å varsle alle språk.",
+	"translationnotifications-sourcelang-only": "Et varsel kan ikke sendes bare til oversettere av kildespråket.",
 	"translationnotifications-priority": "Prioritet:",
 	"translationnotifications-priority-high": "høy",
 	"translationnotifications-priority-medium": "middels",
@@ -62,5 +64,6 @@
 	"translationnotifications-log-alllanguages": "alle språk",
 	"translationnotifications-nodeadline": "ingen",
 	"translationnotifications-signup-legal": "Ved å oppgi denne informasjonen godtar du at vi kontakter deg om temaer knyttet {{SITENAME}} som vi tror kan interessere deg. Du godtar at dataene er underlagt [[{{MediaWiki:Privacypage}}|retningslinjene våre for personvern]].",
-	"translationnotifications-generic-languages": "&lt;språk>"
+	"translationnotifications-generic-languages": "&lt;språk>",
+	"translationnotifications-text": "Bruk skjemaet nedenfor for å sende oversettelsesforespørsel til oversettere."
 }
