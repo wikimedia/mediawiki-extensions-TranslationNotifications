@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01"
+			"Milicevic01",
+			"Сербијана"
 		]
 	},
 	"translatorsignup-summary": "Koristite ovu stranicu da navedete na koje jezike možete da prevodite i kako želite da budete obavešteni kad god je potrebno prevođenje.",
-	"translationnotifications-email-disablemail": "Vaša e-pošta je potvrđena, ali u [[Special:Preferences|vašim podešavanjima]] podesili ste da ne primate e-poštu.",
-	"translationnotifications-email-unconfirmed": "Vaša e-pošta nije potvrđena: $1",
+	"translationnotifications-email-disablemail": "Vaša imejl adresa je potvrđena, ali u [[Special:Preferences|Vašim podešavanjima]] podesili ste da ne primate imejl.",
+	"translationnotifications-email-unconfirmed": "Vaša imejl adresa nije potvrđena: $1",
 	"translationnotifications-languages": "Jezici",
 	"translationnotifications-contact": "Način obaveštavanja",
 	"translationnotifications-cmethod-talkpage-elsewhere": "Stranica za razgovor na drugom vikiju",

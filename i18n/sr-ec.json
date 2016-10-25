@@ -12,7 +12,7 @@
 	"translationnotifications-emailstatus": "Статус имејла:",
 	"translationnotifications-email-confirmed": "Ваша имејл адреса је потврђена",
 	"translationnotifications-email-disablemail": "Ваша имејл адреса је потврђена, али у [[Special:Preferences|Вашим подешавањима]] подесили сте да не примате имејл.",
-	"translationnotifications-email-unconfirmed": "Ваша е-пошта није потврђена: $1",
+	"translationnotifications-email-unconfirmed": "Ваша имејл адреса није потврђена: $1",
 	"translationnotifications-languages": "Језици",
 	"translationnotifications-lang": "Језик #$1",
 	"translationnotifications-nolang": "Изаберите језик",
