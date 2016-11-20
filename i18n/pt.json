@@ -57,7 +57,7 @@
 	"translationnotifications-email-priority": "A prioridade desta página é $1.",
 	"translationnotifications-email-deadline": "A data limite para traduzir esta página é $1.",
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|enviou}} uma notificação sobre a tradução da página $3; {{PLURAL:$10|língua|línguas}}: $4; prazo: $5; prioridade: $6; enviada a {{PLURAL:$7|um destinatário|$7 destinatários}}, falhou para {{PLURAL:$8|um destinatário|$8 destinatários}}, ignorada para {{PLURAL:$9|um destinatário|$9 destinatários}}",
-	"log-name-notifytranslators": "Notificações de tradução",
+	"log-name-notifytranslators": "Registo de notificações de tradução",
 	"log-description-notifytranslators": "Registo de notificações enviado para os tradutores sobre páginas traduzíveis",
 	"translationnotifications-sent-title": "Notificação de tradução enviada",
 	"translationnotifications-sent-body": "A notificação de tradução foi enviada.",
