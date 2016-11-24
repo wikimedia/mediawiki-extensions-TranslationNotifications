@@ -175,8 +175,8 @@ $specialPageAliases['tyv'] = array(
 
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
-	'NotifyTranslators' => array( 'Сповістити_перекладачів' ),
-	'TranslatorSignup' => array( 'Підписка_перекладачів' ),
+	'NotifyTranslators' => array( 'Сповістити_перекладачів', 'Уведомить_переводчиков' ),
+	'TranslatorSignup' => array( 'Підписка_перекладачів', 'Регистрация_переводчиков' ),
 );
 
 /** Vietnamese (Tiếng Việt) */
