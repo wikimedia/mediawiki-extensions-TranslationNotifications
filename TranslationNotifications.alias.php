@@ -44,6 +44,12 @@ $specialPageAliases['bgn'] = array(
 	'TranslatorSignup' => array( 'ترجمه_کنۆک_ئی_سبت_نام' ),
 );
 
+/** Bengali (বাংলা) */
+$specialPageAliases['bn'] = array(
+	'NotifyTranslators' => array( 'অনুবাদককে_বিজ্ঞপ্তি', 'অনুবাদকের_জন্য_বিজ্ঞপ্তি' ),
+	'TranslatorSignup' => array( 'অনুবাদকের_নিবন্ধন' ),
+);
+
 /** буряад (буряад) */
 $specialPageAliases['bxr'] = array(
 	'NotifyTranslators' => array( 'Оршуулагшада_мэдүүлхэ' ),
