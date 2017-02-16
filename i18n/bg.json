@@ -7,6 +7,8 @@
 	},
 	"translationnotifications-username": "Потребителско име:",
 	"translationnotifications-languages": "Езици",
+	"translationnotifications-lang": "Език № $1",
 	"translationnotifications-cmethod-email": "Е-поща",
+	"translationnotifications-submit": "Актуализиране на настройките",
 	"translationnotifications-log-alllanguages": "всички езици"
 }
