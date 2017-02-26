@@ -38,5 +38,6 @@
 	"translationnotifications-email-priority": "$1 eo live priorelezh ar bajenn-mañ.",
 	"log-name-notifytranslators": "Kemennoù treiñ",
 	"translationnotifications-log-alllanguages": "an holl yezhoù",
-	"translationnotifications-nodeadline": "hini ebet"
+	"translationnotifications-nodeadline": "hini ebet",
+	"translationnotifications-generic-languages": "&lt;yezhoù>"
 }
