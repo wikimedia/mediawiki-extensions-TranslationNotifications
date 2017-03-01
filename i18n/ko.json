@@ -61,7 +61,7 @@
 	"translationnotifications-email-priority": "이 문서의 우선 순위는 $1입니다.",
 	"translationnotifications-email-deadline": "이 문서의 번역에 대한 마감일은 $1입니다.",
 	"logentry-notifytranslators-sent": "$1님이 $3 번역 문서에 대한 알림을 {{GENDER:$2|보냈습니다}}. {{PLURAL:$10|언어}}: $4; 마감일: $5; 중요도: $6; {{PLURAL:$7|받는 사람 한 명|받는 사람 $7명}}한테 보냄, {{PLURAL:$8|받는 사람 한 명|받는 사람 $8명}}한테 보내기 실패, {{PLURAL:$9|받는 사람 한 명|받는 사람 $9명}}한테 보내기 생략",
-	"log-name-notifytranslators": "번역 알림",
+	"log-name-notifytranslators": "번역 알림 기록",
 	"log-description-notifytranslators": "번역 가능한 문서에 대한 알림을 번역자한테 보낸 기록입니다",
 	"translationnotifications-sent-title": "번역 알림 보내기",
 	"translationnotifications-sent-body": "번역 알림을 보냈습니다.",

@@ -62,7 +62,7 @@
 	"translationnotifications-email-priority": "Priorytet tej strony to  $1 .",
 	"translationnotifications-email-deadline": "Nieprzekraczalny termin tłumaczenia tej strony to $1 .",
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|wysyłał|wysłała}} powiadomienie w sprawie tłumaczenia strony $3; {{PLURAL:$10|język|języki|języków}}: $4; termin $5; priorytet $6; do {{PLURAL:$7|jednego adresata|$7 adresatów}} pomyślnie, do {{PLURAL:$8|jednego adresata|$8 adresatów}} bezskutecznie, pominięto {{PLURAL:$9|jednego adresata|$9 adresatów}}",
-	"log-name-notifytranslators": "Powiadomienia o tłumaczeniach",
+	"log-name-notifytranslators": "Rejestr powiadomień o tłumaczeniach",
 	"log-description-notifytranslators": "Dziennik powiadomień wysyłanych do tłumaczy o stronach do przetłumaczenia",
 	"translationnotifications-sent-title": "Wysłano powiadomienie tłumaczenia",
 	"translationnotifications-sent-body": "Powiadomienie o tłumaczeniu zostało wysłane.",

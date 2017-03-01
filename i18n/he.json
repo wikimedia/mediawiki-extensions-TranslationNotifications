@@ -57,7 +57,7 @@
 	"translationnotifications-email-priority": "העדיפות של הדף הזה: $1.",
 	"translationnotifications-email-deadline": "התאריך הסופי לתרגום הדף הזה הוא $1.",
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|שלח|שלחה}} מכתב עם בקשה לתרגם את הדף $3; {{PLURAL:$10|שפה|שפות}}: $4; תאריך סופי: $5; עדיפות: $6; השליחה הצליחה ל{{PLURAL:$7|מקבל אחד|־$7 מקבלים}}, נכשלה {{PLURAL:$8|למקבל אחד|ל־$8 מקבלים}}, ודילגה על {{PLURAL:$9|מקבל אחד|$9 מקבלים}}",
-	"log-name-notifytranslators": "מכתבים למתרגמים",
+	"log-name-notifytranslators": "יומן מכתבים למתרגמים",
 	"log-description-notifytranslators": "יומן של מכתבים שנשלחים למתרגמים על דפים שאפשר לתרגם",
 	"translationnotifications-sent-title": "נשלח מכתב למתרגמים",
 	"translationnotifications-sent-body": "נשלח מכתב למתרגמים.",

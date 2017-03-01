@@ -6,7 +6,8 @@
 			"Simon Shek",
 			"Cwlin0416",
 			"LNDDYL",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"烈羽"
 		]
 	},
 	"translatorsignup": "翻譯者註冊",
@@ -60,7 +61,7 @@
 	"translationnotifications-email-priority": "這個頁面有 $1 重要度。",
 	"translationnotifications-email-deadline": "翻譯這個頁面的截止日期是 $1。",
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|傳送了}}翻譯頁面 $3 的一條通知；{{PLURAL:$1|語言}}：$4；截止日期：$5；重要度：$6；已傳送給{{PLURAL:$7|一位收件者| $7 個收件者}},，給 {{PLURAL:$8|一位收件者| $8 位收件者}}的通知傳送失敗，跳過了 {{PLURAL:$9|一位收件者| $9 位收件者}}",
-	"log-name-notifytranslators": "翻譯通知",
+	"log-name-notifytranslators": "翻譯通知日誌",
 	"log-description-notifytranslators": "向翻譯者傳送可翻譯頁面通知的日誌",
 	"translationnotifications-sent-title": "翻譯通知已傳送",
 	"translationnotifications-sent-body": "翻譯通知已傳送。",
