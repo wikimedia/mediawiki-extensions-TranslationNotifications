@@ -51,7 +51,7 @@
 	"translationnotifications-edit-summary": "অনুবাদ বিজ্ঞপ্তি: $1",
 	"translationnotifications-email-priority": "এই পাতার অগ্রাধিকার হল $1।",
 	"translationnotifications-email-deadline": "অনুবাদ সম্পন্ন করার শেষ তারিখ $1।",
-	"log-name-notifytranslators": "অনুবাদ বিজ্ঞপ্তি",
+	"log-name-notifytranslators": "অনুবাদ বিজ্ঞপ্তি লগ",
 	"translationnotifications-sent-title": "অনুবাদ বিজ্ঞপ্তি পাঠানো হয়েছে",
 	"translationnotifications-sent-body": "অনুবাদ বিজ্ঞপ্তি পাঠানো হয়েছিল।",
 	"translationnotifications-log-alllanguages": "সকল ভাষা",
