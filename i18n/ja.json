@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki"
+			"Shirayuki",
+			"Otokoume"
 		]
 	},
 	"translatorsignup": "翻訳者登録",
@@ -49,7 +50,7 @@
 	"translationnotifications-email-priority": "このページの優先度は$1です。",
 	"translationnotifications-email-deadline": "このページの翻訳の締め切りは $1 です。",
 	"logentry-notifytranslators-sent": "$1 がページ $3 の翻訳について通知を{{GENDER:$2|送信しました}}。{{PLURAL:$10|言語}}: $4、締め切り: $5、優先度: $6。送信成功 {{PLURAL:$7|$7 人}}、失敗 {{PLURAL:$8|$8 人}}、スキップ {{PLURAL:$9|$9 人}}",
-	"log-name-notifytranslators": "翻訳の通知",
+	"log-name-notifytranslators": "翻訳通知記録",
 	"log-description-notifytranslators": "翻訳対象ページについて翻訳者宛に送信した通知の記録",
 	"translationnotifications-sent-title": "翻訳の通知を送信しました",
 	"translationnotifications-sent-body": "翻訳の通知を送信しました。",
