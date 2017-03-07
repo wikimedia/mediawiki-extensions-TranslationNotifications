@@ -53,7 +53,7 @@
 	"translationnotifications-email-priority": "Selle lehekülje tõlkimine on $1.",
 	"translationnotifications-email-deadline": "Selle tõlke tähtaeg on $1.",
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|saatis}} teavituse lehekülje $3 tõlkimise kohta; {{PLURAL:$10|keel|keeled}}: $4; tähtaeg: $5; tähtsus: $6; saadetud {{PLURAL:$7|ühele|$7}} tõlkijale, {{PLURAL:$8|ühele|$8}} tõlkijale saatmine ebaõnnestus, {{PLURAL:$9|üks tõlkija|$9 tõlkijat}} vahele jäetud",
-	"log-name-notifytranslators": "Tõlketeavitused",
+	"log-name-notifytranslators": "Tõlketeavituste logi",
 	"log-description-notifytranslators": "Tõlkijatele lehekülgede tõlkimise kohta saadetud teavituste logi",
 	"translationnotifications-sent-title": "Tõlketeavitus saadetud",
 	"translationnotifications-sent-body": "Tõlketeavitus saadeti.",
