@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Subi"
 		]
 	},
 	"translationnotifications-username": "Lankide izena:",
 	"translationnotifications-languages": "Hizkuntzak",
+	"translationnotifications-nolang": "Aukeratu hizkuntza",
 	"translationnotifications-cmethod-email": "E-posta",
 	"translationnotifications-cmethod-talkpage": "Eztabaida-orria",
 	"translationnotifications-priority": "Lehentasuna:",
