@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Calak",
-			"Sarchia"
+			"Sarchia",
+			"Lost Whispers"
 		]
 	},
 	"translationnotifications-cmethod-email": "ئیمەیل",
+	"translationnotifications-notification-url-listitem": "وەرگێڕان بۆ $1",
 	"translationnotifications-nodeadline": "ھیچ"
 }
