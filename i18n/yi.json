@@ -42,7 +42,7 @@
 	"translationnotifications-email-priority": "די פריאריטעט פון דעם בלאט איז $1.",
 	"translationnotifications-email-deadline": "דער טערמין פאר איבערזעצן דעם בלאט איז $1.",
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|האט געשיקט}} אן אנזאג וועגן איבערזעצן בלאט $3; {{PLURAL:$10|שפראך|שפראכן}}: $4; טערמין: $5; פריאריטעט: $6; געשיקט מיט דערפאלג צו {{PLURAL:$7|איין באקומער|$7 באקומער}}, דורכגעפאלן פאר {{PLURAL:$8|איין באקומער|$8 באקומער}}, איבערגעהיפט {{PLURAL:$9|איין באקומער|$9 באקומער}}",
-	"log-name-notifytranslators": "איבערזעצונג אנזאגן",
+	"log-name-notifytranslators": "איבערזעצונג אנזאגן לאגבוך",
 	"log-description-notifytranslators": "לאגבוך פון אנזאגן געשיקט צו איבערזעצער וועגן איבערזעצבארע בלעטער",
 	"translationnotifications-sent-title": "איבערזעצונג אנזאג געשיקט",
 	"translationnotifications-sent-body": "איבערזעצונג אנזאג איז געשיקט געווארן.",
