@@ -44,7 +44,7 @@
 	"translationnotifications-submit-ok": "Des notifications ont été ajoutées à une file d’attente et seront livrées par une tâche d’arrière-plan.",
 	"translationnotifications-send-notification-button": "Envoyer une notification aux traducteurs",
 	"translationnotifications-preview-notification-button": "Aperçu de la notification",
-	"translationnotifications-deadline-label": "Date limite à indiquer dans cette notification:",
+	"translationnotifications-deadline-label": "Date de tombée à indiquer dans cette notification :",
 	"translationnotifications-languages-to-notify-label": "Langues à notifier :",
 	"translationnotifications-languages-to-notify-label-help-message": "Codes de langue séparés par des virgules; laissez vide pour notifier toutes les langues.",
 	"translationnotifications-sourcelang-only": "Une notification ne peut pas être envoyée uniquement à des traducteurs de la langue source.",
