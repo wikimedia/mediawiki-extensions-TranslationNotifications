@@ -3,7 +3,8 @@
 		"authors": [
 			"Kaganer",
 			"Okras",
-			"Redredsonia"
+			"Redredsonia",
+			"Facenapalm"
 		]
 	},
 	"translatorsignup": "Регистрация в качестве переводчика",
@@ -39,6 +40,7 @@
 	"translationnotifications-deadline-label": "Крайний срок, указываемый в этом уведомлении:",
 	"translationnotifications-languages-to-notify-label": "К каким языкам относится уведомление:",
 	"translationnotifications-languages-to-notify-label-help-message": "Коды языков, разделяемые запятой; оставьте поле пустым, если уведомление касается всех языков.",
+	"translationnotifications-sourcelang-only": "Уведомление не может быть отправлено только переводчикам исходного языка.",
 	"translationnotifications-priority": "Приоритет:",
 	"translationnotifications-priority-high": "высокий",
 	"translationnotifications-priority-medium": "средний",
@@ -64,5 +66,6 @@
 	"translationnotifications-log-alllanguages": "все языки",
 	"translationnotifications-nodeadline": "нет",
 	"translationnotifications-signup-legal": "Предоставляя эту информацию, вы соглашаетесь с тем, что мы можем связаться с вами относительно связанных с {{SITENAME}} тем, которые, на наш взгляд, могут быть вам интересны. Вы также соглашаетесь с тем, что ваши персональные данные будут обрабатываться согласно нашей [[{{MediaWiki:Privacypage}}|политике конфиденциальности.]]",
-	"translationnotifications-generic-languages": "&lt;языки>"
+	"translationnotifications-generic-languages": "&lt;языки>",
+	"translationnotifications-text": "Используйте форму ниже для отправки запросов на перевод переводчикам."
 }
