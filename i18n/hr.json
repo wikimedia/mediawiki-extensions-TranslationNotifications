@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"MaGa"
+			"MaGa",
+			"Bugoslav"
 		]
 	},
-	"translationnotifications-priority-unset": "(nije postavljeno)"
+	"translatorsignup": "Prijava za prevoditelja",
+	"translationnotifications-priority-unset": "(nije postavljeno)",
+	"log-name-notifytranslators": "Evidencija obavijesti o prijevodima"
 }
