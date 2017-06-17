@@ -5,200 +5,199 @@
  * @file
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
-// @codingStandardsIgnoreFile
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'NotifyTranslators' => array( 'NotifyTranslators' ),
-	'TranslatorSignup' => array( 'TranslatorSignup' ),
-);
+$specialPageAliases['en'] = [
+	'NotifyTranslators' => [ 'NotifyTranslators' ],
+	'TranslatorSignup' => [ 'TranslatorSignup' ],
+];
 
 /** Arabic (العربية) */
-$specialPageAliases['ar'] = array(
-	'NotifyTranslators' => array( 'إخطار_المترجمين' ),
-	'TranslatorSignup' => array( 'اشتراك_المستخدمين' ),
-);
+$specialPageAliases['ar'] = [
+	'NotifyTranslators' => [ 'إخطار_المترجمين' ],
+	'TranslatorSignup' => [ 'اشتراك_المستخدمين' ],
+];
 
 /** Egyptian Arabic (مصرى) */
-$specialPageAliases['arz'] = array(
-	'NotifyTranslators' => array( 'اخطار_المترجمين' ),
-	'TranslatorSignup' => array( 'اشتراك_المترجمين' ),
-);
+$specialPageAliases['arz'] = [
+	'NotifyTranslators' => [ 'اخطار_المترجمين' ],
+	'TranslatorSignup' => [ 'اشتراك_المترجمين' ],
+];
 
 /** Assamese (অসমীয়া) */
-$specialPageAliases['as'] = array(
-	'NotifyTranslators' => array( 'অনুবাদকক_জাননী_প্ৰেৰণ' ),
-	'TranslatorSignup' => array( 'অনুবাদৰ_পঞ্জীভুক্তি' ),
-);
+$specialPageAliases['as'] = [
+	'NotifyTranslators' => [ 'অনুবাদকক_জাননী_প্ৰেৰণ' ],
+	'TranslatorSignup' => [ 'অনুবাদৰ_পঞ্জীভুক্তি' ],
+];
 
 /** Avaric (авар) */
-$specialPageAliases['av'] = array(
-	'NotifyTranslators' => array( 'Уведомить_переводчиков' ),
-	'TranslatorSignup' => array( 'Регистрация_переводчиков' ),
-);
+$specialPageAliases['av'] = [
+	'NotifyTranslators' => [ 'Уведомить_переводчиков' ],
+	'TranslatorSignup' => [ 'Регистрация_переводчиков' ],
+];
 
 /** Western Balochi (بلوچی رخشانی) */
-$specialPageAliases['bgn'] = array(
-	'TranslatorSignup' => array( 'ترجمه_کنۆک_ئی_سبت_نام' ),
-);
+$specialPageAliases['bgn'] = [
+	'TranslatorSignup' => [ 'ترجمه_کنۆک_ئی_سبت_نام' ],
+];
 
 /** Bengali (বাংলা) */
-$specialPageAliases['bn'] = array(
-	'NotifyTranslators' => array( 'অনুবাদককে_বিজ্ঞপ্তি', 'অনুবাদকের_জন্য_বিজ্ঞপ্তি' ),
-	'TranslatorSignup' => array( 'অনুবাদকের_নিবন্ধন' ),
-);
+$specialPageAliases['bn'] = [
+	'NotifyTranslators' => [ 'অনুবাদককে_বিজ্ঞপ্তি', 'অনুবাদকের_জন্য_বিজ্ঞপ্তি' ],
+	'TranslatorSignup' => [ 'অনুবাদকের_নিবন্ধন' ],
+];
 
 /** буряад (буряад) */
-$specialPageAliases['bxr'] = array(
-	'NotifyTranslators' => array( 'Оршуулагшада_мэдүүлхэ' ),
-);
+$specialPageAliases['bxr'] = [
+	'NotifyTranslators' => [ 'Оршуулагшада_мэдүүлхэ' ],
+];
 
 /** Chechen (нохчийн) */
-$specialPageAliases['ce'] = array(
-	'NotifyTranslators' => array( 'Хаийта_гочдархошна' ),
-	'TranslatorSignup' => array( 'Гочдархой_дӀабазбалар' ),
-);
+$specialPageAliases['ce'] = [
+	'NotifyTranslators' => [ 'Хаийта_гочдархошна' ],
+	'TranslatorSignup' => [ 'Гочдархой_дӀабазбалар' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'NotifyTranslators' => array( 'Übersetzerbenachrichtigung' ),
-	'TranslatorSignup' => array( 'Übersetzerregistrierung' ),
-);
+$specialPageAliases['de'] = [
+	'NotifyTranslators' => [ 'Übersetzerbenachrichtigung' ],
+	'TranslatorSignup' => [ 'Übersetzerregistrierung' ],
+];
 
 /** Zazaki (Zazaki) */
-$specialPageAliases['diq'] = array(
-	'NotifyTranslators' => array( 'AçerneraXeberke' ),
-	'TranslatorSignup' => array( 'AçarnayışDekewtış' ),
-);
+$specialPageAliases['diq'] = [
+	'NotifyTranslators' => [ 'AçerneraXeberke' ],
+	'TranslatorSignup' => [ 'AçarnayışDekewtış' ],
+];
 
 /** Greek (Ελληνικά) */
-$specialPageAliases['el'] = array(
-	'NotifyTranslators' => array( 'ΕιδοποίησηΜεταφραστών' ),
-	'TranslatorSignup' => array( 'ΕγγραφήΜεταφραστή' ),
-);
+$specialPageAliases['el'] = [
+	'NotifyTranslators' => [ 'ΕιδοποίησηΜεταφραστών' ],
+	'TranslatorSignup' => [ 'ΕγγραφήΜεταφραστή' ],
+];
 
 /** Esperanto (Esperanto) */
-$specialPageAliases['eo'] = array(
-	'NotifyTranslators' => array( 'Atentigi_tradukanton', 'Atentigi_tradukiston' ),
-	'TranslatorSignup' => array( 'Registrigi_kiel_tradukanto', 'Registrigi_kiel_tradukisto' ),
-);
+$specialPageAliases['eo'] = [
+	'NotifyTranslators' => [ 'Atentigi_tradukanton', 'Atentigi_tradukiston' ],
+	'TranslatorSignup' => [ 'Registrigi_kiel_tradukanto', 'Registrigi_kiel_tradukisto' ],
+];
 
 /** Persian (فارسی) */
-$specialPageAliases['fa'] = array(
-	'NotifyTranslators' => array( 'اطلاع‌ساختن_مترجم‌ها' ),
-	'TranslatorSignup' => array( 'ثبت‌نام_مترجم' ),
-);
+$specialPageAliases['fa'] = [
+	'NotifyTranslators' => [ 'اطلاع‌ساختن_مترجم‌ها' ],
+	'TranslatorSignup' => [ 'ثبت‌نام_مترجم' ],
+];
 
 /** Swiss German (Alemannisch) */
-$specialPageAliases['gsw'] = array(
-	'TranslatorSignup' => array( 'Übersetzerregistrierig' ),
-);
+$specialPageAliases['gsw'] = [
+	'TranslatorSignup' => [ 'Übersetzerregistrierig' ],
+];
 
 /** Hebrew (עברית) */
-$specialPageAliases['he'] = array(
-	'NotifyTranslators' => array( 'מכתבים_למתרגמים' ),
-	'TranslatorSignup' => array( 'רישום_מתרגמים' ),
-);
+$specialPageAliases['he'] = [
+	'NotifyTranslators' => [ 'מכתבים_למתרגמים' ],
+	'TranslatorSignup' => [ 'רישום_מתרגמים' ],
+];
 
 /** Upper Sorbian (hornjoserbsce) */
-$specialPageAliases['hsb'] = array(
-	'NotifyTranslators' => array( 'Přełožowarske_zdźělenje' ),
-	'TranslatorSignup' => array( 'Přełožowarske_registrowanje' ),
-);
+$specialPageAliases['hsb'] = [
+	'NotifyTranslators' => [ 'Přełožowarske_zdźělenje' ],
+	'TranslatorSignup' => [ 'Přełožowarske_registrowanje' ],
+];
 
 /** Italian (italiano) */
-$specialPageAliases['it'] = array(
-	'NotifyTranslators' => array( 'NotificaTraduttori' ),
-	'TranslatorSignup' => array( 'IscrizioneTraduttore' ),
-);
+$specialPageAliases['it'] = [
+	'NotifyTranslators' => [ 'NotificaTraduttori' ],
+	'TranslatorSignup' => [ 'IscrizioneTraduttore' ],
+];
 
 /** Japanese (日本語) */
-$specialPageAliases['ja'] = array(
-	'NotifyTranslators' => array( '翻訳者通知' ),
-	'TranslatorSignup' => array( '翻訳者登録' ),
-);
+$specialPageAliases['ja'] = [
+	'NotifyTranslators' => [ '翻訳者通知' ],
+	'TranslatorSignup' => [ '翻訳者登録' ],
+];
 
 /** Korean (한국어) */
-$specialPageAliases['ko'] = array(
-	'NotifyTranslators' => array( '번역자알림' ),
-	'TranslatorSignup' => array( '번역가입' ),
-);
+$specialPageAliases['ko'] = [
+	'NotifyTranslators' => [ '번역자알림' ],
+	'TranslatorSignup' => [ '번역가입' ],
+];
 
 /** Luxembourgish (Lëtzebuergesch) */
-$specialPageAliases['lb'] = array(
-	'NotifyTranslators' => array( 'Iwwersetzer_informéieren' ),
-	'TranslatorSignup' => array( 'Achreiwung_als_Iwwersetzer' ),
-);
+$specialPageAliases['lb'] = [
+	'NotifyTranslators' => [ 'Iwwersetzer_informéieren' ],
+	'TranslatorSignup' => [ 'Achreiwung_als_Iwwersetzer' ],
+];
 
 /** Macedonian (македонски) */
-$specialPageAliases['mk'] = array(
-	'NotifyTranslators' => array( 'ИзвестиПреведувачи' ),
-	'TranslatorSignup' => array( 'ПријаваНаПреведувачи' ),
-);
+$specialPageAliases['mk'] = [
+	'NotifyTranslators' => [ 'ИзвестиПреведувачи' ],
+	'TranslatorSignup' => [ 'ПријаваНаПреведувачи' ],
+];
 
 /** Malayalam (മലയാളം) */
-$specialPageAliases['ml'] = array(
-	'NotifyTranslators' => array( 'പരിഭാഷകരെഅറിയിക്കുക' ),
-	'TranslatorSignup' => array( 'പരിഭാഷകരെപേരുചേർക്കുക' ),
-);
+$specialPageAliases['ml'] = [
+	'NotifyTranslators' => [ 'പരിഭാഷകരെഅറിയിക്കുക' ],
+	'TranslatorSignup' => [ 'പരിഭാഷകരെപേരുചേർക്കുക' ],
+];
 
 /** Norwegian Bokmål (norsk bokmål) */
-$specialPageAliases['nb'] = array(
-	'NotifyTranslators' => array( 'Varsle_oversettere' ),
-	'TranslatorSignup' => array( 'Oversetterregistrering' ),
-);
+$specialPageAliases['nb'] = [
+	'NotifyTranslators' => [ 'Varsle_oversettere' ],
+	'TranslatorSignup' => [ 'Oversetterregistrering' ],
+];
 
 /** Dutch (Nederlands) */
-$specialPageAliases['nl'] = array(
-	'NotifyTranslators' => array( 'Vertalersmeldingen' ),
-	'TranslatorSignup' => array( 'Vertalersregistratie' ),
-);
+$specialPageAliases['nl'] = [
+	'NotifyTranslators' => [ 'Vertalersmeldingen' ],
+	'TranslatorSignup' => [ 'Vertalersregistratie' ],
+];
 
 /** Quechua (Runa Simi) */
-$specialPageAliases['qu'] = array(
-	'NotifyTranslators' => array( 'TikraqkunamanWillaykuy' ),
-);
+$specialPageAliases['qu'] = [
+	'NotifyTranslators' => [ 'TikraqkunamanWillaykuy' ],
+];
 
 /** Russian (русский) */
-$specialPageAliases['ru'] = array(
-	'NotifyTranslators' => array( 'Уведомить_переводчиков' ),
-	'TranslatorSignup' => array( 'Регистрация_переводчиков' ),
-);
+$specialPageAliases['ru'] = [
+	'NotifyTranslators' => [ 'Уведомить_переводчиков' ],
+	'TranslatorSignup' => [ 'Регистрация_переводчиков' ],
+];
 
 /** Sicilian (sicilianu) */
-$specialPageAliases['scn'] = array(
-	'NotifyTranslators' => array( 'NotificaTraduttori' ),
-	'TranslatorSignup' => array( 'IscrizioneTraduttore' ),
-);
+$specialPageAliases['scn'] = [
+	'NotifyTranslators' => [ 'NotificaTraduttori' ],
+	'TranslatorSignup' => [ 'IscrizioneTraduttore' ],
+];
 
 /** Tuvinian (тыва дыл) */
-$specialPageAliases['tyv'] = array(
-	'NotifyTranslators' => array( 'Очулдурукчуларга_медээлээр' ),
-	'TranslatorSignup' => array( 'Очулдурукчу_бүрүткели' ),
-);
+$specialPageAliases['tyv'] = [
+	'NotifyTranslators' => [ 'Очулдурукчуларга_медээлээр' ],
+	'TranslatorSignup' => [ 'Очулдурукчу_бүрүткели' ],
+];
 
 /** Ukrainian (українська) */
-$specialPageAliases['uk'] = array(
-	'NotifyTranslators' => array( 'Сповістити_перекладачів', 'Уведомить_переводчиков' ),
-	'TranslatorSignup' => array( 'Підписка_перекладачів', 'Регистрация_переводчиков' ),
-);
+$specialPageAliases['uk'] = [
+	'NotifyTranslators' => [ 'Сповістити_перекладачів', 'Уведомить_переводчиков' ],
+	'TranslatorSignup' => [ 'Підписка_перекладачів', 'Регистрация_переводчиков' ],
+];
 
 /** Vietnamese (Tiếng Việt) */
-$specialPageAliases['vi'] = array(
-	'NotifyTranslators' => array( 'Thông_báo_biên_dịch_viên' ),
-	'TranslatorSignup' => array( 'Đăng_ký_biên_dịch_viên', 'Đăng_kí_biên_dịch_viên' ),
-);
+$specialPageAliases['vi'] = [
+	'NotifyTranslators' => [ 'Thông_báo_biên_dịch_viên' ],
+	'TranslatorSignup' => [ 'Đăng_ký_biên_dịch_viên', 'Đăng_kí_biên_dịch_viên' ],
+];
 
 /** Simplified Chinese (中文（简体）‎) */
-$specialPageAliases['zh-hans'] = array(
-	'NotifyTranslators' => array( '通知译者' ),
-	'TranslatorSignup' => array( '译者登记' ),
-);
+$specialPageAliases['zh-hans'] = [
+	'NotifyTranslators' => [ '通知译者' ],
+	'TranslatorSignup' => [ '译者登记' ],
+];
 
 /** Traditional Chinese (中文（繁體）‎) */
-$specialPageAliases['zh-hant'] = array(
-	'NotifyTranslators' => array( '通知翻譯人員' ),
-	'TranslatorSignup' => array( '翻譯人員造冊' ),
-);
+$specialPageAliases['zh-hant'] = [
+	'NotifyTranslators' => [ '通知翻譯人員' ],
+	'TranslatorSignup' => [ '翻譯人員造冊' ],
+];
