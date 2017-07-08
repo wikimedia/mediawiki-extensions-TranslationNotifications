@@ -13,7 +13,6 @@
  */
 class TranslationNotificationsLogFormatter extends LogFormatter {
 	public function getMessageParameters() {
-
 		$params = parent::getMessageParameters();
 
 		// $params[3] is $languagesForLog,
@@ -46,4 +45,3 @@ class TranslationNotificationsLogFormatter extends LogFormatter {
 		return $params;
 	}
 }
-
