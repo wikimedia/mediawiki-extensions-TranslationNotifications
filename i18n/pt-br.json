@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"555",
-			"Araceletorres"
+			"Araceletorres",
+			"Felipe L. Ewald"
 		]
 	},
 	"translatorsignup": "Inscrição como tradutor",
@@ -40,7 +41,7 @@
 	"translationnotifications-languages-to-notify-label-help-message": "Códigos de idiomas separados por vírgulas. Deixe em branco para notificar todos os idiomas disponíveis.",
 	"translationnotifications-priority": "Prioridade:",
 	"translationnotifications-priority-high": "alta",
-	"translationnotifications-priority-medium": "média",
+	"translationnotifications-priority-medium": "médio",
 	"translationnotifications-priority-low": "baixa",
 	"translationnotifications-priority-unset": "(indefinida)",
 	"translationnotifications-translatablepage-title": "Nome da página traduzível:",
@@ -54,7 +55,7 @@
 	"translationnotifications-edit-summary": "Notificação de tradução: $1",
 	"translationnotifications-email-priority": "A prioridade para esta página é $1.",
 	"translationnotifications-email-deadline": "O prazo para que esta página receba traduções é $1.",
-	"log-name-notifytranslators": "Notificações de tradução",
+	"log-name-notifytranslators": "Registro de notificações de tradução",
 	"translationnotifications-sent-title": "Notificação de tradução enviada",
 	"translationnotifications-sent-body": "A notificação de tradução foi enviada.",
 	"translationnotifications-log-alllanguages": "todos os idiomas",
