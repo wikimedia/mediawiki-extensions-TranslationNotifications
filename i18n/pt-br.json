@@ -55,10 +55,12 @@
 	"translationnotifications-edit-summary": "Notificação de tradução: $1",
 	"translationnotifications-email-priority": "A prioridade para esta página é $1.",
 	"translationnotifications-email-deadline": "O prazo para que esta página receba traduções é $1.",
+	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|enviou}} uma notificação sobre a página de tradução $3; {{PLURAL:$10|idioma|idiomas}}: $4; prazo: $5; prioridade: $6; enviado para {{PLURAL:$7|um destinatário|$7 destinatários}}, falhou para {{PLURAL:$8|um destinatário|$8 destinatários}}, ignorado para {{PLURAL:$9|um destinatário|$9 destinatários}}",
 	"log-name-notifytranslators": "Registro de notificações de tradução",
 	"translationnotifications-sent-title": "Notificação de tradução enviada",
 	"translationnotifications-sent-body": "A notificação de tradução foi enviada.",
 	"translationnotifications-log-alllanguages": "todos os idiomas",
 	"translationnotifications-nodeadline": "nenhum",
+	"translationnotifications-signup-legal": "Você concorda que ao fornecer esta informação, podemos contatá-lo em relação a tópicos relacionados a {{SITENAME}} que achamos que podem ser de seu interesse. Você concorda que seus dados estão sujeitos à nossa [[{{MediaWiki:Privacypage}}|política de privacidade]].",
 	"translationnotifications-generic-languages": "&lt;idiomas>"
 }
