@@ -1,6 +1,6 @@
 *~
 *.kate-swp
-.ideanode_modules/
+.idea
 /extensions/
 /node_modules/
 /vendor/
