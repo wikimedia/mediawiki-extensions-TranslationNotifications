@@ -60,7 +60,7 @@
 	"translationnotifications-email-priority": "Пріоритет цієї сторінки — $1.",
 	"translationnotifications-email-deadline": "Кінцевий термін для перекладу цієї сторінки – $1 .",
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|надіслав|надіслала}} сповіщення про сторінки до перекладу ($3 {{PLURAL:$10|1=мовою|мовами}} $4) із кінцевим терміном $5 та пріоритетом $6. Вдало надіслано {{PLURAL:$7|1=$7 одержувачу|$7 одержувачам}}, невдало — {{PLURAL:$8|1=$8 одержувачу|$8 одержувачам}}, {{PLURAL:$9|1=$9 одержувача|$9 одержувачів}} було пропущено.",
-	"log-name-notifytranslators": "Журалн сповіщень перекладу",
+	"log-name-notifytranslators": "Журнал сповіщень перекладу",
 	"log-description-notifytranslators": "Журнал сповіщень, надісланих перекладачам, про сторінки до перекладу.",
 	"translationnotifications-sent-title": "Повідомлення про переклад надіслано.",
 	"translationnotifications-sent-body": "Повідомлення про переклад було надіслано.",
