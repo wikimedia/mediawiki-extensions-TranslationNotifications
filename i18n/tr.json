@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Incelemeelemani"
+		]
+	},
+	"translatorsignup": "Çevirmen kaydı",
+	"translatorsignup-summary": "Hangi dilde tercüme yapabileceğinizi belirtmek için bu sayfayı kullanın ve yeni çeviri taleplerinde sizinle nasıl temasa geçilmesini istediğinizi belirtin.",
+	"translationnotifications-info": "Kullanıcı bilgisi",
+	"translationnotifications-username": "Kullanıcı adı:",
+	"translationnotifications-emailstatus": "E-posta durumu:",
+	"translationnotifications-email-confirmed": "E-posta adresiniz onaylandı",
+	"translationnotifications-signup-success": "Çeviri bildirim tercihleriniz kaydedildi."
+}
