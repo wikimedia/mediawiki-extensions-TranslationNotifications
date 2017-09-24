@@ -237,7 +237,7 @@ class DigestEmailer extends Maintenance {
 
 	protected function getTranslators() {
 		$translators = [];
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$translatorsConds = [ 'up_property' => 'translationnotifications-freq' ];
 		$translatorsConds += [ 'up_value' => [ 'weekly', 'monthly' ] ];
 		$result = $dbr->select(
@@ -262,7 +262,7 @@ class DigestEmailer extends Maintenance {
 	 * @return Array of notifications
 	 */
 	protected function getNotifications() {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$logEntrySelectQuery = DatabaseLogEntry::getSelectQueryData();
 		$logFilter = [ 'log_type' => 'notifytranslators' ];
 		$lastMonthTimeStamp = $dbr->timestamp( strtotime( '-1 month' ) );

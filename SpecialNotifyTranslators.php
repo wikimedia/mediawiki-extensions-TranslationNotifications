@@ -192,7 +192,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 
 		$langPropertyPrefix = 'translationnotifications-lang-';
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$propertyLikePattern = $dbr->buildLike( $langPropertyPrefix, $dbr->anyString() );
 		$translatorsConds = [
 			"up_property $propertyLikePattern",
