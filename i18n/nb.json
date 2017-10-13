@@ -57,7 +57,7 @@
 	"translationnotifications-email-priority": "Denne siden har $1 prioritet.",
 	"translationnotifications-email-deadline": "Tidsfristen for å oversette denne siden er $1.",
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|sendte}} et varsel om oversetting av siden $3; språk: $4; tidsfrist: $5; prioritet: $6; sendt til {{PLURAL:$7|én mottaker|$7 mottakere}}, mislyktes for {{PLURAL:$8|én mottaker|$8 mottakere}}, hoppet over for {{PLURAL:$9|én mottaker|$9 mottakere}}",
-	"log-name-notifytranslators": "Oversettelsesvarsler",
+	"log-name-notifytranslators": "Oversettelsesvarselslogg",
 	"log-description-notifytranslators": "En logg over varsler om oversettbare sider sendt til oversettere",
 	"translationnotifications-sent-title": "Oversettelsesvarsel sendt",
 	"translationnotifications-sent-body": "Oversettelsesvarsel ble sendt.",
