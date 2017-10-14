@@ -182,6 +182,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 
 	/**
 	 * @param array $formData
+	 * @return true
 	 */
 	public function onSubmit( array $formData ) {
 		$user = $this->getUser()->getInstanceForUpdate();

@@ -254,7 +254,7 @@ class DigestEmailer extends Maintenance {
 		return $translators;
 	}
 
-	/*
+	/**
 	 * Get the notifications from last one month(monthly is the largest digest frequency)
 	 * Sort the notification in the descending order of announcement date, and remove
 	 * the older announcements about the pages. Also remove notifications with expired

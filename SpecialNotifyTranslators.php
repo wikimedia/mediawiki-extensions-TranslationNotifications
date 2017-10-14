@@ -180,6 +180,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	 * Callback for the submit button.
 	 *
 	 * @param array $formData
+	 * @return true
 	 * @todo Document
 	 */
 	public function onSubmit( array $formData ) {
@@ -335,7 +336,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	 * Returns a language that a user signed up for in
 	 * Special:TranslatorSignup.
 	 * @param User $user
-	 * @param int Number of language.
+	 * @param int $langNum Number of language.
 	 * @return string Language code, or null if it wasn't defined.
 	 */
 	protected function getUserLanguageOption( $user, $langNum ) {
@@ -540,8 +541,8 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 
 	/**
 	 * Notify a user by email.
-	 * @param $user User to whom the email is being sent
-	 * @param $languagesToNotify Array A list of languages that are notified.
+	 * @param User $user User to whom the email is being sent
+	 * @param array $languagesToNotify A list of languages that are notified.
 	 * Empty for all languages.
 	 * @return EmaillingJob
 	 */
