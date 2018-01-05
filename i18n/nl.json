@@ -6,7 +6,8 @@
 			"Siebrand",
 			"HanV",
 			"MrLeopold",
-			"Mainframe98"
+			"Mainframe98",
+			"Mar(c)"
 		]
 	},
 	"translatorsignup": "Vertalersregistratie",
@@ -51,8 +52,8 @@
 	"translationnotifications-translatablepage-title": "Naam vertaalbare pagina:",
 	"translationnotifications-error-no-translatable-pages": "Er zijn geen vertaalbare pagina's in deze wiki.",
 	"translationnotifications-email-subject": "Vertaal alstublieft de pagina $1",
-	"translationnotifications-email-body": "Hallo $1,\n\nU ontvangt deze e-mail omdat u zich heeft opgegeven als {{GENDER:$10|vertaler}} voor de {{PLURAL:$9|taal|talen}} $2 op {{SITENAME}}.\n\nEr is een pagina te vertalen: $3.\nU kunt deze vertalen door op de volgende koppeling te klikken:\n$4\n\n$5\n$6\n\n$7\n\nUw hulp wordt enorm op prijs gesteld. Door vertalers zoals u functioneert {{SITENAME}} als een echte meertalige gemeenschap.\n\nDank u wel!\nVertalingencoördinatoren van {{SITENAME}}\n\n----\n\nU ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar $8 om u uit te schrijven of om uw instellingen aan te passen.",
-	"translationnotifications-talkpage-body": "Hallo $2,\n\nU ontvangt dit bericht omdat u zich heeft opgegeven als {{GENDER:$1|vertaler}} voor {{PLURAL:$9|het|de talen}} $3 op {{SITENAME}}.\nDe pagina [[$4]] is beschikbaar voor vertaling. U kunt deze hier vertalen:\n$5\n\n$6\n$7\n\n$8\n\nUw hulp wordt enorm op prijs gesteld. Met vertalers zoals u is {{SITENAME}} een echte meertalige gemeenschap.\n\nU kunt ook [$10 uw notificatievoorkeuren] instellen.\n\nBedankt!\n\nVertalingenbeheerders van {{SITENAME}}",
+	"translationnotifications-email-body": "Hallo $1,\n\nU ontvangt deze e-mail omdat u zich hebt opgegeven als {{GENDER:$10|vertaler}} voor de {{PLURAL:$9|taal|talen}} $2 op {{SITENAME}}.\n\nEr is een te vertalen pagina: $3.\nU kunt deze vertalen door op de volgende koppeling te klikken:\n$4\n\n$5\n$6\n\n$7\n\nUw hulp wordt enorm op prijs gesteld. Vertalers zoals u helpen {{SITENAME}} om als een werkelijk meertalige gemeenschap te functioneren.\n\nDank u wel!\nVertalingencoördinatoren van {{SITENAME}}\n\n----\n\nU ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails over over vertalingen op {{SITENAME}}. Ga naar $8 om u uit te schrijven of om uw instellingen aan te passen.",
+	"translationnotifications-talkpage-body": "Hallo $2,\n\nU ontvangt dit bericht omdat u zich hebt opgegeven als {{GENDER:$1|vertaler}} voor {{PLURAL:$9|taal|talen}} $3 op {{SITENAME}}.\nDe pagina [[$4]] is beschikbaar voor vertaling. U kunt deze hier vertalen:\n$5\n\n$6\n$7\n\n$8\n\nUw hulp wordt enorm op prijs gesteld. Vertalers zoals u helpen {{SITENAME}} om als een werkelijk meertalige gemeenschap te functioneren.\n\nU kunt ook [$10 uw notificatievoorkeuren instellen].\n\nBedankt!\n\nVertalingencoördinatoren van {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "vertalen in het $1",
 	"translationnotifications-digestemail-subject": "E-mail met samenvatting voor vertaalverzoeken van {{SITENAME}}",
 	"translationnotifications-digestemail-body": "Hallo $1,\n\nU ontvangt deze e-mail omdat u bent ingeschreven als {{GENDER:$1|vertaler}} voor $2 op {{SITENAME}}.\n\nEr {{PLURAL:$3|staat één nieuwe pagina|staan $3 nieuwe pagina's}} ter vertaling. De details zijn hieronder te lezen:\n\n$4\n\nDank u wel!\nVertalingenbeheerders van {{SITENAME}}\n\n----\n\nU ontvangt deze e-mail omdat u zich hebt ingeschreven voor het ontvangen van e-mails met betrekking tot vertalingen op {{SITENAME}}. Ga naar <$5> om u uit te schrijven of om uw instellingen aan te passen.",
