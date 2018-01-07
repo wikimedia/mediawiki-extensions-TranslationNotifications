@@ -6,7 +6,8 @@
 			"Mjbmr",
 			"Reza1615",
 			"درفش کاویانی",
-			"Huji"
+			"Huji",
+			"Ladsgroup"
 		]
 	},
 	"translatorsignup": "ثبت نام مترجم",
@@ -60,7 +61,7 @@
 	"translationnotifications-email-priority": "اولویت این صفحه $1 است.",
 	"translationnotifications-email-deadline": "آخرین مهلت برای ترجمهٔ این صفحه $1 است.",
 	"logentry-notifytranslators-sent": "$1  اطلاع‌رسانی در مورد ترجمهٔ صفحهٔ  $3  {{GENDER:$2|ارسال کرد}};  {{PLURAL:$10| زبان|زبان}}:  $4 ; آخرین مهلت:  $5 ؛ اولویت:  $6 ; فرستاده شده به  {{PLURAL:$7| یک گیرنده|$7 گیرنده}}، شکست‌خورده برای  {{PLURAL:$8|یک گیرنده| $8  گیرنده}}، رهاشده برای  {{PLURAL:$9|یک گیرنده|$9  گیرنده}}",
-	"log-name-notifytranslators": "آگاه‌سازی‌های ترجمه",
+	"log-name-notifytranslators": "سیاهه آگاه‌سازی‌های ترجمه",
 	"log-description-notifytranslators": "سیاهه‌ای از آگاه‌سازی‌های فرستاده‌شده به مترجمان در مورد صفحه‌های ترجمه‌پذیر",
 	"translationnotifications-sent-title": "آگاه‌سازی ترجمه فرستاده‌شد",
 	"translationnotifications-sent-body": "آگاه‌سازی ترجمه فرستاده شد.",
