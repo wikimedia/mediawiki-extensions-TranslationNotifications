@@ -20,6 +20,8 @@ class DigestEmailer extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->mDescription = 'Send email notification to translators on regular intervals.';
+
+		$this->requireExtension( 'TranslationNotifications' );
 	}
 
 	public function execute() {
