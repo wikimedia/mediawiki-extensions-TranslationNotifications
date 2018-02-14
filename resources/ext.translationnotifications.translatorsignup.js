@@ -8,7 +8,7 @@ jQuery( function ( $ ) {
 	var toggle = function () {
 		$( '#mw-input-wpcmethod-talkpage-elsewhere-loc' )
 			.toggle( $( '#mw-input-wpcmethod-talkpage-elsewhere' )
-			.prop( 'checked' ) );
+				.prop( 'checked' ) );
 	};
 	toggle();
 	$( '#mw-input-wpcmethod-talkpage-elsewhere' ).change( toggle );

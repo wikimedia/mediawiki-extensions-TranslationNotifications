@@ -25,15 +25,15 @@
 			showButtonPanel: true,
 			minDate: new Date()
 		} )
-		.data( 'open', 0 )
-		.click( function () {
-			var $this = $( this );
-			if ( $this.data( 'open' ) === 0 ) {
-				$this.data( 'open', 1 ).datepicker( 'show' );
-			} else {
-				$this.data( 'open', 0 ).datepicker( 'hide' );
-			}
-		} );
+			.data( 'open', 0 )
+			.click( function () {
+				var $this = $( this );
+				if ( $this.data( 'open' ) === 0 ) {
+					$this.data( 'open', 1 ).datepicker( 'show' );
+				} else {
+					$this.data( 'open', 0 ).datepicker( 'hide' );
+				}
+			} );
 
 		// Attach the language autocomplete widget.
 		$( '#wpUserLanguage' ).multiselectautocomplete( { inputbox: '#mw-input-wpLanguagesToNotify' } );
