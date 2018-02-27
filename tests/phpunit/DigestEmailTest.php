@@ -10,6 +10,7 @@
 
 /**
  * Unit tests for DigestEmailer class.
+ * @covers DigestEmailer
  * @group Database
  */
 class DigestEmailTest extends MediaWikiTestCase {
@@ -31,6 +32,7 @@ class DigestEmailTest extends MediaWikiTestCase {
 
 	function tearDown() {
 		unset( $this->emailer );
+		parent::tearDown();
 	}
 
 	public function testSendEmailMonthlyValid() {
