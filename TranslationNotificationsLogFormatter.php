@@ -5,7 +5,7 @@
  * @file
  * @author Sucheta Ghoshal
  * @copyright Copyright © 2013, Sucheta Ghoshal
- * @license GPL-2.0+
+ * @license GPL-2.0-or-later
  */
 
 /**
