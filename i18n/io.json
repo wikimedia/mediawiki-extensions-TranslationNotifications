@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Malafaya"
+			"Malafaya",
+			"Joao Xavier"
 		]
 	},
-	"translationnotifications-languages": "Lingui"
+	"translationnotifications-languages": "Lingui",
+	"translationnotifications-nolang": "Selektez idiomo"
 }
