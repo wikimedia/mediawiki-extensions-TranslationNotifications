@@ -6,7 +6,7 @@
  * @author Amir E. Aharoni
  * @author Santhosh Thottingal
  * @copyright Copyright © 2012, Amir E. Aharoni
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  */
 
 /**
