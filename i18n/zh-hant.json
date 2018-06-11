@@ -8,7 +8,8 @@
 			"LNDDYL",
 			"Liuxinyu970226",
 			"烈羽",
-			"Hello903hello"
+			"Hello903hello",
+			"Kly"
 		]
 	},
 	"translatorsignup": "翻譯者註冊",
@@ -44,6 +45,7 @@
 	"translationnotifications-deadline-label": "這個通知指明的截止日期：",
 	"translationnotifications-languages-to-notify-label": "通知的語言：",
 	"translationnotifications-languages-to-notify-label-help-message": "逗號分隔的語言代碼，留空以通知所有語言。",
+	"translationnotifications-sourcelang-only": "通知不能只發送給原始語言的譯者。",
 	"translationnotifications-priority": "優先級：",
 	"translationnotifications-priority-high": "高",
 	"translationnotifications-priority-medium": "中",
@@ -69,5 +71,6 @@
 	"translationnotifications-log-alllanguages": "所有語言",
 	"translationnotifications-nodeadline": "無",
 	"translationnotifications-signup-legal": "您同意若提供此資訊，我們可能聯絡您有關 {{SITENAME}} 的主題，而我們認為您感興趣。您同意您的資料將按照我們[[{{MediaWiki:Privacypage}}|隱私攻策]]處理。",
-	"translationnotifications-generic-languages": "&lt;languages>"
+	"translationnotifications-generic-languages": "&lt;languages>",
+	"translationnotifications-text": "使用以下表單來發送翻譯請求給譯者。"
 }

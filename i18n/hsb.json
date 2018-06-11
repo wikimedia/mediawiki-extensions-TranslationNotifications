@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Michawiki",
-			"J budissin"
+			"J budissin",
+			"Matěj Suchánek"
 		]
 	},
 	"translatorsignup": "Registrowanje přełožowarja",
@@ -50,7 +51,7 @@
 	"translationnotifications-talkpage-body": "Witaj $2,\n\ndostawaš tutu zdźělenku, dokelž sy so jako přełožowar {{PLURAL:$9|za}} $3 na {{SITENAME}} {{GENDER:$1|zregistrował|zregistrowała}}.\nStrona [[$4]] steji za přełožowanje k dispoziciji. Móžeš ju tu přełožić:\n$5\n\n$6\n$7\n\n$8\n\nWaša pomoc je jara witana. Přełožowarjo kaž ty pomhaja, zo by {{SITENAME}} kaž woprawdźe wjacerěčne zhromadźenstwo fungowało.  \n\nWulki dźak!\n\nPřełožowanscy koordinatorojo {{GRAMMAR:genitiw|{{SITENAME}}}}",
 	"translationnotifications-notification-url-listitem": "do $1 přełožić",
 	"translationnotifications-digestemail-subject": "E-mejlowy přehlad za požadane přełožki wot {{GRAMMAR:genitiw|{{SITENAME}}}}",
-	"translationnotifications-digestemail-body": "Witaj $1,\n\ndóstanješ tutu e-mejlku, dokelž sy so jako {{GENDER$1|přełožowar|přełožowarka}} za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} {{GENDER:$1|zregistrował|zregistrowała}}.\n{{PLURAL:$3|Steji 1 strona|Stejitej $3 stronje|Steja $3 strony|Steji $3 stronow}} za přełožowanje k dispoziciji. Podrobnosće namakaš deleka.\n\n$4\n\nTwoja pomoc je jara witana. Přełožowarjo kaž ty pomhaja, zo by projekt {{SITENAME}} fungował jako woprawdźe wjacerěcne zhromadźenstwo.\n\nWutrobny dźak!\n{{SITENAME}} - přełožowanscy administratorjo\n\n----\n\nPřijimaš tutu e-mejlku, dokelž sy so za přijeće e-mejlkow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} {{GENDER:$1|zregistrował|zregistrowała}}. Zo by přijeće e-mejlow {{GENDER:$1|wotskazał|wotskazała}} abo swoje zdźělenske nastajenja {{GENDER:$1|změnił|změniła}}, dźi prošu k <$5>.",
+	"translationnotifications-digestemail-body": "Witaj $1,\n\ndóstanješ tutu e-mejlku, dokelž sy so jako {{GENDER:$1|přełožowar|přełožowarka}} za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} {{GENDER:$1|zregistrował|zregistrowała}}.\n{{PLURAL:$3|Steji 1 strona|Stejitej $3 stronje|Steja $3 strony|Steji $3 stronow}} za přełožowanje k dispoziciji. Podrobnosće namakaš deleka.\n\n$4\n\nTwoja pomoc je jara witana. Přełožowarjo kaž ty pomhaja, zo by projekt {{SITENAME}} fungował jako woprawdźe wjacerěcne zhromadźenstwo.\n\nWutrobny dźak!\n{{SITENAME}} - přełožowanscy administratorjo\n\n----\n\nPřijimaš tutu e-mejlku, dokelž sy so za přijeće e-mejlkow wo přełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} {{GENDER:$1|zregistrował|zregistrowała}}. Zo by přijeće e-mejlow {{GENDER:$1|wotskazał|wotskazała}} abo swoje zdźělenske nastajenja {{GENDER:$1|změnił|změniła}}, dźi prošu k <$5>.",
 	"translationnotifications-digestemail-notification-line": "Dnja $1 je $2 stronu \"$3\" za přełožowanje woznamjenił. Móžeš ju na $4 přełožować.",
 	"translationnotifications-edit-summary": "Přełožowanska zdźělenka: $1",
 	"translationnotifications-email-priority": "Priorita tuteje strony je $1.",
