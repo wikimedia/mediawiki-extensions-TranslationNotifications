@@ -7,6 +7,7 @@
 	},
 	"translationnotifications-desc": "Permisas tradukeri abonar por recevar informi pri tradukuri",
 	"translationnotifications-username": "Nomo dil uzero:",
+	"translationnotifications-email-unconfirmed": "Vua adreso di e-posto ne esis konfirmita. $1",
 	"translationnotifications-languages": "Lingui",
 	"translationnotifications-lang": "Linguo #$1",
 	"translationnotifications-nolang": "Selektez idiomo",
