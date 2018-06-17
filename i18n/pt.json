@@ -16,7 +16,7 @@
 	"translationnotifications-email-disablemail": "O seu endereço de correio eletrónico foi confirmado, mas nas [[Special:Preferences|preferências]] pediu para não receber notificações por correio eletrónico.",
 	"translationnotifications-email-unconfirmed": "O seu endereço de correio eletrónico não está confirmado. $1",
 	"translationnotifications-email-notset": "Não forneceu nenhum endereço de correio eletrónico. Pode fazê-lo na sua página de [[Special:Preferences|preferências]].",
-	"translationnotifications-languages": "Idiomas",
+	"translationnotifications-languages": "Línguas",
 	"translationnotifications-lang": "Língua #$1",
 	"translationnotifications-nolang": "Escolha uma língua",
 	"translationnotifications-contact": "Métodos de contacto preferenciais",
