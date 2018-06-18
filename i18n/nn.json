@@ -44,6 +44,7 @@
 	"translationnotifications-edit-summary": "Omsetjingsvarsel: $1",
 	"translationnotifications-email-priority": "Sida har $1 prioritet.",
 	"translationnotifications-email-deadline": "Fristen for å setja om sida er $1.",
+	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|sende}} ei melding om omsetjing av sida $3; {{PLURAL:$10|språk}}: $4; tidsfrist: $5; prioritet: $6; send til {{PLURAL:$7|éin mottakar|$7 mottakarar}}, mislukkast for {{PLURAL:$8|éin mottakar|$8 mottakarar}}, hoppa over {{PLURAL:$9|éin mottakar|$9 mottakarar}}",
 	"log-name-notifytranslators": "Omsetjingsvarsel",
 	"log-description-notifytranslators": "Ein logg over varsel sende til omsetjarar om omsetbare sider",
 	"translationnotifications-sent-title": "Omsetjingsvarselet er sendt",
