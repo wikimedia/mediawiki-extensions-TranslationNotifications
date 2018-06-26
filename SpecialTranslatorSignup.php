@@ -105,7 +105,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 
 		$options = [];
 		foreach ( $languages as $code => $name ) {
-			$display = wfBCP47( $code ) . ' - ' . $name;
+			$display = LanguageCode::bcp47( $code ) . ' - ' . $name;
 			$options[$display] = $code;
 		}
 
