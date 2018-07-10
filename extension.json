@@ -56,7 +56,6 @@
 				"mediawiki.jqueryMsg",
 				"mediawiki.Uri",
 				"mediawiki.api",
-				"mediawiki.api.parse",
 				"mediawiki.user",
 				"jquery.ui.datepicker",
 				"ext.translate.multiselectautocomplete"
