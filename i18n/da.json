@@ -1,9 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sarrus"
+			"Sarrus",
+			"Saederup92"
 		]
 	},
+	"translationnotifications-username": "Brugernavn:",
 	"translationnotifications-languages": "Sprog",
-	"translationnotifications-log-alllanguages": "alle sprog"
+	"translationnotifications-priority": "Prioritet:",
+	"translationnotifications-priority-high": "høj",
+	"translationnotifications-priority-medium": "mellem",
+	"translationnotifications-priority-low": "lav",
+	"translationnotifications-priority-unset": "(ikke sat)",
+	"translationnotifications-notification-url-listitem": "oversæt til $1",
+	"translationnotifications-log-alllanguages": "alle sprog",
+	"translationnotifications-nodeadline": "ingen"
 }
