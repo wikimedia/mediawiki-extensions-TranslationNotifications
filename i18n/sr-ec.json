@@ -16,7 +16,7 @@
 	"translationnotifications-email-unconfirmed": "Ваша имејл адреса није потврђена: $1",
 	"translationnotifications-languages": "Језици",
 	"translationnotifications-lang": "Језик #$1",
-	"translationnotifications-nolang": "Изаберите језик",
+	"translationnotifications-nolang": "Одаберите језик",
 	"translationnotifications-contact": "Начин обавештавања",
 	"translationnotifications-cmethod-email": "Имејл",
 	"translationnotifications-cmethod-talkpage": "Страница за разговор",
