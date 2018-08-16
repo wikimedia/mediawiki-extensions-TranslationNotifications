@@ -169,11 +169,11 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 			'default' => $user->getOption( 'translationnotifications-freq', 'always' ),
 			'section' => 'frequency',
 			'options' => [
-				$this->msg( 'translationnotifications-freq-always' )->text() => 'always',
-				$this->msg( 'translationnotifications-freq-week' )->text() => 'week',
-				$this->msg( 'translationnotifications-freq-month' )->text() => 'month',
-				$this->msg( 'translationnotifications-freq-weekly' )->text() => 'weekly',
-				$this->msg( 'translationnotifications-freq-monthly' )->text() => 'monthly',
+				$this->msg( 'translationnotifications-freq-always' )->escaped() => 'always',
+				$this->msg( 'translationnotifications-freq-week' )->escaped() => 'week',
+				$this->msg( 'translationnotifications-freq-month' )->escaped() => 'month',
+				$this->msg( 'translationnotifications-freq-weekly' )->escaped() => 'weekly',
+				$this->msg( 'translationnotifications-freq-monthly' )->escaped() => 'monthly',
 			],
 		];
 
