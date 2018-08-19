@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr Lotus Black"
+		]
+	},
+	"translationnotifications-info": "အသုံးပြုသူ သတင်းအချက်အလက်",
+	"translationnotifications-username": "အသုံးပြုသူအမည်:",
+	"translationnotifications-emailstatus": "အီးမေးလ် အခြေနေ:",
+	"translationnotifications-languages": "ဘာသာစကားများ",
+	"translationnotifications-lang": "ဘာသာစကား #$1",
+	"translationnotifications-nolang": "ဘာသာစကားရွေးချယ်ရန်",
+	"translationnotifications-cmethod-email": "အီးမေးလ်",
+	"translationnotifications-cmethod-talkpage": "ဆွေးနွေးချက် စာမျက်နှာ",
+	"translationnotifications-priority": "ဦးစားပေးအဆင့်:",
+	"translationnotifications-priority-high": "မြင့်",
+	"translationnotifications-priority-medium": "အလယ်အလတ်",
+	"translationnotifications-priority-low": "နိမ့်",
+	"translationnotifications-priority-unset": "(မသတ်မှတ်ထား)",
+	"translationnotifications-notification-url-listitem": "$1 သို့ ဘာသာပြန်ရန်",
+	"translationnotifications-log-alllanguages": "ဘာသာစကားများ အားလုံး",
+	"translationnotifications-nodeadline": "ဘာမှမရှိ"
+}
