@@ -42,7 +42,7 @@
 	"translationnotifications-email-priority": "Приоритет ове странице је $1.",
 	"translationnotifications-email-deadline": "Крајњи рок за превод ове странице је $1.",
 	"logentry-notifytranslators-sent": "$1 је {{GENDER:$2|послао|послала}} обавештење о преводивој страници $3; {{PLURAL:$10|језик|језици}}: $4; рок: $5; приоритет: $6; послато {{PLURAL:$7|једном кориснику|$7 корисника}}, није послато {{PLURAL:$8|једном кориснику|$8 корисника}}, прескочен {{PLURAL:$9|један корисник|$9 корисника}}",
-	"log-description-notifytranslators": "Евиденција послатих обавештења преводиоцима у вези преводивих страница",
+	"log-description-notifytranslators": "Дневник послатих обавештења преводиоцима у вези преводивих страница",
 	"translationnotifications-log-alllanguages": "сви језици",
 	"translationnotifications-nodeadline": "нема"
 }
