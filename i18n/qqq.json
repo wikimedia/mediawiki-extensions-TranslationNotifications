@@ -10,7 +10,8 @@
 			"SPQRobin",
 			"Shirayuki",
 			"Siebrand",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Zoranzoki21"
 		]
 	},
 	"translatorsignup": "{{doc-special|TranslatorSignup}}",
@@ -65,7 +66,7 @@
 	"translationnotifications-email-priority": "Used as <code>$5</code> in the following email body:\n* {{msg-mw|translationnotifications-email-body}}\n\nParameters:\n* $1 - priority. Any one of the following messages:\n** {{msg-mw|Translationnotifications-priority-high}}\n** {{msg-mw|Translationnotifications-priority-medium}}\n** {{msg-mw|Translationnotifications-priority-low}}",
 	"translationnotifications-email-deadline": "Used as <code>$6</code> in the following email body:\n* {{msg-mw|Translationnotifications-email-body}}.\n\nParameters:\n* $1 - date, or the message {{msg-mw|Translationnotifications-nodeadline}}",
 	"logentry-notifytranslators-sent": "{{logentry}}\n* $4 - list of language codes, or {{msg-mw|translationnotifications-log-alllanguages}}\n* $5 - deadline\n* $6 - priority\n* $7 - number of recipients to whom the notification was sent successfully\n* $8 - number of recipients to whom sending the notification failed\n* $9 - number of recipients to whom the notification was not sent because it was too early to send it according to their preferences.\n* $10 - number of notified languages; 999 in case of {{msg-mw|translationnotifications-log-alllanguages}}.",
-	"log-name-notifytranslators": "Log page title.",
+	"log-name-notifytranslators": "Log page title about sending translation notifications.",
 	"log-description-notifytranslators": "Log page description",
 	"translationnotifications-sent-title": "The title of the page shown after the notification is sent.\nSimilar to {{msg-mw|emailsent}}.\n\nThe body for this title may be {{msg-mw|Translationnotifications-sent-body}}.",
 	"translationnotifications-sent-body": "May be used as page body.\n\nThe title for this message is {{msg-mw|Translationnotifications-sent-title}}.",
