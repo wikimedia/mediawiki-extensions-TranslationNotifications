@@ -53,7 +53,7 @@
 	"translationnotifications-priority-medium": "medium (priority), an item in a dropdown box.\n{{Identical|Medium}}",
 	"translationnotifications-priority-low": "low (priority), an item in a dropdown box.\n{{Identical|Low}}",
 	"translationnotifications-priority-unset": "unset (priority), an item in a dropdown box.",
-	"translationnotifications-translatablepage-title": "A label for language codes field. Can be translated as \"A page designated for translation, intended for translation\", etc.",
+	"translationnotifications-translatablepage-title": "A label for title of page which can be translated. Can be translated as \"A page designated for translation, intended for translation\", etc.",
 	"translationnotifications-error-no-translatable-pages": "An error message.",
 	"translationnotifications-email-subject": "A subject for the email sent to translators. Parameters:\n* $1 - page title for the translatable page",
 	"translationnotifications-email-body": "The body of the email message sent to translators. Parameters:\n* $1 - Translator's username or real name, if specified\n* $2 - A comma list of language names\n* $3 - Translatable page name\n* $4 - A bullet list of URLs\n* $5 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.\n* $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.\n* $7 - A custom message that can be added by the notification sender\n* $8 - URL to the special page, to unsubscribe\n* $9 - Number of languages. Can be used in PLURAL\n* $10　- Plain text username used for GENDER",
