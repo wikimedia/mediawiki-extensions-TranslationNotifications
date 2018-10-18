@@ -43,7 +43,7 @@
 	"translationnotifications-priority-unset": "(durung disetèl)",
 	"translationnotifications-translatablepage-title": "Jeneng kaca sing bisa diterjemahaké:",
 	"translationnotifications-error-no-translatable-pages": "Ora ana kaca sing bisa diterjemahaké nèng wiki iki.",
-	"translationnotifications-email-subject": "Mangga pertal kaca $1",
+	"translationnotifications-email-subject": "Sumangga pertal kaca $1",
 	"translationnotifications-notification-url-listitem": "pertal ing $1",
 	"translationnotifications-digestemail-subject": "Kirim intisasi nèng layang èlèktronik kanggo panjalukan terjemahan saka {{SITENAME}}",
 	"translationnotifications-digestemail-notification-line": "Tanggal $1, $2 nandhai \"$3\" kanggo terjemahan. Panjenengan bisa nerjemahaké kuwi nèng $4",
