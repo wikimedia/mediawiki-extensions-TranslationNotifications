@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Niklas Laxström",
-			"Amire80"
+			"Amire80",
+			"Zoranzoki21"
 		]
 	},
 	"translatorsignup": "Translator signup",
@@ -36,8 +37,8 @@
 	"translationnotifications-send-notification-button": "Send notification to translators",
 	"translationnotifications-preview-notification-button": "Preview notification",
 	"translationnotifications-deadline-label": "Deadline to indicate in this notification:",
-	"translationnotifications-languages-to-notify-label": "Which languages to notify:",
-	"translationnotifications-languages-to-notify-label-help-message": "Comma-separated language codes; leave blank to notify for all languages.",
+	"translationnotifications-languages-to-notify-label": "For which languages to send notification:",
+	"translationnotifications-languages-to-notify-label-help-message": "Comma-separated language codes; leave blank to send notifications to all translators of all languages.",
 	"translationnotifications-sourcelang-only": "A notification cannot be sent only to translators of the source language.",
 	"translationnotifications-priority": "Priority:",
 	"translationnotifications-priority-high": "high",
