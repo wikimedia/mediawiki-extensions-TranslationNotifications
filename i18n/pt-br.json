@@ -3,7 +3,8 @@
 		"authors": [
 			"555",
 			"Araceletorres",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Eduardo Addad de Oliveira"
 		]
 	},
 	"translatorsignup": "Inscrição como tradutor",
@@ -37,8 +38,8 @@
 	"translationnotifications-send-notification-button": "Enviar notificação para os tradutores",
 	"translationnotifications-preview-notification-button": "Pré-visualizar notificação",
 	"translationnotifications-deadline-label": "Prazo a ser indicado nesta notificação:",
-	"translationnotifications-languages-to-notify-label": "Notificar em quais idiomas:",
-	"translationnotifications-languages-to-notify-label-help-message": "Códigos de idiomas separados por vírgulas. Deixe em branco para notificar todos os idiomas disponíveis.",
+	"translationnotifications-languages-to-notify-label": "Para quais idiomas enviar notificação:",
+	"translationnotifications-languages-to-notify-label-help-message": "Códigos de idioma separados por vírgula; deixar em branco para enviar notificações a todos os tradutores de todos os idiomas.",
 	"translationnotifications-sourcelang-only": "Uma notificação não pode ser enviada apenas para tradutores da língua de origem.",
 	"translationnotifications-priority": "Prioridade:",
 	"translationnotifications-priority-high": "alta",
