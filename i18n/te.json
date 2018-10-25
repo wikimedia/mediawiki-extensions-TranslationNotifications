@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Chaduvari",
-			"Veeven"
+			"Veeven",
+			"Pavan santhosh.s"
 		]
 	},
 	"translationnotifications-info": "వాడుకరి సమాచారం",
@@ -31,7 +32,7 @@
 	"translationnotifications-submit-ok": "గమనింపులను ఓ క్యూలో పెట్టాం. వీటిని నేపథ్యంలో నడిచే ఒక వ్యవస్థ పంపించేస్తుంది.",
 	"translationnotifications-send-notification-button": "అనువాదకులకు గమనింపు పంపించు",
 	"translationnotifications-preview-notification-button": "గమనింపు మునుజూపు",
-	"translationnotifications-languages-to-notify-label": "ఏ భాషలకు గమనింపు పంపాలి:",
+	"translationnotifications-languages-to-notify-label": "ఏ భాషలకు నోటిఫికేషను పంపాలి:",
 	"translationnotifications-priority": "ప్రాధాన్యత:",
 	"translationnotifications-priority-high": "ఎక్కువ",
 	"translationnotifications-priority-medium": "మధ్యస్థం",
