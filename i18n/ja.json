@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Shirayuki",
-			"Otokoume"
+			"Otokoume",
+			"Omotecho"
 		]
 	},
 	"translatorsignup": "翻訳者登録",
@@ -34,8 +35,8 @@
 	"translationnotifications-send-notification-button": "翻訳者に通知を送信",
 	"translationnotifications-preview-notification-button": "通知をプレビュー",
 	"translationnotifications-deadline-label": "この通知で指定する締め切り:",
-	"translationnotifications-languages-to-notify-label": "通知する言語:",
-	"translationnotifications-languages-to-notify-label-help-message": "カンマ区切りの言語コードです。すべての言語を通知する場合は空欄にします。",
+	"translationnotifications-languages-to-notify-label": "通知する言語の指定:",
+	"translationnotifications-languages-to-notify-label-help-message": "カンマ区切りの言語コードです。言語に関わらずすべての翻訳者に通知する場合は、空欄にします。",
 	"translationnotifications-priority": "優先度:",
 	"translationnotifications-priority-high": "高",
 	"translationnotifications-priority-medium": "中",
