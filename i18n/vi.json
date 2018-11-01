@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Minh Nguyen"
+			"Minh Nguyen",
+			"Vinhtantran"
 		]
 	},
 	"translatorsignup": "Ghi danh làm biên dịch viên",
@@ -35,8 +36,8 @@
 	"translationnotifications-send-notification-button": "Gửi thông báo cho các biên dịch viên.",
 	"translationnotifications-preview-notification-button": "Xem trước thông báo",
 	"translationnotifications-deadline-label": "Ngày hạn để nhắc đến trong thông báo này:",
-	"translationnotifications-languages-to-notify-label": "Các ngôn ngữ để báo:",
-	"translationnotifications-languages-to-notify-label-help-message": "Các mã ngôn ngữ (phân cách bằng dấu phẩy); để trống để báo tất cả các ngôn ngữ.",
+	"translationnotifications-languages-to-notify-label": "Ngôn ngữ để gửi thông báo:",
+	"translationnotifications-languages-to-notify-label-help-message": "Mã ngôn ngữ (phân cách bằng dấu phẩy); để trống để gửi thông báo đến tất cả các biên dịch viên của tất cả các ngôn ngữ.",
 	"translationnotifications-sourcelang-only": "Không thể chỉ thông báo các biên dịch viên từ ngôn ngữ gốc.",
 	"translationnotifications-priority": "Ưu tiên:",
 	"translationnotifications-priority-high": "cao",
@@ -56,7 +57,7 @@
 	"translationnotifications-email-priority": "Trang này có ưu tiên $1.",
 	"translationnotifications-email-deadline": "Công việc dịch trang này sẽ hết hạn $1.",
 	"logentry-notifytranslators-sent": "{{GENDER:$2}}$1 đã gửi thông báo về việc thông dịch trang $3; ngôn ngữ: $4; ngày hạn: $5; ưu tiên: $6; được gửi cho $7 người, không gửi được cho $8 người, bỏ qua $9 người",
-	"log-name-notifytranslators": "Thông báo biên dịch",
+	"log-name-notifytranslators": "Nhật trình thông báo biên dịch",
 	"log-description-notifytranslators": "Nhật trình các thông báo được gửi cho biên dịch viên về các trang dịch được",
 	"translationnotifications-sent-title": "Thông báo biên dịch đã được gửi",
 	"translationnotifications-sent-body": "Thông báo biên dịch đã được gửi.",
