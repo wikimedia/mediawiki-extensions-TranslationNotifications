@@ -28,7 +28,7 @@ class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
 		$this->requireExtension( 'TranslationNotifications' );
 	}
 
-	function execute() {
+	public function execute() {
 		$dbw = wfGetDB( DB_MASTER );
 
 		$langPropertyPrefix = 'translationnotifications-lang-';

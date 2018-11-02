@@ -24,13 +24,13 @@ class DigestEmailTest extends MediaWikiTestCase {
 	 */
 	private $translators_conf;
 
-	function setUp() {
+	public function setUp() {
 		parent::setUp();
 		$this->translators_conf = parse_ini_file( "translators.ini", true );
 		$this->emailer = new DigestEmailer();
 	}
 
-	function tearDown() {
+	public function tearDown() {
 		unset( $this->emailer );
 		parent::tearDown();
 	}
