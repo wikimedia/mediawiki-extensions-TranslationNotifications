@@ -8,6 +8,7 @@
 	},
 	"translatorsignup": "Registracija prevodioca",
 	"translatorsignup-summary": "Koristite ovu stranicu da navedete na koje jezike možete da prevodite i kako želite da budete obavešteni kad god je potrebno prevođenje.",
+	"translationnotifications-desc": "Dozvoljava prevodiocima da se prijave za obaveštenja o prevodima",
 	"translationnotifications-email-disablemail": "Vaša imejl adresa je potvrđena, ali u [[Special:Preferences|Vašim podešavanjima]] podesili ste da ne primate imejl.",
 	"translationnotifications-email-unconfirmed": "Vaša imejl adresa nije potvrđena: $1",
 	"translationnotifications-languages": "Jezici",

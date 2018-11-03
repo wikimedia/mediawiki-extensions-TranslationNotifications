@@ -10,6 +10,7 @@
 	},
 	"translatorsignup": "Пријава за преводиоца",
 	"translatorsignup-summary": "Користите ову страницу да наведете на које језике можете да преводите и како желите да будете обавештени кад год је потребно превођење.",
+	"translationnotifications-desc": "Дозвољава преводиоцима да се пријаве за обавештења о преводима",
 	"translationnotifications-info": "Кориснички подаци",
 	"translationnotifications-username": "Корисничко име:",
 	"translationnotifications-emailstatus": "Статус имејла:",
