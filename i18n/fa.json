@@ -41,7 +41,7 @@
 	"translationnotifications-send-notification-button": "ارسال اعلان به مترجم‌ها",
 	"translationnotifications-preview-notification-button": "پیش‌نمایش اعلان",
 	"translationnotifications-deadline-label": "مهلت مشخص‌شده در این آگاه‌سازی:",
-	"translationnotifications-languages-to-notify-label": "چه زبان‌هایی آگاه شوند:",
+	"translationnotifications-languages-to-notify-label": "به چه زبان‌هایی اعلان فرستاده شود:",
 	"translationnotifications-languages-to-notify-label-help-message": "کدهای زبان جداشده با کاما؛ برای آگاه‌سازی همهٔ زبان‌ها خالی بگذارید.",
 	"translationnotifications-priority": "اولویت:",
 	"translationnotifications-priority-high": "بالا",
