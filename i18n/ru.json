@@ -4,7 +4,8 @@
 			"Kaganer",
 			"Okras",
 			"Redredsonia",
-			"Facenapalm"
+			"Facenapalm",
+			"Alexandr Efremov"
 		]
 	},
 	"translatorsignup": "Регистрация в качестве переводчика",
@@ -38,7 +39,7 @@
 	"translationnotifications-send-notification-button": "Отправить переводчикам уведомление",
 	"translationnotifications-preview-notification-button": "Предпросмотр уведомлений",
 	"translationnotifications-deadline-label": "Крайний срок, указываемый в этом уведомлении:",
-	"translationnotifications-languages-to-notify-label": "К каким языкам относится уведомление:",
+	"translationnotifications-languages-to-notify-label": "Для каких языков необходимо отправить уведомление:",
 	"translationnotifications-languages-to-notify-label-help-message": "Коды языков, разделяемые запятой; оставьте поле пустым, если уведомление касается всех языков.",
 	"translationnotifications-sourcelang-only": "Уведомление не может быть отправлено только переводчикам исходного языка.",
 	"translationnotifications-priority": "Приоритет:",
