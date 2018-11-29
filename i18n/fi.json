@@ -5,7 +5,8 @@
 			"Nike",
 			"Olli",
 			"Silvonen",
-			"Stryn"
+			"Stryn",
+			"Valtlait"
 		]
 	},
 	"translatorsignup": "Kääntäjäksi liittyminen",
@@ -54,7 +55,7 @@
 	"translationnotifications-notification-url-listitem": "käännä kielelle $1",
 	"translationnotifications-digestemail-subject": "Yhteenveto sivuston {{SITENAME}} käännöspyynnöistä",
 	"translationnotifications-digestemail-body": "Hei $1,\n\nSaat tämän sähköpostiviestin, koska olet {{GENDER:$10|ilmoittautunut}} {{PLURAL:$9|kielen|kielten}} $2 kääntäjäksi sivustolla {{SITENAME}}.\n\nSaatavilla on $3 siv{{PLURAL:$3|u|ua}} käännettäväksi. Tarkemmat tiedot annetaan alla.\n\n$4\n\nApuasi arvostetaan. Sinunlaisesi kääntäjät pitävät sivuston {{SITENAME}} toiminnassa\nmonikielisenä yhteisönä.\n\nKiitos!\nSivuston {{SITENAME}} käännösvastaavat\n\n----\n\nVastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä sivustolla {{SITENAME}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy sivulla <$5>.",
-	"translationnotifications-digestemail-notification-line": "($1) $2 ilmoitti sivun \"$3\" käännettäväksi. Voit kääntää sen osoitteessa $4",
+	"translationnotifications-digestemail-notification-line": "($1) $2 ilmoitti sivun ”$3” käännettäväksi. Voit kääntää sen osoitteessa $4",
 	"translationnotifications-edit-summary": "Ilmoitus käännöksestä: $1",
 	"translationnotifications-email-priority": "Tämän sivun tärkeysaste on $1.",
 	"translationnotifications-email-deadline": "Tämä sivu tulisi kääntää viimeistään $1.",
