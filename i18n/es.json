@@ -5,7 +5,8 @@
 			"Dferg",
 			"Fitoschido",
 			"MarcoAurelio",
-			"Macofe"
+			"Macofe",
+			"Carlosmg.dg"
 		]
 	},
 	"translatorsignup": "Inscripción de traductores",
@@ -39,7 +40,7 @@
 	"translationnotifications-send-notification-button": "Enviar una notificación a los traductores",
 	"translationnotifications-preview-notification-button": "Previsualizar la notificación",
 	"translationnotifications-deadline-label": "Fecha límite a indicar en esta notificación:",
-	"translationnotifications-languages-to-notify-label": "Idiomas en los que notificar:",
+	"translationnotifications-languages-to-notify-label": "Para qué lenguas enviar notificación:",
 	"translationnotifications-languages-to-notify-label-help-message": "Códigos de idioma separados por comas; dejar en blanco para notificar en todos los idiomas.",
 	"translationnotifications-sourcelang-only": "Una notificación no puede enviarse sólo a los traductores del idioma de origen.",
 	"translationnotifications-priority": "Prioridad:",
