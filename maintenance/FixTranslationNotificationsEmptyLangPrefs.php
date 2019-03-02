@@ -47,5 +47,5 @@ class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
 	}
 }
 
-$maintClass = 'FixTranslationNotificationsEmptyLangPrefs';
+$maintClass = FixTranslationNotificationsEmptyLangPrefs::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
