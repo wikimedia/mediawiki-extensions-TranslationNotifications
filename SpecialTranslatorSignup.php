@@ -230,4 +230,8 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 
 		return $wikis;
 	}
+
+	protected function getDisplayFormat() {
+		return 'ooui';
+	}
 }
