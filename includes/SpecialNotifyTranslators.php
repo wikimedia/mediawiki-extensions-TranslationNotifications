@@ -399,7 +399,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	}
 
 	/**
-	 * @param string $userFirstLanguage Language code set as first preference
+	 * @param Language $userFirstLanguage Language object set as first preference
 	 * @return string
 	 */
 	protected function getPriorityClause( $userFirstLanguage ) {
@@ -491,7 +491,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	}
 
 	/**
-	 * @param string $userFirstLanguage Language code
+	 * @param Language $userFirstLanguage
 	 * @return string
 	 */
 	protected function getDeadlineClause( $userFirstLanguage ) {
