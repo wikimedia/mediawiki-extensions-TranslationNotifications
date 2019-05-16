@@ -3,7 +3,8 @@
 		"authors": [
 			"Blahma",
 			"Yekrats",
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"Mirin"
 		]
 	},
 	"translatorsignup": "Tradukista abono",
@@ -35,9 +36,10 @@
 	"notifytranslators": "Sciigi tradukistojn",
 	"translationnotifications-submit-ok": "Sciigoj estas envicigitaj kaj nun dissendiĝas helpe de fona procezo.",
 	"translationnotifications-send-notification-button": "Sendi sciigon al tradukistoj",
+	"translationnotifications-preview-notification-button": "Antaŭrigardi sciigon",
 	"translationnotifications-deadline-label": "Limdato indikota en tiu ĉi sciigo:",
 	"translationnotifications-languages-to-notify-label": "Kiujn lingvojn sciigi:",
-	"translationnotifications-languages-to-notify-label-help-message": "Perkome disigita listo de lingvokodoj; lasu malplena por sciigi ĉiujn lingvojn.",
+	"translationnotifications-languages-to-notify-label-help-message": "Perkome disigita listo de lingvokodoj; lasu malplena por sciigi tradukantojn de ĉiuj lingvoj.",
 	"translationnotifications-priority": "Prioritato:",
 	"translationnotifications-priority-high": "alta",
 	"translationnotifications-priority-medium": "meza",
@@ -56,7 +58,7 @@
 	"translationnotifications-email-priority": "La prioritato de tiu ĉi paĝo estas $1.",
 	"translationnotifications-email-deadline": "La limdato por traduko de tiu ĉi paĝo estas $1.",
 	"logentry-notifytranslators-sent": "$1 dissendis sciigon pri tradukado de la paĝo $3; lingvoj: $4; limdato: $5; prioritato: $6; sendita al {{PLURAL:$7|unu ricevanto|$7 ricevantoj}}, malsukcesis ĉe {{PLURAL:$8|unu ricevanto|$8 ricevantoj}}, preterpasita ĉe {{PLURAL:$9|unu ricevanto|$9 ricevantoj}}",
-	"log-name-notifytranslators": "Traduksciigoj",
+	"log-name-notifytranslators": "Protokolo de traduksciigoj",
 	"log-description-notifytranslators": "Protokolo pri sciigoj pri tradukeblaj paĝoj dissenditaj al tradukistoj",
 	"translationnotifications-sent-title": "Traduksciigo sendita",
 	"translationnotifications-sent-body": "Traduksciigo estas sendita.",
