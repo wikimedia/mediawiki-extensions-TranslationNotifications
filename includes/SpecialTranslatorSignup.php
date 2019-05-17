@@ -67,11 +67,13 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		$this->getOutput()->addModules( 'ext.translationnotifications.translatorsignup' );
 		$user = $this->getUser();
 
-		$m['username'] = [
-			'type' => 'info',
-			'label-message' => 'translationnotifications-username',
-			'default' => $user->getName(),
-			'section' => 'info',
+		$m = [
+			'username' => [
+				'type' => 'info',
+				'label-message' => 'translationnotifications-username',
+				'default' => $user->getName(),
+				'section' => 'info',
+			],
 		];
 
 		if ( $user->isEmailConfirmed() ) {
