@@ -11,6 +11,8 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\Extension\SiteMatrix\SiteMatrix;
+
 /**
  * Form for translators to register contact methods
  *
