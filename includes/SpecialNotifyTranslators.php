@@ -153,6 +153,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 			if ( MessageGroups::getPriority( $page ) === 'discouraged' ) {
 				continue;
 			}
+			'@phan-var WikiPageMessageGroup $page';
 			$title = $page->getTitle();
 			$lb->addObj( $title );
 			$titles[] = $title;
