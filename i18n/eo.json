@@ -40,6 +40,7 @@
 	"translationnotifications-deadline-label": "Limdato indikota en tiu ĉi sciigo:",
 	"translationnotifications-languages-to-notify-label": "Kiujn lingvojn sciigi:",
 	"translationnotifications-languages-to-notify-label-help-message": "Perkome disigita listo de lingvokodoj; lasu malplena por sciigi tradukantojn de ĉiuj lingvoj.",
+	"translationnotifications-sourcelang-only": "Sciigo ne povas esti sendata al nur la tradukantoj de la fonta lingvo.",
 	"translationnotifications-priority": "Prioritato:",
 	"translationnotifications-priority-high": "alta",
 	"translationnotifications-priority-medium": "meza",
@@ -48,11 +49,11 @@
 	"translationnotifications-translatablepage-title": "Nomo de la tradukenda paĝo:",
 	"translationnotifications-error-no-translatable-pages": "En tiu ĉi vikio ekzistas neniuj tradukeblaj paĝoj.",
 	"translationnotifications-email-subject": "Bonvolu traduki la paĝon $1",
-	"translationnotifications-email-body": "Saluton $1,\n\nvi ricevas tiun ĉi mesaĝon, ĉar vi registriĝis kiel tradukisto de {{PLURAL:$9|la lingvo|la lingvoj}} $2 ĉe {{SITENAME}}.\n\nEkzistas tradukebla paĝo ĉe: $3.\nVi povas ektraduki ĝin klakante la sekvan ligilon:\n$4\n\n$5\n$6\n\n$7\n\nNi tre aprezos vian helpon. Tradukistoj kiel vi helpas al {{SITENAME}} funkcii kiel vere multlingva komunumo.\n\nDankon!\ntraduk-kunordigantoj de {{SITENAME}}\n\n----\n\nVi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITENAME}}. Por malaboni aŭ ŝanĝi viajn sciigajn preferojn, bonvolu viziti $8.",
-	"translationnotifications-talkpage-body": "Saluton $2,\n\nvi ricevas tiun ĉi mesaĝon, ĉar vi registriĝis kiel tradukisto de {{PLURAL:$9|la lingvo|la lingvoj}} $2 ĉe {{SITENAME}}.\nLa paĝo [[$4]] estas tradukpreta. Vi povas traduki ĝin ĉe:\n$5\n\n$6\n$7\n\n$8\n\nNi tre aprezos vian helpon. Tradukistoj kiel vi helpas al {{SITENAME}} funkcii kiel vere multlingva komunumo.\n\nDankon!\ntraduk-kunordigantoj de {{SITENAME}}",
+	"translationnotifications-email-body": "Saluton $1,\n\nvi ricevas tiun ĉi mesaĝon, ĉar vi  {{GENDER:$10|registriĝis}} kiel tradukisto de {{PLURAL:$9|la lingvo|la lingvoj}} $2 ĉe {{SITENAME}}.\n\nEkzistas tradukebla paĝo ĉe: $3.\nVi povas ektraduki ĝin klakante la sekvan ligilon:\n$4\n\n$5\n$6\n\n$7\n\nNi tre aprezos vian helpon. Tradukistoj kiel vi helpas al {{SITENAME}} funkcii kiel vere multlingva komunumo.\n\nDankon!\ntraduk-kunordigantoj de {{SITENAME}}\n\n----\n\nVi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITENAME}}. Por malaboni aŭ ŝanĝi viajn sciigajn preferojn, bonvolu viziti $8.",
+	"translationnotifications-talkpage-body": "Saluton $2,\n\nvi ricevas tiun ĉi mesaĝon, ĉar vi {{GENDER:$1|registriĝis}} kiel tradukisto de {{PLURAL:$9|la lingvo|la lingvoj}} $3 ĉe {{SITENAME}}.\nLa paĝo [[$4]] estas tradukpreta. Vi povas traduki ĝin ĉe:\n$5\n\n$6\n$7\n\n$8\n\nNi valoregas vian helpon. Tradukistoj kiel vi helpas al {{SITENAME}} funkcii kiel vere multlingva komunumo.\n\nDankon!\n\nTraduk-kunordigantoj de {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "traduki al $1",
 	"translationnotifications-digestemail-subject": "Retpoŝta kompilaĵo de tradukpetoj el {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Saluton $1,\n\nvi ricevas tiun ĉi mesaĝon, ĉar vi registriĝis kiel tradukisto de $2 ĉe {{SITENAME}}.\n\nEkzistas {{PLURAL:$3|1 tradukpreta paĝo|$3 tradukpretaj paĝoj}}. Detaloj sekvas sube.\n\n$4\n\nNi tre aprezos vian helpon. Tradukistoj kiel vi helpas al {{SITENAME}} funkcii kiel vere multlingva komunumo.\n\nDankon!\ntraduk-kunordigantoj de {{SITENAME}}\n\n----\n\nVi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITENAME}}. Por malaboni aŭ ŝanĝi viajn sciigajn preferojn, bonvolu viziti <$5>.",
+	"translationnotifications-digestemail-body": "Saluton $1,\n\nvi ricevas tiun ĉi mesaĝon, ĉar vi {{GENDER:$1|signed up}} kiel tradukisto de $2 ĉe {{SITENAME}}.\n\nEkzistas {{PLURAL:$3|1 tradukpreta paĝo|$3 tradukpretaj paĝoj}}. Detaloj sekvas sube.\n\n$4\n\nNi tre aprezos vian helpon. Tradukistoj kiel vi helpas al {{SITENAME}} funkcii kiel vere multlingva komunumo.\n\nDankon!\ntraduk-kunordigantoj de {{SITENAME}}\n\n----\n\nVi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITENAME}}. Por malaboni aŭ ŝanĝi viajn sciigajn preferojn, bonvolu viziti <$5>.",
 	"translationnotifications-digestemail-notification-line": "Je $1, $2 markis \"$3\" tradukpreta. Vi povas traduki ĝin ĉe $4",
 	"translationnotifications-edit-summary": "Traduksciigo: $1",
 	"translationnotifications-email-priority": "La prioritato de tiu ĉi paĝo estas $1.",
@@ -65,5 +66,6 @@
 	"translationnotifications-log-alllanguages": "ĉiuj lingvoj",
 	"translationnotifications-nodeadline": "neniu",
 	"translationnotifications-signup-legal": "Provizante tiun ĉi informon vi konsentas, ke ni povas vin kontakti pri temoj rilataj al {{SITENAME}} kiujn ni taksos interesaj por vi. Vi konsentas ke viaj datumoj subiĝas al nia [[{{MediaWiki:Privacypage}}|privateca politiko.]]",
-	"translationnotifications-generic-languages": "&lt;lingvoj>"
+	"translationnotifications-generic-languages": "&lt;lingvoj>",
+	"translationnotifications-text": "Jen la formularon por sendi tradukpetojn al tradukantoj."
 }
