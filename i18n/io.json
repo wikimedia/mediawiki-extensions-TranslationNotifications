@@ -14,5 +14,6 @@
 	"translationnotifications-submit-ok": "L'avizi inkluzesis en serio, e sendesas per acesora informatikoprogramo.",
 	"translationnotifications-send-notification-button": "Sendar informo a la tradukeri",
 	"translationnotifications-email-body": "Saluto $1,\n\nVu recevis ica e-posto pro vu {{GENDER:$10|enrejistris}} quale tradukero {{PLURAL:$9|a(d)}} $2 en {{SITENAME}}.\n\nExistas pagino por tradukar ibe: $3.\nVu povos tradukar ol per kliko en la sequanta ligilo:\n$4\n\n$5\n$6\n\n$7\n\nVua helpo esas grande prizata da ni. Tradukeri quale vu helpas la funcionado di {{SITENAME}} quale vere plurlinguala komunitato.\n\nMulta danko!\nKoordineri di tradukuro por {{SITENAME}}\n\n----\n\nVu recevis ica e-posto pro vu aceptis recevar e-posti pri tradukuri en la projeto {{SITENAME}}. Por modifikar vua preferaji pri tradukuri o por trastrekizar la sendajo di e-posti, voluntez vizitar $8.",
+	"translationnotifications-email-deadline": "La limito-dato por finar ca tradukuro esas $1.",
 	"log-description-notifytranslators": "Registrago di avizi pri la tradukebla pagini sendita a la tradukeri"
 }
