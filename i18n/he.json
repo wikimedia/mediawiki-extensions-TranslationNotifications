@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
-			"Guycn2"
+			"Guycn2",
+			"YaronSh"
 		]
 	},
 	"translatorsignup": "רישום מתרגמים",
@@ -19,7 +20,7 @@
 	"translationnotifications-lang": "שפה מס' $1",
 	"translationnotifications-nolang": "בחירת שפה",
 	"translationnotifications-contact": "דרכי התקשרות מועדפות",
-	"translationnotifications-cmethod-email": "דוא\"ל",
+	"translationnotifications-cmethod-email": "דוא״ל",
 	"translationnotifications-cmethod-talkpage": "דף שיחה",
 	"translationnotifications-cmethod-talkpage-elsewhere": "דף שיחה בוויקי אחר",
 	"translationnotifications-cmethod-feed": "הזנה",
