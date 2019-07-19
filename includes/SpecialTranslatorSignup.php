@@ -29,7 +29,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 	}
 
 	protected function getGroupName() {
-		return 'login';
+		return 'translation';
 	}
 
 	public function execute( $par ) {

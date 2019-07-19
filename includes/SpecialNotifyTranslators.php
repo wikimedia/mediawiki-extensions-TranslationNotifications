@@ -38,7 +38,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	}
 
 	protected function getGroupName() {
-		return 'users';
+		return 'translation';
 	}
 
 	protected function getMessagePrefix() {
