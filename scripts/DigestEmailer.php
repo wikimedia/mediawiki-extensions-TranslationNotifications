@@ -19,7 +19,7 @@ require_once "$IP/maintenance/Maintenance.php";
 class DigestEmailer extends Maintenance {
 	public function __construct() {
 		parent::__construct();
-		$this->mDescription = 'Send email notification to translators on regular intervals.';
+		$this->addDescription( 'Send email notification to translators on regular intervals.' );
 
 		$this->requireExtension( 'TranslationNotifications' );
 	}
