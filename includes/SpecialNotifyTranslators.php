@@ -12,6 +12,8 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Form for translation managers to send a notification
  * to registered translators.
@@ -60,7 +62,6 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	 * @throws ErrorPageError if there is no translatable page on this wiki
 	 */
 	protected function getFormFields() {
-		global $wgContLang;
 		$this->getOutput()->addModules( 'ext.translationnotifications.notifytranslators' );
 
 		$formFields = [];
@@ -78,10 +79,11 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 			'options' => $pages,
 		];
 
+		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 		// Dummy dropdown, will be invisible. Used as data source for language name autocompletion.
 		// @todo Implement a proper field with everything needed for this and make this less hackish
 		$languageSelector = Xml::languageSelector(
-			$wgContLang->getCode(),
+			$contLang->getCode(),
 			false,
 			$this->getLanguage()->getCode(),
 			[ 'style' => 'display: none;' ]
@@ -612,13 +614,13 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 
 		// Assume that the message is in the content language
 		// of the originating wiki.
-		global $wgContLang;
-		$dir = $wgContLang->getDir();
+		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
+		$dir = $contLang->getDir();
 		// Possible classes:
 		// mw-content-ltr, mw-content-rtl
 		$notificationText = Html::element( 'div',
 			[
-				'lang' => $wgContLang->getCode(),
+				'lang' => $contLang->getCode(),
 				'class' => "mw-content-$dir"
 			],
 			$this->notificationText
