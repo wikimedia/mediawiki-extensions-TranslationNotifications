@@ -85,9 +85,9 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 				$status = $this->msg( 'translationnotifications-email-confirmed' )->parse();
 			}
 		} elseif ( trim( $user->getEmail() ) !== '' ) {
-			$confirmMail = Linker::linkKnown(
+			$confirmMail = $this->getLinkRenderer()->makeKnownLink(
 				SpecialPage::getTitleFor( 'Confirmemail' ),
-				$this->msg( 'emailconfirmlink' )->escaped()
+				$this->msg( 'emailconfirmlink' )->text()
 			);
 			$status = $this->msg( 'translationnotifications-email-unconfirmed' )
 				->rawParams( $confirmMail )->parse();
