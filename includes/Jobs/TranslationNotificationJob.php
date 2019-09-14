@@ -4,7 +4,7 @@
  * @file
  * @ingroup JobQueue
  */
-class TranslationNotificationJob extends Job {
+class TranslationNotificationJob extends GenericTranslationNotificationJob {
 	public function __construct( $title, $params, $id = 0 ) {
 		parent::__construct( 'translationNotificationJob', $title, $params, $id );
 	}
@@ -51,6 +51,8 @@ class TranslationNotificationJob extends Job {
 			$baseUrl = wfExpandUrl( wfScript( 'api' ), PROTO_CANONICAL );
 		}
 
+		$this->logInfo( 'Started Translation Notification Job.', [ 'baseUrl' => $baseUrl ] );
+
 		// API: Get login token
 		$tokenUrl = wfAppendQuery( $baseUrl, [
 			'action' => 'query',
@@ -74,8 +76,12 @@ class TranslationNotificationJob extends Job {
 
 		$loginToken = $response['query']['tokens']['logintoken'];
 		if ( strlen( $loginToken ) < 4 ) {
-			return "Error: Login token too short";
+			$msg = 'Error: Login token too short';
+			$this->logError( $msg, [ 'Response' => $response ] );
+			return $msg;
 		}
+
+		$this->logInfo( 'Retrieved login token.' );
 
 		// API: Do the login
 		$loginUrl = wfAppendQuery( $baseUrl, [
@@ -101,8 +107,12 @@ class TranslationNotificationJob extends Job {
 
 		// TODO: Is this really the best way to test success?
 		if ( $response['login']['result'] !== 'Success' ) {
-			return "Error logging in";
+			$msg = 'Error: Unable to log in';
+			$this->logError( $msg, [ 'Response' => $response ] );
+			return $msg;
 		}
+
+		$this->logInfo( 'Finished login.' );
 
 		// API: Get an edit token
 		$userTalkPage = $this->title->getFullText();
@@ -124,8 +134,12 @@ class TranslationNotificationJob extends Job {
 		$editToken = $response['query']['tokens']['csrftoken'];
 		// TODO: Is this really the best way to test success?
 		if ( strlen( $editToken ) < 4 ) {
-			return "Edit token too short";
+			$msg = 'Edit token too short';
+			$this->logError( $msg, [ 'Response' => $response ] );
+			return $msg;
 		}
+
+		$this->logInfo( 'Fetched edit token.' );
 
 		// API: Edit the talk page
 		$editUrl = wfAppendQuery( $baseUrl, [
@@ -158,7 +172,9 @@ class TranslationNotificationJob extends Job {
 
 		// TODO: Is this really the best way to test success?
 		if ( $response['edit']['result'] !== 'Success' ) {
-			return "Error editing the page";
+			$msg = 'Error editing the page';
+			$this->logError( $msg, [ 'Response' => $response ] );
+			return $msg;
 		}
 
 		return true;

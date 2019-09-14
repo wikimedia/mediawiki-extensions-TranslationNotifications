@@ -42,11 +42,12 @@
 		"TranslationNotificationsAlias": "TranslationNotifications.alias.php"
 	},
 	"AutoloadClasses": {
-		"SpecialTranslatorSignup": "includes/SpecialTranslatorSignup.php",
-		"SpecialNotifyTranslators": "includes/SpecialNotifyTranslators.php",
-		"TranslationNotificationsHooks": "includes/TranslationNotificationsHooks.php",
-		"TranslationNotificationJob": "includes/TranslationNotificationJob.php",
 		"DigestEmailer": "scripts/DigestEmailer.php",
+		"GenericTranslationNotificationJob": "includes/Jobs/GenericTranslationNotificationJob.php",
+		"SpecialNotifyTranslators": "includes/SpecialNotifyTranslators.php",
+		"SpecialTranslatorSignup": "includes/SpecialTranslatorSignup.php",
+		"TranslationNotificationJob": "includes/Jobs/TranslationNotificationJob.php",
+		"TranslationNotificationsHooks": "includes/TranslationNotificationsHooks.php",
 		"TranslationNotificationsLogFormatter": "includes/TranslationNotificationsLogFormatter.php"
 	},
 	"ResourceModules": {
