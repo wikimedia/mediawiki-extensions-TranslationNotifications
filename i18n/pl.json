@@ -9,7 +9,8 @@
 			"Woytecr",
 			"WTM",
 			"Jdx",
-			"CiaPan"
+			"CiaPan",
+			"Rail"
 		]
 	},
 	"translatorsignup": "Rejestracja tłumacza",
@@ -45,6 +46,7 @@
 	"translationnotifications-deadline-label": "Termin do wskazania w tym powiadomieniu:",
 	"translationnotifications-languages-to-notify-label": "Jakie języki powiadomić:",
 	"translationnotifications-languages-to-notify-label-help-message": "Kody języków oddzielone przecinkami; pozostaw puste by wysyłać powiadomienia wszystkim tłumaczom wszystkich języków.",
+	"translationnotifications-sourcelang-only": "Powiadomienie nie może zostać wysłane tylko do tłumaczy z języka źródłowego.",
 	"translationnotifications-priority": "Priorytet:",
 	"translationnotifications-priority-high": "wysoki",
 	"translationnotifications-priority-medium": "średni",

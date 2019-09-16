@@ -8,7 +8,8 @@
 			"درفش کاویانی",
 			"Huji",
 			"Ladsgroup",
-			"FarsiNevis"
+			"FarsiNevis",
+			"Ahmad252"
 		]
 	},
 	"translatorsignup": "ثبت نام مترجم",
@@ -66,7 +67,7 @@
 	"log-description-notifytranslators": "سیاهه‌ای از آگاه‌سازی‌های فرستاده‌شده به مترجمان در مورد صفحه‌های ترجمه‌پذیر",
 	"translationnotifications-sent-title": "آگاه‌سازی ترجمه فرستاده‌شد",
 	"translationnotifications-sent-body": "آگاه‌سازی ترجمه فرستاده شد.",
-	"translationnotifications-log-alllanguages": "همۀ زبان‌ها",
+	"translationnotifications-log-alllanguages": "همهٔ زبان‌ها",
 	"translationnotifications-nodeadline": "هیچ‌کدام",
 	"translationnotifications-signup-legal": "شما توافق می کنید که با ارائه این اطلاعات تماس، ممکن است با شما در مورد موضوعات مربوط به {{SITENAME}} که تصور می‌کنیم مورد علاقه شماست، تماس بگیریم. شما توافق می‌کنید اطلاعات شما تحت شرایط  [[{{MediaWiki:Privacypage}}|سیاست محرمانگی]] است.",
 	"translationnotifications-generic-languages": "زبان‌ها"
