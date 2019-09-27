@@ -13,6 +13,13 @@ use MediaWiki\MediaWikiServices;
  * @ingroup JobQueue
  */
 class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob {
+
+	/**
+	 * Id of the current wiki
+	 * @var string
+	 */
+	private $currentWikiId;
+
 	/**
 	 * Returns an instance of the TranslationNotificationSubmitJob
 	 * @param Title $title
@@ -37,6 +44,8 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 
 	public function __construct( $title, $params ) {
 		parent::__construct( __CLASS__, $title, $params );
+
+		$this->currentWikiId = WikiMap::getCurrentWikiDbDomain()->getId();
 	}
 
 	/**
@@ -80,10 +89,15 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 
 		$count = 0;
 		$tooEarly = 0;
+		$sentFailed = 0;
 		$timestampOptionName = 'translationnotifications-timestamp';
-		$jobs = [];
+		$jobsByTarget = [];
+
+		// Set the jobs array for this wiki
+		$jobsByTarget[$this->currentWikiId] = [];
 
 		$config = MediaWikiServices::getInstance()->getMainConfig();
+
 		$notifyUser = new TranslationNotifyUser(
 			$translatableTitle,
 			$notifier,
@@ -115,48 +129,30 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 
 			if ( $timeSinceNotification > $userTranslationFrequency ) {
 				$this->logDebug( "Deciding notification to be sent to user: {$user->getId()}" );
-				if ( $user->getOption( 'translationnotifications-cmethod-email' ) ) {
-					if ( $user->getOption( 'disablemail' ) ) {
-						// For some reason the user signed up to receive Translation Notifications emails,
-						// but receiving email is disabled in the user's preferences.
-						// To be on the safe side, disable the email contact method.
-						$user->setOption( 'translationnotifications-cmethod-email', false );
-					} elseif ( $user->getOption( 'translationnotifications-freq' ) === 'always' ) {
-						$jobs[] = $notifyUser->sendTranslationNotificationEmail( $user );
-					}
-				}
-				if ( $user->getOption( 'translationnotifications-cmethod-talkpage' ) ) {
-					$jobs[] = $notifyUser->leaveUserMessage(
-						$user,
-						'talkpageHere'
-					);
-				}
-				if ( $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere' ) ) {
-					$jobs[] = $notifyUser->leaveUserMessage(
-						$user,
-						'talkpageInOtherWiki'
-					);
-				}
 
-				$user->setOption( $timestampOptionName, $currentDBTime );
-				$user->saveSettings();
-				++$count;
+				try {
+					$this->addJobsBasedOnUserPref( $user, $notifyUser, $jobsByTarget );
+					$user->setOption( $timestampOptionName, $currentDBTime );
+					$user->saveSettings();
+					++$count;
+				} catch ( Exception $e ) {
+					++$sentFailed;
+					$this->logError(
+						"Error while generating notification for user - {$user->getId()}.\n Exception: {$e}."
+					);
+				}
 			} else {
 				$this->logDebug( "Skipping sending of notification to user: {$user->getId()}" );
 				$tooEarly++;
 			}
 
-			$this->logDebug(
-				"Finished processing user: {$user->getId()}. Total jobs: " . count( $jobs )
-			);
+			$this->logDebug( "Finished processing user: {$user->getId()}." );
 		}
 
-		$this->logInfo(
-			"Total users to be sent notification to: {$count}. Total jobs created: " . count( $jobs )
-		);
-
-		$count = count( $jobs );
-		JobQueueGroup::singleton()->push( $jobs );
+		foreach ( $jobsByTarget as $wiki => $jobs ) {
+			$this->logInfo( "Wiki: $wiki, Jobs: " . count( $jobs ) );
+			JobQueueGroup::singleton( $wiki )->push( $jobs );
+		}
 
 		// Add a log entry
 		$languagesForLog = '';
@@ -172,12 +168,12 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 			'5::deadlineDate' => $deadlineDate,
 			'6::priority' => $priority,
 			'7::sentSuccess' => $count,
-			'8::sentFail' => 0,
+			'8::sentFail' => $sentFailed,
 			'9::tooEarly' => $tooEarly,
 		] );
 
-		$logid = $logEntry->insert();
-		$logEntry->publish( $logid );
+		$logId = $logEntry->insert();
+		$logEntry->publish( $logId );
 
 		$this->logInfo( 'Finished translation notification submit request processing.' );
 		return true;
@@ -219,5 +215,50 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 		);
 
 		return $translatorsToNotify;
+	}
+
+	/**
+	 * Adds jobs to passed array based on the user's preference
+	 * @param User $user
+	 * @param TranslationNotifyUser $notifyUser
+	 * @param array $jobsByTarget
+	 */
+	private function addJobsBasedOnUserPref(
+		User $user, TranslationNotifyUser $notifyUser, array &$jobsByTarget
+	) {
+		// Email notification
+		if ( $user->getOption( 'translationnotifications-cmethod-email' ) ) {
+			if ( $user->getOption( 'disablemail' ) ) {
+				// For some reason the user signed up to receive Translation Notifications emails,
+				// but receiving email is disabled in the user's preferences.
+				// To be on the safe side, disable the email contact method.
+				$user->setOption( 'translationnotifications-cmethod-email', false );
+			} elseif ( $user->getOption( 'translationnotifications-freq' ) === 'always' ) {
+				$jobsByTarget[$this->currentWikiId][] =
+					$notifyUser->sendTranslationNotificationEmail( $user );
+			}
+		}
+
+		// Talk page in current wiki
+		if ( $user->getOption( 'translationnotifications-cmethod-talkpage' ) ) {
+			$jobsByTarget[$this->currentWikiId][] = $notifyUser->leaveUserMessage(
+				$user,
+				'talkpageHere'
+			);
+		}
+
+		// Talk page in another wiki
+		if ( $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere' ) ) {
+			$wiki =
+				$user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere-loc' );
+			if ( !isset( $jobsByTarget[$wiki] ) ) {
+				$jobsByTarget[$wiki] = [];
+			}
+
+			$jobsByTarget[$wiki][] = $notifyUser->leaveUserMessage(
+				$user,
+				'talkpageInOtherWiki'
+			);
+		}
 	}
 }
