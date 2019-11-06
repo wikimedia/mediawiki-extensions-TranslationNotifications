@@ -38,7 +38,7 @@ class TranslationNotificationsLogFormatter extends LogFormatter {
 		// 'translationnotifications-priority-low'
 		// 'translationnotifications-priority-medium'
 		// 'translationnotifications-priority-unset'
-		$params[5] = SpecialNotifyTranslators::getPriorityMessage( $params[5] )
+		$params[5] = NotificationMessageBuilder::getPriorityMessage( $params[5] )
 			->setContext( $this->context )
 			->text();
 

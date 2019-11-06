@@ -44,11 +44,13 @@
 	"AutoloadClasses": {
 		"DigestEmailer": "scripts/DigestEmailer.php",
 		"GenericTranslationNotificationJob": "includes/Jobs/GenericTranslationNotificationJob.php",
+		"NotificationMessageBuilder": "includes/Utilities/NotificationMessageBuilder.php",
 		"SpecialNotifyTranslators": "includes/SpecialNotifyTranslators.php",
 		"SpecialTranslatorSignup": "includes/SpecialTranslatorSignup.php",
 		"TranslationNotificationJob": "includes/Jobs/TranslationNotificationJob.php",
 		"TranslationNotificationsHooks": "includes/TranslationNotificationsHooks.php",
-		"TranslationNotificationsLogFormatter": "includes/TranslationNotificationsLogFormatter.php"
+		"TranslationNotificationsLogFormatter": "includes/TranslationNotificationsLogFormatter.php",
+		"TranslationNotifyUser": "includes/Utilities/TranslationNotifyUser.php"
 	},
 	"ResourceModules": {
 		"ext.translationnotifications.notifytranslators": {
