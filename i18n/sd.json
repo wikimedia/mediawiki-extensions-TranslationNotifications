@@ -6,6 +6,7 @@
 		]
 	},
 	"translationnotifications-username": "واپرائيندڙ-نانءُ:",
-	"translationnotifications-preview-notification-button": "پيش نگاھ اطلاع",
-	"translationnotifications-notification-url-listitem": "$1 ۾ ترجمايو"
+	"translationnotifications-preview-notification-button": "اطلاع پيش-نگاھ",
+	"translationnotifications-notification-url-listitem": "$1 ۾ ترجمايو",
+	"translationnotifications-nodeadline": "ڪوبہ نہ"
 }
