@@ -195,149 +195,40 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		$languagesToNotify = explode( ',', $formData['LanguagesToNotify'] );
 		$languagesToNotify = array_filter( array_map( 'trim', $languagesToNotify ) );
 
-		$langPropertyPrefix = 'translationnotifications-lang-';
-
-		$dbr = wfGetDB( DB_REPLICA );
-		$propertyLikePattern = $dbr->buildLike( $langPropertyPrefix, $dbr->anyString() );
-		$translatorsConds = [
-			"up_property $propertyLikePattern",
-		];
-
 		$pageSourceLangCode = $this->getSourceLanguage();
+		$notificationLanguages = [];
 
-		// The default is not to specify any languages and to send
-		// the notification to speakers of all the languages except
-		// the source language. When no languages are specified,
-		// an empty string will be sent here and an appropriate
-		// message will be shown in the log.
-		$languagesForLog = '';
+		// The default is not to specify any languages and to send the notification to speakers of
+		// all the languages except the source language. When no languages are specified,
+		// an empty string will be sent here and an appropriate message will be shown in the log.
 		if ( count( $languagesToNotify ) ) {
 			// Filter out the source language
-			$translatorsConds['up_value'] = [];
-
 			foreach ( $languagesToNotify as $langCode ) {
 				if ( $langCode !== $pageSourceLangCode ) {
-					$translatorsConds['up_value'][] = $langCode;
+					$notificationLanguages[] = $langCode;
 				}
 			}
 
-			$languagesToNotify = $translatorsConds['up_value'];
-
-			if ( count( $languagesToNotify ) === 0 ) {
+			if ( $notificationLanguages === [] ) {
 				return Status::newFatal( 'translationnotifications-sourcelang-only' );
 			}
-
-			$languagesForLog = $this->getLanguage()->commaList( $languagesToNotify );
-		} else {
-			// All languages except the source language
-			$translatorsConds[] = "up_value <> '$pageSourceLangCode'";
 		}
 
-		$translators = $dbr->select(
-			'user_properties',
-			'up_user',
-			$translatorsConds,
-			__METHOD__,
-			'DISTINCT'
-		);
-
-		$frequencies = [
-			'always' => 0,
-			'week' => 604800, // seconds in week
-			'month' => 2678400, // seconds in month
-			'weekly' => 604800, // seconds in week
-			'monthly' => 2678400, // seconds in month
+		$requestData = [
+			'notificationText' => $this->notificationText,
+			'priority' => $this->priority,
+			'languagesToNotify' => $notificationLanguages,
+			'deadlineDate' => $this->deadlineDate
 		];
-		$currentUnixTime = wfTimestamp();
-		$currentDBTime = $dbr->timestamp( $currentUnixTime );
 
-		$count = 0;
-		$tooEarly = 0;
-		$timestampOptionName = 'translationnotifications-timestamp';
-		$jobs = [];
-
-		$config = $this->getConfig();
-
-		$notifyUser = new TranslationNotifyUser(
+		$job = TranslationNotificationSubmitJob::newJob(
 			$this->translatablePageTitle,
-			$this->getUser(),
-			$config->get( 'LocalInterwikis' ),
-			$config->get( 'NoReplyAddress' ),
-			$config->get( 'TranslationNotificationsAlwaysHttpsInEmail' ),
-			$this->getSourceLanguage(),
-			[
-				'text' => $this->notificationText,
-				'priority' => $this->priority,
-				'deadline' => $this->deadlineDate,
-				'languagesToNotify' => $languagesToNotify
-			]
+			$requestData,
+			$this->getUser()->getId(),
+			$this->getLanguage()->getCode()
 		);
 
-		foreach ( $translators as $row ) {
-			$user = User::newFromID( $row->up_user );
-
-			$userTimestamp = $user->getOption( $timestampOptionName, null );
-			$userUnixTimestamp = ( $userTimestamp == null ) ?
-				wfTimestamp( TS_UNIX, '20120101000000' ) : // An old timestamp
-				wfTimestamp( TS_UNIX, $userTimestamp );
-
-			$timeSinceNotification = $currentUnixTime - $userUnixTimestamp;
-			$userTranslationFrequency =
-				$frequencies[$user->getOption( 'translationnotifications-freq' )];
-
-			if ( $timeSinceNotification > $userTranslationFrequency ) {
-				if ( $user->getOption( 'translationnotifications-cmethod-email' ) ) {
-					if ( $user->getOption( 'disablemail' ) ) {
-						// For some reason the user signed up to receive
-						// Translation Notifications emails, but receiving
-						// email is disabled in the user's preferences.
-						// To be on the safe side, disable the email
-						// contact method.
-						$user->setOption( 'translationnotifications-cmethod-email', false );
-					} elseif ( $user->getOption( 'translationnotifications-freq' ) === 'always' ) {
-						$jobs[] = $notifyUser->sendTranslationNotificationEmail( $user );
-					}
-				}
-				if ( $user->getOption( 'translationnotifications-cmethod-talkpage' ) ) {
-					$jobs[] = $notifyUser->leaveUserMessage(
-						$user,
-						'talkpageHere'
-					);
-				}
-				if ( $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere' ) ) {
-					$jobs[] = $notifyUser->leaveUserMessage(
-						$user,
-						'talkpageInOtherWiki'
-					);
-				}
-
-				$user->setOption( $timestampOptionName, $currentDBTime );
-				$user->saveSettings();
-			} else {
-				$tooEarly++;
-			}
-		}
-
-		if ( $jobs ) {
-			$count = count( $jobs );
-			JobQueueGroup::singleton()->push( $jobs );
-		}
-
-		$logEntry = new ManualLogEntry( 'notifytranslators', 'sent' );
-		$logEntry->setPerformer( $this->getUser() );
-		$logEntry->setTarget( $this->translatablePageTitle );
-		$logEntry->setParameters( [
-			'4::languagesForLog' => $languagesForLog,
-			'5::deadlineDate' => $this->deadlineDate,
-			'6::priority' => $this->priority,
-			'7::sentSuccess' => $count,
-			'8::sentFail' => 0,
-			'9::tooEarly' => $tooEarly,
-		] );
-
-		$logid = $logEntry->insert();
-		$logEntry->publish( $logid );
-
+		JobQueueGroup::singleton()->push( $job );
 		return true;
 	}
 
