@@ -13,7 +13,6 @@ use MediaWiki\MediaWikiServices;
  * @since 2019.10
  */
 class TranslationNotifyUser {
-
 	/**
 	 * @var Title
 	 */
@@ -124,19 +123,28 @@ class TranslationNotifyUser {
 			'translationnotifications-edit-summary',
 			$this->translatablePageTitle
 		)->inLanguage( $userFirstLanguage )->text();
+
 		$params = [
 			'text' => $text,
 			'editSummary' => $editSummary,
-			'editor' => $this->notifier->getId(),
-			'languageCode' => $userFirstLanguageCode,
 		];
 
-		if ( $destination === 'talkpageInOtherWiki' ) {
-			$params['otherwiki'] =
-				$translator->getOption( 'translationnotifications-cmethod-talkpage-elsewhere-loc' );
+		list( $translatorId, $type ) = $this->getUserId(
+			$translator, $destination === 'talkpageInOtherWiki'
+		);
+
+		if ( $type === 'central' ) {
+			if ( $translatorId === 0 ) {
+				throw new RuntimeException(
+					"Destination is external wiki, but no central Id found for user - {$translator->getId()}"
+				);
+			}
+			$params['centralUserId'] = $translatorId;
+		} else {
+			$params['localUserId'] = $translatorId;
 		}
 
-		return new TranslationNotificationJob( $translator->getTalkPage(), $params );
+		return Job::factory( 'TranslationNotificationJob', $params );
 	}
 
 	/**
@@ -278,5 +286,30 @@ class TranslationNotifyUser {
 		return $this->httpsInEmail === false
 			? PROTO_CANONICAL
 			: PROTO_HTTPS;
+	}
+
+	/**
+	 * Checks and returns either the central user id or the local user id incase the
+	 * central user id is not found and the message has to be left on the local wiki
+	 * itself.
+	 * @param User $user
+	 * @param bool $isOtherWiki
+	 * @return string[] First item contains the Id, second tells the type - central
+	 * or local
+	 */
+	protected function getUserId( User $user, $isOtherWiki ) {
+		$lookup = CentralIdLookup::factory();
+		$centralId = $lookup->centralIdFromLocalUser( $user, CentralIdLookup::AUDIENCE_RAW );
+
+		if ( $centralId !== 0 ) {
+			return [ $centralId, 'central' ];
+		}
+
+		if ( $isOtherWiki ) {
+			// other wiki, but no central id for the user.
+			return [ 0, 'central' ];
+		}
+
+		return [ $user->getId(), 'local' ];
 	}
 }
