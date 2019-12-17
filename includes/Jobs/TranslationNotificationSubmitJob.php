@@ -202,10 +202,9 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 		if ( count( $languagesToNotify ) ) {
 			$translatorsConditions['up_value'] = $languagesToNotify;
 		} else {
-			$translatorsConditions[] = "up_value <> '$sourceLanguage'";
+			$translatorsConditions[] = 'up_value <> ' . $dbr->addQuotes( $sourceLanguage );
 		}
 
-		$dbr = wfGetDB( DB_REPLICA );
 		$translatorsToNotify = $dbr->select(
 			'user_properties',
 			'up_user',
