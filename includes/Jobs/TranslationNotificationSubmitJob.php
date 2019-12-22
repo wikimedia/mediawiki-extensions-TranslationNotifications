@@ -24,7 +24,7 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 	 * Returns an instance of the TranslationNotificationSubmitJob
 	 * @param Title $title
 	 * @param array $requestData
-	 * @param string $notifierId
+	 * @param int $notifierId
 	 * @param string $translatorLang
 	 * @return self
 	 */
@@ -123,7 +123,7 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 				wfTimestamp( TS_UNIX, '20120101000000' ) : // An old timestamp
 				wfTimestamp( TS_UNIX, $userTimestamp );
 
-			$timeSinceNotification = $currentUnixTime - $userUnixTimestamp;
+			$timeSinceNotification = (int)$currentUnixTime - (int)$userUnixTimestamp;
 			$userTranslationFrequency =
 				$frequencies[$user->getOption( 'translationnotifications-freq' )];
 

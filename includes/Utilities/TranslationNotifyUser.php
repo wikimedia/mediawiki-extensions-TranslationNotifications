@@ -280,7 +280,7 @@ class TranslationNotifyUser {
 
 	/**
 	 * Returns the URL protocol to be used based on configuration
-	 * @return string
+	 * @return string|int a PROTO_* constant
 	 */
 	protected function getUrlProtocol() {
 		return $this->httpsInEmail === false
@@ -294,8 +294,9 @@ class TranslationNotifyUser {
 	 * itself.
 	 * @param User $user
 	 * @param bool $isOtherWiki
-	 * @return string[] First item contains the Id, second tells the type - central
+	 * @return array First item contains the Id, second tells the type - central
 	 * or local
+	 * @phan-return array{int,'central'|'local'}
 	 */
 	protected function getUserId( User $user, $isOtherWiki ) {
 		$lookup = CentralIdLookup::factory();

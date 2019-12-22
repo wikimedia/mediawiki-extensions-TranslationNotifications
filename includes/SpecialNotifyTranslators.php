@@ -184,7 +184,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	 * Callback for the submit button.
 	 *
 	 * @param array $formData
-	 * @return true
+	 * @return Status|bool
 	 * @todo Document
 	 */
 	public function onSubmit( array $formData ) {
