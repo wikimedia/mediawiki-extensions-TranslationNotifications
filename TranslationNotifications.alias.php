@@ -172,6 +172,18 @@ $specialPageAliases['scn'] = [
 	'TranslatorSignup' => [ 'IscrizioneTraduttore' ],
 ];
 
+/** Serbian Latin (српски (ћирилица)) */
+$specialPageAliases['sr-ec'] = [
+	'NotifyTranslators' => [ 'ОбавештавањеПреводилаца' ],
+	'TranslatorSignup' => [ 'РегистрацијаПреводиоца' ],
+];
+
+/** Serbian Latin (srpski (latinica)) */
+$specialPageAliases['sr-el'] = [
+	'NotifyTranslators' => [ 'ObaveštavanjePrevodilaca' ],
+	'TranslatorSignup' => [ 'RegistracijaPrevodioca' ],
+];
+
 /** Tuvinian (тыва дыл) */
 $specialPageAliases['tyv'] = [
 	'NotifyTranslators' => [ 'Очулдурукчуларга_медээлээр' ],
