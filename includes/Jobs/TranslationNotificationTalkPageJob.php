@@ -8,10 +8,11 @@
  * Runs on the target wiki and creates the necessary MassMessageJob that leaves a message
  * about new translations on the user's talk page.
  * @ingroup JobQueue
+ * @since 2020.02
  */
-class TranslationNotificationJob extends GenericTranslationNotificationJob {
+class TranslationNotificationTalkPageJob extends GenericTranslationNotificationJob {
 	public function __construct( $title, $params, $id = 0 ) {
-		parent::__construct( 'TranslationNotificationJob', $title, $params, $id );
+		parent::__construct( 'TranslationNotificationTalkPageJob', $title, $params, $id );
 	}
 
 	/**
