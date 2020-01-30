@@ -34,7 +34,7 @@ class TranslationNotificationJob extends GenericTranslationNotificationJob {
 			$translator = User::newFromId( $localId );
 		}
 
-		if ( $translator === null ) {
+		if ( !isset( $translator ) ) {
 			$msg = "Translator not found with the central ID - $centralId and local ID - $localId";
 			$this->logError( $msg );
 			$this->setLastError( $msg );
