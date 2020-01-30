@@ -27,18 +27,17 @@ class TranslationNotificationJob extends GenericTranslationNotificationJob {
 		$centralId = $this->params['centralUserId'] ?? null;
 		$localId = $this->params['localUserId'] ?? null;
 
-		if ( $centralId !== null ) {
-			$centralIdLookup = CentralIdLookup::factory();
-			$translator = $centralIdLookup->localUserFromCentralId( $centralId );
-		} elseif ( $localId !== null ) {
+		if ( $centralId ) {
+			$translator = CentralIdLookup::factory()->localUserFromCentralId( $centralId );
+			if ( !$translator ) {
+				$this->setLastError( "Translator not found with the central ID $centralId" );
+				$this->logError( $this->error );
+				return true;
+			}
+		} elseif ( $localId ) {
 			$translator = User::newFromId( $localId );
-		}
-
-		if ( !isset( $translator ) ) {
-			$msg = "Translator not found with the central ID - $centralId and local ID - $localId";
-			$this->logError( $msg );
-			$this->setLastError( $msg );
-			return true;
+		} else {
+			throw new InvalidArgumentException( 'Neither central nor local ID given' );
 		}
 
 		$title = $translator->getTalkPage();
