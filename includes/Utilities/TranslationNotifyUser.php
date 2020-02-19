@@ -83,7 +83,7 @@ class TranslationNotifyUser {
 	 * @param User $translator To whom the message to be sent
 	 * @param string $destination Whether to send it to a talk page on this wiki
 	 * ('talkpageHere', default) or another one ('talkpageInOtherWiki').
-	 * @return TranslationNotificationTalkPageJob
+	 * @return TranslationNotificationsTalkPageJob
 	 */
 	public function leaveUserMessage(
 		User $translator, $destination = 'talkpageHere'
@@ -144,17 +144,17 @@ class TranslationNotifyUser {
 			$params['localUserId'] = $translatorId;
 		}
 
-		return Job::factory( 'TranslationNotificationTalkPageJob', $params );
+		return Job::factory( 'TranslationNotificationsTalkPageJob', $params );
 	}
 
 	/**
 	 * Notify a user by email.
 	 * @param User $translator User to whom the email is being sent
-	 * @return TranslationNotificationEmailJob
+	 * @return TranslationNotificationsEmailJob
 	 */
 	public function sendTranslationNotificationEmail(
 		User $translator
-	): TranslationNotificationEmailJob {
+	): TranslationNotificationsEmailJob {
 		$relevantLanguages = $this->getRelevantLanguages( $translator, $this->languagesToNotify );
 		$userFirstLanguage = Language::factory( $this->getUserFirstLanguage( $translator ) );
 		$emailSubject = NotificationMessageBuilder::getNotificationSubject(
@@ -190,21 +190,21 @@ class TranslationNotifyUser {
 		$sender = $this->notifier;
 
 		// Do not publish the sender's email, but include his/her name
-		$emailFrom = TranslationNotificationEmailJob::buildAddress(
+		$emailFrom = TranslationNotificationsEmailJob::buildAddress(
 			$this->noReplyAddress,
 			$sender->getName(),
 			$sender->getRealName()
 		);
 
 		$params = [
-			'to' => TranslationNotificationEmailJob::addressFromUser( $translator ),
+			'to' => TranslationNotificationsEmailJob::addressFromUser( $translator ),
 			'from' => $emailFrom,
 			'body' => $emailBody,
 			'subject' => $emailSubject,
 			'replyTo' => $emailFrom,
 		];
 
-		return new TranslationNotificationEmailJob( $this->translatablePageTitle, $params );
+		return new TranslationNotificationsEmailJob( $this->translatablePageTitle, $params );
 	}
 
 	/**

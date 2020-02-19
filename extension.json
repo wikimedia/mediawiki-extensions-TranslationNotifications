@@ -29,9 +29,9 @@
 		"NotifyTranslators": "SpecialNotifyTranslators"
 	},
 	"JobClasses": {
-		"TranslationNotificationEmailJob": "TranslationNotificationEmailJob",
-		"TranslationNotificationSubmitJob": "TranslationNotificationSubmitJob",
-		"TranslationNotificationTalkPageJob": "TranslationNotificationTalkPageJob"
+		"TranslationNotificationsEmailJob": "TranslationNotificationsEmailJob",
+		"TranslationNotificationsSubmitJob": "TranslationNotificationsSubmitJob",
+		"TranslationNotificationsTalkPageJob": "TranslationNotificationsTalkPageJob"
 	},
 	"LogTypes": [
 		"notifytranslators"
@@ -49,13 +49,13 @@
 	},
 	"AutoloadClasses": {
 		"DigestEmailer": "scripts/DigestEmailer.php",
-		"GenericTranslationNotificationJob": "includes/Jobs/GenericTranslationNotificationJob.php",
+		"GenericTranslationNotificationsJob": "includes/Jobs/GenericTranslationNotificationsJob.php",
 		"NotificationMessageBuilder": "includes/Utilities/NotificationMessageBuilder.php",
 		"SpecialNotifyTranslators": "includes/SpecialNotifyTranslators.php",
 		"SpecialTranslatorSignup": "includes/SpecialTranslatorSignup.php",
-		"TranslationNotificationEmailJob": "includes/Jobs/TranslationNotificationEmailJob.php",
-		"TranslationNotificationSubmitJob": "includes/Jobs/TranslationNotificationSubmitJob.php",
-		"TranslationNotificationTalkPageJob": "includes/Jobs/TranslationNotificationTalkPageJob.php",
+		"TranslationNotificationsEmailJob": "includes/Jobs/TranslationNotificationsEmailJob.php",
+		"TranslationNotificationsSubmitJob": "includes/Jobs/TranslationNotificationsSubmitJob.php",
+		"TranslationNotificationsTalkPageJob": "includes/Jobs/TranslationNotificationsTalkPageJob.php",
 		"TranslationNotificationsHooks": "includes/TranslationNotificationsHooks.php",
 		"TranslationNotificationsLogFormatter": "includes/TranslationNotificationsLogFormatter.php",
 		"TranslationNotifyUser": "includes/Utilities/TranslationNotifyUser.php"

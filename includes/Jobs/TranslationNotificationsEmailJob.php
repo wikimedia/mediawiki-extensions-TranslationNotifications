@@ -9,9 +9,9 @@
  * @ingroup JobQueue
  * @since 2020.02
  */
-class TranslationNotificationEmailJob extends GenericTranslationNotificationJob {
+class TranslationNotificationsEmailJob extends GenericTranslationNotificationsJob {
 	public function __construct( Title $title, array $params ) {
-		parent::__construct( 'TranslationNotificationEmailJob', $title, $params );
+		parent::__construct( 'TranslationNotificationsEmailJob', $title, $params );
 		$this->validateParams( $params );
 	}
 

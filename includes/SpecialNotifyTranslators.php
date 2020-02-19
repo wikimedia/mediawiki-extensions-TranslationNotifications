@@ -221,7 +221,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 			'deadlineDate' => $this->deadlineDate
 		];
 
-		$job = TranslationNotificationSubmitJob::newJob(
+		$job = TranslationNotificationsSubmitJob::newJob(
 			$this->translatablePageTitle,
 			$requestData,
 			$this->getUser()->getId(),

@@ -14,7 +14,7 @@ use Psr\Log\LoggerInterface;
  * Generic Job class extended by other jobs. Provides logging functionality.
  * @since 2019.09
  */
-abstract class GenericTranslationNotificationJob extends \Job {
+abstract class GenericTranslationNotificationsJob extends \Job {
 	/**
 	 * A logger instance
 	 * @var LoggerInterface

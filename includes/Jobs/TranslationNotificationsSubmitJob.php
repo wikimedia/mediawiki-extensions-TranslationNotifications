@@ -12,7 +12,7 @@ use MediaWiki\MediaWikiServices;
  * @since 2019.11
  * @ingroup JobQueue
  */
-class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob {
+class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJob {
 
 	/**
 	 * Id of the current wiki
@@ -21,7 +21,7 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 	private $currentWikiId;
 
 	/**
-	 * Returns an instance of the TranslationNotificationSubmitJob
+	 * Returns an instance of the TranslationNotificationsSubmitJob
 	 * @param Title $title
 	 * @param array $requestData
 	 * @param int $notifierId
@@ -31,8 +31,7 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 	public static function newJob(
 		Title $title, $requestData, $notifierId, $translatorLang
 	) {
-		// TODO: Check if we should pass only the configuration options needed instead.
-		return new TranslationNotificationSubmitJob(
+		return new TranslationNotificationsSubmitJob(
 			$title,
 			[
 				'requestData' => $requestData,
@@ -44,7 +43,6 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 
 	public function __construct( $title, $params ) {
 		parent::__construct( __CLASS__, $title, $params );
-
 		$this->currentWikiId = WikiMap::getCurrentWikiDbDomain()->getId();
 	}
 
@@ -87,14 +85,7 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 		$currentUnixTime = wfTimestamp();
 		$currentDBTime = wfGetDB( DB_REPLICA )->timestamp( $currentUnixTime );
 
-		$count = 0;
-		$tooEarly = 0;
-		$sentFailed = 0;
 		$timestampOptionName = 'translationnotifications-timestamp';
-		$jobsByTarget = [];
-
-		// Set the jobs array for this wiki
-		$jobsByTarget[$this->currentWikiId] = [];
 
 		$config = MediaWikiServices::getInstance()->getMainConfig();
 
@@ -115,6 +106,18 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 
 		$this->logInfo( 'Starting notification job creation for translators...' );
 
+		$jobsByTarget = [];
+		$stats = [
+			'jobNoPref' => 0,
+			'jobEmail' => 0,
+			'jobEmailDisabled' => 0,
+			'jobTalkPage' => 0,
+			'jobTalkPageOther' => 0,
+			'tooEarly' => 0,
+			'sendingFailed' => 0,
+			'processedUsers' => 0
+		];
+
 		foreach ( $translatorsToNotify as $translator ) {
 			$user = User::newFromID( $translator->up_user )->getInstanceForUpdate();
 
@@ -131,19 +134,20 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 				$this->logDebug( "Deciding notification to be sent to user: {$user->getId()}" );
 
 				try {
-					$this->addJobsBasedOnUserPref( $user, $notifyUser, $jobsByTarget );
+					$userJobs = $this->getJobsForUser( $user, $notifyUser, $this->currentWikiId );
+					$this->addUserJobsToList( $userJobs, $jobsByTarget, $stats );
 					$user->setOption( $timestampOptionName, $currentDBTime );
 					$user->saveSettings();
-					++$count;
+					$stats['processedUsers']++;
 				} catch ( Exception $e ) {
-					++$sentFailed;
+					$stats['sendingFailed']++;
 					$this->logError(
 						"Error while generating notification for user - {$user->getId()}.\n Exception: {$e}."
 					);
 				}
 			} else {
 				$this->logDebug( "Skipping sending of notification to user: {$user->getId()}" );
-				$tooEarly++;
+				$stats['tooEarly']++;
 			}
 
 			$this->logDebug( "Finished processing user: {$user->getId()}." );
@@ -167,15 +171,27 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 			'4::languagesForLog' => $languagesForLog,
 			'5::deadlineDate' => $deadlineDate,
 			'6::priority' => $priority,
-			'7::sentSuccess' => $count,
-			'8::sentFail' => $sentFailed,
-			'9::tooEarly' => $tooEarly,
+			'7::sentSuccess' => $stats['processedUsers'],
+			'8::sentFail' => $stats['sendingFailed'],
+			'9::tooEarly' => $stats['tooEarly']
 		] );
 
 		$logId = $logEntry->insert();
 		$logEntry->publish( $logId );
 
-		$this->logInfo( 'Finished translation notification submit request processing.' );
+		// Log the stats
+		$stats[ 'jobTotal' ] = $this->getCurrentTotalJobs( $stats );
+		$stats[ 'jobTotalWithSkipped' ] = $this->getCurrentTotalJobs( $stats, true );
+		$this->logInfo(
+			"Finished processing. Overall info: " .
+			"Too early: {tooEarly}, Sending failed: {sendingFailed}, Users processed: {processedUsers}. " .
+			"Jobs info: " .
+			"Total: {jobTotal}, Total with skipped: {jobTotalWithSkipped}, Email: {jobEmail}, " .
+			"Email disabled: {jobEmailDisabled}, Talk page: {jobTalkPage}, " .
+			"Talk page other wiki: {jobTalkPageOther}, No preference: {jobNoPref}.",
+			$stats
+		);
+
 		return true;
 	}
 
@@ -217,14 +233,17 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 	}
 
 	/**
-	 * Adds jobs to passed array based on the user's preference
+	 * Return jobs for a user based on the user's preferences.
 	 * @param User $user
 	 * @param TranslationNotifyUser $notifyUser
-	 * @param array $jobsByTarget
+	 * @param string $currentWikiId
+	 * @return array
 	 */
-	private function addJobsBasedOnUserPref(
-		User $user, TranslationNotifyUser $notifyUser, array &$jobsByTarget
-	) {
+	private function getJobsForUser(
+		User $user, TranslationNotifyUser $notifyUser, string $currentWikiId
+	): array {
+		$jobs = [];
+
 		// Email notification
 		if ( $user->getOption( 'translationnotifications-cmethod-email' ) ) {
 			if ( $user->getOption( 'disablemail' ) ) {
@@ -232,32 +251,79 @@ class TranslationNotificationSubmitJob extends GenericTranslationNotificationJob
 				// but receiving email is disabled in the user's preferences.
 				// To be on the safe side, disable the email contact method.
 				$user->setOption( 'translationnotifications-cmethod-email', false );
+				$jobs[] = [ $currentWikiId, 'jobEmailDisabled', null ];
 			} elseif ( $user->getOption( 'translationnotifications-freq' ) === 'always' ) {
-				$jobsByTarget[$this->currentWikiId][] =
-					$notifyUser->sendTranslationNotificationEmail( $user );
+				$jobs[] = [
+					$currentWikiId, 'jobEmail', $notifyUser->sendTranslationNotificationEmail( $user )
+				];
 			}
 		}
 
 		// Talk page in current wiki
 		if ( $user->getOption( 'translationnotifications-cmethod-talkpage' ) ) {
-			$jobsByTarget[$this->currentWikiId][] = $notifyUser->leaveUserMessage(
-				$user,
-				'talkpageHere'
-			);
+			$jobs[] = [
+				$currentWikiId,
+				'jobTalkPage',
+				$notifyUser->leaveUserMessage( $user, 'talkpageHere' )
+			];
 		}
 
 		// Talk page in another wiki
 		if ( $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere' ) ) {
 			$wiki =
 				$user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere-loc' );
-			if ( !isset( $jobsByTarget[$wiki] ) ) {
-				$jobsByTarget[$wiki] = [];
+			$jobs[] = [
+				$wiki,
+				'jobTalkPageOther',
+				$notifyUser->leaveUserMessage(
+					$user,
+					'talkpageInOtherWiki'
+				)
+			];
+		}
+
+		return $jobs;
+	}
+
+	/**
+	 * Add jobs for a user to the list of all jobs, also updates the stats.
+	 * @param array $userJobs
+	 * @param array $jobList
+	 * @param array $stats
+	 * @return void
+	 */
+	private function addUserJobsToList(
+		array $userJobs,
+		array &$jobList,
+		array &$stats
+	): void {
+		if ( !count( $userJobs ) ) {
+			$stats[ 'jobNoPref' ]++;
+		}
+
+		foreach ( $userJobs as $userJob ) {
+			list( $wikiId, $jobType, $job ) = $userJob;
+			$stats[ $jobType ]++;
+			if ( $job === null ) {
+				continue;
 			}
 
-			$jobsByTarget[$wiki][] = $notifyUser->leaveUserMessage(
-				$user,
-				'talkpageInOtherWiki'
-			);
+			if ( !isset( $jobList[ $wikiId ] ) ) {
+				$jobList[ $wikiId ] = [];
+			}
+
+			$jobList[ $wikiId ][] = $job;
 		}
+	}
+
+	private function getCurrentTotalJobs( array $stats, bool $withSkipped = false ): int {
+		$total = $stats[ 'jobTalkPageOther' ] + $stats[ 'jobTalkPage' ]
+			+ $stats[ 'jobEmail' ];
+
+		if ( $withSkipped ) {
+			$total += $stats[ 'jobEmailDisabled' ] + $stats[ 'jobNoPref' ];
+		}
+
+		return $total;
 	}
 }
