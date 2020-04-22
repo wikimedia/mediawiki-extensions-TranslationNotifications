@@ -288,8 +288,8 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 	/**
 	 * Add jobs for a user to the list of all jobs, also updates the stats.
 	 * @param array $userJobs
-	 * @param array $jobList
-	 * @param array $stats
+	 * @param array &$jobList
+	 * @param array &$stats
 	 * @return void
 	 */
 	private function addUserJobsToList(
