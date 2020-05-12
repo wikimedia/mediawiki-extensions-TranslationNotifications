@@ -94,15 +94,25 @@
 	},
 	"config": {
 		"TranslationNotificationsContactMethods": {
-			"email": true,
-			"talkpage": true,
-			"talkpage-elsewhere": false,
-			"feed": false
+			"value": {
+				"email": true,
+				"talkpage": true,
+				"talkpage-elsewhere": false,
+				"feed": false
+			}
 		},
-		"NotificationUsername": false,
-		"NotificationUserPassword": false,
-		"TranslationNotificationsSignupLegalMessage": "translationnotifications-signup-legal",
-		"TranslationNotificationsAlwaysHttpsInEmail": false
+		"NotificationUsername": {
+			"value": false
+		},
+		"NotificationUserPassword": {
+			"value": false
+		},
+		"TranslationNotificationsSignupLegalMessage": {
+			"value": "translationnotifications-signup-legal"
+		},
+		"TranslationNotificationsAlwaysHttpsInEmail": {
+			"value": false
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
