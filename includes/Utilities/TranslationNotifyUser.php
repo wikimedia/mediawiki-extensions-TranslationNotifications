@@ -144,7 +144,9 @@ class TranslationNotifyUser {
 			$params['localUserId'] = $translatorId;
 		}
 
-		return Job::factory( 'TranslationNotificationsTalkPageJob', $params );
+		// Create a dummy title to be used as parameter.
+		$title = Title::makeTitle( NS_SPECIAL, 'Blankpage' );
+		return new TranslationNotificationsTalkPageJob( $title, $params );
 	}
 
 	/**

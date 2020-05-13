@@ -10,8 +10,8 @@
  * @ingroup JobQueue
  */
 class TranslationNotificationsTalkPageJob extends GenericTranslationNotificationsJob {
-	public function __construct( $title, $params, $id = 0 ) {
-		parent::__construct( 'TranslationNotificationsTalkPageJob', $title, $params, $id );
+	public function __construct( $title, $params ) {
+		parent::__construct( 'TranslationNotificationsTalkPageJob', $title, $params );
 	}
 
 	/**
