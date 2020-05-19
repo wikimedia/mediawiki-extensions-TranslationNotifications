@@ -25,7 +25,7 @@ abstract class GenericTranslationNotificationsJob extends \Job {
 	 * Channel name to be used during logging
 	 * @var string
 	 */
-	const CHANNEL_NAME = 'TranslationNotifications.Jobs';
+	private const CHANNEL_NAME = 'TranslationNotifications.Jobs';
 
 	abstract public function run();
 
