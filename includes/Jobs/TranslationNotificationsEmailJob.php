@@ -35,7 +35,7 @@ class TranslationNotificationsEmailJob extends GenericTranslationNotificationsJo
 		);
 
 		if ( !$status->isOK() ) {
-			$errorMsg = $status->getMessage();
+			$errorMsg = $status->getMessage()->text();
 			$this->logError( $errorMsg );
 			$this->setLastError( $errorMsg );
 			return false;
