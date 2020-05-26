@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Diki Ananta",
 			"NoiX180"
 		]
 	},
 	"translatorsignup": "Pandaptaran penerjemah",
 	"translatorsignup-summary": "Anggo kaca iki kanggo nemtokaké basa apa kang panjenengan bisa pertal, lan kepriyé panjenengan bisa diubungi nalika ana panyuwun pertalan anyar.",
 	"translationnotifications-desc": "Lilakaké panerjemah ndaptar kanggo wara-wara terjemahan",
-	"translationnotifications-info": "Informasi panganggo",
-	"translationnotifications-username": "Jeneng panganggo:",
+	"translationnotifications-info": "Informasi naraguna",
+	"translationnotifications-username": "Jeneng naraguna:",
 	"translationnotifications-emailstatus": "Status layang-èl:",
 	"translationnotifications-email-confirmed": "Alamat layang èlèktronik panjenengan wis dipesthèkaké",
 	"translationnotifications-email-disablemail": "Alamat layang èlèktronik panjenengan wis dipesthèkaké, nanging [[Special:Preferences|prèferènsi panjenengan]] ora njaluk nampa layang èlèktronik.",
