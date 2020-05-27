@@ -20,14 +20,13 @@ class DigestEmailer extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->addDescription( 'Send email notification to translators on regular intervals.' );
-
 		$this->requireExtension( 'TranslationNotifications' );
 	}
 
 	public function execute() {
 		$this->lock();
 
-		// Get the Translators with Weekly or Monthly notificaiton preferences.
+		// Get the Translators with weekly or monthly notification preferences.
 		$translators = $this->getTranslators();
 		if ( count( $translators ) === 0 ) {
 			$this->output( "No translators with digest email option found\n" );
@@ -257,7 +256,7 @@ class DigestEmailer extends Maintenance {
 	}
 
 	/**
-	 * Get the notifications from last one month(monthly is the largest digest frequency)
+	 * Get the notifications from last one month (monthly is the largest digest frequency)
 	 * Sort the notification in the descending order of announcement date, and remove
 	 * the older announcements about the pages. Also remove notifications with expired
 	 * deadline.
