@@ -4,6 +4,7 @@
 * @license GPL-2.0-or-later
 */
 
+use MediaWiki\MassMessage\Job\MassMessageJob;
 use MediaWiki\MediaWikiServices;
 
 /**
@@ -83,10 +84,11 @@ class TranslationNotifyUser {
 	 * @param User $translator To whom the message to be sent
 	 * @param string $destination Whether to send it to a talk page on this wiki
 	 * ('talkpageHere', default) or another one ('talkpageInOtherWiki').
-	 * @return TranslationNotificationsTalkPageJob
+	 * @return MassMessageJob
 	 */
 	public function leaveUserMessage(
-		User $translator, $destination = 'talkpageHere'
+		User $translator,
+		$destination = 'talkpageHere'
 	) {
 		$relevantLanguages = $this->getRelevantLanguages( $translator, $this->languagesToNotify );
 		$userFirstLanguageCode = $this->getUserFirstLanguage( $translator );
@@ -119,34 +121,32 @@ class TranslationNotifyUser {
 		$text .= $userFirstLanguage->getDirMarkEntity() .
 			', ~~~~~'; // Date and time
 
-		$editSummary = wfMessage(
+		// Note: Maybe this was originally meant for edit summary, but it's actually used as subject
+		$subject = wfMessage(
 			'translationnotifications-edit-summary',
 			$this->translatablePageTitle
 		)->inLanguage( $userFirstLanguage )->text();
 
+		$listUrl = SpecialPage::getTitleFor( 'NotifyTranslators' )->getCanonicalURL();
+
 		$params = [
-			'text' => $text,
-			'editSummary' => $editSummary,
+			// This is not the edit summary, but rather hidden comment left after the message
+			'comment' => [
+				$this->notifier->getName(),
+				WikiMap::getCurrentWikiId(),
+				$listUrl
+			],
+			'message' => $text,
+			'subject' => $subject,
+			// Use canonical version of the namespace that works in all wikis and assume that
+			// user names are global across wikis
+			'title' => 'User_talk:' . $translator->getName(),
 		];
 
-		list( $translatorId, $type ) = $this->getUserId(
-			$translator, $destination === 'talkpageInOtherWiki'
-		);
+		// Ignored, the page to deliver to is read from $params['title']
+		$jobTitle = $translator->getTalkPage();
 
-		if ( $type === 'central' ) {
-			if ( $translatorId === 0 ) {
-				throw new RuntimeException(
-					"Destination is external wiki, but no central Id found for user - {$translator->getId()}"
-				);
-			}
-			$params['centralUserId'] = $translatorId;
-		} else {
-			$params['localUserId'] = $translatorId;
-		}
-
-		// Create a dummy title to be used as parameter.
-		$title = Title::makeTitle( NS_SPECIAL, 'Blankpage' );
-		return new TranslationNotificationsTalkPageJob( $title, $params );
+		return new MassMessageJob( $jobTitle, $params );
 	}
 
 	/**
@@ -291,31 +291,5 @@ class TranslationNotifyUser {
 		return $this->httpsInEmail === false
 			? PROTO_CANONICAL
 			: PROTO_HTTPS;
-	}
-
-	/**
-	 * Checks and returns either the central user id or the local user id incase the
-	 * central user id is not found and the message has to be left on the local wiki
-	 * itself.
-	 * @param User $user
-	 * @param bool $isOtherWiki
-	 * @return array First item contains the Id, second tells the type - central
-	 * or local
-	 * @phan-return array{int,'central'|'local'}
-	 */
-	protected function getUserId( User $user, $isOtherWiki ) {
-		$lookup = CentralIdLookup::factory();
-		$centralId = $lookup->centralIdFromLocalUser( $user, CentralIdLookup::AUDIENCE_RAW );
-
-		if ( $centralId !== 0 ) {
-			return [ $centralId, 'central' ];
-		}
-
-		if ( $isOtherWiki ) {
-			// other wiki, but no central id for the user.
-			return [ 0, 'central' ];
-		}
-
-		return [ $user->getId(), 'local' ];
 	}
 }

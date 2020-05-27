@@ -30,8 +30,7 @@
 	},
 	"JobClasses": {
 		"TranslationNotificationsEmailJob": "TranslationNotificationsEmailJob",
-		"TranslationNotificationsSubmitJob": "TranslationNotificationsSubmitJob",
-		"TranslationNotificationsTalkPageJob": "TranslationNotificationsTalkPageJob"
+		"TranslationNotificationsSubmitJob": "TranslationNotificationsSubmitJob"
 	},
 	"LogTypes": [
 		"notifytranslators"
@@ -55,7 +54,6 @@
 		"SpecialTranslatorSignup": "includes/SpecialTranslatorSignup.php",
 		"TranslationNotificationsEmailJob": "includes/Jobs/TranslationNotificationsEmailJob.php",
 		"TranslationNotificationsSubmitJob": "includes/Jobs/TranslationNotificationsSubmitJob.php",
-		"TranslationNotificationsTalkPageJob": "includes/Jobs/TranslationNotificationsTalkPageJob.php",
 		"TranslationNotificationsHooks": "includes/TranslationNotificationsHooks.php",
 		"TranslationNotificationsLogFormatter": "includes/TranslationNotificationsLogFormatter.php",
 		"TranslationNotifyUser": "includes/Utilities/TranslationNotifyUser.php"
