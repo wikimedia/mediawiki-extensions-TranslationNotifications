@@ -275,10 +275,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 			$jobs[] = [
 				$wiki,
 				'jobTalkPageOther',
-				$notifyUser->leaveUserMessage(
-					$user,
-					'talkpageInOtherWiki'
-				)
+				$notifyUser->leaveUserMessage( $user, 'talkpageInOtherWiki' )
 			];
 		}
 
