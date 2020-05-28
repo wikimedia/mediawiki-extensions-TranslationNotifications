@@ -171,23 +171,19 @@ class TranslationNotifyUser {
 			$this->getUrlProtocol()
 		);
 
-		$emailBody = wfMessage(
-			'translationnotifications-email-body',
-			NotificationMessageBuilder::getUserName( $translator ),
-			$userFirstLanguage->listToText( array_values( $relevantLanguages ) ),
-			$this->translatablePageTitle,
-			$translationUrls,
-			NotificationMessageBuilder::getPriorityClause( $userFirstLanguage, $this->priority ),
-			NotificationMessageBuilder::getDeadlineClause( $userFirstLanguage, $this->deadline ),
-			NotificationMessageBuilder::getNotificationMessage(
-				MediaWikiServices::getInstance()->getContentLanguage(),
-				$this->notificationText
-			),
-			NotificationMessageBuilder::getSignupURL( $this->getUrlProtocol() )
-		)
-			->numParams( count( $relevantLanguages ) ) // $9
-			->params( $translator->getName() ) // $10
-			->inLanguage( $userFirstLanguage )->text();
+		$emailBody = wfMessage( 'translationnotifications-email-body' )
+			->params(
+				NotificationMessageBuilder::getUserName( $translator ), // $1
+				$userFirstLanguage->listToText( array_values( $relevantLanguages ) ),
+				$this->translatablePageTitle,
+				$translationUrls, // $4
+				NotificationMessageBuilder::getPriorityClause( $userFirstLanguage, $this->priority ),
+				NotificationMessageBuilder::getDeadlineClause( $userFirstLanguage, $this->deadline ),
+				$this->notificationText, // $7
+				NotificationMessageBuilder::getSignupURL( $this->getUrlProtocol() ),
+				Message::numParam( count( $relevantLanguages ) ),
+				$translator->getName() // $10
+			)->inLanguage( $userFirstLanguage )->text();
 
 		$sender = $this->notifier;
 
