@@ -2,14 +2,15 @@
  * @license GPL.2-0+
  */
 
-jQuery( function ( $ ) {
+$( function () {
 	'use strict';
 
-	var toggle = function () {
-		$( '#mw-input-wpcmethod-talkpage-elsewhere-loc' )
-			.toggle( $( '#mw-input-wpcmethod-talkpage-elsewhere' )
-				.prop( 'checked' ) );
-	};
+	var $checkbox = $( '#mw-input-wpcmethod-talkpage-elsewhere input' );
+
+	function toggle() {
+		$( '#mw-input-wpcmethod-talkpage-elsewhere-loc' ).toggle( $checkbox.prop( 'checked' ) );
+	}
+
 	toggle();
-	$( '#mw-input-wpcmethod-talkpage-elsewhere' ).change( toggle );
+	$checkbox.change( toggle );
 } );
