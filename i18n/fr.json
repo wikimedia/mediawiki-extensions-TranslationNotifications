@@ -27,7 +27,7 @@
 	"translationnotifications-email-unconfirmed": "Votre adresse de courriel n’est pas confirmée. $1",
 	"translationnotifications-email-notset": "Vous n’avez pas fourni d’adresse de courriel. Vous pouvez le faire dans vos [[Special:Preferences|préférences]].",
 	"translationnotifications-languages": "Langues",
-	"translationnotifications-lang": "Langue $1",
+	"translationnotifications-lang": "Langue numéro $1",
 	"translationnotifications-nolang": "Choisir une langue",
 	"translationnotifications-contact": "Moyens de contact préférés",
 	"translationnotifications-cmethod-email": "Courriel",
