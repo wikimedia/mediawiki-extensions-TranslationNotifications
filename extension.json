@@ -99,12 +99,6 @@
 				"feed": false
 			}
 		},
-		"NotificationUsername": {
-			"value": false
-		},
-		"NotificationUserPassword": {
-			"value": false
-		},
 		"TranslationNotificationsSignupLegalMessage": {
 			"value": "translationnotifications-signup-legal"
 		},
