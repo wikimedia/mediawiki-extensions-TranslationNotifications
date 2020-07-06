@@ -20,5 +20,6 @@
 	"translationnotifications-email-deadline": "La limito-dato por finar ca tradukuro esas $1.",
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|sendis}} informo pri traduko di la pagino $3; {{PLURAL:$10|linguo|lingui}}: $4; maxim parfinita dato: $5; prioreso: $6; sendita a(d) {{PLURAL:$7|1 recevanto|$7 recevanta}}, faliis por {{PLURAL:$8|1 recevanto|$8 recevanti}}, faliis por {{PLURAL:$9|1 recevanto|$9 recevanti}}",
 	"log-description-notifytranslators": "Registrago di avizi pri la tradukebla pagini sendita a la tradukeri",
+	"translationnotifications-nodeadline": "nulo",
 	"translationnotifications-generic-languages": "&lt;lingui>"
 }
