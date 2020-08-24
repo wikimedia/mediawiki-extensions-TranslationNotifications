@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Horus",
 			"Patsagorn Y."
 		]
 	},
@@ -56,12 +57,12 @@
 	"translationnotifications-email-priority": "ระดับความสำคัญของหน้านี้คือ$1",
 	"translationnotifications-email-deadline": "กำหนดเวลาเส้นตายของการแปลหน้านี้ $1",
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|ส่ง}}การแจ้งเตือนเกี่ยวกับการแปลหน้า $3 {{PLURAL:$10|เป็นภาษา}}$4 เส้นตาย $5 ความสำคัญ $6 ไปยังผู้รับ{{PLURAL:$7|หนึ่งคน|&nbsp;$7 คน}} เกิดข้อผิดพลาดกับ {{PLURAL:$8|หนึ่งการส่ง|&nbsp;$8 การส่ง}} ข้ามการส่ง{{PLURAL:$9|หนึ่งครั้ง|&nbsp;$9 ครั้ง}}",
-	"log-name-notifytranslators": "ปูมการส่งการแจ้งเตือนการแปลภาษา",
+	"log-name-notifytranslators": "ปูมแจ้งเตือนการแปลภาษา",
 	"log-description-notifytranslators": "ปูมของการส่วนการแจ้งเตือนไปยังผู้แปลภาษาเกี่ยวกับหน้าที่พร้อมแปล",
 	"translationnotifications-sent-title": "ส่งการแจ้งเตือนการแปลแล้ว",
 	"translationnotifications-sent-body": "การแจ้งเตือนการแปลถูกส่งแล้ว",
 	"translationnotifications-log-alllanguages": "ทุกภาษา",
-	"translationnotifications-nodeadline": "ไม่ได้กำหนด",
+	"translationnotifications-nodeadline": "ไม่กำหนด",
 	"translationnotifications-signup-legal": "คุณเข้าใจว่าโดยให้ข้อมูลนี้เราอาจติดต่อคุณในหัวข้อที่เกี่ยวข้องกับ {{SITENAME}} ที่เราคิดว่าเกี่ยวข้องกับคุณ คุณยอมรับว่าข้อมูลส่วนตัวของคุณอยู่ภายใต้[[{{MediaWiki:Privacypage}}|นโยบายความเป็นส่วนตัว]]ของเรา",
 	"translationnotifications-generic-languages": "&lt;ชื่อภาษา>",
 	"translationnotifications-text": "ใช้แบบฟอร์มด้านล่างเพื่อส่งคำขอการแปลไปยังผู้แปลภาษา"
