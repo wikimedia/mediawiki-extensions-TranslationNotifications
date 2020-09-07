@@ -60,14 +60,16 @@
 	},
 	"ResourceModules": {
 		"ext.translationnotifications.notifytranslators": {
-			"scripts": "resources/ext.translationnotifications.notifytranslators.js",
+			"scripts": [
+				"resources/ext.translationnotifications.multiselectautocomplete.js",
+				"resources/ext.translationnotifications.notifytranslators.js"
+			],
 			"dependencies": [
 				"mediawiki.jqueryMsg",
 				"mediawiki.Uri",
 				"mediawiki.api",
 				"mediawiki.user",
-				"jquery.ui",
-				"ext.translate.multiselectautocomplete"
+				"jquery.ui"
 			],
 			"messages": [
 				"translationnotifications-preview-notification-button",
