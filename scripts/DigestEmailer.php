@@ -221,7 +221,7 @@ class DigestEmailer extends Maintenance {
 	protected function lock() {
 		// Lock this process to avoid multiple instances running and duplicate mails being sent.
 		$cache = wfGetCache( CACHE_ANYTHING );
-		$lockKey = wfMemcKey( 'translationnotifications-digestemailer-lock' );
+		$lockKey = $cache->makeKey( 'translationnotifications-digestemailer-lock' );
 		if ( $cache->get( $lockKey ) == true ) {
 			$this->output( "Another process is running. Please try later\n" );
 			exit( 1 );
@@ -231,7 +231,7 @@ class DigestEmailer extends Maintenance {
 
 	protected function unlock() {
 		$cache = wfGetCache( CACHE_ANYTHING );
-		$lockKey = wfMemcKey( 'translationnotifications-digestemailer-lock' );
+		$lockKey = $cache->makeKey( 'translationnotifications-digestemailer-lock' );
 		// release the lock.
 		$cache->delete( $lockKey );
 	}
