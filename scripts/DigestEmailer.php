@@ -260,7 +260,7 @@ class DigestEmailer extends Maintenance {
 	 * Sort the notification in the descending order of announcement date, and remove
 	 * the older announcements about the pages. Also remove notifications with expired
 	 * deadline.
-	 * @return Array of notifications
+	 * @return array of notifications
 	 */
 	protected function getNotifications() {
 		$dbr = wfGetDB( DB_REPLICA );

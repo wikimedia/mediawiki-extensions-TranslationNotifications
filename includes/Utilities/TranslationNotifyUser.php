@@ -35,7 +35,7 @@ class TranslationNotifyUser {
 	private $localInterwikis;
 
 	/**
-	 * @var boolean
+	 * @var bool
 	 */
 	private $httpsInEmail;
 
