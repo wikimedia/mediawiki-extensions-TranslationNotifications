@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"ArenaL5",
 			"Armando-Martin",
 			"Carlosmg.dg",
 			"Dferg",
@@ -41,7 +42,7 @@
 	"translationnotifications-preview-notification-button": "Previsualizar la notificación",
 	"translationnotifications-deadline-label": "Fecha límite a indicar en esta notificación:",
 	"translationnotifications-languages-to-notify-label": "Para qué lenguas enviar notificación:",
-	"translationnotifications-languages-to-notify-label-help-message": "Códigos de idioma separados por comas; dejar en blanco para notificar en todos los idiomas.",
+	"translationnotifications-languages-to-notify-label-help-message": "Códigos de idioma separados por comas; dejar en blanco para notificar a todos los traductores de todos los idiomas.",
 	"translationnotifications-sourcelang-only": "Una notificación no puede enviarse sólo a los traductores del idioma de origen.",
 	"translationnotifications-priority": "Prioridad:",
 	"translationnotifications-priority-high": "alta",
