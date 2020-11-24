@@ -62,7 +62,7 @@
 	"translationnotifications-email-priority": "Tämän sivun tärkeysaste on $1.",
 	"translationnotifications-email-deadline": "Tämä sivu tulisi kääntää viimeistään $1.",
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|lähetti}} ilmoituksen sivun $3 kääntämisestä; {{PLURAL:$10|kieli|kielet}}: $4; määräaika: $5; tärkeysaste: $6; lähetettiin {{PLURAL:$7|yhdelle kääntäjälle|$7 kääntäjälle}}, epäonnistui {{PLURAL:$8|yhdelle kääntäjälle|$8 kääntäjälle}}, ohitettiin {{PLURAL:$9|yhdelle kääntäjälle|$9 kääntäjälle}}",
-	"log-name-notifytranslators": "Ilmoitukset käännöksistä",
+	"log-name-notifytranslators": "Käännösilmoitusten loki",
 	"log-description-notifytranslators": "Loki ilmoituksista, jotka on lähetetty kääntäjille käännettävistä sivuista",
 	"translationnotifications-sent-title": "Käännösilmoitus lähetetty",
 	"translationnotifications-sent-body": "Käännösilmoitus lähetettiin.",
