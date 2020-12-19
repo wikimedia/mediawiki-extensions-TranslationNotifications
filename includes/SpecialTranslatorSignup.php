@@ -114,7 +114,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		}
 
 		$options =
-			[ wfMessage( 'translationnotifications-nolang' )->plain() => '' ] + $options;
+			[ $this->msg( 'translationnotifications-nolang' )->plain() => '' ] + $options;
 
 		for ( $i = 1; $i < 4; $i++ ) {
 			$formatted = $this->getLanguage()->formatNum( $i );
