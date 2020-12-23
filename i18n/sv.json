@@ -66,6 +66,5 @@
 	"translationnotifications-log-alllanguages": "alla språk",
 	"translationnotifications-nodeadline": "ingen",
 	"translationnotifications-signup-legal": "Du accepterar att genom att tillhandahålla denna information, så får vi kontakta dig om ämnen relaterade till {{SITENAME}} som vi tror kan vara av intresse för dig. Du godkänner att dina data är under vår [[{{MediaWiki:Privacypage}}|integritetspolicy]].",
-	"translationnotifications-generic-languages": "&lt;languages>",
 	"translationnotifications-text": "Använd formuläret nedan för att skicka översättningsbegäran till översättare."
 }

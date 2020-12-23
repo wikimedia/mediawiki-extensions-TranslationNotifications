@@ -72,6 +72,5 @@
 	"translationnotifications-log-alllanguages": "所有語言",
 	"translationnotifications-nodeadline": "無",
 	"translationnotifications-signup-legal": "您同意若提供此資訊，我們可能聯絡您有關{{SITENAME}}的主題，而我們認為您感興趣。您同意您的資料將按照我們[[{{MediaWiki:Privacypage}}|隱私攻策]]處理。",
-	"translationnotifications-generic-languages": "&lt;languages>",
 	"translationnotifications-text": "使用以下表單來發送翻譯請求給譯者。"
 }

@@ -68,6 +68,5 @@
 	"translationnotifications-sent-body": "Käännösilmoitus lähetettiin.",
 	"translationnotifications-log-alllanguages": "kaikki kielet",
 	"translationnotifications-nodeadline": "ei mitään",
-	"translationnotifications-signup-legal": "Antamalla nämä tiedot, vahvistat, että voimme ottaa sinuun yhteyttä sivustoon {{SITENAME}} liittyvissä asioissa, joiden arvelemme kiinnostavan sinua. Hyväksyt, että tietojasi käytetään  [[{{MediaWiki:Privacypage}}|yksityisyydensuojan]] alaisena.",
-	"translationnotifications-generic-languages": "&lt;languages>"
+	"translationnotifications-signup-legal": "Antamalla nämä tiedot, vahvistat, että voimme ottaa sinuun yhteyttä sivustoon {{SITENAME}} liittyvissä asioissa, joiden arvelemme kiinnostavan sinua. Hyväksyt, että tietojasi käytetään  [[{{MediaWiki:Privacypage}}|yksityisyydensuojan]] alaisena."
 }
