@@ -4,10 +4,6 @@
 	"description": "Manage communication with translators",
 	"homepage": "https://www.mediawiki.org/wiki/Extension:TranslationNotifications",
 	"license": "GPL-2.0-or-later",
-	"require": {
-		"composer/installers": "*",
-		"mediawiki/translate": "dev-master"
-	},
 	"require-dev": {
 		"jakub-onderka/php-parallel-lint": "1.0.0",
 		"mediawiki/mediawiki-codesniffer": "18.0.0",
