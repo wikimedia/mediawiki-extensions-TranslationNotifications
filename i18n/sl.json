@@ -50,7 +50,7 @@
 	"translationnotifications-email-subject": "Prosimo, prevedi stran $1",
 	"translationnotifications-notification-url-listitem": "prevedi v $1",
 	"translationnotifications-digestemail-subject": "E-pošta s prošnjami za prevode iz {{SITENAME}}",
-	"translationnotifications-digestemail-notification-line": "Dne $1 je $2 {{GENDER:|označil|označila}} \"$3\" za prevod. Lahko ga prevedeš na $4.",
+	"translationnotifications-digestemail-notification-line": "Dne $1 je $2 {{GENDER:|označil|označila}} »$3« za prevod. Prevedete ga lahko na $4.",
 	"translationnotifications-edit-summary": "Obvestilo: $1",
 	"translationnotifications-email-priority": "Priorpiteta te strani je $1.",
 	"translationnotifications-email-deadline": "Rok za prevod te strani je $1.",
@@ -63,5 +63,5 @@
 	"translationnotifications-nodeadline": "noben",
 	"translationnotifications-signup-legal": "Strinjaš se, da te smemo na podlagi poslanih informacij kontaktirati v zvezi s temami na strani {{SITENAME}}, za katere smatramo, da te utegnejo zanimati. Strinjaš se, da tvoje poslane informacije zapadejo pod našo [[{{MediaWiki:Privacypage}}|politiko zasebnosti]].",
 	"translationnotifications-generic-languages": "&lt;jeziki>",
-	"translationnotifications-text": "Izpolni spodnji obrazec, da prevajalcem pošlješ prošnje za prevod."
+	"translationnotifications-text": "Izpolnite spodnji obrazec, da prevajalcem pošljete prošnje za prevod."
 }
