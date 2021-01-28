@@ -31,7 +31,7 @@
 	"translationnotifications-freq-weekly": "Tedenski pregled",
 	"translationnotifications-freq-monthly": "Mesečni pregled",
 	"translationnotifications-submit": "Nastavitve posodobitev",
-	"translationnotifications-signup-success": "Tvoje nastavitve obveščanja so bile shranjene.",
+	"translationnotifications-signup-success": "Vaše nastavitve obveščanja so shranjene.",
 	"notifytranslators": "Obvesti prevajalce",
 	"translationnotifications-submit-ok": "Obvestila so bila dana na čakanje in bodo dostavljena tekom dela.",
 	"translationnotifications-send-notification-button": "Pošlji prevajalcem obvestilo",
@@ -61,7 +61,7 @@
 	"translationnotifications-sent-body": "Obvestilo je bilo poslano.",
 	"translationnotifications-log-alllanguages": "vsi jeziki",
 	"translationnotifications-nodeadline": "noben",
-	"translationnotifications-signup-legal": "Strinjaš se, da te smemo na podlagi poslanih informacij kontaktirati v zvezi s temami na strani {{SITENAME}}, za katere smatramo, da te utegnejo zanimati. Strinjaš se, da tvoje poslane informacije zapadejo pod našo [[{{MediaWiki:Privacypage}}|politiko zasebnosti]].",
+	"translationnotifications-signup-legal": "Strinjate se, da smemo na podlagi poslanih informacij kontaktirati z vami v zvezi s temami na strani {{SITENAME}}, za katere menimo, da vas utegnejo zanimati. Strinjate se, da se za vaše poslane podatke uporablja naš [[{{MediaWiki:Privacypage}}|pravilnik o zasebnosti]].",
 	"translationnotifications-generic-languages": "&lt;jeziki>",
 	"translationnotifications-text": "Izpolnite spodnji obrazec, da prevajalcem pošljete prošnje za prevod."
 }
