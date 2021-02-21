@@ -298,7 +298,7 @@ class DigestEmailer extends Maintenance {
 				'deadline' => $logParams[1],
 				'priority' => $logParams[2],
 				'announcedate' => wfTimestamp( TS_RFC2822, $logEntry->getTimestamp() ),
-				'announcer' => $logEntry->getPerformer(),
+				'announcer' => $logEntry->getPerformerIdentity(),
 				'translatablepage' => $logEntry->getTarget()
 			];
 		}
