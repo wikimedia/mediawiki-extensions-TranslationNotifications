@@ -4,5 +4,7 @@
 			"Ajeje Brazorf"
 		]
 	},
-	"translationnotifications-username": "Nomu utenti:"
+	"translationnotifications-username": "Nomu utenti:",
+	"translationnotifications-priority-high": "àuta",
+	"translationnotifications-priority-low": "vascia"
 }
