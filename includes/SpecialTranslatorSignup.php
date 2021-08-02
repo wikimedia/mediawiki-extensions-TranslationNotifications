@@ -12,6 +12,7 @@
  */
 
 use MediaWiki\Extension\SiteMatrix\SiteMatrix;
+use MediaWiki\User\UserOptionsManager;
 
 /**
  * Form for translators to register contact methods
@@ -20,8 +21,12 @@ use MediaWiki\Extension\SiteMatrix\SiteMatrix;
  */
 
 class SpecialTranslatorSignup extends FormSpecialPage {
-	public function __construct() {
+	/** @var UserOptionsManager */
+	private $userOptionsManager;
+
+	public function __construct( UserOptionsManager $userOptionsManager ) {
 		parent::__construct( 'TranslatorSignup' );
+		$this->userOptionsManager = $userOptionsManager;
 	}
 
 	public function doesWrites() {
@@ -75,7 +80,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		];
 
 		if ( $user->isEmailConfirmed() ) {
-			if ( $user->getOption( 'disablemail' ) ) {
+			if ( $this->userOptionsManager->getOption( $user, 'disablemail' ) ) {
 				$status = $this->msg( 'translationnotifications-email-disablemail' )->parse();
 			} else {
 				$status = $this->msg( 'translationnotifications-email-confirmed' )->parse();
@@ -119,11 +124,15 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 				'label-message' => [ 'translationnotifications-lang', $formatted ],
 				'section' => 'languages',
 				'options' => $options,
-				'default' => $user->getOption( "translationnotifications-lang-$i" ),
+				'default' => $this->userOptionsManager->getOption(
+					$user,
+					"translationnotifications-lang-$i"
+				),
 			];
 
 			if ( $i === 1 ) {
-				$m["lang-$i"]['default'] = $user->getOption(
+				$m["lang-$i"]['default'] = $this->userOptionsManager->getOption(
+					$user,
 					"translationnotifications-lang-$i",
 					$this->getLanguage()->getCode()
 				);
@@ -145,7 +154,10 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 			$m["cmethod-$method"] = [
 				'type' => 'check',
 				'label-message' => "translationnotifications-cmethod-$method",
-				'default' => $user->getOption( "translationnotifications-cmethod-$method" ),
+				'default' => $this->userOptionsManager->getOption(
+					$user,
+					"translationnotifications-cmethod-$method"
+				),
 				'section' => 'contact',
 			];
 
@@ -157,7 +169,10 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 			if ( $method === 'talkpage-elsewhere' && count( $localInterwikis ) ) {
 				$m['cmethod-talkpage-elsewhere-loc'] = [
 					'type' => 'select',
-					'default' => $user->getOption( 'translationnotifications-cmethod-talkpage-elsewhere-loc' ),
+					'default' => $this->userOptionsManager->getOption(
+						$user,
+						'translationnotifications-cmethod-talkpage-elsewhere-loc'
+					),
 					'section' => 'contact',
 					'options' => $this->getOtherWikis(),
 				];
@@ -166,7 +181,11 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 
 		$m['freq'] = [
 			'type' => 'radio',
-			'default' => $user->getOption( 'translationnotifications-freq', 'always' ),
+			'default' => $this->userOptionsManager->getOption(
+				$user,
+				'translationnotifications-freq',
+				'always'
+			),
 			'section' => 'frequency',
 			'options' => [
 				$this->msg( 'translationnotifications-freq-always' )->escaped() => 'always',
@@ -189,7 +208,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 
 		// @todo Needs input validation
 		foreach ( $formData as $key => $value ) {
-			$user->setOption( "translationnotifications-$key", $value );
+			$this->userOptionsManager->setOption( $user, "translationnotifications-$key", $value );
 		}
 		$user->saveSettings();
 
