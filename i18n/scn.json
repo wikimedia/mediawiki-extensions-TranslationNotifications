@@ -5,7 +5,10 @@
 		]
 	},
 	"translationnotifications-username": "Nomu utenti:",
+	"translationnotifications-languages": "Lingui",
+	"translationnotifications-lang": "Lingua #$1",
 	"translationnotifications-priority-high": "àuta",
 	"translationnotifications-priority-low": "vascia",
-	"translationnotifications-nodeadline": "nuddu"
+	"translationnotifications-nodeadline": "nuddu",
+	"translationnotifications-generic-languages": "&lt;lingui>"
 }
