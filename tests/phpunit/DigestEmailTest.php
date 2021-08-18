@@ -8,6 +8,8 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Unit tests for DigestEmailer class.
  * @covers DigestEmailer
@@ -173,10 +175,23 @@ class DigestEmailTest extends MediaWikiTestCase {
 		if ( $user->getID() === 0 ) {
 			$user->addToDatabase();
 		}
-		$user->setOption( 'translationnotifications-lang-1', $translator_conf['language'] );
+		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		$userOptionsManager->setOption(
+			$user,
+			'translationnotifications-lang-1',
+			$translator_conf['language']
+		);
 		// set it a time long time back
-		$user->setOption( 'translationnotifications-last-digest', strtotime( '-2 month' ) );
-		$user->setOption( 'translationnotifications-freq', $translator_conf['digest_frequency'] );
+		$userOptionsManager->setOption(
+			$user,
+			'translationnotifications-last-digest',
+			strtotime( '-2 month' )
+		);
+		$userOptionsManager->setOption(
+			$user,
+			'translationnotifications-freq',
+			$translator_conf['digest_frequency']
+		);
 		$user->saveSettings();
 
 		return $user->getId();

@@ -16,6 +16,8 @@ if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 }
 require_once "$IP/maintenance/Maintenance.php";
 
+use MediaWiki\MediaWikiServices;
+
 class DigestEmailer extends Maintenance {
 	public function __construct() {
 		parent::__construct();
@@ -50,26 +52,28 @@ class DigestEmailer extends Maintenance {
 			? PROTO_CANONICAL
 			: PROTO_HTTPS;
 
+		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+
 		$mailstatus = [];
 		foreach ( $translators as $translator ) {
 			$notificationText = "";
 			$count = 0;
 			$mailstatus[$translator] = $count;
 			$user = User::newFromId( $translator );
-			$notificationFreq = $user->getOption( 'translationnotifications-freq' );
+			$notificationFreq = $userOptionsManager->getOption( $user, 'translationnotifications-freq' );
 
 			$userName = $user->getName();
 			$this->output( "Sending digest to: $userName\n\t" .
 				"Frequency preference: $notificationFreq\n" );
 			$signedUpLangCodes = [];
 			foreach ( range( 1, 3 ) as $langNum ) {
-				$langCode = $user->getOption( "translationnotifications-lang-$langNum" );
+				$langCode = $userOptionsManager->getOption( $user, "translationnotifications-lang-$langNum" );
 				if ( $langCode ) {
 					$signedUpLangCodes[] =
-						$user->getOption( "translationnotifications-lang-$langNum" );
+						$userOptionsManager->getOption( $user, "translationnotifications-lang-$langNum" );
 				}
 			}
-			$firstLangCode = $user->getOption( 'translationnotifications-lang-1' );
+			$firstLangCode = $userOptionsManager->getOption( $user, 'translationnotifications-lang-1' );
 			$firstLang = Language::fetchLanguageName( $signedUpLangCodes[0], $firstLangCode );
 			$this->output( "\tSigned up for: " . implode( ', ', $signedUpLangCodes ) . "\n" );
 
@@ -88,7 +92,7 @@ class DigestEmailer extends Maintenance {
 			}
 
 			$startTimeStamp = strtotime( $offset );
-			$lastSuccessfulrun = $user->getOption( 'translationnotifications-last-digest' );
+			$lastSuccessfulrun = $userOptionsManager->getOption( $user, 'translationnotifications-last-digest' );
 			if ( $lastSuccessfulrun > $startTimeStamp ) {
 				$this->output( "\tNot sending notifications, Last notification time: " .
 					date( 'D M j G:i:s T Y', $lastSuccessfulrun ) . " \n" );

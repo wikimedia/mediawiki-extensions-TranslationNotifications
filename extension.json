@@ -13,7 +13,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.34.0",
+		"MediaWiki": ">= 1.35.0",
 		"extensions": {
 			"MassMessage": "*",
 			"Translate": "*"
@@ -25,7 +25,12 @@
 		"translationnotifications-lang-3": ""
 	},
 	"SpecialPages": {
-		"TranslatorSignup": "SpecialTranslatorSignup",
+		"TranslatorSignup": {
+			"class": "SpecialTranslatorSignup",
+			"services": [
+				"UserOptionsManager"
+			]
+		},
 		"NotifyTranslators": "SpecialNotifyTranslators"
 	},
 	"JobClasses": {

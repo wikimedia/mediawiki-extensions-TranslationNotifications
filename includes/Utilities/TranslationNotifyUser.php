@@ -6,6 +6,7 @@
 
 use MediaWiki\MassMessage\Job\MassMessageJob;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\UserIdentity;
 
 /**
  * Encapsulates the logic needed to create a notification to be sent to Users based on the
@@ -242,12 +243,14 @@ class TranslationNotifyUser {
 	/**
 	 * Returns a language that a user signed up for in
 	 * Special:TranslatorSignup.
-	 * @param User $user
+	 * @param UserIdentity $user
 	 * @param int $langNum Number of language.
 	 * @return string Language code, or null if it wasn't defined.
 	 */
-	protected function getUserLanguageOption( User $user, $langNum ) {
-		return $user->getOption( "translationnotifications-lang-$langNum" );
+	protected function getUserLanguageOption( UserIdentity $user, $langNum ) {
+		return MediaWikiServices::getInstance()
+			->getUserOptionsLookup()
+			->getOption( $user, "translationnotifications-lang-$langNum" );
 	}
 
 	/**
