@@ -29,7 +29,7 @@
 	"notifytranslators": "Oznámit překladatelům",
 	"translationnotifications-submit-ok": "Oznámení byla přidána do fronty a jsou doručována úlohou na pozadí.",
 	"translationnotifications-send-notification-button": "Odeslat oznámení pro překladatele",
-	"translationnotifications-languages-to-notify-label": "Jaký jazyk oznámení?",
+	"translationnotifications-languages-to-notify-label": "Pro jaké jazyky se mají posílat oznámení:",
 	"translationnotifications-priority": "Priorita:",
 	"translationnotifications-priority-high": "vysoká",
 	"translationnotifications-priority-medium": "střední",
