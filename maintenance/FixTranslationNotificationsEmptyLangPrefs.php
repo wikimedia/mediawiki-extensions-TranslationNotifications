@@ -29,7 +29,7 @@ class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
 	}
 
 	public function execute() {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 
 		$langPropertyPrefix = 'translationnotifications-lang-';
 		$this->output( "Deleting empty {$langPropertyPrefix}* property values\n" );
