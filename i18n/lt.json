@@ -4,5 +4,7 @@
 			"Tomasdd"
 		]
 	},
-	"notifytranslators": "Pranešti vertėjams"
+	"translationnotifications-languages": "Kalbos",
+	"notifytranslators": "Pranešti vertėjams",
+	"translationnotifications-log-alllanguages": "visos kalbos"
 }
