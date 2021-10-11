@@ -15,7 +15,7 @@ use MediaWiki\MediaWikiServices;
  * @covers DigestEmailer
  * @group Database
  */
-class DigestEmailTest extends MediaWikiTestCase {
+class DigestEmailTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @var DigestEmailer
 	 */
