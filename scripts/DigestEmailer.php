@@ -26,7 +26,6 @@ class DigestEmailer extends Maintenance {
 		parent::__construct();
 		$this->addDescription( 'Send email notification to translators on regular intervals.' );
 		$this->requireExtension( 'TranslationNotifications' );
-		$this->userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 	}
 
 	public function execute() {
@@ -49,6 +48,7 @@ class DigestEmailer extends Maintenance {
 	}
 
 	public function sendEmails( $translators, $notifications ) {
+		$this->userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		$config = $this->getConfig();
 		// Initialize early to avoid calling these repeatedly within the loop
 		$noReplyAddress = $config->get( 'NoReplyAddress' );
