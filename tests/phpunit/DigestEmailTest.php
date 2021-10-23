@@ -43,9 +43,9 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
 		foreach ( $translators as $translator ) {
 			$this->expectOutputRegex( '/[a-zA-Z\n]*1 notifications to send/' );
-			$this->assertEquals(
-				$mailstatus[$translator],
+			$this->assertSame(
 				1,
+				$mailstatus[$translator],
 				User::newFromId( $translator ) . " should get a mail"
 			);
 		}
@@ -57,9 +57,9 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
 		foreach ( $translators as $translator ) {
 			$this->expectOutputRegex( '/[a-zA-Z\n]*0 notifications to send/' );
-			$this->assertEquals(
-				$mailstatus[$translator],
+			$this->assertSame(
 				0,
+				$mailstatus[$translator],
 				User::newFromId( $translator ) . " should not get a mail. " .
 					"Notification is not for this translator"
 			);
@@ -72,9 +72,9 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
 		foreach ( $translators as $translator ) {
 			$this->expectOutputRegex( '/[a-zA-Z\n]*1 notifications to send/' );
-			$this->assertEquals(
-				$mailstatus[$translator],
+			$this->assertSame(
 				1,
+				$mailstatus[$translator],
 				User::newFromId( $translator ) . " should get a mail"
 			);
 		}
@@ -86,9 +86,9 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
 		foreach ( $translators as $translator ) {
 			$this->expectOutputRegex( '/[a-zA-Z\n]*0 notifications to send/' );
-			$this->assertEquals(
-				$mailstatus[$translator],
+			$this->assertSame(
 				0,
+				$mailstatus[$translator],
 				User::newFromId( $translator ) . " should not get a mail. Notifications are expired"
 			);
 		}
@@ -100,18 +100,18 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
 		foreach ( $translators as $translator ) {
 			$this->expectOutputRegex( '/[a-zA-Z\n]*1 notifications to send/' );
-			$this->assertEquals(
-				$mailstatus[$translator],
+			$this->assertSame(
 				1,
+				$mailstatus[$translator],
 				User::newFromId( $translator ) . " should get a mail"
 			);
 		}
 		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
 		foreach ( $translators as $translator ) {
 			$this->expectOutputRegex( '/[a-zA-Z\n]*Not sending notifications/' );
-			$this->assertEquals(
-				$mailstatus[$translator],
+			$this->assertSame(
 				0,
+				$mailstatus[$translator],
 				User::newFromId( $translator ) . " should not get a mail, this is a repeat"
 			);
 		}
