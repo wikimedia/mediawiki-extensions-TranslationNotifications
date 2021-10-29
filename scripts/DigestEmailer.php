@@ -19,9 +19,6 @@ require_once "$IP/maintenance/Maintenance.php";
 use MediaWiki\MediaWikiServices;
 
 class DigestEmailer extends Maintenance {
-	/** @var \MediaWiki\User\UserOptionsManager */
-	private $userOptionsManager;
-
 	public function __construct() {
 		parent::__construct();
 		$this->addDescription( 'Send email notification to translators on regular intervals.' );
@@ -48,7 +45,6 @@ class DigestEmailer extends Maintenance {
 	}
 
 	public function sendEmails( $translators, $notifications ) {
-		$this->userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		$config = $this->getConfig();
 		// Initialize early to avoid calling these repeatedly within the loop
 		$noReplyAddress = $config->get( 'NoReplyAddress' );
@@ -57,25 +53,26 @@ class DigestEmailer extends Maintenance {
 			: PROTO_HTTPS;
 
 		$mailstatus = [];
+		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		foreach ( $translators as $translator ) {
 			$notificationText = "";
 			$count = 0;
 			$mailstatus[$translator] = $count;
 			$user = User::newFromId( $translator );
-			$notificationFreq = $this->userOptionsManager->getOption( $user, 'translationnotifications-freq' );
+			$notificationFreq = $userOptionsManager->getOption( $user, 'translationnotifications-freq' );
 
 			$userName = $user->getName();
 			$this->output( "Sending digest to: $userName\n\t" .
 				"Frequency preference: $notificationFreq\n" );
 			$signedUpLangCodes = [];
 			foreach ( range( 1, 3 ) as $langNum ) {
-				$langCode = $this->userOptionsManager->getOption( $user, "translationnotifications-lang-$langNum" );
+				$langCode = $userOptionsManager->getOption( $user, "translationnotifications-lang-$langNum" );
 				if ( $langCode ) {
 					$signedUpLangCodes[] =
-						$this->userOptionsManager->getOption( $user, "translationnotifications-lang-$langNum" );
+						$userOptionsManager->getOption( $user, "translationnotifications-lang-$langNum" );
 				}
 			}
-			$firstLangCode = $this->userOptionsManager->getOption( $user, 'translationnotifications-lang-1' );
+			$firstLangCode = $userOptionsManager->getOption( $user, 'translationnotifications-lang-1' );
 			$firstLang = Language::fetchLanguageName( $signedUpLangCodes[0], $firstLangCode );
 			$this->output( "\tSigned up for: " . implode( ', ', $signedUpLangCodes ) . "\n" );
 
@@ -94,7 +91,7 @@ class DigestEmailer extends Maintenance {
 			}
 
 			$startTimeStamp = strtotime( $offset );
-			$lastSuccessfulrun = $this->userOptionsManager->getOption( $user, 'translationnotifications-last-digest' );
+			$lastSuccessfulrun = $userOptionsManager->getOption( $user, 'translationnotifications-last-digest' );
 			if ( $lastSuccessfulrun > $startTimeStamp ) {
 				$this->output( "\tNot sending notifications, Last notification time: " .
 					date( 'D M j G:i:s T Y', $lastSuccessfulrun ) . " \n" );
@@ -199,8 +196,8 @@ class DigestEmailer extends Maintenance {
 			$job = new EmaillingJob( null, $params );
 			JobQueueGroup::singleton()->push( $job );
 
-			$this->userOptionsManager->setOption( $user, 'translationnotifications-last-digest', wfTimestamp() );
-			$this->userOptionsManager->saveOptions( $user );
+			$userOptionsManager->setOption( $user, 'translationnotifications-last-digest', wfTimestamp() );
+			$userOptionsManager->saveOptions( $user );
 		}
 
 		return $mailstatus;
