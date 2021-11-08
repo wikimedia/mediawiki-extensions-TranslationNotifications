@@ -265,7 +265,7 @@ class DigestEmailer extends Maintenance {
 	 * deadline.
 	 * @return array of notifications
 	 */
-	protected function getNotifications() {
+	private function getNotifications(): array {
 		$dbr = wfGetDB( DB_REPLICA );
 		$logEntrySelectQuery = DatabaseLogEntry::getSelectQueryData();
 		$logFilter = [ 'log_type' => 'notifytranslators' ];
@@ -286,8 +286,11 @@ class DigestEmailer extends Maintenance {
 		$notifications = [];
 		foreach ( $logs as $row ) {
 			$logEntry = DatabaseLogEntry::newFromRow( $row );
+			// Refer to TranslationNotificationsSubmitJob for parameter names.
+			// Old log entries used to have numeric keys, but since we only look back one month,
+			// we do not need to be able to handle them.
 			$logParams = $logEntry->getParameters();
-			if ( $logParams[1] && strtotime( $logParams[1] ) < time() ) {
+			if ( $logParams['5::deadlineDate'] && strtotime( $logParams['5::deadlineDate'] ) < time() ) {
 				// Deadline already expired
 				continue;
 			}
@@ -296,10 +299,11 @@ class DigestEmailer extends Maintenance {
 				// An older notification about the same page.
 				continue;
 			}
+
 			$notifications[$translatablePage] = [
-				'languages' => $logParams[0],
-				'deadline' => $logParams[1],
-				'priority' => $logParams[2],
+				'languages' => $logParams['4::languagesForLog'],
+				'deadline' => $logParams['5::deadlineDate'],
+				'priority' => $logParams['6::priority'],
 				'announcedate' => wfTimestamp( TS_RFC2822, $logEntry->getTimestamp() ),
 				'announcer' => $logEntry->getPerformerIdentity(),
 				'translatablepage' => $logEntry->getTarget()
