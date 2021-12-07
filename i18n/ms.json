@@ -35,7 +35,7 @@
 	"translationnotifications-send-notification-button": "Hantar pemberitahuan kepada para penterjemah",
 	"translationnotifications-preview-notification-button": "Pratayang pemberitahuan",
 	"translationnotifications-deadline-label": "Tarikh tutup untuk dinyatakan dalam pemberitahuan ini:",
-	"translationnotifications-languages-to-notify-label": "Bahasa-bahasa untuk diberitahukan:",
+	"translationnotifications-languages-to-notify-label": "Bahasa-bahasa untuk menghantar pemberitahuan:",
 	"translationnotifications-languages-to-notify-label-help-message": "Kod bahasa diasing-asingkan oleh koma; biarkan kosong untuk memberitahu untuk semua bahasa.",
 	"translationnotifications-priority": "Prioriti:",
 	"translationnotifications-priority-high": "tinggi",

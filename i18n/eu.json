@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Subi",
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Xabier Armendaritz"
 		]
 	},
 	"translationnotifications-username": "Lankide izena:",
@@ -13,5 +14,6 @@
 	"translationnotifications-cmethod-talkpage": "Eztabaida-orria",
 	"translationnotifications-priority": "Lehentasuna:",
 	"translationnotifications-log-alllanguages": "hizkuntza guztiak",
-	"translationnotifications-nodeadline": "bat ere ez"
+	"translationnotifications-nodeadline": "bat ere ez",
+	"translationnotifications-generic-languages": "&lt;hizkuntzak>"
 }

@@ -38,6 +38,7 @@
 	"translationnotifications-deadline-label": "Delai deen an dëser Matdeelung gesat gëtt:",
 	"translationnotifications-languages-to-notify-label": "Fir watfireng Sprooche sollen Notifikatioune geschéckt ginn:",
 	"translationnotifications-languages-to-notify-label-help-message": "Kommagetrennt Sproochcoden; eidel loosse fir Matdeelunge un all Iwwersetzer vun alle Sproochen ze schécken.",
+	"translationnotifications-sourcelang-only": "Eng Notifikatioun ka just un Iwwersetzer vun der original Sprooch geschéckt ginn.",
 	"translationnotifications-priority": "Prioritéit:",
 	"translationnotifications-priority-high": "héich",
 	"translationnotifications-priority-medium": "mëttel",
@@ -47,13 +48,15 @@
 	"translationnotifications-error-no-translatable-pages": "Et gëtt keng Säite fir z'iwwersetzen op dëser Wiki.",
 	"translationnotifications-email-subject": "Iwwersetzt wgl. d'Säit $1",
 	"translationnotifications-email-body": "Bonjour $1,\n\nDir kritt dës E-Mail well Dir Iech als Iwwersetzer {{PLURAL:$9|fir}} $2 op {{SITENAME}}  {{GENDER:$10|ageschriwwen}} hutt.\n\nEt gëtt do eng Säit fir z'iwwersetzen: $3.\nDir Kënnt se iwwersetze wann Dir op dëse Link klickt:\n$4\n\n$5\n$6\n\n$7\n\nÄr Hëllef gëtt appreciéiert. Iwwersetzer wéi Dir hëllefe(n) {{SITENAME}} als wierklech méisproocheg Gemeinschaft ze fionctionéieren.\n\nVillmools merci!\n\n{{SITENAME}} Iwwersetzungscoordinateuren\n\n----\n\nDir kritt dës E-Mail well Dir Iech ageschriwwen hutt fir e-Mailen a Verbindung mat Iwwersetzungen op {{SITENAME}} ze kréien. Fir dat ofzebestellen oder fir Är Astellunge vun den Notifikatiounen z'änneren, besicht eis wgl. op $8.",
+	"translationnotifications-talkpage-body": "Bpnjour $2,\n\nDir kritt dës Notifikatioun well Dir Iech als {{GENDER:$1|Iwwersetzer|Iwwersetzerin}} op {{SITENAME}} {{PLURAL:$9|fir}} $3 ageschriwwen hutt.\nD'Säit [[$4]] ass elo prett fir d'Iwwersetzung. Dir kennt se hei iwwersetzen:\n$5\n\n$6\n$7\n\n$8\n\nÄr Hëllef gëtt appreciéiert. Iwwersetzer wéi Dir hëllefe(n) {{SITENAME}} als veritabel multilingual Gemeinschaft ze funktionéieren.\n\nDir kënnt [$10 Är Astellunge fir d'Notifikatiounen änneren].\n\nMerci!\n\nD'Iwwersetzungskoordinateure vu(n) {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "op $1 iwwersetzen",
 	"translationnotifications-digestemail-subject": "Zesummegefaassten E-mail fir Iwwersetzungsufroe vu(n) {{SITENAME}}",
 	"translationnotifications-digestemail-body": "Bonjour $1,\n\nDir kritt dës E-Mail well Dir Iech als Iwwersetzer fir $2 op {{SITENAME}}  {{GENDER:$1|ageschriwwen}} hutt.\n\nEt gëtt do {{PLURAL:$3|eng Säit|$3 Säite}} fir z'iwwersetzen. D'Detailer fannt Dir hei drënner.\n\n$4\n\nÄr Hëllef gëtt appreciéiert. Iwwersetzer wéi Dir hëllefe(n) {{SITENAME}} als richteg méisproocheg Gemeinschaft ze funktionéieren.\n\nVillmools Merci!\n\n{{SITENAME}} Iwwersetzungscoordinateuren\n\n----\n\nDir kritt dës E-Mail well Dir Iech ageschriwwen hutt fir e-Mailen a Verbindung mat Iwwersetzungen op {{SITENAME}} ze kréien. Fir dat ofzebestellen oder fir Är Astellunge vun den Notifikatiounen z'änneren, besicht eis wgl. op <$5>.",
 	"translationnotifications-digestemail-notification-line": "Den $1 huet de(n) $2 d'Säit \"$3\" fir d'Iwwersetze markéiert. Dir kënnt et op $4 iwwersetzen",
 	"translationnotifications-edit-summary": "Iwwersetzungs-Matdeelungen: $1",
 	"translationnotifications-email-priority": "D'Prioritéit vun dëser Säit ass $1.",
-	"translationnotifications-email-deadline": "Den Delai fir dës säit z'iwwersetzen ass den $1.",
+	"translationnotifications-email-deadline": "Den Delai fir dës Säit z'iwwersetzen ass den $1.",
+	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|huet}} eng Notifikatioun geschéckt fir d'Iwwersetze vun der Säit $3; {{PLURAL:$10|Sprooch|Sproochen}}: $4; bis: $5 Prioritéit: $6; geschéckt un {{PLURAL:$7|een Empfänger|$7 Empfänger}}, ouni Succès fir {{PLURAL:$8|een Empfänger|$8 Empfänger}}, iwwersprongen fir {{PLURAL:$9|een Empfänger|$9 Empfänger}}",
 	"log-name-notifytranslators": "Logbuch vun den Iwwersetzungs-Matdeelungen",
 	"log-description-notifytranslators": "E Logbuch vun den Notifikatiounen vun de Säite fir z'iwwersetzen déi un d'Iwwersetzer geschéckt goufen",
 	"translationnotifications-sent-title": "Iwwersetzungs-Matdeelung geschéckt",
@@ -61,5 +64,6 @@
 	"translationnotifications-log-alllanguages": "all Sproochen",
 	"translationnotifications-nodeadline": "keng",
 	"translationnotifications-signup-legal": "Duerch d'Matdeele vun dëser Informatioun sidd Dir domat d'accord datt mir Iech zu Themen a Relatioun mat {{SITENAME}} kontaktéiere vun deene mir mengen datt se vun Interesse fir Iech sinn. Dir sidd averstanen datt Är Donnéeën eisen  [[{{MediaWiki:Privacypage}}|Dateschutzrichlinen]] ënnerleien.",
-	"translationnotifications-generic-languages": "&lt;Sproochen>"
+	"translationnotifications-generic-languages": "&lt;Sproochen>",
+	"translationnotifications-text": "Benotzt de Formulaire hei drënner fir Iwwersetzungsufroen un d'Iwwersetzer ze schécken"
 }
