@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"translationnotifications-info": "Nfurmazzioni supra l'utenti",
+	"translationnotifications-username": "Nomu utenti:",
+	"translationnotifications-emailstatus": "Statu email:",
+	"translationnotifications-languages": "Lingui",
+	"translationnotifications-lang": "Lingua #$1",
+	"translationnotifications-nolang": "Scegghi na lingua",
+	"translationnotifications-cmethod-email": "Email",
+	"translationnotifications-cmethod-talkpage": "Pàggina di discussioni",
+	"translationnotifications-cmethod-talkpage-elsewhere": "Pàggina di discussioni supra n'àutra wiki",
+	"translationnotifications-priority": "Priurità:",
+	"translationnotifications-priority-high": "àuta",
+	"translationnotifications-priority-low": "vascia",
+	"translationnotifications-email-subject": "Pi favuri traduci la pàggina $1",
+	"translationnotifications-notification-url-listitem": "traduci n $1",
+	"translationnotifications-log-alllanguages": "tutti li lingui",
+	"translationnotifications-nodeadline": "nuddu",
+	"translationnotifications-generic-languages": "&lt;lingui>"
+}

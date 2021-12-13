@@ -4,8 +4,9 @@
 			"Joanmp17"
 		]
 	},
+	"translationnotifications-username": "ስም ተጠቃሚ፦",
 	"translationnotifications-languages": "ቋንቋታት",
 	"translationnotifications-cmethod-email": "ኢሜይል",
-	"translationnotifications-notification-url-listitem": "ናብ $1 ተርጎመ",
+	"translationnotifications-notification-url-listitem": "ናብ $1 ተርጉም",
 	"translationnotifications-log-alllanguages": "ኩሎም ቋንቋታት"
 }

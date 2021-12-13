@@ -33,9 +33,11 @@
 	"notifytranslators": "Notificar traductores",
 	"translationnotifications-submit-ok": "Notificationes ha essite addite a un cauda e es livrate per un processo in secunde plano.",
 	"translationnotifications-send-notification-button": "Inviar un notification a traductores",
+	"translationnotifications-preview-notification-button": "Previsualisar notification",
 	"translationnotifications-deadline-label": "Data limite a indicar in iste notification:",
 	"translationnotifications-languages-to-notify-label": "Le linguas pro le quales inviar notificationes:",
 	"translationnotifications-languages-to-notify-label-help-message": "Codices de lingua separate per commas; lassa vacue pro inviar notificationes al traductores de tote le linguas.",
+	"translationnotifications-sourcelang-only": "Non es possibile inviar un notification solmente al traductores del lingua de origine.",
 	"translationnotifications-priority": "Prioritate:",
 	"translationnotifications-priority-high": "alte",
 	"translationnotifications-priority-medium": "medie",
@@ -60,5 +62,6 @@
 	"translationnotifications-sent-body": "Le notification de traduction ha essite inviate.",
 	"translationnotifications-log-alllanguages": "tote le linguas",
 	"translationnotifications-nodeadline": "nulle",
-	"translationnotifications-signup-legal": "Per fornir iste information tu accepta que nos pote contactar te concernente themas associate a {{SITENAME}} le quales nos pensa que pote esser de interesse a te. Tu accepta que tu datos es subjecte a nostre [[{{MediaWiki:Privacypage}}|politica de confidentialitate]]."
+	"translationnotifications-signup-legal": "Per fornir iste information tu accepta que nos pote contactar te concernente themas associate a {{SITENAME}} le quales nos pensa que pote esser de interesse a te. Tu accepta que tu datos es subjecte a nostre [[{{MediaWiki:Privacypage}}|politica de confidentialitate]].",
+	"translationnotifications-text": "Usa le formulario sequente pro inviar requestas de traduction al traductores."
 }

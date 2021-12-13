@@ -11,7 +11,8 @@
 			"SPQRobin",
 			"Shirayuki",
 			"Siebrand",
-			"Zoranzoki21"
+			"Zoranzoki21",
+			"Kizule"
 		]
 	},
 	"translatorsignup": "{{doc-special|TranslatorSignup}}",
@@ -73,6 +74,6 @@
 	"translationnotifications-log-alllanguages": "Appears in the log message, saying that the notification was sent to translators to all languages.\n{{Identical|All languages}}",
 	"translationnotifications-nodeadline": "Says that no deadline was specified.\n\nUsed as <code>$1</code> in {{msg-mw|Translationnotifications-email-deadline}}.\n{{Identical|None}}",
 	"translationnotifications-signup-legal": "Legal text shown at the bottom of [[Special:TranslatorSignup]] page.\n\nRefers to {{msg-mw|Privacypage}}.",
-	"translationnotifications-generic-languages": "A generic placeholder that is shown in the previewed notification instead of a list of language names.\n\nUsed as <code>$3</code> in the following message:\n* {{msg-mw|Translationnotifications-talkpage-body}}.\n{{Identical|Language}}",
+	"translationnotifications-generic-languages": "{{optional}}\nA generic placeholder that is shown in the previewed notification instead of a list of language names.\n\nUsed as <code>$3</code> in the following message:\n* {{msg-mw|Translationnotifications-talkpage-body}}.\n{{Identical|Language}}",
 	"translationnotifications-text": "Introduction to special page [[Special:NotifyTranslators]]."
 }

@@ -6,7 +6,9 @@
 			"Dferg",
 			"Fitoschido",
 			"Macofe",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"ArenaL5",
+			"Jakeukalane"
 		]
 	},
 	"translatorsignup": "Inscripción de traductores",
@@ -25,7 +27,7 @@
 	"translationnotifications-contact": "Métodos de contactos preferidos",
 	"translationnotifications-cmethod-email": "Correo electrónico",
 	"translationnotifications-cmethod-talkpage": "Página de discusión",
-	"translationnotifications-cmethod-talkpage-elsewhere": "Página de discusión en otro wiki",
+	"translationnotifications-cmethod-talkpage-elsewhere": "Página de discusión en otra wiki",
 	"translationnotifications-cmethod-feed": "Suministro",
 	"translationnotifications-frequency": "Frecuencia de contacto",
 	"translationnotifications-freq-always": "Cuando haya algo nuevo para traducir",
@@ -41,7 +43,7 @@
 	"translationnotifications-preview-notification-button": "Previsualizar la notificación",
 	"translationnotifications-deadline-label": "Fecha límite a indicar en esta notificación:",
 	"translationnotifications-languages-to-notify-label": "Para qué lenguas enviar notificación:",
-	"translationnotifications-languages-to-notify-label-help-message": "Códigos de idioma separados por comas; dejar en blanco para notificar en todos los idiomas.",
+	"translationnotifications-languages-to-notify-label-help-message": "Códigos de idioma separados por comas; dejar en blanco para notificar a todos los traductores de todos los idiomas.",
 	"translationnotifications-sourcelang-only": "Una notificación no puede enviarse sólo a los traductores del idioma de origen.",
 	"translationnotifications-priority": "Prioridad:",
 	"translationnotifications-priority-high": "alta",
@@ -49,7 +51,7 @@
 	"translationnotifications-priority-low": "baja",
 	"translationnotifications-priority-unset": "(no definida)",
 	"translationnotifications-translatablepage-title": "Nombre de la página traducible:",
-	"translationnotifications-error-no-translatable-pages": "No hay páginas traducibles en este wiki.",
+	"translationnotifications-error-no-translatable-pages": "No hay páginas traducibles en esta wiki.",
 	"translationnotifications-email-subject": "Traduce la página $1",
 	"translationnotifications-email-body": "Hola $1,\n\nEstás recibiendo este mensaje de correo electrónico porque te inscribiste como {{GENDER:$10|traductor|traductora}} {{PLURAL:$9|de}} $2 en {{SITENAME}}.\n\nAquí hay una página para traducir: $3.\nPuedes traducirla haciendo clic en el enlace siguiente:\n$4\n\n$5\n$6\n\n$7\n\nAgradecemos enormemente tu ayuda. Traductores como tu hacen que {{SITENAME}} funcione\ncomo una verdadera comunidad multilingüe.\n\n¡Gracias!\nLos coordinadores de traducción de {{SITENAME}}\n\n----\n\nEstás recibiendo este mensaje porque te suscribiste para recibir correos electrónicos relacionados con traducciones en {{SITENAME}}. Para cancelar la suscripción o cambiar tus preferencias de notificación para las traducciones, visita $8.",
 	"translationnotifications-talkpage-body": "Hola, $2:\n\nHas recibido esta notificación porque te inscribiste como {{GENDER:$1|traductor|traductora}} {{PLURAL:$9|de}} $3 en {{SITENAME}}.\nLa página [[$4]] está disponible para su traducción. Puedes traducirla aquí:\n$5\n\n$6\n$7\n\n$8\n\nAgradecemos enormemente tu ayuda. Traductores como tú hacen que {{SITENAME}} funcione\ncomo una verdadera comunidad multilingüe.\n\nPuedes [$10 cambiar tus preferencias de notificación].\n\n¡Gracias!\n\nLos coordinadores de traducción de {{SITENAME}}",
