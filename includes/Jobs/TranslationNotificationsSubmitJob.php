@@ -43,17 +43,12 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 				'requestData' => $requestData,
 				'notifierId' => $notifierId,
 				'translatorLanguage' => $translatorLang
-			],
-			MediaWikiServices::getInstance()->getUserOptionsManager()
+			]
 		);
 	}
 
-	public function __construct(
-		$title,
-		$params,
-		UserOptionsManager $userOptionsManager
-	) {
-		$this->userOptionsManager = $userOptionsManager;
+	public function __construct( $title, $params ) {
+		$this->userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		parent::__construct( __CLASS__, $title, $params );
 		$this->currentWikiId = WikiMap::getCurrentWikiDbDomain()->getId();
 	}
