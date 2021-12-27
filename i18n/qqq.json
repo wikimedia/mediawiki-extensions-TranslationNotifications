@@ -12,7 +12,8 @@
 			"Shirayuki",
 			"Siebrand",
 			"Zoranzoki21",
-			"Kizule"
+			"Kizule",
+			"Yupik"
 		]
 	},
 	"translatorsignup": "{{doc-special|TranslatorSignup}}",
@@ -59,7 +60,7 @@
 	"translationnotifications-email-subject": "A subject for the email sent to translators. Parameters:\n* $1 - page title for the translatable page",
 	"translationnotifications-email-body": "The body of the email message sent to translators. Parameters:\n* $1 - Translator's username or real name, if specified\n* $2 - A comma list of language names\n* $3 - Translatable page name\n* $4 - A bullet list of URLs\n* $5 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.\n* $6 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.\n* $7 - A custom message that can be added by the notification sender\n* $8 - URL to the special page, to unsubscribe\n* $9 - Number of languages. Can be used in PLURAL\n* $10　- Plain text username used for GENDER",
 	"translationnotifications-talkpage-body": "The body of the notification on user talk page.\n* $1 - plain username, can be used for GENDER\n* $2 - translator's username or real name, if specified\n* $3 - a comma list of language names, or the placeholder text {{msg-mw|Translationnotifications-generic-languages}}\n* $4 - translatable page name\n* $5 - a bulleted list of URLs to translation pages\n* $6 - The message {{msg-mw|translationnotifications-email-priority}}. Empty if no priority was specified.\n* $7 - The message {{msg-mw|translationnotifications-email-deadline}}. Empty if no deadline was specified.\n* $8 - a custom message that can be added by the notification sender\n* $9 - number of languages, can be used in PLURAL\n* $10 - URL to notification preferences",
-	"translationnotifications-notification-url-listitem": "This is an item in a bullted list of hyperlinks to translation pages. $1 is a language name.",
+	"translationnotifications-notification-url-listitem": "This is an item in a bulleted list of hyperlinks to translation pages. $1 is a language name.",
 	"translationnotifications-digestemail-subject": "Used as mail subject.\n\nThe mail body is the following message:\n* {{msg-mw|Translationnotifications-digestemail-body}}",
 	"translationnotifications-digestemail-body": "Parameters:\n* $1 - username\n* $2 - first language preference of user\n* $3 - number of pages available for translation\n* $4 - the list of notifications, this is the main part of the email\n* $5 - link to [[Special:NotifyTranslators]]",
 	"translationnotifications-digestemail-notification-line": "The message line for notification in the digest.\n* $1 - date\n* $2 - user name\n* $3 - translatable page title\n* $4 - link to [[Special:Translate]] page for the users first language.",
