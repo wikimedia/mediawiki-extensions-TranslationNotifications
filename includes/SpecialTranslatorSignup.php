@@ -11,6 +11,7 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\SiteMatrix\SiteMatrix;
 use MediaWiki\User\UserOptionsManager;
 
@@ -224,7 +225,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 
 	protected function getOtherWikis() {
 		global $wgConf;
-		if ( !class_exists( 'CentralAuthUser' ) ) {
+		if ( !ExtensionRegistry::getInstance()->isLoaded( 'CentralAuth' ) ) {
 			return [];
 		}
 		$globalUser = CentralAuthUser::getInstance( $this->getUser() );
