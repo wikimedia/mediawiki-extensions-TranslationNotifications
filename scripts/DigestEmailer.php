@@ -53,7 +53,9 @@ class DigestEmailer extends Maintenance {
 			: PROTO_HTTPS;
 
 		$mailstatus = [];
-		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		$services = MediaWikiServices::getInstance();
+		$userOptionsManager = $services->getUserOptionsManager();
+		$jobQueueGroup = $services->getJobQueueGroup();
 		foreach ( $translators as $translator ) {
 			$notificationText = "";
 			$count = 0;
@@ -194,7 +196,7 @@ class DigestEmailer extends Maintenance {
 				'replyto' => $emailFrom,
 			];
 			$job = new EmaillingJob( null, $params );
-			JobQueueGroup::singleton()->push( $job );
+			$jobQueueGroup->push( $job );
 
 			$userOptionsManager->setOption( $user, 'translationnotifications-last-digest', wfTimestamp() );
 			$userOptionsManager->saveOptions( $user );

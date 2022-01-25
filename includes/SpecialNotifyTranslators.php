@@ -228,7 +228,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 			$this->getLanguage()->getCode()
 		);
 
-		JobQueueGroup::singleton()->push( $job );
+		MediaWikiServices::getInstance()->getJobQueueGroup()->push( $job );
 		return true;
 	}
 

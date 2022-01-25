@@ -4,6 +4,7 @@
 * @license GPL-2.0-or-later
 */
 
+use MediaWiki\JobQueue\JobQueueGroupFactory;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserOptionsManager;
 
@@ -27,6 +28,11 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 	private $userOptionsManager;
 
 	/**
+	 * @var JobQueueGroupFactory
+	 */
+	private $jobQueueGroupFactory;
+
+	/**
 	 * Returns an instance of the TranslationNotificationsSubmitJob
 	 * @param Title $title
 	 * @param array $requestData
@@ -48,7 +54,9 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 	}
 
 	public function __construct( $title, $params ) {
-		$this->userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		$services = MediaWikiServices::getInstance();
+		$this->userOptionsManager = $services->getUserOptionsManager();
+		$this->jobQueueGroupFactory = $services->getJobQueueGroupFactory();
 		parent::__construct( __CLASS__, $title, $params );
 		$this->currentWikiId = WikiMap::getCurrentWikiDbDomain()->getId();
 	}
@@ -166,7 +174,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 		foreach ( $jobsByTarget as $wiki => $jobs ) {
 			$this->logInfo( "Wiki: $wiki, Jobs: " . count( $jobs ) );
-			JobQueueGroup::singleton( $wiki )->push( $jobs );
+			$this->jobQueueGroupFactory->makeJobQueueGroup( $wiki )->push( $jobs );
 		}
 
 		// Add a log entry
