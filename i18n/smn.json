@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yupik"
+			"Yupik",
+			"Seipinne"
 		]
 	},
 	"translationnotifications-languages": "Kielah",
-	"translationnotifications-lang": "$1. kielâ"
+	"translationnotifications-lang": "$1. kielâ",
+	"translationnotifications-cmethod-talkpage": "Savâstâllâmsijđo",
+	"translationnotifications-log-alllanguages": "puoh kielah"
 }
