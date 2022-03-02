@@ -13,7 +13,8 @@
 			"Urhixidur",
 			"Verdy p",
 			"Wladek92",
-			"Wyz"
+			"Wyz",
+			"Mannivu"
 		]
 	},
 	"translatorsignup": "S’inscrire comme traducteur",
@@ -28,7 +29,7 @@
 	"translationnotifications-email-notset": "Vous n’avez pas fourni d’adresse de courriel. Vous pouvez le faire dans vos [[Special:Preferences|préférences]].",
 	"translationnotifications-languages": "Langues",
 	"translationnotifications-lang": "Langue numéro $1",
-	"translationnotifications-nolang": "Choisir une langue",
+	"translationnotifications-nolang": "Choisissez une langue",
 	"translationnotifications-contact": "Moyens de contact préférés",
 	"translationnotifications-cmethod-email": "Courriel",
 	"translationnotifications-cmethod-talkpage": "Page de discussion",
