@@ -4,9 +4,20 @@
 * @license GPL-2.0-or-later
 */
 
+namespace MediaWiki\Extension\TranslationNotifications\Jobs;
+
+use Exception;
+use Language;
+use ManualLogEntry;
+use MediaWiki\Extension\TranslationNotifications\Utilities\TranslationNotifyUser;
 use MediaWiki\JobQueue\JobQueueGroupFactory;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserOptionsManager;
+use Title;
+use TranslatablePage;
+use User;
+use WikiMap;
+use Wikimedia\Rdbms\IResultWrapper;
 
 /**
  * Handles a notification request. Uses the TranslationNotifyUsers to create the necessary jobs
@@ -57,7 +68,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 		$services = MediaWikiServices::getInstance();
 		$this->userOptionsManager = $services->getUserOptionsManager();
 		$this->jobQueueGroupFactory = $services->getJobQueueGroupFactory();
-		parent::__construct( __CLASS__, $title, $params );
+		parent::__construct( 'TranslationNotificationsSubmitJob', $title, $params );
 		$this->currentWikiId = WikiMap::getCurrentWikiDbDomain()->getId();
 	}
 
@@ -223,7 +234,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 	 * Returns translators who match the given language criteria.
 	 * @param array $languagesToNotify
 	 * @param string $sourceLanguage
-	 * @return Wikimedia\Rdbms\IResultWrapper
+	 * @return IResultWrapper
 	 */
 	private function fetchTranslators( $languagesToNotify, $sourceLanguage ) {
 		$langPropertyPrefix = 'translationnotifications-lang-';
@@ -240,15 +251,13 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 			$translatorsConditions[] = 'up_value <> ' . $dbr->addQuotes( $sourceLanguage );
 		}
 
-		$translatorsToNotify = $dbr->select(
+		return $dbr->select(
 			'user_properties',
 			'up_user',
 			$translatorsConditions,
 			__METHOD__,
 			'DISTINCT'
 		);
-
-		return $translatorsToNotify;
 	}
 
 	/**

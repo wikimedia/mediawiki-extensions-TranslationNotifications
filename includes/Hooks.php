@@ -9,10 +9,12 @@
  * @license GPL-2.0-or-later
  */
 
+namespace MediaWiki\Extension\TranslationNotifications;
+
 /**
  * Some hooks for TranslationNotifications extension.
  */
-class TranslationNotificationsHooks {
+class Hooks {
 	public static function onGetPreferences( $user, &$preferences ) {
 		foreach (
 			[

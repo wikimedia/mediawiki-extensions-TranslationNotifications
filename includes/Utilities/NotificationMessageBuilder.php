@@ -4,8 +4,19 @@
 * @license GPL-2.0-or-later
 */
 
+namespace MediaWiki\Extension\TranslationNotifications\Utilities;
+
+use Html;
+use Language;
+use Message;
+use SpecialPage;
+use Title;
+use TranslatablePage;
+use User;
+
 /**
  * A class that helps builds the notification message to be sent to users
+ *
  * @since 2019.10
  */
 class NotificationMessageBuilder {
@@ -74,15 +85,13 @@ class NotificationMessageBuilder {
 		$dir = $contLang->getDir();
 		// Possible classes:
 		// mw-content-ltr, mw-content-rtl
-		$notificationText = Html::element( 'div',
+		return Html::element( 'div',
 			[
 				'lang' => $contLang->getCode(),
 				'class' => "mw-content-$dir"
 			],
 			$notificationContent
 		);
-
-		return $notificationText;
 	}
 
 	/**
@@ -128,13 +137,11 @@ class NotificationMessageBuilder {
 	 * @return string Signup URL
 	 */
 	public static function getSignupURL( $urlProtocol ) {
-		$signupURL = SpecialPage::getTitleFor( 'TranslatorSignup' )->getFullURL(
+		return SpecialPage::getTitleFor( 'TranslatorSignup' )->getFullURL(
 			'',
 			false,
 			$urlProtocol
 		);
-
-		return $signupURL;
 	}
 
 	/**
@@ -187,7 +194,7 @@ class NotificationMessageBuilder {
 		Title $translatablePageTitle, $languageCode, $urlProtocol
 	) {
 		$page = TranslatablePage::newFromTitle( $translatablePageTitle );
-		$translationURL = SpecialPage::getTitleFor( 'Translate' )->getFullURL(
+		return SpecialPage::getTitleFor( 'Translate' )->getFullURL(
 			[
 				'group' => $page->getMessageGroupId(),
 				'language' => $languageCode,
@@ -196,7 +203,5 @@ class NotificationMessageBuilder {
 			false,
 			$urlProtocol
 		);
-
-		return $translationURL;
 	}
 }

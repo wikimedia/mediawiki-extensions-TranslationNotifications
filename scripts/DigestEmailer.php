@@ -8,6 +8,8 @@
  * @file
  */
 
+namespace MediaWiki\Extension\TranslationNotifications\Scripts;
+
 // Standard boilerplate to define $IP
 if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 	$IP = getenv( 'MW_INSTALL_PATH' );
@@ -16,7 +18,16 @@ if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 }
 require_once "$IP/maintenance/Maintenance.php";
 
+use DatabaseLogEntry;
+use EmaillingJob;
+use Language;
+use MailAddress;
+use Maintenance;
 use MediaWiki\MediaWikiServices;
+use ObjectCache;
+use SpecialPage;
+use TranslatablePage;
+use User;
 
 class DigestEmailer extends Maintenance {
 	public function __construct() {
@@ -316,5 +327,5 @@ class DigestEmailer extends Maintenance {
 	}
 }
 
-$maintClass = 'DigestEmailer';
+$maintClass = DigestEmailer::class;
 require_once RUN_MAINTENANCE_IF_MAIN;

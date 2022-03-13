@@ -8,11 +8,12 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\Extension\TranslationNotifications\Scripts\DigestEmailer;
 use MediaWiki\MediaWikiServices;
 
 /**
  * Unit tests for DigestEmailer class.
- * @covers DigestEmailer
+ * @covers \MediaWiki\Extension\TranslationNotifications\Scripts\DigestEmailer
  * @group Database
  */
 class DigestEmailTest extends MediaWikiIntegrationTestCase {

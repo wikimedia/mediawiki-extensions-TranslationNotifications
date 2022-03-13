@@ -12,7 +12,21 @@
  * @license GPL-2.0-or-later
  */
 
+namespace MediaWiki\Extension\TranslationNotifications;
+
+use ErrorPageError;
+use FormSpecialPage;
+use HTMLForm;
+use LinkBatch;
+use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsSubmitJob;
+use MediaWiki\Extension\TranslationNotifications\Utilities\NotificationMessageBuilder;
 use MediaWiki\MediaWikiServices;
+use MessageGroups;
+use Status;
+use Title;
+use TranslatablePage;
+use WikiPageMessageGroup;
+use Xml;
 
 /**
  * Form for translation managers to send a notification

@@ -4,8 +4,17 @@
  * @license GPL-2.0-or-later
  */
 
+namespace MediaWiki\Extension\TranslationNotifications\Jobs;
+
+use InvalidArgumentException;
+use MailAddress;
+use Title;
+use User;
+use UserMailer;
+
 /**
  * Uses UserMailer to send out emails.
+ *
  * @ingroup JobQueue
  * @since 2020.02
  */

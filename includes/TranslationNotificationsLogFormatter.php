@@ -8,6 +8,11 @@
  * @license GPL-2.0-or-later
  */
 
+namespace MediaWiki\Extension\TranslationNotifications;
+
+use LogFormatter;
+use MediaWiki\Extension\TranslationNotifications\Utilities\NotificationMessageBuilder;
+
 /**
  * Class for formatting TranslationNotifications logs.
  */

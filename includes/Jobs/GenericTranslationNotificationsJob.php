@@ -7,6 +7,9 @@
  * @license GPL-2.0-or-later
  */
 
+namespace MediaWiki\Extension\TranslationNotifications\Jobs;
+
+use Job;
 use MediaWiki\Logger\LoggerFactory;
 use Psr\Log\LoggerInterface;
 
@@ -14,7 +17,7 @@ use Psr\Log\LoggerInterface;
  * Generic Job class extended by other jobs. Provides logging functionality.
  * @since 2019.09
  */
-abstract class GenericTranslationNotificationsJob extends \Job {
+abstract class GenericTranslationNotificationsJob extends Job {
 	/**
 	 * A logger instance
 	 * @var LoggerInterface

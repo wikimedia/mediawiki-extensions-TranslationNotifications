@@ -26,22 +26,22 @@
 	},
 	"SpecialPages": {
 		"TranslatorSignup": {
-			"class": "SpecialTranslatorSignup",
+			"class": "MediaWiki\\Extension\\TranslationNotifications\\SpecialTranslatorSignup",
 			"services": [
 				"UserOptionsManager"
 			]
 		},
-		"NotifyTranslators": "SpecialNotifyTranslators"
+		"NotifyTranslators": "MediaWiki\\Extension\\TranslationNotifications\\SpecialNotifyTranslators"
 	},
 	"JobClasses": {
-		"TranslationNotificationsEmailJob": "TranslationNotificationsEmailJob",
-		"TranslationNotificationsSubmitJob": "TranslationNotificationsSubmitJob"
+		"TranslationNotificationsEmailJob": "MediaWiki\\Extension\\TranslationNotifications\\Jobs\\TranslationNotificationsEmailJob",
+		"TranslationNotificationsSubmitJob": "MediaWiki\\Extension\\TranslationNotifications\\Jobs\\TranslationNotificationsSubmitJob"
 	},
 	"LogTypes": [
 		"notifytranslators"
 	],
 	"LogActionsHandlers": {
-		"notifytranslators/sent": "TranslationNotificationsLogFormatter"
+		"notifytranslators/sent": "MediaWiki\\Extension\\TranslationNotifications\\TranslationNotificationsLogFormatter"
 	},
 	"MessagesDirs": {
 		"TranslationNotifications": [
@@ -51,17 +51,9 @@
 	"ExtensionMessagesFiles": {
 		"TranslationNotificationsAlias": "TranslationNotifications.alias.php"
 	},
-	"AutoloadClasses": {
-		"DigestEmailer": "scripts/DigestEmailer.php",
-		"GenericTranslationNotificationsJob": "includes/Jobs/GenericTranslationNotificationsJob.php",
-		"NotificationMessageBuilder": "includes/Utilities/NotificationMessageBuilder.php",
-		"SpecialNotifyTranslators": "includes/SpecialNotifyTranslators.php",
-		"SpecialTranslatorSignup": "includes/SpecialTranslatorSignup.php",
-		"TranslationNotificationsEmailJob": "includes/Jobs/TranslationNotificationsEmailJob.php",
-		"TranslationNotificationsSubmitJob": "includes/Jobs/TranslationNotificationsSubmitJob.php",
-		"TranslationNotificationsHooks": "includes/TranslationNotificationsHooks.php",
-		"TranslationNotificationsLogFormatter": "includes/TranslationNotificationsLogFormatter.php",
-		"TranslationNotifyUser": "includes/Utilities/TranslationNotifyUser.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\TranslationNotifications\\": "includes/",
+		"MediaWiki\\Extension\\TranslationNotifications\\Scripts\\": "scripts/"
 	},
 	"ResourceModules": {
 		"ext.translationnotifications.notifytranslators": {
@@ -94,7 +86,7 @@
 	},
 	"Hooks": {
 		"GetPreferences": [
-			"TranslationNotificationsHooks::onGetPreferences"
+			"MediaWiki\\Extension\\TranslationNotifications\\Hooks::onGetPreferences"
 		]
 	},
 	"config": {

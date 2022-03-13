@@ -4,9 +4,18 @@
 * @license GPL-2.0-or-later
 */
 
+namespace MediaWiki\Extension\TranslationNotifications\Utilities;
+
+use Language;
+use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsEmailJob;
 use MediaWiki\MassMessage\Job\MassMessageJob;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserIdentity;
+use Message;
+use SpecialPage;
+use Title;
+use User;
+use WikiMap;
 
 /**
  * Encapsulates the logic needed to create a notification to be sent to Users based on the

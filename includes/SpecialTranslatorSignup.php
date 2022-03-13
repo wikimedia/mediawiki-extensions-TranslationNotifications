@@ -11,9 +11,19 @@
  * @license GPL-2.0-or-later
  */
 
+namespace MediaWiki\Extension\TranslationNotifications;
+
+use ExtensionRegistry;
+use FormSpecialPage;
+use Html;
+use HTMLForm;
+use Language;
+use LanguageCode;
 use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\SiteMatrix\SiteMatrix;
 use MediaWiki\User\UserOptionsManager;
+use SpecialPage;
+use WikiMap;
 
 /**
  * Form for translators to register contact methods

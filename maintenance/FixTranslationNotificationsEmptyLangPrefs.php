@@ -12,7 +12,11 @@
  * @file
  */
 
+namespace MediaWiki\Extension\TranslationNotifications;
+
 // Standard boilerplate to define $IP
+use Maintenance;
+
 if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 	$IP = getenv( 'MW_INSTALL_PATH' );
 } else {
