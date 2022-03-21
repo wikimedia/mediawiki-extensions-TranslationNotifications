@@ -227,9 +227,11 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 	}
 
 	public function onSuccess() {
-		$this->getOutput()->wrapWikiMsg(
-			"<div class=\"successbox\">\n$1\n</div>",
-			'translationnotifications-signup-success'
+		$out = $this->getOutput();
+		$out->addHTML(
+			Html::successBox(
+				$out->msg( 'translationnotifications-signup-success' )->plain()
+			)
 		);
 	}
 
