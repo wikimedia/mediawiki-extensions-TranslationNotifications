@@ -11,12 +11,13 @@
 			"Reza1615",
 			"درفش کاویانی",
 			"Darafsh",
-			"Jeeputer"
+			"Jeeputer",
+			"Beginneruser"
 		]
 	},
 	"translatorsignup": "ثبت نام مترجم",
 	"translatorsignup-summary": "از این صفحه برای مشخص‌کردن زبان‌هایی که می‌توانید به آن‌ها ترجمه کنید، و روشی که تمایل دارید در مورد درخواست‌های تازهٔ ترجمه با شما تماس گرفته شود استفاده نمایید.",
-	"translationnotifications-desc": "به مترجمان اجازه می‌دهد برای اطلاعیه‌های ترجمه نام‌نویسی کنند",
+	"translationnotifications-desc": "به مترجمان ثبت دریافت آگاه‌سازی‌‌های ترجمه را اجازه می‌دهد",
 	"translationnotifications-info": "اطلاعات کاربر",
 	"translationnotifications-username": "نام کاربری:",
 	"translationnotifications-emailstatus": "وضعیت ایمیل:",
