@@ -11,12 +11,13 @@
 			"Reza1615",
 			"درفش کاویانی",
 			"Darafsh",
-			"Jeeputer"
+			"Jeeputer",
+			"Beginneruser"
 		]
 	},
 	"translatorsignup": "ثبت نام مترجم",
 	"translatorsignup-summary": "از این صفحه برای مشخص‌کردن زبان‌هایی که می‌توانید به آن‌ها ترجمه کنید، و روشی که تمایل دارید در مورد درخواست‌های تازهٔ ترجمه با شما تماس گرفته شود استفاده نمایید.",
-	"translationnotifications-desc": "به مترجمان اجازه می‌دهد برای اطلاعیه‌های ترجمه نام‌نویسی کنند",
+	"translationnotifications-desc": "به مترجمان ثبت دریافت آگاه‌سازی‌‌های ترجمه را اجازه می‌دهد",
 	"translationnotifications-info": "اطلاعات کاربر",
 	"translationnotifications-username": "نام کاربری:",
 	"translationnotifications-emailstatus": "وضعیت ایمیل:",
@@ -38,7 +39,7 @@
 	"translationnotifications-freq-month": "یکبار در ماه",
 	"translationnotifications-freq-weekly": "خلاصهٔ هفتگی",
 	"translationnotifications-freq-monthly": "حلاصهٔ یک ماه",
-	"translationnotifications-submit": "روزآمدسازی تنظیمات",
+	"translationnotifications-submit": "به‌روزرسانی تنظیمات",
 	"translationnotifications-signup-success": "ترجیحات اطلاع‌رسانی‌های ترجمهٔ شما ذخیره شد.",
 	"notifytranslators": "آگاه‌سازی مترجمان",
 	"translationnotifications-submit-ok": "آگاه‌سازی‌ها به یک صف سپرده شده و توسط یک برنامه در پس‌زمینه توزیع می‌شوند.",
@@ -46,7 +47,7 @@
 	"translationnotifications-preview-notification-button": "پیش‌نمایش اعلان",
 	"translationnotifications-deadline-label": "مهلت مشخص‌شده در این آگاه‌سازی:",
 	"translationnotifications-languages-to-notify-label": "به چه زبان‌هایی اعلان فرستاده شود:",
-	"translationnotifications-languages-to-notify-label-help-message": "کدهای زبان جداشده با کاما؛ برای آگاه‌سازی تمام مترجم‌های همهٔ زبان‌ها، این را خالی بگذارید.",
+	"translationnotifications-languages-to-notify-label-help-message": "کدهای زبان جداشده با کاما؛ برای آگاه‌سازی‌های تمام مترجم‌های همهٔ زبان‌ها، این را خالی بگذارید.",
 	"translationnotifications-priority": "اولویت:",
 	"translationnotifications-priority-high": "بالا",
 	"translationnotifications-priority-medium": "متوسط",
