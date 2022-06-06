@@ -4,14 +4,20 @@
 			"Умар"
 		]
 	},
+	"translationnotifications-info": "Декъашхочух хаам",
 	"translationnotifications-username": "Декъашхочун цӀе:",
+	"translationnotifications-emailstatus": "Эл. поштан адресан статус:",
 	"translationnotifications-email-confirmed": "Хьан электроннан поштан адрес бакъдина",
 	"translationnotifications-languages": "Меттанаш",
 	"translationnotifications-lang": "Мотт № $1",
 	"translationnotifications-nolang": "Харжа мотт",
+	"translationnotifications-cmethod-email": "Электронан пошт",
+	"translationnotifications-cmethod-talkpage": "Дийцарийн агӀо",
 	"translationnotifications-submit": "Карлабаккха дӀанисбин гӀирс",
 	"translationnotifications-preview-notification-button": "Хааме хьалххе хьажар",
 	"translationnotifications-languages-to-notify-label": "Муьлхачу маттахь бу хаам:",
 	"translationnotifications-email-subject": "Дехар до, гочъехьа $1 агӀо",
-	"translationnotifications-log-alllanguages": "берриге меттанаш"
+	"translationnotifications-log-alllanguages": "берриге меттанаш",
+	"translationnotifications-nodeadline": "хӀан-хӀа",
+	"translationnotifications-generic-languages": "&lt;меттанаш>"
 }
