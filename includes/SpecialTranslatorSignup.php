@@ -67,7 +67,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		$form->setHeaderText( $this->msg( 'translatorsignup-summary' )->parseAsBlock() );
 	}
 
-	protected function postText() {
+	protected function postHtml() {
 		$legalMsg = $this->getConfig()->get( 'TranslationNotificationsSignupLegalMessage' );
 		if ( $legalMsg ) {
 			// Show the legal text regarding the notifications.
