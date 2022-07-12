@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrisportelli"
+			"Chrisportelli",
+			"ToniSant"
 		]
 	},
+	"translatorsignup-summary": "Uża din il-paġna biex tindika f'liema lingwi tista' tittraduċi, u kif trid tiġi kkuntattjat dwar talbiet ġodda ta' traduzzjoni.",
 	"translationnotifications-info": "Informazzjoni dwar l-utent",
 	"translationnotifications-username": "Isem tal-utent:",
 	"translationnotifications-emailstatus": "Stat tal-indirizz elettroniku:",
@@ -24,5 +26,6 @@
 	"translationnotifications-priority": "Prijorità:",
 	"translationnotifications-priority-high": "għoli",
 	"translationnotifications-priority-medium": "medju",
-	"translationnotifications-priority-low": "baxx"
+	"translationnotifications-priority-low": "baxx",
+	"translationnotifications-log-alllanguages": "kull lingwa"
 }
