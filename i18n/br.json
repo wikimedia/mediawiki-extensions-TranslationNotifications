@@ -3,7 +3,8 @@
 		"authors": [
 			"Fohanno",
 			"Fulup",
-			"Y-M D"
+			"Y-M D",
+			"Huñvreüs"
 		]
 	},
 	"translatorsignup": "Kevreadur an troer",
@@ -37,7 +38,7 @@
 	"translationnotifications-email-subject": "Troit ar bajenn $1, mar plij ganeoc'h",
 	"translationnotifications-notification-url-listitem": "treiñ e $1",
 	"translationnotifications-email-priority": "$1 eo live priorelezh ar bajenn-mañ.",
-	"log-name-notifytranslators": "Kemennoù treiñ",
+	"log-name-notifytranslators": "Marilh ar c’hemennadennoù treiñ",
 	"translationnotifications-log-alllanguages": "an holl yezhoù",
 	"translationnotifications-nodeadline": "hini ebet",
 	"translationnotifications-generic-languages": "&lt;yezhoù>"
