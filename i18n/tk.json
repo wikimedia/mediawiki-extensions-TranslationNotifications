@@ -4,5 +4,8 @@
 			"TayfunEt."
 		]
 	},
-	"translationnotifications-languages": "Diller"
+	"translationnotifications-languages": "Diller",
+	"translationnotifications-sent-body": "Terjime habarnamasy iberildi.",
+	"translationnotifications-log-alllanguages": "ähli diller",
+	"translationnotifications-nodeadline": "ýok"
 }
