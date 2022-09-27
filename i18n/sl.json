@@ -39,7 +39,7 @@
 	"translationnotifications-deadline-label": "Rok za označitev v tem obvestilu",
 	"translationnotifications-languages-to-notify-label": "Za katere jezike poslati obvestilo:",
 	"translationnotifications-languages-to-notify-label-help-message": "Kratice jezikov, ločene z vejico; pustite prazno, da pošljete obvestila vsem prevajalcem vseh jezikov.",
-	"translationnotifications-sourcelang-only": "Obvestilo ne more biti poslano samo prevajalcem izvornega jezika.",
+	"translationnotifications-sourcelang-only": "Obvestilo ne more biti poslano samo prevajalcem izvirnega jezika.",
 	"translationnotifications-priority": "Prioriteta:",
 	"translationnotifications-priority-high": "visoka",
 	"translationnotifications-priority-medium": "srednja",
