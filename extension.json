@@ -78,7 +78,9 @@
 				"translationnotifications-talkpage-body",
 				"translationnotifications-generic-languages",
 				"translationnotifications-email-priority",
-				"translationnotifications-email-deadline"
+				"translationnotifications-email-deadline",
+				"translationnotifications-languages-to-notify",
+				"translationnotifications-languages-to-not-notify"
 			]
 		},
 		"ext.translationnotifications.translatorsignup": {

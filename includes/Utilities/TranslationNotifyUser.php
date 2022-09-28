@@ -49,8 +49,6 @@ class TranslationNotifyUser {
 	 */
 	private $httpsInEmail;
 
-	private $sourceLanguageCode;
-
 	// Request information
 	private $priority;
 	private $deadline;
@@ -68,16 +66,14 @@ class TranslationNotifyUser {
 	 * @param string[] $localInterwikis
 	 * @param string $noReplyAddress
 	 * @param bool $httpsInEmail
-	 * @param string $sourceLanguageCode
 	 * @param array $requestData
 	 */
 	public function __construct(
 		Title $translatablePageTitle, User $notifier, $localInterwikis, $noReplyAddress,
-		$httpsInEmail, $sourceLanguageCode, $requestData
+		$httpsInEmail, $requestData
 	) {
 		$this->notifier = $notifier;
 		$this->translatablePageTitle = $translatablePageTitle;
-		$this->sourceLanguageCode = $sourceLanguageCode;
 
 		$this->noReplyAddress = $noReplyAddress;
 		$this->localInterwikis = $localInterwikis;
@@ -231,11 +227,8 @@ class TranslationNotifyUser {
 
 		foreach ( $userLanguages as $langCode ) {
 			// Don't add this language if particular languages were
-			// specified and this language was not one of them
-			// or if this is the source language.
-			if ( ( $langCode === $this->sourceLanguageCode )
-				|| ( $limitLanguages
-					&& !in_array( $langCode, $languagesToNotify ) )
+			// specified and this language was not one of them.
+			if ( ( $limitLanguages && !in_array( $langCode, $languagesToNotify ) )
 			) {
 				continue;
 			}
