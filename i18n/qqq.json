@@ -47,6 +47,7 @@
 	"translationnotifications-send-notification-button": "A title for the submit button of the translator notification form.",
 	"translationnotifications-preview-notification-button": "A title for the preview button. Pressing the button shows the previewed notification below the form.",
 	"translationnotifications-deadline-label": "A label for the deadline field, which will have a datepicker.",
+	"translationnotifications-deadline-help-message": "Used as a help message for the \"Deadline\" field.\nIts label is {{msg-mw|translationnotifications-deadline-label}}.",
 	"translationnotifications-languages-to-notify-label": "A label for language codes field.",
 	"translationnotifications-languages-to-notify-label-help-message": "Used as help message for the \"Languages to notify\" textarea.\nIts label is {{msg-mw|Translationnotifications-languages-to-notify-label}}.",
 	"translationnotifications-sourcelang-only": "Error message shown on Special:NotifyTranslators.",

@@ -31,7 +31,13 @@
 				"UserOptionsManager"
 			]
 		},
-		"NotifyTranslators": "MediaWiki\\Extension\\TranslationNotifications\\SpecialNotifyTranslators"
+		"NotifyTranslators": {
+			"class": "MediaWiki\\Extension\\TranslationNotifications\\SpecialNotifyTranslators",
+			"services": [
+				"LanguageNameUtils",
+				"JobQueueGroup"
+			]
+		}
 	},
 	"JobClasses": {
 		"TranslationNotificationsEmailJob": "MediaWiki\\Extension\\TranslationNotifications\\Jobs\\TranslationNotificationsEmailJob",
@@ -58,7 +64,6 @@
 	"ResourceModules": {
 		"ext.translationnotifications.notifytranslators": {
 			"scripts": [
-				"resources/ext.translationnotifications.multiselectautocomplete.js",
 				"resources/ext.translationnotifications.notifytranslators.js"
 			],
 			"dependencies": [
@@ -66,7 +71,7 @@
 				"mediawiki.Uri",
 				"mediawiki.api",
 				"mediawiki.user",
-				"jquery.ui"
+				"oojs-ui-core"
 			],
 			"messages": [
 				"translationnotifications-preview-notification-button",
