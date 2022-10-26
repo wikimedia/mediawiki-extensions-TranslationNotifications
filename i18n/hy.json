@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Սերգեյ Սաֆարյան"
 		]
 	},
+	"translationnotifications-notification-url-listitem": "թարգմանել $1",
 	"translationnotifications-log-alllanguages": "բոլոր լեզուները"
 }
