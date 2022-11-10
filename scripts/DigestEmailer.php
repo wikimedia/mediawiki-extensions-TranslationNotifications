@@ -23,10 +23,10 @@ use EmaillingJob;
 use Language;
 use MailAddress;
 use Maintenance;
+use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\MediaWikiServices;
 use ObjectCache;
 use SpecialPage;
-use TranslatablePage;
 use User;
 
 class DigestEmailer extends Maintenance {

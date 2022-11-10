@@ -8,10 +8,10 @@ namespace MediaWiki\Extension\TranslationNotifications\Utilities;
 
 use Html;
 use Language;
+use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use Message;
 use SpecialPage;
 use Title;
-use TranslatablePage;
 use User;
 
 /**

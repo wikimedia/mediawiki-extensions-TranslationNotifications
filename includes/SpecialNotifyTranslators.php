@@ -19,13 +19,13 @@ use FormSpecialPage;
 use HTMLForm;
 use JobQueueGroup;
 use LinkBatch;
+use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsSubmitJob;
 use MediaWiki\Extension\TranslationNotifications\Utilities\NotificationMessageBuilder;
 use MediaWiki\Languages\LanguageNameUtils;
 use MessageGroups;
 use Status;
 use Title;
-use TranslatablePage;
 use WikiPageMessageGroup;
 
 /**
