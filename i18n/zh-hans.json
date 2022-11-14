@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Func",
+			"GuoPC",
 			"Hudafu",
 			"Hzy980512",
 			"Liangent",
@@ -44,7 +45,7 @@
 	"translationnotifications-preview-notification-button": "预览通知",
 	"translationnotifications-deadline-label": "这个通知指明的截止日期：",
 	"translationnotifications-languages-to-notify-label": "需要发送通知的语言：",
-	"translationnotifications-languages-to-notify-label-help-message": "逗号分隔的语言代码，留空以给所有语言的翻译者发送通知。",
+	"translationnotifications-languages-to-notify-label-help-message": "留空以给所有语言的翻译者发送通知",
 	"translationnotifications-sourcelang-only": "通知不能只发送给源语言的翻译者。",
 	"translationnotifications-priority": "优先级：",
 	"translationnotifications-priority-high": "高",
