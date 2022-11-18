@@ -73,9 +73,13 @@
 	}
 
 	/**
-	 * Initialize the notification preview.
+	 * Set up the notification preview and the auto-update of the language
+	 * selector label
 	 */
-	function initPreview() {
+	function setup() {
+		/**
+		 * Notification preview
+		 */
 		// Initially disable the send button to force at least one preview
 		infuseElement( sendId ).setDisabled( true );
 
@@ -92,5 +96,5 @@
 		);
 	}
 
-	$( document ).ready( initPreview );
+	$( document ).ready( setup );
 }( jQuery, mediaWiki ) );

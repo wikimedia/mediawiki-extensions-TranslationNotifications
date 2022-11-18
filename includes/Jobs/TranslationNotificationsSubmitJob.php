@@ -10,8 +10,10 @@ use Exception;
 use Language;
 use ManualLogEntry;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
+use MediaWiki\Extension\TranslationNotifications\Utilities\LanguageSet;
 use MediaWiki\Extension\TranslationNotifications\Utilities\TranslationNotifyUser;
 use MediaWiki\JobQueue\JobQueueGroupFactory;
+use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserOptionsManager;
 use Title;
@@ -43,6 +45,9 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 	 */
 	private $jobQueueGroupFactory;
 
+	/** @var LanguageNameUtils */
+	private $languageNameUtils;
+
 	/**
 	 * Returns an instance of the TranslationNotificationsSubmitJob
 	 * @param Title $title
@@ -68,6 +73,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 		$services = MediaWikiServices::getInstance();
 		$this->userOptionsManager = $services->getUserOptionsManager();
 		$this->jobQueueGroupFactory = $services->getJobQueueGroupFactory();
+		$this->languageNameUtils = $services->getLanguageNameUtils();
 		parent::__construct( 'TranslationNotificationsSubmitJob', $title, $params );
 		$this->currentWikiId = WikiMap::getCurrentWikiDbDomain()->getId();
 	}
@@ -88,16 +94,17 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 		// Request information
 		$notificationText = $params['requestData']['notificationText'];
 		$priority = $params['requestData']['priority'];
-		$languagesToNotify = $params['requestData']['languagesToNotify'];
+		$selectedLanguages = $params['requestData']['selectedLanguages'];
 		$deadlineDate = $params['requestData']['deadlineDate'];
+		$languageSet = $params['requestData']['languageSet'];
 
-		$translatorsToNotify = $this->fetchTranslators( $languagesToNotify, $sourceLanguage );
+		$translatorsToNotify = $this->fetchTranslators( $selectedLanguages, $sourceLanguage, $languageSet );
 
 		$this->logInfo(
 			'Found ' . $translatorsToNotify->numRows() .
 			' translators to notify with the given conditions.',
 			[
-				'languagesToNotify' => $languagesToNotify
+				'selectedLanguages' => $selectedLanguages
 			]
 		);
 
@@ -115,13 +122,29 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 		$config = MediaWikiServices::getInstance()->getMainConfig();
 
+		$allLanguages = array_keys( $this->languageNameUtils->getLanguageNames() );
+		$languagesToNotify = [];
+
+		switch ( $languageSet->getOption() ) {
+			case LanguageSet::ALL:
+				$languagesToNotify = array_diff( $allLanguages, [ $sourceLanguage ] );
+				break;
+			case LanguageSet::SOME:
+				$languagesToNotify = $selectedLanguages;
+				break;
+			case LanguageSet::ALL_EXCEPT_SOME:
+				$languagesToNotify = array_diff( $allLanguages, array_merge(
+					$selectedLanguages, [ $sourceLanguage ]
+				) );
+				break;
+		}
+
 		$notifyUser = new TranslationNotifyUser(
 			$translatableTitle,
 			$notifier,
 			$config->get( 'LocalInterwikis' ),
 			$config->get( 'NoReplyAddress' ),
 			$config->get( 'TranslationNotificationsAlwaysHttpsInEmail' ),
-			$sourceLanguage,
 			[
 				'text' => $notificationText,
 				'priority' => $priority,
@@ -190,8 +213,8 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 		// Add a log entry
 		$languagesForLog = '';
-		if ( count( $languagesToNotify ) ) {
-			$languagesForLog = Language::factory( $translatorLangCode )->commaList( $languagesToNotify );
+		if ( count( $selectedLanguages ) ) {
+			$languagesForLog = Language::factory( $translatorLangCode )->commaList( $selectedLanguages );
 		}
 
 		$logEntry = new ManualLogEntry( 'notifytranslators', 'sent' );
@@ -203,7 +226,8 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 			'6::priority' => $priority,
 			'7::sentSuccess' => $stats['processedUsers'],
 			'8::sentFail' => $stats['sendingFailed'],
-			'9::tooEarly' => $stats['tooEarly']
+			'9::tooEarly' => $stats['tooEarly'],
+			'11:plain' => $languageSet->getOptionName()
 		] );
 
 		$logId = $logEntry->insert();
@@ -232,32 +256,37 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 	/**
 	 * Returns translators who match the given language criteria.
-	 * @param array $languagesToNotify
+	 * @param array $selectedLanguages
 	 * @param string $sourceLanguage
+	 * @param LanguageSet $languageSet
 	 * @return IResultWrapper
 	 */
-	private function fetchTranslators( $languagesToNotify, $sourceLanguage ) {
+	private function fetchTranslators( $selectedLanguages, $sourceLanguage, $languageSet ) {
 		$langPropertyPrefix = 'translationnotifications-lang-';
-
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$propertyLikePattern = $dbr->buildLike( $langPropertyPrefix, $dbr->anyString() );
 		$translatorsConditions = [
 			"up_property $propertyLikePattern",
 		];
-
-		if ( count( $languagesToNotify ) ) {
-			$translatorsConditions['up_value'] = $languagesToNotify;
-		} else {
-			$translatorsConditions[] = 'up_value <> ' . $dbr->addQuotes( $sourceLanguage );
+		switch ( $languageSet->getOption() ) {
+			case LanguageSet::ALL:
+				$translatorsConditions[] = 'up_value <> ' . $dbr->addQuotes( $sourceLanguage );
+				break;
+			case LanguageSet::SOME:
+				$translatorsConditions['up_value'] = $selectedLanguages;
+				break;
+			case LanguageSet::ALL_EXCEPT_SOME:
+				$selectedLanguages[] = $sourceLanguage;
+				$translatorsConditions[] = 'up_value NOT IN (' . $dbr->makeList( $selectedLanguages ) . ')';
+				break;
 		}
-
-		return $dbr->select(
-			'user_properties',
-			'up_user',
-			$translatorsConditions,
-			__METHOD__,
-			'DISTINCT'
-		);
+		return $dbr->newSelectQueryBuilder()
+			->select( 'up_user' )
+			->from( 'user_properties' )
+			->where( $translatorsConditions )
+			->caller( __METHOD__ )
+			->distinct()
+			->fetchResultSet();
 	}
 
 	/**

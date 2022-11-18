@@ -21,6 +21,7 @@ use JobQueueGroup;
 use LinkBatch;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsSubmitJob;
+use MediaWiki\Extension\TranslationNotifications\Utilities\LanguageSet;
 use MediaWiki\Extension\TranslationNotifications\Utilities\NotificationMessageBuilder;
 use MediaWiki\Languages\LanguageNameUtils;
 use MessageGroups;
@@ -98,13 +99,30 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		$languages = array_flip(
 			$this->languageNameUtils->getLanguageNames( $this->getLanguage()->getCode() )
 		);
-		// Languages to notify input box
-		$formFields['LanguagesToNotify'] = [
+
+		$formFields['LanguageSet'] = [
+			'name' => 'notifiable-languages-options',
+			'type' => 'radio',
+			'default' => LanguageSet::ALL,
+			'label-message' => 'translationnotifications-requested-languages-label',
+			'options-messages' => [
+				'translationnotifications-languages-to-notify-all-label'
+					=> LanguageSet::ALL,
+				'translationnotifications-languages-to-notify-only-selected-label'
+					=> LanguageSet::SOME,
+				'translationnotifications-languages-to-notify-all-except-label'
+					=> LanguageSet::ALL_EXCEPT_SOME
+			]
+		];
+
+		// Selected languages input box
+		$formFields['SelectedLanguages'] = [
 			'type' => 'multiselect',
 			'dropdown' => true,
 			'label-message' => 'translationnotifications-languages-to-notify-label',
 			'help-message' => 'translationnotifications-languages-to-notify-label-help-message',
 			'options' => $languages,
+			'hide-if' => [ '===', 'LanguageSet', (string)LanguageSet::ALL ]
 		];
 
 		// Priority dropdown
@@ -183,17 +201,16 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		$notificationText = $formData['NotificationText'];
 		$priority = $formData['Priority'];
 		$deadlineDate = $formData['DeadlineDate'];
-		$languagesToNotify = $formData['LanguagesToNotify'];
-
+		$selectedLanguages = $formData['SelectedLanguages'];
 		$pageSourceLangCode = $this->getSourceLanguage( $translatablePageTitle );
 		$notificationLanguages = [];
 
 		// The default is not to specify any languages and to send the notification to speakers of
 		// all the languages except the source language. When no languages are specified,
 		// an empty string will be sent here and an appropriate message will be shown in the log.
-		if ( count( $languagesToNotify ) ) {
+		if ( count( $selectedLanguages ) ) {
 			// Filter out the source language
-			foreach ( $languagesToNotify as $langCode ) {
+			foreach ( $selectedLanguages as $langCode ) {
 				if ( $langCode !== $pageSourceLangCode ) {
 					$notificationLanguages[] = $langCode;
 				}
@@ -203,12 +220,14 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 				return Status::newFatal( 'translationnotifications-sourcelang-only' );
 			}
 		}
+		$languageSet = new LanguageSet( $formData['LanguageSet'] );
 
 		$requestData = [
 			'notificationText' => $notificationText,
 			'priority' => $priority,
-			'languagesToNotify' => $notificationLanguages,
-			'deadlineDate' => $deadlineDate
+			'deadlineDate' => $deadlineDate,
+			'selectedLanguages' => $selectedLanguages,
+			'languageSet' => $languageSet,
 		];
 
 		$job = TranslationNotificationsSubmitJob::newJob(
