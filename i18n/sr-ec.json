@@ -41,7 +41,7 @@
 	"translationnotifications-preview-notification-button": "Прегледај обавештење",
 	"translationnotifications-deadline-label": "Рок за означавање у овом обавештењу:",
 	"translationnotifications-languages-to-notify-label": "За које језике слати обавештења:",
-	"translationnotifications-languages-to-notify-label-help-message": "Кодови језика раздвојени зарезом; оставите празно за слање обавештења преводиоцима свих језика.",
+	"translationnotifications-languages-to-notify-label-help-message": "Оставите празно за слање обавештења свим преводиоцима свих језика",
 	"translationnotifications-sourcelang-only": "Обавештење не може бити послато само преводиоцима на изворном језику.",
 	"translationnotifications-priority": "Приоритет:",
 	"translationnotifications-priority-high": "висок",

@@ -35,6 +35,7 @@
 	"translationnotifications-send-notification-button": "Inviar un notification a traductores",
 	"translationnotifications-preview-notification-button": "Previsualisar notification",
 	"translationnotifications-deadline-label": "Data limite a indicar in iste notification:",
+	"translationnotifications-deadline-help-message": "Selige un data non anterior a hodie.",
 	"translationnotifications-languages-to-notify-label": "Le linguas pro le quales inviar notificationes:",
 	"translationnotifications-languages-to-notify-label-help-message": "Lassa vacue pro inviar notificationes al traductores de tote le linguas",
 	"translationnotifications-sourcelang-only": "Non es possibile inviar un notification solmente al traductores del lingua de origine.",
