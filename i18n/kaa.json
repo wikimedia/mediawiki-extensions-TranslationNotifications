@@ -4,5 +4,12 @@
 			"Ajiniyaz Nurniyazov"
 		]
 	},
-	"translationnotifications-deadline-help-message": "Búginnen aldın bolmaǵan saneni saylań"
+	"translationnotifications-deadline-help-message": "Búginnen aldın bolmaǵan saneni saylań",
+	"translationnotifications-languages-to-notify-label": "Saylanǵan tiller/ayırıqshalar:",
+	"translationnotifications-requested-languages-label": "Soralǵan tiller:",
+	"translationnotifications-languages-to-notify": "Saylanǵan tiller:",
+	"translationnotifications-languages-to-not-notify": "Saylanǵan ayırıqshalar:",
+	"translationnotifications-languages-to-notify-all-label": "Barlıq tiller",
+	"translationnotifications-languages-to-notify-only-selected-label": "Tek saylanǵan tiller:",
+	"translationnotifications-languages-to-notify-all-except-label": "Mınadan basqa barlıq tiller:"
 }

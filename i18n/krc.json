@@ -2,8 +2,19 @@
 	"@metadata": {
 		"authors": [
 			"Ernác",
-			"Iltever"
+			"Iltever",
+			"Къарачайлы"
 		]
 	},
-	"translationnotifications-languages": "Тилле"
+	"translationnotifications-languages": "Тилле",
+	"translationnotifications-deadline-help-message": "Бюгюнден алгъа болмагъан датаны сайлагъыз",
+	"translationnotifications-languages-to-notify-label": "Сайланнган тилле/айырыула:",
+	"translationnotifications-languages-to-notify-label-help-message": "Бютеу тиллени бютеу кёчюрюучюлерине джиберир ючюн бош къой",
+	"translationnotifications-requested-languages-label": "Изленнген тилле:",
+	"translationnotifications-languages-to-notify": "Сайланнган тилле:",
+	"translationnotifications-languages-to-not-notify": "Сайланнган айырыула:",
+	"translationnotifications-languages-to-notify-all-label": "Бютёу тилле",
+	"translationnotifications-languages-to-notify-only-selected-label": "Къуру сайланнган тилле:",
+	"translationnotifications-languages-to-notify-all-except-label": "Быладан тышында бютеу тилле:",
+	"logentry-notifytranslators-sent": "$3 бетни кёчюрюлгленини юсюнден билдириу {{GENDER:$2|джиберилгенди}};\n{{PLURAL:$10|тил}}: $4; къыйыр болджал: $5; биринчилик: $6; {{PLURAL:$7|бир алыучугъа|$7 алыучугъа}} джиберилгенди, {{PLURAL:$8|бир алыучугъа|$8 алыучугъа}} джиберилалмады, {{PLURAL:$9|бир алыучугъа|$9 алыучугъа}} джиберилмеди, билдириу: $11 тилге джиберилди"
 }

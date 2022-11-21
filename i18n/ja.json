@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"MathXplore",
 			"Omotecho",
 			"Otokoume",
 			"Shirayuki"
@@ -39,6 +40,8 @@
 	"translationnotifications-deadline-label": "この通知で指定する締め切り:",
 	"translationnotifications-languages-to-notify-label": "通知する言語の指定:",
 	"translationnotifications-languages-to-notify-label-help-message": "カンマ区切りの言語コードです。言語に関わらずすべての翻訳者に通知する場合は、空欄にします。",
+	"translationnotifications-languages-to-notify": "選択されている言語",
+	"translationnotifications-languages-to-notify-all-label": "すべての言語",
 	"translationnotifications-sourcelang-only": "通知の送り先をソース言語の翻訳者に限定することはできません。",
 	"translationnotifications-priority": "優先度:",
 	"translationnotifications-priority-high": "高",
