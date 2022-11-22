@@ -4,6 +4,8 @@
 			"Vlad5250"
 		]
 	},
+	"translationnotifications-languages-to-notify": "Izabrani jezici:",
+	"translationnotifications-languages-to-notify-only-selected-label": "Samo izabrani jezici:",
 	"translationnotifications-translatablepage-title": "Ime stranice za prevođenje:",
 	"translationnotifications-error-no-translatable-pages": "Na ovom wikiju nema prevodljivih stranica.",
 	"translationnotifications-log-alllanguages": "svi jezici",
