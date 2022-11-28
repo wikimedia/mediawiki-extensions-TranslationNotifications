@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anakmalaysia"
+			"Anakmalaysia",
+			"Tofeiku"
 		]
 	},
 	"translatorsignup": "Pendaftaran penterjemah",
@@ -37,6 +38,8 @@
 	"translationnotifications-deadline-label": "Tarikh tutup untuk dinyatakan dalam pemberitahuan ini:",
 	"translationnotifications-languages-to-notify-label": "Bahasa-bahasa untuk menghantar pemberitahuan:",
 	"translationnotifications-languages-to-notify-label-help-message": "Kod bahasa diasing-asingkan oleh koma; biarkan kosong untuk memberitahu untuk semua bahasa.",
+	"translationnotifications-languages-to-notify-all-label": "Semua bahasa",
+	"translationnotifications-languages-to-notify-all-except-label": "Semua bahasa kecuali:",
 	"translationnotifications-priority": "Prioriti:",
 	"translationnotifications-priority-high": "tinggi",
 	"translationnotifications-priority-medium": "sederhana",

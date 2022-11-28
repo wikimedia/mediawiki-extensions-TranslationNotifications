@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aceman444",
 			"Helix84",
 			"Kusavica"
 		]
@@ -16,6 +17,8 @@
 	"translationnotifications-cmethod-email": "E-mail",
 	"translationnotifications-cmethod-talkpage": "Diskusná stránka",
 	"translationnotifications-cmethod-talkpage-elsewhere": "Diskusná stránka na inej wiki",
+	"translationnotifications-languages-to-notify-all-label": "Všetky jazyky",
+	"translationnotifications-languages-to-notify-all-except-label": "Všetky jazyky okrem:",
 	"translationnotifications-priority": "Priorita:",
 	"translationnotifications-priority-high": "vysoká",
 	"translationnotifications-priority-medium": "stredná",
