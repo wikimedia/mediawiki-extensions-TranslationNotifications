@@ -32,6 +32,7 @@
 	"translationnotifications-send-notification-button": "ဘာသာပြန်သူများကို အသိပေးချက်ပို့ရန်",
 	"translationnotifications-preview-notification-button": "အသိပေးချက်ကို အကြိုကြည့်ရန်",
 	"translationnotifications-languages-to-notify-label": "မည်သည့်ဘာသာစကားများကို အသိပေးမည်:",
+	"translationnotifications-languages-to-notify-all-label": "ဘာသာစကားများ အားလုံး",
 	"translationnotifications-sourcelang-only": "ရင်းမြစ်ဘာသာစကား၏ ဘာသာပြန်သူများထံသို့သာ အသိပေးချက်တစ်ခု မပို့ပေးနိုင်ပါ။",
 	"translationnotifications-priority": "ဦးစားပေးအဆင့်:",
 	"translationnotifications-priority-high": "မြင့်",
