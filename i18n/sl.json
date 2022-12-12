@@ -50,7 +50,7 @@
 	"translationnotifications-email-subject": "Prosimo, prevedi stran $1",
 	"translationnotifications-notification-url-listitem": "prevedi v $1",
 	"translationnotifications-digestemail-subject": "E-pošta s prošnjami za prevode iz {{SITENAME}}",
-	"translationnotifications-digestemail-notification-line": "Dne $1 je $2 {{GENDER:|označil|označila}} »$3« za prevod. Prevedete ga lahko na $4.",
+	"translationnotifications-digestemail-notification-line": "Dne $1 je $2 {{GENDER:|označil|označila|označil_a}} stran »$3« za prevod. Prevedete jo lahko na $4.",
 	"translationnotifications-edit-summary": "Obvestilo: $1",
 	"translationnotifications-email-priority": "Prioriteta te strani je $1.",
 	"translationnotifications-email-deadline": "Rok za prevod te strani je $1.",
