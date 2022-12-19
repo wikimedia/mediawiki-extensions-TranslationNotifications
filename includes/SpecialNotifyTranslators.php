@@ -18,7 +18,7 @@ use ErrorPageError;
 use FormSpecialPage;
 use HTMLForm;
 use JobQueueGroup;
-use LinkBatch;
+use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsSubmitJob;
 use MediaWiki\Extension\TranslationNotifications\Utilities\LanguageSet;
@@ -42,11 +42,18 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	private $languageNameUtils;
 	/** @var JobQueueGroup */
 	private $jobQueueGroup;
+	/** @var LinkBatchFactory */
+	private $linkBatchFactory;
 
-	public function __construct( LanguageNameUtils $languageNameUtils, JobQueueGroup $jobQueueGroup ) {
+	public function __construct(
+		LanguageNameUtils $languageNameUtils,
+		JobQueueGroup $jobQueueGroup,
+		LinkBatchFactory $linkBatchFactory
+	) {
 		parent::__construct( 'NotifyTranslators', self::$right );
 		$this->languageNameUtils = $languageNameUtils;
 		$this->jobQueueGroup = $jobQueueGroup;
+		$this->linkBatchFactory = $linkBatchFactory;
 	}
 
 	public function doesWrites() {
@@ -168,7 +175,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		$titles = [];
 		// Retrieving article id requires doing DB queries.
 		// Make it more efficient by batching into one query.
-		$lb = new LinkBatch();
+		$lb = $this->linkBatchFactory->newLinkBatch();
 		/**
 		 * @var WikiPageMessageGroup $page
 		 */
