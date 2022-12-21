@@ -11,7 +11,8 @@
 			"Simon Shek",
 			"Winston Sung",
 			"Xiplus",
-			"烈羽"
+			"烈羽",
+			"捍粵者"
 		]
 	},
 	"translatorsignup": "翻譯者註冊",
@@ -61,7 +62,7 @@
 	"translationnotifications-notification-url-listitem": "翻譯為 $1",
 	"translationnotifications-digestemail-subject": "來自{{SITENAME}}的翻譯請求的摘要電子郵件",
 	"translationnotifications-digestemail-body": "$1：\n\n閣下因已於{{SITENAME}}登記成為 $2 的翻譯者而收到此通知。\n\n這裡有 $3 頁需要您協助翻譯，詳情如下：\n$4\n\n非常感謝您的幫助。像閣下一樣的翻譯者使{{SITENAME}}真正成為一多語言社群。\n\n多謝！\n\n{{SITENAME}}翻譯協調員 謹啟\n\n----\n\n您因已登記翻譯{{SITENAME}}而收到此電子郵件。要取消訂閱或更改設定請往 < $5>。",
-	"translationnotifications-digestemail-notification-line": "於 $1，$2 標記了 \"$3\" 為需要翻譯。您可以在 $4 進行翻譯",
+	"translationnotifications-digestemail-notification-line": "於$1，$2標記了「$3」為需要翻譯。您可在$4翻譯",
 	"translationnotifications-edit-summary": "翻譯通知：$1",
 	"translationnotifications-email-priority": "這個頁面有 $1 重要度。",
 	"translationnotifications-email-deadline": "翻譯這個頁面的截止日期是 $1。",
