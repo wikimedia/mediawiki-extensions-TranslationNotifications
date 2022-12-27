@@ -225,6 +225,7 @@ class TranslationNotifyUser {
 		$limitLanguages = count( $languagesToNotify );
 		$userLanguageNames = [];
 
+		$languageNameUtils = MediaWikiServices::getInstance()->getLanguageNameUtils();
 		foreach ( $userLanguages as $langCode ) {
 			// Don't add this language if particular languages were
 			// specified and this language was not one of them.
@@ -233,7 +234,7 @@ class TranslationNotifyUser {
 				continue;
 			}
 
-			$userLanguageNames[$langCode] = Language::fetchLanguageName(
+			$userLanguageNames[$langCode] = $languageNameUtils->getLanguageName(
 				$langCode,
 				$userFirstLanguageCode
 			);

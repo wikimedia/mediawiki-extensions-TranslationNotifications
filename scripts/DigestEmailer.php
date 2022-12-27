@@ -20,7 +20,6 @@ require_once "$IP/maintenance/Maintenance.php";
 
 use DatabaseLogEntry;
 use EmaillingJob;
-use Language;
 use MailAddress;
 use Maintenance;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
@@ -67,6 +66,7 @@ class DigestEmailer extends Maintenance {
 		$services = MediaWikiServices::getInstance();
 		$userOptionsManager = $services->getUserOptionsManager();
 		$jobQueueGroup = $services->getJobQueueGroup();
+		$languageNameUtils = $services->getLanguageNameUtils();
 		foreach ( $translators as $translator ) {
 			$notificationText = "";
 			$count = 0;
@@ -86,7 +86,7 @@ class DigestEmailer extends Maintenance {
 				}
 			}
 			$firstLangCode = $userOptionsManager->getOption( $user, 'translationnotifications-lang-1' );
-			$firstLang = Language::fetchLanguageName( $signedUpLangCodes[0], $firstLangCode );
+			$firstLang = $languageNameUtils->getLanguageName( $signedUpLangCodes[0], $firstLangCode );
 			$this->output( "\tSigned up for: " . implode( ', ', $signedUpLangCodes ) . "\n" );
 
 			// Draft the mail for this user

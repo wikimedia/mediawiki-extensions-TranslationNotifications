@@ -17,10 +17,10 @@ use ExtensionRegistry;
 use FormSpecialPage;
 use Html;
 use HTMLForm;
-use Language;
 use LanguageCode;
 use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\SiteMatrix\SiteMatrix;
+use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\User\UserOptionsManager;
 use SpecialPage;
 use WikiMap;
@@ -35,9 +35,16 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 	/** @var UserOptionsManager */
 	private $userOptionsManager;
 
-	public function __construct( UserOptionsManager $userOptionsManager ) {
+	/** @var LanguageNameUtils */
+	private $languageNameUtils;
+
+	public function __construct(
+		UserOptionsManager $userOptionsManager,
+		LanguageNameUtils $languageNameUtils
+	) {
 		parent::__construct( 'TranslatorSignup' );
 		$this->userOptionsManager = $userOptionsManager;
+		$this->languageNameUtils = $languageNameUtils;
 	}
 
 	public function doesWrites() {
@@ -116,7 +123,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 			'raw' => true,
 		];
 
-		$languages = Language::fetchLanguageNames();
+		$languages = $this->languageNameUtils->getLanguageNames();
 		ksort( $languages );
 
 		$options = [];
