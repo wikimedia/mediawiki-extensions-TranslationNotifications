@@ -7,12 +7,12 @@
 namespace MediaWiki\Extension\TranslationNotifications\Jobs;
 
 use Exception;
-use Language;
 use ManualLogEntry;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Extension\TranslationNotifications\Utilities\LanguageSet;
 use MediaWiki\Extension\TranslationNotifications\Utilities\TranslationNotifyUser;
 use MediaWiki\JobQueue\JobQueueGroupFactory;
+use MediaWiki\Languages\LanguageFactory;
 use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserOptionsManager;
@@ -48,6 +48,9 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 	/** @var LanguageNameUtils */
 	private $languageNameUtils;
 
+	/** @var LanguageFactory */
+	private $languageFactory;
+
 	/**
 	 * Returns an instance of the TranslationNotificationsSubmitJob
 	 * @param Title $title
@@ -74,6 +77,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 		$this->userOptionsManager = $services->getUserOptionsManager();
 		$this->jobQueueGroupFactory = $services->getJobQueueGroupFactory();
 		$this->languageNameUtils = $services->getLanguageNameUtils();
+		$this->languageFactory = $services->getLanguageFactory();
 		parent::__construct( 'TranslationNotificationsSubmitJob', $title, $params );
 		$this->currentWikiId = WikiMap::getCurrentWikiDbDomain()->getId();
 	}
@@ -214,7 +218,8 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 		// Add a log entry
 		$languagesForLog = '';
 		if ( count( $selectedLanguages ) ) {
-			$languagesForLog = Language::factory( $translatorLangCode )->commaList( $selectedLanguages );
+			$languagesForLog = $this->languageFactory->getLanguage( $translatorLangCode )
+				->commaList( $selectedLanguages );
 		}
 
 		$logEntry = new ManualLogEntry( 'notifytranslators', 'sent' );

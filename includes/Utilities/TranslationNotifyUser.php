@@ -6,7 +6,6 @@
 
 namespace MediaWiki\Extension\TranslationNotifications\Utilities;
 
-use Language;
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsEmailJob;
 use MediaWiki\MassMessage\Job\MassMessageJob;
 use MediaWiki\MediaWikiServices;
@@ -98,7 +97,8 @@ class TranslationNotifyUser {
 	) {
 		$relevantLanguages = $this->getRelevantLanguages( $translator, $this->languagesToNotify );
 		$userFirstLanguageCode = $this->getUserFirstLanguage( $translator );
-		$userFirstLanguage = Language::factory( $userFirstLanguageCode );
+		$userFirstLanguage = MediaWikiServices::getInstance()->getLanguageFactory()
+			->getLanguage( $userFirstLanguageCode );
 
 		$text = wfMessage(
 			'translationnotifications-talkpage-body',
@@ -164,7 +164,8 @@ class TranslationNotifyUser {
 		User $translator
 	): TranslationNotificationsEmailJob {
 		$relevantLanguages = $this->getRelevantLanguages( $translator, $this->languagesToNotify );
-		$userFirstLanguage = Language::factory( $this->getUserFirstLanguage( $translator ) );
+		$userFirstLanguage = MediaWikiServices::getInstance()->getLanguageFactory()
+			->getLanguage( $this->getUserFirstLanguage( $translator ) );
 		$emailSubject = NotificationMessageBuilder::getNotificationSubject(
 			$this->translatablePageTitle, $userFirstLanguage
 		);
