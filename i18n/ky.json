@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bosogo",
 			"Викиней"
 		]
 	},
@@ -13,7 +14,7 @@
 	"translationnotifications-email-unconfirmed": "Электрондук дарегиңиз тастыкталган жок. $1",
 	"translationnotifications-email-notset": "Электрондук дарегиңизди көрсөткөн жоксуз. Сиз аны [[Special:Preferences|жекече ырастоолоруңуздан]] көрсөтө аласыз..",
 	"translationnotifications-languages": "Тилдер",
-	"translationnotifications-lang": "Тили: $1",
+	"translationnotifications-lang": "№ $1 тил",
 	"translationnotifications-nolang": "Тилин тандаңыз",
 	"translationnotifications-cmethod-email": "Email",
 	"translationnotifications-cmethod-feed": "Лента",
