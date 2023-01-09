@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Afalau",
 			"Lloffiwr"
 		]
 	},
@@ -37,6 +38,7 @@
 	"translationnotifications-deadline-label": "Y terfyn amser i'w nodi yn yr hysbysiad:",
 	"translationnotifications-languages-to-notify-label": "Yr ieithoedd i'w hysbysu:",
 	"translationnotifications-languages-to-notify-label-help-message": "Codau iaith coma-wahanedig; gadewch yn wag i hysbysu i bob iaith.",
+	"translationnotifications-languages-to-notify-all-label": "Pob iaith",
 	"translationnotifications-priority": "Pwysigrwydd:",
 	"translationnotifications-priority-high": "uchel",
 	"translationnotifications-priority-medium": "cymedrol",
@@ -47,8 +49,10 @@
 	"translationnotifications-email-subject": "Cyfieithwch y dudalen $1 os gwelwch yn dda",
 	"translationnotifications-notification-url-listitem": "cyfieithu i $1",
 	"translationnotifications-digestemail-subject": "Ebost cryno o geisiadau ar {{SITENAME}} am gael cyfieithiadau",
+	"translationnotifications-edit-summary": "Hysbysiad cyfieithu: $1",
 	"translationnotifications-email-priority": "Mae pwysigrwydd $1 i'r dudalen.",
 	"translationnotifications-email-deadline": "$1 yw amser terfyn cyfieithu'r dudalen.",
+	"log-name-notifytranslators": "Log hysbysiadau cyfieithu",
 	"translationnotifications-log-alllanguages": "pob iaith",
 	"translationnotifications-nodeadline": "dim",
 	"translationnotifications-generic-languages": "&lt;ieithoedd>"
