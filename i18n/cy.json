@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lloffiwr"
+			"Lloffiwr",
+			"Afalau"
 		]
 	},
 	"translatorsignup": "Cofrestru fel cyfieithydd",
@@ -47,8 +48,10 @@
 	"translationnotifications-email-subject": "Cyfieithwch y dudalen $1 os gwelwch yn dda",
 	"translationnotifications-notification-url-listitem": "cyfieithu i $1",
 	"translationnotifications-digestemail-subject": "Ebost cryno o geisiadau ar {{SITENAME}} am gael cyfieithiadau",
+	"translationnotifications-edit-summary": "Hysbysiad cyfieithu: $1",
 	"translationnotifications-email-priority": "Mae pwysigrwydd $1 i'r dudalen.",
 	"translationnotifications-email-deadline": "$1 yw amser terfyn cyfieithu'r dudalen.",
+	"log-name-notifytranslators": "Log hysbysiadau cyfieithu",
 	"translationnotifications-log-alllanguages": "pob iaith",
 	"translationnotifications-nodeadline": "dim",
 	"translationnotifications-generic-languages": "&lt;ieithoedd>"
