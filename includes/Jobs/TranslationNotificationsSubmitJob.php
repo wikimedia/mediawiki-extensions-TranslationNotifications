@@ -102,6 +102,10 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 		$deadlineDate = $params['requestData']['deadlineDate'];
 		$languageSet = $params['requestData']['languageSet'];
 
+		if ( !$languageSet instanceof LanguageSet ) {
+			$languageSet = LanguageSet::fromArray( $languageSet );
+		}
+
 		$translatorsToNotify = $this->fetchTranslators( $selectedLanguages, $sourceLanguage, $languageSet );
 
 		$this->logInfo(

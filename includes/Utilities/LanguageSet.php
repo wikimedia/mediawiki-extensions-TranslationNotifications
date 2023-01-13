@@ -47,6 +47,10 @@ class LanguageSet implements JsonSerializable {
 		];
 	}
 
+	public static function fromArray( array $data ): self {
+		return new self( (int)$data[ 'option' ] );
+	}
+
 	public function getOption(): int {
 		return $this->option;
 	}
