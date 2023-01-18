@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Daud I.F. Argana",
+			"David Wadie Fisher-Freberg",
 			"Rachmat.Wahidi",
 			"Rachmat04",
 			"පසිඳු කාවින්ද"
@@ -38,8 +39,15 @@
 	"translationnotifications-send-notification-button": "Kirimkan pemberitahuan kepada para penerjemah",
 	"translationnotifications-preview-notification-button": "Pratayang pemberitahuan",
 	"translationnotifications-deadline-label": "Batas waktu yang diberikan dalam pemberitahuan ini:",
-	"translationnotifications-languages-to-notify-label": "Pemberitahuan dikirim untuk bahasa:",
-	"translationnotifications-languages-to-notify-label-help-message": "Kode-kode bahasa yang dipisahkan oleh tanda koma; kosongkan untuk mengirim pemberitahuan ke semua penerjemah semua bahasa.",
+	"translationnotifications-deadline-help-message": "Pilih tanggal yang tidak lebih awal dari pada hari ini",
+	"translationnotifications-languages-to-notify-label": "Bahasa yang dipilih/dikecualikan:",
+	"translationnotifications-languages-to-notify-label-help-message": "Kosongkan untuk mengirimkan pemberitahuan ke semua penerjemah dalam seluruh bahasa",
+	"translationnotifications-requested-languages-label": "Bahasa yang dimintakan:",
+	"translationnotifications-languages-to-notify": "Bahasa yang dipilih:",
+	"translationnotifications-languages-to-not-notify": "Pengecualian yang dipilih:",
+	"translationnotifications-languages-to-notify-all-label": "Semua bahasa",
+	"translationnotifications-languages-to-notify-only-selected-label": "Hanya bahasa yang dipilih:",
+	"translationnotifications-languages-to-notify-all-except-label": "Semua bahasa kecuali:",
 	"translationnotifications-sourcelang-only": "Pemberitahuan tidak bisa dikirimkan hanya kepada penerjemah bahasa sumber.",
 	"translationnotifications-priority": "Prioritas:",
 	"translationnotifications-priority-high": "tinggi",
@@ -58,7 +66,7 @@
 	"translationnotifications-edit-summary": "Pemberitahuan penerjemahan: $1",
 	"translationnotifications-email-priority": "Prioritas halaman ini adalah $1.",
 	"translationnotifications-email-deadline": "Batas waktu menerjemahkan halaman ini adalah $1.",
-	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|mengirim}} pemberitahuan tentang menerjemahkan halaman $3; {{PLURAL:$10|bahasa}}: $4; batas waktu: $5; prioritas: $6; dikirim ke {{PLURAL:$7|$7 penerima}}, gagal untuk {{PLURAL:$8|$8 penerima}}, dilewatkan untuk {{PLURAL:$9|$9 penerima}}",
+	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|mengirim}} pemberitahuan tentang penerjemahan halaman $3; {{PLURAL:$10|bahasa|bahasa}}: $4; batas waktu: $5; prioritas: $6; dikirim ke {{PLURAL:$7|satu penerima|$7 penerima}}, gagal terkirim ke {{PLURAL:$8|satu penerima|$8 penerima}}, {{PLURAL:$9|satu penerima|$9 penerima}} dilewati, pemberitahuan dikirim dalam: $1 1 bahasa",
 	"log-name-notifytranslators": "Log pemberitahuan penerjemahan",
 	"log-description-notifytranslators": "Catatan pemberitahuan yang dikirim kepada penerjemah tentang halaman yang bisa diterjemahkan",
 	"translationnotifications-sent-title": "Pemberitahuan penerjemahan terkirim",
@@ -66,5 +74,6 @@
 	"translationnotifications-log-alllanguages": "semua bahasa",
 	"translationnotifications-nodeadline": "tidak ada",
 	"translationnotifications-signup-legal": "Anda setuju bahwa dengan memberikan informasi ini, kami bisa menghubungi Anda mengenai hal-hal yang terkait dengan {{SITENAME}} yang kami rasa Anda minati. Anda setuju bahwa data Anda mematuhi [[{{MediaWiki:Privacypage}}|kebijakan privasi]] kami.",
+	"translationnotifications-generic-languages": "&lt;bahasa>",
 	"translationnotifications-text": "Gunakan formulir di bawah ini untuk mengirim permintaan penerjemahan kepada penerjemah"
 }
