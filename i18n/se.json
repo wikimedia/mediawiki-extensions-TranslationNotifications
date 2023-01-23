@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
 			"Yupik"
 		]
 	},
 	"translationnotifications-languages": "Gielat",
 	"translationnotifications-lang": "$1. giella",
+	"translationnotifications-nolang": "Vállje giela",
 	"translationnotifications-cmethod-email": "E-poasta",
 	"translationnotifications-log-alllanguages": "buot gielat"
 }
