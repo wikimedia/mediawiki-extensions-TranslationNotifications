@@ -4,7 +4,8 @@
 			"Rachmat.Wahidi",
 			"Rachmat04",
 			"පසිඳු කාවින්ද",
-			"Daud I.F. Argana"
+			"Daud I.F. Argana",
+			"David Wadie Fisher-Freberg"
 		]
 	},
 	"translatorsignup": "Pendaftaran penerjemah",
@@ -66,5 +67,6 @@
 	"translationnotifications-log-alllanguages": "semua bahasa",
 	"translationnotifications-nodeadline": "tidak ada",
 	"translationnotifications-signup-legal": "Anda setuju bahwa dengan memberikan informasi ini, kami bisa menghubungi Anda mengenai hal-hal yang terkait dengan {{SITENAME}} yang kami rasa Anda minati. Anda setuju bahwa data Anda mematuhi [[{{MediaWiki:Privacypage}}|kebijakan privasi]] kami.",
+	"translationnotifications-generic-languages": "&lt;bahasa>",
 	"translationnotifications-text": "Gunakan formulir di bawah ini untuk mengirim permintaan penerjemahan kepada penerjemah"
 }
