@@ -66,7 +66,7 @@
 	"translationnotifications-edit-summary": "Pemberitahuan penerjemahan: $1",
 	"translationnotifications-email-priority": "Prioritas halaman ini adalah $1.",
 	"translationnotifications-email-deadline": "Batas waktu menerjemahkan halaman ini adalah $1.",
-	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|mengirim}} pemberitahuan tentang penerjemahan halaman $3; {{PLURAL:$10|bahasa|bahasa}}: $4; batas waktu: $5; prioritas: $6; dikirim ke {{PLURAL:$7|satu penerima|$7 penerima}}, gagal terkirim ke {{PLURAL:$8|satu penerima|$8 penerima}}, {{PLURAL:$9|satu penerima|$9 penerima}} dilewati, pemberitahuan dikirim dalam: $1 1 bahasa",
+	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|mengirim}} pemberitahuan tentang penerjemahan halaman $3; {{PLURAL:$10|bahasa}}: $4; batas waktu: $5; prioritas: $6; dikirim ke {{PLURAL:$7|satu penerima|$7 penerima}}, gagal untuk {{PLURAL:$8|satu penerima|$8 penerima}}, dilewati untuk {{PLURAL:$9|satu penerima|$9 penerima}}, pemberitahuan dikirim ke: $11 bahasa",
 	"log-name-notifytranslators": "Log pemberitahuan penerjemahan",
 	"log-description-notifytranslators": "Catatan pemberitahuan yang dikirim kepada penerjemah tentang halaman yang bisa diterjemahkan",
 	"translationnotifications-sent-title": "Pemberitahuan penerjemahan terkirim",
