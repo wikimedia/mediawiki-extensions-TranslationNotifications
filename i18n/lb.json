@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Volvox"
 		]
 	},
 	"translatorsignup": "Aschreiwen als Iwwersetzer",
@@ -48,7 +49,7 @@
 	"translationnotifications-priority-medium": "mëttel",
 	"translationnotifications-priority-low": "niddreg",
 	"translationnotifications-priority-unset": "(net agestallt)",
-	"translationnotifications-translatablepage-title": "Numm vun der Säit déi iwwersat soll ginn:",
+	"translationnotifications-translatablepage-title": "Numm vun der Säit, déi iwwersat soll ginn:",
 	"translationnotifications-error-no-translatable-pages": "Et gëtt keng Säite fir z'iwwersetzen op dëser Wiki.",
 	"translationnotifications-email-subject": "Iwwersetzt wgl. d'Säit $1",
 	"translationnotifications-email-body": "Bonjour $1,\n\nDir kritt dës E-Mail well Dir Iech als Iwwersetzer {{PLURAL:$9|fir}} $2 op {{SITENAME}}  {{GENDER:$10|ageschriwwen}} hutt.\n\nEt gëtt do eng Säit fir z'iwwersetzen: $3.\nDir Kënnt se iwwersetze wann Dir op dëse Link klickt:\n$4\n\n$5\n$6\n\n$7\n\nÄr Hëllef gëtt appreciéiert. Iwwersetzer wéi Dir hëllefe(n) {{SITENAME}} als wierklech méisproocheg Gemeinschaft ze fionctionéieren.\n\nVillmools merci!\n\n{{SITENAME}} Iwwersetzungscoordinateuren\n\n----\n\nDir kritt dës E-Mail well Dir Iech ageschriwwen hutt fir e-Mailen a Verbindung mat Iwwersetzungen op {{SITENAME}} ze kréien. Fir dat ofzebestellen oder fir Är Astellunge vun den Notifikatiounen z'änneren, besicht eis wgl. op $8.",
