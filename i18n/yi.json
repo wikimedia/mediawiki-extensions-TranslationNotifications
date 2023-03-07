@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Pacha Tchernof",
 			"פוילישער",
 			"පසිඳු කාවින්ද"
 		]
@@ -12,9 +13,9 @@
 	"translationnotifications-email-confirmed": "אייער ע־פאסט אדרעס איז באשטעטיקט",
 	"translationnotifications-email-unconfirmed": "אייער ע־פאסט אדרעס איז נישט באשטעטיקט: $1",
 	"translationnotifications-languages": "שפּראַכן",
-	"translationnotifications-lang": "שפראך #$1",
+	"translationnotifications-lang": "שפּראַך #$1",
 	"translationnotifications-nolang": "קלויבט א שפראך",
-	"translationnotifications-cmethod-email": "ע-פאסט",
+	"translationnotifications-cmethod-email": "בליצפּאָסט",
 	"translationnotifications-cmethod-talkpage": "רעדן בלאַט",
 	"translationnotifications-cmethod-talkpage-elsewhere": "רעדן בלאט אויף אן אנדער וויקי",
 	"translationnotifications-cmethod-feed": "פיד",
@@ -48,5 +49,5 @@
 	"translationnotifications-sent-body": "איבערזעצונג אנזאג איז געשיקט געווארן.",
 	"translationnotifications-log-alllanguages": "אַלע שפראַכן",
 	"translationnotifications-nodeadline": "קיין",
-	"translationnotifications-generic-languages": "&lt;שפראכן>"
+	"translationnotifications-generic-languages": "&lt;שפּראַכן>"
 }
