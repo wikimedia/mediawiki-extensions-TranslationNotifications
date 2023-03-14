@@ -84,5 +84,10 @@
 	"translationnotifications-nodeadline": "Says that no deadline was specified.\n\nUsed as <code>$1</code> in {{msg-mw|Translationnotifications-email-deadline}}.\n{{Identical|None}}",
 	"translationnotifications-signup-legal": "Legal text shown at the bottom of [[Special:TranslatorSignup]] page.\n\nRefers to {{msg-mw|Privacypage}}.",
 	"translationnotifications-generic-languages": "{{optional}}\nA generic placeholder that is shown in the previewed notification instead of a list of language names.\n\nUsed as <code>$3</code> in the following message:\n* {{msg-mw|Translationnotifications-talkpage-body}}.\n{{Identical|Language}}",
-	"translationnotifications-text": "Introduction to special page [[Special:NotifyTranslators]]."
+	"translationnotifications-text": "Introduction to special page [[Special:NotifyTranslators]].",
+	"translationnotifications-echo-unsubscribe-header": "Header for the Echo notification sent when a user is unsubscribed.",
+	"translationnotifications-echo-unsubscribe-body": "Body for the Echo notification sent when a user is unsubscribed.",
+	"translationnotifications-echo-unsubscribe-primary-label": "Label for the primary URL in the Echo notification sent when a user is unsubscribed.",
+	"echo-category-title-translationnotifications": "Label in the notification section in Special:Preferences",
+	"echo-pref-tooltip-inactive-unsubscribe": "Tooltip in the notification section in Special:Preferences for the label: {{msg-mw|echo-category-title-translationnotifications-inactive-unsubscribe}}"
 }

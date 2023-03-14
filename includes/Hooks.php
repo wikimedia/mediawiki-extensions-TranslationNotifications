@@ -34,4 +34,24 @@ class Hooks {
 
 		return true;
 	}
+
+	public static function onBeforeCreateEchoEvent(
+		&$notifications,
+		&$notificationCategories,
+		&$icons
+	) {
+		$notificationCategories[ 'translationnotifications' ] = [
+			'tooltip' => 'echo-pref-tooltip-inactive-unsubscribe',
+		];
+
+		$notifications[ 'translationnotifications-unsubscribed' ] = [
+			'category' => 'translationnotifications',
+			'group' => 'neutral',
+			'section' => 'alert',
+			'presentation-model' => UnsubscribeInactiveUsersPresentationModel::class,
+			'user-locators' => [
+				[ UnsubscribeInactiveUsersPresentationModel::class . '::locateUsers' ]
+			]
+		];
+	}
 }

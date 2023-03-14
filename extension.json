@@ -96,6 +96,9 @@
 	"Hooks": {
 		"GetPreferences": [
 			"MediaWiki\\Extension\\TranslationNotifications\\Hooks::onGetPreferences"
+		],
+		"BeforeCreateEchoEvent": [
+			"MediaWiki\\Extension\\TranslationNotifications\\Hooks::onBeforeCreateEchoEvent"
 		]
 	},
 	"config": {
