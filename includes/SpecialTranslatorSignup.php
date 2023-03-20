@@ -223,13 +223,12 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 	 */
 	public function onSubmit( array $formData ) {
 		$user = $this->getUser()->getInstanceForUpdate();
-
+		$this->userOptionsManager->setOption( $user, 'translationnotifications-lastactivity', wfTimestampNow() );
 		// @todo Needs input validation
 		foreach ( $formData as $key => $value ) {
 			$this->userOptionsManager->setOption( $user, "translationnotifications-$key", $value );
 		}
 		$user->saveSettings();
-
 		return true;
 	}
 
