@@ -12,7 +12,7 @@
 	"translationnotifications-username": "Brukernavn:",
 	"translationnotifications-emailstatus": "E-poststatus:",
 	"translationnotifications-email-confirmed": "E-postadressen din er bekreftet",
-	"translationnotifications-email-disablemail": "Epostadressen din er bekreftet, men i [[Special:Preferences|innstillingene dine]] har du bedt om å ikke motta epost.",
+	"translationnotifications-email-disablemail": "E-postadressa di er bekreftet, men i [[Special:Preferences|innstillingene dine]] har du bedt om å ikke motta e-post.",
 	"translationnotifications-email-unconfirmed": "E-postadressen din er ikke bekreftet. $1",
 	"translationnotifications-email-notset": "Du har ikke oppgitt noen e-postadresse. Du kan gjøre det i [[Special:Preferences|innstillingene dine]].",
 	"translationnotifications-languages": "Språk",
