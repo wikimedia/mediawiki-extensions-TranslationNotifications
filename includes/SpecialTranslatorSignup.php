@@ -69,9 +69,8 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		$form->setId( 'translationnotifications-form' );
 		$form->setSubmitID( 'translationnotifications-submit' );
 		$form->setSubmitTextMsg( 'translationnotifications-submit' );
-		// Override FormSpecialPage. Otherwise 'translationnotifications-text'
-		// shown on Special:NotifyTranslators is shown here
-		$form->setHeaderHtml( $this->msg( 'translatorsignup-summary' )->parseAsBlock() );
+		// Without the following code the translationnotifications-text appears on this page. See: T334371
+		$form->setHeaderHtml( '' );
 	}
 
 	protected function postHtml() {
