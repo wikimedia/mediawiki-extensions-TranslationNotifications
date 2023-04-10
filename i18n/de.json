@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Brettchenweber",
 			"Geitost",
 			"Kghbln",
 			"MF-Warburg",
@@ -10,7 +11,7 @@
 	},
 	"translatorsignup": "Übersetzerregistrierung",
 	"translatorsignup-summary": "Nutze diese Seite, um anzugeben, in welche Sprachen du übersetzen kannst und wie du bei Übersetzungsanfragen benachrichtigt werden möchtest.",
-	"translationnotifications-desc": "Ermöglicht es Übersetzern Übersetzungsbenachrichtigungen zu abonnieren",
+	"translationnotifications-desc": "Ermöglicht es Übersetzern, Übersetzungsbenachrichtigungen zu abonnieren",
 	"translationnotifications-info": "Benutzerinformation",
 	"translationnotifications-username": "Benutzername:",
 	"translationnotifications-emailstatus": "E-Mail-Status:",
