@@ -10,7 +10,8 @@
 			"Qiyue2001",
 			"Shirayuki",
 			"Xiaomingyan",
-			"铁桶"
+			"铁桶",
+			"Winston Sung"
 		]
 	},
 	"translatorsignup": "翻译者登记",
@@ -29,7 +30,7 @@
 	"translationnotifications-contact": "首选联系方式",
 	"translationnotifications-cmethod-email": "电子邮件",
 	"translationnotifications-cmethod-talkpage": "讨论页",
-	"translationnotifications-cmethod-talkpage-elsewhere": "其他wiki上的对话页",
+	"translationnotifications-cmethod-talkpage-elsewhere": "其他wiki上的讨论页",
 	"translationnotifications-cmethod-feed": "供稿",
 	"translationnotifications-frequency": "联系频率",
 	"translationnotifications-freq-always": "当有新内容需要翻译时",
