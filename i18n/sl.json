@@ -73,5 +73,10 @@
 	"translationnotifications-nodeadline": "noben",
 	"translationnotifications-signup-legal": "Strinjate se, da smemo na podlagi poslanih informacij kontaktirati z vami v zvezi s temami na strani {{SITENAME}}, za katere menimo, da vas utegnejo zanimati. Strinjate se, da se za vaše poslane podatke uporablja naš [[{{MediaWiki:Privacypage}}|pravilnik o zasebnosti]].",
 	"translationnotifications-generic-languages": "&lt;jeziki>",
-	"translationnotifications-text": "Izpolnite spodnji obrazec, da prevajalcem pošljete prošnje za prevod."
+	"translationnotifications-text": "Izpolnite spodnji obrazec, da prevajalcem pošljete prošnje za prevod.",
+	"translationnotifications-echo-unsubscribe-header": "Odjavili ste se od obvestil o prevodih",
+	"translationnotifications-echo-unsubscribe-body": "Ker ste bili dlje časa neaktivni ali blokirani, ste bili odjavljeni od prejemanja obvestil o prevodih. Če še vedno želite prejemati obvestila, se lahko kadar koli znova naročite.",
+	"translationnotifications-echo-unsubscribe-primary-label": "Znova se prijavite kot prevajalec",
+	"echo-category-title-translationnotifications": "Obvestila o prevodih",
+	"echo-pref-tooltip-inactive-unsubscribe": "Obvesti me, če sem odjavljen_a od prejemanja obvestil o prevodih o novih ali posodobljenih straneh, ki so na voljo za prevod"
 }

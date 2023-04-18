@@ -84,5 +84,10 @@
 	"translationnotifications-nodeadline": "aucune",
 	"translationnotifications-signup-legal": "En fournissant ces informations, vous acceptez que nous puissions vous contacter concernant des sujets liés à {{SITENAME}} que nous pensons être d’intérêt pour vous. Vous acceptez que vos données soient soumises à notre [[{{MediaWiki:Privacypage}}|politique de confidentialité]].",
 	"translationnotifications-generic-languages": "&lt;langues&gt;",
-	"translationnotifications-text": "Utilisez le formulaire ci-dessous pour envoyer des demandes de traduction aux traducteurs."
+	"translationnotifications-text": "Utilisez le formulaire ci-dessous pour envoyer des demandes de traduction aux traducteurs.",
+	"translationnotifications-echo-unsubscribe-header": "Vous avez été désabonné des notifications de traduction",
+	"translationnotifications-echo-unsubscribe-body": "Comme vous avez été inactif ou bloqué pendant une longue période, vous avez été désabonné de la réception des notifications de traduction. Si vous souhaitez toujours être averti, vous pouvez vous réabonner à tout moment.",
+	"translationnotifications-echo-unsubscribe-primary-label": "Inscrivez-vous à nouveau en tant que traducteur",
+	"echo-category-title-translationnotifications": "Notification de traduction",
+	"echo-pref-tooltip-inactive-unsubscribe": "M’avertir si je suis désabonné des notifications de traduction concernant les pages nouvelles ou mises à jour disponibles pour la traduction"
 }

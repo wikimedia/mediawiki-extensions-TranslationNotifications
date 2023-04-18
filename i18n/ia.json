@@ -70,5 +70,10 @@
 	"translationnotifications-log-alllanguages": "tote le linguas",
 	"translationnotifications-nodeadline": "nulle",
 	"translationnotifications-signup-legal": "Per fornir iste information tu accepta que nos pote contactar te concernente themas associate a {{SITENAME}} le quales nos pensa que pote esser de interesse a te. Tu accepta que tu datos es subjecte a nostre [[{{MediaWiki:Privacypage}}|politica de confidentialitate]].",
-	"translationnotifications-text": "Usa le formulario sequente pro inviar requestas de traduction al traductores."
+	"translationnotifications-text": "Usa le formulario sequente pro inviar requestas de traduction al traductores.",
+	"translationnotifications-echo-unsubscribe-header": "Tu ha essite disabonate de notificationes de traduction",
+	"translationnotifications-echo-unsubscribe-body": "Como tu ha essite inactive o blocate durante un longe periodo, tu ha essite disabonate del reception de notificationes de traduction. Si tu vole totevia esser notificate, tu pote reabonar te a omne momento.",
+	"translationnotifications-echo-unsubscribe-primary-label": "Reinscriber me como traductor",
+	"echo-category-title-translationnotifications": "Notificationes de traduction",
+	"echo-pref-tooltip-inactive-unsubscribe": "Notificar me si io es disabonate de notificationes concernente paginas nove o actualisate disponibile pro traduction"
 }

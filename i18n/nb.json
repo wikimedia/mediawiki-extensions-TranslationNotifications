@@ -72,5 +72,10 @@
 	"translationnotifications-nodeadline": "ingen",
 	"translationnotifications-signup-legal": "Ved å oppgi denne informasjonen godtar du at vi kontakter deg om temaer knyttet {{SITENAME}} som vi tror kan interessere deg. Du godtar at dataene er underlagt [[{{MediaWiki:Privacypage}}|retningslinjene våre for personvern]].",
 	"translationnotifications-generic-languages": "&lt;språk>",
-	"translationnotifications-text": "Bruk skjemaet nedenfor for å sende oversettelsesforespørsel til oversettere."
+	"translationnotifications-text": "Bruk skjemaet nedenfor for å sende oversettelsesforespørsel til oversettere.",
+	"translationnotifications-echo-unsubscribe-header": "Abonnementet ditt på oversettelsesvarsler har blitt avsluttet",
+	"translationnotifications-echo-unsubscribe-body": "Fordi du har vært inaktiv eller blokkert lenge har abonnementet ditt på oversettelsesvarsler blitt avsluttet. Hvis du fortsatt ønsker å bli varslet kan du melde deg opp igjen når som helst.",
+	"translationnotifications-echo-unsubscribe-primary-label": "Meld deg opp som oversetter igjen",
+	"echo-category-title-translationnotifications": "Oversettelsesvarsler",
+	"echo-pref-tooltip-inactive-unsubscribe": "Varsle meg hvis abonnementet mitt på oversettelsesvarsler avsluttes"
 }
