@@ -8,7 +8,8 @@
 			"McDutchie",
 			"MrLeopold",
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"Sjoerddebruin"
 		]
 	},
 	"translatorsignup": "Vertalersregistratie",
@@ -71,5 +72,6 @@
 	"translationnotifications-nodeadline": "geen",
 	"translationnotifications-signup-legal": "Door deze gegevens te verstrekken stemt u ermee in dat we contact met u mogen opnemen over onderwerpen over {{SITENAME}} waarvan wij denken dat ze uw interesse hebben. U gaat stemt ermee in dat uw gegevens onder ons [[{{MediaWiki:Privacypage}}|privacybeleid]] vallen.",
 	"translationnotifications-generic-languages": "&lt;talen>",
-	"translationnotifications-text": "Gebruik het formulier hier beneden om vertaalverzoeken te versturen naar vertalers."
+	"translationnotifications-text": "Gebruik het formulier hier beneden om vertaalverzoeken te versturen naar vertalers.",
+	"echo-category-title-translationnotifications": "Vertaalmeldingen"
 }
