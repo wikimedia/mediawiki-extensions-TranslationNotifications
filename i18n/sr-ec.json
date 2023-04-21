@@ -67,5 +67,6 @@
 	"log-name-notifytranslators": "Дневник обавештења о преводима",
 	"log-description-notifytranslators": "Дневник послатих обавештења преводиоцима у вези преводивих страница",
 	"translationnotifications-log-alllanguages": "сви језици",
-	"translationnotifications-nodeadline": "нема"
+	"translationnotifications-nodeadline": "нема",
+	"echo-category-title-translationnotifications": "Обавештења о преводима"
 }
