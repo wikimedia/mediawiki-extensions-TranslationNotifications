@@ -196,12 +196,12 @@ class UnsubscribeInactiveUsers extends Maintenance {
 			return $accountB[ 'editCount' ] <=> $accountA[ 'editCount' ];
 		} );
 
-		foreach ( $attachedAccounts as $siteId => $accountInfo ) {
+		foreach ( $attachedAccounts as $accountInfo ) {
 			$isUserInactive = $this->isSubscriberInactiveOnSite(
 				$lb,
 				$actorStoreFactory,
 				$subscriber,
-				(string)$siteId,
+				$accountInfo['wiki'],
 				$inactiveTs
 			);
 			if ( !$isUserInactive ) {
