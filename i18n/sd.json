@@ -6,9 +6,12 @@
 		]
 	},
 	"translationnotifications-username": "واپرائيندڙنانءُ:",
+	"translationnotifications-cmethod-talkpage": "بحث صفحو",
+	"translationnotifications-signup-success": "توھان لاءِ ترجمي جي اطلاع جون ترجيحون سانڍيون ويون.",
 	"translationnotifications-preview-notification-button": "اطلاع پيش-نگاھ",
 	"translationnotifications-priority": "ترجيح:",
 	"translationnotifications-email-subject": "مھرباني ڪري صفحي $1 جو ترجمو ڪريو",
 	"translationnotifications-notification-url-listitem": "$1 ۾ ترجمايو",
+	"translationnotifications-log-alllanguages": "سڀ ٻوليون",
 	"translationnotifications-nodeadline": "ڪوبہ نہ"
 }
