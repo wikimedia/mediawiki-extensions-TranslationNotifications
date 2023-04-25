@@ -16,9 +16,9 @@ use MediaWiki\Languages\LanguageFactory;
 use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserOptionsManager;
+use MediaWiki\WikiMap\WikiMap;
 use Title;
 use User;
-use WikiMap;
 use Wikimedia\Rdbms\IResultWrapper;
 
 /**

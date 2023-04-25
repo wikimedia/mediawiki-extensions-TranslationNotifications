@@ -22,8 +22,8 @@ use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\SiteMatrix\SiteMatrix;
 use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\User\UserOptionsManager;
+use MediaWiki\WikiMap\WikiMap;
 use SpecialPage;
-use WikiMap;
 
 /**
  * Form for translators to register contact methods
