@@ -58,5 +58,7 @@
 	"translationnotifications-sent-body": "অনুবাদ বিজ্ঞপ্তি পাঠানো হয়েছিল।",
 	"translationnotifications-log-alllanguages": "সকল ভাষা",
 	"translationnotifications-nodeadline": "কিছু না",
-	"translationnotifications-generic-languages": "&lt;ভাষাসমূহ>"
+	"translationnotifications-generic-languages": "&lt;ভাষাসমূহ>",
+	"translationnotifications-echo-unsubscribe-primary-label": "আবার অনুবাদক হিসেবে নাম লিখান",
+	"echo-category-title-translationnotifications": "অনুবাদ বিজ্ঞপ্তি"
 }
