@@ -8,9 +8,7 @@ use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\Notifications\Model\Event as EchoEvent;
 use MediaWiki\Language\RawMessage;
 use MediaWiki\MediaWikiServices;
-use MediaWiki\User\ActorStoreFactory;
 use MediaWiki\User\UserIdentity;
-use Wikimedia\Rdbms\ILoadBalancer;
 
 $env = getenv( 'MW_INSTALL_PATH' );
 $IP = $env !== false ? $env : __DIR__ . '/../../..';
@@ -177,12 +175,9 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	}
 
 	private function isSubscriberInactive( UserIdentity $subscriber, string $inactiveTs ): bool {
-		$mwServices = MediaWikiServices::getInstance();
-		$lb = $mwServices->getDBLoadBalancer();
-		$actorStoreFactory = $mwServices->getActorStoreFactory();
-
 		$centralUser = CentralAuthUser::getInstance( $subscriber );
 		$attachedAccounts = $centralUser->queryAttached();
+		$mwServices = MediaWikiServices::getInstance();
 
 		if ( !$attachedAccounts ) {
 			$this->logVerbose( "No central account attached to user: {$subscriber->getName()}\n" );
@@ -198,8 +193,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 
 		foreach ( $attachedAccounts as $accountInfo ) {
 			$isUserInactive = $this->isSubscriberInactiveOnSite(
-				$lb,
-				$actorStoreFactory,
+				$mwServices,
 				$subscriber,
 				$accountInfo['wiki'],
 				$inactiveTs
@@ -213,14 +207,16 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	}
 
 	private function isSubscriberInactiveOnSite(
-		ILoadBalancer $lb,
-		ActorStoreFactory $actorStoreFactory,
+		MediaWikiServices $mwServices,
 		UserIdentity $user,
 		string $siteId,
 		string $inactiveTs
 	): bool {
-		$dbr = $lb->getConnection( DB_REPLICA, [], $siteId );
-		$actorStore = $actorStoreFactory->getActorStore( $siteId );
+		$dbr = $mwServices->getDBLoadBalancerFactory()
+			->getMainLB( $siteId )
+			->getConnection( DB_REPLICA, $siteId );
+		$actorStore = $mwServices->getActorStoreFactory()->getActorStore( $siteId );
+
 		$actorId = $actorStore->findActorId( $user, $dbr );
 		if ( $actorId === null ) {
 			return true;
