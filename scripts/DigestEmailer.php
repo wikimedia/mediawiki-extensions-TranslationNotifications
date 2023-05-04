@@ -77,6 +77,12 @@ class DigestEmailer extends Maintenance {
 			$userName = $user->getName();
 			$this->output( "Sending digest to: $userName\n\t" .
 				"Frequency preference: $notificationFreq\n" );
+
+			if ( !$user->canReceiveEmail() ) {
+				$this->output( "\tEmail cannot be sent to this user. Skipping...\n" );
+				continue;
+			}
+
 			$signedUpLangCodes = [];
 			foreach ( range( 1, 3 ) as $langNum ) {
 				$langCode = $userOptionsManager->getOption( $user, "translationnotifications-lang-$langNum" );

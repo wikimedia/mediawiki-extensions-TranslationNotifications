@@ -31,6 +31,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		parent::setUp();
 		$this->translators_conf = parse_ini_file( "translators.ini", true );
 		$this->emailer = new DigestEmailer();
+		$this->setMwGlobals( 'wgEmailAuthentication', false );
 	}
 
 	public function tearDown(): void {
@@ -38,45 +39,31 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		parent::tearDown();
 	}
 
-	public function testSendEmailMonthlyValid() {
-		$translators = $this->getTranslators( 'monthly' );
+	/** @dataProvider providePeriodicEmailSending */
+	public function testPeriodicEmailSending( string $timePeriod, string $translatorName ) {
+		$translators = $this->getTranslators( $timePeriod );
 		$notifications = $this->getNotifications();
-		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
-		foreach ( $translators as $translator ) {
-			$this->expectOutputRegex( '/[a-zA-Z\n]*1 notifications to send/' );
-			$this->assertSame(
-				1,
-				$mailstatus[$translator],
-				User::newFromId( $translator ) . " should get a mail"
-			);
-		}
+		$mailStatus = $this->emailer->sendEmails( [ $translators[ $translatorName ] ], $notifications );
+		$this->validateEmailSentStatus( $mailStatus, $translators[ $translatorName ] );
 	}
 
-	public function testSendEmailMonthlyInvalidLang() {
-		$translators = $this->getTranslators( 'monthly' );
+	public function providePeriodicEmailSending() {
+		yield 'Translator1 should receive monthly email' => [ 'monthly', 'Translator1' ];
+		yield 'Translator2 should receive weekly email' => [ 'weekly', 'Translator2' ];
+		yield 'Translator3 without email should not receive email' => [ 'monthly', 'Translator3' ];
+	}
+
+	public function testSendEmailWeeklyInvalidLang() {
+		$translators = $this->getTranslators( 'weekly' );
 		$notifications = $this->getNotificationsForInvalidLangs();
-		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
+		$mailStatus = $this->emailer->sendEmails( $translators, $notifications );
+		$this->expectOutputRegex( '/0 notifications to send/' );
 		foreach ( $translators as $translator ) {
-			$this->expectOutputRegex( '/[a-zA-Z\n]*0 notifications to send/' );
 			$this->assertSame(
 				0,
-				$mailstatus[$translator],
+				$mailStatus[$translator],
 				User::newFromId( $translator ) . " should not get a mail. " .
 					"Notification is not for this translator"
-			);
-		}
-	}
-
-	public function testSendEmailWeeklyValid() {
-		$translators = $this->getTranslators( 'weekly' );
-		$notifications = $this->getNotifications();
-		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
-		foreach ( $translators as $translator ) {
-			$this->expectOutputRegex( '/[a-zA-Z\n]*1 notifications to send/' );
-			$this->assertSame(
-				1,
-				$mailstatus[$translator],
-				User::newFromId( $translator ) . " should get a mail"
 			);
 		}
 	}
@@ -84,12 +71,13 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 	public function testSendEmailWeeklyExpired() {
 		$translators = $this->getTranslators( 'weekly' );
 		$notifications = $this->getExpiredNotifications();
-		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
+		$mailStatus = $this->emailer->sendEmails( $translators, $notifications );
+		$this->expectOutputRegex( '/0 notifications to send/' );
+
 		foreach ( $translators as $translator ) {
-			$this->expectOutputRegex( '/[a-zA-Z\n]*0 notifications to send/' );
 			$this->assertSame(
 				0,
-				$mailstatus[$translator],
+				$mailStatus[$translator],
 				User::newFromId( $translator ) . " should not get a mail. Notifications are expired"
 			);
 		}
@@ -98,21 +86,15 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 	public function testSendEmailWeeklyRepeated() {
 		$translators = $this->getTranslators( 'weekly' );
 		$notifications = $this->getNotifications();
-		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
+		$this->emailer->sendEmails( $translators, $notifications );
+
+		$mailStatus = $this->emailer->sendEmails( $translators, $notifications );
+		$this->expectOutputRegex( '/Not sending notifications/' );
+
 		foreach ( $translators as $translator ) {
-			$this->expectOutputRegex( '/[a-zA-Z\n]*1 notifications to send/' );
-			$this->assertSame(
-				1,
-				$mailstatus[$translator],
-				User::newFromId( $translator ) . " should get a mail"
-			);
-		}
-		$mailstatus = $this->emailer->sendEmails( $translators, $notifications );
-		foreach ( $translators as $translator ) {
-			$this->expectOutputRegex( '/[a-zA-Z\n]*Not sending notifications/' );
 			$this->assertSame(
 				0,
-				$mailstatus[$translator],
+				$mailStatus[$translator],
 				User::newFromId( $translator ) . " should not get a mail, this is a repeat"
 			);
 		}
@@ -164,7 +146,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		$translators = [];
 		foreach ( $this->translators_conf as $translator_conf ) {
 			if ( $translator_conf['digest_frequency'] === $freq ) {
-				$translators[] = $this->getTranslator( $translator_conf );
+				$translators[ $translator_conf[ 'username' ] ] = $this->getTranslator( $translator_conf );
 			}
 		}
 
@@ -176,6 +158,8 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		if ( $user->getID() === 0 ) {
 			$user->addToDatabase();
 		}
+
+		$user->setEmail( $translator_conf['email'] ?? '' );
 		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		$userOptionsManager->setOption(
 			$user,
@@ -193,8 +177,30 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 			'translationnotifications-freq',
 			$translator_conf['digest_frequency']
 		);
+		$userOptionsManager->setOption( $user, 'disablemail', false );
 		$user->saveSettings();
 
 		return $user->getId();
+	}
+
+	private function validateEmailSentStatus( array $mailStatus, string $translator ): void {
+		$userFactory = $this->getServiceContainer()->getUserFactory();
+		$translatorUser = $userFactory->newFromId( $translator );
+		// Only validate if an email is set
+		if ( $translatorUser->getEmail() ) {
+			$this->expectOutputRegex( '/1 notifications to send/' );
+			$this->assertSame(
+				1,
+				$mailStatus[$translator],
+				$translatorUser . " should get a mail"
+			);
+		} else {
+			$this->expectOutputRegex( '/Email cannot be sent to this user/' );
+			$this->assertSame(
+				0,
+				$mailStatus[$translator] ?? null,
+				$translatorUser . ' no email sent since they do not have an email'
+			);
+		}
 	}
 }
