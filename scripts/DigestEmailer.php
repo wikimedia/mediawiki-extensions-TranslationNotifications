@@ -19,11 +19,11 @@ if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 require_once "$IP/maintenance/Maintenance.php";
 
 use DatabaseLogEntry;
-use EmaillingJob;
-use MailAddress;
 use Maintenance;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
+use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsEmailJob;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use ObjectCache;
 use SpecialPage;
 use User;
@@ -203,16 +203,7 @@ class DigestEmailer extends Maintenance {
 				$signupURL
 			)->inLanguage( $firstLangCode )->text();
 
-			$emailFrom = new MailAddress( $noReplyAddress );
-			$emailTo = MailAddress::newFromUser( $user );
-			$params = [
-				'to' => $emailTo,
-				'from' => $emailFrom,
-				'body' => $digestMailBody,
-				'subj' => $digestMailSubject,
-				'replyto' => $emailFrom,
-			];
-			$job = new EmaillingJob( null, $params );
+			$job = $this->getEmailJob( $user, $noReplyAddress, $digestMailBody, $digestMailSubject );
 			$jobQueueGroup->push( $job );
 
 			$userOptionsManager->setOption( $user, 'translationnotifications-last-digest', wfTimestamp() );
@@ -330,6 +321,25 @@ class DigestEmailer extends Maintenance {
 		}
 
 		return $this->sort( $notifications );
+	}
+
+	private function getEmailJob(
+		User $translator,
+		string $noReplyAddress,
+		string $emailBody,
+		string $emailSubject
+	): TranslationNotificationsEmailJob {
+		$emailFrom = TranslationNotificationsEmailJob::buildAddress( $noReplyAddress, 'NoReply', '' );
+		return new TranslationNotificationsEmailJob(
+			Title::newMainPage(),
+			[
+				'to' => TranslationNotificationsEmailJob::addressFromUser( $translator ),
+				'from' => $emailFrom,
+				'body' => $emailBody,
+				'subject' => $emailSubject,
+				'replyTo' => $emailFrom,
+			]
+		);
 	}
 }
 
