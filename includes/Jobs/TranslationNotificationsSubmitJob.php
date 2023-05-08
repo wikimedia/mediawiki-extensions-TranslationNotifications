@@ -319,9 +319,12 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 				$this->userOptionsManager->setOption( $user, 'translationnotifications-cmethod-email', false );
 				$jobs[] = [ $currentWikiId, 'jobEmailDisabled', null ];
 			} elseif ( $this->userOptionsManager->getOption( $user, 'translationnotifications-freq' ) === 'always' ) {
-				$jobs[] = [
-					$currentWikiId, 'jobEmail', $notifyUser->sendTranslationNotificationEmail( $user )
-				];
+				// Check if user has email. Don't bother sending email if they don't have it configured
+				if ( $user->canReceiveEmail() ) {
+					$jobs[] = [
+						$currentWikiId, 'jobEmail', $notifyUser->sendTranslationNotificationEmail( $user )
+					];
+				}
 			}
 		}
 
