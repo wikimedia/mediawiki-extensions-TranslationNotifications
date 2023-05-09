@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Delim",
+			"Garam"
+		]
+	},
+	"translatorsignup": "번역자 등록",
+	"translationnotifications-languages": "언어",
+	"translationnotifications-lang": "언어 #$1",
+	"translationnotifications-generic-languages": "&lt;언어>"
+}
