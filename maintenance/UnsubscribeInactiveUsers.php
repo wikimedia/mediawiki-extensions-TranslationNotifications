@@ -9,6 +9,7 @@ use MediaWiki\Extension\Notifications\Model\Event as EchoEvent;
 use MediaWiki\Language\RawMessage;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserIdentity;
+use MediaWiki\User\UserIdentityValue;
 
 $env = getenv( 'MW_INSTALL_PATH' );
 $IP = $env !== false ? $env : __DIR__ . '/../../..';
@@ -194,8 +195,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 		foreach ( $attachedAccounts as $accountInfo ) {
 			$isUserInactive = $this->isSubscriberInactiveOnSite(
 				$mwServices,
-				$subscriber,
-				$accountInfo['wiki'],
+				new UserIdentityValue( $accountInfo[ 'id' ], $accountInfo['name'], $accountInfo['wiki'] ),
 				$inactiveTs
 			);
 			if ( !$isUserInactive ) {
@@ -209,9 +209,9 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	private function isSubscriberInactiveOnSite(
 		MediaWikiServices $mwServices,
 		UserIdentity $user,
-		string $siteId,
 		string $inactiveTs
 	): bool {
+		$siteId = $user->getWikiId();
 		$dbr = $mwServices->getDBLoadBalancerFactory()
 			->getMainLB( $siteId )
 			->getConnection( DB_REPLICA, [], $siteId );
