@@ -214,7 +214,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	): bool {
 		$dbr = $mwServices->getDBLoadBalancerFactory()
 			->getMainLB( $siteId )
-			->getConnection( DB_REPLICA, $siteId );
+			->getConnection( DB_REPLICA, [], $siteId );
 		$actorStore = $mwServices->getActorStoreFactory()->getActorStore( $siteId );
 
 		$actorId = $actorStore->findActorId( $user, $dbr );
