@@ -234,7 +234,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 			'priority' => $priority,
 			'deadlineDate' => $deadlineDate,
 			'selectedLanguages' => $selectedLanguages,
-			'languageSet' => $languageSet,
+			'languageSet' => $languageSet->jsonSerialize(),
 		];
 
 		$job = TranslationNotificationsSubmitJob::newJob(
