@@ -54,7 +54,7 @@
 	"translationnotifications-priority-unset": "(nedoločena)",
 	"translationnotifications-translatablepage-title": "Naslov strani za prevajanje:",
 	"translationnotifications-error-no-translatable-pages": "V tem vikiju ni nobene strani za prevod.",
-	"translationnotifications-email-subject": "Prosimo, prevedi stran $1",
+	"translationnotifications-email-subject": "Prosimo, prevedite stran $1",
 	"translationnotifications-email-body": "Pozdravljeni, $1,\n\nto e-poštno sporočilo ste prejeli, ker ste se  v projektu {{SITENAME}} {{GENDER:$10|prijavili}} kot prevajalec v {{PLURAL:$9|jezik|jezika|jezike}} $2.\n\nTam je na voljo stran za prevod: $3.\nPrevedete jo lahko s klikom naslednje povezave:\n$4 \n\n$5 \n$6 \n\n$7 \n\nVašo pomoč zelo cenimo. Prevajalci, kot ste vi, pomagajo projektu {{SITENAME}} delovati\nkot resnično večjezična skupnost.\n\nHvala!\n\nKoordinatorji prevajanja projekta {{SITENAME}}\n\n----\n\nTo e-poštno sporočilo ste prejeli, ker ste se v projektu {{SITENAME}} naročili na prejemanje e-poštnih sporočil v zvezi s prevodi. Če se želite odnaročiti ali spremeniti svoje nastavitve obveščanja o prevodih, obiščite stran $8.",
 	"translationnotifications-talkpage-body": "Pozdravljeni, $2,\n\nto obvestilo ste prejeli, ker ste se v projektu {{SITENAME}} {{GENDER:$1|prijavili}} kot prevajalec v {{PLURAL:$9|jezik|jezika|jezike}} $3.\nZa prevod je na voljo stran [[$4]]. Prevedete jo lahko tukaj:\n$5 \n\n$6 \n$7 \n\n$8 \n\nVašo pomoč zelo cenimo. Prevajalci, kot ste vi, pomagajo projektu {{SITENAME}} delovati\nkot resnično večjezična skupnost.\n\nSvoje nastavitve obveščanja [$10 lahko spremenite].\n\nHvala!\n\nKoodinatorji prevajanja projekta {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "prevedi v $1",
