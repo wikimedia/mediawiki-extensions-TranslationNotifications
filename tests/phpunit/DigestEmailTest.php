@@ -47,7 +47,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		$this->validateEmailSentStatus( $mailStatus, $translators[ $translatorName ] );
 	}
 
-	public function providePeriodicEmailSending() {
+	public static function providePeriodicEmailSending() {
 		yield 'Translator1 should receive monthly email' => [ 'monthly', 'Translator1' ];
 		yield 'Translator2 should receive weekly email' => [ 'weekly', 'Translator2' ];
 		yield 'Translator3 without email should not receive email' => [ 'monthly', 'Translator3' ];
