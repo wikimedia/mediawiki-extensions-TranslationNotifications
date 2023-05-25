@@ -79,5 +79,8 @@
 	"translationnotifications-signup-legal": "Aceptas que al suministrar esta información podamos ponernos en contacto contigo en relación con temas relacionados con {{SITENAME}} que pensemos que puedan ser de tu interés. Aceptas que tus datos estén sujetos a nuestra [[{{MediaWiki:Privacypage}}|normativa de privacidad]].",
 	"translationnotifications-generic-languages": "&lt;idiomas>",
 	"translationnotifications-text": "Usa el siguiente formulario para enviar las solicitudes de traducción a los traductores.",
+	"translationnotifications-echo-unsubscribe-header": "Tu suscripción a notificaciones de traducción ha sido dada de baja",
+	"translationnotifications-echo-unsubscribe-body": "Tu suscripción a notificaciones de traducción ha sido cancelada debido a que llevas demasiado tiempo inactivo o bloqueado. Si todavía deseas recibir notificaciones puedes volver a suscribirte a las mismas en cualquier momento.",
+	"translationnotifications-echo-unsubscribe-primary-label": "Registrarse de nuevo como traductor",
 	"echo-category-title-translationnotifications": "Notificaciones sobre traducciones"
 }
