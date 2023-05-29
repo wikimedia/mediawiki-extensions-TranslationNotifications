@@ -195,7 +195,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 		foreach ( $attachedAccounts as $accountInfo ) {
 			$isUserInactive = $this->isSubscriberInactiveOnSite(
 				$mwServices,
-				new UserIdentityValue( $accountInfo[ 'id' ], $accountInfo['name'], $accountInfo['wiki'] ),
+				new UserIdentityValue( (int)$accountInfo[ 'id' ], $accountInfo['name'], $accountInfo['wiki'] ),
 				$inactiveTs
 			);
 			if ( !$isUserInactive ) {
