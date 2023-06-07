@@ -91,8 +91,10 @@ class UnsubscribeInactiveUsers extends Maintenance {
 			$lastActivityTs = $userOptionManager->getOption(
 				$subscribedUser, 'translationnotifications-lastactivity'
 			);
+
 			// Last activity was not tracked originally, so it might be missing.
 			if ( $lastActivityTs && $lastActivityTs > $inactiveTs ) {
+				$this->logVerbose( "{$subscribedUser->getName()} was recently active\n" );
 				continue;
 			}
 
@@ -199,6 +201,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 				$inactiveTs
 			);
 			if ( !$isUserInactive ) {
+				$this->logVerbose( "{$subscriber->getName()} active on {$accountInfo[ 'wiki' ]}\n" );
 				return false;
 			}
 		}
