@@ -55,5 +55,6 @@
 	"log-name-notifytranslators": "Log hysbysiadau cyfieithu",
 	"translationnotifications-log-alllanguages": "pob iaith",
 	"translationnotifications-nodeadline": "dim",
-	"translationnotifications-generic-languages": "&lt;ieithoedd>"
+	"translationnotifications-generic-languages": "&lt;ieithoedd>",
+	"echo-category-title-translationnotifications": "Hysbysiadau cyfieithu"
 }
