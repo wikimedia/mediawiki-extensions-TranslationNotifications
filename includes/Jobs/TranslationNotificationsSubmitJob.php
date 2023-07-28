@@ -175,6 +175,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 			'processedUsers' => 0
 		];
 
+		$usersWithEmptyWikiId = [];
 		foreach ( $translatorsToNotify as $translator ) {
 			$user = User::newFromID( $translator->up_user )->getInstanceForUpdate();
 
@@ -196,9 +197,13 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 				try {
 					$userJobs = $this->getJobsForUser( $user, $notifyUser, $this->currentWikiId );
-					$this->addUserJobsToList( $userJobs, $jobsByTarget, $stats );
+					$this->addUserJobsToList(
+						$user, $userJobs, $jobsByTarget, $stats, $usersWithEmptyWikiId
+					);
+
 					$this->userOptionsManager->setOption( $user, $timestampOptionName, $currentDBTime );
 					$user->saveSettings();
+
 					$stats['processedUsers']++;
 				} catch ( Exception $e ) {
 					$stats['sendingFailed']++;
@@ -217,6 +222,19 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 		foreach ( $jobsByTarget as $wiki => $jobs ) {
 			$this->logInfo( "Wiki: $wiki, Jobs: " . count( $jobs ) );
 			$this->jobQueueGroupFactory->makeJobQueueGroup( $wiki )->push( $jobs );
+		}
+
+		if ( $usersWithEmptyWikiId ) {
+			// Empty wiki ID found for some jobs. Log this information. See: T342903
+			$logParam = '';
+			foreach ( $usersWithEmptyWikiId as $userId => $jobType ) {
+				$logParam .= "$userId: $jobType;";
+			}
+
+			$this->logWarn(
+				'Following notification jobs had an empty target wiki id: {param}',
+				[ 'param' => $logParam ]
+			);
 		}
 
 		// Add a log entry
@@ -355,28 +373,37 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 	/**
 	 * Add jobs for a user to the list of all jobs, also updates the stats.
+	 * @param User $user
 	 * @param array $userJobs
 	 * @param array &$jobList
 	 * @param array &$stats
+	 * @param array &$usersWithEmptyWikiId
 	 * @return void
 	 */
 	private function addUserJobsToList(
+		User $user,
 		array $userJobs,
 		array &$jobList,
-		array &$stats
+		array &$stats,
+		array &$usersWithEmptyWikiId
 	): void {
 		if ( !count( $userJobs ) ) {
 			$stats[ 'jobNoPref' ]++;
 		}
 
 		foreach ( $userJobs as $userJob ) {
-			list( $wikiId, $jobType, $job ) = $userJob;
+			[ $wikiId, $jobType, $job ] = $userJob;
 			$stats[ $jobType ]++;
 			if ( $job === null ) {
 				continue;
 			}
 
 			if ( !isset( $jobList[ $wikiId ] ) ) {
+				// T342903: WikiId is sometimes empty. Don't add them to the job queue.
+				if ( $wikiId === '' ) {
+					$usersWithEmptyWikiId[ $user->getId() ] = $jobType;
+					continue;
+				}
 				$jobList[ $wikiId ] = [];
 			}
 

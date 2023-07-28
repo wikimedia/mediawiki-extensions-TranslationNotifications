@@ -62,4 +62,8 @@ abstract class GenericTranslationNotificationsJob extends Job {
 	protected function logError( $msg, $context = [] ) {
 		$this->getLogger()->error( $this->getLogPrefix() . $msg, $context );
 	}
+
+	protected function logWarn( $msg, $context = [] ) {
+		$this->getLogger()->warning( $this->getLogPrefix() . $msg, $context );
+	}
 }
