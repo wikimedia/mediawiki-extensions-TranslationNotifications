@@ -47,5 +47,6 @@
 	"translationnotifications-sent-title": "Котормо кабарламасы жөнөтүлдү",
 	"translationnotifications-sent-body": "Котормо кабарламасын жөнөтүү аткарылды",
 	"translationnotifications-log-alllanguages": "Бардык тилдер",
-	"translationnotifications-nodeadline": "жок"
+	"translationnotifications-nodeadline": "жок",
+	"translationnotifications-generic-languages": "&lt;тилдер>"
 }
