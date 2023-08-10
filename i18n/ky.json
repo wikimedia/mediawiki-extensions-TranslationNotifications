@@ -7,7 +7,7 @@
 	},
 	"translatorsignup": "Которуучу катары катталуу",
 	"translationnotifications-info": "Колдонуучу жөнүндө маалымат",
-	"translationnotifications-username": "Колдонуучунун аты:",
+	"translationnotifications-username": "Колдонуучунун ысымы:",
 	"translationnotifications-emailstatus": "Электрондук даректин статусу:",
 	"translationnotifications-email-confirmed": "Электрондук дарегиңиз аныкталды",
 	"translationnotifications-email-disablemail": "Сиздин электрондук дарегиңиз аныкталды, бирок [[Special:Preferences|жекече ырастоолоруңузда]] башкалардын сизге билдирүү жиберүү уруксаты өчүк.",
@@ -47,5 +47,6 @@
 	"translationnotifications-sent-title": "Котормо кабарламасы жөнөтүлдү",
 	"translationnotifications-sent-body": "Котормо кабарламасын жөнөтүү аткарылды",
 	"translationnotifications-log-alllanguages": "Бардык тилдер",
-	"translationnotifications-nodeadline": "жок"
+	"translationnotifications-nodeadline": "жок",
+	"translationnotifications-generic-languages": "&lt;тилдер>"
 }
