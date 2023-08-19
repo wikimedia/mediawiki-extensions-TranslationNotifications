@@ -10,6 +10,7 @@
 
 use MediaWiki\Extension\TranslationNotifications\Scripts\DigestEmailer;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 
 /**
  * Unit tests for DigestEmailer class.

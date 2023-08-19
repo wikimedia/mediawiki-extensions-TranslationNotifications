@@ -9,11 +9,11 @@ namespace MediaWiki\Extension\TranslationNotifications\Utilities;
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsEmailJob;
 use MediaWiki\MassMessage\Job\MassMessageJob;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
 use Message;
 use SpecialPage;
-use Title;
 use User;
 
 /**

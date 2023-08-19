@@ -9,9 +9,9 @@ namespace MediaWiki\Extension\TranslationNotifications\Utilities;
 use Html;
 use Language;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
+use MediaWiki\Title\Title;
 use Message;
 use SpecialPage;
-use Title;
 use User;
 
 /**

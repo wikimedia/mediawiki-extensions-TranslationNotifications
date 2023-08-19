@@ -25,8 +25,8 @@ use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsSu
 use MediaWiki\Extension\TranslationNotifications\Utilities\LanguageSet;
 use MediaWiki\Extension\TranslationNotifications\Utilities\NotificationMessageBuilder;
 use MediaWiki\Languages\LanguageNameUtils;
+use MediaWiki\Title\Title;
 use Status;
-use Title;
 use WikiPageMessageGroup;
 
 /**
