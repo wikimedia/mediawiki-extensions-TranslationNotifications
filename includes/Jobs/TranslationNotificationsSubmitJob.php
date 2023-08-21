@@ -196,10 +196,13 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 				$this->logDebug( "Deciding notification to be sent to user: {$user->getId()}" );
 
 				try {
-					$userJobs = $this->getJobsForUser( $user, $notifyUser, $this->currentWikiId );
-					$this->addUserJobsToList(
-						$user, $userJobs, $jobsByTarget, $stats, $usersWithEmptyWikiId
+					$userJobs = $this->getJobsForUser(
+						$user,
+						$notifyUser,
+						$this->currentWikiId,
+						$usersWithEmptyWikiId
 					);
+					$this->addUserJobsToList( $userJobs, $jobsByTarget, $stats );
 
 					$this->userOptionsManager->setOption( $user, $timestampOptionName, $currentDBTime );
 					$user->saveSettings();
@@ -226,14 +229,9 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 		if ( $usersWithEmptyWikiId ) {
 			// Empty wiki ID found for some jobs. Log this information. See: T342903
-			$logParam = '';
-			foreach ( $usersWithEmptyWikiId as $userId => $jobType ) {
-				$logParam .= "$userId: $jobType;";
-			}
-
 			$this->logWarn(
 				'Following notification jobs had an empty target wiki id: {param}',
-				[ 'param' => $logParam ]
+				[ 'param' => implode( ', ', $usersWithEmptyWikiId ) ]
 			);
 		}
 
@@ -321,10 +319,14 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 	 * @param User $user
 	 * @param TranslationNotifyUser $notifyUser
 	 * @param string $currentWikiId
+	 * @param array &$usersWithEmptyWikiId
 	 * @return array
 	 */
 	private function getJobsForUser(
-		User $user, TranslationNotifyUser $notifyUser, string $currentWikiId
+		User $user,
+		TranslationNotifyUser $notifyUser,
+		string $currentWikiId,
+		array &$usersWithEmptyWikiId
 	): array {
 		$jobs = [];
 
@@ -360,12 +362,18 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 			$wiki = $this->userOptionsManager->getOption(
 				$user,
 				'translationnotifications-cmethod-talkpage-elsewhere-loc'
-			);
-			$jobs[] = [
-				$wiki,
-				'jobTalkPageOther',
-				$notifyUser->leaveUserMessage( $user, 'talkpageInOtherWiki' )
-			];
+			) ?? '';
+
+			// T342903: WikiId is sometimes empty for some users. Don't create jobs for these users.
+			if ( $wiki === '' ) {
+				$usersWithEmptyWikiId[] = $user->getId();
+			} else {
+				$jobs[] = [
+					$wiki,
+					'jobTalkPageOther',
+					$notifyUser->leaveUserMessage( $user, 'talkpageInOtherWiki' )
+				];
+			}
 		}
 
 		return $jobs;
@@ -373,20 +381,12 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 	/**
 	 * Add jobs for a user to the list of all jobs, also updates the stats.
-	 * @param User $user
 	 * @param array $userJobs
 	 * @param array &$jobList
 	 * @param array &$stats
-	 * @param array &$usersWithEmptyWikiId
 	 * @return void
 	 */
-	private function addUserJobsToList(
-		User $user,
-		array $userJobs,
-		array &$jobList,
-		array &$stats,
-		array &$usersWithEmptyWikiId
-	): void {
+	private function addUserJobsToList( array $userJobs, array &$jobList, array &$stats ): void {
 		if ( !count( $userJobs ) ) {
 			$stats[ 'jobNoPref' ]++;
 		}
@@ -398,15 +398,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 				continue;
 			}
 
-			if ( !isset( $jobList[ $wikiId ] ) ) {
-				// T342903: WikiId is sometimes empty. Don't add them to the job queue.
-				if ( $wikiId === '' ) {
-					$usersWithEmptyWikiId[ $user->getId() ] = $jobType;
-					continue;
-				}
-				$jobList[ $wikiId ] = [];
-			}
-
+			$jobList[ $wikiId ] ??= [];
 			$jobList[ $wikiId ][] = $job;
 		}
 	}
