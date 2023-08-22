@@ -230,8 +230,7 @@ class TranslationNotifyUser {
 		foreach ( $userLanguages as $langCode ) {
 			// Don't add this language if particular languages were
 			// specified and this language was not one of them.
-			if ( ( $limitLanguages && !in_array( $langCode, $languagesToNotify ) )
-			) {
+			if ( ( $limitLanguages && !in_array( $langCode, $languagesToNotify ) ) ) {
 				continue;
 			}
 
