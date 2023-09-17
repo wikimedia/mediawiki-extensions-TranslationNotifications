@@ -11,11 +11,13 @@
 
 namespace MediaWiki\Extension\TranslationNotifications;
 
+use MediaWiki\Preferences\Hook\GetPreferencesHook;
+
 /**
  * Some hooks for TranslationNotifications extension.
  */
-class Hooks {
-	public static function onGetPreferences( $user, &$preferences ) {
+class Hooks implements GetPreferencesHook {
+	public function onGetPreferences( $user, &$preferences ) {
 		foreach (
 			[
 				'translationnotifications-lang-1',
@@ -31,8 +33,6 @@ class Hooks {
 				'type' => 'api',
 			];
 		}
-
-		return true;
 	}
 
 	public static function onBeforeCreateEchoEvent(

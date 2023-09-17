@@ -94,12 +94,15 @@
 		"remoteExtPath": "TranslationNotifications"
 	},
 	"Hooks": {
-		"GetPreferences": [
-			"MediaWiki\\Extension\\TranslationNotifications\\Hooks::onGetPreferences"
-		],
+		"GetPreferences": "main",
 		"BeforeCreateEchoEvent": [
 			"MediaWiki\\Extension\\TranslationNotifications\\Hooks::onBeforeCreateEchoEvent"
 		]
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\TranslationNotifications\\Hooks"
+		}
 	},
 	"config": {
 		"TranslationNotificationsContactMethods": {
