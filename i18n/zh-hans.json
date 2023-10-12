@@ -11,7 +11,8 @@
 			"Shirayuki",
 			"Xiaomingyan",
 			"铁桶",
-			"Winston Sung"
+			"Winston Sung",
+			"Xyb"
 		]
 	},
 	"translatorsignup": "翻译者登记",
@@ -65,7 +66,7 @@
 	"translationnotifications-edit-summary": "翻译通知：$1",
 	"translationnotifications-email-priority": "这个页面有$1重要度。",
 	"translationnotifications-email-deadline": "翻译这个页面的截止日期是$1。",
-	"logentry-notifytranslators-sent": "$1{{GENDER:$2|发送了}}关于翻译页面$3的通知；语言：$4；截止日期：$5；重要度：$6；已发送给$7个收件人，给$8个收件人的通知发送失败，跳过了$9个收件人",
+	"logentry-notifytranslators-sent": "$1{{GENDER:$2|发送了}}关于翻译页面$3的通知；{{PLURAL:$10|语言}}：$4；截止日期：$5；重要度：$6；已发送给{{PLURAL:$7|$7个收件人}}，给{{PLURAL:$8|$8个收件人}}的通知发送失败，跳过了{{PLURAL:$9|$9个收件人}}，通知发送至：$11种语言",
 	"log-name-notifytranslators": "翻译通知日志",
 	"log-description-notifytranslators": "向翻译者发送可翻译页面通知的日志",
 	"translationnotifications-sent-title": "翻译通知已发送",
