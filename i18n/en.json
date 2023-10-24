@@ -31,6 +31,7 @@
 	"translationnotifications-freq-weekly": "Weekly digest",
 	"translationnotifications-freq-monthly": "Monthly digest",
 	"translationnotifications-submit": "Update settings",
+	"translationnotifications-unsubscribe": "Unsubscribe",
 	"translationnotifications-signup-success": "Your translation notification preferences were saved.",
 	"notifytranslators": "Notify translators",
 	"translationnotifications-submit-ok": "Notifications have been added to a queue and are delivered by a background job.",

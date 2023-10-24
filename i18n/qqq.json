@@ -42,6 +42,7 @@
 	"translationnotifications-freq-weekly": "Radio option label",
 	"translationnotifications-freq-monthly": "Radio option label",
 	"translationnotifications-submit": "Submit button text",
+	"translationnotifications-unsubscribe": "Unsubscribe button text",
 	"translationnotifications-signup-success": "A message that appears on the top of Special:TranslatorSignup after saving the preferences.",
 	"notifytranslators": "{{doc-special|NotifyTranslators}}",
 	"translationnotifications-submit-ok": "Used as success message.",
