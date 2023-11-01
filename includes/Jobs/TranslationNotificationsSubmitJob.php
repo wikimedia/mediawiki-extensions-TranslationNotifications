@@ -122,6 +122,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 			'month' => 2678400, // seconds in month
 			'weekly' => 604800, // seconds in week
 			'monthly' => 2678400, // seconds in month
+			'none' => null
 		];
 		$currentUnixTime = wfTimestamp();
 		$currentDBTime = wfGetDB( DB_REPLICA )->timestamp( $currentUnixTime );
@@ -172,12 +173,22 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 			'jobTalkPageOther' => 0,
 			'tooEarly' => 0,
 			'sendingFailed' => 0,
-			'processedUsers' => 0
+			'processedUsers' => 0,
+			'unsubscribed' => 0
 		];
 
 		$usersWithEmptyWikiId = [];
 		foreach ( $translatorsToNotify as $translator ) {
 			$user = User::newFromID( $translator->up_user )->getInstanceForUpdate();
+
+			$userTranslationFrequency =
+				$frequencies[$this->userOptionsManager->getOption( $user, 'translationnotifications-freq' )];
+
+			if ( $userTranslationFrequency === null ) {
+				$stats['processedUsers']++;
+				$stats['unsubscribed']++;
+				continue;
+			}
 
 			$userTimestamp = $this->userOptionsManager->getOption(
 				$user,
@@ -189,8 +200,6 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 				wfTimestamp( TS_UNIX, $userTimestamp );
 
 			$timeSinceNotification = (int)$currentUnixTime - (int)$userUnixTimestamp;
-			$userTranslationFrequency =
-				$frequencies[$this->userOptionsManager->getOption( $user, 'translationnotifications-freq' )];
 
 			if ( $timeSinceNotification > $userTranslationFrequency ) {
 				$this->logDebug( "Deciding notification to be sent to user: {$user->getId()}" );
@@ -252,7 +261,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 			'7::sentSuccess' => $stats['processedUsers'],
 			'8::sentFail' => $stats['sendingFailed'],
 			'9::tooEarly' => $stats['tooEarly'],
-			'11:plain' => $languageSet->getOptionName()
+			'11:plain' => $languageSet->getOptionName(),
 		] );
 
 		$logId = $logEntry->insert();
@@ -265,8 +274,8 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 			"Finished processing. Overall info: " .
 			"Too early: {tooEarly}, Sending failed: {sendingFailed}, Users processed: {processedUsers}. " .
 			"Jobs info: " .
-			"Total: {jobTotal}, Total with skipped: {jobTotalWithSkipped}, Email: {jobEmail}, " .
-			"Email disabled: {jobEmailDisabled}, Talk page: {jobTalkPage}, " .
+			"Total: {jobTotal}, Total with skipped & unsubscribed: {jobTotalWithSkipped}, " .
+			"Email: {jobEmail}, Email disabled: {jobEmailDisabled}, Talk page: {jobTalkPage}, " .
 			"Talk page other wiki: {jobTalkPageOther}, No preference: {jobNoPref}.",
 			$stats
 		);
@@ -409,6 +418,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 		if ( $withSkipped ) {
 			$total += $stats[ 'jobEmailDisabled' ] + $stats[ 'jobNoPref' ];
+			$total += $stats[ 'unsubscribed' ];
 		}
 
 		return $total;

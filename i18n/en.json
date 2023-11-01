@@ -30,6 +30,7 @@
 	"translationnotifications-freq-month": "At most once a month",
 	"translationnotifications-freq-weekly": "Weekly digest",
 	"translationnotifications-freq-monthly": "Monthly digest",
+	"translationnotifications-freq-none": "None (unsubscribed)",
 	"translationnotifications-submit": "Update settings",
 	"translationnotifications-unsubscribe": "Unsubscribe",
 	"translationnotifications-signup-success": "Your translation notification preferences were saved.",

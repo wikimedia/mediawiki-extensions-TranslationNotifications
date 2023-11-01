@@ -74,6 +74,10 @@ class DigestEmailer extends Maintenance {
 			$user = User::newFromId( $translator );
 			$notificationFreq = $userOptionsManager->getOption( $user, 'translationnotifications-freq' );
 
+			if ( $notificationFreq === null ) {
+				continue;
+			}
+
 			$userName = $user->getName();
 			$this->output( "Sending digest to: $userName\n\t" .
 				"Frequency preference: $notificationFreq\n" );
