@@ -72,7 +72,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 		);
 	}
 
-	public function __construct( $title, $params ) {
+	public function __construct( Title $title, array $params ) {
 		$services = MediaWikiServices::getInstance();
 		$this->userOptionsManager = $services->getUserOptionsManager();
 		$this->jobQueueGroupFactory = $services->getJobQueueGroupFactory();
@@ -274,7 +274,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 		return true;
 	}
 
-	private function getSourceLanguage( Title $translatablePageTitle ) {
+	private function getSourceLanguage( Title $translatablePageTitle ): string {
 		$translatablePage = TranslatablePage::newFromTitle( $translatablePageTitle );
 		return $translatablePage->getMessageGroup()->getSourceLanguage();
 	}

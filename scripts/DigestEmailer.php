@@ -35,7 +35,7 @@ class DigestEmailer extends Maintenance {
 		$this->requireExtension( 'TranslationNotifications' );
 	}
 
-	public function execute() {
+	public function execute(): void {
 		$this->lock();
 
 		// Get the Translators with weekly or monthly notification preferences.
@@ -54,7 +54,7 @@ class DigestEmailer extends Maintenance {
 		$this->unlock();
 	}
 
-	public function sendEmails( $translators, $notifications ) {
+	public function sendEmails( array $translators, array $notifications ): array {
 		$config = $this->getConfig();
 		// Initialize early to avoid calling these repeatedly within the loop
 		$noReplyAddress = $config->get( 'NoReplyAddress' );
@@ -213,7 +213,7 @@ class DigestEmailer extends Maintenance {
 		return $mailstatus;
 	}
 
-	protected function sort( $notifications ) {
+	protected function sort( array $notifications ): array {
 		$prioritySet = [
 			'unset' => 0,
 			'low' => 1,
@@ -231,7 +231,7 @@ class DigestEmailer extends Maintenance {
 		return $notifications;
 	}
 
-	protected function lock() {
+	protected function lock(): void {
 		// Lock this process to avoid multiple instances running and duplicate mails being sent.
 		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
 		$lockKey = $cache->makeKey( 'translationnotifications-digestemailer-lock' );
@@ -242,14 +242,14 @@ class DigestEmailer extends Maintenance {
 		$cache->set( $lockKey, true, 3600 ); // Expires in 1 hour.
 	}
 
-	protected function unlock() {
+	protected function unlock(): void {
 		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
 		$lockKey = $cache->makeKey( 'translationnotifications-digestemailer-lock' );
 		// release the lock.
 		$cache->delete( $lockKey );
 	}
 
-	protected function getTranslators() {
+	protected function getTranslators(): array {
 		$translators = [];
 		$dbr = wfGetDB( DB_REPLICA );
 		$translatorsConds = [ 'up_property' => 'translationnotifications-freq' ];
