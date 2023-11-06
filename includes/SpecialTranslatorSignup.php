@@ -69,6 +69,14 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		$form->setId( 'translationnotifications-form' );
 		$form->setSubmitID( 'translationnotifications-submit' );
 		$form->setSubmitTextMsg( 'translationnotifications-submit' );
+
+		$form->addButton( [
+			'name' => 'translationnotifications-unsubscribe',
+			'value' => 'unsubscribe',
+			'label-message' => 'translationnotifications-unsubscribe',
+			'attribs' => [ 'disabled' => $this->isUserUnsubscribed() ],
+			'flags' => 'destructive',
+		] );
 		// Without the following code the translationnotifications-text appears on this page. See: T334371
 		$form->setHeaderHtml( '' );
 	}
@@ -222,6 +230,18 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 	 */
 	public function onSubmit( array $formData ) {
 		$user = $this->getUser()->getInstanceForUpdate();
+
+		if ( $this->getRequest()->getVal( 'translationnotifications-unsubscribe' ) !== null ) {
+			$contactMethods = $this->getConfig()->get( 'TranslationNotificationsContactMethods' );
+
+			// We set 'false' for contact methods that may are enabled now, but may be disabled in the future.
+			foreach ( $contactMethods as $method => $value ) {
+				$this->userOptionsManager->setOption( $user, "translationnotifications-cmethod-$method", false );
+			}
+			$user->saveSettings();
+			return true;
+		}
+
 		$this->userOptionsManager->setOption( $user, 'translationnotifications-lastactivity', wfTimestampNow() );
 		// @todo Needs input validation
 		foreach ( $formData as $key => $value ) {
@@ -270,5 +290,20 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 
 	protected function getDisplayFormat() {
 		return 'ooui';
+	}
+
+	private function isUserUnsubscribed(): bool {
+		$contactMethods = $this->getConfig()->get( 'TranslationNotificationsContactMethods' );
+		foreach ( $contactMethods as $method => $value ) {
+			if (
+				$this->userOptionsManager->getOption(
+					$this->getUser(),
+					"translationnotifications-cmethod-$method" )
+				) {
+				return false;
+			}
+		}
+
+		return true;
 	}
 }
