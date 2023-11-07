@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"John Reid"
+			"John Reid",
+			"CiphriusKane"
 		]
 	},
 	"translatorsignup": "Owerseter signup",
@@ -24,7 +25,7 @@
 	"translationnotifications-cmethod-feed": "Feed",
 	"translationnotifications-frequency": "Contact frequencie",
 	"translationnotifications-freq-always": "Whan thaur is sommit new tae owerset",
-	"translationnotifications-freq-week": "At maist yince per week",
+	"translationnotifications-freq-week": "At maist ance ae week",
 	"translationnotifications-freq-month": "At maist yince per month",
 	"translationnotifications-freq-weekly": "Weeklie digest",
 	"translationnotifications-freq-monthly": "Monthlie digest",
@@ -56,10 +57,10 @@
 	"translationnotifications-email-deadline": "The deidline fer owersetin this page is $1.",
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|sent}} aen annooncement aneat owersetin page $3; {{PLURAL:$10|leid|leids}}: $4; deidline: $5; prioritie: $6; sent til {{PLURAL:$7|yin receepient|$7 receepients}}, failed fer {{PLURAL:$8|yin receepient|$8 receepients}}, skipt fer {{PLURAL:$9|yin receepient|$9 receepients}}",
 	"log-name-notifytranslators": "Owersetin annooncements",
-	"log-description-notifytranslators": "Ae log o annooncements sent til oweerseters aneat owersetable pages",
+	"log-description-notifytranslators": "Ae log o annooncements sent til owersetters anent owersettable pages",
 	"translationnotifications-sent-title": "Owersetin annooncement",
 	"translationnotifications-sent-body": "Owersetin annooncementn wis sent.",
 	"translationnotifications-log-alllanguages": "aw leids",
 	"translationnotifications-nodeadline": "nane",
-	"translationnotifications-signup-legal": "Ye agree that bi providin this information we can contact ye aneat topics relati til {{SITENAME}} that we think micht be o interest til ye. Ye agree that yer data is owerganged bi oor [[{{MediaWiki:Privacypage}}|preevacie policie]]."
+	"translationnotifications-signup-legal": "Ye agree that bi providin this information we can contact ye anent topics relati til {{SITENAME}} that we think micht be o interest til ye. Ye agree that yer data is owerganged bi oor [[{{MediaWiki:Privacypage}}|privacy policy]]."
 }
