@@ -33,6 +33,7 @@
 	"translationnotifications-freq-weekly": "Riepilogo settimanale",
 	"translationnotifications-freq-monthly": "Riepilogo mensile",
 	"translationnotifications-submit": "Aggiorna impostazioni",
+	"translationnotifications-unsubscribe": "Annulla iscrizione",
 	"translationnotifications-signup-success": "Le preferenze per le notifiche sulle traduzioni sono state salvate.",
 	"notifytranslators": "Informa i traduttori",
 	"translationnotifications-submit-ok": "Le notifiche sono state aggiunte a una coda e vengono consegnate da un processo in background.",
