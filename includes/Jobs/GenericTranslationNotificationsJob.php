@@ -46,24 +46,24 @@ abstract class GenericTranslationNotificationsJob extends Job {
 		return $this->logger;
 	}
 
-	protected function getLogPrefix() {
+	protected function getLogPrefix(): string {
 		return '[Job: ' . $this->getType() . '][Request ID: ' . $this->getRequestId() .
 			'][Title: ' . $this->title->getPrefixedText() . '] ';
 	}
 
-	protected function logInfo( $msg, $context = [] ) {
+	protected function logInfo( string $msg, array $context = [] ): void {
 		$this->getLogger()->info( $this->getLogPrefix() . $msg, $context );
 	}
 
-	protected function logDebug( $msg, $context = [] ) {
+	protected function logDebug( string $msg, array $context = [] ): void {
 		$this->getLogger()->debug( $this->getLogPrefix() . $msg, $context );
 	}
 
-	protected function logError( $msg, $context = [] ) {
+	protected function logError( string $msg, array $context = [] ): void {
 		$this->getLogger()->error( $this->getLogPrefix() . $msg, $context );
 	}
 
-	protected function logWarn( $msg, $context = [] ) {
+	protected function logWarn( string $msg, array $context = [] ): void {
 		$this->getLogger()->warning( $this->getLogPrefix() . $msg, $context );
 	}
 }

@@ -17,7 +17,7 @@ use MediaWiki\Extension\TranslationNotifications\Utilities\NotificationMessageBu
  * Class for formatting TranslationNotifications logs.
  */
 class TranslationNotificationsLogFormatter extends LogFormatter {
-	public function getMessageParameters() {
+	public function getMessageParameters(): array {
 		$params = parent::getMessageParameters();
 
 		// $params[3] is $languagesForLog,

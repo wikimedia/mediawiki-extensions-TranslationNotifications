@@ -23,41 +23,23 @@ use User;
  * @since 2019.10
  */
 class TranslationNotifyUser {
-	/**
-	 * @var Title
-	 */
-	private $translatablePageTitle;
-
-	/**
-	 * @var User
-	 */
-	private $notifier;
-
-	/**
-	 * @var string
-	 */
-	private $noReplyAddress;
-
-	/**
-	 * @var string[]
-	 */
-	private $localInterwikis;
-
-	/**
-	 * @var bool
-	 */
-	private $httpsInEmail;
+	private Title $translatablePageTitle;
+	private User $notifier;
+	private string $noReplyAddress;
+	/** @var string[] */
+	private array $localInterwikis;
+	private bool $httpsInEmail;
 
 	// Request information
-	private $priority;
-	private $deadline;
-	private $notificationText;
-
+	/** Request priority: `unset`, `high`, `medium` or `low` */
+	private string $priority;
+	private string $deadline;
+	private string $notificationText;
 	/**
 	 * A list of languages for which the translators are to be notified. Empty for all languages.
 	 * @var string[]
 	 */
-	private $languagesToNotify;
+	private array $languagesToNotify;
 
 	/**
 	 * @param Title $translatablePageTitle
@@ -290,7 +272,7 @@ class TranslationNotifyUser {
 	 * @return string|int a PROTO_* constant
 	 */
 	protected function getUrlProtocol() {
-		return $this->httpsInEmail === false
+		return !$this->httpsInEmail
 			? PROTO_CANONICAL
 			: PROTO_HTTPS;
 	}

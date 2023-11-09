@@ -36,7 +36,7 @@ use WikiPageMessageGroup;
  * @ingroup SpecialPage TranslateSpecialPage
  */
 class SpecialNotifyTranslators extends FormSpecialPage {
-	public static $right = 'translate-manage';
+	public static string $right = 'translate-manage';
 
 	/** @var LanguageNameUtils */
 	private $languageNameUtils;
@@ -60,19 +60,19 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		return true;
 	}
 
-	protected function getGroupName() {
+	protected function getGroupName(): string {
 		return 'translation';
 	}
 
-	protected function getMessagePrefix() {
+	protected function getMessagePrefix(): string {
 		return 'translationnotifications';
 	}
 
-	protected function getDisplayFormat() {
+	protected function getDisplayFormat(): string {
 		return 'ooui';
 	}
 
-	protected function alterForm( HTMLForm $form ) {
+	protected function alterForm( HTMLForm $form ): void {
 		$form->setId( 'notifytranslators-form' );
 		$form->setSubmitID( 'translationnotifications-send-notification-button' );
 		$form->setSubmitTextMsg( 'translationnotifications-send-notification-button' );

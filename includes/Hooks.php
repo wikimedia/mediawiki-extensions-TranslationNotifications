@@ -17,6 +17,7 @@ use MediaWiki\Preferences\Hook\GetPreferencesHook;
  * Some hooks for TranslationNotifications extension.
  */
 class Hooks implements GetPreferencesHook {
+	/** @inheritDoc */
 	public function onGetPreferences( $user, &$preferences ) {
 		foreach (
 			[
@@ -35,6 +36,12 @@ class Hooks implements GetPreferencesHook {
 		}
 	}
 
+	/**
+	 * Hook: BeforeCreateEchoEvent
+	 * @param array[] &$notifications
+	 * @param array[] &$notificationCategories
+	 * @param array[] &$icons
+	 */
 	public static function onBeforeCreateEchoEvent(
 		&$notifications,
 		&$notificationCategories,

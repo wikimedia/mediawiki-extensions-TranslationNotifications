@@ -51,20 +51,21 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		return true;
 	}
 
-	protected function getGroupName() {
+	protected function getGroupName(): string {
 		return 'translation';
 	}
 
+	/** @inheritDoc */
 	public function execute( $par ) {
 		$this->requireLogin();
 		parent::execute( $par );
 	}
 
-	protected function getMessagePrefix() {
+	protected function getMessagePrefix(): string {
 		return 'translationnotifications';
 	}
 
-	protected function alterForm( HTMLForm $form ) {
+	protected function alterForm( HTMLForm $form ): void {
 		$form->setWrapperLegend( false );
 		$form->setId( 'translationnotifications-form' );
 		$form->setSubmitID( 'translationnotifications-submit' );
@@ -91,7 +92,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		return '';
 	}
 
-	protected function getFormFields() {
+	protected function getFormFields(): array {
 		$this->getOutput()->addModules( 'ext.translationnotifications.translatorsignup' );
 		$user = $this->getUser();
 
@@ -260,7 +261,8 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		);
 	}
 
-	protected function getOtherWikis() {
+	/** @return array<string,string> */
+	protected function getOtherWikis(): array {
 		global $wgConf;
 		if ( !ExtensionRegistry::getInstance()->isLoaded( 'CentralAuth' ) ) {
 			return [];
@@ -288,7 +290,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		return $wikis;
 	}
 
-	protected function getDisplayFormat() {
+	protected function getDisplayFormat(): string {
 		return 'ooui';
 	}
 
