@@ -22,4 +22,12 @@ $cfg['exclude_analysis_directory_list'] = array_merge(
 	]
 );
 
+$cfg['exclude_file_list'] = array_merge(
+	$cfg['exclude_file_list'],
+	[
+		'../../extensions/MassMessage/.phan/stubs/Event.php',
+		'../../extensions/MassMessage/.phan/stubs/EchoEventPresentationModel.php'
+	]
+);
+
 return $cfg;
