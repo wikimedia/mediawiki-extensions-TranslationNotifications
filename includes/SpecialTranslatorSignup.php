@@ -219,6 +219,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 				$this->msg( 'translationnotifications-freq-month' )->escaped() => 'month',
 				$this->msg( 'translationnotifications-freq-weekly' )->escaped() => 'weekly',
 				$this->msg( 'translationnotifications-freq-monthly' )->escaped() => 'monthly',
+				$this->msg( 'translationnotifications-freq-none' )->escaped() => 'none',
 			],
 		];
 
@@ -233,12 +234,8 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		$user = $this->getUser()->getInstanceForUpdate();
 
 		if ( $this->getRequest()->getVal( 'translationnotifications-unsubscribe' ) !== null ) {
-			$contactMethods = $this->getConfig()->get( 'TranslationNotificationsContactMethods' );
+			$this->userOptionsManager->setOption( $user, 'translationnotifications-freq', 'none' );
 
-			// We set 'false' for contact methods that may are enabled now, but may be disabled in the future.
-			foreach ( $contactMethods as $method => $value ) {
-				$this->userOptionsManager->setOption( $user, "translationnotifications-cmethod-$method", false );
-			}
 			$user->saveSettings();
 			return true;
 		}
