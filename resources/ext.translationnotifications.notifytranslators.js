@@ -61,7 +61,8 @@
 			priority,
 			deadline,
 			infuseElement( 'mw-input-wpNotificationText' ).getValue(),
-			1 // it's just an example, so provide one language
+			1, // it's just an example, so provide one language,
+			location.protocol + '//' + location.host + mw.util.getUrl( 'Special:TranslatorSignup' )
 		);
 
 		new mw.Api().parse( fullText.escaped().replace( /\n{3,}/g, '\n\n' ) )
