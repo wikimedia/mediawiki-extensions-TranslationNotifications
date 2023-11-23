@@ -4,7 +4,8 @@
 			"MathXplore",
 			"Omotecho",
 			"Otokoume",
-			"Shirayuki"
+			"Shirayuki",
+			"春春眠眠"
 		]
 	},
 	"translatorsignup": "翻訳者登録",
@@ -32,6 +33,7 @@
 	"translationnotifications-freq-weekly": "週間ダイジェスト",
 	"translationnotifications-freq-monthly": "月間ダイジェスト",
 	"translationnotifications-submit": "設定を更新",
+	"translationnotifications-unsubscribe": "購読解除",
 	"translationnotifications-signup-success": "翻訳の通知の設定を保存しました。",
 	"notifytranslators": "翻訳者に通知",
 	"translationnotifications-submit-ok": "通知をキューに追加しました。通知はバックグラウンドジョブによって送信されます。",
