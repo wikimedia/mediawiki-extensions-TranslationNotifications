@@ -1,0 +1,12 @@
+{
+	"SpecialPageAliases": {
+		"NotifyTranslators": [
+			"Atentigi_tradukanton",
+			"Atentigi_tradukiston"
+		],
+		"TranslatorSignup": [
+			"Registrigi_kiel_tradukanto",
+			"Registrigi_kiel_tradukisto"
+		]
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"SpecialPageAliases": {
+		"NotifyTranslators": [
+			"Thông_báo_biên_dịch_viên"
+		],
+		"TranslatorSignup": [
+			"Đăng_ký_biên_dịch_viên",
+			"Đăng_kí_biên_dịch_viên"
+		]
+	}
+}
