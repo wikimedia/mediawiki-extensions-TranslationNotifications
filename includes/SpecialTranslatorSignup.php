@@ -57,7 +57,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 
 	/** @inheritDoc */
 	public function execute( $par ) {
-		$this->requireLogin();
+		$this->requireNamedUser();
 		parent::execute( $par );
 	}
 
