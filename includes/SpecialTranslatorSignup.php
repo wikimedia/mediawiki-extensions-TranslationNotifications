@@ -21,7 +21,7 @@ use LanguageCode;
 use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\SiteMatrix\SiteMatrix;
 use MediaWiki\Languages\LanguageNameUtils;
-use MediaWiki\User\UserOptionsManager;
+use MediaWiki\User\Options\UserOptionsManager;
 use MediaWiki\WikiMap\WikiMap;
 use SpecialPage;
 
