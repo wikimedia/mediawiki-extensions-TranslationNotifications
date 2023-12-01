@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"ANTHONY DERY",
 			"Joachim Yirkang"
 		]
 	},
-	"translationnotifications-freq-none": "Kaŋa zaa (ba deebo)"
+	"translationnotifications-freq-none": "Kaŋa zaa (ba deebo)",
+	"translationnotifications-talkpage-body": "Agoo\n $2,\n\nFo nyɛrɛ la a teɛre-ma ŋa bonso a fo because you {{GENDER:$1|saane kpɛ}} a e leɛraa {{PLURAL:$9|te tɔ}} $3 a {{SITENAME}}.\nA paagyi [[$4]] be be la ko leɛroo. Fo naŋ toɔŋ leɛre o la a kyɛ:\n$5\n\n$6\n$7\n\n$8\n\nA fo sommo taa la bareka puubu. Leɛreba boɔrɔ la a fo sommo{{SITENAME}} a toŋ neŋ aŋa nemtɛɛtɛɛ a paaloŋ poɔ.\n\nKa foo naŋ yi bee leɛre a fo teɛre-ma yele a leɛroo poɔ,sɔroo la kaa nyɛ [$10 meŋɛ: leɛra saane].\n\nBareka!\n\n{{SITENAME}} leɛroo zukaareba"
 }
