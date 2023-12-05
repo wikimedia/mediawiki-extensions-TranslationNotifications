@@ -3,7 +3,8 @@
 		"authors": [
 			"Dbc334",
 			"Eleassar",
-			"Janezdrilc"
+			"Janezdrilc",
+			"Upwinxp"
 		]
 	},
 	"translatorsignup": "Prijava za prevajalca",
@@ -53,7 +54,7 @@
 	"translationnotifications-notification-url-listitem": "prevedi v $1",
 	"translationnotifications-digestemail-subject": "E-pošta s prošnjami za prevode iz {{SITENAME}}",
 	"translationnotifications-digestemail-body": "Pozdravljeni, $1,\n\nto e-poštno sporočilo ste prejeli, ker ste se v projektu {{SITENAME}} {{GENDER:$1|prijavili}} kot prevajalec $2.\n\nTam {{PLURAL:$3|je na voljo 1 stran|sta na voljo $3 strani|so na voljo $3 strani|je na voljo $3 strani}} za prevod. Podrobnosti so navedene spodaj.\n\n$4 \n\nVašo pomoč zelo cenimo. Prevajalci, kot ste vi, pomagajo projektu {{SITENAME}} delovati\nkot resnično večjezična skupnost.\n\nHvala!\n\nAdministratorji prevodov projekta {{SITENAME}}\n\n----\n\nTo e-poštno sporočilo ste prejeli, ker ste se v projektu {{SITENAME}} naročili na prejemanje e-poštnih sporočil v zvezi s prevodi. Če se želite odnaročiti ali spremeniti svoje nastavitve obveščanja o prevodih, obiščite stran <$5>.",
-	"translationnotifications-digestemail-notification-line": "Dne $1 je $2 {{GENDER:|označil|označila|označil_a}} stran »$3« za prevod. Prevedete jo lahko na $4.",
+	"translationnotifications-digestemail-notification-line": "Dne $1 je $2 {{GENDER:|označil|označila|označil/a}} stran »$3« za prevod. Prevedete jo lahko na $4.",
 	"translationnotifications-edit-summary": "Obvestilo: $1",
 	"translationnotifications-email-priority": "Prioriteta te strani je $1.",
 	"translationnotifications-email-deadline": "Rok za prevod te strani je $1.",
