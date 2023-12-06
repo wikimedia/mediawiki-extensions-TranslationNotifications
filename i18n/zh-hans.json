@@ -12,7 +12,8 @@
 			"Winston Sung",
 			"Xiaomingyan",
 			"Xyb",
-			"铁桶"
+			"铁桶",
+			"Lakejason0"
 		]
 	},
 	"translatorsignup": "翻译者登记",
@@ -75,5 +76,6 @@
 	"translationnotifications-nodeadline": "无",
 	"translationnotifications-signup-legal": "您同意通过此信息，我们可能联系您有关{{SITENAME}}的主题，只要我们认为您对此很感兴趣。您同意您的数据受我们的[[{{MediaWiki:Privacypage}}|隐私政策]]支配。",
 	"translationnotifications-generic-languages": "&lt;语言>",
-	"translationnotifications-text": "使用下面的表单以向译者发送翻译请求。"
+	"translationnotifications-text": "使用下面的表单以向译者发送翻译请求。",
+	"echo-category-title-translationnotifications": "翻译通知"
 }

@@ -77,5 +77,6 @@
 	"translationnotifications-nodeadline": "nenhum",
 	"translationnotifications-signup-legal": "Você concorda que ao fornecer esta informação, podemos contatá-lo em relação a tópicos relacionados a {{SITENAME}} que achamos que podem ser de seu interesse. Você concorda que seus dados estão sujeitos à nossa [[{{MediaWiki:Privacypage}}|política de privacidade]].",
 	"translationnotifications-generic-languages": "&lt;idiomas>",
-	"translationnotifications-text": "Use o formulário abaixo para enviar solicitações de tradução aos tradutores."
+	"translationnotifications-text": "Use o formulário abaixo para enviar solicitações de tradução aos tradutores.",
+	"echo-pref-tooltip-inactive-unsubscribe": "Notificar-me se eu cancelar o recebimento de notificações de tradução sobre páginas novas ou atualizadas disponíveis para tradução"
 }
