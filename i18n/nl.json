@@ -8,7 +8,8 @@
 			"McDutchie",
 			"MrLeopold",
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"Sjoerddebruin"
 		]
 	},
 	"translatorsignup": "Vertalersregistratie",
@@ -42,8 +43,15 @@
 	"translationnotifications-send-notification-button": "Bericht naar vertalers sturen",
 	"translationnotifications-preview-notification-button": "Voorvertoning melding",
 	"translationnotifications-deadline-label": "Deadline voor deze melding:",
+	"translationnotifications-deadline-help-message": "Selecteer een datum die niet eerder is dan vandaag",
 	"translationnotifications-languages-to-notify-label": "Geselecteerde talen/uitzonderingen:",
 	"translationnotifications-languages-to-notify-label-help-message": "Laat leeg om meldingen naar alle vertalers van alle talen te sturen",
+	"translationnotifications-requested-languages-label": "Gevraagde talen:",
+	"translationnotifications-languages-to-notify": "Uitgekozen talen:",
+	"translationnotifications-languages-to-not-notify": "Uitgekozen uitzonderingen:",
+	"translationnotifications-languages-to-notify-all-label": "Alle talen",
+	"translationnotifications-languages-to-notify-only-selected-label": "Alleen uitgekozen talen:",
+	"translationnotifications-languages-to-notify-all-except-label": "Alle talen, behalve:",
 	"translationnotifications-sourcelang-only": "Het is niet mogelijk een bericht alleen naar de vertalers van de brontaal te sturen.",
 	"translationnotifications-priority": "Prioriteit:",
 	"translationnotifications-priority-high": "hoog",

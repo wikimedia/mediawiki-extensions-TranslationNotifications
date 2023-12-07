@@ -36,6 +36,8 @@
 	"notifytranslators": "অনুবাদকগণকে বিজ্ঞপ্তি দিন",
 	"translationnotifications-send-notification-button": "অনুবাদকদের বিজ্ঞপ্তি পাঠান",
 	"translationnotifications-preview-notification-button": "বিজ্ঞপ্তি প্রাকদর্শন করুন",
+	"translationnotifications-languages-to-notify-all-label": "সকল ভাষা",
+	"translationnotifications-languages-to-notify-only-selected-label": "শুধুমাত্র নির্বাচিত ভাষা:",
 	"translationnotifications-sourcelang-only": "শুধুমাত্র উৎস ভাষার অনুবাদগণের কাছে একটি বিজ্ঞপ্তি পাঠানো যাবে না।",
 	"translationnotifications-priority": "গুরুত্ব:",
 	"translationnotifications-priority-high": "উচ্চ",
