@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fahimrazick",
 			"Karthi.dr",
 			"Logicwiki",
 			"Shanmugamp7",
@@ -50,6 +51,6 @@
 	"log-name-notifytranslators": "மொழிபெயர்ப்பு அறிவிப்புகள்",
 	"translationnotifications-sent-title": "மொழிபெயர்ப்பு அறிவிப்பு அனுப்பப்பட்டது",
 	"translationnotifications-sent-body": "மொழிபெயர்ப்பு அறிவிப்பு அனுப்பப்பட்டது.",
-	"translationnotifications-log-alllanguages": "மொழிகள் அனைத்தும்",
+	"translationnotifications-log-alllanguages": "எல்லா மொழிகளும்",
 	"translationnotifications-nodeadline": "ஏதுமில்லை"
 }
