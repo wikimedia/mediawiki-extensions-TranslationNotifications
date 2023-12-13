@@ -7,7 +7,7 @@
 		]
 	},
 	"translatorsignup": "Aschreiwen als Iwwersetzer",
-	"translatorsignup-summary": "Benotzt dës Säit fir unzeginn a wat fir eng Sproochen Dir iwwersetze kënnt a wéi Dir iwwer Iwwersetzungsufroe wëllt kontaktéiert ginn.",
+	"translatorsignup-summary": "Benotzt dës Säit fir unzeginn, op wat fir Sproochen Dir iwwersetze kënnt a wéi Dir iwwer Iwwersetzungsufroe wëllt kontaktéiert ginn.",
 	"translationnotifications-desc": "Erlaabt et Iwwersetzer fir sech op Iwwersetzungs-Noriichten z'abonnéieren",
 	"translationnotifications-info": "Benotzerinformatioun",
 	"translationnotifications-username": "Benotzernumm:",
@@ -69,7 +69,7 @@
 	"translationnotifications-sent-body": "D'Iwwersetzungs-Matdeelung gouf geschéckt",
 	"translationnotifications-log-alllanguages": "all Sproochen",
 	"translationnotifications-nodeadline": "keng",
-	"translationnotifications-signup-legal": "Duerch d'Matdeele vun dëser Informatioun sidd Dir domat d'accord datt mir Iech zu Themen a Relatioun mat {{SITENAME}} kontaktéiere vun deene mir mengen datt se vun Interesse fir Iech sinn. Dir sidd averstanen datt Är Donnéeën eisen  [[{{MediaWiki:Privacypage}}|Dateschutzrichlinen]] ënnerleien.",
+	"translationnotifications-signup-legal": "Duerch d'Matdeele vun dësen Informatioune sidd Dir domat averstanen, datt mir Iech zu Theemen a Relatioun mat {{SITENAME}} kontaktéieren, vun deene mir mengen, datt se vun Interesse fir Iech sinn. Dir sidd domat averstanen, datt Är Donnéeën eisen [[{{MediaWiki:Privacypage}}|Dateschutzrichlinnen]] ënnerleien.",
 	"translationnotifications-generic-languages": "&lt;Sproochen>",
 	"translationnotifications-text": "Benotzt de Formulaire hei drënner fir Iwwersetzungsufroen un d'Iwwersetzer ze schécken"
 }
