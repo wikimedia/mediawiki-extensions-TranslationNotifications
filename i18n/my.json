@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dr Lotus Black"
+			"Dr Lotus Black",
+			"Ninjastrikers"
 		]
 	},
 	"translatorsignup": "ဘာသာပြန်သူ လက်မှတ်ရေးထိုးခြင်း",
@@ -31,7 +32,7 @@
 	"notifytranslators": "ဘာသာပြန်သူများကို အသိပေးရန်",
 	"translationnotifications-send-notification-button": "ဘာသာပြန်သူများကို အသိပေးချက်ပို့ရန်",
 	"translationnotifications-preview-notification-button": "အသိပေးချက်ကို အကြိုကြည့်ရန်",
-	"translationnotifications-languages-to-notify-label": "မည်သည့်ဘာသာစကားများကို အသိပေးမည်:",
+	"translationnotifications-languages-to-notify-label": "ရွေးချယ်ထားသော ဘာသာစကားများ/ခြွင်းချက်များ:",
 	"translationnotifications-languages-to-notify-all-label": "ဘာသာစကားများ အားလုံး",
 	"translationnotifications-sourcelang-only": "ရင်းမြစ်ဘာသာစကား၏ ဘာသာပြန်သူများထံသို့သာ အသိပေးချက်တစ်ခု မပို့ပေးနိုင်ပါ။",
 	"translationnotifications-priority": "ဦးစားပေးအဆင့်:",
