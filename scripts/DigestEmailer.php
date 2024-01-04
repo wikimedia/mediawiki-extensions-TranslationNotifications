@@ -23,10 +23,10 @@ use Maintenance;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsEmailJob;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use ObjectCache;
-use SpecialPage;
-use User;
 
 class DigestEmailer extends Maintenance {
 	public function __construct() {

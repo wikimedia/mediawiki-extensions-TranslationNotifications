@@ -6,7 +6,7 @@ namespace MediaWiki\Extension\TranslationNotifications;
 use MediaWiki\Extension\Notifications\Formatters\EchoEventPresentationModel;
 use MediaWiki\Extension\Notifications\Model\Event;
 use MediaWiki\MediaWikiServices;
-use SpecialPage;
+use MediaWiki\SpecialPage\SpecialPage;
 
 /**
  * Presentation model for the translation notification unsubscribed event

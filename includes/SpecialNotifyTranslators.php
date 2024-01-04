@@ -15,7 +15,6 @@
 namespace MediaWiki\Extension\TranslationNotifications;
 
 use ErrorPageError;
-use FormSpecialPage;
 use HTMLForm;
 use JobQueueGroup;
 use MediaWiki\Cache\LinkBatchFactory;
@@ -25,8 +24,9 @@ use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsSu
 use MediaWiki\Extension\TranslationNotifications\Utilities\LanguageSet;
 use MediaWiki\Extension\TranslationNotifications\Utilities\NotificationMessageBuilder;
 use MediaWiki\Languages\LanguageNameUtils;
+use MediaWiki\SpecialPage\FormSpecialPage;
+use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
-use Status;
 use WikiPageMessageGroup;
 
 /**

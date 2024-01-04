@@ -6,13 +6,13 @@
 
 namespace MediaWiki\Extension\TranslationNotifications\Utilities;
 
-use Html;
 use Language;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
+use MediaWiki\Html\Html;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use Message;
-use SpecialPage;
-use User;
 
 /**
  * A class that helps builds the notification message to be sent to users

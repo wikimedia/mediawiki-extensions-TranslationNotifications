@@ -17,8 +17,8 @@ use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Options\UserOptionsManager;
+use MediaWiki\User\User;
 use MediaWiki\WikiMap\WikiMap;
-use User;
 use Wikimedia\Rdbms\IResultWrapper;
 
 /**

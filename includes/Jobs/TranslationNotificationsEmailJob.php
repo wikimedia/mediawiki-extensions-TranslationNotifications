@@ -9,7 +9,7 @@ namespace MediaWiki\Extension\TranslationNotifications\Jobs;
 use InvalidArgumentException;
 use MailAddress;
 use MediaWiki\Title\Title;
-use User;
+use MediaWiki\User\User;
 use UserMailer;
 
 /**

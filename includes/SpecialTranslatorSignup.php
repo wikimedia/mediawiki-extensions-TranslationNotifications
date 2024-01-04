@@ -14,16 +14,16 @@
 namespace MediaWiki\Extension\TranslationNotifications;
 
 use ExtensionRegistry;
-use FormSpecialPage;
-use Html;
 use HTMLForm;
 use LanguageCode;
 use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\SiteMatrix\SiteMatrix;
+use MediaWiki\Html\Html;
 use MediaWiki\Languages\LanguageNameUtils;
+use MediaWiki\SpecialPage\FormSpecialPage;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\User\Options\UserOptionsManager;
 use MediaWiki\WikiMap\WikiMap;
-use SpecialPage;
 
 /**
  * Form for translators to register contact methods

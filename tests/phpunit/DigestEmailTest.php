@@ -11,6 +11,7 @@
 use MediaWiki\Extension\TranslationNotifications\Scripts\DigestEmailer;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 
 /**
  * Unit tests for DigestEmailer class.
