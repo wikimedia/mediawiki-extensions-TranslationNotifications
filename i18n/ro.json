@@ -3,6 +3,7 @@
 		"authors": [
 			"Firilacroco",
 			"Minisarm",
+			"NGC 54",
 			"Stelistcristi"
 		]
 	},
@@ -43,5 +44,6 @@
 	"translationnotifications-email-priority": "Prioritatea acestei pagini este $1.",
 	"translationnotifications-log-alllanguages": "toate limbile",
 	"translationnotifications-nodeadline": "niciuna",
-	"translationnotifications-generic-languages": "&lt;limbi>"
+	"translationnotifications-generic-languages": "&lt;limbi>",
+	"echo-category-title-translationnotifications": "Notificări pentru traduceri"
 }
