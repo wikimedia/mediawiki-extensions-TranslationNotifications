@@ -233,7 +233,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 			$contributionCount = $dbr->newSelectQueryBuilder()
 				->from( $table )
 				->where( [ $prefixedActorColumn => $actorId ] )
-				->andWhere( "$prefixedTimestampColumn > " . $dbr->addQuotes( $inactiveTs ) )
+				->andWhere( $dbr->expr( $prefixedTimestampColumn, '>', $inactiveTs ) )
 				->limit( 1 )
 				->fetchRowCount();
 

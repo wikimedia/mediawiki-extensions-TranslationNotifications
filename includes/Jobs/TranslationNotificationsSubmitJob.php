@@ -304,7 +304,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 		];
 		switch ( $languageSet->getOption() ) {
 			case LanguageSet::ALL:
-				$translatorsConditions[] = 'up_value <> ' . $dbr->addQuotes( $sourceLanguage );
+				$translatorsConditions[] = $dbr->expr( 'up_value', '!=', $sourceLanguage );
 				break;
 			case LanguageSet::SOME:
 				$translatorsConditions['up_value'] = $selectedLanguages;
