@@ -280,22 +280,16 @@ class DigestEmailer extends Maintenance {
 	 * @return array of notifications
 	 */
 	private function getNotifications(): array {
-		$dbr = wfGetDB( DB_REPLICA );
-		$logEntrySelectQuery = DatabaseLogEntry::getSelectQueryData();
-		$logFilter = [ 'log_type' => 'notifytranslators' ];
+		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
+		$logEntrySelectQuery = DatabaseLogEntry::newSelectQueryBuilder( $dbr );
 		$lastMonthTimeStamp = $dbr->timestamp( strtotime( '-1 month' ) );
-		$logFilter += [
-			"log_timestamp > $lastMonthTimeStamp",
-		];
-		$logEntrySelectQuery['conds'] = $logFilter;
-		$logs = $dbr->select(
-			$logEntrySelectQuery['tables'],
-			$logEntrySelectQuery['fields'],
-			$logEntrySelectQuery['conds'],
-			__METHOD__,
-			[ 'ORDER BY' => 'log_timestamp DESC' ],
-			$logEntrySelectQuery['join_conds']
-		);
+
+		$logs = $logEntrySelectQuery
+			->where( [ 'log_type' => 'notifytranslators' ] )
+			->andWhere( $dbr->expr( 'log_timestamp', '>', $lastMonthTimeStamp ) )
+			->orderBy( 'log_timestamp DESC' )
+			->caller( __METHOD__ )
+			->fetchResultSet();
 
 		$notifications = [];
 		foreach ( $logs as $row ) {

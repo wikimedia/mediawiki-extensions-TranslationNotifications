@@ -16,6 +16,8 @@ namespace MediaWiki\Extension\TranslationNotifications;
 
 // Standard boilerplate to define $IP
 use Maintenance;
+use Wikimedia\Rdbms\IExpression;
+use Wikimedia\Rdbms\LikeValue;
 
 if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 	$IP = getenv( 'MW_INSTALL_PATH' );
@@ -33,21 +35,23 @@ class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
 	}
 
 	public function execute() {
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = $this->getPrimaryDB();
 
 		$langPropertyPrefix = 'translationnotifications-lang-';
 		$this->output( "Deleting empty {$langPropertyPrefix}* property values\n" );
 
-		$propertyLikePattern = $dbw->buildLike( $langPropertyPrefix, $dbw->anyString() );
-
-		$dbw->delete(
-			'user_properties',
-			[
-				"up_property $propertyLikePattern",
-				'up_value' => '',
-			],
-			__METHOD__
-		);
+		$dbw->newDeleteQueryBuilder()
+			->deleteFrom( 'user_properties' )
+			->where(
+				$dbw->expr(
+					'up_property',
+					IExpression::LIKE,
+					new LikeValue( $langPropertyPrefix, $dbw->anyString() )
+				)
+			)
+			->andWhere( $dbw->expr( 'up_value', '=', '' ) )
+			->caller( __METHOD__ )
+			->execute();
 	}
 }
 

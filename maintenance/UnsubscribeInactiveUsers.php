@@ -10,6 +10,8 @@ use MediaWiki\Language\RawMessage;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\User\UserIdentityValue;
+use Wikimedia\Rdbms\IExpression;
+use Wikimedia\Rdbms\LikeValue;
 
 $env = getenv( 'MW_INSTALL_PATH' );
 $IP = $env !== false ? $env : __DIR__ . '/../../..';
@@ -159,9 +161,13 @@ class UnsubscribeInactiveUsers extends Maintenance {
 
 		$queryBuilder
 			->join( 'user_properties', 'up', [ 'actor_user = up.up_user' ] )
-			->where( [
-				'up.up_property ' . $dbr->buildLike( 'translationnotifications-lang-', $dbr->anyString() )
-			] )
+			->where(
+				$dbr->expr(
+					'up.up_property',
+					IExpression::LIKE,
+					new LikeValue( 'translationnotifications-lang-', $dbr->anyString() )
+				)
+			)
 			->caller( __METHOD__ )
 			->distinct();
 
