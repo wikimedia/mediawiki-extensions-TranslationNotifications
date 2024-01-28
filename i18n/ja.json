@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ant176",
 			"MathXplore",
 			"Omotecho",
 			"Otokoume",
@@ -32,6 +33,7 @@
 	"translationnotifications-freq-month": "月 1 通まで",
 	"translationnotifications-freq-weekly": "週間ダイジェスト",
 	"translationnotifications-freq-monthly": "月間ダイジェスト",
+	"translationnotifications-freq-none": "なし (未購読)",
 	"translationnotifications-submit": "設定を更新",
 	"translationnotifications-unsubscribe": "購読解除",
 	"translationnotifications-signup-success": "翻訳の通知の設定を保存しました。",
