@@ -307,11 +307,11 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 				$translatorsConditions[] = $dbr->expr( 'up_value', '!=', $sourceLanguage );
 				break;
 			case LanguageSet::SOME:
-				$translatorsConditions['up_value'] = $selectedLanguages;
+				$translatorsConditions[] = $dbr->expr( 'up_value', '=', $selectedLanguages );
 				break;
 			case LanguageSet::ALL_EXCEPT_SOME:
 				$selectedLanguages[] = $sourceLanguage;
-				$translatorsConditions[] = 'up_value NOT IN (' . $dbr->makeList( $selectedLanguages ) . ')';
+				$translatorsConditions[] = $dbr->expr( 'up_value', '!=', $selectedLanguages );
 				break;
 		}
 		return $dbr->newSelectQueryBuilder()
