@@ -76,5 +76,7 @@
 	"translationnotifications-nodeadline": "없음",
 	"translationnotifications-signup-legal": "당신은 우리가 당신에게 관심이 있을 것으로 생각되는 {{SITENAME}}에 우리가 관련 있는 주제와 관련하여 {{SITENAME}}에서 연락할 수 있도록 이 정보를 제공하는 데 동의합니다. 정보 제공에 동의하면 [[{{MediaWiki:Privacypage}}|개인정보처리방침]]의 적용을 받습니다.",
 	"translationnotifications-generic-languages": "&lt;언어>",
-	"translationnotifications-text": "번역가에게 번역을 요청하시려면, 아래 양식을 사용하세요."
+	"translationnotifications-text": "번역가에게 번역을 요청하시려면, 아래 양식을 사용하세요.",
+	"echo-category-title-translationnotifications": "번역 알림",
+	"echo-pref-tooltip-inactive-unsubscribe": "번역 가능한 새 문서 또는 업데이트된 문서에 대한 번역 알림 수신을 미구독한 경우 내게 알립니다"
 }
