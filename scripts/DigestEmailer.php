@@ -255,7 +255,7 @@ class DigestEmailer extends Maintenance {
 
 	protected function getTranslators(): array {
 		$translators = [];
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 		$translatorsConds = [ 'up_property' => 'translationnotifications-freq' ];
 		$translatorsConds += [ 'up_value' => [ 'weekly', 'monthly' ] ];
 		$result = $dbr->select(

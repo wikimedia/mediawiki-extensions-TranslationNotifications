@@ -125,11 +125,15 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 			'none' => null
 		];
 		$currentUnixTime = wfTimestamp();
-		$currentDBTime = wfGetDB( DB_REPLICA )->timestamp( $currentUnixTime );
+		$mwServices = MediaWikiServices::getInstance();
+		$currentDBTime = $mwServices
+			->getConnectionProvider()
+			->getReplicaDatabase()
+			->timestamp( $currentUnixTime );
 
 		$timestampOptionName = 'translationnotifications-timestamp';
 
-		$config = MediaWikiServices::getInstance()->getMainConfig();
+		$config = $mwServices->getMainConfig();
 
 		$allLanguages = array_keys( $this->languageNameUtils->getLanguageNames() );
 		$languagesToNotify = [];
