@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Horus",
-			"Patsagorn Y."
+			"Patsagorn Y.",
+			"Ekminarin"
 		]
 	},
 	"translatorsignup": "ลงทะเบียนผู้แปลภาษา",
@@ -38,6 +39,8 @@
 	"translationnotifications-deadline-label": "กำหนดการเส้นตายที่จะระบุในการแจ้งเตือนนี้:",
 	"translationnotifications-languages-to-notify-label": "ส่งการแจ้งเตือนสำหรับภาษา:",
 	"translationnotifications-languages-to-notify-label-help-message": "รหัสภาษาแยกโดยลูกน้ำ ปล่อยว่างเพื่อส่งให้กับผู้แปลในทุกภาษา",
+	"translationnotifications-languages-to-notify-all-label": "ภาษาทั้งหมด",
+	"translationnotifications-languages-to-notify-only-selected-label": "เฉพาะภาษาที่เลือก:",
 	"translationnotifications-sourcelang-only": "การแจ้งเตือนไม่สามารถส่งไปหาเฉพาะผู้แปลที่เลือกแปลเป็นภาษาของต้นฉบับข้อความได้",
 	"translationnotifications-priority": "ความสำคัญ:",
 	"translationnotifications-priority-high": "สูง",
@@ -56,7 +59,7 @@
 	"translationnotifications-edit-summary": "การแจ้งเตือนการแปลภาษา: $1",
 	"translationnotifications-email-priority": "ระดับความสำคัญของหน้านี้คือ$1",
 	"translationnotifications-email-deadline": "กำหนดเวลาเส้นตายของการแปลหน้านี้ $1",
-	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|ส่ง}}การแจ้งเตือนเกี่ยวกับการแปลหน้า $3 {{PLURAL:$10|เป็นภาษา}}$4 เส้นตาย $5 ความสำคัญ $6 ไปยังผู้รับ{{PLURAL:$7|หนึ่งคน|&nbsp;$7 คน}} เกิดข้อผิดพลาดกับ {{PLURAL:$8|หนึ่งการส่ง|&nbsp;$8 การส่ง}} ข้ามการส่ง{{PLURAL:$9|หนึ่งครั้ง|&nbsp;$9 ครั้ง}}",
+	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|ส่ง}}การแจ้งเตือนเกี่ยวกับการแปลหน้า $3; {{PLURAL:$10|เป็นภาษา}}: $4; เส้นตาย: $5; ความสำคัญ: $6; ไปยังผู้รับ {{PLURAL:$7|หนึ่งคน|$7 คน}}, เกิดข้อผิดพลาดกับ {{PLURAL:$8|หนึ่งการส่ง|$8 การส่ง}}, ข้ามการส่ง {{PLURAL:$9|หนึ่งครั้ง|$9 ครั้ง}}, ส่งการแจ้งเตือนไปยัง: $11 ภาษา",
 	"log-name-notifytranslators": "ปูมแจ้งเตือนการแปลภาษา",
 	"log-description-notifytranslators": "ปูมของการส่วนการแจ้งเตือนไปยังผู้แปลภาษาเกี่ยวกับหน้าที่พร้อมแปล",
 	"translationnotifications-sent-title": "ส่งการแจ้งเตือนการแปลแล้ว",
