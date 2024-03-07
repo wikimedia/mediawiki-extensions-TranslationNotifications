@@ -56,8 +56,8 @@
 			"i18n"
 		]
 	},
-	"ExtensionMessagesFiles": {
-		"TranslationNotificationsAlias": "TranslationNotifications.alias.php"
+	"TranslationAliasesDirs": {
+		"TranslationNotificationsAlias": "i18n/aliases/"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\TranslationNotifications\\": "includes/",

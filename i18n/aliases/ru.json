@@ -1,0 +1,10 @@
+{
+	"SpecialPageAliases": {
+		"NotifyTranslators": [
+			"Уведомить_переводчиков"
+		],
+		"TranslatorSignup": [
+			"Регистрация_переводчиков"
+		]
+	}
+}
