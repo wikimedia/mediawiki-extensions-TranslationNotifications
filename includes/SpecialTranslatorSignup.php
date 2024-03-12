@@ -273,7 +273,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		$wikis = [];
 		foreach ( $globalUser->listAttached() as $dbname ) {
 			// Skip inactive and special wikis
-			list( $site, $lang ) = $wgConf->siteFromDB( $dbname );
+			[ $site, $lang ] = $wgConf->siteFromDB( $dbname );
 			if ( $matrix->isClosed( $lang, $site )
 				|| $matrix->isPrivate( $dbname )
 				|| $matrix->isFishbowl( $dbname )

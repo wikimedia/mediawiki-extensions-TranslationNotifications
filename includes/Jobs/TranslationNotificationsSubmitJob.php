@@ -118,7 +118,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 		$frequencies = [
 			'always' => 0,
-			'week' => 604800,  // seconds in week
+			'week' => 604800, // seconds in week
 			'month' => 2678400, // seconds in month
 			'weekly' => 604800, // seconds in week
 			'monthly' => 2678400, // seconds in month
