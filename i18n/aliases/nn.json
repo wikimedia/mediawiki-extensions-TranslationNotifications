@@ -1,0 +1,18 @@
+{
+	"SpecialPageAliases": {
+		"NotifyTranslators": [
+			"Varsl_omsetjarar",
+			"Varsla_omsetjarar",
+			"Varsle_omsetjarar",
+			"Varsl_omsettarar",
+			"Varsla_omsettarar",
+			"Varsle_omsettarar"
+		],
+		"TranslatorSignup": [
+			"Omsetjarpåmelding",
+			"Omsetjarregistrering",
+			"Omsettarpåmelding",
+			"Omsettarregistrering"
+		]
+	}
+}
