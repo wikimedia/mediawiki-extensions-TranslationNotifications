@@ -73,7 +73,8 @@
 				"mediawiki.Uri",
 				"mediawiki.api",
 				"mediawiki.user",
-				"oojs-ui-core"
+				"oojs-ui-core",
+				"ext.translate.entity.selector"
 			],
 			"messages": [
 				"translationnotifications-preview-notification-button",
@@ -82,8 +83,11 @@
 				"translationnotifications-email-priority",
 				"translationnotifications-email-deadline",
 				"translationnotifications-languages-to-notify",
-				"translationnotifications-languages-to-not-notify"
-			]
+				"translationnotifications-languages-to-not-notify",
+				"translationnotifications-tes-discouraged-group",
+				"translate-mgs-invalid-group"
+			],
+			"styles": "resources/ext.translationnotifications.notifytranslators.less"
 		},
 		"ext.translationnotifications.translatorsignup": {
 			"scripts": "resources/ext.translationnotifications.translatorsignup.js"
