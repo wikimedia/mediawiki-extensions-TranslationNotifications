@@ -5,7 +5,7 @@
 $( function () {
 	'use strict';
 
-	var $checkbox = $( '#mw-input-wpcmethod-talkpage-elsewhere input' );
+	const $checkbox = $( '#mw-input-wpcmethod-talkpage-elsewhere input' );
 
 	function toggle() {
 		$( '#mw-input-wpcmethod-talkpage-elsewhere-loc' ).toggle( $checkbox.prop( 'checked' ) );
