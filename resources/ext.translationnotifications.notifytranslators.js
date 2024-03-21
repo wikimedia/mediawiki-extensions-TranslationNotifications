@@ -9,7 +9,7 @@
 ( function ( $, mw ) {
 	'use strict';
 
-	var previewId = 'translation-notification-preview',
+	const previewId = 'translation-notification-preview',
 		sendId = 'translationnotifications-send-notification-button';
 
 	/**
@@ -26,14 +26,11 @@
 	 * Actually do the preview.
 	 */
 	function doPreview() {
-		var fullText,
-			uri = new mw.Uri(),
-			priority = '',
-			deadline = '',
-			translatablePage = $( '#mw-input-tpage :selected' ).text(),
-			userName = mw.user.getName(),
-			$priority = $( '#mw-input-wpPriority :selected' ),
-			deadlineDate = infuseElement( 'mw-input-wpDeadlineDate' ).getValue();
+		const uri = new mw.Uri();
+		const translatablePage = $( '#mw-input-tpage :selected' ).text();
+		const userName = mw.user.getName();
+		const $priority = $( '#mw-input-wpPriority :selected' );
+		const deadlineDate = infuseElement( 'mw-input-wpDeadlineDate' ).getValue();
 
 		// Enable the send button after the first preview
 		infuseElement( sendId ).setDisabled( false );
@@ -44,15 +41,17 @@
 			group: 'page-' + translatablePage
 		};
 
+		let priority = '';
 		if ( $priority.val() !== 'unset' ) {
 			priority = mw.msg( 'translationnotifications-email-priority', $priority.text() );
 		}
 
+		let deadline = '';
 		if ( deadlineDate !== '' ) {
 			deadline = mw.msg( 'translationnotifications-email-deadline', deadlineDate );
 		}
 
-		fullText = mw.message( 'translationnotifications-talkpage-body',
+		const fullText = mw.message( 'translationnotifications-talkpage-body',
 			userName,
 			userName,
 			mw.msg( 'translationnotifications-generic-languages' ),
@@ -85,7 +84,7 @@
 		infuseElement( sendId ).setDisabled( true );
 
 		// Add the preview button
-		var previewButton = new OO.ui.ButtonWidget( {
+		const previewButton = new OO.ui.ButtonWidget( {
 			label: mw.msg( 'translationnotifications-preview-notification-button' )
 		} );
 		previewButton.on( 'click', doPreview );
@@ -98,4 +97,4 @@
 	}
 
 	$( document ).ready( setup );
-}( jQuery, mediaWiki ) );
+}( jQuery, mw ) );
