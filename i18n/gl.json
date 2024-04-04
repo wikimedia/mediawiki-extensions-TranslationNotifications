@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"ArenaL5",
 			"Elisardojm",
 			"Toliño"
@@ -59,7 +60,7 @@
 	"translationnotifications-talkpage-body": "Boas, $2:\n\nRecibiu esta notificación porque está {{GENDER:$1|inscrito|inscrita}} como {{GENDER:$1|tradutor|tradutora}} {{PLURAL:$9|ao}} $3 en {{SITENAME}}.\nA páxina \"[[$4]]\" está dispoñible para a súa tradución. Pode traducila aquí:\n$5\n\n$6\n$7\n\n$8\n\nAgradecemos enormemente a súa axuda. Os tradutores coma vostede fan que {{SITENAME}} funcione\ncomo unha gran comunidade multilingüe.\n\nPode [$10 cambiar as súas preferencias de notificación].\n\nGrazas!\n\nOs coordinadores das traducións de {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "traducir ao $1",
 	"translationnotifications-digestemail-subject": "Correo electrónico de resumo sobre as solicitudes de tradución de {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Boas, $1:\n\nRecibiu este correo electrónico porque está {{GENDER:$1|inscrito|inscrita}} como {{GENDER:$1|tradutor|tradutora}} ao $2 en {{SITENAME}}.\n\nHai {{PLURAL:$3|1 nova páxina|$3 novas páxinas}} que traducir alí. A continuación están os detalles.\n\n$4\n\nAgradecemos enormemente a súa axuda. Os tradutores coma vostede fan que {{SITENAME}} funcione\ncomo unha gran comunidade multilingüe.\n\nGrazas!\nOs coordinadores das traducións de {{SITENAME}}\n\n----\n\nRecibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite <$5>.",
+	"translationnotifications-digestemail-body": "Boas, $1:\n\nRecibiu este correo electrónico porque está {{GENDER:$1|inscrito|inscrita}} como {{GENDER:$1|tradutor|tradutora}} ao $2 en {{SITENAME}}.\n\nHai {{PLURAL:$3|1 nova páxina|$3 novas páxinas}} que traducir alí. A continuación están os detalles.\n\n$4\n\nAgradecemos enormemente a súa axuda. Os tradutores coma vostede fan que {{SITENAME}} funcione\ncomo unha gran comunidade multilingüe.\n\nGrazas!\nOs coordinadores das traducións de {{SITENAME}}\n\n----\n\nRecibiu este correo electrónico porque se inscribiu para recibir correos electrónicos relacionados coas traducións en {{SITENAME}}. Para cancelar a subscrición ou cambiar as súas preferencias de notificación sobre as traducións, visite\n$5",
 	"translationnotifications-digestemail-notification-line": "O $1, $2 marcou \"$3\" para a súa tradución. Pode traducila en $4",
 	"translationnotifications-edit-summary": "Notificación de tradución: $1",
 	"translationnotifications-email-priority": "A prioridade desta páxina é $1.",

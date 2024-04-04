@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Borichèt",
 			"Dragonòt",
 			"පසිඳු කාවින්ද"
@@ -50,7 +51,7 @@
 	"translationnotifications-talkpage-body": "Cerea $2,\n\nA arsèiv sta notìfica përché {{GENDER:$1|a l'é marcasse}} com tradutor {{PLURAL:$9|a}} $3 dzor {{SITENAME}}.\nLa pàgina [[$4]] a l'é disponìbil për la tradussion. A peul voltela ambelessì:\n$5\n\n$6\n$7\n\n$8\n\nSò agiut a l'é motobin apressià. Dij tradutor com chiel a giuto {{SITENAME}} a marcé\ncom na comunità multilenga për da bon.\n\nMersì!\n\nIj coordinator ëd la tradussion ëd {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "vòlta an $1",
 	"translationnotifications-digestemail-subject": "Mëssagi ëd sìntesi për j'arceste ëd tradussion da {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Cerea $1,\n\nA arsèiv ës mëssagi përché {{GENDER:$1|a l'é marcasse}} com tradutor an $2 dzor {{SITENAME}}.\n\nA-i {{PLURAL:$3|é 1 pàgina|son $3 pàgine}} disponìbij për la tradussion.\nIj detaj a son dàit sì-sota.\n\n$4\n\nSò agiut a l'é motobin apressià. Dij tradutor com chiel a giuto {{SITENAME}} a marcé\ncom na comunità multilenga për da bon.\n\nMersì!\nIj coordinator ëd la tradussion ëd {{SITENAME}}\n\n----\n\nA arsèiv ës mëssagi përchè a l'é marcasse për arsèive dij mëssagi relativ a le tradussion dzor {{SITENAME}}. Për scancelé soa anscrission o për cangé ij sò gust ëd notìfica për le tradussion, për piasì ch'a vìsita <$5>.",
+	"translationnotifications-digestemail-body": "Cerea $1,\n\nA arsèiv ës mëssagi përché {{GENDER:$1|a l'é marcasse}} com tradutor an $2 dzor {{SITENAME}}.\n\nA-i {{PLURAL:$3|é 1 pàgina|son $3 pàgine}} disponìbij për la tradussion.\nIj detaj a son dàit sì-sota.\n\n$4\n\nSò agiut a l'é motobin apressià. Dij tradutor com chiel a giuto {{SITENAME}} a marcé\ncom na comunità multilenga për da bon.\n\nMersì!\nIj coordinator ëd la tradussion ëd {{SITENAME}}\n\n----\n\nA arsèiv ës mëssagi përchè a l'é marcasse për arsèive dij mëssagi relativ a le tradussion dzor {{SITENAME}}. Për scancelé soa anscrission o për cangé ij sò gust ëd notìfica për le tradussion, për piasì ch'a vìsita\n$5",
 	"translationnotifications-digestemail-notification-line": "Ël $1, $2 a l'ha marcà «$3» për la tradussion. A peul voltelo a $4",
 	"translationnotifications-edit-summary": "Notìfiche ëd tradussion: $1",
 	"translationnotifications-email-priority": "La priorità dë sta pàgina a l'é $1.",

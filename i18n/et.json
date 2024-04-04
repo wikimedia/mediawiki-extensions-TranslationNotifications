@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Pikne"
 		]
 	},
@@ -49,7 +50,7 @@
 	"translationnotifications-talkpage-body": "Tere, $2.\n\nSaid selle e-kirja, sest {{GENDER:$1|andsid}} võrgukohas {{SITENAME}} end üles {{PLURAL:$9|$3}} keelde tõlkijana.\nLehekülg [[$4]] on saadaval tõlkimiseks. Palun tõlgi see siin:\n$5\n\n$6\n$7\n\n$8\n\nSinu abi on kõrgelt hinnatud. Sinusugused tõlkijad aitavad võrgukohal {{SITENAME}} talitleda\ntõelise paljukeelse kogukonnana.\n\nEt tõlketeavitustest ära ütelda või et muuta nendega seotud eelistusi, külasta palun lehekülge [$10 Special:TranslatorSignup].\n\nAitäh!\n\nTõlkekoordineerijad\n{{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "tõlgi $1 keelde",
 	"translationnotifications-digestemail-subject": "Tõlkepalvete ülevaade võrgukohast {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Tere, $1.\n\nSaid selle e-kirja, sest {{GENDER:$1|andsid}} võrgukohas {{SITENAME}} end üles $2 keelde tõlkijana.\n{{PLURAL:$3|Üks lehekülg|$3 lehekülge}} on tõlkida. Üksikasjad leiad altpoolt.\n\n$4\n\nSinu abi on kõrgelt hinnatud. Sinusugused tõlkijad aitavad võrgukohal {{SITENAME}} talitleda\ntõelise paljukeelse kogukonnana.\n\nAitäh!\nTõlkekoordineerijad\n{{SITENAME}}\n\n----\n\nSaid selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge <$5>.",
+	"translationnotifications-digestemail-body": "Tere, $1.\n\nSaid selle e-kirja, sest {{GENDER:$1|andsid}} võrgukohas {{SITENAME}} end üles $2 keelde tõlkijana.\n{{PLURAL:$3|Üks lehekülg|$3 lehekülge}} on tõlkida. Üksikasjad leiad altpoolt.\n\n$4\n\nSinu abi on kõrgelt hinnatud. Sinusugused tõlkijad aitavad võrgukohal {{SITENAME}} talitleda\ntõelise paljukeelse kogukonnana.\n\nAitäh!\nTõlkekoordineerijad\n{{SITENAME}}\n\n----\n\nSaid selle e-kirja, sest tellisid võrgukohast {{SITENAME}} tõlgetega seotud e-kirjad. Et neist kirjadest loobuda või et teavituseelistusi muuta, külasta lehekülge\n$5",
 	"translationnotifications-digestemail-notification-line": "$1: $2 märkis lehekülje \"$3\" tõlkimiseks. Saad selle tõlkida siin: $4.",
 	"translationnotifications-edit-summary": "Tõlketeavitus: $1",
 	"translationnotifications-email-priority": "Selle lehekülje tõlkimine on $1.",

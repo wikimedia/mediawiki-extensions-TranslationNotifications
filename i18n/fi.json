@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"01miki10",
+			"Amire80",
 			"Beluga",
 			"Nike",
 			"Olli",
@@ -57,7 +58,7 @@
 	"translationnotifications-talkpage-body": "Hei $2,\n\nSaat tämän ilmoituksen, koska olet {{GENDER:$10|ilmoittautunut}} {{PLURAL:$9|kielen|kielten}} $3 kääntäjäksi {{GRAMMAR:inessive|{{SITENAME}}}}.\nSivu [[$4]] on saatavilla käännettäväksi. Voit kääntää sen täällä:\n$5\n\n$6\n$7\n\n$8\n\nApuasi arvostetaan. Sinunlaisesi kääntäjät pitävät {{GRAMMAR:genitive|{{SITENAME}}}} toiminnassa\nmonikielisenä yhteisönä.\n\nVoit [$10 muuttaa ilmoitusasetuksiasi].\n\nKiitos!\n\n{{GRAMMAR:genitive|{{SITENAME}}}} käännösvastaavat",
 	"translationnotifications-notification-url-listitem": "käännä kielelle $1",
 	"translationnotifications-digestemail-subject": "Yhteenveto {{GRAMMAR:genitive|{{SITENAME}}}}  käännöspyynnöistä",
-	"translationnotifications-digestemail-body": "Hei $1,\n\nSaat tämän sähköpostiviestin, koska olet {{GENDER:$10|ilmoittautunut}} kielen $2 kääntäjäksi {{GRAMMAR:inessive|{{SITENAME}}}}.\n\nSaatavilla on $3 siv{{PLURAL:$3|u|ua}} käännettäväksi. Tarkemmat tiedot annetaan alla.\n\n$4\n\nApuasi arvostetaan. Sinunlaisesi kääntäjät pitävät {{GRAMMAR:genitive|{{SITENAME}}}} toiminnassa\nmonikielisenä yhteisönä.\n\nKiitos!\n{{GRAMMAR:genitive|{{SITENAME}}}} käännösvastaavat\n\n----\n\nVastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä {{GRAMMAR:inessive|{{SITENAME}}}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy sivulla <$5>.",
+	"translationnotifications-digestemail-body": "Hei $1,\n\nSaat tämän sähköpostiviestin, koska olet {{GENDER:$10|ilmoittautunut}} kielen $2 kääntäjäksi {{GRAMMAR:inessive|{{SITENAME}}}}.\n\nSaatavilla on $3 siv{{PLURAL:$3|u|ua}} käännettäväksi. Tarkemmat tiedot annetaan alla.\n\n$4\n\nApuasi arvostetaan. Sinunlaisesi kääntäjät pitävät {{GRAMMAR:genitive|{{SITENAME}}}} toiminnassa\nmonikielisenä yhteisönä.\n\nKiitos!\n{{GRAMMAR:genitive|{{SITENAME}}}} käännösvastaavat\n\n----\n\nVastaanotat tämän sähköpostin, koska olet ottanut käyttöön sähköposti-ilmoitukset käännöksistä {{GRAMMAR:inessive|{{SITENAME}}}}. Jos haluat poistaa ilmoitukset käytöstä tai muuttaa asetuksia, ole hyvä ja käy sivulla\n$5",
 	"translationnotifications-digestemail-notification-line": "($1) $2 ilmoitti sivun ”$3” käännettäväksi. Voit kääntää sen osoitteessa $4",
 	"translationnotifications-edit-summary": "Ilmoitus käännöksestä: $1",
 	"translationnotifications-email-priority": "Tämän sivun tärkeysaste on $1.",

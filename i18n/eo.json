@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Blahma",
 			"Mirin",
 			"Robin van der Vliet",
@@ -53,7 +54,7 @@
 	"translationnotifications-talkpage-body": "Saluton $2,\n\nvi ricevas tiun ĉi mesaĝon, ĉar vi {{GENDER:$1|registriĝis}} kiel tradukisto de {{PLURAL:$9|la lingvo|la lingvoj}} $3 ĉe {{SITENAME}}.\nLa paĝo [[$4]] estas tradukpreta. Vi povas traduki ĝin ĉe:\n$5\n\n$6\n$7\n\n$8\n\nNi valoregas vian helpon. Tradukistoj kiel vi helpas al {{SITENAME}} funkcii kiel vere multlingva komunumo.\n\nDankon!\n\nTraduk-kunordigantoj de {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "traduki al $1",
 	"translationnotifications-digestemail-subject": "Retpoŝta kompilaĵo de tradukpetoj el {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Saluton $1,\n\nvi ricevas tiun ĉi mesaĝon, ĉar vi {{GENDER:$1|signed up}} kiel tradukisto de $2 ĉe {{SITENAME}}.\n\nEkzistas {{PLURAL:$3|1 tradukpreta paĝo|$3 tradukpretaj paĝoj}}. Detaloj sekvas sube.\n\n$4\n\nNi tre aprezos vian helpon. Tradukistoj kiel vi helpas al {{SITENAME}} funkcii kiel vere multlingva komunumo.\n\nDankon!\ntraduk-kunordigantoj de {{SITENAME}}\n\n----\n\nVi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITENAME}}. Por malaboni aŭ ŝanĝi viajn sciigajn preferojn, bonvolu viziti <$5>.",
+	"translationnotifications-digestemail-body": "Saluton $1,\n\nvi ricevas tiun ĉi mesaĝon, ĉar vi {{GENDER:$1|signed up}} kiel tradukisto de $2 ĉe {{SITENAME}}.\n\nEkzistas {{PLURAL:$3|1 tradukpreta paĝo|$3 tradukpretaj paĝoj}}. Detaloj sekvas sube.\n\n$4\n\nNi tre aprezos vian helpon. Tradukistoj kiel vi helpas al {{SITENAME}} funkcii kiel vere multlingva komunumo.\n\nDankon!\ntraduk-kunordigantoj de {{SITENAME}}\n\n----\n\nVi ricevas tiun ĉi mesaĝon ĉar vi abonis retmesaĝojn pri tradukoj ĉe {{SITENAME}}. Por malaboni aŭ ŝanĝi viajn sciigajn preferojn, bonvolu viziti\n$5",
 	"translationnotifications-digestemail-notification-line": "Je $1, $2 markis \"$3\" tradukpreta. Vi povas traduki ĝin ĉe $4",
 	"translationnotifications-edit-summary": "Traduksciigo: $1",
 	"translationnotifications-email-priority": "La prioritato de tiu ĉi paĝo estas $1.",

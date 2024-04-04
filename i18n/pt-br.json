@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Araceletorres",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
@@ -63,7 +64,7 @@
 	"translationnotifications-talkpage-body": "Olá $2,\n\nVocê está recebendo esta notificação porque se {{GENDER:$1|inscreveu}} como tradutor {{PLURAL:$9|de}} $3 em {{SITENAME}}.\n\nA página [[$4]] está disponível para tradução. Você pode traduzi-la aqui:\n$5\n\n$6\n$7\n\n$8\n\nA sua ajuda é bastante apreciada. Tradutores como você podem ajudar a {{SITENAME}} a funcionar como uma verdadeira comunidade multilingue.\n\nVocê pode [$10 alterar as suas preferências de notificação].\n\nObrigado!\nCoordenadores de tradução {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "traduzir em $1",
 	"translationnotifications-digestemail-subject": "Resumo das solicitações de tradução do wiki {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Olá $1,\n\nVocê está recebendo este e-mail porque você {{GENDER:$1|se inscreveu}} como tradutor para $2 em {{SITENAME}}.\n\n{{PLURAL:$3|Existe 1 página disponível|Existem $3 páginas disponíveis}} para tradução. Os detalhes são apresentados abaixo.\n\n$4\n\nA sua ajuda é muito apreciada. Os tradutores como você ajudam {{SITENAME}} a funcionar uma comunidade verdadeiramente multilingue.\n\nObrigado!\n{{SITENAME}} administradores de tradução\n\n----\n\nVocê está recebendo este e-mail porque se inscreveu para receber e-mails relacionados a traduções em {{SITENAME}}. Para cancelar a assinatura ou para alterar suas preferências de notificação para as traduções, visite <$5>.",
+	"translationnotifications-digestemail-body": "Olá $1,\n\nVocê está recebendo este e-mail porque você {{GENDER:$1|se inscreveu}} como tradutor para $2 em {{SITENAME}}.\n\n{{PLURAL:$3|Existe 1 página disponível|Existem $3 páginas disponíveis}} para tradução. Os detalhes são apresentados abaixo.\n\n$4\n\nA sua ajuda é muito apreciada. Os tradutores como você ajudam {{SITENAME}} a funcionar uma comunidade verdadeiramente multilingue.\n\nObrigado!\n{{SITENAME}} administradores de tradução\n\n----\n\nVocê está recebendo este e-mail porque se inscreveu para receber e-mails relacionados a traduções em {{SITENAME}}. Para cancelar a assinatura ou para alterar suas preferências de notificação para as traduções, visite\n$5",
 	"translationnotifications-digestemail-notification-line": "Em $1, $2 marcou a página \"$3\" para tradução. Você pode traduzi-la a partir do link $4",
 	"translationnotifications-edit-summary": "Notificação de tradução: $1",
 	"translationnotifications-email-priority": "A prioridade para esta página é $1.",

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Fitoschido",
 			"Xuacu"
 		]
@@ -51,7 +52,7 @@
 	"translationnotifications-talkpage-body": "Hola $2,\n\nRecibes esti avisu porque tas {{GENDER:$1|apuntáu como traductor|apuntada como traductora}} {{PLURAL:$9|al}} $3 en {{SITENAME}}.\n\nLa páxina [[$4]] ta disponible pa traducir. Puedes traducila equí:\n$5\n\n$6\n$7\n\n$8\n\nAgradecemos enforma la to ayuda. {{GENDER:$1|Los|Les}} traductores como tu ayuden a que {{SITENAME}} funcione\ncomo una verdadera comunidá multillingüe.\n\nPuedes [$10 camudar les preferencies d'avisu].\n\n\n¡Gracies!\nLos coordinadores de traducciones de {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "traducir al $1",
 	"translationnotifications-digestemail-subject": "Corréu electrónicu de resume sobro les solicitúes de traducción de {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Bones $1,\n\nRecibes esti corréu electrónicu porque t'inscribisti como {{GENDER:$1|traductor|traductora}} al $2 en {{SITENAME}}.\n\nHai {{PLURAL:$3|una páxina|$3 páxines}} pa traducir. Más abaxo danse los detalles\n\n$4\n\n\nAgradecemos enforma la to ayuda. {{GENDER:$1|Los|Les}} traductores como tu ayuden a que {{SITENAME}} funcione\ncomo una verdadera comunidá multillingüe.\n\n¡Gracies!\nLos coordinadores de traducciones de {{SITENAME}}\n\n----\n\nRecibes esti corréu electrónicu porque t'inscribisti pa recibir correos rellacionaos coles traducciones de {{SITENAME}}. Pa torgar la suscripción o camudar les preferencies d'avisos de traducción, visita <$5>.",
+	"translationnotifications-digestemail-body": "Bones $1,\n\nRecibes esti corréu electrónicu porque t'inscribisti como {{GENDER:$1|traductor|traductora}} al $2 en {{SITENAME}}.\n\nHai {{PLURAL:$3|una páxina|$3 páxines}} pa traducir. Más abaxo danse los detalles\n\n$4\n\n\nAgradecemos enforma la to ayuda. {{GENDER:$1|Los|Les}} traductores como tu ayuden a que {{SITENAME}} funcione\ncomo una verdadera comunidá multillingüe.\n\n¡Gracies!\nLos coordinadores de traducciones de {{SITENAME}}\n\n----\n\nRecibes esti corréu electrónicu porque t'inscribisti pa recibir correos rellacionaos coles traducciones de {{SITENAME}}. Pa torgar la suscripción o camudar les preferencies d'avisos de traducción, visita\n$5",
 	"translationnotifications-digestemail-notification-line": "El $1, $2  marcó pa traducir «$3». Pue traducilo en $4",
 	"translationnotifications-edit-summary": "Avisu de traducción: $1",
 	"translationnotifications-email-priority": "La prioridá d'esta páxina ye $1.",

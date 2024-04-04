@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Manuae"
 		]
 	},
@@ -47,7 +48,7 @@
 	"translationnotifications-talkpage-body": "Hey $2,\n\ndu grigschd die E-Mail wail disch als Iwasedza fa $3 uff {{SITENAME}} oigdraache hoschd.\nÄ naiji Said [[$4]] isch fas Iwasedze do. Bidde iwasedze:\n$5\n\n$6\n$7\n\n$8\n\nDongschä,\ndie Midawaida vun {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "iwasedze uff $1",
 	"translationnotifications-digestemail-subject": "Lischd vun E-Mail fa Uffdräch fas Iwasedze vun {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Hey $1,\n\ndu grigschd die E-Mail wail disch als Iwasedza fa $2 uff {{SITENAME}} oigdraache hoschd.\n\n{{PLURAL:$3|S'isch ä Said|Sin $3 Saide}} fas Iwasedze do. Näjares finschd unne:\n\n$4\n\nUm doi Oischdellunge fa Bnochrischdischunge fas Iwasedze zu änare, konschd <$5> uffsuche.\n\nDongschä,\ndie Midawaida vun {{SITENAME}}",
+	"translationnotifications-digestemail-body": "Hey $1,\n\ndu grigschd die E-Mail wail disch als Iwasedza fa $2 uff {{SITENAME}} oigdraache hoschd.\n\n{{PLURAL:$3|S'isch ä Said|Sin $3 Saide}} fas Iwasedze do. Näjares finschd unne:\n\n$4\n\nDongschä,\ndie Midawaida vun {{SITENAME}}\n\n----\n\nUm doi Oischdellunge fa Bnochrischdischunge fas Iwasedze zu änare, konschd\n$5\nuffsuche.",
 	"translationnotifications-digestemail-notification-line": "Oam $1 hod $2 die Said „$3“ fas Iwasedze frai gewe. Du konnschdse una $4 Iwasedze.",
 	"translationnotifications-edit-summary": "Iwasedzungsnochrichd",
 	"translationnotifications-email-priority": "Die Wischdischkaid vunde Said fas Iwasedze isch $1.",

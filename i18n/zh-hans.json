@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Func",
 			"GuoPC",
 			"Hudafu",
@@ -62,7 +63,7 @@
 	"translationnotifications-talkpage-body": "嗨！$2，\n\n您收到此通知，是因为您作为一名$3{{PLURAL:$9|的}}翻译者在{{SITENAME}}{{GENDER:$1|注册了}}。页面[[$4]]已可供翻译。您可在此翻译：\n$5\n\n$6\n$7\n\n$8\n\n非常感谢您的帮助。像您一样的翻译者正在不断努力帮助{{SITENAME}}成为一个真正多语言的社区。\n\n要取消订阅或更改您的翻译通知设置，请访问[$10 Special:TranslatorSignup]。\n\n谢谢！\n\n{{SITENAME}}翻译协调员",
 	"translationnotifications-notification-url-listitem": "翻译为$1",
 	"translationnotifications-digestemail-subject": "来自{{SITENAME}}的翻译请求的摘要电子邮件",
-	"translationnotifications-digestemail-body": "您好$1，\n您接收到此邮件，是因为您作为$2的译者在{{SITENAME}}注册。\n现有$3个页面可供翻译。详细信息如下。\n$4\n非常感谢您的帮助。像您一样的译者一直在帮助{{SITENAME}}成为一个多语言社群。\n感谢您！\n{{SITENAME}}翻译管理员\n----\n您接收到此邮件，是因为您在{{SITENAME}}注册并同意接受这类邮件。如需退订或更改邮件通知设置，请访问<$5>。",
+	"translationnotifications-digestemail-body": "您好$1，\n您接收到此邮件，是因为您作为$2的译者在{{SITENAME}}注册。\n现有$3个页面可供翻译。详细信息如下。\n$4\n非常感谢您的帮助。像您一样的译者一直在帮助{{SITENAME}}成为一个多语言社群。\n感谢您！\n{{SITENAME}}翻译管理员\n----\n您接收到此邮件，是因为您在{{SITENAME}}注册并同意接受这类邮件。如需退订或更改邮件通知设置，请访问\n$5",
 	"translationnotifications-digestemail-notification-line": "于$1，$2标记了“$3”为需要翻译。您可以在$4进行翻译",
 	"translationnotifications-edit-summary": "翻译通知：$1",
 	"translationnotifications-email-priority": "这个页面有$1重要度。",

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Minh Nguyen",
 			"Vinhtantran"
 		]
@@ -51,7 +52,7 @@
 	"translationnotifications-talkpage-body": "{{PLURAL:$9}}Xin chào $2,\n\nBạn nhận được thư điện tử này vì bạn đã {{GENDER:$1}}ghi danh làm biên dịch viên $3 tại {{SITENAME}}.\nTrang [[$4]] mới có sẵn để dịch. Bạn có thể dịch nó dùng liên kết sau:\n$5\n\n$6\n$7\n\n$8\n\nBạn có thể [$10 thay đổi tùy chọn thông báo của bạn].\n\nCảm ơn!\n\nNhóm điều phối biên dịch {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "dịch ra $1",
 	"translationnotifications-digestemail-subject": "Thư điện tử tóm tắt các yêu cầu biên dịch từ {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Xin chào $1,\n\nBạn nhận được thư điện tử này vì bạn đã ghi danh làm biên dịch viên $2 tại {{SITENAME}}.\n\nHiện có {{PLURAL:$3|trang|$3 trang}} để dịch. Các chi tiết được đưa dưới đây:\n\n$4\n\nRất cảm ơn sự giúp đỡ của bạn. {{SITENAME}} hoạt động nhờ các biên dịch viên như bạn.\n\nBan quản lý biên dịch {{SITENAME}}\n\n----\n\nBạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào <$5>.",
+	"translationnotifications-digestemail-body": "Xin chào $1,\n\nBạn nhận được thư điện tử này vì bạn đã ghi danh làm biên dịch viên $2 tại {{SITENAME}}.\n\nHiện có {{PLURAL:$3|trang|$3 trang}} để dịch. Các chi tiết được đưa dưới đây:\n\n$4\n\nRất cảm ơn sự giúp đỡ của bạn. {{SITENAME}} hoạt động nhờ các biên dịch viên như bạn.\n\nBan quản lý biên dịch {{SITENAME}}\n\n----\n\nBạn nhận được thư điện tử này vì bạn đã quyết định nhận các thư điện tử có liên quan đến việc biên dịch {{SITENAME}}. Để bỏ đăng ký hoặc thay đổi các tùy chọn về thông báo biên dịch, hãy ghé vào\n$5",
 	"translationnotifications-digestemail-notification-line": "Ngày $1, $2 đã đánh dấu “$3” là cần được dịch. Bạn có thể biên dịch nó tại $4.",
 	"translationnotifications-edit-summary": "Thông báo biên dịch: $1",
 	"translationnotifications-email-priority": "Trang này có ưu tiên $1.",

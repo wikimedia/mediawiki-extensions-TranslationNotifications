@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Ankry",
 			"BeginaFelicysym",
 			"Chrumps",
@@ -67,7 +68,7 @@
 	"translationnotifications-talkpage-body": "Witaj  $2,\n\nOtrzymujesz tę wiadomość e-mail, ponieważ {{GENDER:$1|zarejestrowałeś się jako tłumacz|zarejestrowałaś się jako tłumaczka}} w projekcie {{SITENAME}} na {{PLURAL:$9|język|języki:}} $3.\nStrona [[$4]] jest dostępna do tłumaczenia. Można ją przetłumaczyć tutaj:\n$5\n\n$6\n$7\n\n$8\n\nTwoja pomoc jest bardzo mile widziana. Tłumacze tacy jak Ty pomagają projektowi {{SITENAME}} tworzyć wielojęzyczną społeczność.\n\nAby zrezygnować lub zmienić ustawienia powiadomień o tłumaczeniach, odwiedź [$10 {{#special:TranslatorSignup}}].\n\nDziękujemy!\n\nKoordynatorzy tłumaczeń {{GRAMMAR:D.lp|{{SITENAME}}}}",
 	"translationnotifications-notification-url-listitem": "przetłumacz na $1",
 	"translationnotifications-digestemail-subject": "Wiadomość ze streszczeniem próśb o tłumaczenie z witryny {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Witaj  $1,\n\nOtrzymujesz tę wiadomość e-mail, ponieważ {{GENDER:$1|zarejestrowałeś się jako tłumacz|zarejestrowałaś się jako tłumaczka}} {{SITENAME}} na $2.\n\n{{PLURAL:$3|Jest dostępna jedna strona|Są dostępne $3 strony|Jest dostępnych $3 stron}} do przetłumaczenia. Szczegóły podane są niżej.\n\n$4\n\nTwoja pomoc jest bardzo mile widziana. Tłumacze tacy jak Ty pomagają projektowi {{SITENAME}} tworzyć wielojęzyczną społeczność.\n\nDziękujemy!\nAdministratorzy tłumaczeń {{SITENAME}}\n\n----\n\nOtrzymujesz ten e-mail ponieważ {{GENDER:$1|zarejestrowałeś|zarejestrowałaś}} się, aby otrzymywać e-maile dotyczące tłumaczeń na {{SITENAME}}. Aby wypisać się ze subskrypcji lub zmienić preferencje powiadomień odwiedź stronę <$5>.",
+	"translationnotifications-digestemail-body": "Witaj $1,\n\nOtrzymujesz tę wiadomość e-mail, ponieważ {{GENDER:$1|zarejestrowałeś się jako tłumacz|zarejestrowałaś się jako tłumaczka}} {{SITENAME}} na $2.\n\n{{PLURAL:$3|Jest dostępna jedna strona|Są dostępne $3 strony|Jest dostępnych $3 stron}} do przetłumaczenia. Szczegóły podane są niżej.\n\n$4\n\nTwoja pomoc jest bardzo mile widziana. Tłumacze tacy jak Ty pomagają projektowi {{SITENAME}} tworzyć wielojęzyczną społeczność.\n\nDziękujemy!\nAdministratorzy tłumaczeń {{SITENAME}}\n\n----\n\nOtrzymujesz ten e-mail, ponieważ {{GENDER:$1|zarejestrowałeś|zarejestrowałaś}} się, aby otrzymywać e-maile dotyczące tłumaczeń na {{SITENAME}}. Aby wypisać się ze subskrypcji lub zmienić preferencje powiadomień odwiedź stronę\n$5",
 	"translationnotifications-digestemail-notification-line": "Dnia $1, $2 oznaczył \"$3\" jako do przetłumaczenia. Można tłumaczyć stronę na $4.",
 	"translationnotifications-edit-summary": "Powiadomienie o tłumaczeniu: $1",
 	"translationnotifications-email-priority": "Priorytet tej strony to  $1 .",

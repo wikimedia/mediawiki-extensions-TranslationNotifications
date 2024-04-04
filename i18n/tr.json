@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"BaRaN6161 TURK",
 			"Cobija",
 			"Incelemeelemani",
@@ -61,7 +62,7 @@
 	"translationnotifications-talkpage-body": "Merhaba $2,\n\nBu e-postayı {{SITENAME}} sitesinde $3 çevirmen olarak {{PLURAL:$9|kaydolduğunuz}} için alıyorsunuz.\n[[$4]] sayfası çeviri için kullanılabilir. Buradan çevirebilirsiniz:\n$5\n\n$6\n$7\n\n$8\n\nYardımınız için çok minnettarız. Sizin gibi çevirmenler {{SITENAME}} sitesinin gerçekten çokdilli bir topluluk\nolarak işlev görmesine yardımcı oluyor.\n\n[$10 Bildirim tercihlerinizi değiştirebilirsiniz].\n\nTeşekkür ederiz!\n\n{{SITENAME}} çeviri koordinatörleri",
 	"translationnotifications-notification-url-listitem": "$1 olarak çevir",
 	"translationnotifications-digestemail-subject": "{{SITENAME}} sitesinden çeviri istekleri için özet e-posta",
-	"translationnotifications-digestemail-body": "Merhaba $1,\n\nBu e-postayı {{SITENAME}} sitesinde {{GENDER:$1|kaydolan}} çevirmen olarak $2 çevirdiğiniz için alıyorsunuz.\n\nÇeviri için {{PLURAL:$3|1 sayfa |$3 sayfa}} bulunmaktadır. Ayrıntılar aşağıda verilmiştir.\n\n$4\n\nYardımınız için çok minnettarız. Sizin gibi çevirmenler {{SITENAME}} sitesinin gerçekten çokdilli bir topluluk\nolarak işlev görmesine yardımcı oluyor.\n\nTeşekkür ederiz!\n{{SITENAME}} çeviri hizmetlileri\n\n----\n\nBu e-postayı, {{SITENAME}} adresindeki çevirilerle ilgili e-posta almak üzere kaydolduğunuz için alıyorsunuz. Aboneliği iptal etmek veya çeviriler için bildirim tercihlerinizi değiştirmek için lütfen <$5> adresini ziyaret edin.",
+	"translationnotifications-digestemail-body": "Merhaba $1,\n\nBu e-postayı {{SITENAME}} sitesinde {{GENDER:$1|kaydolan}} çevirmen olarak $2 çevirdiğiniz için alıyorsunuz.\n\nÇeviri için {{PLURAL:$3|1 sayfa |$3 sayfa}} bulunmaktadır. Ayrıntılar aşağıda verilmiştir.\n\n$4\n\nYardımınız için çok minnettarız. Sizin gibi çevirmenler {{SITENAME}} sitesinin gerçekten çokdilli bir topluluk\nolarak işlev görmesine yardımcı oluyor.\n\nTeşekkür ederiz!\n{{SITENAME}} çeviri hizmetlileri\n\n----\n\nBu e-postayı, {{SITENAME}} adresindeki çevirilerle ilgili e-posta almak üzere kaydolduğunuz için alıyorsunuz. Aboneliği iptal etmek veya çeviriler için bildirim tercihlerinizi değiştirmek için lütfen\n$5\nadresini ziyaret edin.",
 	"translationnotifications-digestemail-notification-line": "$1 tarihinde, $2 kullanıcısı \"$3\" çeviri için işaretledi. $4 \nsayfasında çevirebilirsiniz",
 	"translationnotifications-edit-summary": "Çeviri bildirimi: $1",
 	"translationnotifications-email-priority": "Bu sayfanın önceliği $1.",

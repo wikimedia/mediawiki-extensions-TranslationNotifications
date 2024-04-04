@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Michawiki"
 		]
 	},
@@ -49,7 +50,7 @@
 	"translationnotifications-talkpage-body": "Witaj $2,\n\ndostawaš toś tu powěźeńku, dokulaž sy se ako pśełožowaŕ {{PLURAL:$9|za}} $3 na {{SITENAME}} {{GENDER:$1|zregistrěrował|zregistrěrowała}}.\nBok [[$4]] stoj za pśełožowanje k dispoziciji. Móžoš jen how pśełožyś:\n$5\n\n$6\n$7\n\n$8\n\nWaša pomoc jo wjelgin witana. Pśełožowarje ako ty pomagaju, aby {{SITENAME}} ako napšawdu wěcejrěcne zgromaźeństwo funkcioněrowało.  \n\nWjeliki źěk!\n\nPśełožowańske koordinatory {{GRAMMAR:genitiw|{{SITENAME}}}}",
 	"translationnotifications-notification-url-listitem": "do $1 pśełožiś",
 	"translationnotifications-digestemail-subject": "E-mailowy pśeglěd za póžedane pśełožki wót {{GRAMMAR:genitiw|{{SITENAME}}}}",
-	"translationnotifications-digestemail-body": "Witaj $1,\n\ndostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} {{GENDER:$1|zregistrěrował|zregistěrował}}.\n{{PLURAL:$3|Jo 1 bok|Stej $3 boka|Su $3 boki|Jo $3 bokow}} za pśełožowanje k dispoziciji.  Drobnostki namakaš dołojce.\n\n$4\n\nTwója pomoc jo wjelgin witana. Pśełožowarje ako ty pomagaju, aby {{SITENAME}} ako napšawdu wěcejrěcne zgromaźeństwo funkcioněrował.\n\nWjeliki źěk!\n\n{{SITENAME}} - pśełožowańske administratory\n\n----\n\nDostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k <$5>.",
+	"translationnotifications-digestemail-body": "Witaj $1,\n\ndostawaš toś tu e-mail, dokulaž sy se ako pśełožowaŕ za $2 na {{GRAMMAR:lokatiw|{{SITENAME}}}} {{GENDER:$1|zregistrěrował|zregistěrował}}.\n{{PLURAL:$3|Jo 1 bok|Stej $3 boka|Su $3 boki|Jo $3 bokow}} za pśełožowanje k dispoziciji.  Drobnostki namakaš dołojce.\n\n$4\n\nTwója pomoc jo wjelgin witana. Pśełožowarje ako ty pomagaju, aby {{SITENAME}} ako napšawdu wěcejrěcne zgromaźeństwo funkcioněrował.\n\nWjeliki źěk!\n\n{{SITENAME}} - pśełožowańske administratory\n\n----\n\nDostawaš toś tu e-mail, dokulaž sy se za dostaśe e-majlow wó pśełožkach na {{GRAMMAR:lokatiw|{{SITENAME}}}} zregistrěrował. Aby dostaśe e-mailow wótskazał abo swóje zdźěleńske nastajenja změnił, źi pšosym k\n$5",
 	"translationnotifications-digestemail-notification-line": "Dnja $1 jo $2 bok \"$3\" za pśełožowanje markěrował. Móžoš ju na $4 pśełožowaś.",
 	"translationnotifications-edit-summary": "Pśełožowańska powěźeńka: $1",
 	"translationnotifications-email-priority": "Priorita toś togo boka jo $1.",

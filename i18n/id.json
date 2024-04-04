@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Daud I.F. Argana",
 			"David Wadie Fisher-Freberg",
 			"Rachmat.Wahidi",
@@ -61,7 +62,7 @@
 	"translationnotifications-talkpage-body": "Halo $2,\n\nAnda menerima pemberitahuan ini karena Anda telah {{GENDER:$1|mendaftar}} menjadi penerjemah {{PLURAL:$9|kepada}} $3 di {{SITENAME}}.\n\nHalaman [[$4]] tersedia untuk diterjemahkan. Anda bisa menerjemahkannya di sini:\n$5\n\n$6\n$7\n\n$8\n\nBantuan Anda sangat dihargai. Penerjemah seperti Anda membantu {{SITENAME}} bekerja\nsebagai komunitas yang benar-benar multibahasa.\n\nAnda bisa [$10 mengubah preferensi pemberitahuan Anda].\n\nTerima kasih!\n\nKoordinator penerjemahan {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "terjemahkan ke $1",
 	"translationnotifications-digestemail-subject": "Surel ikhtisar untuk permohonan penerjemahan dari {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Halo $1,\n\nAnda menerima surel ini karena Anda telah {{GENDER:$1|mendaftar}} menjadi penerjemah $2 di {{SITENAME}}.\n\nTerdapat {{PLURAL:$3|$3 halaman}} yang tersedia untuk diterjemahkan. Rinciannya adalah sebagai berikut.\n\n$4\n\nBantuan Anda sangat dihargai. Penerjemah seperti Anda membantu {{SITENAME}} bekerja\nsebagai komunitas yang benar-benar multibahasa.\n\nTerima kasih!\nKoordinator penerjemahan {{SITENAME}}\n\n----\n\nAnda menerima surel ini karena Anda telah mendaftar untuk menerima surel terkait penerjemahan di {{SITENAME}}. Untuk berhenti berlangganan atau mengubah preferensi pengumuman penerjemahan Anda, silakan kunjungi <$5>.",
+	"translationnotifications-digestemail-body": "Halo $1,\n\nAnda menerima surel ini karena Anda telah {{GENDER:$1|mendaftar}} menjadi penerjemah $2 di {{SITENAME}}.\n\nTerdapat {{PLURAL:$3|$3 halaman}} yang tersedia untuk diterjemahkan. Rinciannya adalah sebagai berikut.\n\n$4\n\nBantuan Anda sangat dihargai. Penerjemah seperti Anda membantu {{SITENAME}} bekerja\nsebagai komunitas yang benar-benar multibahasa.\n\nTerima kasih!\nKoordinator penerjemahan {{SITENAME}}\n\n----\n\nAnda menerima surel ini karena Anda telah mendaftar untuk menerima surel terkait penerjemahan di {{SITENAME}}. Untuk berhenti berlangganan atau mengubah preferensi pengumuman penerjemahan Anda, silakan kunjungi\n$5",
 	"translationnotifications-digestemail-notification-line": "Pada $1, $2 ditandai \"$3\" untuk diterjemahkan. Anda bisa menerjemahkannya di $4",
 	"translationnotifications-edit-summary": "Pemberitahuan penerjemahan: $1",
 	"translationnotifications-email-priority": "Prioritas halaman ini adalah $1.",

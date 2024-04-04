@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Purodha"
 		]
 	},
@@ -49,7 +50,7 @@
 	"translationnotifications-talkpage-body": "Daach $2,\n\nDo kriß heh di Metdeilong, weil De Desch als ene Övversäzer för {{PLURAL:$9|di Schprohch|de Schprohche|kein Schprohche}} $3 op {{GRAMMAR:3|{{ucfirst:{{SITENAME}}}}}} enjedrahre häs.\n\nDi Sigg „[[$4]]“ mööd övversaz wääde.\nDat kanns De övver heh dä Lengk donn:\n$5\n\n$6\n$7\n\n$8\n\nDing Hölp es ärsch jähn jesinn. Als ene Övversäzer helfs De met, dat {{GRAMMAR:1{{SITENAME}}}} als en Gemeinschaff met ville Schprohche joot doh schteiht.\n\nOnsere häzlejje Dank doför saare\n\nde Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v|{{ucfirst:{{SITENAME}}}}}} {{GENDER:$1}}\n\n\nP.S.\nDo kanns Ding [$10 Enschtällonge för Nohreeschte ze krijje] verändere, wann De meins.",
 	"translationnotifications-notification-url-listitem": "övversäze op $1",
 	"translationnotifications-digestemail-subject": "Zosammejefaß Metdeilong för Övversäzonge {{GRAMMAR:2 v|{{SITENAME}}}}",
-	"translationnotifications-digestemail-body": "Daach $1,\n\nheh di e-mail kreß De, weil De Desch als ene Övversäzer för $2 op {{GRAMMAR:3|{{ucfirst:{{SITENAME}}}}}} enjedrahre häs.\n\n{{PLURAL:$3|Ein Sigg|$3 Sigge|Kein Sigg}} mööd övversaz wähde. De Einzelheite schtonn onge.\n\n$4\n\nDing Hölp es ärsch jähn jesinn. Als Övversäzer helfs De met, dat {{GRAMMAR:1|{{ucfirst:{{SITENAME}}}}}} als en Jemeinschaff met ville Schprohche joot doh schteiht.\n\nOnsere häzlejje Dank doför saare\nde Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v|{{ucfirst:{{SITENAME}}}}}}\n\n----\n\nDo häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{ucfirst:{{SITENAME}}}}}} enjedrahre häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät drahn ändere wells, jangk noh <$5>.",
+	"translationnotifications-digestemail-body": "Daach $1,\n\nheh di e-mail kreß De, weil De Desch als ene Övversäzer för $2 op {{GRAMMAR:3|{{ucfirst:{{SITENAME}}}}}} enjedrahre häs.\n\n{{PLURAL:$3|Ein Sigg|$3 Sigge|Kein Sigg}} mööd övversaz wähde. De Einzelheite schtonn onge.\n\n$4\n\nDing Hölp es ärsch jähn jesinn. Als Övversäzer helfs De met, dat {{GRAMMAR:1|{{ucfirst:{{SITENAME}}}}}} als en Jemeinschaff met ville Schprohche joot doh schteiht.\n\nOnsere häzlejje Dank doför saare\nde Ko'odenatoore vun de Övversäzonge {{GRAMMAR:2 v|{{ucfirst:{{SITENAME}}}}}}\n\n----\n\nDo häs heh di e-mail krääje, weil De Desch op {{GRAMMAR:3|{{ucfirst:{{SITENAME}}}}}} enjedrahre häs, dat De e-mails krijje wells, di met de Övversäzonge ze donn han. Wann De doh jät drahn ändere wells, jangk noh\n$5",
 	"translationnotifications-digestemail-notification-line": "Aam $1 hät {{GENDER:$2|dä|et|dä Metmaacher|de|dat}} $2 di Sigg „$3“ för et Övversäze freijejovve. Do kanns se övversäzze op dä Sigg: $4",
 	"translationnotifications-edit-summary": "Övversäzongsnohreesch: $1",
 	"translationnotifications-email-priority": "Der Rang vun dä Sigg es $1.",

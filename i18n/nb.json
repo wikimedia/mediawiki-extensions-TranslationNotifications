@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Danmichaelo",
 			"Jon Harald Søby"
 		]
@@ -60,7 +61,7 @@
 	"translationnotifications-talkpage-body": "Hei $2,\n\nDu mottar dette varselet fordi du er {{GENDER:$1|påmeldt}} som oversetter {{PLURAL:$9|til}} $3 på {{SITENAME}}.\nSiden [[$4]] er tilgjengelig for oversettelse. Du kan oversette den her:\n$5\n\n$6\n$7\n\n$8\n\nDin hjelp er høyt verdsatt. Oversettere som deg hjelper {{SITENAME}} med å fungere som et virkelig flerspråklig fellesskap.\n\nBesøk [$10 Special:TranslatorSignup] for å avslutte abonnementet ditt eller endre varslingsinnstillingene dine.\n\nTakk!\n\n{{GRAMMAR:genitive|{{SITENAME}}}} oversettelsesadministratorer",
 	"translationnotifications-notification-url-listitem": "oversett til $1",
 	"translationnotifications-digestemail-subject": "Sammendragsepost for oversettelser på {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Hei $1,\n\nDu mottar denne e-posten fordi du er {{GENDER:$1|påmeldt}} som oversetter til $2 på {{SITENAME}}.\n\nDet er {{PLURAL:$3|én side|$3 sider}} tilgjengelig for oversettelse. Detaljene finner du nedenfor.\n\n$4\n\nDin hjelp er høyt verdsatt. Oversettere som deg hjelper {{SITENAME}} med å fungere som et virkelig flerspråklig fellesskap.\n\nTakk!\n{{GRAMMAR:genitive|{{SITENAME}}}} oversettelsesadministratorer\n\n----\n\nDu mottar denne eposten fordi du registrerte deg for å motta oversettelsesvarsler på {{SITENAME}}. For å skru av varsler eller endre innstillingene, besøk <$5>.",
+	"translationnotifications-digestemail-body": "Hei $1,\n\nDu mottar denne e-posten fordi du er {{GENDER:$1|påmeldt}} som oversetter til $2 på {{SITENAME}}.\n\nDet er {{PLURAL:$3|én side|$3 sider}} tilgjengelig for oversettelse. Detaljene finner du nedenfor.\n\n$4\n\nDin hjelp er høyt verdsatt. Oversettere som deg hjelper {{SITENAME}} med å fungere som et virkelig flerspråklig fellesskap.\n\nTakk!\n{{GRAMMAR:genitive|{{SITENAME}}}} oversettelsesadministratorer\n\n----\n\nDu mottar denne eposten fordi du registrerte deg for å motta oversettelsesvarsler på {{SITENAME}}. For å skru av varsler eller endre innstillingene, besøk\n$5",
 	"translationnotifications-digestemail-notification-line": "$2 merket «$3» for oversettelse $1. Du kan oversette den på $4",
 	"translationnotifications-edit-summary": "Oversettelsesvarsel: $1",
 	"translationnotifications-email-priority": "Denne siden har $1 prioritet.",
