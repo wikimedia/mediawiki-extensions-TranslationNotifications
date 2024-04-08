@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
+			"B3rnas",
 			"Eduardo Addad de Oliveira",
 			"Hamilton Abreu",
 			"Vitorvicentevalente"
@@ -62,7 +63,7 @@
 	"translationnotifications-talkpage-body": "Olá $2,\n\nEstá a receber esta notificação porque se inscreveu como {{GENDER:$1|tradutor|tradutora}} {{PLURAL:$9|da língua|das línguas}} $3 na wiki {{SITENAME}}.\nA página [[$4]] está disponível para tradução. Pode traduzi-la aqui:\n$5\n\n$6\n$7\n\n$8\n\nA sua ajuda é bastante apreciada. Tradutores como você podem ajudar a wiki {{SITENAME}} a funcionar como uma verdadeira comunidade multilingue.\n\nPara cancelar a inscrição ou mudar as suas preferências de notificação de traduções visite [$10 Special:TranslatorSignup].\n\nObrigado!\n\nCoordenadores de tradução da wiki {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "traduzir para $1",
 	"translationnotifications-digestemail-subject": "Resumo por correio eletrónico para pedidos de tradução da wiki {{SITENAME}}",
-	"translationnotifications-digestemail-body": "Olá $1,\n\nEstá a receber esta mensagem porque se inscreveu como {{GENDER:$10|tradutor|tradutora}} de $2 na wiki {{SITENAME}}.\n\n{{PLURAL:$3|Está disponível uma página|Estão disponíveis $3 páginas}} para tradução. Os detalhes são fornecidos abaixo.\n\n$4\n\nA sua ajuda é bastante apreciada. Tradutores como você podem ajudar a wiki {{SITENAME}} a funcionar como uma verdadeira comunidade multilingue.\n\nObrigado!\nCoordenadores de tradução da wiki {{SITENAME}}\n\n----\n\nEstá a receber esta mensagem porque escolheu receber mensagens relacionadas com traduções na wiki {{SITENAME}}. Para cancelar ou para alterar as suas configurações de notificação de traduções, visite\n$5",
+	"translationnotifications-digestemail-body": "Olá $1,\n\nEstá a receber esta mensagem porque,  {{GENDER:$1|inscreveu-se}} como um tradutor/tradutora de $2 na {{SITENAME}}.\n\nExiste {{PLURAL:$3|1 página|$3 páginas}} disponíveis para tradução. Os detalhes são fornecidos abaixo.\n\n$4\n\nA sua ajuda é bastante apreciada. Tradutores como você podem ajudar a {{SITENAME}} a funcionar como uma verdadeira comunidade multilingue.\n\nObrigado!\nCoordenadores de tradução da {{SITENAME}}\n\n----\n\nEstá a receber esta mensagem porque escolheu receber mensagens relacionadas com traduções na {{SITENAME}}. Para cancelar ou para alterar as suas configurações de notificação de traduções, por favor, visite\n$5.",
 	"translationnotifications-digestemail-notification-line": "A $1, $2 marcou \"$3\" para tradução. Pode traduzir a página em $4",
 	"translationnotifications-edit-summary": "Notificação de tradução: $1",
 	"translationnotifications-email-priority": "A prioridade desta página é $1.",
