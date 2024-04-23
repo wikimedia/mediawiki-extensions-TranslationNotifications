@@ -12,7 +12,10 @@
 			"Xiaomingyan",
 			"铁桶",
 			"Winston Sung",
-			"Xyb"
+			"Xyb",
+			"Amire80",
+			"Lakejason0",
+			"沈澄心"
 		]
 	},
 	"translatorsignup": "翻译者登记",
@@ -48,6 +51,11 @@
 	"translationnotifications-deadline-label": "这个通知指明的截止日期：",
 	"translationnotifications-languages-to-notify-label": "已选择/已排除的语言：",
 	"translationnotifications-languages-to-notify-label-help-message": "留空以给所有语言的翻译者发送通知",
+	"translationnotifications-requested-languages-label": "请求的语言：",
+	"translationnotifications-languages-to-notify": "选择的语言：",
+	"translationnotifications-languages-to-notify-all-label": "所有语言",
+	"translationnotifications-languages-to-notify-only-selected-label": "仅限选定的语言：",
+	"translationnotifications-languages-to-notify-all-except-label": "除以下语言外的所有语言：",
 	"translationnotifications-sourcelang-only": "通知不能只发送给源语言的翻译者。",
 	"translationnotifications-priority": "优先级：",
 	"translationnotifications-priority-high": "高",
