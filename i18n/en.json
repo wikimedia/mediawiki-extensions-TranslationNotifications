@@ -35,7 +35,7 @@
 	"translationnotifications-unsubscribe": "Unsubscribe",
 	"translationnotifications-signup-success": "Your translation notification preferences were saved.",
 	"notifytranslators": "Notify translators",
-	"translationnotifications-submit-ok": "Notifications have been added to a queue and are delivered by a background job.",
+	"translationnotifications-submit-ok": "Notifications have been added to a queue and are delivered by a background job. Please check the [[Special:Log/notifytranslators|translation notification log]] for errors and completion message.",
 	"translationnotifications-send-notification-button": "Send notification to translators",
 	"translationnotifications-preview-notification-button": "Preview notification",
 	"translationnotifications-deadline-label": "Deadline to indicate in this notification:",
