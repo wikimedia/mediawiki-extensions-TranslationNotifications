@@ -42,6 +42,7 @@
 	"translationnotifications-freq-month": "最多每月一次",
 	"translationnotifications-freq-weekly": "每周摘要",
 	"translationnotifications-freq-monthly": "每月摘要",
+	"translationnotifications-freq-none": "无（取消订阅）",
 	"translationnotifications-submit": "更新设置",
 	"translationnotifications-unsubscribe": "取消订阅",
 	"translationnotifications-signup-success": "您的翻译通知选项已保存。",
@@ -50,10 +51,12 @@
 	"translationnotifications-send-notification-button": "给翻译者发送通知",
 	"translationnotifications-preview-notification-button": "预览通知",
 	"translationnotifications-deadline-label": "这个通知指明的截止日期：",
+	"translationnotifications-deadline-help-message": "选择一个不早于今天的日期",
 	"translationnotifications-languages-to-notify-label": "已选择/已排除的语言：",
 	"translationnotifications-languages-to-notify-label-help-message": "留空以给所有语言的翻译者发送通知",
 	"translationnotifications-requested-languages-label": "请求的语言：",
 	"translationnotifications-languages-to-notify": "选择的语言：",
+	"translationnotifications-languages-to-not-notify": "选定例外：",
 	"translationnotifications-languages-to-notify-all-label": "所有语言",
 	"translationnotifications-languages-to-notify-only-selected-label": "仅限选定的语言：",
 	"translationnotifications-languages-to-notify-all-except-label": "除以下语言外的所有语言：",
@@ -85,5 +88,9 @@
 	"translationnotifications-signup-legal": "您同意通过此信息，我们可能联系您有关{{SITENAME}}的主题，只要我们认为您对此很感兴趣。您同意您的数据受我们的[[{{MediaWiki:Privacypage}}|隐私政策]]支配。",
 	"translationnotifications-generic-languages": "&lt;语言>",
 	"translationnotifications-text": "使用下面的表单以向译者发送翻译请求。",
-	"echo-category-title-translationnotifications": "翻译通知"
+	"translationnotifications-echo-unsubscribe-header": "您已取消订阅翻译通知",
+	"translationnotifications-echo-unsubscribe-body": "由于您已不活跃或是被封禁一段时间，您已取消订阅翻译通知。如果您仍想收到通知，可以随时重新订阅。",
+	"translationnotifications-echo-unsubscribe-primary-label": "再次注册成为翻译人员",
+	"echo-category-title-translationnotifications": "翻译通知",
+	"echo-pref-tooltip-inactive-unsubscribe": "如果我取消订阅关于新的或已可用于翻译之更新页面的翻译通知，请通知我"
 }
