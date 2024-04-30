@@ -34,7 +34,7 @@
 	"translationnotifications-unsubscribe": "Disabonar me",
 	"translationnotifications-signup-success": "Tu preferentias concernente le notification de traductiones ha essite confirmate.",
 	"notifytranslators": "Notificar traductores",
-	"translationnotifications-submit-ok": "Notificationes ha essite addite a un cauda e es livrate per un processo in secunde plano.",
+	"translationnotifications-submit-ok": "Notificationes ha essite addite a un cauda e es livrate per un processo in secunde plano. Per favor consulta le [[Special:Log/notifytranslators|registro de notificationes de traduction]] pro errores e le message de completion.",
 	"translationnotifications-send-notification-button": "Inviar un notification a traductores",
 	"translationnotifications-preview-notification-button": "Previsualisar notification",
 	"translationnotifications-deadline-label": "Data limite a indicar in iste notification:",
