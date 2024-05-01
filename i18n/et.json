@@ -33,7 +33,7 @@
 	"translationnotifications-unsubscribe": "Loobu teavitustest",
 	"translationnotifications-signup-success": "Sinu tõlketeavituse eelistused salvestati.",
 	"notifytranslators": "Tõlkijate teavitamine",
-	"translationnotifications-submit-ok": "Teavitused on lisatud tööjärge ja need lähetab taustprotsess.",
+	"translationnotifications-submit-ok": "Teavitused on lisatud tööjärge ja need lähetab taustprotsess. Palun kontrolli [[Special:Log/notifytranslators|tõlketeavituste logis]] vigu ja protsessi lõpule jõudmist.",
 	"translationnotifications-send-notification-button": "Saada teavitus tõlkijatele",
 	"translationnotifications-deadline-label": "Tähtaeg, mis selles teavituses tuuakse:",
 	"translationnotifications-languages-to-notify-label": "Valitud keeled/erandid:",
