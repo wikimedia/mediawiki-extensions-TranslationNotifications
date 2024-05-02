@@ -254,22 +254,17 @@ class DigestEmailer extends Maintenance {
 	}
 
 	protected function getTranslators(): array {
-		$translators = [];
 		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
-		$translatorsConds = [ 'up_property' => 'translationnotifications-freq' ];
-		$translatorsConds += [ 'up_value' => [ 'weekly', 'monthly' ] ];
-		$result = $dbr->select(
-			'user_properties',
-			'up_user',
-			$translatorsConds,
-			__METHOD__,
-			'DISTINCT'
-		);
-		foreach ( $result as $translator ) {
-			$translators[] = $translator->up_user;
-		}
-
-		return $translators;
+		return $dbr->newSelectQueryBuilder()
+			->select( 'up_user' )
+			->distinct()
+			->from( 'user_properties' )
+			->where( [
+				'up_property' => 'translationnotifications-freq',
+				'up_value' => [ 'weekly', 'monthly' ],
+			] )
+			->caller( __METHOD__ )
+			->fetchFieldValues();
 	}
 
 	/**
