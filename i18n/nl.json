@@ -42,7 +42,7 @@
 	"translationnotifications-unsubscribe": "Uitschrijven",
 	"translationnotifications-signup-success": "Uw voorkeuren voor meldingen over vertalingen zijn opgeslagen.",
 	"notifytranslators": "Meldingen voor vertalers",
-	"translationnotifications-submit-ok": "De meldingen zijn toegevoegd aan een wachtrij en worden via een achtergrondtaak afgeleverd.",
+	"translationnotifications-submit-ok": "De meldingen zijn toegevoegd aan een wachtrij en worden via een achtergrondtaak afgeleverd. Controleer het [[Special:Log/notifytranslators|logboek vertaalmeldingen]] op fouten en het voltooiingsbericht.",
 	"translationnotifications-send-notification-button": "Bericht naar vertalers sturen",
 	"translationnotifications-preview-notification-button": "Voorvertoning melding",
 	"translationnotifications-deadline-label": "Deadline voor deze melding:",
