@@ -35,7 +35,7 @@
 	"translationnotifications-unsubscribe": "ביטול מינוי",
 	"translationnotifications-signup-success": "ההעדפות שלך על הודעות התרגום נשמרו.",
 	"notifytranslators": "מכתבים למתרגמים",
-	"translationnotifications-submit-ok": "ההודעות נוספו לתור המשימות ויישלחו על־ידי משימת רקע. נא לסקור את ב[[Special:Log/notifytranslators|יומן הודעות התרגום]] כדי למצוא שגיאות והודעות על השלמה.",
+	"translationnotifications-submit-ok": "ההודעות נוספו לתור המשימות ויימסרו על־ידי משימת רקע. נא לסקור את [[Special:Log/notifytranslators|יומן הודעות התרגום]] כדי למצוא שגיאות והודעות על השלמה.",
 	"translationnotifications-send-notification-button": "שליחת הודעות למתרגמים",
 	"translationnotifications-preview-notification-button": "תצוגה מקדימה",
 	"translationnotifications-deadline-label": "תאריך סופי שיתווסף להודעה:",
