@@ -26,7 +26,6 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
-use ObjectCache;
 
 class DigestEmailer extends Maintenance {
 	public function __construct() {
@@ -237,7 +236,7 @@ class DigestEmailer extends Maintenance {
 
 	protected function lock(): void {
 		// Lock this process to avoid multiple instances running and duplicate mails being sent.
-		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
+		$cache = MediaWikiServices::getInstance()->getObjectCacheFactory()->getInstance( CACHE_ANYTHING );
 		$lockKey = $cache->makeKey( 'translationnotifications-digestemailer-lock' );
 		if ( $cache->get( $lockKey ) == true ) {
 			$this->output( "Another process is running. Please try later\n" );
@@ -247,7 +246,7 @@ class DigestEmailer extends Maintenance {
 	}
 
 	protected function unlock(): void {
-		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
+		$cache = MediaWikiServices::getInstance()->getObjectCacheFactory()->getInstance( CACHE_ANYTHING );
 		$lockKey = $cache->makeKey( 'translationnotifications-digestemailer-lock' );
 		// release the lock.
 		$cache->delete( $lockKey );
