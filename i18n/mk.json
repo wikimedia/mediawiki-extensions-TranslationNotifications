@@ -33,7 +33,7 @@
 	"translationnotifications-unsubscribe": "Отпиши ме",
 	"translationnotifications-signup-success": "Вашите нагодувања на преводните известувања се зачувани.",
 	"notifytranslators": "Известување на преведувачите",
-	"translationnotifications-submit-ok": "Известувањата се додадени во редицата на чекање и се испорачуваат со позадинска задача.",
+	"translationnotifications-submit-ok": "Известувањата се додадени во редицата на чекање и се испорачуваат со позадинска задача. Погледајте го [[Special:Log/notifytranslators|дневникот на преводни известувања]] за да видите дали има грешки и порака за завршување.",
 	"translationnotifications-send-notification-button": "Испрати известување до преведувачите",
 	"translationnotifications-preview-notification-button": "Прегл. известување",
 	"translationnotifications-deadline-label": "Рок во известувањето:",
