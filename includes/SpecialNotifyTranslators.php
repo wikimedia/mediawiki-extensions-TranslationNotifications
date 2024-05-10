@@ -18,7 +18,6 @@ use ErrorPageError;
 use HTMLForm;
 use JobQueueGroup;
 use LogicException;
-use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\Extension\Translate\MessageGroupProcessing\MessageGroups;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsSubmitJob;
@@ -38,23 +37,16 @@ use WikiPageMessageGroup;
  */
 class SpecialNotifyTranslators extends FormSpecialPage {
 	public static string $right = 'translate-manage';
-
-	/** @var LanguageNameUtils */
-	private $languageNameUtils;
-	/** @var JobQueueGroup */
-	private $jobQueueGroup;
-	/** @var LinkBatchFactory */
-	private $linkBatchFactory;
+	private LanguageNameUtils $languageNameUtils;
+	private JobQueueGroup $jobQueueGroup;
 
 	public function __construct(
 		LanguageNameUtils $languageNameUtils,
-		JobQueueGroup $jobQueueGroup,
-		LinkBatchFactory $linkBatchFactory
+		JobQueueGroup $jobQueueGroup
 	) {
 		parent::__construct( 'NotifyTranslators', self::$right );
 		$this->languageNameUtils = $languageNameUtils;
 		$this->jobQueueGroup = $jobQueueGroup;
-		$this->linkBatchFactory = $linkBatchFactory;
 	}
 
 	public function doesWrites() {
