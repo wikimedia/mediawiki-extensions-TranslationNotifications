@@ -4,7 +4,11 @@
 			"MathXplore",
 			"Omotecho",
 			"Otokoume",
-			"Shirayuki"
+			"Shirayuki",
+			"Ant176",
+			"Chqaz",
+			"Salvare",
+			"春春眠眠"
 		]
 	},
 	"translatorsignup": "翻訳者登録",
@@ -69,5 +73,7 @@
 	"translationnotifications-nodeadline": "なし",
 	"translationnotifications-signup-legal": "この情報の提供は、{{SITENAME}}関連であなたが関心をお持ちになりそうな話題について、私たちからご連絡を差し上げることにあなたが同意されたことを意味します。私たちの[[{{MediaWiki:Privacypage}}|個人情報の方針]]において、ご自身のデータが対象となることに、あなたが同意されたことを意味します。",
 	"translationnotifications-generic-languages": "&lt;言語を列挙>",
-	"translationnotifications-text": "翻訳者に翻訳依頼を提出するには、以下の書式を使ってください。"
+	"translationnotifications-text": "翻訳者に翻訳依頼を提出するには、以下の書式を使ってください。",
+	"translationnotifications-echo-unsubscribe-primary-label": "翻訳者として再度登録する",
+	"echo-category-title-translationnotifications": "翻訳通知"
 }
