@@ -19,7 +19,9 @@ use MediaWiki\Title\Title;
 use MediaWiki\User\Options\UserOptionsManager;
 use MediaWiki\User\User;
 use MediaWiki\WikiMap\WikiMap;
+use Wikimedia\Rdbms\IExpression;
 use Wikimedia\Rdbms\IResultWrapper;
+use Wikimedia\Rdbms\LikeValue;
 
 /**
  * Handles a notification request. Uses the TranslationNotifyUsers to create the necessary jobs
@@ -300,31 +302,28 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 	 * @return IResultWrapper
 	 */
 	private function fetchTranslators( $selectedLanguages, $sourceLanguage, $languageSet ) {
-		$langPropertyPrefix = 'translationnotifications-lang-';
 		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
-		$propertyLikePattern = $dbr->buildLike( $langPropertyPrefix, $dbr->anyString() );
-		$translatorsConditions = [
-			"up_property $propertyLikePattern",
-		];
+		$queryBuilder = $dbr->newSelectQueryBuilder()
+			->select( 'up_user' )
+			->from( 'user_properties' )
+			->where( $dbr->expr( 'up_property', IExpression::LIKE,
+				new LikeValue( 'translationnotifications-lang-', $dbr->anyString() )
+			) )
+			->caller( __METHOD__ )
+			->distinct();
 		switch ( $languageSet->getOption() ) {
 			case LanguageSet::ALL:
-				$translatorsConditions[] = $dbr->expr( 'up_value', '!=', $sourceLanguage );
+				$queryBuilder->andWhere( $dbr->expr( 'up_value', '!=', $sourceLanguage ) );
 				break;
 			case LanguageSet::SOME:
-				$translatorsConditions[] = $dbr->expr( 'up_value', '=', $selectedLanguages );
+				$queryBuilder->andWhere( $dbr->expr( 'up_value', '=', $selectedLanguages ) );
 				break;
 			case LanguageSet::ALL_EXCEPT_SOME:
 				$selectedLanguages[] = $sourceLanguage;
-				$translatorsConditions[] = $dbr->expr( 'up_value', '!=', $selectedLanguages );
+				$queryBuilder->andWhere( $dbr->expr( 'up_value', '!=', $selectedLanguages ) );
 				break;
 		}
-		return $dbr->newSelectQueryBuilder()
-			->select( 'up_user' )
-			->from( 'user_properties' )
-			->where( $translatorsConditions )
-			->caller( __METHOD__ )
-			->distinct()
-			->fetchResultSet();
+		return $queryBuilder->fetchResultSet();
 	}
 
 	/**
