@@ -36,8 +36,7 @@
 			"class": "MediaWiki\\Extension\\TranslationNotifications\\SpecialNotifyTranslators",
 			"services": [
 				"LanguageNameUtils",
-				"JobQueueGroup",
-				"LinkBatchFactory"
+				"JobQueueGroup"
 			]
 		}
 	},
