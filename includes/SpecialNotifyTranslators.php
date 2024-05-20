@@ -17,6 +17,7 @@ namespace MediaWiki\Extension\TranslationNotifications;
 use ErrorPageError;
 use HTMLForm;
 use JobQueueGroup;
+use LogicException;
 use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\Extension\Translate\MessageGroupProcessing\MessageGroups;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
@@ -98,9 +99,13 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 
 		$formFields['TranslatablePage'] = [
 			'name' => 'tpage',
+			'id' => 'mw-tns-group-selector',
 			'type' => 'select',
 			'label-message' => [ 'translationnotifications-translatablepage-title' ],
 			'options' => $pages,
+			'cssclass' => 'mw-tns-translatable-page-selector',
+			'default' => '',
+			'required' => true
 		];
 
 		$languages = array_flip(
@@ -172,30 +177,18 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		$translatablePages = MessageGroups::getGroupsByType( WikiPageMessageGroup::class );
 		usort( $translatablePages, [ MessageGroups::class, 'groupLabelSort' ] );
 
-		$titles = [];
-		// Retrieving article id requires doing DB queries.
-		// Make it more efficient by batching into one query.
-		$lb = $this->linkBatchFactory->newLinkBatch();
-		/**
-		 * @var WikiPageMessageGroup $page
-		 */
-		foreach ( $translatablePages as $page ) {
+		$options = [
+			// Default value
+			'' => ''
+		];
+		foreach ( $translatablePages as $id => $page ) {
 			if ( MessageGroups::getPriority( $page ) === 'discouraged' ) {
 				continue;
 			}
-			'@phan-var WikiPageMessageGroup $page';
-			$title = $page->getTitle();
-			$lb->addObj( $title );
-			$titles[] = $title;
-		}
-		$lb->execute();
-
-		$translatablePagesOptions = [];
-		foreach ( $titles as $title ) {
-			$translatablePagesOptions[$title->getPrefixedText()] = $title->getArticleID();
+			$options[$page->getTitle()->getPrefixedText()] = $id;
 		}
 
-		return $translatablePagesOptions;
+		return $options;
 	}
 
 	private function getSourceLanguage( Title $title ): string {
@@ -204,7 +197,12 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	}
 
 	public function onSubmit( array $formData ): Status {
-		$translatablePageTitle = Title::newFromID( $formData['TranslatablePage'] );
+		$group = MessageGroups::getGroup( $formData['TranslatablePage'] );
+		if ( !$group instanceof WikiPageMessageGroup ) {
+			throw new LogicException( 'Cannot send notification to non-translatable pages.' );
+		}
+
+		$translatablePageTitle = $group->getTitle();
 		$notificationText = $formData['NotificationText'];
 		$priority = $formData['Priority'];
 		$deadlineDate = $formData['DeadlineDate'];
