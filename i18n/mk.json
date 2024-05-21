@@ -74,6 +74,7 @@
 	"translationnotifications-signup-legal": "Поднесувајќи ги овие информации, се согласувате да бидете контактирани во врска со темите поврзани со {{SITENAME}} што мислиме дека ќе ве интересираат. Се согласувате дека вашите податоци подлежат на нашите [[{{MediaWiki:Privacypage}}|правила за заштита на личните податоци.]]",
 	"translationnotifications-generic-languages": "&lt;јазици>",
 	"translationnotifications-text": "Послужете се со долунаведениот образец за да им испраќате барања за превод на преведувачите.",
+	"translationnotifications-tes-discouraged-group": "Избраната преводлива страница не се препорачува. Испраќањето на известувања до непрепорачани страници не е дозволено.",
 	"translationnotifications-echo-unsubscribe-header": "Се отпишавте од преводните известувања",
 	"translationnotifications-echo-unsubscribe-body": "Ако сте неактивни или блокирани веќе подолго време, тогаш отпишани сте од преводните известувања. Ако сепак сакате да бидете известувани, можете повторно да се пријавите во секое време.",
 	"translationnotifications-echo-unsubscribe-primary-label": "Повторно пријави се за преведувач",
