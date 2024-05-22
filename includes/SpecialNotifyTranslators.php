@@ -173,11 +173,11 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 			// Default value
 			'' => ''
 		];
-		foreach ( $translatablePages as $id => $page ) {
+		foreach ( $translatablePages as $page ) {
 			if ( MessageGroups::getPriority( $page ) === 'discouraged' ) {
 				continue;
 			}
-			$options[$page->getTitle()->getPrefixedText()] = $id;
+			$options[$page->getTitle()->getPrefixedText()] = $page->getId();
 		}
 
 		return $options;
