@@ -241,6 +241,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 				->where( [ $prefixedActorColumn => $actorId ] )
 				->andWhere( $dbr->expr( $prefixedTimestampColumn, '>', $inactiveTs ) )
 				->limit( 1 )
+				->caller( __METHOD__ )
 				->fetchRowCount();
 
 			if ( $contributionCount ) {
