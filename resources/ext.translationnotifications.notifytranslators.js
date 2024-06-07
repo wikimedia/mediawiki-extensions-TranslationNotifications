@@ -67,7 +67,7 @@
 		);
 
 		new mw.Api().parse( fullText.escaped().replace( /\n{3,}/g, '\n\n' ) )
-			.done( function ( parsedNotification ) {
+			.done( ( parsedNotification ) => {
 				$( '#' + previewId )
 					.html( parsedNotification )
 					.show();
@@ -127,9 +127,7 @@
 		const options = document.querySelectorAll( 'select[name="tpage"] option' );
 		const hasOption = Array.prototype.some.call(
 			options,
-			function ( option ) {
-				return option.value === selectedItem.data;
-			}
+			( option ) => option.value === selectedItem.data
 		);
 
 		// Remove existing errors

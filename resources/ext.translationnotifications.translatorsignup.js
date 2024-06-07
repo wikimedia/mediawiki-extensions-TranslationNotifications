@@ -2,7 +2,7 @@
  * @license GPL.2-0+
  */
 
-$( function () {
+$( () => {
 	'use strict';
 
 	const $checkbox = $( '#mw-input-wpcmethod-talkpage-elsewhere input' );
