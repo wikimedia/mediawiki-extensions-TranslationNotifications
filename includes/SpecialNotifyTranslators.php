@@ -15,7 +15,6 @@
 namespace MediaWiki\Extension\TranslationNotifications;
 
 use ErrorPageError;
-use HTMLForm;
 use JobQueueGroup;
 use LogicException;
 use MediaWiki\Extension\Translate\MessageGroupProcessing\MessageGroups;
@@ -23,6 +22,7 @@ use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsSubmitJob;
 use MediaWiki\Extension\TranslationNotifications\Utilities\LanguageSet;
 use MediaWiki\Extension\TranslationNotifications\Utilities\NotificationMessageBuilder;
+use MediaWiki\HTMLForm\HTMLForm;
 use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\SpecialPage\FormSpecialPage;
 use MediaWiki\Status\Status;
