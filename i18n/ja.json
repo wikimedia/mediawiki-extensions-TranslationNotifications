@@ -8,7 +8,8 @@
 			"Salvare",
 			"Shirayuki",
 			"春春眠眠",
-			"Chqaz"
+			"Chqaz",
+			"Kokage si"
 		]
 	},
 	"translatorsignup": "翻訳者登録",
@@ -44,10 +45,15 @@
 	"translationnotifications-send-notification-button": "翻訳者に通知を送信",
 	"translationnotifications-preview-notification-button": "通知をプレビュー",
 	"translationnotifications-deadline-label": "この通知で指定する締め切り:",
-	"translationnotifications-languages-to-notify-label": "通知する言語の指定:",
-	"translationnotifications-languages-to-notify-label-help-message": "カンマ区切りの言語コードです。言語に関わらずすべての翻訳者に通知する場合は、空欄にします。",
-	"translationnotifications-languages-to-notify": "選択されている言語",
+	"translationnotifications-deadline-help-message": "今日以降の日付を選択",
+	"translationnotifications-languages-to-notify-label": "言語の選択/除外:",
+	"translationnotifications-languages-to-notify-label-help-message": "言語に関わらずすべての翻訳者に通知する場合は、空欄のままにします",
+	"translationnotifications-requested-languages-label": "要求された言語:",
+	"translationnotifications-languages-to-notify": "選択された言語:",
+	"translationnotifications-languages-to-not-notify": "除外された言語:",
 	"translationnotifications-languages-to-notify-all-label": "すべての言語",
+	"translationnotifications-languages-to-notify-only-selected-label": "選択された言語のみ:",
+	"translationnotifications-languages-to-notify-all-except-label": "以下を除くすべての言語:",
 	"translationnotifications-sourcelang-only": "通知の送り先をソース言語の翻訳者に限定することはできません。",
 	"translationnotifications-priority": "優先度:",
 	"translationnotifications-priority-high": "高",
@@ -58,7 +64,7 @@
 	"translationnotifications-error-no-translatable-pages": "このウィキには翻訳対象ページはありません。",
 	"translationnotifications-email-subject": "ページ $1 を翻訳してください",
 	"translationnotifications-email-body": "こんにちは $1 さん、\n\nこのメールは{{SITENAME}}で $2 {{PLURAL:$9|の}}翻訳者として{{GENDER:$10|登録された}}ためお届けしました。\n\n次のとおり翻訳対象ページがありますのでお知らせします: $3。\n以下のリンクをクリックすると、直接、翻訳ページが開きます:\n$4\n\n$5\n$6\n\n$7\n\nぜひご協力をお願いします。皆さん翻訳者のおかげで{{SITENAME}}が真の多言語版コミュニティとして機能しています。\n\nいつもありがとうございます！\n{{SITENAME}} 翻訳調整者\n\n----\n\nこのメールは{{SITENAME}}で翻訳に関するメール受信を購読した人にお送りしています。購読解除もしくは翻訳通知の設定変更は、$8 にて手続きをお願いします。",
-	"translationnotifications-talkpage-body": "こんにちは $2 さん、\n{{PLURAL:$9|to}} $3 on {{SITENAME}}.\nこのメールは{{SITENAME}}で $3 {{PLURAL:$9|の}}翻訳者として{{GENDER:$1|登録された}}ためお届けしました。\n\n次のとおり[[$4]]が翻訳対象になりました。翻訳ページへのリンクはこちらです:\n$5\n\n$6\n$7\n\n$8\n\nぜひご協力をお願いします。皆さん翻訳者のおかげで{{SITENAME}}が真の多言語版コミュニティとして機能しています。\n\nまた[$10 通知設定は変更ができます]。\n\nいつもありがとうございます！\n{{SITENAME}} 翻訳調整者",
+	"translationnotifications-talkpage-body": "こんにちは $2 さん、\n{{PLURAL:$9|to}} $3 on {{SITENAME}}.\nこのメールは{{SITENAME}}で $3 {{PLURAL:$9|の}}翻訳者として{{GENDER:$1|登録された}}ためお届けしました。\n\n次のとおり[[$4]]が翻訳対象になりました。翻訳ページへのリンクはこちらです:\n$5\n\n$6\n$7\n\n$8\n\nぜひご協力をお願いします。皆さん翻訳者のおかげで{{SITENAME}}が真の多言語版コミュニティとして機能しています。\n\n購読解除または翻訳通知設定の変更は[$10 Special:TranslatorSignup]までお願いします。\n\nいつもありがとうございます！\n{{SITENAME}} 翻訳調整者",
 	"translationnotifications-notification-url-listitem": "$1に翻訳",
 	"translationnotifications-digestemail-subject": "{{SITENAME}}からの翻訳要請ダイジェストメール",
 	"translationnotifications-digestemail-body": "こんにちは $1 さん、\n\nこのメールは{{SITENAME}}で $2 の翻訳者として{{GENDER:$1|登録された}}ためお届けしました。\n\n次のとおり{{PLURAL:$3|1 ページが|$3 ページが}}翻訳対象になりましたのでお知らせします。詳細は以下を参照してください。\n\n$4\n\nぜひご協力をお願いします。皆さん翻訳者のおかげで{{SITENAME}}が真の多言語版コミュニティとして機能しています。\n\nいつもありがとうございます！\n{{SITENAME}} 翻訳調整者\n\n----\n\nこのメールは{{SITENAME}}で翻訳に関するメール受信を購読した人にお送りしています。購読解除もしくは翻訳通知の設定変更は、\n$5\nにて手続きをお願いします。",
@@ -66,7 +72,7 @@
 	"translationnotifications-edit-summary": "翻訳の通知: $1",
 	"translationnotifications-email-priority": "このページの優先度は$1です。",
 	"translationnotifications-email-deadline": "このページの翻訳の締め切りは $1 です。",
-	"logentry-notifytranslators-sent": "$1 がページ $3 の翻訳について通知を{{GENDER:$2|送信しました}}。{{PLURAL:$10|言語}}: $4、締め切り: $5、優先度: $6。送信成功 {{PLURAL:$7|$7 人}}、失敗 {{PLURAL:$8|$8 人}}、スキップ {{PLURAL:$9|$9 人}}",
+	"logentry-notifytranslators-sent": "$1 がページ $3 の翻訳について通知を{{GENDER:$2|送信しました}}。{{PLURAL:$10|言語}}: $4、締め切り: $5、優先度: $6。送信成功 {{PLURAL:$7|$7 人}}、失敗 {{PLURAL:$8|$8 人}}、スキップ {{PLURAL:$9|$9 人}}、通知先: $11 言語",
 	"log-name-notifytranslators": "翻訳通知記録",
 	"log-description-notifytranslators": "翻訳対象ページについて翻訳者宛に送信した通知の記録",
 	"translationnotifications-sent-title": "翻訳の通知を送信しました",
@@ -76,6 +82,9 @@
 	"translationnotifications-signup-legal": "この情報の提供は、{{SITENAME}}関連であなたが関心をお持ちになりそうな話題について、私たちからご連絡を差し上げることにあなたが同意されたことを意味します。私たちの[[{{MediaWiki:Privacypage}}|個人情報の方針]]において、ご自身のデータが対象となることに、あなたが同意されたことを意味します。",
 	"translationnotifications-generic-languages": "&lt;言語を列挙>",
 	"translationnotifications-text": "翻訳者に翻訳依頼を提出するには、以下の書式を使ってください。",
+	"translationnotifications-echo-unsubscribe-header": "翻訳通知の購読を解除しました",
+	"translationnotifications-echo-unsubscribe-body": "長期間活動していないかブロックされているため、翻訳通知の購読が解除されました。今後も通知を受け取りたい場合は、いつでも再購読できます。",
 	"translationnotifications-echo-unsubscribe-primary-label": "翻訳者として再度登録する",
-	"echo-category-title-translationnotifications": "翻訳通知"
+	"echo-category-title-translationnotifications": "翻訳通知",
+	"echo-pref-tooltip-inactive-unsubscribe": "翻訳可能な新しいページや更新されたページに関する翻訳通知の購読が解除された場合に通知する"
 }
