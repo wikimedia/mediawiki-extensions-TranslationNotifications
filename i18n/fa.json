@@ -13,7 +13,9 @@
 			"Mjbmr",
 			"Mohammad ebz",
 			"Reza1615",
-			"درفش کاویانی"
+			"درفش کاویانی",
+			"Amire80",
+			"Ebrahim"
 		]
 	},
 	"translatorsignup": "ثبت نام مترجم",
@@ -73,6 +75,6 @@
 	"translationnotifications-sent-body": "آگاه‌سازی ترجمه فرستاده شد.",
 	"translationnotifications-log-alllanguages": "همهٔ زبان‌ها",
 	"translationnotifications-nodeadline": "هیچ‌کدام",
-	"translationnotifications-signup-legal": "شما توافق می‌کنید که با ارائه این اطلاعات تماس، ممکن است با شما در مورد موضوعات مربوط به {{SITENAME}} که تصور می‌کنیم مورد علاقه شماست، تماس بگیریم. شما توافق می‌کنید اطلاعات شما تحت شرایط  [[{{MediaWiki:Privacypage}}|سیاست محرمانگی]] است.",
+	"translationnotifications-signup-legal": "با ارائهٔ این اطلاعات تماس، توافق می‌کنید که ممکن است در مورد موضوعات مربوط به {{SITENAME}} که تصور می‌کنیم مورد علاقهٔ شماست، با شما تماس بگیریم. موافقت می‌کنید که اطلاعات‌تان تحت شرایط  [[{{MediaWiki:Privacypage}}|سیاست محرمانگی]] است.",
 	"translationnotifications-generic-languages": "زبان‌ها"
 }
