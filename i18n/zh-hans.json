@@ -68,7 +68,7 @@
 	"translationnotifications-translatablepage-title": "可翻译页面名：",
 	"translationnotifications-error-no-translatable-pages": "这个wiki中没有可翻译页面。",
 	"translationnotifications-email-subject": "请翻译页面$1",
-	"translationnotifications-email-body": "$1：\n\n您好！\n\n您收到这封邮件，是因为您是{{SITENAME}}{{PLURAL:$9|的}}$2{{GENDER:$10|注册}}译者。\n\n本网站上有一个待翻译的页面：$3。\n您可以点击下面的链接来翻译它：\n$4\n\n$5\n$6\n\n$7\n\n我们非常感谢您的帮助。正是同您一样的译者们的积极帮助，才使{{SITENAME}}成为一个真正的多语社区。\n\n谢谢！\n{{SITENAME}}翻译协调团队\n\n----\n\n您收到这封邮件，是因为您在{{SITENAME}}登记接收与翻译有关的电子邮件。想要退订这类邮件或更改您的翻译通知设置，请访问$8。",
+	"translationnotifications-email-body": "$1，您好：\n\n因您曾在{{SITENAME}}{{GENDER:$10|注册}}成为$2{{PLURAL:$9|}}翻译者，现向您发来邮件。\n\n此页面需要翻译：$3。\n点击下方链接即可翻译：\n$4\n\n$5\n$6\n\n$7\n\n对于您的努力我们深表感谢。有了您和其他翻译者的努力，才让{{SITENAME}}得以成为多语言社区。\n\n敬请！\n{{SITENAME}}翻译协调员示\n\n----\n\n因为您曾在{{SITENAME}}注册接收翻译方面的电子邮件，所以才会收到这封邮件。若要退订或更改您的翻译通知设置，请访问“$8”。",
 	"translationnotifications-talkpage-body": "嗨！$2，\n\n您收到此通知，是因为您作为一名$3{{PLURAL:$9|的}}翻译者在{{SITENAME}}{{GENDER:$1|注册了}}。页面[[$4]]已提供翻译。您可在此翻译：\n$5\n\n$6\n$7\n\n$8\n\n非常感谢您的帮助。像您一样的翻译者正在不断努力帮助{{SITENAME}}成为一个真正多语言的社群。\n\n您可以[$10 更改您的通知设置]。\n\n感谢您！\n{{SITENAME}}翻译协调员",
 	"translationnotifications-notification-url-listitem": "翻译为$1",
 	"translationnotifications-digestemail-subject": "来自{{SITENAME}}的翻译请求的摘要电子邮件",
