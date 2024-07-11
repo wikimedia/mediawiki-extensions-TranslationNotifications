@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nemoralis"
+		]
+	},
+	"translatorsignup": "Tərcüməçi qeydiyyatı",
+	"translatorsignup-summary": "Hansı dillərə tərcümə edə biləcəyinizi və yeni tərcümə sorğuları ilə bağlı sizinlə necə əlaqə saxlamaq istədiyinizi göstərmək üçün bu səhifədən istifadə edin.",
+	"translationnotifications-desc": "Tərcüməçilərə tərcümə bildirişləri üçün qeydiyyatdan keçməyə imkan verir",
+	"translationnotifications-info": "İstifadəçi məlumatı",
+	"translationnotifications-username": "İstifadəçi adı:",
+	"translationnotifications-emailstatus": "E-poçt statusu:",
+	"translationnotifications-email-confirmed": "E-poçt ünvanınız təsdiqləndi",
+	"translationnotifications-email-disablemail": "E-poçt ünvanınız təsdiqləndi, lakin [[Special:Preferences|nizamlamalarınızda]] e-poçt qəbul etməməyi seçdiniz.",
+	"translationnotifications-email-unconfirmed": "E-poçt ünvanınız təsdiqlənməyib. $1",
+	"translationnotifications-email-notset": "E-poçt ünvanı təqdim etməmisiniz. Siz bunu [[Special:Preferences|nizamlamalarda]] edə bilərsiniz.",
+	"translationnotifications-languages": "Dillər",
+	"translationnotifications-lang": "Dil #$1",
+	"translationnotifications-nolang": "Dil seç",
+	"translationnotifications-contact": "Üstünlük verilən əlaqə üsulları",
+	"translationnotifications-cmethod-email": "E-poçt",
+	"translationnotifications-cmethod-talkpage": "Müzakirə səhifəsi",
+	"translationnotifications-cmethod-talkpage-elsewhere": "Digər vikidə müzakirə səhifəsi",
+	"translationnotifications-cmethod-feed": "Lent",
+	"translationnotifications-frequency": "Əlaqə tezliyi",
+	"translationnotifications-freq-always": "Tərcümə etmək üçün yeni bir şey olduqda",
+	"translationnotifications-freq-week": "Ən çox həftədə bir dəfə",
+	"translationnotifications-freq-month": "Ən çox ayda bir dəfə",
+	"translationnotifications-freq-weekly": "Həftəlik xülasə",
+	"translationnotifications-freq-monthly": "Aylıq xülasə",
+	"translationnotifications-freq-none": "Heç biri (abunəlikdən çıxılıb)",
+	"translationnotifications-submit": "Parametrləri yeniləyin",
+	"translationnotifications-unsubscribe": "Abunəlikdən çıx",
+	"translationnotifications-signup-success": "Tərcümə bildiriş nizamlamalarınız yadda saxlanıldı.",
+	"notifytranslators": "Tərcüməçiləri xəbərdar et"
+}
