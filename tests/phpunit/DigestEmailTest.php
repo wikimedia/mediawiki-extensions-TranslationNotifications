@@ -9,6 +9,7 @@
  */
 
 use MediaWiki\Extension\TranslationNotifications\Scripts\DigestEmailer;
+use MediaWiki\MainConfigNames;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
@@ -33,7 +34,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		parent::setUp();
 		$this->translators_conf = parse_ini_file( "translators.ini", true );
 		$this->emailer = new DigestEmailer();
-		$this->setMwGlobals( 'wgEmailAuthentication', false );
+		$this->overrideConfigValue( MainConfigNames::EmailAuthentication, false );
 	}
 
 	public function tearDown(): void {
