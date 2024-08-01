@@ -14,7 +14,8 @@
 			"Urhixidur",
 			"Verdy p",
 			"Wladek92",
-			"Wyz"
+			"Wyz",
+			"SleaY"
 		]
 	},
 	"translatorsignup": "S’inscrire comme traducteur ou traductrice",
@@ -41,7 +42,9 @@
 	"translationnotifications-freq-month": "Une fois par mois au maximum",
 	"translationnotifications-freq-weekly": "Résumé hebdomadaire",
 	"translationnotifications-freq-monthly": "Résumé mensuel",
+	"translationnotifications-freq-none": "Jamais (désabonnement)",
 	"translationnotifications-submit": "Mettre à jour les paramètres",
+	"translationnotifications-unsubscribe": "Se désabonner",
 	"translationnotifications-signup-success": "Vos préférences de notification des traductions ont été enregistrées.",
 	"notifytranslators": "Notifier les traducteurs",
 	"translationnotifications-submit-ok": "Les notifications ont été ajoutées à une file d’attente et vont être envoyées par une tâche en arrière-plan.",
@@ -67,7 +70,7 @@
 	"translationnotifications-error-no-translatable-pages": "Il n’y a aucune page à traduire dans ce wiki.",
 	"translationnotifications-email-subject": "Aidez à traduire la page $1",
 	"translationnotifications-email-body": "Bonjour $1,\n\nVous recevez ce courriel parce que vous vous êtes inscrit{{GENDER:$10||e}} comme traduct{{GENDER:$10|eur|rice}} en{{PLURAL:$9|}} $2 sur {{SITENAME}}.\n\nIl y a une page à traduire ici : $3.\nVous pouvez la traduire en cliquant sur le lien suivant :\n$4\n\n$5\n$6\n\n$7\n\nVotre aide est grandement appréciée. Les traducteurs tels que vous permettent à {{SITENAME}} de fonctionner comme une vraie communauté multilingue.\n\nMerci !\nLes coordinateurs de traduction de {{SITENAME}}\n\n----\nVous recevez ce courriel parce que vous vous êtes inscrit{{GENDER:$10||e}} pour recevoir des courriels concernant les traductions sur {{SITENAME}}. Pour vous désabonner ou modifier vos préférences de notification pour les traductions, veuillez visiter $8.",
-	"translationnotifications-talkpage-body": "Bonjour, $2,\n\nVous recevez cette notification parce que vous vous êtes inscrit{{GENDER:$1||e}} comme traduct{{GENDER:$1|eur|rice}} en{{PLURAL:$9|}} $3 sur {{SITENAME}}.\nLa page [[$4]] est prête à être traduite. Vous pouvez la traduire ici :\n$5\n\n$6\n$7\n\n$8\n\nVotre aide est grandement appréciée. Les traducteurs comme vous aident {{SITENAME}} à fonctionner\ncomme une véritable communauté multilingue.\n\nVous pouvez [$10 modifier vos préférences de notification].\n\nMerci !\n\nLes coordinateurs de traduction de {{SITENAME}}",
+	"translationnotifications-talkpage-body": "Bonjour, $2,\n\nVous recevez cette notification parce que vous vous êtes inscrit{{GENDER:$1||e}} comme traduct{{GENDER:$1|eur|rice}} en{{PLURAL:$9|}} $3 sur {{SITENAME}}.\nLa page [[$4]] est prête à être traduite. Vous pouvez la traduire ici :\n$5\n\n$6\n$7\n\n$8\n\nVotre aide est grandement appréciée. Les traducteurs comme vous aident {{SITENAME}} à fonctionner\ncomme une véritable communauté multilingue.\n\nPour vous désabonner ou modifier vos préférences de notification pour les traductions, rendez-vous sur [$10 Spécial:TranslatorSignup].\n\nMerci !\n\nLes coordinateurs de traduction de {{SITENAME}}",
 	"translationnotifications-notification-url-listitem": "traduire en $1",
 	"translationnotifications-digestemail-subject": "Courriel de synthèse pour les demandes de traduction de {{SITENAME}}",
 	"translationnotifications-digestemail-body": "Bonjour $1,\n\nVous recevez ce courriel parce que vous vous êtes inscrit{{GENDER:$1||e}} comme traduct{{GENDER:$1|eur|rice}} en $2 sur {{SITENAME}}.\n\n{{PLURAL:$3|Une|$3}} page{{PLURAL:$3||s}} {{PLURAL:$3|es|son}}t prête{{PLURAL:$3||s}} à être traduite{{PLURAL:$3||s}}. Les détails sont donnés ci-dessous.\n\n$4\n\nVotre aide est grandement appréciée. Les traducteurs comme vous aident {{SITENAME}} à fonctionner comme une véritable communauté multilingue.\n\nMerci !\nLes administrateurs de la traduction de {{SITENAME}}\n\n----\n\nVous recevez ce courriel parce que vous vous êtes inscrit{{GENDER:$1||e}} pour recevoir des courriels concernant les traductions sur {{SITENAME}}. Pour modifier vos préférences de notification pour les traductions, rendez-vous sur $5",

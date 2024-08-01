@@ -14,7 +14,8 @@
 			"Siebrand",
 			"Verdy p",
 			"Yupik",
-			"Zoranzoki21"
+			"Zoranzoki21",
+			"Pols12"
 		]
 	},
 	"translatorsignup": "{{doc-special|TranslatorSignup}}",
@@ -41,7 +42,7 @@
 	"translationnotifications-freq-month": "Radio option label",
 	"translationnotifications-freq-weekly": "Radio option label",
 	"translationnotifications-freq-monthly": "Radio option label",
-	"translationnotifications-freq-none": "Radio option label",
+	"translationnotifications-freq-none": "Radio option label, under {{msg-mw|translationnotifications-frequency}} heading.",
 	"translationnotifications-submit": "Submit button text",
 	"translationnotifications-unsubscribe": "Unsubscribe button text",
 	"translationnotifications-signup-success": "A message that appears on the top of Special:TranslatorSignup after saving the preferences.",
