@@ -67,7 +67,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	public function execute() {
 		$inactiveSubscribers = [];
 		$blockedSubscribers = [];
-		$userOptionManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		$userOptionManager = $this->getServiceContainer()->getUserOptionsManager();
 
 		$inactiveDays = (int)$this->getOption( 'days' );
 		$isDryRun = !$this->hasOption( 'really' );
@@ -155,7 +155,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	}
 
 	private function getSubscribers(): array {
-		$mwServices = MediaWikiServices::getInstance();
+		$mwServices = $this->getServiceContainer();
 		$dbr = $mwServices->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$queryBuilder = $mwServices->getUserIdentityLookup()->newSelectQueryBuilder();
 
@@ -186,7 +186,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	private function isSubscriberInactive( UserIdentity $subscriber, string $inactiveTs ): bool {
 		$centralUser = CentralAuthUser::getInstance( $subscriber );
 		$attachedAccounts = $centralUser->queryAttached();
-		$mwServices = MediaWikiServices::getInstance();
+		$mwServices = $this->getServiceContainer();
 
 		if ( !$attachedAccounts ) {
 			$this->logVerbose( "No central account attached to user: {$subscriber->getName()}\n" );
@@ -253,7 +253,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	}
 
 	private function isSubscriberBlocked( UserIdentity $subscriber, int $inactiveDays ): bool {
-		$mwServices = MediaWikiServices::getInstance();
+		$mwServices = $this->getServiceContainer();
 		$blockManager = $mwServices->getBlockManager();
 
 		$userBlock = $blockManager->getUserBlock( $subscriber, null, true );
@@ -274,7 +274,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	}
 
 	private function removeSubscriber( UserIdentity $subscriber ): bool {
-		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		$userOptionsManager = $this->getServiceContainer()->getUserOptionsManager();
 		$subscriberOptions = $userOptionsManager->loadUserOptions( $subscriber );
 
 		$optionsUpdated = [];

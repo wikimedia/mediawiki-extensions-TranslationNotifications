@@ -10,7 +10,6 @@
 
 use MediaWiki\Extension\TranslationNotifications\Scripts\DigestEmailer;
 use MediaWiki\MainConfigNames;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 
@@ -163,7 +162,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		}
 
 		$user->setEmail( $translator_conf['email'] ?? '' );
-		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		$userOptionsManager = $this->getServiceContainer()->getUserOptionsManager();
 		$userOptionsManager->setOption(
 			$user,
 			'translationnotifications-lang-1',
