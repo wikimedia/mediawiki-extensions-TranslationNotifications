@@ -198,7 +198,8 @@ class NotificationMessageBuilder {
 			[
 				'group' => $page->getMessageGroupId(),
 				'language' => $languageCode,
-				'action' => 'page'
+				'action' => 'page',
+				'action_source' => 'translation_notification',
 			],
 			false,
 			$urlProtocol
