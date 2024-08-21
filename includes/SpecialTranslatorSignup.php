@@ -253,7 +253,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		$out = $this->getOutput();
 		$out->addHTML(
 			Html::successBox(
-				$out->msg( 'translationnotifications-signup-success' )->plain()
+				$out->msg( 'translationnotifications-signup-success' )->parse()
 			)
 		);
 	}
