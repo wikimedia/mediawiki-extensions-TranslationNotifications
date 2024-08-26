@@ -1,7 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anakmalaysia"
+			"Anakmalaysia",
+			"Amire80",
+			"Hakimi97",
+			"Tofeiku"
 		]
 	},
 	"translatorsignup": "Pendaftaran penterjemah",
@@ -33,7 +36,7 @@
 	"notifytranslators": "Beritahu penterjemah",
 	"translationnotifications-submit-ok": "Pemberitahuan telah ditambahkan dalam baris gilir dan dikirim oleh kerja latar belakang.",
 	"translationnotifications-send-notification-button": "Hantar pemberitahuan kepada para penterjemah",
-	"translationnotifications-preview-notification-button": "Pratayang pemberitahuan",
+	"translationnotifications-preview-notification-button": "Pralihat pemberitahuan",
 	"translationnotifications-deadline-label": "Tarikh tutup untuk dinyatakan dalam pemberitahuan ini:",
 	"translationnotifications-languages-to-notify-label": "Bahasa-bahasa untuk menghantar pemberitahuan:",
 	"translationnotifications-languages-to-notify-label-help-message": "Kod bahasa diasing-asingkan oleh koma; biarkan kosong untuk memberitahu untuk semua bahasa.",
