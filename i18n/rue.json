@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gazeb"
+			"Gazeb",
+			"Constraque"
 		]
 	},
 	"translationnotifications-languages": "Языкы",
@@ -9,8 +10,8 @@
 	"translationnotifications-nolang": "Звольте язык",
 	"translationnotifications-contact": "Преферованы способы контакту",
 	"translationnotifications-cmethod-email": "Імейл",
-	"translationnotifications-cmethod-talkpage": "Діскузна сторінка",
-	"translationnotifications-cmethod-talkpage-elsewhere": "Діскузна сторінка на іншых вікі",
+	"translationnotifications-cmethod-talkpage": "Діскусна сторінка",
+	"translationnotifications-cmethod-talkpage-elsewhere": "Діскусна сторінка на іншых вікі",
 	"translationnotifications-cmethod-feed": "Каналы",
 	"translationnotifications-frequency": "Як часто ся контактовати",
 	"translationnotifications-freq-week": "Найчастїше раз за рік",
