@@ -10,7 +10,8 @@
 			"Stryn",
 			"Valtlai",
 			"Valtlait",
-			"Amire80"
+			"Amire80",
+			"Samoasambia"
 		]
 	},
 	"translatorsignup": "Kääntäjäksi liittyminen",
@@ -46,6 +47,13 @@
 	"translationnotifications-deadline-label": "Ilmoituksessa kerrottava käännöksen määräaika:",
 	"translationnotifications-languages-to-notify-label": "Valitut kielet/poikkeukset:",
 	"translationnotifications-languages-to-notify-label-help-message": "Jos haluat lähettää ilmoitukset kaikkien kielien kääntäjille, jätä tyhjäksi.",
+	"translationnotifications-requested-languages-label": "Pyydetyt kielet:",
+	"translationnotifications-languages-to-notify": "Valitut kielet:",
+	"translationnotifications-languages-to-not-notify": "Valitut poikkeukset:",
+	"translationnotifications-languages-to-notify-all-label": "Kaikki kielet",
+	"translationnotifications-languages-to-notify-only-selected-label": "Vain valitut kielet:",
+	"translationnotifications-languages-to-notify-all-except-label": "Kaikki kielet paitsi:",
+	"translationnotifications-sourcelang-only": "Ilmoitusta ei voi lähettää vain lähdekielen kääntäjille.",
 	"translationnotifications-priority": "Prioriteetti:",
 	"translationnotifications-priority-high": "korkea",
 	"translationnotifications-priority-medium": "keskiverto",
@@ -63,12 +71,13 @@
 	"translationnotifications-edit-summary": "Ilmoitus käännöksestä: $1",
 	"translationnotifications-email-priority": "Tämän sivun tärkeysaste on $1.",
 	"translationnotifications-email-deadline": "Tämä sivu tulisi kääntää viimeistään $1.",
-	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|lähetti}} ilmoituksen sivun $3 kääntämisestä; {{PLURAL:$10|kieli|kielet}}: $4; määräaika: $5; tärkeysaste: $6; lähetettiin {{PLURAL:$7|yhdelle kääntäjälle|$7 kääntäjälle}}, epäonnistui {{PLURAL:$8|yhdelle kääntäjälle|$8 kääntäjälle}}, ohitettiin {{PLURAL:$9|yhdelle kääntäjälle|$9 kääntäjälle}}",
+	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|lähetti}} ilmoituksen sivun $3 kääntämisestä; {{PLURAL:$10|kieli|kielet}}: $4; määräaika: $5; tärkeysaste: $6; lähetettiin {{PLURAL:$7|yhdelle kääntäjälle|$7 kääntäjälle}}, epäonnistui {{PLURAL:$8|yhdelle kääntäjälle|$8 kääntäjälle}}, ohitettiin {{PLURAL:$9|yhdelle kääntäjälle|$9 kääntäjälle}}, ilmoitus lähetettiin: $11 kielelle",
 	"log-name-notifytranslators": "Käännösilmoitusten loki",
 	"log-description-notifytranslators": "Loki ilmoituksista, jotka on lähetetty kääntäjille käännettävistä sivuista",
 	"translationnotifications-sent-title": "Käännösilmoitus lähetetty",
 	"translationnotifications-sent-body": "Käännösilmoitus lähetettiin.",
 	"translationnotifications-log-alllanguages": "kaikki kielet",
 	"translationnotifications-nodeadline": "ei mitään",
-	"translationnotifications-signup-legal": "Antamalla nämä tiedot, vahvistat, että voimme ottaa sinuun yhteyttä sivustoon {{SITENAME}} liittyvissä asioissa, joiden arvelemme kiinnostavan sinua. Hyväksyt, että tietojasi käytetään  [[{{MediaWiki:Privacypage}}|yksityisyydensuojan]] alaisena."
+	"translationnotifications-signup-legal": "Antamalla nämä tiedot, vahvistat, että voimme ottaa sinuun yhteyttä sivustoon {{SITENAME}} liittyvissä asioissa, joiden arvelemme kiinnostavan sinua. Hyväksyt, että tietojasi käytetään  [[{{MediaWiki:Privacypage}}|yksityisyydensuojan]] alaisena.",
+	"echo-category-title-translationnotifications": "Käännösilmoitukset"
 }
