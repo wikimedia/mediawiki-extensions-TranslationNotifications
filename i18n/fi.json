@@ -8,7 +8,10 @@
 			"Pyscowicz",
 			"Silvonen",
 			"Stryn",
-			"Valtlait"
+			"Valtlait",
+			"Amire80",
+			"Samoasambia",
+			"Valtlai"
 		]
 	},
 	"translatorsignup": "Kääntäjäksi liittyminen",
@@ -44,6 +47,7 @@
 	"translationnotifications-deadline-label": "Ilmoituksessa kerrottava käännöksen määräaika:",
 	"translationnotifications-languages-to-notify-label": "Minkä kielten kääntäjille ilmoitus lähetetään:",
 	"translationnotifications-languages-to-notify-label-help-message": "Pilkulla erotellut kielikoodit; jos haluat lähettää ilmoitukset kaikkien kielien kääntäjille, jätä tyhjäksi.",
+	"translationnotifications-sourcelang-only": "Ilmoitusta ei voi lähettää vain lähdekielen kääntäjille.",
 	"translationnotifications-priority": "Prioriteetti:",
 	"translationnotifications-priority-high": "korkea",
 	"translationnotifications-priority-medium": "keskiverto",
