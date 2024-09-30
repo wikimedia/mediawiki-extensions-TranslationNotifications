@@ -106,7 +106,7 @@ class TranslationNotifyUser {
 			->text();
 
 		// Bidi-isolation of site name from date
-		$text .= $userFirstLanguage->getDirMarkEntity() .
+		$text .= $userFirstLanguage->getDirMark() .
 			', ~~~~~'; // Date and time
 
 		// Note: Maybe this was originally meant for edit summary, but it's actually used as subject
