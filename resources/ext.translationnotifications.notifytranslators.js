@@ -26,7 +26,7 @@
 	 * Actually do the preview.
 	 */
 	function doPreview() {
-		const uri = new mw.Uri();
+		const url = new URL( location.href );
 		const $translatablePageDropdown = $( '[name="tpage"]' );
 		const translatablePage = $translatablePageDropdown.find( ':selected' ).text();
 		const translatablePageGroup = $translatablePageDropdown.val();
@@ -37,11 +37,10 @@
 		// Enable the send button after the first preview
 		infuseElement( sendId ).setDisabled( false );
 
-		uri.path = mw.config.get( 'wgScript' );
-		uri.query = {
-			title: 'Special:Translate',
-			group: translatablePageGroup
-		};
+		url.path = mw.config.get( 'wgScript' );
+		url.search = '';
+		url.searchParams.set( 'title', 'Special:Translate' );
+		url.searchParams.set( 'group', translatablePageGroup );
 
 		let priority = '';
 		if ( $priority.val() !== 'unset' ) {
@@ -58,7 +57,7 @@
 			userName,
 			mw.msg( 'translationnotifications-generic-languages' ),
 			translatablePage,
-			'[' + uri.toString() + ' ' + translatablePage + ']',
+			'[' + url.toString() + ' ' + translatablePage + ']',
 			priority,
 			deadline,
 			infuseElement( 'mw-input-wpNotificationText' ).getValue(),
