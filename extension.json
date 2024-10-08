@@ -56,7 +56,7 @@
 		]
 	},
 	"TranslationAliasesDirs": {
-		"TranslationNotificationsAlias": "i18n/aliases/"
+		"TranslationNotificationsAlias": "i18n/aliases"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\TranslationNotifications\\": "includes/",
