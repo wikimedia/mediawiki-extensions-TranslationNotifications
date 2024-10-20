@@ -6,9 +6,9 @@
 
 namespace MediaWiki\Extension\TranslationNotifications\Utilities;
 
-use Language;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Html\Html;
+use MediaWiki\Language\Language;
 use MediaWiki\Message\Message;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;

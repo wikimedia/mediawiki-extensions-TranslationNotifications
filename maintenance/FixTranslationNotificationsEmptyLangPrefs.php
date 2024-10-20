@@ -15,7 +15,7 @@
 namespace MediaWiki\Extension\TranslationNotifications;
 
 // Standard boilerplate to define $IP
-use Maintenance;
+use MediaWiki\Maintenance\Maintenance;
 use Wikimedia\Rdbms\IExpression;
 use Wikimedia\Rdbms\LikeValue;
 

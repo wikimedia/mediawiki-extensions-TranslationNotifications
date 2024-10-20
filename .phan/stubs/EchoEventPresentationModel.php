@@ -3,7 +3,7 @@
 namespace MediaWiki\Extension\Notifications\Formatters;
 
 use MediaWiki\Extension\Notifications\Model\Event;
-use Message;
+use MediaWiki\Message\Message;
 use MessageLocalizer;
 
 /** Stub of Echo's EchoEventPresentationModel class for phan */

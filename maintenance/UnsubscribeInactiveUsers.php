@@ -3,10 +3,10 @@ declare( strict_types = 1 );
 
 namespace MediaWiki\Extension\TranslationNotifications;
 
-use Maintenance;
 use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\Notifications\Model\Event as EchoEvent;
 use MediaWiki\Language\RawMessage;
+use MediaWiki\Maintenance\Maintenance;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\User\UserIdentityValue;
