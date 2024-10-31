@@ -170,14 +170,14 @@ class DigestEmailer extends Maintenance {
 					$notificationText .= wfMessage(
 						'translationnotifications-email-priority',
 						$notification['priority']
-					)->text() . "\n";
+					)->inLanguage( $firstLangCode )->text() . "\n";
 				}
 
 				if ( $notification['deadline'] !== '' ) {
 					$notificationText .= wfMessage(
 						'translationnotifications-email-deadline',
 						$notification['deadline']
-					)->text() . "\n";
+					)->inLanguage( $firstLangCode )->text() . "\n";
 				}
 
 				$notificationText .= "---------\n";
