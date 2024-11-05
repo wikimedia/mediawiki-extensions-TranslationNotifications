@@ -1,11 +1,5 @@
 <?php
-/**
- * Contains a generic job class
- *
- * @file
- * @author Abijeet Patro
- * @license GPL-2.0-or-later
- */
+declare( strict_types = 1 );
 
 namespace MediaWiki\Extension\TranslationNotifications\Jobs;
 
@@ -15,14 +9,11 @@ use Psr\Log\LoggerInterface;
 
 /**
  * Generic Job class extended by other jobs. Provides logging functionality.
- * @since 2019.09
+ * @author Abijeet Patro
+ * @license GPL-2.0-or-later
  */
 abstract class GenericTranslationNotificationsJob extends Job {
-	/**
-	 * A logger instance
-	 * @var LoggerInterface
-	 */
-	protected $logger;
+	protected LoggerInterface $logger;
 
 	/**
 	 * Channel name to be used during logging
@@ -35,9 +26,8 @@ abstract class GenericTranslationNotificationsJob extends Job {
 	/**
 	 * Returns a logger instance with the channel name. Can have only a single
 	 * channel per job, so once instantiated, the same instance is returned.
-	 * @return LoggerInterface
 	 */
-	protected function getLogger() {
+	protected function getLogger(): LoggerInterface {
 		if ( $this->logger ) {
 			return $this->logger;
 		}
