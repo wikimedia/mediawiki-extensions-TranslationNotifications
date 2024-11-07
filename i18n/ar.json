@@ -35,7 +35,7 @@
 	"translationnotifications-submit": "حدث الإعدادات",
 	"translationnotifications-signup-success": "حفظت تفضيلاتك لإشعارات الترجمة.",
 	"notifytranslators": "إخطار المترجمين",
-	"translationnotifications-submit-ok": "تمت إضافة الإشعارات إلى قائمة انتظار ويتم تسليمها بواسطة مهمة في الخلفية.",
+	"translationnotifications-submit-ok": "تمت إضافة الإشعارات إلى قائمة الانتظار ويتم تسليمها بواسطة مهمة خلفية. يرجى التحقق من [[Special:Log/notifytranslators|سجل إشعارات الترجمة]] بحثًا عن الأخطاء ورسالة الإكمال.",
 	"translationnotifications-send-notification-button": "أرسل الإشعار إلى المترجمين",
 	"translationnotifications-preview-notification-button": "معاينة الإشعار",
 	"translationnotifications-deadline-label": "الموعد النهائي للإشارة في هذا الإشعار:",
