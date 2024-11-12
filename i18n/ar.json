@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80",
 			"Hubaishan",
 			"ترجمان05",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Meno25"
 		]
 	},
 	"translatorsignup": "إضافة مترجم",
@@ -35,12 +35,12 @@
 	"translationnotifications-submit": "حدث الإعدادات",
 	"translationnotifications-signup-success": "حفظت تفضيلاتك لإشعارات الترجمة.",
 	"notifytranslators": "إخطار المترجمين",
-	"translationnotifications-submit-ok": "تمت إضافة الإشعارات إلى قائمة انتظار ويتم تسليمها بواسطة مهمة في الخلفية.",
+	"translationnotifications-submit-ok": "تمت إضافة الإشعارات إلى قائمة الانتظار ويتم تسليمها بواسطة مهمة خلفية. يرجى التحقق من [[Special:Log/notifytranslators|سجل إشعارات الترجمة]] بحثًا عن الأخطاء ورسالة الإكمال.",
 	"translationnotifications-send-notification-button": "أرسل الإشعار إلى المترجمين",
 	"translationnotifications-preview-notification-button": "معاينة الإشعار",
 	"translationnotifications-deadline-label": "الموعد النهائي للإشارة في هذا الإشعار:",
-	"translationnotifications-languages-to-notify-label": "لأي اللغات سيتم إرسال الإخطار:",
-	"translationnotifications-languages-to-notify-label-help-message": "رموز لغة مفصولة بفواصل، اتركها فارغة لإرسال الإشعارات إلى جميع المترجمين بجميع اللغات.",
+	"translationnotifications-languages-to-notify-label": "اللغات/المستثناءات المختارة:",
+	"translationnotifications-languages-to-notify-label-help-message": "إترك الفراغ لتقديم الإخطارات إلى جميع المترجمين لجميع اللغات",
 	"translationnotifications-languages-to-notify-all-label": "كل اللغات",
 	"translationnotifications-sourcelang-only": "لا يمكن إرسال الإشعار فقط إلى مترجمين بلغة المصدر.",
 	"translationnotifications-priority": "الأولوية:",
