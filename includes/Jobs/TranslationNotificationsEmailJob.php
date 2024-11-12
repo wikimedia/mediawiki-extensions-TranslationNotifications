@@ -1,13 +1,12 @@
 <?php
-/*
- * @file
- * @license GPL-2.0-or-later
- */
+declare( strict_types = 1 );
 
 namespace MediaWiki\Extension\TranslationNotifications\Jobs;
 
 use InvalidArgumentException;
 use MailAddress;
+use MediaWiki\Context\RequestContext;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 use UserMailer;
@@ -16,7 +15,7 @@ use UserMailer;
  * Uses UserMailer to send out emails.
  *
  * @ingroup JobQueue
- * @since 2020.02
+ * @license GPL-2.0-or-later
  */
 class TranslationNotificationsEmailJob extends GenericTranslationNotificationsJob {
 	public function __construct( Title $title, array $params ) {
@@ -24,11 +23,8 @@ class TranslationNotificationsEmailJob extends GenericTranslationNotificationsJo
 		$this->validateParams( $params );
 	}
 
-	/**
-	 * Execute the job
-	 * @return bool
-	 */
-	public function run() {
+	/** Execute the job */
+	public function run(): bool {
 		$this->logDebug( 'Starting execution...' );
 		$to = $this->getMailAddress( $this->params['to'] );
 		$from = $this->getMailAddress( $this->params['from'] );
@@ -44,7 +40,11 @@ class TranslationNotificationsEmailJob extends GenericTranslationNotificationsJo
 		);
 
 		if ( !$status->isOK() ) {
-			$errorMsg = $status->getMessage()->text();
+			$formatterFactory = MediaWikiServices::getInstance()->getFormatterFactory();
+			$errorMsg = $formatterFactory
+				->getStatusFormatter( RequestContext::getMain() )
+				->getMessage( $status )
+				->text();
 			$this->logError( $errorMsg );
 			$this->setLastError( $errorMsg );
 			return false;
@@ -99,7 +99,7 @@ class TranslationNotificationsEmailJob extends GenericTranslationNotificationsJo
 			$propVal = $address[ $prop ] ?? false;
 			if ( !is_string( $propVal ) || strlen( $propVal ) === 0 ) {
 				throw new InvalidArgumentException(
-					"Parameter: $propName must contain " . implode( ", ", $requiredProps )
+					"Parameter: $propName must contain " . implode( ', ', $requiredProps )
 				);
 			}
 		}
