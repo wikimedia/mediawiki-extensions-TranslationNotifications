@@ -1,12 +1,5 @@
 <?php
-/**
- * Script to send email notification to translators on regular intervals.
- *
- * @author Santhosh Thottingal
- * @copyright Copyright © 2012 Santhosh Thottingal
- * @license GPL-2.0-or-later
- * @file
- */
+declare( strict_types = 1 );
 
 namespace MediaWiki\Extension\TranslationNotifications\Scripts;
 
@@ -26,6 +19,14 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
+
+/**
+ * Script to send email notification to translators on regular intervals.
+ *
+ * @author Santhosh Thottingal
+ * @copyright Copyright © 2012 Santhosh Thottingal
+ * @license GPL-2.0-or-later
+ */
 
 class DigestEmailer extends Maintenance {
 	public function __construct() {
@@ -66,11 +67,12 @@ class DigestEmailer extends Maintenance {
 		$userOptionsManager = $services->getUserOptionsManager();
 		$jobQueueGroup = $services->getJobQueueGroup();
 		$languageNameUtils = $services->getLanguageNameUtils();
+		$userFactory = $services->getUserFactory();
 		foreach ( $translators as $translator ) {
 			$notificationText = "";
 			$count = 0;
 			$mailstatus[$translator] = $count;
-			$user = User::newFromId( $translator );
+			$user = $userFactory->newFromId( $translator );
 			$notificationFreq = $userOptionsManager->getOption( $user, 'translationnotifications-freq' );
 
 			if ( $notificationFreq === null ) {
@@ -113,7 +115,7 @@ class DigestEmailer extends Maintenance {
 			}
 
 			$startTimeStamp = strtotime( $offset );
-			$lastSuccessfulrun = $userOptionsManager->getOption( $user, 'translationnotifications-last-digest' );
+			$lastSuccessfulrun = (int)$userOptionsManager->getOption( $user, 'translationnotifications-last-digest' );
 			if ( $lastSuccessfulrun > $startTimeStamp ) {
 				$this->output( "\tNot sending notifications, Last notification time: " .
 					date( 'D M j G:i:s T Y', $lastSuccessfulrun ) . " \n" );
