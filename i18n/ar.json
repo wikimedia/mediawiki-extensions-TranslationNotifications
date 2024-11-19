@@ -68,7 +68,7 @@
 	"translationnotifications-log-alllanguages": "كل اللغات",
 	"translationnotifications-nodeadline": "لا شيء",
 	"translationnotifications-signup-legal": "أنت توافق على أنه من خلال تقديم هذه المعلومات، قد نتصل بك بشأن الموضوعات المتعلقة بـ{{SITENAME}} التي نعتقد أنها قد تهمك، أنت توافق على أن بياناتك تخضع [[{{MediaWiki:Privacypage}}|لسياسة الخصوصية]] لدينا.",
-	"translationnotifications-generic-languages": "&lt;اللغات>",
+	"translationnotifications-generic-languages": "<var>اللغات</var>",
 	"translationnotifications-text": "استخدم النموذج أدناه لإرسال طلبات ترجمة إلى المترجمين.",
 	"echo-category-title-translationnotifications": "إشعارات الترجمة"
 }
