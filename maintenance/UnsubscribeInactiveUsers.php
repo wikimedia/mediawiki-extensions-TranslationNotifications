@@ -256,7 +256,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 		$mwServices = $this->getServiceContainer();
 		$blockManager = $mwServices->getBlockManager();
 
-		$userBlock = $blockManager->getUserBlock( $subscriber, null, true );
+		$userBlock = $blockManager->getBlock( $subscriber, null );
 		if ( !$userBlock ) {
 			return false;
 		}
