@@ -1,8 +1,5 @@
 <?php
-/*
-* @file
-* @license GPL-2.0-or-later
-*/
+declare( strict_types=1 );
 
 namespace MediaWiki\Extension\TranslationNotifications\Utilities;
 
@@ -15,9 +12,8 @@ use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 
 /**
- * A class that helps builds the notification message to be sent to users
- *
- * @since 2019.10
+ * A class that helps build the notification message to be sent to users
+ * @license GPL-2.0-or-later
  */
 class NotificationMessageBuilder {
 	/**
@@ -27,7 +23,7 @@ class NotificationMessageBuilder {
 	 * @param string[] $localInterwikis
 	 * @return Title|string
 	 */
-	public static function getMessageTitle( Title $title, $destination, $localInterwikis ) {
+	public static function getMessageTitle( Title $title, string $destination, array $localInterwikis ) {
 		$titleForMessage = $title;
 
 		if ( $destination === 'talkpageInOtherWiki' && count( $localInterwikis ) ) {
@@ -43,7 +39,7 @@ class NotificationMessageBuilder {
 	 * @param string $priority
 	 * @return string
 	 */
-	public static function getPriorityClause( Language $userFirstLanguage, $priority ) {
+	public static function getPriorityClause( Language $userFirstLanguage, string $priority ): string {
 		if ( $priority === 'unset' ) {
 			return '';
 		}
@@ -56,13 +52,8 @@ class NotificationMessageBuilder {
 		)->inLanguage( $userFirstLanguage )->text();
 	}
 
-	/**
-	 * Return the deadline clause
-	 * @param Language $userFirstLanguage
-	 * @param string $deadlineDate
-	 * @return string
-	 */
-	public static function getDeadlineClause( Language $userFirstLanguage, $deadlineDate ) {
+	/** Return the deadline clause */
+	public static function getDeadlineClause( Language $userFirstLanguage, string $deadlineDate ): string {
 		if ( $deadlineDate === '' ) {
 			return '';
 		}
@@ -73,13 +64,8 @@ class NotificationMessageBuilder {
 		)->inLanguage( $userFirstLanguage )->text();
 	}
 
-	/**
-	 * Wrap the text in a div based on the language
-	 * @param Language $contLang
-	 * @param string $notificationContent
-	 * @return string
-	 */
-	public static function getNotificationMessage( Language $contLang, $notificationContent ) {
+	/** Wrap the text in a div based on the language */
+	public static function getNotificationMessage( Language $contLang, string $notificationContent ): string {
 		// Assume that the message is in the content language
 		// of the originating wiki.
 		$dir = $contLang->getDir();
@@ -104,8 +90,12 @@ class NotificationMessageBuilder {
 	 * @return string
 	 */
 	public static function getTranslationURLs(
-		Title $translatableTitle, $languages, $contactMethod, $inLanguage, $urlProtocol
-	) {
+		Title $translatableTitle,
+		array $languages,
+		string $contactMethod,
+		$inLanguage,
+		string $urlProtocol
+	): string {
 		$translationURLsItems = [];
 
 		foreach ( $languages as $code => $langName ) {
@@ -136,7 +126,7 @@ class NotificationMessageBuilder {
 	 * @param string $urlProtocol
 	 * @return string Signup URL
 	 */
-	public static function getSignupURL( $urlProtocol ) {
+	public static function getSignupURL( string $urlProtocol ): string {
 		return SpecialPage::getTitleFor( 'TranslatorSignup' )->getFullURL(
 			'',
 			false,
@@ -144,12 +134,8 @@ class NotificationMessageBuilder {
 		);
 	}
 
-	/**
-	 * Returns the user name to be used in the notification
-	 * @param User $user
-	 * @return string
-	 */
-	public static function getUserName( User $user ) {
+	/** Returns the user name to be used in the notification */
+	public static function getUserName( User $user ): string {
 		$name = $user->getRealName();
 		if ( $name === '' ) {
 			$name = $user->getName();
@@ -162,20 +148,15 @@ class NotificationMessageBuilder {
 	 * Returns the subject of the notification
 	 * @param Title $title
 	 * @param string|Language $userFirstLanguage
-	 * @return string
 	 */
-	public static function getNotificationSubject( Title $title, $userFirstLanguage ) {
+	public static function getNotificationSubject( Title $title, $userFirstLanguage ): string {
 		return wfMessage(
 			'translationnotifications-email-subject',
 			$title->getText()
 		)->inLanguage( $userFirstLanguage )->text();
 	}
 
-	/**
-	 * @param string $priority
-	 * @return Message
-	 */
-	public static function getPriorityMessage( $priority ) {
+	public static function getPriorityMessage( string $priority ): Message {
 		// possible messages here:
 		// 'translationnotifications-priority-high'
 		// 'translationnotifications-priority-medium'
@@ -184,15 +165,10 @@ class NotificationMessageBuilder {
 		return wfMessage( "translationnotifications-priority-$priority" );
 	}
 
-	/**
-	 * @param Title $translatablePageTitle
-	 * @param string $languageCode
-	 * @param string $urlProtocol
-	 * @return string Translation URL
-	 */
+	/** @return string Translation URL */
 	private static function getTranslationURL(
-		Title $translatablePageTitle, $languageCode, $urlProtocol
-	) {
+		Title $translatablePageTitle, string $languageCode, string $urlProtocol
+	): string {
 		$page = TranslatablePage::newFromTitle( $translatablePageTitle );
 		return SpecialPage::getTitleFor( 'Translate' )->getFullURL(
 			[
