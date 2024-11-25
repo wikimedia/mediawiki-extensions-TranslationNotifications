@@ -28,11 +28,7 @@ abstract class GenericTranslationNotificationsJob extends Job {
 	 * channel per job, so once instantiated, the same instance is returned.
 	 */
 	protected function getLogger(): LoggerInterface {
-		if ( $this->logger ) {
-			return $this->logger;
-		}
-
-		$this->logger = LoggerFactory::getInstance( self::CHANNEL_NAME );
+		$this->logger ??= LoggerFactory::getInstance( self::CHANNEL_NAME );
 		return $this->logger;
 	}
 
