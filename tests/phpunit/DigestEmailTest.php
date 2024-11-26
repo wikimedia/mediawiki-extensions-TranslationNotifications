@@ -1,33 +1,23 @@
 <?php
-/**
- * Unit tests.
- *
- * @file
- * @author Santhosh Thottingal
- * @copyright Copyright © 2012, Santhosh Thottingal
- * @license GPL-2.0-or-later
- */
+
+declare( strict_types=1 );
 
 use MediaWiki\Extension\TranslationNotifications\Scripts\DigestEmailer;
 use MediaWiki\MainConfigNames;
 use MediaWiki\Title\Title;
-use MediaWiki\User\User;
 
 /**
+ *
  * Unit tests for DigestEmailer class.
+ * @author Santhosh Thottingal
+ * @copyright Copyright © 2012, Santhosh Thottingal
+ * @license GPL-2.0-or-later
  * @covers \MediaWiki\Extension\TranslationNotifications\Scripts\DigestEmailer
  * @group Database
  */
 class DigestEmailTest extends MediaWikiIntegrationTestCase {
-	/**
-	 * @var DigestEmailer
-	 */
-	private $emailer;
-
-	/**
-	 * @var array
-	 */
-	private $translators_conf;
+	private DigestEmailer $emailer;
+	private array $translators_conf;
 
 	public function setUp(): void {
 		parent::setUp();
@@ -42,7 +32,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/** @dataProvider providePeriodicEmailSending */
-	public function testPeriodicEmailSending( string $timePeriod, string $translatorName ) {
+	public function testPeriodicEmailSending( string $timePeriod, string $translatorName ): void {
 		$translators = $this->getTranslators( $timePeriod );
 		$notifications = $this->getNotifications();
 		$mailStatus = $this->emailer->sendEmails( [ $translators[ $translatorName ] ], $notifications );
@@ -55,37 +45,37 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		yield 'Translator3 without email should not receive email' => [ 'monthly', 'Translator3' ];
 	}
 
-	public function testSendEmailWeeklyInvalidLang() {
+	public function testSendEmailWeeklyInvalidLang(): void {
 		$translators = $this->getTranslators( 'weekly' );
 		$notifications = $this->getNotificationsForInvalidLangs();
 		$mailStatus = $this->emailer->sendEmails( $translators, $notifications );
 		$this->expectOutputRegex( '/0 notifications to send/' );
-		foreach ( $translators as $translator ) {
+
+		foreach ( $translators as $name => $id ) {
 			$this->assertSame(
 				0,
-				$mailStatus[$translator],
-				User::newFromId( $translator ) . " should not get a mail. " .
-					"Notification is not for this translator"
+				$mailStatus[$id],
+				"$name should not get a mail. Notification is not for this translator"
 			);
 		}
 	}
 
-	public function testSendEmailWeeklyExpired() {
+	public function testSendEmailWeeklyExpired(): void {
 		$translators = $this->getTranslators( 'weekly' );
 		$notifications = $this->getExpiredNotifications();
 		$mailStatus = $this->emailer->sendEmails( $translators, $notifications );
 		$this->expectOutputRegex( '/0 notifications to send/' );
 
-		foreach ( $translators as $translator ) {
+		foreach ( $translators as $name => $id ) {
 			$this->assertSame(
 				0,
-				$mailStatus[$translator],
-				User::newFromId( $translator ) . " should not get a mail. Notifications are expired"
+				$mailStatus[$id],
+				"$name should not get a mail. Notifications are expired"
 			);
 		}
 	}
 
-	public function testSendEmailWeeklyRepeated() {
+	public function testSendEmailWeeklyRepeated(): void {
 		$translators = $this->getTranslators( 'weekly' );
 		$notifications = $this->getNotifications();
 		$this->emailer->sendEmails( $translators, $notifications );
@@ -93,16 +83,16 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		$mailStatus = $this->emailer->sendEmails( $translators, $notifications );
 		$this->expectOutputRegex( '/Not sending notifications/' );
 
-		foreach ( $translators as $translator ) {
+		foreach ( $translators as $name => $id ) {
 			$this->assertSame(
 				0,
-				$mailStatus[$translator],
-				User::newFromId( $translator ) . " should not get a mail, this is a repeat"
+				$mailStatus[$id],
+				"$name should not get a mail, this is a repeat"
 			);
 		}
 	}
 
-	private function getNotifications() {
+	private function getNotifications(): array {
 		$notifications = [];
 		$notifications[] = [
 			'languages' => '', // all languages
@@ -116,7 +106,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		return $notifications;
 	}
 
-	private function getNotificationsForInvalidLangs() {
+	private function getNotificationsForInvalidLangs(): array {
 		$notifications = [];
 		$notifications[] = [
 			'languages' => 'invalid',
@@ -130,7 +120,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		return $notifications;
 	}
 
-	private function getExpiredNotifications() {
+	private function getExpiredNotifications(): array {
 		$notifications = [];
 		$notifications[] = [
 			'languages' => '', // all languages
@@ -144,7 +134,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		return $notifications;
 	}
 
-	private function getTranslators( $freq ) {
+	private function getTranslators( string $freq ): array {
 		$translators = [];
 		foreach ( $this->translators_conf as $translator_conf ) {
 			if ( $translator_conf['digest_frequency'] === $freq ) {
@@ -155,8 +145,9 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		return $translators;
 	}
 
-	private function getTranslator( $translator_conf ) {
-		$user = User::newFromName( $translator_conf['username'] );
+	private function getTranslator( array $translator_conf ): int {
+		$userFactory = $this->getServiceContainer()->getUserFactory();
+		$user = $userFactory->newFromName( $translator_conf['username'] );
 		if ( $user->getID() === 0 ) {
 			$user->addToDatabase();
 		}
@@ -185,7 +176,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 		return $user->getId();
 	}
 
-	private function validateEmailSentStatus( array $mailStatus, string $translator ): void {
+	private function validateEmailSentStatus( array $mailStatus, int $translator ): void {
 		$userFactory = $this->getServiceContainer()->getUserFactory();
 		$translatorUser = $userFactory->newFromId( $translator );
 		// Only validate if an email is set
