@@ -65,7 +65,7 @@
 			location.protocol + '//' + location.host + mw.util.getUrl( 'Special:TranslatorSignup' )
 		);
 
-		new mw.Api().parse( fullText.escaped().replace( /\n{3,}/g, '\n\n' ) )
+		new mw.Api().parse( fullText.text().replace( /\n{3,}/g, '\n\n' ) )
 			.done( ( parsedNotification ) => {
 				$( '#' + previewId )
 					.html( parsedNotification )
