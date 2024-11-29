@@ -86,7 +86,7 @@ class NotificationMessageBuilder {
 	 * @param string[] $languages A list of language codes and language names.
 	 * @param string $contactMethod The contact method - 'talkpage' or 'email'.
 	 * @param string|Language $inLanguage Language code or Language object.
-	 * @param string $urlProtocol
+	 * @param string|int $urlProtocol
 	 * @return string
 	 */
 	public static function getTranslationURLs(
@@ -94,7 +94,7 @@ class NotificationMessageBuilder {
 		array $languages,
 		string $contactMethod,
 		$inLanguage,
-		string $urlProtocol
+		$urlProtocol
 	): string {
 		$translationURLsItems = [];
 
@@ -123,10 +123,10 @@ class NotificationMessageBuilder {
 
 	/**
 	 * Returns URL to signup and change notification preferences
-	 * @param string $urlProtocol
+	 * @param string|int $urlProtocol
 	 * @return string Signup URL
 	 */
-	public static function getSignupURL( string $urlProtocol ): string {
+	public static function getSignupURL( $urlProtocol ): string {
 		return SpecialPage::getTitleFor( 'TranslatorSignup' )->getFullURL(
 			'',
 			false,
@@ -165,9 +165,14 @@ class NotificationMessageBuilder {
 		return wfMessage( "translationnotifications-priority-$priority" );
 	}
 
-	/** @return string Translation URL */
+	/**
+	 * @param Title $translatablePageTitle
+	 * @param string $languageCode
+	 * @param string|int $urlProtocol
+	 * @return string Translation URL
+	 */
 	private static function getTranslationURL(
-		Title $translatablePageTitle, string $languageCode, string $urlProtocol
+		Title $translatablePageTitle, string $languageCode, $urlProtocol
 	): string {
 		$page = TranslatablePage::newFromTitle( $translatablePageTitle );
 		return SpecialPage::getTitleFor( 'Translate' )->getFullURL(
