@@ -58,6 +58,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 	/** @inheritDoc */
 	public function execute( $par ) {
 		$this->requireNamedUser();
+		$this->getOutput()->addModuleStyles( 'mediawiki.codex.messagebox.styles' );
 		parent::execute( $par );
 	}
 
