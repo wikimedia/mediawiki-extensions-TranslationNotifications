@@ -4,6 +4,8 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extension\TranslationNotifications\Jobs;
 
 use Exception;
+use IJobSpecification;
+use JobSpecification;
 use ManualLogEntry;
 use MediaWiki\Config\Config;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
@@ -12,7 +14,6 @@ use MediaWiki\Extension\TranslationNotifications\Utilities\TranslationNotifyUser
 use MediaWiki\JobQueue\JobQueueGroupFactory;
 use MediaWiki\Languages\LanguageFactory;
 use MediaWiki\Languages\LanguageNameUtils;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Options\UserOptionsManager;
 use MediaWiki\User\User;
@@ -40,31 +41,43 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 	private UserFactory $userFactory;
 	private IConnectionProvider $connectionProvider;
 	private Config $mainConfig;
+	private const JOB_NAME = 'TranslationNotificationsSubmitJob';
 
 	/** Returns an instance of the TranslationNotificationsSubmitJob */
 	public static function newJob(
 		Title $title, array $requestData, int $notifierId, string $translatorLang
-	): self {
-		return new TranslationNotificationsSubmitJob(
-			$title,
+	): IJobSpecification {
+		return new JobSpecification(
+			self::JOB_NAME,
 			[
 				'requestData' => $requestData,
 				'notifierId' => $notifierId,
 				'translatorLanguage' => $translatorLang
-			]
+			],
+			[],
+			$title
 		);
 	}
 
-	public function __construct( Title $title, array $params ) {
-		$services = MediaWikiServices::getInstance();
-		$this->userOptionsManager = $services->getUserOptionsManager();
-		$this->jobQueueGroupFactory = $services->getJobQueueGroupFactory();
-		$this->languageNameUtils = $services->getLanguageNameUtils();
-		$this->languageFactory = $services->getLanguageFactory();
-		$this->userFactory = $services->getUserFactory();
-		$this->connectionProvider = $services->getConnectionProvider();
-		$this->mainConfig = $services->getMainConfig();
-		parent::__construct( 'TranslationNotificationsSubmitJob', $title, $params );
+	public function __construct(
+		Title $title,
+		array $params,
+		UserOptionsManager $userOptionsManager,
+		JobQueueGroupFactory $jobQueueGroupFactory,
+		LanguageNameUtils $languageNameUtils,
+		LanguageFactory $languageFactory,
+		UserFactory $userFactory,
+		IConnectionProvider $connectionProvider,
+		Config $mainConfig
+	) {
+		$this->userOptionsManager = $userOptionsManager;
+		$this->jobQueueGroupFactory = $jobQueueGroupFactory;
+		$this->languageNameUtils = $languageNameUtils;
+		$this->languageFactory = $languageFactory;
+		$this->userFactory = $userFactory;
+		$this->connectionProvider = $connectionProvider;
+		$this->mainConfig = $mainConfig;
+		parent::__construct( self::JOB_NAME, $title, $params );
 		$this->currentWikiId = WikiMap::getCurrentWikiDbDomain()->getId();
 	}
 
