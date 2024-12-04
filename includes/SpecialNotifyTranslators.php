@@ -1,16 +1,5 @@
 <?php
-/**
- * Form for translation managers to send a notification
- * to registered translators.
- *
- * @file
- * @author Amir E. Aharoni
- * @author Santhosh Thottingal
- * @author Niklas Laxström
- * @author Siebrand Mazeland
- * @copyright Copyright © 2012, Amir E. Aharoni, Santhosh Thottingal
- * @license GPL-2.0-or-later
- */
+declare( strict_types = 1 );
 
 namespace MediaWiki\Extension\TranslationNotifications;
 
@@ -33,6 +22,12 @@ use WikiPageMessageGroup;
  * Form for translation managers to send a notification
  * to registered translators.
  *
+ * @author Amir E. Aharoni
+ * @author Santhosh Thottingal
+ * @author Niklas Laxström
+ * @author Siebrand Mazeland
+ * @copyright Copyright © 2012, Amir E. Aharoni, Santhosh Thottingal
+ * @license GPL-2.0-or-later
  * @ingroup SpecialPage TranslateSpecialPage
  */
 class SpecialNotifyTranslators extends FormSpecialPage {
@@ -49,7 +44,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		$this->jobQueueGroup = $jobQueueGroup;
 	}
 
-	public function doesWrites() {
+	public function doesWrites(): bool {
 		return true;
 	}
 
@@ -217,7 +212,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 				return Status::newFatal( 'translationnotifications-sourcelang-only' );
 			}
 		}
-		$languageSet = new LanguageSet( $formData['LanguageSet'] );
+		$languageSet = new LanguageSet( (int)$formData['LanguageSet'] );
 
 		$requestData = [
 			'notificationText' => $notificationText,
@@ -238,7 +233,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		return Status::newGood();
 	}
 
-	public function onSuccess() {
+	public function onSuccess(): void {
 		$this->getOutput()->addWikiMsg( 'translationnotifications-submit-ok' );
 	}
 }
