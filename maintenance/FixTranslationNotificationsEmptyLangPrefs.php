@@ -1,16 +1,5 @@
 <?php
-
-/**
- * This script removes the empty translationnotifications-lang-* properties.
- * They became default and should not be stored.
- *
- * @author Amir E. Aharoni
- * based on Narayam/maintenance/FixNarayamDisablePref.php
- *
- * @copyright Copyright © 2012
- * @license GPL-2.0-or-later
- * @file
- */
+declare( strict_types = 1 );
 
 namespace MediaWiki\Extension\TranslationNotifications;
 
@@ -25,6 +14,16 @@ if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 	$IP = __DIR__ . "/../../..";
 }
 require_once "$IP/maintenance/Maintenance.php";
+/*
+ * This script removes the empty translationnotifications-lang-* properties.
+ * They became default and should not be stored.
+ *
+ * @author Amir E. Aharoni
+ * based on Narayam/maintenance/FixNarayamDisablePref.php
+ *
+ * @copyright Copyright © 2012
+ * @license GPL-2.0-or-later
+ */
 
 class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
 
@@ -34,7 +33,7 @@ class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
 		$this->requireExtension( 'TranslationNotifications' );
 	}
 
-	public function execute() {
+	public function execute(): void {
 		$dbw = $this->getPrimaryDB();
 
 		$langPropertyPrefix = 'translationnotifications-lang-';
