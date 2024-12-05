@@ -72,7 +72,7 @@ class DigestEmailer extends Maintenance {
 			$notificationText = "";
 			$count = 0;
 			$mailstatus[$translator] = $count;
-			$user = $userFactory->newFromId( $translator );
+			$user = $userFactory->newFromId( (int)$translator );
 			$notificationFreq = $userOptionsManager->getOption( $user, 'translationnotifications-freq' );
 
 			if ( $notificationFreq === null ) {
