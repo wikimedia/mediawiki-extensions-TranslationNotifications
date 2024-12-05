@@ -42,7 +42,18 @@
 	},
 	"JobClasses": {
 		"TranslationNotificationsEmailJob": "MediaWiki\\Extension\\TranslationNotifications\\Jobs\\TranslationNotificationsEmailJob",
-		"TranslationNotificationsSubmitJob": "MediaWiki\\Extension\\TranslationNotifications\\Jobs\\TranslationNotificationsSubmitJob"
+		"TranslationNotificationsSubmitJob": {
+			"class": "MediaWiki\\Extension\\TranslationNotifications\\Jobs\\TranslationNotificationsSubmitJob",
+			"services": [
+				"UserOptionsManager",
+				"JobQueueGroupFactory",
+				"LanguageNameUtils",
+				"LanguageFactory",
+				"UserFactory",
+				"DBLoadBalancerFactory",
+				"MainConfig"
+			]
+		}
 	},
 	"LogTypes": [
 		"notifytranslators"
