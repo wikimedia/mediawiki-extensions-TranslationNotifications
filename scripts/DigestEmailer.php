@@ -62,7 +62,7 @@ class DigestEmailer extends Maintenance {
 			? PROTO_CANONICAL
 			: PROTO_HTTPS;
 
-		$mailstatus = [];
+		$mailStatus = [];
 		$services = MediaWikiServices::getInstance();
 		$userOptionsManager = $services->getUserOptionsManager();
 		$jobQueueGroup = $services->getJobQueueGroup();
@@ -71,7 +71,7 @@ class DigestEmailer extends Maintenance {
 		foreach ( $translators as $translator ) {
 			$notificationText = "";
 			$count = 0;
-			$mailstatus[$translator] = $count;
+			$mailStatus[$translator] = $count;
 			$user = $userFactory->newFromId( (int)$translator );
 			$notificationFreq = $userOptionsManager->getOption( $user, 'translationnotifications-freq' );
 
@@ -115,19 +115,19 @@ class DigestEmailer extends Maintenance {
 			}
 
 			$startTimeStamp = strtotime( $offset );
-			$lastSuccessfulrun = (int)$userOptionsManager->getOption( $user, 'translationnotifications-last-digest' );
-			if ( $lastSuccessfulrun > $startTimeStamp ) {
+			$lastSuccessfulRun = (int)$userOptionsManager->getOption( $user, 'translationnotifications-last-digest' );
+			if ( $lastSuccessfulRun > $startTimeStamp ) {
 				$this->output( "\tNot sending notifications, Last notification time: " .
-					date( 'D M j G:i:s T Y', $lastSuccessfulrun ) . " \n" );
+					date( 'D M j G:i:s T Y', $lastSuccessfulRun ) . " \n" );
 				continue;
 			}
 			$this->output( "\tSending notification since " .
 				date( 'D M j G:i:s T Y', $startTimeStamp ) . " \n" );
 
 			foreach ( $notifications as $notification ) {
-				$announcedate = strtotime( $notification['announcedate'] );
+				$announceDate = strtotime( $notification['announcedate'] );
 
-				if ( $announcedate < $startTimeStamp ) {
+				if ( $announceDate < $startTimeStamp ) {
 					// Older than last successful run.
 					continue;
 				}
@@ -162,7 +162,7 @@ class DigestEmailer extends Maintenance {
 
 				$notificationText .= wfMessage(
 					'translationnotifications-digestemail-notification-line',
-					date( "Y-m-d", $announcedate ),
+					date( "Y-m-d", $announceDate ),
 					$notification['announcer'],
 					$notification['translatablepage'],
 					$translationURL
@@ -187,7 +187,7 @@ class DigestEmailer extends Maintenance {
 			}
 
 			$this->output( "\t$count notifications to send.\n" );
-			$mailstatus[$translator] = $count;
+			$mailStatus[$translator] = $count;
 
 			if ( $count === 0 ) {
 				// No notifications to send.
@@ -215,7 +215,7 @@ class DigestEmailer extends Maintenance {
 			$userOptionsManager->saveOptions( $user );
 		}
 
-		return $mailstatus;
+		return $mailStatus;
 	}
 
 	protected function sort( array $notifications ): array {
@@ -225,12 +225,13 @@ class DigestEmailer extends Maintenance {
 			'medium' => 2,
 			'high' => 3
 		];
+		$announceDate = [];
 		foreach ( $notifications as $key => $row ) {
 			$priority[$key] = $prioritySet[$row['priority']];
-			$announcedate[$key] = $row['announcedate'];
+			$announceDate[$key] = $row['announcedate'];
 		}
 		if ( count( $notifications ) > 0 ) {
-			array_multisort( $priority, SORT_DESC, $announcedate, SORT_DESC, $notifications );
+			array_multisort( $priority, SORT_DESC, $announceDate, SORT_DESC, $notifications );
 		}
 
 		return $notifications;
@@ -240,7 +241,7 @@ class DigestEmailer extends Maintenance {
 		// Lock this process to avoid multiple instances running and duplicate mails being sent.
 		$cache = MediaWikiServices::getInstance()->getObjectCacheFactory()->getInstance( CACHE_ANYTHING );
 		$lockKey = $cache->makeKey( 'translationnotifications-digestemailer-lock' );
-		if ( $cache->get( $lockKey ) == true ) {
+		if ( $cache->get( $lockKey ) ) {
 			$this->output( "Another process is running. Please try later\n" );
 			exit( 1 );
 		}
