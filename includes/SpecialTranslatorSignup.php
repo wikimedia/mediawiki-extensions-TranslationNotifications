@@ -1,15 +1,5 @@
 <?php
-/**
- * Form for translators to register contact methods
- *
- * @file
- * @author Niklas Laxström
- * @author Amir E. Aharoni
- * @author Santhosh Thottingal
- * @author Siebrand Mazeland
- * @copyright Copyright © 2012, Niklas Laxström
- * @license GPL-2.0-or-later
- */
+declare( strict_types = 1 );
 
 namespace MediaWiki\Extension\TranslationNotifications;
 
@@ -28,15 +18,18 @@ use MediaWiki\WikiMap\WikiMap;
 /**
  * Form for translators to register contact methods
  *
- * @ingroup SpecialPage TranslateSpecialPage
+ * @file
+ * @author Niklas Laxström
+ * @author Amir E. Aharoni
+ * @author Santhosh Thottingal
+ * @author Siebrand Mazeland
+ * @copyright Copyright © 2012, Niklas Laxström
+ * @license GPL-2.0-or-later
  */
 
 class SpecialTranslatorSignup extends FormSpecialPage {
-	/** @var UserOptionsManager */
-	private $userOptionsManager;
-
-	/** @var LanguageNameUtils */
-	private $languageNameUtils;
+	private UserOptionsManager $userOptionsManager;
+	private LanguageNameUtils $languageNameUtils;
 
 	public function __construct(
 		UserOptionsManager $userOptionsManager,
@@ -47,7 +40,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		$this->languageNameUtils = $languageNameUtils;
 	}
 
-	public function doesWrites() {
+	public function doesWrites(): bool {
 		return true;
 	}
 
@@ -56,7 +49,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 	}
 
 	/** @inheritDoc */
-	public function execute( $par ) {
+	public function execute( $par ): void {
 		$this->requireNamedUser();
 		$this->getOutput()->addModuleStyles( 'mediawiki.codex.messagebox.styles' );
 		parent::execute( $par );
@@ -231,7 +224,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 	 * @param array $formData
 	 * @return true
 	 */
-	public function onSubmit( array $formData ) {
+	public function onSubmit( array $formData ): bool {
 		$user = $this->getUser()->getInstanceForUpdate();
 
 		if ( $this->getRequest()->getVal( 'translationnotifications-unsubscribe' ) !== null ) {
@@ -250,7 +243,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		return true;
 	}
 
-	public function onSuccess() {
+	public function onSuccess(): void {
 		$out = $this->getOutput();
 		$out->addHTML(
 			Html::successBox(
