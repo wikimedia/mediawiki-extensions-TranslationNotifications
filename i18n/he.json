@@ -74,7 +74,6 @@
 	"translationnotifications-log-alllanguages": "כל השפות",
 	"translationnotifications-nodeadline": "אין",
 	"translationnotifications-signup-legal": "מתן המידע הזה מהווה את הסכמתך לכך שניצור איתך קשר בנושאים שקשורים לאתר {{SITENAME}} ושנראה לנו שיעניינו אותך. הנתונים שלך כפופים ל[[{{MediaWiki:Privacypage}}|מדיניות הפרטיות]] שלנו.",
-	"translationnotifications-generic-languages": "&lt;שפות>",
 	"translationnotifications-text": "{{GENDER:|השתמש|השתמשי|השתמשו}} בטופס שלהלן כדי לשלוח בקשות תרגום למתרגמים.",
 	"translationnotifications-tes-discouraged-group": "הדף לתרגום שנבחר אינו מומלץ. שליחת הודעות לדפים לא מומלצים אסורה.",
 	"translationnotifications-echo-unsubscribe-header": "המינוי שלך להודעות על תרגום בוטל",
