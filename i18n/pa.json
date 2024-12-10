@@ -5,5 +5,23 @@
 		]
 	},
 	"translationnotifications-info": "ਵਰਤੋਂਕਾਰ ਜਾਣਕਾਰੀ",
-	"translationnotifications-signup-success": "ਤੁਹਾਡੀਆਂ ਤਰਜਮਾ ਸੂਚਨਾ ਤਰਜੀਹਾਂ ਨੂੰ ਸੰਭਾਲੀਆਂ ਗਇਆ ਸੀ।"
+	"translationnotifications-username": "ਵਰਤੋਂਕਾਰ ਨਾਂ:",
+	"translationnotifications-emailstatus": "ਈਮੇਲ ਸਥਿਤੀ:",
+	"translationnotifications-email-confirmed": "ਤੁਹਾਡੇ ਈਮੇਲ ਪਤੇ ਦੀ ਤਸਦੀਕ ਹੋ ਗਈ ਹੈ",
+	"translationnotifications-languages": "ਬੋਲੀਆਂ",
+	"translationnotifications-lang": "ਭਾਸ਼ਾ #$1",
+	"translationnotifications-nolang": "ਬੋਲੀ ਚੁਣੋ",
+	"translationnotifications-cmethod-email": "ਈਮੇਲ",
+	"translationnotifications-cmethod-talkpage": "ਗੱਲਬਾਤ ਸਫ਼ਾ",
+	"translationnotifications-cmethod-talkpage-elsewhere": "ਹੋਰ ਵਿਕੀ ਉੱਤੇ ਗੱਲਬਾਤ ਸਫ਼ਾ",
+	"translationnotifications-freq-always": "ਜਦੋਂ ਤਰਜਮਾ ਕਰਨ ਲਈ ਕੁਝ ਨਵਾਂ ਹੁੰਦਾ ਹੈ",
+	"translationnotifications-freq-week": "ਵੱਧ ਤੋਂ ਵੱਧ ਹਫ਼ਤੇ ਵਿੱਚ ਇੱਕ ਵਾਰ",
+	"translationnotifications-freq-month": "ਵੱਧ ਤੋਂ ਵੱਧ ਮਹੀਨੇ ਵਿੱਚ ਇੱਕ ਵਾਰ",
+	"translationnotifications-freq-none": "ਕੋਈ ਨਹੀਂ (ਗਾਹਕੀ ਰੱਦ)",
+	"translationnotifications-unsubscribe": "ਗਾਹਕੀ ਰੱਦ ਕਰੋ",
+	"translationnotifications-signup-success": "ਤੁਹਾਡੀਆਂ ਤਰਜਮਾ ਸੂਚਨਾ ਤਰਜੀਹਾਂ ਨੂੰ ਸੰਭਾਲੀਆਂ ਗਇਆ ਸੀ।",
+	"translationnotifications-requested-languages-label": "ਬੇਨਤੀ ਕੀਤੀਆਂ ਭਾਸ਼ਾਵਾਂ:",
+	"translationnotifications-languages-to-notify": "ਚੁਣੀਆਂ ਗਈਆਂ ਭਾਸ਼ਾਵਾਂ:",
+	"translationnotifications-languages-to-notify-all-label": "ਸਾਰੀਆਂ ਭਾਸ਼ਾਵਾਂ",
+	"translationnotifications-notification-url-listitem": "$1 ਵਿੱਚ ਤਰਜਮਾ ਕਰੋ"
 }
