@@ -101,14 +101,15 @@ class TranslationNotifyUser {
 				MediaWikiServices::getInstance()->getContentLanguage(),
 				$this->notificationText
 			)
-		)->numParams( count( $relevantLanguages ) ) // $9
-			->params( NotificationMessageBuilder::getSignupURL( $this->getUrlProtocol() ) ) // $10
+		)->numParams( count( $relevantLanguages ) )
+			->params( NotificationMessageBuilder::getSignupURL( $this->getUrlProtocol() ) )
 			->inLanguage( $userFirstLanguage )
 			->text();
 
 		// Bidi-isolation of site name from date
 		$text .= $userFirstLanguage->getDirMark() .
-			', ~~~~~'; // Date and time
+			// Date and time
+			', ~~~~~';
 
 		// Note: Maybe this was originally meant for edit summary, but it's actually used as subject
 		$subject = wfMessage(
@@ -163,16 +164,16 @@ class TranslationNotifyUser {
 
 		$emailBody = wfMessage( 'translationnotifications-email-body' )
 			->params(
-				NotificationMessageBuilder::getUserName( $translator ), // $1
+				NotificationMessageBuilder::getUserName( $translator ),
 				$userFirstLanguage->listToText( array_values( $relevantLanguages ) ),
 				$this->translatablePageTitle,
-				$translationUrls, // $4
+				$translationUrls,
 				NotificationMessageBuilder::getPriorityClause( $userFirstLanguage, $this->priority ),
 				NotificationMessageBuilder::getDeadlineClause( $userFirstLanguage, $this->deadline ),
-				$this->notificationText, // $7
+				$this->notificationText,
 				NotificationMessageBuilder::getSignupURL( $this->getUrlProtocol() ),
 				Message::numParam( count( $relevantLanguages ) ),
-				$translator->getName() // $10
+				$translator->getName()
 			)->inLanguage( $userFirstLanguage )->text();
 
 		$sender = $this->notifier;

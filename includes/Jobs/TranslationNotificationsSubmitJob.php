@@ -114,10 +114,14 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 		$frequencies = [
 			'always' => 0,
-			'week' => 604800, // seconds in week
-			'month' => 2678400, // seconds in month
-			'weekly' => 604800, // seconds in week
-			'monthly' => 2678400, // seconds in month
+			// seconds in week
+			'week' => 604800,
+			// seconds in month
+			'month' => 2678400,
+			// seconds in week
+			'weekly' => 604800,
+			// seconds in month
+			'monthly' => 2678400,
 			'none' => null
 		];
 		$currentUnixTime = wfTimestamp();
@@ -188,7 +192,8 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 			$userTimestamp = $this->userOptionsManager->getOption( $user, $timestampOptionName );
 			$userUnixTimestamp = ( $userTimestamp == null ) ?
-				wfTimestamp( TS_UNIX, '20120101000000' ) : // An old timestamp
+				// An old timestamp
+				wfTimestamp( TS_UNIX, '20120101000000' ) :
 				wfTimestamp( TS_UNIX, $userTimestamp );
 
 			$timeSinceNotification = (int)$currentUnixTime - (int)$userUnixTimestamp;
