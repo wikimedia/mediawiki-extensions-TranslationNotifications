@@ -95,7 +95,8 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 	private function getNotifications(): array {
 		$notifications = [];
 		$notifications[] = [
-			'languages' => '', // all languages
+			// all languages
+			'languages' => '',
 			'deadline' => '+1 month',
 			'priority' => 'medium',
 			'announcedate' => '-1 day',
@@ -123,7 +124,8 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 	private function getExpiredNotifications(): array {
 		$notifications = [];
 		$notifications[] = [
-			'languages' => '', // all languages
+			// all languages
+			'languages' => '',
 			'deadline' => '-1 month',
 			'priority' => 'medium',
 			'announcedate' => '-1 day',

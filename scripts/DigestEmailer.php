@@ -245,7 +245,8 @@ class DigestEmailer extends Maintenance {
 			$this->output( "Another process is running. Please try later\n" );
 			exit( 1 );
 		}
-		$cache->set( $lockKey, true, 3600 ); // Expires in 1 hour.
+		// Expires in 1 hour.
+		$cache->set( $lockKey, true, 3600 );
 	}
 
 	protected function unlock(): void {
