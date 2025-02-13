@@ -15,7 +15,8 @@
 			"Verdy p",
 			"Yupik",
 			"Zoranzoki21",
-			"Pols12"
+			"Pols12",
+			"Matma Rex"
 		]
 	},
 	"translatorsignup": "{{doc-special|TranslatorSignup}}",
@@ -78,7 +79,7 @@
 	"translationnotifications-edit-summary": "The edit summary for the notification text added to the user talk page. $1 is the page title.",
 	"translationnotifications-email-priority": "Used as <code>$5</code> in the following email body:\n* {{msg-mw|translationnotifications-email-body}}\n\nParameters:\n* $1 - priority. Any one of the following messages:\n** {{msg-mw|Translationnotifications-priority-high}}\n** {{msg-mw|Translationnotifications-priority-medium}}\n** {{msg-mw|Translationnotifications-priority-low}}",
 	"translationnotifications-email-deadline": "Used as <code>$6</code> in the following email body:\n* {{msg-mw|Translationnotifications-email-body}}.\n\nParameters:\n* $1 - date, or the message {{msg-mw|Translationnotifications-nodeadline}}",
-	"logentry-notifytranslators-sent": "{{Logentry}}\n* $4 – list of language codes, or {{msg-mw|translationnotifications-log-alllanguages}}\n* $5 – deadline\n* $6 – priority\n* $7 – number of recipients to whom the notification was sent successfully\n* $8 – number of recipients to whom sending the notification failed\n* $9 – number of recipients to whom the notification was not sent because it was too early to send it according to their preferences.\n* $10 – number of notified languages; 999 in case of {{Msg-mw|Translationnotifications-log-alllanguages}} \n* $11 – the notification option that was selected; possible options:\n** {{Msg-mw|Translationnotifications-log-alllanguages}}\n** {{Msg-mw|Translationnotifications-languages-to-notify-all-except-label}}\n** Some languages",
+	"logentry-notifytranslators-sent": "{{Logentry}}\nAdditional parameters:\n* $4 – list of language codes, or {{msg-mw|translationnotifications-log-alllanguages}}\n* $5 – deadline\n* $6 – priority\n* $7 – number of recipients to whom the notification was sent successfully\n* $8 – number of recipients to whom sending the notification failed\n* $9 – number of recipients to whom the notification was not sent because it was too early to send it according to their preferences.\n* $10 – number of notified languages; 999 in case of {{Msg-mw|Translationnotifications-log-alllanguages}} \n* $11 – the notification option that was selected; possible options:\n** {{Msg-mw|Translationnotifications-log-alllanguages}}\n** {{Msg-mw|Translationnotifications-languages-to-notify-all-except-label}}\n** Some languages",
 	"log-name-notifytranslators": "Log page title about sending translation notifications.",
 	"log-description-notifytranslators": "Log page description",
 	"translationnotifications-sent-title": "The title of the page shown after the notification is sent.\nSimilar to {{msg-mw|emailsent}}.\n\nThe body for this title may be {{msg-mw|Translationnotifications-sent-body}}.",
