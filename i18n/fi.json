@@ -41,7 +41,7 @@
 	"translationnotifications-unsubscribe": "Peruuta tilaus",
 	"translationnotifications-signup-success": "Käännöksien ilmoitusasetukset tallennettiin.",
 	"notifytranslators": "Käännösilmoitukset",
-	"translationnotifications-submit-ok": "Ilmoitukset on lisätty jonoon ja ne tullaan toimittamaan taustatehtävänä.",
+	"translationnotifications-submit-ok": "Ilmoitukset on lisätty jonoon ja ne tullaan toimittamaan taustatehtävänä. Tarkista virheet ja valmistumisviestit [[Special:Log/notifytranslators|käännösilmoituslokista]].",
 	"translationnotifications-send-notification-button": "Lähetä ilmoitus kääntäjille",
 	"translationnotifications-preview-notification-button": "Ilmoituksen esikatselu",
 	"translationnotifications-deadline-label": "Ilmoituksessa kerrottava käännöksen määräaika:",
