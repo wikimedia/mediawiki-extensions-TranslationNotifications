@@ -33,8 +33,10 @@ require_once "$IP/maintenance/Maintenance.php";
 class UnsubscribeInactiveUsers extends Maintenance {
 	private const ACTIVITY_CHECKS = [
 		'archive' => 'ar',
+		// TODO: Drop image and oldimage once we remove them (T28741)
 		'image' => 'img',
 		'oldimage' => 'oi',
+		'filerevision' => 'fr',
 		'filearchive' => 'fa',
 		'revision' => 'rev'
 	];
