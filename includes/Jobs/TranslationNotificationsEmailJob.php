@@ -88,7 +88,7 @@ class TranslationNotificationsEmailJob extends GenericTranslationNotificationsJo
 		$this->validateEmail( $to, 'to' );
 		$this->validateEmail( $replyTo, 'replyTo' );
 
-		if ( !is_string( $subject ) || strlen( $subject ) === 0 ) {
+		if ( !is_string( $subject ) || $subject === '' ) {
 			throw new InvalidArgumentException( 'Parameter "subject" must be a non-empty string.' );
 		}
 	}
@@ -97,7 +97,7 @@ class TranslationNotificationsEmailJob extends GenericTranslationNotificationsJo
 		$requiredProps = [ 'email', 'name' ];
 		foreach ( $requiredProps as $prop ) {
 			$propVal = $address[ $prop ] ?? false;
-			if ( !is_string( $propVal ) || strlen( $propVal ) === 0 ) {
+			if ( !is_string( $propVal ) || $propVal === '' ) {
 				throw new InvalidArgumentException(
 					"Parameter: $propName must contain " . implode( ', ', $requiredProps )
 				);
