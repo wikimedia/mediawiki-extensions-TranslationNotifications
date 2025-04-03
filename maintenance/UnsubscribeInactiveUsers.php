@@ -66,6 +66,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 		$this->requireExtension( 'CentralAuth' );
 	}
 
+	/** @inheritDoc */
 	public function execute() {
 		$inactiveSubscribers = [];
 		$blockedSubscribers = [];

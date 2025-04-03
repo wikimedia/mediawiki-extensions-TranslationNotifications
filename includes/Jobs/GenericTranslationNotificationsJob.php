@@ -21,6 +21,7 @@ abstract class GenericTranslationNotificationsJob extends Job {
 	 */
 	private const CHANNEL_NAME = 'TranslationNotifications.Jobs';
 
+	/** @inheritDoc */
 	abstract public function run();
 
 	/**

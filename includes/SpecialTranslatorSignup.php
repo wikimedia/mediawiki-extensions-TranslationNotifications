@@ -76,6 +76,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		$form->setHeaderHtml( '' );
 	}
 
+	/** @inheritDoc */
 	protected function postHtml() {
 		$legalMsg = $this->getConfig()->get( 'TranslationNotificationsSignupLegalMessage' );
 		if ( $legalMsg ) {
