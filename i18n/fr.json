@@ -87,7 +87,7 @@
 	"translationnotifications-log-alllanguages": "toutes les langues",
 	"translationnotifications-nodeadline": "aucune",
 	"translationnotifications-signup-legal": "En fournissant ces informations, vous acceptez que nous puissions vous contacter concernant des sujets liés à {{SITENAME}} que nous pensons être d’intérêt pour vous. Vous acceptez que vos données soient soumises à notre [[{{MediaWiki:Privacypage}}|politique de confidentialité]].",
-	"translationnotifications-generic-languages": "<var>languages</var>",
+	"translationnotifications-generic-languages": "<var>langues</var>",
 	"translationnotifications-text": "Utilisez le formulaire ci-dessous pour envoyer des demandes de traduction aux traducteurs.",
 	"translationnotifications-tes-discouraged-group": "La traduction pour la page sélectionnée a été déconseillée. Il n’est pas autorisé d’envoyer une notification pour les pages dont la traduction a été déconseillée.",
 	"translationnotifications-echo-unsubscribe-header": "Vous avez été désabonné des notifications de traduction",
