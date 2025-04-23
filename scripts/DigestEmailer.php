@@ -11,9 +11,9 @@ if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 }
 require_once "$IP/maintenance/Maintenance.php";
 
-use DatabaseLogEntry;
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsEmailJob;
+use MediaWiki\Logging\DatabaseLogEntry;
 use MediaWiki\Maintenance\Maintenance;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\SpecialPage\SpecialPage;

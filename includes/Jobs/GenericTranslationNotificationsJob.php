@@ -3,7 +3,7 @@ declare( strict_types = 1 );
 
 namespace MediaWiki\Extension\TranslationNotifications\Jobs;
 
-use Job;
+use MediaWiki\JobQueue\Job;
 use MediaWiki\Logger\LoggerFactory;
 use Psr\Log\LoggerInterface;
 

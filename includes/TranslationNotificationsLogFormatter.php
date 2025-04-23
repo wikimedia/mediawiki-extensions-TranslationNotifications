@@ -3,8 +3,8 @@ declare( strict_types = 1 );
 
 namespace MediaWiki\Extension\TranslationNotifications;
 
-use LogFormatter;
 use MediaWiki\Extension\TranslationNotifications\Utilities\NotificationMessageBuilder;
+use MediaWiki\Logging\LogFormatter;
 
 /**
  * Class for formatting TranslationNotifications logs.
