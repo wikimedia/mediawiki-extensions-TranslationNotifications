@@ -4,7 +4,7 @@
 		"jquery": true
 	},
 	"extends": [
-		"wikimedia/client-es6",
+		"wikimedia/client",
 		"wikimedia/mediawiki"
 	]
 }
