@@ -32,30 +32,4 @@ class Hooks implements GetPreferencesHook {
 			];
 		}
 	}
-
-	/**
-	 * Hook: BeforeCreateEchoEvent
-	 * @param array[] &$notifications
-	 * @param array[] &$notificationCategories
-	 * @param array[] &$icons
-	 */
-	public static function onBeforeCreateEchoEvent(
-		&$notifications,
-		&$notificationCategories,
-		&$icons
-	): void {
-		$notificationCategories[ 'translationnotifications' ] = [
-			'tooltip' => 'echo-pref-tooltip-inactive-unsubscribe',
-		];
-
-		$notifications[ 'translationnotifications-unsubscribed' ] = [
-			'category' => 'translationnotifications',
-			'group' => 'neutral',
-			'section' => 'alert',
-			'presentation-model' => UnsubscribeInactiveUsersPresentationModel::class,
-			'user-locators' => [
-				[ UnsubscribeInactiveUsersPresentationModel::class . '::locateUsers' ]
-			]
-		];
-	}
 }

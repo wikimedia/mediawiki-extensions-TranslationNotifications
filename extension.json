@@ -108,10 +108,7 @@
 		"remoteExtPath": "TranslationNotifications"
 	},
 	"Hooks": {
-		"GetPreferences": "main",
-		"BeforeCreateEchoEvent": [
-			"MediaWiki\\Extension\\TranslationNotifications\\Hooks::onBeforeCreateEchoEvent"
-		]
+		"GetPreferences": "main"
 	},
 	"HookHandlers": {
 		"main": {
@@ -132,6 +129,29 @@
 		},
 		"TranslationNotificationsAlwaysHttpsInEmail": {
 			"value": false
+		}
+	},
+	"attributes": {
+		"Echo": {
+			"NotificationCategories": {
+				"translationnotifications": {
+					"title": "echo-category-title-translationnotifications",
+					"tooltip": "echo-pref-tooltip-inactive-unsubscribe"
+				}
+			},
+			"Notifications": {
+				"translationnotifications-unsubscribed": {
+					"category": "translationnotifications",
+					"group": "neutral",
+					"section": "alert",
+					"presentation-model": "MediaWiki\\Extension\\TranslationNotifications\\UnsubscribeInactiveUsersPresentationModel",
+					"user-locators": [
+						[
+							"MediaWiki\\Extension\\TranslationNotifications\\UnsubscribeInactiveUsersPresentationModel::locateUsers"
+						]
+					]
+				}
+			}
 		}
 	},
 	"manifest_version": 2
