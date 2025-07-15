@@ -13,9 +13,11 @@ use MediaWiki\User\UserIdentityValue;
 use Wikimedia\Rdbms\IExpression;
 use Wikimedia\Rdbms\LikeValue;
 
+// @codeCoverageIgnoreStart
 $env = getenv( 'MW_INSTALL_PATH' );
 $IP = $env !== false ? $env : __DIR__ . '/../../..';
 require_once "$IP/maintenance/Maintenance.php";
+// @codeCoverageIgnoreEnd
 
 /**
  * This script unsubscribes translators who've been inactive or blocked for a certain duration of time.
@@ -341,5 +343,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	}
 }
 
+// @codeCoverageIgnoreStart
 $maintClass = UnsubscribeInactiveUsers::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
+// @codeCoverageIgnoreEnd

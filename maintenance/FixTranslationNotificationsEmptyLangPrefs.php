@@ -8,12 +8,14 @@ use MediaWiki\Maintenance\Maintenance;
 use Wikimedia\Rdbms\IExpression;
 use Wikimedia\Rdbms\LikeValue;
 
+// @codeCoverageIgnoreStart
 if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 	$IP = getenv( 'MW_INSTALL_PATH' );
 } else {
 	$IP = __DIR__ . "/../../..";
 }
 require_once "$IP/maintenance/Maintenance.php";
+// @codeCoverageIgnoreEnd
 /*
  * This script removes the empty translationnotifications-lang-* properties.
  * They became default and should not be stored.
@@ -54,5 +56,7 @@ class FixTranslationNotificationsEmptyLangPrefs extends Maintenance {
 	}
 }
 
+// @codeCoverageIgnoreStart
 $maintClass = FixTranslationNotificationsEmptyLangPrefs::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
+// @codeCoverageIgnoreEnd
