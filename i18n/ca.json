@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ssola"
+			"Ssola",
+			"Yupik"
 		]
 	},
 	"translatorsignup": "Inscripció de traductor",
+	"translationnotifications-username": "Nom d'usuari:",
 	"translationnotifications-contact": "Mitjans de contacte preferits",
 	"translationnotifications-frequency": "Freqüència de contacte"
 }
