@@ -28,16 +28,11 @@ use MediaWiki\WikiMap\WikiMap;
  */
 
 class SpecialTranslatorSignup extends FormSpecialPage {
-	private UserOptionsManager $userOptionsManager;
-	private LanguageNameUtils $languageNameUtils;
-
 	public function __construct(
-		UserOptionsManager $userOptionsManager,
-		LanguageNameUtils $languageNameUtils
+		private readonly UserOptionsManager $userOptionsManager,
+		private readonly LanguageNameUtils $languageNameUtils,
 	) {
 		parent::__construct( 'TranslatorSignup' );
-		$this->userOptionsManager = $userOptionsManager;
-		$this->languageNameUtils = $languageNameUtils;
 	}
 
 	public function doesWrites(): bool {

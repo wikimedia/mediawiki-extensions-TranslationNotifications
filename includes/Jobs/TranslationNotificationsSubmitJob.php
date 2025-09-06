@@ -34,13 +34,6 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 	/** Id of the current wiki */
 	private string $currentWikiId;
-	private UserOptionsManager $userOptionsManager;
-	private JobQueueGroupFactory $jobQueueGroupFactory;
-	private LanguageNameUtils $languageNameUtils;
-	private LanguageFactory $languageFactory;
-	private UserFactory $userFactory;
-	private IConnectionProvider $connectionProvider;
-	private Config $mainConfig;
 	private const JOB_NAME = 'TranslationNotificationsSubmitJob';
 
 	/** Returns an instance of the TranslationNotificationsSubmitJob */
@@ -62,21 +55,14 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 	public function __construct(
 		Title $title,
 		array $params,
-		UserOptionsManager $userOptionsManager,
-		JobQueueGroupFactory $jobQueueGroupFactory,
-		LanguageNameUtils $languageNameUtils,
-		LanguageFactory $languageFactory,
-		UserFactory $userFactory,
-		IConnectionProvider $connectionProvider,
-		Config $mainConfig
+		private readonly UserOptionsManager $userOptionsManager,
+		private readonly JobQueueGroupFactory $jobQueueGroupFactory,
+		private readonly LanguageNameUtils $languageNameUtils,
+		private readonly LanguageFactory $languageFactory,
+		private readonly UserFactory $userFactory,
+		private readonly IConnectionProvider $connectionProvider,
+		private readonly Config $mainConfig,
 	) {
-		$this->userOptionsManager = $userOptionsManager;
-		$this->jobQueueGroupFactory = $jobQueueGroupFactory;
-		$this->languageNameUtils = $languageNameUtils;
-		$this->languageFactory = $languageFactory;
-		$this->userFactory = $userFactory;
-		$this->connectionProvider = $connectionProvider;
-		$this->mainConfig = $mainConfig;
 		parent::__construct( self::JOB_NAME, $title, $params );
 		$this->currentWikiId = WikiMap::getCurrentWikiDbDomain()->getId();
 	}

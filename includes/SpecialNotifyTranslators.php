@@ -32,16 +32,12 @@ use WikiPageMessageGroup;
  */
 class SpecialNotifyTranslators extends FormSpecialPage {
 	public static string $right = 'translate-manage';
-	private LanguageNameUtils $languageNameUtils;
-	private JobQueueGroup $jobQueueGroup;
 
 	public function __construct(
-		LanguageNameUtils $languageNameUtils,
-		JobQueueGroup $jobQueueGroup
+		private readonly LanguageNameUtils $languageNameUtils,
+		private readonly JobQueueGroup $jobQueueGroup,
 	) {
 		parent::__construct( 'NotifyTranslators', self::$right );
-		$this->languageNameUtils = $languageNameUtils;
-		$this->jobQueueGroup = $jobQueueGroup;
 	}
 
 	public function doesWrites(): bool {
