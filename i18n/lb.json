@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GilPe",
 			"Robby",
 			"Soued031",
 			"Volvox"
@@ -28,8 +29,8 @@
 	"translationnotifications-freq-always": "Wann et eppes Neies z'iwwersetze gëtt",
 	"translationnotifications-freq-week": "Héchstens eemol d'Woch",
 	"translationnotifications-freq-month": "Héchstens eemol de Mount",
-	"translationnotifications-freq-weekly": "Wéchentleche Resumé",
-	"translationnotifications-freq-monthly": "Monatleche Resumé",
+	"translationnotifications-freq-weekly": "Wéchentleche Resümmee",
+	"translationnotifications-freq-monthly": "Monatleche Resümmee",
 	"translationnotifications-submit": "Astellungen aktualiséieren",
 	"translationnotifications-unsubscribe": "Ofbestellen",
 	"translationnotifications-signup-success": "Är Asteelunge vun den Iwwersetzungsnotifikatioune goufe gespäichert.",
