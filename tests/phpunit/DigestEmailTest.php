@@ -7,7 +7,6 @@ use MediaWiki\MainConfigNames;
 use MediaWiki\Title\Title;
 
 /**
- *
  * Unit tests for DigestEmailer class.
  * @author Santhosh Thottingal
  * @copyright Copyright © 2012, Santhosh Thottingal
