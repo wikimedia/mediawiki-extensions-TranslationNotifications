@@ -18,7 +18,6 @@ use MediaWiki\WikiMap\WikiMap;
 /**
  * Form for translators to register contact methods
  *
- * @file
  * @author Niklas Laxström
  * @author Amir E. Aharoni
  * @author Santhosh Thottingal
@@ -26,7 +25,6 @@ use MediaWiki\WikiMap\WikiMap;
  * @copyright Copyright © 2012, Niklas Laxström
  * @license GPL-2.0-or-later
  */
-
 class SpecialTranslatorSignup extends FormSpecialPage {
 	public function __construct(
 		private readonly UserOptionsManager $userOptionsManager,

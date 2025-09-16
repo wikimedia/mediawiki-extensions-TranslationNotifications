@@ -27,7 +27,6 @@ use MediaWiki\User\User;
  * @copyright Copyright © 2012 Santhosh Thottingal
  * @license GPL-2.0-or-later
  */
-
 class DigestEmailer extends Maintenance {
 	public function __construct() {
 		parent::__construct();
