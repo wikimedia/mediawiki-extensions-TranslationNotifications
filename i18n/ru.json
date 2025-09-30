@@ -7,7 +7,8 @@
 			"Kaganer",
 			"Kareyac",
 			"Okras",
-			"Redredsonia"
+			"Redredsonia",
+			"Vonavy"
 		]
 	},
 	"translatorsignup": "Регистрация в качестве переводчика",
@@ -39,7 +40,7 @@
 	"translationnotifications-unsubscribe": "Отписаться",
 	"translationnotifications-signup-success": "Ваши настройки уведомлений о переводах сохранены.",
 	"notifytranslators": "Уведомить переводчиков",
-	"translationnotifications-submit-ok": "Уведомления были добавлены в очередь и отправляются в фоновом режиме.",
+	"translationnotifications-submit-ok": "Уведомления были добавлены в очередь и отправляются в фоновом режиме. Пожалуйста, проверьте [[Special:Log/notifytranslators|журнал уведомлений о переводе]] на наличие ошибок и сообщений о завершении.",
 	"translationnotifications-send-notification-button": "Отправить переводчикам уведомление",
 	"translationnotifications-preview-notification-button": "Предпросмотр уведомлений",
 	"translationnotifications-deadline-label": "Крайний срок, указываемый в этом уведомлении:",
