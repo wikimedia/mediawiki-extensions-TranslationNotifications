@@ -3,6 +3,7 @@
 		"authors": [
 			"Bada Kaji",
 			"NehalDaveND",
+			"पर्वत सुबेदी",
 			"बडा काजी"
 		]
 	},
@@ -13,5 +14,6 @@
 	"translationnotifications-cmethod-email": "इमेल",
 	"translationnotifications-cmethod-talkpage": "वार्तालाप",
 	"translationnotifications-priority-high": "उच्च",
-	"translationnotifications-priority-medium": "मझौलो"
+	"translationnotifications-priority-medium": "मझौलो",
+	"translationnotifications-text": "अनुवादकहरूलाई अनुवाद अनुरोध पठाउन तलको फारम प्रयोग गर्नुहोस्।"
 }
