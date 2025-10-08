@@ -87,7 +87,7 @@
 	"translationnotifications-log-alllanguages": "所有语言",
 	"translationnotifications-nodeadline": "无",
 	"translationnotifications-signup-legal": "您同意通过此信息，我们可能联系您有关{{SITENAME}}的主题，只要我们认为您对此很感兴趣。您同意您的数据受我们的[[{{MediaWiki:Privacypage}}|隐私政策]]支配。",
-	"translationnotifications-generic-languages": "&lt;语言>",
+	"translationnotifications-generic-languages": "<var>语言</var>",
 	"translationnotifications-text": "使用下面的表单以向译者发送翻译请求。",
 	"translationnotifications-tes-discouraged-group": "所选的可翻译页面不建议使用。不允许向不建议使用的页面发送通知。",
 	"translationnotifications-echo-unsubscribe-header": "您已取消订阅翻译通知",
