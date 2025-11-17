@@ -19,7 +19,7 @@
 	"translationnotifications-info": "Käyttäjätiedot",
 	"translationnotifications-username": "Käyttäjänimi:",
 	"translationnotifications-emailstatus": "Sähköpostin tila:",
-	"translationnotifications-email-confirmed": "Sähköpostiosoite vahvistettiin",
+	"translationnotifications-email-confirmed": "Sähköpostiosoite vahvistettu",
 	"translationnotifications-email-disablemail": "Sähköpostiosoitteesi on vahvistettu, mutta [[Special:Preferences|asetuksissasi]] olet valinnut, että et halua vastaanottaa sähköpostia.",
 	"translationnotifications-email-unconfirmed": "Sähköpostiosoitettasi ei vahvistettu. $1",
 	"translationnotifications-email-notset": "Et ole antanut sähköpostiosoitetta. Voit antaa sen [[Special:Preferences|asetuksissa]].",
@@ -71,5 +71,6 @@
 	"translationnotifications-sent-body": "Käännösilmoitus lähetettiin.",
 	"translationnotifications-log-alllanguages": "kaikki kielet",
 	"translationnotifications-nodeadline": "ei mitään",
-	"translationnotifications-signup-legal": "Antamalla nämä tiedot, vahvistat, että voimme ottaa sinuun yhteyttä sivustoon {{SITENAME}} liittyvissä asioissa, joiden arvelemme kiinnostavan sinua. Hyväksyt, että tietojasi käytetään  [[{{MediaWiki:Privacypage}}|yksityisyydensuojan]] alaisena."
+	"translationnotifications-signup-legal": "Antamalla nämä tiedot, vahvistat, että voimme ottaa sinuun yhteyttä {{GRAMMAR:illative|{{SITENAME}}}} liittyvissä asioissa, joiden arvelemme kiinnostavan sinua. Hyväksyt, että tietojasi käsitellään [[{{MediaWiki:Privacypage}}|tietosuojakäytäntännön]] mukaisesti.",
+	"translationnotifications-text": "Käytä alla olevaa lomaketta lähettääksesi käännöspyyntöjä kääntäjille."
 }
