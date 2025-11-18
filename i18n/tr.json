@@ -20,7 +20,7 @@
 	"translationnotifications-email-unconfirmed": "E-posta adresiniz doğrulanmadı. $1",
 	"translationnotifications-email-notset": "Bir e-posta adresi eklemediniz. [[Special:Preferences|Tercihlerinizden]] bir e-posta adresi ekleyebilirsiniz.",
 	"translationnotifications-languages": "Diller",
-	"translationnotifications-lang": "Dil #$1",
+	"translationnotifications-lang": "$1. dil",
 	"translationnotifications-nolang": "Bir dil seçin",
 	"translationnotifications-contact": "Tercih edilen iletişim yöntemleri",
 	"translationnotifications-cmethod-email": "E-posta",
@@ -33,7 +33,9 @@
 	"translationnotifications-freq-month": "En fazla ayda bir",
 	"translationnotifications-freq-weekly": "Haftalık özet",
 	"translationnotifications-freq-monthly": "Aylık özet",
+	"translationnotifications-freq-none": "Hiçbiri (abonelikten çıktı)",
 	"translationnotifications-submit": "Ayarları güncelle",
+	"translationnotifications-unsubscribe": "Abonelikten çık",
 	"translationnotifications-signup-success": "Çeviri bildirim tercihleriniz kaydedildi.",
 	"notifytranslators": "Çevirmenlere bildir",
 	"translationnotifications-submit-ok": "Bildirimler bir kuyruğa eklendi ve arka plandaki bir iş tarafından iletiliyor. Hatalar ve tamamlanma mesajları için lütfen [[Special:Log/notifytranslators|çeviri bildirim günlüğünü]] kontrol edin.",
@@ -77,7 +79,10 @@
 	"translationnotifications-signup-legal": "Bu bilgileri sağlayarak {{SITENAME}} ile ilgili konularda sizinle iletişim kurabileceğimizi kabul edersiniz. Verilerinizin [[{{MediaWiki:Privacypage}}|gizlilik politikamıza]] tabi olduğunu kabul edersiniz.",
 	"translationnotifications-generic-languages": "&lt;dil>",
 	"translationnotifications-text": "Çevirmenlere çeviri talepleri göndermek için aşağıdaki formu kullanın.",
+	"translationnotifications-tes-discouraged-group": "Seçili çevrilebilir sayfa önerilmemektedir. Önerilmeyen sayfalara bildirim gönderilmesine izin verilmemektedir.",
 	"translationnotifications-echo-unsubscribe-header": "Çeviri bildirimlerinden aboneliğiniz iptal edildi",
+	"translationnotifications-echo-unsubscribe-body": "Uzun süredir aktif olmadığınız veya engellendiğiniz için çeviri bildirimleri aboneliğiniz iptal edildi. Hâlâ bildirim almak istiyorsanız, istediğiniz zaman yeniden abone olabilirsiniz.",
 	"translationnotifications-echo-unsubscribe-primary-label": "Çevirmen olarak tekrar kaydolun",
-	"echo-category-title-translationnotifications": "Çeviri bildirimleri"
+	"echo-category-title-translationnotifications": "Çeviri bildirimleri",
+	"echo-pref-tooltip-inactive-unsubscribe": "Çeviri için mevcut yeni veya güncellenmiş sayfalar hakkında çeviri bildirimleri almayı iptal edersem bana bildir"
 }
