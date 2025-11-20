@@ -5,7 +5,8 @@
 			"Cobija",
 			"Incelemeelemani",
 			"Joseph",
-			"Sezgin İbiş"
+			"Sezgin İbiş",
+			"SaldırganSincap"
 		]
 	},
 	"translatorsignup": "Çevirmen kaydı",
@@ -19,7 +20,7 @@
 	"translationnotifications-email-unconfirmed": "E-posta adresiniz doğrulanmadı. $1",
 	"translationnotifications-email-notset": "Bir e-posta adresi eklemediniz. [[Special:Preferences|Tercihlerinizden]] bir e-posta adresi ekleyebilirsiniz.",
 	"translationnotifications-languages": "Diller",
-	"translationnotifications-lang": "Dil #$1",
+	"translationnotifications-lang": "$1. dil",
 	"translationnotifications-nolang": "Bir dil seçin",
 	"translationnotifications-contact": "Tercih edilen iletişim yöntemleri",
 	"translationnotifications-cmethod-email": "E-posta",
@@ -32,10 +33,12 @@
 	"translationnotifications-freq-month": "En fazla ayda bir",
 	"translationnotifications-freq-weekly": "Haftalık özet",
 	"translationnotifications-freq-monthly": "Aylık özet",
+	"translationnotifications-freq-none": "Hiçbiri (abonelikten çıktı)",
 	"translationnotifications-submit": "Ayarları güncelle",
+	"translationnotifications-unsubscribe": "Abonelikten çık",
 	"translationnotifications-signup-success": "Çeviri bildirim tercihleriniz kaydedildi.",
 	"notifytranslators": "Çevirmenlere bildir",
-	"translationnotifications-submit-ok": "Bildirimler bir kuyruğa eklendi ve bir arka plan işi tarafından teslim edildi.",
+	"translationnotifications-submit-ok": "Bildirimler bir kuyruğa eklendi ve arka plandaki bir iş tarafından iletiliyor. Hatalar ve tamamlanma mesajları için lütfen [[Special:Log/notifytranslators|çeviri bildirim günlüğünü]] kontrol edin.",
 	"translationnotifications-send-notification-button": "Çevirmenlere bildirim gönder",
 	"translationnotifications-preview-notification-button": "Bildirim önizlemesi",
 	"translationnotifications-deadline-label": "Bu bildirimde belirtilecek son tarih:",
@@ -58,7 +61,7 @@
 	"translationnotifications-error-no-translatable-pages": "Bu vikide çevrilebilir sayfa yok.",
 	"translationnotifications-email-subject": "Lütfen $1 sayfayı çevirin",
 	"translationnotifications-email-body": "Merhaba $1,\n\nBu e-postayı {{SITENAME}} sitesinde $2 çevirmen olarak {{PLURAL:$9|kaydolduğunuz}} için alıyorsunuz.\n\nOrada çevrilecek bir sayfa var: $3.\nAşağıdaki bağlantıyı tıklayarak çevirebilirsiniz:\n$4\n\n$5\n$6\n\n$7\n\nYardımınız büyük değer taşıyor. {{SITENAME}} sitesinin gerçek bir çokdilli topluluk işlevi görmesi sizin gibi çevirmenlerin yardımıyla oluyor.\n\nTeşekkür ederiz!\n{{SITENAME}} çeviri koordinatörleri\n\n----\n\nBu e-postayı, {{SITENAME}} sitesindeki çevirilerle ilgili e-posta almak üzere kaydolduğunuz için alıyorsunuz. Aboneliği iptal etmek veya çeviriler için bildirim tercihlerinizi değiştirmek için lütfen $8 sayfasına ziyaret edin.",
-	"translationnotifications-talkpage-body": "Merhaba $2,\n\nBu e-postayı {{SITENAME}} sitesinde $3 çevirmen olarak {{PLURAL:$9|kaydolduğunuz}} için alıyorsunuz.\n[[$4]] sayfası çeviri için kullanılabilir. Buradan çevirebilirsiniz:\n$5\n\n$6\n$7\n\n$8\n\nYardımınız için çok minnettarız. Sizin gibi çevirmenler {{SITENAME}} sitesinin gerçekten çokdilli bir topluluk\nolarak işlev görmesine yardımcı oluyor.\n\n[$10 Bildirim tercihlerinizi değiştirebilirsiniz].\n\nTeşekkür ederiz!\n\n{{SITENAME}} çeviri koordinatörleri",
+	"translationnotifications-talkpage-body": "Merhaba $2,\n\nBu e-postayı {{SITENAME}} sitesinde $3 çevirmen olarak {{PLURAL:$9|kaydolduğunuz}} için alıyorsunuz.\n[[$4]] sayfası çeviri için kullanılabilir. Buradan çevirebilirsiniz:\n$5\n\n$6\n$7\n\n$8\n\nYardımınız için çok minnettarız. Sizin gibi çevirmenler {{SITENAME}} sitesinin gerçekten çokdilli bir topluluk\nolarak işlev görmesine yardımcı oluyor.\n\nAboneliğinizi iptal etmek veya çevirilere ilişkin bildirim tercihlerinizi değiştirmek için lütfen [$10 Special:TranslatorSignup] sayfasını ziyaret edin.\n\nTeşekkür ederiz!\n\n{{SITENAME}} çeviri koordinatörleri",
 	"translationnotifications-notification-url-listitem": "$1 olarak çevir",
 	"translationnotifications-digestemail-subject": "{{SITENAME}} sitesinden çeviri istekleri için özet e-posta",
 	"translationnotifications-digestemail-body": "Merhaba $1,\n\nBu e-postayı {{SITENAME}} sitesinde {{GENDER:$1|kaydolan}} çevirmen olarak $2 çevirdiğiniz için alıyorsunuz.\n\nÇeviri için {{PLURAL:$3|1 sayfa |$3 sayfa}} bulunmaktadır. Ayrıntılar aşağıda verilmiştir.\n\n$4\n\nYardımınız için çok minnettarız. Sizin gibi çevirmenler {{SITENAME}} sitesinin gerçekten çokdilli bir topluluk\nolarak işlev görmesine yardımcı oluyor.\n\nTeşekkür ederiz!\n{{SITENAME}} çeviri hizmetlileri\n\n----\n\nBu e-postayı, {{SITENAME}} adresindeki çevirilerle ilgili e-posta almak üzere kaydolduğunuz için alıyorsunuz. Aboneliği iptal etmek veya çeviriler için bildirim tercihlerinizi değiştirmek için lütfen\n$5\nadresini ziyaret edin.",
@@ -76,7 +79,10 @@
 	"translationnotifications-signup-legal": "Bu bilgileri sağlayarak {{SITENAME}} ile ilgili konularda sizinle iletişim kurabileceğimizi kabul edersiniz. Verilerinizin [[{{MediaWiki:Privacypage}}|gizlilik politikamıza]] tabi olduğunu kabul edersiniz.",
 	"translationnotifications-generic-languages": "&lt;dil>",
 	"translationnotifications-text": "Çevirmenlere çeviri talepleri göndermek için aşağıdaki formu kullanın.",
+	"translationnotifications-tes-discouraged-group": "Seçili çevrilebilir sayfa önerilmemektedir. Önerilmeyen sayfalara bildirim gönderilmesine izin verilmemektedir.",
 	"translationnotifications-echo-unsubscribe-header": "Çeviri bildirimlerinden aboneliğiniz iptal edildi",
+	"translationnotifications-echo-unsubscribe-body": "Uzun süredir aktif olmadığınız veya engellendiğiniz için çeviri bildirimleri aboneliğiniz iptal edildi. Hâlâ bildirim almak istiyorsanız, istediğiniz zaman yeniden abone olabilirsiniz.",
 	"translationnotifications-echo-unsubscribe-primary-label": "Çevirmen olarak tekrar kaydolun",
-	"echo-category-title-translationnotifications": "Çeviri bildirimleri"
+	"echo-category-title-translationnotifications": "Çeviri bildirimleri",
+	"echo-pref-tooltip-inactive-unsubscribe": "Çeviri için mevcut yeni veya güncellenmiş sayfalar hakkında çeviri bildirimleri almayı iptal edersem bana bildir"
 }
