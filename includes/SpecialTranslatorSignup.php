@@ -219,12 +219,11 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 	 * @return true
 	 */
 	public function onSubmit( array $formData ): bool {
-		$user = $this->getUser()->getInstanceForUpdate();
+		$user = $this->getUser();
 
 		if ( $this->getRequest()->getVal( 'translationnotifications-unsubscribe' ) !== null ) {
 			$this->userOptionsManager->setOption( $user, 'translationnotifications-freq', 'none' );
-
-			$user->saveSettings();
+			$this->userOptionsManager->saveOptions( $user );
 			return true;
 		}
 
@@ -233,7 +232,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		foreach ( $formData as $key => $value ) {
 			$this->userOptionsManager->setOption( $user, "translationnotifications-$key", $value );
 		}
-		$user->saveSettings();
+		$this->userOptionsManager->saveOptions( $user );
 		return true;
 	}
 

@@ -165,7 +165,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 
 		$usersWithEmptyWikiId = [];
 		foreach ( $translatorsToNotify as $translator ) {
-			$user = $this->userFactory->newFromId( (int)$translator->up_user )->getInstanceForUpdate();
+			$user = $this->userFactory->newFromId( (int)$translator->up_user );
 
 			$userTranslationFrequency =
 				$frequencies[$this->userOptionsManager->getOption( $user, 'translationnotifications-freq' )];
@@ -197,7 +197,7 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 					$this->addUserJobsToList( $userJobs, $jobsByTarget, $stats );
 
 					$this->userOptionsManager->setOption( $user, $timestampOptionName, $currentDBTime );
-					$user->saveSettings();
+					$this->userOptionsManager->saveOptions( $user );
 
 					$stats['processedUsers']++;
 				} catch ( Exception $e ) {
