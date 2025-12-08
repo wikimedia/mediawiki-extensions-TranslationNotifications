@@ -4,7 +4,9 @@
 			"BaRaN6161 TURK",
 			"Cobija",
 			"Incelemeelemani",
-			"Sezgin İbiş"
+			"Sezgin İbiş",
+			"Joseph",
+			"SaldırganSincap"
 		]
 	},
 	"translatorsignup": "Çevirmen kaydı",
@@ -18,7 +20,7 @@
 	"translationnotifications-email-unconfirmed": "E-posta adresiniz doğrulanmadı. $1",
 	"translationnotifications-email-notset": "Bir e-posta adresi eklemediniz. [[Special:Preferences|Tercihlerinizden]] bir e-posta adresi ekleyebilirsiniz.",
 	"translationnotifications-languages": "Diller",
-	"translationnotifications-lang": "Dil #$1",
+	"translationnotifications-lang": "$1. dil",
 	"translationnotifications-nolang": "Bir dil seçin",
 	"translationnotifications-contact": "Tercih edilen iletişim yöntemleri",
 	"translationnotifications-cmethod-email": "E-posta",
