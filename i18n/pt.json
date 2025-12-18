@@ -4,7 +4,8 @@
 			"B3rnas",
 			"Eduardo Addad de Oliveira",
 			"Hamilton Abreu",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Eduardo Augusto"
 		]
 	},
 	"translatorsignup": "Criar conta de tradutor",
@@ -36,7 +37,7 @@
 	"translationnotifications-unsubscribe": "Cancelar inscrição",
 	"translationnotifications-signup-success": "As suas preferências de notificações de tradução foram gravadas.",
 	"notifytranslators": "Notificar tradutores",
-	"translationnotifications-submit-ok": "As notificações foram adicionadas a uma fila e são entregues por uma tarefa de segundo plano.",
+	"translationnotifications-submit-ok": "As notificações foram adicionadas a uma fila e são entregues por uma tarefa em segundo plano. Por favor, verifica o [[Special:Log/notifytranslators|registro de notificações de tradução]] para eventuais erros e para a mensagem de conclusão.",
 	"translationnotifications-send-notification-button": "Enviar notificações aos tradutores",
 	"translationnotifications-preview-notification-button": "Antever notificação",
 	"translationnotifications-deadline-label": "Prazo para indicar nesta notificação:",
