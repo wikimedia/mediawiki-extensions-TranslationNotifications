@@ -5,7 +5,8 @@
 			"Base",
 			"Olvin",
 			"Piramidion",
-			"Ата"
+			"Ата",
+			"Movses"
 		]
 	},
 	"translatorsignup": "Записатися перекладачем",
@@ -62,8 +63,8 @@
 	"logentry-notifytranslators-sent": "$1 {{GENDER:$2|надіслав|надіслала}} сповіщення про сторінки до перекладу ($3 {{PLURAL:$10|1=мовою|мовами}} $4) із кінцевим терміном $5 та пріоритетом $6. Вдало надіслано {{PLURAL:$7|1=$7 одержувачу|$7 одержувачам}}, невдало — {{PLURAL:$8|1=$8 одержувачу|$8 одержувачам}}, {{PLURAL:$9|1=$9 одержувача|$9 одержувачів}} було пропущено.",
 	"log-name-notifytranslators": "Журнал сповіщень перекладу",
 	"log-description-notifytranslators": "Журнал сповіщень, надісланих перекладачам, про сторінки до перекладу.",
-	"translationnotifications-sent-title": "Повідомлення про переклад надіслано.",
-	"translationnotifications-sent-body": "Повідомлення про переклад було надіслано.",
+	"translationnotifications-sent-title": "Сповіщення про переклад надіслано.",
+	"translationnotifications-sent-body": "Сповіщення про переклад було надіслано.",
 	"translationnotifications-log-alllanguages": "усі мови",
 	"translationnotifications-nodeadline": "немає",
 	"translationnotifications-signup-legal": "Надаючи цю інформацію, Ви погоджуєтеся, що ми можемо контактувати з Вами за темами, що стосуються {{SITENAME}}, які, на нашу думку, можуть бути цікавими для Вас. Ви погоджуєтеся, що Ваші дані є предметом [[{{MediaWiki:Privacypage}}|нашої політики конфіденційності]].",
