@@ -34,6 +34,7 @@
 	"translationnotifications-freq-weekly": "Щотижневий стислий звіт",
 	"translationnotifications-freq-monthly": "Щомісячний стислий виклад",
 	"translationnotifications-submit": "Оновити налаштування",
+	"translationnotifications-unsubscribe": "Відписатись",
 	"translationnotifications-signup-success": "Ваші налаштування для сповіщень перекладу було збережено.",
 	"notifytranslators": "Сповістити перекладачів",
 	"translationnotifications-submit-ok": "Сповіщення було поставлено у чергу і вони розсилаються у фоновому режимі. Перевірте [[Special:Log/notifytranslators|журнал сповіщення перекладачів]], чи немає помилок і  чи роботу завершено.",
