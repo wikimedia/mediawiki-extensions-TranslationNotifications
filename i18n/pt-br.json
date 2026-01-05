@@ -6,7 +6,9 @@
 			"Eduardoaddad",
 			"Felipe L. Ewald",
 			"TheEduGobi",
-			555
+			555,
+			"EGobi",
+			"Fúlvio"
 		]
 	},
 	"translatorsignup": "Inscrição como tradutor",
@@ -27,7 +29,7 @@
 	"translationnotifications-cmethod-talkpage": "Página de discussão",
 	"translationnotifications-cmethod-talkpage-elsewhere": "Página de discussão em outro wiki",
 	"translationnotifications-cmethod-feed": "Feed",
-	"translationnotifications-frequency": "Freqüência de contato",
+	"translationnotifications-frequency": "Frequência de contato",
 	"translationnotifications-freq-always": "Sempre que houver algo novo para traduzir",
 	"translationnotifications-freq-week": "No máximo uma vez por semana",
 	"translationnotifications-freq-month": "No máximo uma vez por mês",
