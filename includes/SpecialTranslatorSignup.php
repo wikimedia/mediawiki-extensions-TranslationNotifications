@@ -135,6 +135,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 			$formatted = $this->getLanguage()->formatNum( $i );
 			$m["lang-$i"] = [
 				'type' => 'select',
+				'cssclass' => 'mw-translationnotifications-lang-selector',
 				'label-message' => [ 'translationnotifications-lang', $formatted ],
 				'section' => 'languages',
 				'options' => $options,

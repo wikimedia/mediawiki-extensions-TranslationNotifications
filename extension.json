@@ -100,7 +100,14 @@
 			"styles": "resources/ext.translationnotifications.notifytranslators.less"
 		},
 		"ext.translationnotifications.translatorsignup": {
-			"scripts": "resources/ext.translationnotifications.translatorsignup.js"
+			"scripts": "resources/ext.translationnotifications.translatorsignup.js",
+			"styles": "resources/ext.translationnotifications.translatorsignup.less",
+			"dependencies": [
+				"mediawiki.languageselector"
+			],
+			"messages": [
+				"translationnotifications-nolang"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
