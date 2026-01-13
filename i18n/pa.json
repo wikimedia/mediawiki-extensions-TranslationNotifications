@@ -23,5 +23,9 @@
 	"translationnotifications-requested-languages-label": "ਬੇਨਤੀ ਕੀਤੀਆਂ ਭਾਸ਼ਾਵਾਂ:",
 	"translationnotifications-languages-to-notify": "ਚੁਣੀਆਂ ਗਈਆਂ ਭਾਸ਼ਾਵਾਂ:",
 	"translationnotifications-languages-to-notify-all-label": "ਸਾਰੀਆਂ ਭਾਸ਼ਾਵਾਂ",
-	"translationnotifications-notification-url-listitem": "$1 ਵਿੱਚ ਤਰਜਮਾ ਕਰੋ"
+	"translationnotifications-notification-url-listitem": "$1 ਵਿੱਚ ਤਰਜਮਾ ਕਰੋ",
+	"translationnotifications-edit-summary": "ਉਲਥਾ ਸੁਨੇਹਾ: $1",
+	"log-name-notifytranslators": "ਉਲਥਾ ਸੁਨੇਹਿਆਂ ਦਾ ਚਿੱਠਾ",
+	"translationnotifications-sent-title": "ਉਲਥਾ ਸੁਨੇਹਾ ਭੇਜਿਆ ਗਿਆ",
+	"translationnotifications-sent-body": "ਉਲਥਾ ਸੁਨੇਹਾ ਭੇਜਿਆ ਗਿਆ ਏ।"
 }
