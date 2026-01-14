@@ -7,7 +7,6 @@ use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\SiteMatrix\SiteMatrix;
 use MediaWiki\Html\Html;
 use MediaWiki\HTMLForm\HTMLForm;
-use MediaWiki\Language\LanguageCode;
 use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\SpecialPage\FormSpecialPage;
@@ -119,38 +118,31 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 			'raw' => true,
 		];
 
-		$languages = $this->languageNameUtils->getLanguageNames();
-		ksort( $languages );
-
-		$options = [];
-		foreach ( $languages as $code => $name ) {
-			$display = LanguageCode::bcp47( $code ) . ' - ' . $name;
-			$options[$display] = $code;
-		}
-
-		$options =
-			[ $this->msg( 'translationnotifications-nolang' )->plain() => '' ] + $options;
-
 		for ( $i = 1; $i < 4; $i++ ) {
 			$formatted = $this->getLanguage()->formatNum( $i );
-			$m["lang-$i"] = [
-				'type' => 'select',
-				'cssclass' => 'mw-translationnotifications-lang-selector',
-				'label-message' => [ 'translationnotifications-lang', $formatted ],
-				'section' => 'languages',
-				'options' => $options,
-				'default' => $this->userOptionsManager->getOption(
-					$user,
-					"translationnotifications-lang-$i"
-				),
-			];
+			$defaultValue = $this->userOptionsManager->getOption(
+				$user,
+				"translationnotifications-lang-$i"
+			);
 
 			if ( $i === 1 ) {
-				$m["lang-$i"]['default'] = $this->userOptionsManager->getOption(
+				$defaultValue = $this->userOptionsManager->getOption(
 					$user,
 					"translationnotifications-lang-$i",
 					$this->getLanguage()->getCode()
 				);
+			}
+
+			$m["lang-$i"] = [
+				'type' => 'language',
+				'useCodex' => true,
+				'label-message' => [ 'translationnotifications-lang', $formatted ],
+				'cssclass' => 'mw-translationnotifications-lang-selector',
+				'section' => 'languages',
+				'default' => $defaultValue,
+			];
+
+			if ( $i === 1 ) {
 				$m["lang-$i"]['required'] = true;
 			}
 		}
