@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jhertel",
 			"Saederup92",
 			"Sarrus"
 		]
@@ -16,7 +17,7 @@
 	"translationnotifications-priority-medium": "mellem",
 	"translationnotifications-priority-low": "lav",
 	"translationnotifications-priority-unset": "(ikke sat)",
-	"translationnotifications-email-subject": "Venligst oversæt siden $1",
+	"translationnotifications-email-subject": "Oversæt venligst siden $1",
 	"translationnotifications-notification-url-listitem": "oversæt til $1",
 	"translationnotifications-log-alllanguages": "alle sprog",
 	"translationnotifications-nodeadline": "ingen"
