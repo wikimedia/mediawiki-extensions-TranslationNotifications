@@ -16,7 +16,8 @@
 			"Verdy p",
 			"Yupik",
 			"Zoranzoki21",
-			"Matma Rex"
+			"Matma Rex",
+			"Woytecr"
 		]
 	},
 	"translatorsignup": "{{doc-special|TranslatorSignup}}",
@@ -94,5 +95,5 @@
 	"translationnotifications-echo-unsubscribe-body": "Body for the Echo notification sent when a user is unsubscribed.",
 	"translationnotifications-echo-unsubscribe-primary-label": "Label for the primary URL in the Echo notification sent when a user is unsubscribed.",
 	"echo-category-title-translationnotifications": "Label in the notification section in Special:Preferences",
-	"echo-pref-tooltip-inactive-unsubscribe": "Tooltip in the notification section in Special:Preferences for the label: {{msg-mw|echo-category-title-translationnotifications-inactive-unsubscribe}}"
+	"echo-pref-tooltip-inactive-unsubscribe": "Tooltip in the notification section in Special:Preferences for the label: {{msg-mw|echo-category-title-translationnotifications}}"
 }
