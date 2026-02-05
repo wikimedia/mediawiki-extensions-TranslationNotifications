@@ -38,7 +38,9 @@
 	"translationnotifications-freq-month": "Co najwyżej raz w miesiącu",
 	"translationnotifications-freq-weekly": "Tygodniowe streszczenie",
 	"translationnotifications-freq-monthly": "Miesięczne streszczenie",
+	"translationnotifications-freq-none": "Brak (nie subskrybuje)",
 	"translationnotifications-submit": "Aktualizuj ustawienia",
+	"translationnotifications-unsubscribe": "Anuluj subskrypcję",
 	"translationnotifications-signup-success": "Twoje preferencje powiadomień o tłumaczeniach zostały zapisane.",
 	"notifytranslators": "Powiadomienie tłumaczy",
 	"translationnotifications-submit-ok": "Powiadomienia zostały dodane do kolejki i są dostarczane przez zadanie w tle. Sprawdzaj [[Special:Log/notifytranslators|rejestr powiadomień o tłumaczeniach]] po informacje o błędach i ukończeniu.",
@@ -81,5 +83,11 @@
 	"translationnotifications-nodeadline": "brak",
 	"translationnotifications-signup-legal": "Podając te informacje, zgadzasz się z tym, że możemy kontaktować się z Tobą odnośnie tematów związanych ze stroną {{SITENAME}}, które naszym zdaniem mogą być dla Ciebie interesujące. Zgadzasz się również z tym, że Twoje dane osobowe będą przetwarzane zgodnie z naszymi [[{{MediaWiki:Privacypage}}|zasadami]].",
 	"translationnotifications-generic-languages": "&lt;języki>",
-	"translationnotifications-text": "Skorzystaj z poniższego formularza, aby wysłać tłumaczom prośby o tłumaczenie."
+	"translationnotifications-text": "Skorzystaj z poniższego formularza, aby wysłać tłumaczom prośby o tłumaczenie.",
+	"translationnotifications-tes-discouraged-group": "Wybrana strona do przetłumaczenia jest oznaczona jako odradzana do tłumaczenia. Wysyłanie powiadomień do odradzanych stron jest niedozwolone.",
+	"translationnotifications-echo-unsubscribe-header": "Zostałeś wypisany z powiadomień o tłumaczeniach",
+	"translationnotifications-echo-unsubscribe-body": "Z powodu dłuższego braku aktywności lub zablokowania, Twoja subskrypcja powiadomień o tłumaczeniach została anulowana. Jeśli nadal chcesz otrzymywać powiadomienia, możesz w dowolnym momencie ponownie się zapisać.",
+	"translationnotifications-echo-unsubscribe-primary-label": "Zapisz się ponownie jako tłumacz",
+	"echo-category-title-translationnotifications": "Powiadomienia o tłumaczeniach",
+	"echo-pref-tooltip-inactive-unsubscribe": "Powiadom mnie, jeśli zostanę wypisany z otrzymywania powiadomień o tłumaczeniach dotyczących nowych lub zaktualizowanych stron dostępnych do tłumaczenia"
 }
