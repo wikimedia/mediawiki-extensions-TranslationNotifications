@@ -96,7 +96,9 @@
 				"translationnotifications-languages-to-not-notify",
 				"translationnotifications-tes-discouraged-group",
 				"translate-mgs-invalid-group"
-			],
+			]
+		},
+		"ext.translationnotifications.notifytranslators.styles": {
 			"styles": "resources/ext.translationnotifications.notifytranslators.less"
 		},
 		"ext.translationnotifications.translatorsignup": {

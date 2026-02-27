@@ -71,6 +71,8 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	 */
 	protected function getFormFields(): array {
 		$this->getOutput()->addModules( 'ext.translationnotifications.notifytranslators' );
+		// the style isn't in the modules because it contains no js styling
+		$this->getOutput()->addModuleStyles( 'ext.translationnotifications.notifytranslators.styles' );
 
 		$formFields = [];
 
@@ -91,9 +93,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 			'required' => true
 		];
 
-		$languages = array_flip(
-			$this->languageNameUtils->getLanguageNames( $this->getLanguage()->getCode() )
-		);
+		$languages = $this->languageNameUtils->getLanguageNames( $this->getLanguage()->getCode() );
 
 		$formFields['LanguageSet'] = [
 			'name' => 'notifiable-languages-options',
@@ -111,12 +111,15 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		];
 
 		// Selected languages input box
-		$formFields['SelectedLanguages'] = [
-			'type' => 'multiselect',
-			'dropdown' => true,
+		$formFields['SelectedLanguages[]'] = [
+			'type' => 'language',
+			'multiple' => true,
+			'useCodex' => true,
+			'size' => 8,
+			'default' => [],
 			'label-message' => 'translationnotifications-languages-to-notify-label',
 			'help-message' => 'translationnotifications-languages-to-notify-label-help-message',
-			'options' => $languages,
+			'languages' => $languages,
 			'hide-if' => [ '===', 'LanguageSet', (string)LanguageSet::ALL ]
 		];
 
@@ -189,7 +192,7 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		$notificationText = $formData['NotificationText'];
 		$priority = $formData['Priority'];
 		$deadlineDate = $formData['DeadlineDate'];
-		$selectedLanguages = $formData['SelectedLanguages'];
+		$selectedLanguages = $formData['SelectedLanguages[]'];
 		$pageSourceLangCode = $this->getSourceLanguage( $translatablePageTitle );
 		$notificationLanguages = [];
 
