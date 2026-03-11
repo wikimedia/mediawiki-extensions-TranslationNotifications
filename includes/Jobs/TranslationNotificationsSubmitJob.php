@@ -78,10 +78,15 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 		$translatorLangCode = $params['translatorLanguage'];
 
 		// Request information
+		// @phan-suppress-next-line PhanTypeArraySuspiciousNullable
 		$notificationText = $params['requestData']['notificationText'];
+		// @phan-suppress-next-line PhanTypeArraySuspiciousNullable
 		$priority = $params['requestData']['priority'];
+		// @phan-suppress-next-line PhanTypeArraySuspiciousNullable
 		$selectedLanguages = $params['requestData']['selectedLanguages'];
+		// @phan-suppress-next-line PhanTypeArraySuspiciousNullable
 		$deadlineDate = $params['requestData']['deadlineDate'];
+		// @phan-suppress-next-line PhanTypeArraySuspiciousNullable
 		$languageSet = $params['requestData']['languageSet'];
 
 		if ( !$languageSet instanceof LanguageSet ) {

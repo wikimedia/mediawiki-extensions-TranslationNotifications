@@ -114,7 +114,7 @@ class TranslationNotifyUser {
 		// Note: Maybe this was originally meant for edit summary, but it's actually used as subject
 		$subject = wfMessage(
 			'translationnotifications-edit-summary',
-			$this->translatablePageTitle
+			$this->translatablePageTitle->getPrefixedText()
 		)->inLanguage( $userFirstLanguage )->text();
 
 		$listUrl = SpecialPage::getTitleFor( 'NotifyTranslators' )->getCanonicalURL();
@@ -166,7 +166,7 @@ class TranslationNotifyUser {
 			->params(
 				NotificationMessageBuilder::getUserName( $translator ),
 				$userFirstLanguage->listToText( array_values( $relevantLanguages ) ),
-				$this->translatablePageTitle,
+				$this->translatablePageTitle->getPrefixedText(),
 				$translationUrls,
 				NotificationMessageBuilder::getPriorityClause( $userFirstLanguage, $this->priority ),
 				NotificationMessageBuilder::getDeadlineClause( $userFirstLanguage, $this->deadline ),
