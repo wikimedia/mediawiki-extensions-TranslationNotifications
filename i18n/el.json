@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Geraki"
+		]
+	},
+	"translatorsignup": "Εγγραφή μεταφραστή",
+	"translatorsignup-summary": "Χρησιμοποιήστε αυτήν τη σελίδα για να υποδείξετε σε ποιες γλώσσες μπορείτε να μεταφράσετε και πώς θέλετε να επικοινωνούμε μαζί σας σχετικά με νέα αιτήματα μετάφρασης.",
+	"translationnotifications-desc": "Επιτρέπει στους μεταφραστές να εγγραφούν για ειδοποιήσεις μετάφρασης",
+	"translationnotifications-info": "Πληροφορίες χρήστη",
+	"translationnotifications-username": "Όνομα χρήστη:",
+	"translationnotifications-emailstatus": "Κατάσταση email:",
+	"translationnotifications-email-confirmed": "Η διεύθυνση email σας επιβεβαιώθηκε",
+	"translationnotifications-email-disablemail": "Η διεύθυνση email σας έχει επιβεβαιωθεί, αλλά στις [[Special:Preferences|προτιμήσεις σας]] ζητήσατε να μην λαμβάνετε email.",
+	"translationnotifications-email-unconfirmed": "Η διεύθυνση email σας δεν έχει επιβεβαιωθεί. $1",
+	"translationnotifications-email-notset": "Δεν έχετε δώσει διεύθυνση email. Μπορείτε να το κάνετε στις [[Special:Preferences|προτιμήσεις]] σας.",
+	"translationnotifications-languages": "Γλώσσες",
+	"translationnotifications-lang": "Γλώσσα # $1",
+	"translationnotifications-nolang": "Επιλέξτε γλώσσα",
+	"translationnotifications-contact": "Προτιμώμενες μέθοδοι επικοινωνίας",
+	"translationnotifications-cmethod-email": "Email",
+	"translationnotifications-cmethod-talkpage": "Σελίδα συζήτησης",
+	"translationnotifications-cmethod-talkpage-elsewhere": "Σελίδα συζήτησης σε άλλο wiki",
+	"translationnotifications-cmethod-feed": "Feed"
+}
