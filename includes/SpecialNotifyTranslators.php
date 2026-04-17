@@ -37,7 +37,12 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		private readonly LanguageNameUtils $languageNameUtils,
 		private readonly JobQueueGroup $jobQueueGroup,
 	) {
-		parent::__construct( 'NotifyTranslators', self::$right );
+		parent::__construct( 'NotifyTranslators' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return self::$right;
 	}
 
 	public function doesWrites(): bool {
