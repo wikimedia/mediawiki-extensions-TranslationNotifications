@@ -12,7 +12,7 @@ use MediaWiki\Extension\TranslationNotifications\Utilities\LanguageSet;
 use MediaWiki\Extension\TranslationNotifications\Utilities\NotificationMessageBuilder;
 use MediaWiki\HTMLForm\HTMLForm;
 use MediaWiki\JobQueue\JobQueueGroup;
-use MediaWiki\Languages\LanguageNameUtils;
+use MediaWiki\Language\LanguageNameUtils;
 use MediaWiki\SpecialPage\FormSpecialPage;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;

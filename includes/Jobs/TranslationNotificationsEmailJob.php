@@ -4,12 +4,12 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extension\TranslationNotifications\Jobs;
 
 use InvalidArgumentException;
-use MailAddress;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Mail\MailAddress;
+use MediaWiki\Mail\UserMailer;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
-use UserMailer;
 
 /**
  * Uses UserMailer to send out emails.

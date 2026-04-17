@@ -11,8 +11,8 @@ use MediaWiki\Extension\TranslationNotifications\Utilities\TranslationNotifyUser
 use MediaWiki\JobQueue\IJobSpecification;
 use MediaWiki\JobQueue\JobQueueGroupFactory;
 use MediaWiki\JobQueue\JobSpecification;
-use MediaWiki\Languages\LanguageFactory;
-use MediaWiki\Languages\LanguageNameUtils;
+use MediaWiki\Language\LanguageFactory;
+use MediaWiki\Language\LanguageNameUtils;
 use MediaWiki\Logging\ManualLogEntry;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Options\UserOptionsManager;

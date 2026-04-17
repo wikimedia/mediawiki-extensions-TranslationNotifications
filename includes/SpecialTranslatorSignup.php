@@ -7,7 +7,7 @@ use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\SiteMatrix\SiteMatrix;
 use MediaWiki\Html\Html;
 use MediaWiki\HTMLForm\HTMLForm;
-use MediaWiki\Languages\LanguageNameUtils;
+use MediaWiki\Language\LanguageNameUtils;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\SpecialPage\FormSpecialPage;
 use MediaWiki\SpecialPage\SpecialPage;
