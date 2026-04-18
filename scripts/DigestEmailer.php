@@ -13,6 +13,7 @@ require_once "$IP/maintenance/Maintenance.php";
 
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsEmailJob;
+use MediaWiki\JobQueue\Job;
 use MediaWiki\Logging\DatabaseLogEntry;
 use MediaWiki\Maintenance\Maintenance;
 use MediaWiki\SpecialPage\SpecialPage;
@@ -322,11 +323,14 @@ class DigestEmailer extends Maintenance {
 		string $noReplyAddress,
 		string $emailBody,
 		string $emailSubject
-	): TranslationNotificationsEmailJob {
+	): Job {
 		$emailFrom = TranslationNotificationsEmailJob::buildAddress( $noReplyAddress, 'NoReply', '' );
-		return new TranslationNotificationsEmailJob(
-			Title::newMainPage(),
+		$title = Title::newMainPage();
+		return $this->getServiceContainer()->getJobFactory()->newJob(
+			'TranslationNotificationsEmailJob',
 			[
+				'namespace' => $title->getNamespace(),
+				'title' => $title->getDBkey(),
 				'to' => TranslationNotificationsEmailJob::addressFromUser( $translator ),
 				'from' => $emailFrom,
 				'body' => $emailBody,

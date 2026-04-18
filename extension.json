@@ -41,7 +41,12 @@
 		}
 	},
 	"JobClasses": {
-		"TranslationNotificationsEmailJob": "MediaWiki\\Extension\\TranslationNotifications\\Jobs\\TranslationNotificationsEmailJob",
+		"TranslationNotificationsEmailJob": {
+			"class": "MediaWiki\\Extension\\TranslationNotifications\\Jobs\\TranslationNotificationsEmailJob",
+			"services": [
+				"FormatterFactory"
+			]
+		},
 		"TranslationNotificationsSubmitJob": {
 			"class": "MediaWiki\\Extension\\TranslationNotifications\\Jobs\\TranslationNotificationsSubmitJob",
 			"services": [

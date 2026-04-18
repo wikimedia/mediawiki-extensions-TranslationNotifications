@@ -5,9 +5,9 @@ namespace MediaWiki\Extension\TranslationNotifications\Jobs;
 
 use InvalidArgumentException;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Language\FormatterFactory;
 use MediaWiki\Mail\MailAddress;
 use MediaWiki\Mail\UserMailer;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 
@@ -18,7 +18,11 @@ use MediaWiki\User\User;
  * @license GPL-2.0-or-later
  */
 class TranslationNotificationsEmailJob extends GenericTranslationNotificationsJob {
-	public function __construct( Title $title, array $params ) {
+	public function __construct(
+		Title $title,
+		array $params,
+		private readonly FormatterFactory $formatterFactory,
+	) {
 		parent::__construct( 'TranslationNotificationsEmailJob', $title, $params );
 		$this->validateParams( $params );
 	}
@@ -40,8 +44,7 @@ class TranslationNotificationsEmailJob extends GenericTranslationNotificationsJo
 		);
 
 		if ( !$status->isOK() ) {
-			$formatterFactory = MediaWikiServices::getInstance()->getFormatterFactory();
-			$errorMsg = $formatterFactory
+			$errorMsg = $this->formatterFactory
 				->getStatusFormatter( RequestContext::getMain() )
 				->getMessage( $status )
 				->text();

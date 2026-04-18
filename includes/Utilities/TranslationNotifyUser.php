@@ -4,6 +4,7 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extension\TranslationNotifications\Utilities;
 
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsEmailJob;
+use MediaWiki\JobQueue\Job;
 use MediaWiki\MassMessage\Job\MassMessageJob;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
@@ -142,11 +143,11 @@ class TranslationNotifyUser {
 	/**
 	 * Notify a user by email.
 	 * @param User $translator User to whom the email is being sent
-	 * @return TranslationNotificationsEmailJob
+	 * @return Job
 	 */
 	public function sendTranslationNotificationEmail(
 		User $translator
-	): TranslationNotificationsEmailJob {
+	): Job {
 		$relevantLanguages = $this->getRelevantLanguages( $translator, $this->languagesToNotify );
 		$userFirstLanguage = MediaWikiServices::getInstance()->getLanguageFactory()
 			->getLanguage( $this->getUserFirstLanguage( $translator ) );
@@ -186,6 +187,8 @@ class TranslationNotifyUser {
 		);
 
 		$params = [
+			'namespace' => $this->translatablePageTitle->getNamespace(),
+			'title' => $this->translatablePageTitle->getDBkey(),
 			'to' => TranslationNotificationsEmailJob::addressFromUser( $translator ),
 			'from' => $emailFrom,
 			'body' => $emailBody,
@@ -193,7 +196,9 @@ class TranslationNotifyUser {
 			'replyTo' => $emailFrom,
 		];
 
-		return new TranslationNotificationsEmailJob( $this->translatablePageTitle, $params );
+		return MediaWikiServices::getInstance()
+			->getJobFactory()
+			->newJob( 'TranslationNotificationsEmailJob', $params );
 	}
 
 	/**
