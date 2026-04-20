@@ -7,7 +7,6 @@ use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\Notifications\Model\Event as EchoEvent;
 use MediaWiki\Language\RawMessage;
 use MediaWiki\Maintenance\Maintenance;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\User\UserIdentityValue;
 use Wikimedia\Rdbms\IExpression;
@@ -191,7 +190,6 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	private function isSubscriberInactive( UserIdentity $subscriber, string $inactiveTs ): bool {
 		$centralUser = CentralAuthUser::getInstance( $subscriber );
 		$attachedAccounts = $centralUser->queryAttached();
-		$mwServices = $this->getServiceContainer();
 
 		if ( !$attachedAccounts ) {
 			$this->logVerbose( "No central account attached to user: {$subscriber->getName()}\n" );
@@ -207,7 +205,6 @@ class UnsubscribeInactiveUsers extends Maintenance {
 
 		foreach ( $attachedAccounts as $accountInfo ) {
 			$isUserInactive = $this->isSubscriberInactiveOnSite(
-				$mwServices,
 				new UserIdentityValue( (int)$accountInfo[ 'id' ], $accountInfo['name'], $accountInfo['wiki'] ),
 				$inactiveTs
 			);
@@ -221,10 +218,10 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	}
 
 	private function isSubscriberInactiveOnSite(
-		MediaWikiServices $mwServices,
 		UserIdentity $user,
 		string $inactiveTs
 	): bool {
+		$mwServices = $this->getServiceContainer();
 		$siteId = $user->getWikiId();
 		$dbr = $mwServices->getDBLoadBalancerFactory()
 			->getMainLB( $siteId )

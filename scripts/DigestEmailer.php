@@ -15,7 +15,6 @@ use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsEmailJob;
 use MediaWiki\Logging\DatabaseLogEntry;
 use MediaWiki\Maintenance\Maintenance;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
@@ -62,7 +61,7 @@ class DigestEmailer extends Maintenance {
 			: PROTO_HTTPS;
 
 		$mailStatus = [];
-		$services = MediaWikiServices::getInstance();
+		$services = $this->getServiceContainer();
 		$userOptionsManager = $services->getUserOptionsManager();
 		$jobQueueGroup = $services->getJobQueueGroup();
 		$languageNameUtils = $services->getLanguageNameUtils();
@@ -238,7 +237,7 @@ class DigestEmailer extends Maintenance {
 
 	protected function lock(): void {
 		// Lock this process to avoid multiple instances running and duplicate mails being sent.
-		$cache = MediaWikiServices::getInstance()->getObjectCacheFactory()->getInstance( CACHE_ANYTHING );
+		$cache = $this->getServiceContainer()->getObjectCacheFactory()->getInstance( CACHE_ANYTHING );
 		$lockKey = $cache->makeKey( 'translationnotifications-digestemailer-lock' );
 		if ( $cache->get( $lockKey ) ) {
 			$this->output( "Another process is running. Please try later\n" );
@@ -249,14 +248,14 @@ class DigestEmailer extends Maintenance {
 	}
 
 	protected function unlock(): void {
-		$cache = MediaWikiServices::getInstance()->getObjectCacheFactory()->getInstance( CACHE_ANYTHING );
+		$cache = $this->getServiceContainer()->getObjectCacheFactory()->getInstance( CACHE_ANYTHING );
 		$lockKey = $cache->makeKey( 'translationnotifications-digestemailer-lock' );
 		// release the lock.
 		$cache->delete( $lockKey );
 	}
 
 	protected function getTranslators(): array {
-		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
+		$dbr = $this->getServiceContainer()->getConnectionProvider()->getReplicaDatabase();
 		return $dbr->newSelectQueryBuilder()
 			->select( 'up_user' )
 			->distinct()
@@ -277,7 +276,7 @@ class DigestEmailer extends Maintenance {
 	 * @return array of notifications
 	 */
 	private function getNotifications(): array {
-		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
+		$dbr = $this->getServiceContainer()->getConnectionProvider()->getReplicaDatabase();
 		$logEntrySelectQuery = DatabaseLogEntry::newSelectQueryBuilder( $dbr );
 		$lastMonthTimeStamp = $dbr->timestamp( strtotime( '-1 month' ) );
 
