@@ -104,9 +104,6 @@
 		"ext.translationnotifications.translatorsignup": {
 			"scripts": "resources/ext.translationnotifications.translatorsignup.js",
 			"styles": "resources/ext.translationnotifications.translatorsignup.less",
-			"dependencies": [
-				"mediawiki.languageselector"
-			],
 			"messages": [
 				"translationnotifications-nolang"
 			]
