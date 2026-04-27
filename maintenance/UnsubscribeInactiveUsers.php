@@ -3,6 +3,7 @@ declare( strict_types = 1 );
 
 namespace MediaWiki\Extension\TranslationNotifications;
 
+use Iterator;
 use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\Notifications\Model\Event as EchoEvent;
 use MediaWiki\Language\RawMessage;
@@ -158,6 +159,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 		return true;
 	}
 
+	/** @return array{0:int,1:Iterator<UserIdentity>} */
 	private function getSubscribers(): array {
 		$mwServices = $this->getServiceContainer();
 		$dbr = $mwServices->getDBLoadBalancer()->getConnection( DB_REPLICA );
@@ -314,6 +316,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 		] );
 	}
 
+	/** @param UserIdentity[] $subscribers */
 	private function listUsers( array $subscribers ): void {
 		if ( $subscribers ) {
 			$this->output( "\n" );
