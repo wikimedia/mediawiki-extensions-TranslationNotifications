@@ -50,8 +50,11 @@
 		"TranslationNotificationsSubmitJob": {
 			"class": "MediaWiki\\Extension\\TranslationNotifications\\Jobs\\TranslationNotificationsSubmitJob",
 			"services": [
+				"UserOptionsLookup",
 				"UserOptionsManager",
+				"JobFactory",
 				"JobQueueGroupFactory",
+				"ContentLanguage",
 				"LanguageNameUtils",
 				"LanguageFactory",
 				"UserFactory",

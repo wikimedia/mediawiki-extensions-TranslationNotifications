@@ -5,11 +5,15 @@ namespace MediaWiki\Extension\TranslationNotifications\Utilities;
 
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsEmailJob;
 use MediaWiki\JobQueue\Job;
+use MediaWiki\JobQueue\JobFactory;
+use MediaWiki\Language\Language;
+use MediaWiki\Language\LanguageFactory;
+use MediaWiki\Language\LanguageNameUtils;
 use MediaWiki\MassMessage\Job\MassMessageJob;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
+use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
@@ -40,6 +44,11 @@ class TranslationNotifyUser {
 	private array $languagesToNotify;
 
 	/**
+	 * @param JobFactory $jobFactory
+	 * @param Language $contentLanguage
+	 * @param LanguageFactory $languageFactory
+	 * @param LanguageNameUtils $languageNameUtils
+	 * @param UserOptionsLookup $userOptionsLookup
 	 * @param Title $translatablePageTitle
 	 * @param User $notifier
 	 * @param string[] $localInterwikis
@@ -48,6 +57,11 @@ class TranslationNotifyUser {
 	 * @param array $requestData
 	 */
 	public function __construct(
+		private readonly JobFactory $jobFactory,
+		private readonly Language $contentLanguage,
+		private readonly LanguageFactory $languageFactory,
+		private readonly LanguageNameUtils $languageNameUtils,
+		private readonly UserOptionsLookup $userOptionsLookup,
 		Title $translatablePageTitle,
 		User $notifier,
 		array $localInterwikis,
@@ -81,8 +95,7 @@ class TranslationNotifyUser {
 	): MassMessageJob {
 		$relevantLanguages = $this->getRelevantLanguages( $translator, $this->languagesToNotify );
 		$userFirstLanguageCode = $this->getUserFirstLanguage( $translator );
-		$userFirstLanguage = MediaWikiServices::getInstance()->getLanguageFactory()
-			->getLanguage( $userFirstLanguageCode );
+		$userFirstLanguage = $this->languageFactory->getLanguage( $userFirstLanguageCode );
 
 		$text = wfMessage(
 			'translationnotifications-talkpage-body',
@@ -99,7 +112,7 @@ class TranslationNotifyUser {
 			NotificationMessageBuilder::getPriorityClause( $userFirstLanguage, $this->priority ),
 			NotificationMessageBuilder::getDeadlineClause( $userFirstLanguage, $this->deadline ),
 			NotificationMessageBuilder::getNotificationMessage(
-				MediaWikiServices::getInstance()->getContentLanguage(),
+				$this->contentLanguage,
 				$this->notificationText
 			)
 		)->numParams( count( $relevantLanguages ) )
@@ -149,7 +162,7 @@ class TranslationNotifyUser {
 		User $translator
 	): Job {
 		$relevantLanguages = $this->getRelevantLanguages( $translator, $this->languagesToNotify );
-		$userFirstLanguage = MediaWikiServices::getInstance()->getLanguageFactory()
+		$userFirstLanguage = $this->languageFactory
 			->getLanguage( $this->getUserFirstLanguage( $translator ) );
 		$emailSubject = NotificationMessageBuilder::getNotificationSubject(
 			$this->translatablePageTitle, $userFirstLanguage
@@ -196,9 +209,7 @@ class TranslationNotifyUser {
 			'replyTo' => $emailFrom,
 		];
 
-		return MediaWikiServices::getInstance()
-			->getJobFactory()
-			->newJob( 'TranslationNotificationsEmailJob', $params );
+		return $this->jobFactory->newJob( 'TranslationNotificationsEmailJob', $params );
 	}
 
 	/**
@@ -215,7 +226,6 @@ class TranslationNotifyUser {
 		$limitLanguages = count( $languagesToNotify );
 		$userLanguageNames = [];
 
-		$languageNameUtils = MediaWikiServices::getInstance()->getLanguageNameUtils();
 		foreach ( $userLanguages as $langCode ) {
 			// Don't add this language if particular languages were
 			// specified and this language was not one of them.
@@ -223,7 +233,7 @@ class TranslationNotifyUser {
 				continue;
 			}
 
-			$userLanguageNames[$langCode] = $languageNameUtils->getLanguageName(
+			$userLanguageNames[$langCode] = $this->languageNameUtils->getLanguageName(
 				$langCode,
 				$userFirstLanguageCode
 			);
@@ -240,8 +250,7 @@ class TranslationNotifyUser {
 	 * @return string Language code, or null if it wasn't defined.
 	 */
 	private function getUserLanguageOption( UserIdentity $user, int $langNum ): string {
-		return MediaWikiServices::getInstance()
-			->getUserOptionsLookup()
+		return $this->userOptionsLookup
 			->getOption( $user, "translationnotifications-lang-$langNum" );
 	}
 

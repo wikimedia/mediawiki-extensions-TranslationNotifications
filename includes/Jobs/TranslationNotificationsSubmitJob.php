@@ -9,12 +9,15 @@ use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Extension\TranslationNotifications\Utilities\LanguageSet;
 use MediaWiki\Extension\TranslationNotifications\Utilities\TranslationNotifyUser;
 use MediaWiki\JobQueue\IJobSpecification;
+use MediaWiki\JobQueue\JobFactory;
 use MediaWiki\JobQueue\JobQueueGroupFactory;
 use MediaWiki\JobQueue\JobSpecification;
+use MediaWiki\Language\Language;
 use MediaWiki\Language\LanguageFactory;
 use MediaWiki\Language\LanguageNameUtils;
 use MediaWiki\Logging\ManualLogEntry;
 use MediaWiki\Title\Title;
+use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\User\Options\UserOptionsManager;
 use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
@@ -55,8 +58,11 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 	public function __construct(
 		Title $title,
 		array $params,
+		private readonly UserOptionsLookup $userOptionsLookup,
 		private readonly UserOptionsManager $userOptionsManager,
+		private readonly JobFactory $jobFactory,
 		private readonly JobQueueGroupFactory $jobQueueGroupFactory,
+		private readonly Language $contentLanguage,
 		private readonly LanguageNameUtils $languageNameUtils,
 		private readonly LanguageFactory $languageFactory,
 		private readonly UserFactory $userFactory,
@@ -140,6 +146,11 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 		}
 
 		$notifyUser = new TranslationNotifyUser(
+			$this->jobFactory,
+			$this->contentLanguage,
+			$this->languageFactory,
+			$this->languageNameUtils,
+			$this->userOptionsLookup,
 			$translatableTitle,
 			$notifier,
 			$this->mainConfig->get( 'LocalInterwikis' ),
