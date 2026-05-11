@@ -13,7 +13,7 @@
 	"translationnotifications-desc": "Дазваляе перакладнікам падпісвацца на абвесткі пра пераклады",
 	"translationnotifications-info": "Зьвесткі карыстальніка",
 	"translationnotifications-username": "Імя ўдзельніка:",
-	"translationnotifications-emailstatus": "Стан e-mail:",
+	"translationnotifications-emailstatus": "Статус электроннай пошты:",
 	"translationnotifications-email-confirmed": "Ваш адрас e-mail пацьверджаны",
 	"translationnotifications-email-disablemail": "Ваш e-mail адрас пацьверджаны, але ў [[Special:Preferences|наладах]] вы пажадалі не атрымліваць лістоў.",
 	"translationnotifications-email-unconfirmed": "Ваш адрас e-mail не пацьверджаны. $1",
