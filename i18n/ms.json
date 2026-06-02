@@ -66,5 +66,6 @@
 	"translationnotifications-log-alllanguages": "semua bahasa",
 	"translationnotifications-nodeadline": "tiada",
 	"translationnotifications-signup-legal": "Anda bersetuju bahawa dengan memberikan maklumat ini, kami boleh menghubungi anda berkenaan perihal-perihal yang berkaitan dengan {{SITENAME}} yang kami rasa berkaitan dengan anda. Anda bersetuju bahawa data anda tertakluk pada [[{{MediaWiki:Privacypage}}|dasar privasi]] kami.",
-	"translationnotifications-generic-languages": "&lt;bahasa>"
+	"translationnotifications-generic-languages": "&lt;bahasa>",
+	"echo-category-title-translationnotifications": "Pemberitahuan terjemahan"
 }
