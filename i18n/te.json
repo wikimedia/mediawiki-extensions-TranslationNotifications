@@ -45,7 +45,7 @@
 	"translationnotifications-digestemail-subject": "{{SITENAME}} నుండి అనువాద అభ్యర్ధనల సంగ్రహ ఇమెయిలు",
 	"translationnotifications-digestemail-notification-line": "$1 న $2, \"$3\" ను అనువదించడం కోసం గుర్తు పెట్టారు. మీరు దాన్ని $4 వద్ద అనువదించవచ్చు",
 	"translationnotifications-edit-summary": "అనువాద గమనింపు: $1",
-	"translationnotifications-email-priority": "ఈ పేజీ యొక్క ప్రాధాన్యత $1.",
+	"translationnotifications-email-priority": "ఈ పేజీ ప్రాధాన్యత $1.",
 	"translationnotifications-email-deadline": "ఈ పేజీని అనువదించేందుకు గడువు తేదీ $1.",
 	"log-name-notifytranslators": "అనువాద గమనింపులు",
 	"log-description-notifytranslators": "అనువదించదగ్గ పేజీల గురించిన గమనింపుల లాగ్‍ను అనువాదకులకు పంపించాం",
