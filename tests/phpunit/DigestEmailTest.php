@@ -100,7 +100,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 			'priority' => 'medium',
 			'announcedate' => '-1 day',
 			'announcer' => 'me',
-			'translatablepage' => Title::newFromText( 'TestTitle' ),
+			'translatablepage' => Title::makeTitle( NS_MAIN, 'TestTitle' ),
 		];
 
 		return $notifications;
@@ -114,7 +114,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 			'priority' => 'medium',
 			'announcedate' => '-1 day',
 			'announcer' => 'me',
-			'translatablepage' => Title::newFromText( 'TestTitle' ),
+			'translatablepage' => Title::makeTitle( NS_MAIN, 'TestTitle' ),
 		];
 
 		return $notifications;
@@ -129,7 +129,7 @@ class DigestEmailTest extends MediaWikiIntegrationTestCase {
 			'priority' => 'medium',
 			'announcedate' => '-1 day',
 			'announcer' => 'me',
-			'translatablepage' => Title::newFromText( 'TestTitle' ),
+			'translatablepage' => Title::makeTitle( NS_MAIN, 'TestTitle' ),
 		];
 
 		return $notifications;
