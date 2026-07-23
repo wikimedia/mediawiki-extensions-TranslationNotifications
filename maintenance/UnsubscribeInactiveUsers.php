@@ -162,7 +162,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	/** @return array{0:int,1:Iterator<UserIdentity>} */
 	private function getSubscribers(): array {
 		$mwServices = $this->getServiceContainer();
-		$dbr = $mwServices->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$dbr = $mwServices->getConnectionProvider()->getReplicaDatabase();
 		$queryBuilder = $mwServices->getUserIdentityLookup()->newSelectQueryBuilder();
 
 		$queryBuilder
@@ -225,9 +225,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 	): bool {
 		$mwServices = $this->getServiceContainer();
 		$siteId = $user->getWikiId();
-		$dbr = $mwServices->getDBLoadBalancerFactory()
-			->getMainLB( $siteId )
-			->getConnection( DB_REPLICA, [], $siteId );
+		$dbr = $mwServices->getConnectionProvider()->getReplicaDatabase( $siteId );
 		$actorStore = $mwServices->getActorStoreFactory()->getActorStore( $siteId );
 
 		$actorId = $actorStore->findActorId( $user, $dbr );
