@@ -5,9 +5,10 @@ namespace MediaWiki\Extension\TranslationNotifications;
 
 use Iterator;
 use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
-use MediaWiki\Extension\Notifications\Model\Event as EchoEvent;
 use MediaWiki\Language\RawMessage;
 use MediaWiki\Maintenance\Maintenance;
+use MediaWiki\Notification\Notification;
+use MediaWiki\Notification\RecipientSet;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\User\UserIdentityValue;
 use Wikimedia\Rdbms\IExpression;
@@ -136,19 +137,9 @@ class UnsubscribeInactiveUsers extends Maintenance {
 				"Removing subscriber{{PLURAL:$1||s}}...\n", count( $subscribersToRemove )
 			);
 
-			$failedRecords = [];
 			// Unsubscribe subscribers
 			foreach ( $subscribersToRemove as $subscriber ) {
-				if ( !$this->removeSubscriber( $subscriber ) ) {
-					$failedRecords[] = $subscriber;
-				}
-			}
-
-			if ( $failedRecords ) {
-				$this->printInformationMessage(
-					"Failed to remove $1 subscriber{{PLURAL:$1||s}}\n", count( $failedRecords )
-				);
-				$this->listUsers( $failedRecords );
+				$this->removeSubscriber( $subscriber );
 			}
 
 			$this->output( "Done\n" );
@@ -275,7 +266,7 @@ class UnsubscribeInactiveUsers extends Maintenance {
 			);
 	}
 
-	private function removeSubscriber( UserIdentity $subscriber ): bool {
+	private function removeSubscriber( UserIdentity $subscriber ): void {
 		$userOptionsManager = $this->getServiceContainer()->getUserOptionsManager();
 		$subscriberOptions = $userOptionsManager->loadUserOptions( $subscriber );
 
@@ -288,30 +279,16 @@ class UnsubscribeInactiveUsers extends Maintenance {
 		}
 
 		if ( $optionsUpdated ) {
-			$event = $this->triggerEchoNotification( $subscriber->getId() );
-			if ( $event === false ) {
-				// If sending of Echo notification fails, do not remove the subscriber
-				$userOptionsManager->clearUserOptionsCache( $subscriber );
-				return false;
-			} else {
-				$userOptionsManager->saveOptions( $subscriber );
-			}
+			$this->triggerNotification( $subscriber );
+			$userOptionsManager->saveOptions( $subscriber );
 		}
-
-		return true;
 	}
 
-	/**
-	 * @param int $subscriberId
-	 * @return bool|EchoEvent
-	 */
-	private function triggerEchoNotification( int $subscriberId ) {
-		return EchoEvent::create( [
-			'type' => 'translationnotifications-unsubscribed',
-			'extra' => [
-				'userId' => $subscriberId
-			]
-		] );
+	private function triggerNotification( UserIdentity $subscriber ): void {
+		$this->getServiceContainer()->getNotificationService()->notify(
+			new Notification( 'translationnotifications-unsubscribed' ),
+			new RecipientSet( $subscriber )
+		);
 	}
 
 	/** @param UserIdentity[] $subscribers */

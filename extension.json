@@ -156,12 +156,7 @@
 					"category": "translationnotifications",
 					"group": "neutral",
 					"section": "alert",
-					"presentation-model": "MediaWiki\\Extension\\TranslationNotifications\\UnsubscribeInactiveUsersPresentationModel",
-					"user-locators": [
-						[
-							"MediaWiki\\Extension\\TranslationNotifications\\UnsubscribeInactiveUsersPresentationModel::locateUsers"
-						]
-					]
+					"presentation-model": "MediaWiki\\Extension\\TranslationNotifications\\UnsubscribeInactiveUsersPresentationModel"
 				}
 			}
 		}
