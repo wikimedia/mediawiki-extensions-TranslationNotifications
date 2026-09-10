@@ -25,23 +25,16 @@ use MediaWiki\WikiMap\WikiMap;
  * @license GPL-2.0-or-later
  */
 class TranslationNotifyUser {
-	private Title $translatablePageTitle;
-	private User $notifier;
-	private string $noReplyAddress;
-	/** @var string[] */
-	private array $localInterwikis;
-	private bool $httpsInEmail;
-
 	// Request information
 	/** Request priority: `unset`, `high`, `medium` or `low` */
-	private string $priority;
-	private string $deadline;
-	private string $notificationText;
+	private readonly string $priority;
+	private readonly string $deadline;
+	private readonly string $notificationText;
 	/**
 	 * A list of languages for which the translators are to be notified. Empty for all languages.
 	 * @var string[]
 	 */
-	private array $languagesToNotify;
+	private readonly array $languagesToNotify;
 
 	/**
 	 * @param JobFactory $jobFactory
@@ -62,20 +55,13 @@ class TranslationNotifyUser {
 		private readonly LanguageFactory $languageFactory,
 		private readonly LanguageNameUtils $languageNameUtils,
 		private readonly UserOptionsLookup $userOptionsLookup,
-		Title $translatablePageTitle,
-		User $notifier,
-		array $localInterwikis,
-		string $noReplyAddress,
-		bool $httpsInEmail,
+		private readonly Title $translatablePageTitle,
+		private readonly User $notifier,
+		private readonly array $localInterwikis,
+		private readonly string $noReplyAddress,
+		private readonly bool $httpsInEmail,
 		array $requestData
 	) {
-		$this->notifier = $notifier;
-		$this->translatablePageTitle = $translatablePageTitle;
-
-		$this->noReplyAddress = $noReplyAddress;
-		$this->localInterwikis = $localInterwikis;
-		$this->httpsInEmail = $httpsInEmail;
-
 		$this->notificationText = $requestData['text'];
 		$this->languagesToNotify = $requestData['languagesToNotify'];
 		$this->priority = $requestData['priority'] ?? '';

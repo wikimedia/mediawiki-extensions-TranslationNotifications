@@ -19,12 +19,11 @@ class LanguageSet implements JsonSerializable {
 	public const SOME = 2;
 	public const ALL_EXCEPT_SOME = 3;
 
-	private int $option;
-	private string $optionName;
+	private readonly string $optionName;
 
-	public function __construct( int $option ) {
-		$this->option = $option;
-
+	public function __construct(
+		private readonly int $option,
+	) {
 		switch ( $option ) {
 			case self::ALL:
 				$this->optionName = 'ALL';
