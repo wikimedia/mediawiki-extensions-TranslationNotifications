@@ -247,9 +247,14 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 			return [];
 		}
 
+		$currentWikiId = WikiMap::getCurrentWikiId();
 		$matrix = new SiteMatrix();
 		$wikis = [];
 		foreach ( $globalUser->listAttached() as $dbname ) {
+			// Skip the current wiki (T171153)
+			if ( $dbname === $currentWikiId ) {
+				continue;
+			}
 			// Skip inactive and special wikis
 			[ $site, $lang ] = $wgConf->siteFromDB( $dbname );
 			if ( $matrix->isClosed( $lang, $site )

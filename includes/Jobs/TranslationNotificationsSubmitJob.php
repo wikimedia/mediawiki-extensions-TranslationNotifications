@@ -363,7 +363,8 @@ class TranslationNotificationsSubmitJob extends GenericTranslationNotificationsJ
 			// T342903: WikiId is sometimes empty for some users. Don't create jobs for these users.
 			if ( $wiki === '' ) {
 				$usersWithEmptyWikiId[] = $user->getId();
-			} else {
+			} elseif ( $wiki !== $currentWikiId ) {
+				// T171153: Don't queue a foreign talk page job if the foreign wiki is the current wiki.
 				$jobs[] = [
 					$wiki,
 					'jobTalkPageOther',
