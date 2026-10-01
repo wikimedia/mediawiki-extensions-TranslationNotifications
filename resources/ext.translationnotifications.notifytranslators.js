@@ -10,7 +10,8 @@
 	'use strict';
 
 	const previewId = 'translation-notification-preview',
-		sendId = 'translationnotifications-send-notification-button';
+		sendId = 'translationnotifications-send-notification-button',
+		LANGUAGE_SET_SOME = 2;
 
 	/**
 	 * Infuse the OOUI element with the given ID.
@@ -151,6 +152,22 @@
 		if ( currentVal !== selectedGroupName ) {
 			mw.notify(
 				mw.msg( 'translationnotifications-tes-discouraged-group', currentVal ),
+				{
+					type: 'error',
+					tag: 'invalid-selection'
+				}
+			);
+			return false;
+		}
+
+		const languageSet = parseInt(
+			$( 'input[name="notifiable-languages-options"]:checked' ).val(),
+			10
+		);
+		const selectedLanguages = $( '[name="wpSelectedLanguages[]"]' ).val() || [];
+		if ( languageSet === LANGUAGE_SET_SOME && selectedLanguages.length === 0 ) {
+			mw.notify(
+				mw.msg( 'translationnotifications-error-no-languages' ),
 				{
 					type: 'error',
 					tag: 'invalid-selection'

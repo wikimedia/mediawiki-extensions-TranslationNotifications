@@ -63,6 +63,7 @@
 	"translationnotifications-languages-to-notify-only-selected-label": "A label for radio option to notify only selected languages.",
 	"translationnotifications-languages-to-notify-all-except-label": "A label for radio option to notify all languages except selected languages.",
 	"translationnotifications-sourcelang-only": "Error message shown on Special:NotifyTranslators.",
+	"translationnotifications-error-no-languages": "Error message shown on Special:NotifyTranslators when no languages are selected.",
 	"translationnotifications-priority": "A label for translation priority field.\n{{Identical|Priority}}",
 	"translationnotifications-priority-high": "high (priority), an item in a dropdown box.\n{{Identical|High}}",
 	"translationnotifications-priority-medium": "medium (priority), an item in a dropdown box.\n{{Identical|Medium}}",

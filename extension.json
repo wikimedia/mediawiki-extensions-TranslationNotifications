@@ -100,6 +100,7 @@
 				"translationnotifications-email-deadline",
 				"translationnotifications-languages-to-notify",
 				"translationnotifications-languages-to-not-notify",
+				"translationnotifications-error-no-languages",
 				"translationnotifications-tes-discouraged-group",
 				"translate-mgs-invalid-group"
 			]

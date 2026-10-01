@@ -200,6 +200,11 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 		$pageSourceLangCode = $this->getSourceLanguage( $translatablePageTitle );
 		$notificationLanguages = [];
 
+		$languageSet = new LanguageSet( (int)$formData['LanguageSet'] );
+		if ( $languageSet->getOption() === LanguageSet::SOME && count( $selectedLanguages ) === 0 ) {
+			return Status::newFatal( 'translationnotifications-error-no-languages' );
+		}
+
 		// The default is not to specify any languages and to send the notification to speakers of
 		// all the languages except the source language. When no languages are specified,
 		// an empty string will be sent here and an appropriate message will be shown in the log.
@@ -215,7 +220,6 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 				return Status::newFatal( 'translationnotifications-sourcelang-only' );
 			}
 		}
-		$languageSet = new LanguageSet( (int)$formData['LanguageSet'] );
 
 		$requestData = [
 			'notificationText' => $notificationText,

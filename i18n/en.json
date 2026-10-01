@@ -49,6 +49,7 @@
 	"translationnotifications-languages-to-notify-only-selected-label": "Only selected languages:",
 	"translationnotifications-languages-to-notify-all-except-label": "All languages except:",
 	"translationnotifications-sourcelang-only": "A notification cannot be sent only to translators of the source language.",
+	"translationnotifications-error-no-languages": "At least one language must be selected.",
 	"translationnotifications-priority": "Priority:",
 	"translationnotifications-priority-high": "high",
 	"translationnotifications-priority-medium": "medium",
