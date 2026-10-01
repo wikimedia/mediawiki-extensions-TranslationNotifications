@@ -72,7 +72,10 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		if ( $legalMsg ) {
 			// Show the legal text regarding the notifications.
 			// Do not show if value is empty or false.
-			return Html::warningBox( $this->msg( $legalMsg )->parseAsBlock() );
+			return Html::warningBox(
+				$this->msg( $legalMsg )->parseAsBlock(),
+				'mw-translationnotifications-signup-legal'
+			);
 		}
 		return '';
 	}
