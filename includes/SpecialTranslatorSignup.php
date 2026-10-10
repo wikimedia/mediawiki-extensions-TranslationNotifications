@@ -207,10 +207,7 @@ class SpecialTranslatorSignup extends FormSpecialPage {
 		return $m;
 	}
 
-	/**
-	 * @param array $formData
-	 * @return true
-	 */
+	/** @inheritDoc */
 	public function onSubmit( array $formData ): bool {
 		$user = $this->getUser();
 

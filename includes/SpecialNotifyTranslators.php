@@ -71,7 +71,6 @@ class SpecialNotifyTranslators extends FormSpecialPage {
 	 * Get the form fields for use by the HTMLForm.
 	 * We also set up the JavaScript needed on the form here.
 	 *
-	 * @return array
 	 * @throws ErrorPageError if there is no translatable page on this wiki
 	 */
 	protected function getFormFields(): array {

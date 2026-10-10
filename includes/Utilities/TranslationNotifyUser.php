@@ -73,7 +73,6 @@ class TranslationNotifyUser {
 	 * @param User $translator To whom the message to be sent
 	 * @param string $destination Whether to send it to a talk page on this wiki
 	 * ('talkpageHere', default) or another one ('talkpageInOtherWiki').
-	 * @return MassMessageJob
 	 */
 	public function leaveUserMessage(
 		User $translator,
@@ -142,7 +141,6 @@ class TranslationNotifyUser {
 	/**
 	 * Notify a user by email.
 	 * @param User $translator User to whom the email is being sent
-	 * @return Job
 	 */
 	public function sendTranslationNotificationEmail(
 		User $translator

@@ -37,7 +37,6 @@ class NotificationMessageBuilder {
 	 * Returns the message priority clause to be embedded into the message
 	 * @param Language $userFirstLanguage Language object set as first preference
 	 * @param string $priority
-	 * @return string
 	 */
 	public static function getPriorityClause( Language $userFirstLanguage, string $priority ): string {
 		if ( $priority === 'unset' ) {
@@ -87,7 +86,6 @@ class NotificationMessageBuilder {
 	 * @param string $contactMethod The contact method - 'talkpage' or 'email'.
 	 * @param string|Language $inLanguage Language code or Language object.
 	 * @param string|int $urlProtocol
-	 * @return string
 	 */
 	public static function getTranslationURLs(
 		Title $translatableTitle,
