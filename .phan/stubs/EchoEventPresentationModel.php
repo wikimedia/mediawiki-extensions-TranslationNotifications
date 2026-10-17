@@ -7,7 +7,7 @@ use MediaWiki\Language\MessageLocalizer;
 use MediaWiki\Message\Message;
 
 /** Stub of Echo's EchoEventPresentationModel class for phan */
-class EchoEventPresentationModel implements MessageLocalizer {
+abstract class EchoEventPresentationModel implements MessageLocalizer {
 	public Event $event;
 
 	/** @inheritDoc */
@@ -31,4 +31,18 @@ class EchoEventPresentationModel implements MessageLocalizer {
 	/** @return Message */
 	public function getCompactHeaderMessage() {
 	}
+
+	/** @return string */
+	abstract public function getIconType();
+
+	/** @return string */
+	protected function getHeaderMessageKey() {
+	}
+
+	/** @return bool|Message */
+	public function getBodyMessage() {
+	}
+
+	/** @return array|false */
+	abstract public function getPrimaryLink();
 }
