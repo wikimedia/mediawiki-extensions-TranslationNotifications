@@ -28,8 +28,7 @@
 		"TranslatorSignup": {
 			"class": "MediaWiki\\Extension\\TranslationNotifications\\SpecialTranslatorSignup",
 			"services": [
-				"UserOptionsManager",
-				"LanguageNameUtils"
+				"UserOptionsManager"
 			]
 		},
 		"NotifyTranslators": {

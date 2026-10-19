@@ -7,7 +7,6 @@ use MediaWiki\Extension\CentralAuth\User\CentralAuthUser;
 use MediaWiki\Extension\SiteMatrix\SiteMatrix;
 use MediaWiki\Html\Html;
 use MediaWiki\HTMLForm\HTMLForm;
-use MediaWiki\Language\LanguageNameUtils;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\SpecialPage\FormSpecialPage;
 use MediaWiki\SpecialPage\SpecialPage;
@@ -27,7 +26,6 @@ use MediaWiki\WikiMap\WikiMap;
 class SpecialTranslatorSignup extends FormSpecialPage {
 	public function __construct(
 		private readonly UserOptionsManager $userOptionsManager,
-		private readonly LanguageNameUtils $languageNameUtils,
 	) {
 		parent::__construct( 'TranslatorSignup' );
 	}
