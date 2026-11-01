@@ -86,7 +86,6 @@
 				"resources/ext.translationnotifications.notifytranslators.js"
 			],
 			"dependencies": [
-				"web2017-polyfills",
 				"mediawiki.jqueryMsg",
 				"mediawiki.api",
 				"mediawiki.user",
