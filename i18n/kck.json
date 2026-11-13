@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"MthulisiNcube"
+		]
+	},
+	"translationnotifications-languages-to-notify-only-selected-label": "Ndimi dzakahalugwa dzoga",
+	"translationnotifications-languages-to-notify-all-except-label": "Ndimi dzose kusale",
+	"translationnotifications-error-no-languages": "Lulimi gun'ompela gwakamela guhalugwe"
+}
