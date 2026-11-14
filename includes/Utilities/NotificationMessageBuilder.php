@@ -10,6 +10,7 @@ use MediaWiki\Message\Message;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
+use Wikimedia\Timestamp\TimestampFormat as TS;
 
 /**
  * A class that helps build the notification message to be sent to users
@@ -55,6 +56,14 @@ class NotificationMessageBuilder {
 	public static function getDeadlineClause( Language $userFirstLanguage, string $deadlineDate ): string {
 		if ( $deadlineDate === '' ) {
 			return '';
+		}
+
+		// The deadline is a calendar date (YYYY-MM-DD) from the date field on
+		// Special:NotifyTranslators. Show it in the recipient's language, without
+		// any time zone adjustment so that the day does not change.
+		$timestamp = wfTimestamp( TS::MW, $deadlineDate . 'T00:00:00Z' );
+		if ( $timestamp !== false ) {
+			$deadlineDate = $userFirstLanguage->date( $timestamp, false, false );
 		}
 
 		return wfMessage(

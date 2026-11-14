@@ -13,6 +13,7 @@ require_once "$IP/maintenance/Maintenance.php";
 
 use MediaWiki\Extension\Translate\PageTranslation\TranslatablePage;
 use MediaWiki\Extension\TranslationNotifications\Jobs\TranslationNotificationsEmailJob;
+use MediaWiki\Extension\TranslationNotifications\Utilities\NotificationMessageBuilder;
 use MediaWiki\JobQueue\Job;
 use MediaWiki\Logging\DatabaseLogEntry;
 use MediaWiki\Maintenance\Maintenance;
@@ -66,6 +67,7 @@ class DigestEmailer extends Maintenance {
 		$userOptionsManager = $services->getUserOptionsManager();
 		$jobQueueGroup = $services->getJobQueueGroup();
 		$languageNameUtils = $services->getLanguageNameUtils();
+		$languageFactory = $services->getLanguageFactory();
 		$userFactory = $services->getUserFactory();
 		foreach ( $translators as $translator ) {
 			$notificationText = "";
@@ -175,10 +177,10 @@ class DigestEmailer extends Maintenance {
 				}
 
 				if ( $notification['deadline'] !== '' ) {
-					$notificationText .= wfMessage(
-						'translationnotifications-email-deadline',
+					$notificationText .= NotificationMessageBuilder::getDeadlineClause(
+						$languageFactory->getLanguage( $firstLangCode ),
 						$notification['deadline']
-					)->inLanguage( $firstLangCode )->text() . "\n";
+					) . "\n";
 				}
 
 				$notificationText .= "---------\n";
