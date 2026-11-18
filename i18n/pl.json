@@ -83,7 +83,7 @@
 	"translationnotifications-log-alllanguages": "wszystkie języki",
 	"translationnotifications-nodeadline": "brak",
 	"translationnotifications-signup-legal": "Podając te informacje, zgadzasz się z tym, że możemy kontaktować się z Tobą odnośnie tematów związanych ze stroną {{SITENAME}}, które naszym zdaniem mogą być dla Ciebie interesujące. Zgadzasz się również z tym, że Twoje dane osobowe będą przetwarzane zgodnie z naszymi [[{{MediaWiki:Privacypage}}|zasadami]].",
-	"translationnotifications-generic-languages": "&lt;języki>",
+	"translationnotifications-generic-languages": "<var>języki</var>",
 	"translationnotifications-text": "Skorzystaj z poniższego formularza, aby wysłać tłumaczom prośby o tłumaczenie.",
 	"translationnotifications-tes-discouraged-group": "Wybrana strona do przetłumaczenia jest oznaczona jako odradzana do tłumaczenia. Wysyłanie powiadomień do odradzanych stron jest niedozwolone.",
 	"translationnotifications-echo-unsubscribe-header": "Anulowano Twoją subskrypcję powiadomień o tłumaczeniach",
