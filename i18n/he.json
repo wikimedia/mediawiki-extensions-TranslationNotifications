@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"A100Star",
 			"Amire80",
 			"Guycn2",
 			"YaronSh"
@@ -46,9 +47,10 @@
 	"translationnotifications-languages-to-notify": "שפות נבחרות:",
 	"translationnotifications-languages-to-not-notify": "חריגות נבחרות:",
 	"translationnotifications-languages-to-notify-all-label": "כל השפות",
-	"translationnotifications-languages-to-notify-only-selected-label": "רק השפות הנבחרות:",
+	"translationnotifications-languages-to-notify-only-selected-label": "רק השפות שנבחרו",
 	"translationnotifications-languages-to-notify-all-except-label": "כל השפות מלבד:",
 	"translationnotifications-sourcelang-only": "לא ניתן לשלוח הודעה רק למתרגמים לשפת המקור.",
+	"translationnotifications-error-no-languages": "יש לבחור לפחות שפה אחת.",
 	"translationnotifications-priority": "עדיפות:",
 	"translationnotifications-priority-high": "גבוהה",
 	"translationnotifications-priority-medium": "בינונית",
