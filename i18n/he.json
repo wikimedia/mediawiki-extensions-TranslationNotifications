@@ -50,7 +50,6 @@
 	"translationnotifications-languages-to-notify-only-selected-label": "רק השפות שנבחרו",
 	"translationnotifications-languages-to-notify-all-except-label": "כל השפות מלבד:",
 	"translationnotifications-sourcelang-only": "לא ניתן לשלוח הודעה רק למתרגמים לשפת המקור.",
-	"translationnotifications-error-no-languages": "יש לבחור לפחות שפה אחת.",
 	"translationnotifications-priority": "עדיפות:",
 	"translationnotifications-priority-high": "גבוהה",
 	"translationnotifications-priority-medium": "בינונית",
